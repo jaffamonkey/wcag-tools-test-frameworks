@@ -1,0 +1,106 @@
+trigger:
+  branches:
+    include:
+      - main
+      - master
+      - develop
+      - feature/*
+
+pr:
+  branches:
+    include:
+      - "*"
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  NODE_VERSION: "20.x"
+  # Forces Playwright to run headless in CI (matches your config's HEADLESS env behavior)
+  HEADLESS: "true"
+  # Optional: where Playwright stores browsers; helps caching
+  PLAYWRIGHT_BROWSERS_PATH: "$(Pipeline.Workspace)/pw-browsers"
+
+steps:
+  - checkout: self
+    clean: true
+
+  - task: NodeTool@0
+    displayName: "Use Node $(NODE_VERSION)"
+    inputs:
+      versionSpec: "$(NODE_VERSION)"
+
+  # Cache npm (optional but speeds up CI)
+  - task: Cache@2
+    displayName: "Cache npm"
+    inputs:
+      key: 'npm | "$(Agent.OS)" | package-lock.json'
+      restoreKeys: |
+        npm | "$(Agent.OS)"
+      path: "$(Pipeline.Workspace)/.npm"
+
+  - script: |
+      npm config set cache "$(Pipeline.Workspace)/.npm" --global
+      npm ci
+    displayName: "Install dependencies"
+
+  # Cache Playwright browsers (optional but speeds up CI)
+  - task: Cache@2
+    displayName: "Cache Playwright browsers"
+    inputs:
+      key: 'playwright | "$(Agent.OS)" | package-lock.json'
+      restoreKeys: |
+        playwright | "$(Agent.OS)"
+      path: "$(PLAYWRIGHT_BROWSERS_PATH)"
+
+  - script: |
+      npx playwright install --with-deps chromium
+    displayName: "Install Playwright browsers (chromium + deps)"
+
+  # Run tests
+  # - continueOnError: true ensures the pipeline still runs publish steps
+  - script: |
+      echo "Running Playwright tests..."
+      npx playwright test
+    displayName: "Run Playwright tests"
+    env:
+      HEADLESS: "$(HEADLESS)"
+      PLAYWRIGHT_BROWSERS_PATH: "$(PLAYWRIGHT_BROWSERS_PATH)"
+    continueOnError: true
+
+  # Publish Playwright HTML report (default folder: playwright-report)
+  - task: PublishPipelineArtifact@1
+    displayName: "Publish Playwright HTML report (playwright-report/)"
+    condition: always()
+    inputs:
+      targetPath: "$(System.DefaultWorkingDirectory)/playwright-report"
+      artifact: "playwright-report"
+      publishLocation: "pipeline"
+
+  - task: PublishPipelineArtifact@1
+    displayName: "Publish aChecker reports (accessibility-reports/)"
+    condition: always()
+    inputs:
+      targetPath: "$(System.DefaultWorkingDirectory)/accessibility-reports"
+      artifact: "accessibility-reports"
+      publishLocation: "pipeline"
+
+  # Publish Playwright test-results folder (screenshots/traces/error-context)
+  - task: PublishPipelineArtifact@1
+    displayName: "Publish raw Playwright test output (test-results/)"
+    condition: always()
+    inputs:
+      targetPath: "$(System.DefaultWorkingDirectory)/test-results"
+      artifact: "test-results"
+      publishLocation: "pipeline"
+
+  # Fail the job if tests failed (because we used continueOnError above)
+  # This preserves artifacts while still failing the pipeline appropriately.
+  - script: |
+      echo "Ensuring pipeline reflects test status..."
+      if [ "$(Agent.JobStatus)" = "SucceededWithIssues" ]; then
+        echo "Tests had failures (job ran with issues). Failing now after publishing artifacts."
+        exit 1
+      fi
+    displayName: "Fail pipeline if tests failed"
+    condition: always()

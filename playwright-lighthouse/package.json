@@ -1,0 +1,14 @@
+{
+  "name": "playwright-lighthouse-audit",
+  "version": "1.0.0",
+  "description": "Automated Lighthouse audits for multiple URLs",
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "postinstall": "npx playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "lighthouse": "^11.4.0"
+  }
+}

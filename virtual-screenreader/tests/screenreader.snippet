@@ -1,0 +1,205 @@
+/** @jest-environment jsdom */
+
+const { virtual } = require("@guidepup/virtual-screen-reader");
+const fs = require("fs");
+const path = require("path");
+
+const cwd = process.cwd();
+const resultsDir = path.join(cwd, "results");
+const fixturesDir = path.join(__dirname, "fixtures");
+
+// Switch: spoken | item | both
+const LOG_MODE = String(process.env.GUIDEPUP_LOG_MODE || "spoken").toLowerCase();
+const WANT_SPOKEN = LOG_MODE === "spoken" || LOG_MODE === "both";
+const WANT_ITEM = LOG_MODE === "item" || LOG_MODE === "both";
+
+function ensureCssEscapePolyfill() {
+  if (typeof globalThis.CSS === "undefined") {
+    globalThis.CSS = {};
+  }
+  if (typeof globalThis.CSS.escape !== "function") {
+    globalThis.CSS.escape = (value) =>
+      String(value).replace(/[^a-zA-Z0-9_-]/g, (ch) => `\\${ch}`);
+  }
+}
+ensureCssEscapePolyfill();
+
+function ensureDir(dir) {
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+}
+
+function sanitizeFileName(name) {
+  return String(name).trim().replace(/[^a-z0-9_.-]+/gi, "_");
+}
+
+function stripScripts(html) {
+  return String(html).replace(
+    /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
+    ""
+  );
+}
+
+function listHtmlFiles(dir, { recursive = false } = {}) {
+  const out = [];
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+  for (const ent of entries) {
+    const full = path.join(dir, ent.name);
+    if (ent.isDirectory()) {
+      if (recursive) out.push(...listHtmlFiles(full, { recursive }));
+      continue;
+    }
+    if (ent.isFile() && /\.html?$/i.test(ent.name)) out.push(full);
+  }
+
+  out.sort((a, b) => a.localeCompare(b));
+  return out;
+}
+
+function reportBaseNameFromFixturePath(filePath) {
+  const base = path.basename(filePath, path.extname(filePath));
+  return sanitizeFileName(base);
+}
+
+function pickContainer() {
+  // Look for ARIA dialogs first
+  const dialog = document.querySelector('[role="dialog"], dialog');
+  if (dialog) return dialog;
+
+  // Fallback to body (JSDOM always ensures a body exists)
+  // Last resort: documentElement
+  return document.body || document.documentElement;
+}
+
+describe("Screen Reader Tests - fixtures folder", () => {
+  test(
+    "should traverse each HTML fixture and output logs",
+    async () => {
+      ensureDir(resultsDir);
+
+      if (!fs.existsSync(fixturesDir)) {
+        throw new Error(`Fixtures directory not found: ${fixturesDir}`);
+      }
+
+      const fixtureFiles = listHtmlFiles(fixturesDir);
+
+      if (fixtureFiles.length === 0) {
+        throw new Error(`No .html files found in: ${fixturesDir}`);
+      }
+
+      if (!["spoken", "item", "both"].includes(LOG_MODE)) {
+        throw new Error(
+          `Invalid GUIDEPUP_LOG_MODE="${LOG_MODE}". Use "spoken", "item", or "both".`
+        );
+      }
+
+      for (const fixturePath of fixtureFiles) {
+        const html = fs.readFileSync(fixturePath, "utf-8");
+        const safeHtml = stripScripts(html);
+
+        // Use innerHTML instead of document.write
+        document.documentElement.innerHTML = safeHtml;
+
+        const container = pickContainer();
+        await virtual.start({ container });
+
+
+        try {
+          const maxNext = 2000;
+          const spokenOutput = [];
+          const itemOutput = [];
+
+          let firstSpoken = null;
+          let prevSpoken = null;
+          let stuckCount = 0;
+
+          // Capture initial phrase immediately after start
+          let currentSpoken = await virtual.lastSpokenPhrase();
+
+          if (currentSpoken && currentSpoken !== "end of document") {
+            firstSpoken = currentSpoken;
+            if (WANT_SPOKEN) spokenOutput.push(currentSpoken);
+            if (WANT_ITEM) itemOutput.push(await virtual.itemText());
+          }
+
+          for (let step = 0; step < maxNext; step++) {
+            await virtual.next();
+
+            const lastSpoken = await virtual.lastSpokenPhrase();
+            if (!lastSpoken || lastSpoken === "end of document") break;
+
+            // Stop if traversal wraps back to first spoken phrase
+            if (firstSpoken && lastSpoken === firstSpoken) {
+              break;
+            }
+
+            // Stuck detection (same phrase repeatedly)
+            if (lastSpoken === prevSpoken) stuckCount++;
+            else stuckCount = 0;
+
+            if (stuckCount >= 5) break;
+
+            if (WANT_SPOKEN) spokenOutput.push(lastSpoken);
+            if (WANT_ITEM) itemOutput.push(await virtual.itemText());
+
+            prevSpoken = lastSpoken;
+          }
+
+          const base = reportBaseNameFromFixturePath(fixturePath);
+
+          if (LOG_MODE === "spoken") {
+            const cleaned = spokenOutput
+              .filter(Boolean)
+              .filter((p) => !String(p).includes("document"));
+
+            fs.writeFileSync(
+              path.join(resultsDir, `${base}.json`),
+              JSON.stringify(cleaned, null, 2),
+              "utf-8"
+            );
+          }
+
+          if (LOG_MODE === "item") {
+            const cleaned = itemOutput
+              .filter(Boolean)
+              .map((t) => String(t).trim())
+              .filter((t) => t.length > 0);
+
+            fs.writeFileSync(
+              path.join(resultsDir, `${base}.json`),
+              JSON.stringify(cleaned, null, 2),
+              "utf-8"
+            );
+          }
+
+          if (LOG_MODE === "both") {
+            const spokenClean = spokenOutput
+              .filter(Boolean)
+              .filter((p) => !String(p).includes("document"));
+
+            const itemClean = itemOutput
+              .filter(Boolean)
+              .map((t) => String(t).trim())
+              .filter((t) => t.length > 0);
+
+            fs.writeFileSync(
+              path.join(resultsDir, `${base}.json`),
+              JSON.stringify(spokenClean, null, 2),
+              "utf-8"
+            );
+
+            fs.writeFileSync(
+              path.join(resultsDir, `${base}.items.json`),
+              JSON.stringify(itemClean, null, 2),
+              "utf-8"
+            );
+          }
+        } finally {
+          await virtual.stop();
+          document.body.innerHTML = "";
+        }
+      }
+    },
+    180_000
+  );
+});
