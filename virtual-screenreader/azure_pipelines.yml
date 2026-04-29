@@ -1,0 +1,54 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pr:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  NODE_VERSION: "20.x"
+  RESULTS_DIR: "results"
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "$(NODE_VERSION)"
+    displayName: "Use Node.js $(NODE_VERSION)"
+
+  - task: Cache@2
+    displayName: "Cache npm"
+    inputs:
+      key: 'npm | "$(Agent.OS)" | package-lock.json'
+      restoreKeys: |
+        npm | "$(Agent.OS)"
+      path: $(Pipeline.Workspace)/.npm
+
+  - script: |
+      npm config set cache "$(Pipeline.Workspace)/.npm" --global
+      npm ci
+    displayName: "Install dependencies"
+
+  - script: |
+      set -e
+      mkdir -p "$(RESULTS_DIR)"
+
+      # Option A: run all tests (uses your jest.config.js)
+      npm test -- --ci --runInBand
+
+      # Option B (optional): run just the tests folder
+      # npx jest "tests/**/*.(test|spec).js" --ci --runInBand
+    displayName: "Run Jest (screen reader tests)"
+
+  - task: PublishBuildArtifacts@1
+    displayName: "Publish screen reader JSON results"
+    condition: succeededOrFailed()
+    inputs:
+      PathtoPublish: "$(System.DefaultWorkingDirectory)/$(RESULTS_DIR)"
+      ArtifactName: "screenreader-results"
+      publishLocation: "Container"
