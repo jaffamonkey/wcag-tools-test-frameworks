@@ -1,50 +1,50 @@
-const fs = require("fs");
-const path = require("path");
-const { chromium } = require("playwright");
+const path = require('node:path');
+const { spawnSync } = require('node:child_process');
+const fs = require('node:fs');
 
-function safeSlug(input) {
-  return String(input || "")
-    .replace(/^https?:\/\//i, "")
-    .replace(/[^a-zA-Z0-9._-]+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
+const jobDir = process.argv[2];
+if (!jobDir) {
+  throw new Error('Usage: node run_uuv.js <job_dir>');
 }
 
-async function main() {
-  const jobDir = process.argv[2];
-  if (!jobDir) throw new Error("Usage: node run_uuv.js <job_dir>");
-  const urls = fs.readFileSync(path.join(jobDir, "input", "urls.txt"), "utf-8").split(/\r?\n/).map(x => x.trim()).filter(Boolean);
-  const storageStatePath = path.join(jobDir, "auth", "storage_state.json");
-  const reportsDir = path.join(jobDir, "reports", "uuv");
-  fs.mkdirSync(reportsDir, { recursive: true });
+const resolvedJobDir = path.resolve(jobDir);
+const urlsFile = path.join(resolvedJobDir, 'input', 'urls.txt');
+const storageStateFile = path.join(resolvedJobDir, 'auth', 'storage_state.json');
+const reportDir = path.join(resolvedJobDir, 'reports', 'uuv');
 
-  const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({ storageState: storageStatePath });
+fs.mkdirSync(reportDir, { recursive: true });
 
-  try {
-    for (const url of urls) {
-      const page = await context.newPage();
-      try {
-        await page.goto(url, { waitUntil: "networkidle" });
-        const out = {
-          tool: "uuv",
-          url,
-          scanned_at: new Date().toISOString(),
-          title: await page.title(),
-          note: "Starter scaffold: plug in real uuv execution here using authenticated Playwright state."
-        };
-        fs.writeFileSync(path.join(reportsDir, `${safeSlug(url)}.json`), JSON.stringify(out, null, 2));
-      } finally {
-        await page.close();
-      }
-    }
-  } finally {
-    await context.close();
-    await browser.close();
+if (!fs.existsSync(urlsFile)) {
+  throw new Error(`urls.txt not found: ${urlsFile}`);
+}
+if (!fs.existsSync(storageStateFile)) {
+  throw new Error(`storage_state.json not found: ${storageStateFile}`);
+}
+
+const result = spawnSync(
+  process.platform === 'win32' ? 'npx.cmd' : 'npx',
+  ['cucumber-js', '--config', 'cucumber.cjs'],
+  {
+    env: {
+      ...process.env,
+      JOB_DIR: resolvedJobDir,
+      URLS_FILE: urlsFile,
+      STORAGE_STATE_FILE: storageStateFile,
+      REPORT_DIR: reportDir,
+    },
+    encoding: 'utf-8',
   }
+);
+
+if (result.stdout) process.stdout.write(result.stdout);
+if (result.stderr) process.stderr.write(result.stderr);
+
+if (result.error) {
+  console.error('Failed to start cucumber-js:', result.error);
+  process.exit(1);
 }
 
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+if (result.status !== 0) {
+  console.error(`cucumber-js exited with status ${result.status}`);
+  process.exit(result.status ?? 1);
+}

@@ -1,50 +1,68 @@
-const fs = require("fs");
-const path = require("path");
-const { chromium } = require("playwright");
+const { chromium } = require('playwright');
+const { scanPage } = require('@govtechsg/oobee');
+const fs = require('fs');
+const path = require('path');
+const { safeSlug, ensureJob } = require('../common/job_utils.cjs');
 
-function safeSlug(input) {
-  return String(input || "")
-    .replace(/^https?:\/\//i, "")
-    .replace(/[^a-zA-Z0-9._-]+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
-async function main() {
+(async () => {
   const jobDir = process.argv[2];
-  if (!jobDir) throw new Error("Usage: node run_oobee.js <job_dir>");
-  const urls = fs.readFileSync(path.join(jobDir, "input", "urls.txt"), "utf-8").split(/\r?\n/).map(x => x.trim()).filter(Boolean);
-  const storageStatePath = path.join(jobDir, "auth", "storage_state.json");
-  const reportsDir = path.join(jobDir, "reports", "oobee");
-  fs.mkdirSync(reportsDir, { recursive: true });
+  if (!jobDir) {
+    throw new Error('Usage: node run_oobee.js <job_dir>');
+  }
+
+  const { urls, storageStatePath, reportsDir } = ensureJob(jobDir, 'oobee');
 
   const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({ storageState: storageStatePath });
 
-  try {
-    for (const url of urls) {
-      const page = await context.newPage();
-      try {
-        await page.goto(url, { waitUntil: "networkidle" });
-        const out = {
-          tool: "oobee",
-          url,
-          scanned_at: new Date().toISOString(),
-          title: await page.title(),
-          note: "Starter scaffold: plug in real oobee execution here using authenticated Playwright state."
-        };
-        fs.writeFileSync(path.join(reportsDir, `${safeSlug(url)}.json`), JSON.stringify(out, null, 2));
-      } finally {
-        await page.close();
-      }
+  for (const url of urls) {
+    const context = await browser.newContext({ storageState: storageStatePath });
+    const page = await context.newPage();
+
+    try {
+      console.log(`Navigating to: ${url}`);
+      await page.goto(url, { waitUntil: 'networkidle', timeout: 120000 });
+
+      console.log('Scanning with Oobee...');
+
+      const scanResults = await scanPage(page, {
+        axeConfig: {
+          runOnly: {
+            type: 'tag',
+            values: [
+              'wcag2aa',
+              'wcag21aa',
+              'wcag22aa',
+              'wcag2aaa',
+              'wcag21aaa'
+            ]
+          }
+        }
+      });
+
+      const base = safeSlug(url);
+      const outputPath = path.join(reportsDir, `${base}.json`);
+      // const htmlPath = path.join(reportsDir, `${base}.html`);
+      // const screenshotPath = path.join(reportsDir, `${base}.png`);
+
+      fs.writeFileSync(outputPath, JSON.stringify(scanResults, null, 2), 'utf8');
+      // fs.writeFileSync(htmlPath, await page.content(), 'utf8');
+      // await page.screenshot({ path: screenshotPath, fullPage: true });
+
+      console.log(`Saved results to: ${outputPath}`);
+    } catch (error) {
+      const errorPath = path.join(reportsDir, `${safeSlug(url)}.json`);
+      fs.writeFileSync(errorPath, JSON.stringify({
+        tool: 'oobee',
+        url,
+        error: error.message,
+        scanned_at: new Date().toISOString()
+      }, null, 2));
+      console.error(`Error scanning ${url}:`, error.message);
+    } finally {
+      await page.close();
+      await context.close();
     }
-  } finally {
-    await context.close();
-    await browser.close();
   }
-}
 
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+  await browser.close();
+})();

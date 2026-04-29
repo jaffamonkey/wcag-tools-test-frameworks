@@ -15,7 +15,17 @@ const AxeBuilder = require('@axe-core/playwright').default;
 
 setDefaultTimeout(90 * 1000);
 
-const REPORT_DIR = path.resolve('reports/per-url');
+const JOB_DIR = process.env.JOB_DIR ? path.resolve(process.env.JOB_DIR) : process.cwd();
+const URLS_FILE = process.env.URLS_FILE
+  ? path.resolve(process.env.URLS_FILE)
+  : path.join(JOB_DIR, 'input', 'urls.txt');
+const STORAGE_STATE_FILE = process.env.STORAGE_STATE_FILE
+  ? path.resolve(process.env.STORAGE_STATE_FILE)
+  : path.join(JOB_DIR, 'auth', 'storage_state.json');
+const REPORT_DIR = process.env.REPORT_DIR
+  ? path.resolve(process.env.REPORT_DIR)
+  : path.join(JOB_DIR, 'reports', 'uuv');
+
 let browser;
 
 class CustomWorld {
@@ -44,7 +54,10 @@ AfterAll(async function () {
 
 Before(async function ({ pickle }) {
   this.scenarioName = pickle.name;
-  this.context = await browser.newContext({ ignoreHTTPSErrors: true });
+  this.context = await browser.newContext({
+    ignoreHTTPSErrors: true,
+    storageState: STORAGE_STATE_FILE,
+  });
   this.page = null;
   this.pageErrors = [];
   this.consoleMessages = [];
@@ -91,33 +104,16 @@ When('I run a rich full page check for {string}', async function (url) {
 When(
   'I run a rich full page check for every URL in {string}',
   { timeout: 15 * 60 * 1000 },
-  async function (filePath) {
-    const resolvedPath = path.isAbsolute(filePath) ? filePath : path.resolve(filePath);
-
+  async function () {
     const urls = fs
-      .readFileSync(resolvedPath, 'utf8')
+      .readFileSync(URLS_FILE, 'utf8')
       .split(/\r?\n/)
       .map((line) => line.trim())
       .filter(Boolean);
 
-    const failures = [];
-
     for (const url of urls) {
-      try {
-        await resetPageState.call(this);
-        await runRichFullPageCheck.call(this, url);
-      } catch (error) {
-        failures.push({
-          url,
-          message: error.message,
-        });
-      }
-    }
-
-    if (failures.length > 0) {
-      throw new Error(
-        failures.map((failure) => `${failure.url} => ${failure.message}`).join(' || ')
-      );
+      await resetPageState.call(this);
+      await runRichFullPageCheck.call(this, url);
     }
   }
 );

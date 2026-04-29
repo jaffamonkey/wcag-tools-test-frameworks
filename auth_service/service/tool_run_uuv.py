@@ -1,7 +1,6 @@
 from __future__ import annotations
 from pathlib import Path
-import subprocess
+from service.tool_runner_common import run_node_tool
+
 def run_uuv(job_dir: Path) -> None:
-    runner_dir = Path(__file__).resolve().parent.parent / "tool_runners" / "uuv_runner"
-    subprocess.run(["npm", "install"], cwd=runner_dir, check=True)
-    subprocess.run(["node", "run_uuv.js", str(job_dir.resolve())], cwd=runner_dir, check=True)
+    run_node_tool(job_dir, "uuv_runner", "run_uuv.js", log_name="uuv.log")

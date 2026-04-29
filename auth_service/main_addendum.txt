@@ -1,0 +1,29 @@
+Add these imports to main.py:
+
+from service.tool_run_html_sniffer import run_html_sniffer
+from service.tool_run_lighthouse import run_lighthouse
+from service.tool_run_ibm import run_ibm
+from service.tool_run_uuv import run_uuv
+from service.tool_run_oobee import run_oobee
+
+Then add these endpoints:
+
+@app.post("/jobs/{job_id}/run/html-sniffer")
+def run_job_html_sniffer(job_id: str):
+    return _run_tool(job_id, run_html_sniffer, "html-sniffer")
+
+@app.post("/jobs/{job_id}/run/lighthouse")
+def run_job_lighthouse(job_id: str):
+    return _run_tool(job_id, run_lighthouse, "lighthouse")
+
+@app.post("/jobs/{job_id}/run/ibm")
+def run_job_ibm(job_id: str):
+    return _run_tool(job_id, run_ibm, "ibm")
+
+@app.post("/jobs/{job_id}/run/uuv")
+def run_job_uuv(job_id: str):
+    return _run_tool(job_id, run_uuv, "uuv")
+
+@app.post("/jobs/{job_id}/run/oobee")
+def run_job_oobee(job_id: str):
+    return _run_tool(job_id, run_oobee, "oobee")

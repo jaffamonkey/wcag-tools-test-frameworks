@@ -1,582 +1,751 @@
-# Shared Auth + Job Scaffold Starter
+# End-to-End Setup and Run Guide
 
-This starter is aimed at turning the current accessibility tool chain into a service.
+## What this setup now does
 
-It focuses on the tools that can realistically share a Playwright-authenticated session:
+You now have an end-to-end flow with two local apps:
 
-- axe-core / Playwright
-- IBM Accessibility Checker / Playwright
-- Lighthouse / Playwright flow
-- UUV
-- html-sniffer / Playwright
-- Oobee
+- **Auth / scan service** (`auth_service`)
+  - accepts job submissions from a web form
+  - creates a job config automatically
+  - runs authentication only when login details are supplied
+  - runs the selected tool frameworks
+  - writes job metadata to a local database
+  - exposes public result/status pages and a jobs list
+- **Reporting / analysis service** (`wcag-tools-reporting-analysis`)
+  - reads a specific job's reports
+  - builds workbook + dashboard output
+  - serves per-job dashboards and downloads
 
-It does **not** try to solve authenticated runs for:
-
-- pa11y-ci
-- axe-scan
-
-## What this starter gives you
-
-This version includes:
-
-- a shared Playwright authentication module
-- a job-folder scaffold
-- a simple `run_job.py` entry point
-- a small FastAPI app in `main.py`
-- `requirements.txt`
-- a real authenticated `axe-core` runner
-- authenticated runner scaffolds for:
-  - `html-sniffer`
-  - `lighthouse`
-  - `ibm`
-  - `uuv`
-  - `oobee`
-
-The overall idea is:
-
-1. create a job
-2. authenticate once
-3. save `storage_state.json`
-4. reuse that authenticated state for all compatible tools
-5. write each tool’s output into `jobs/<job-id>/reports/<tool>/`
-
----
-
-## Project structure
+The main job structure is:
 
 ```text
-jobs/
-  <job-id>/
-    input/
-      urls.txt
-      job_config.json
-    auth/
-      storage_state.json
-      login.log
-      login-result.png
-    reports/
-      axe-core/
-      ibm/
-      lighthouse/
-      uuv/
-      html-sniffer/
-      oobee/
-    analysis/
+jobs/<job-id>/
+  input/
+  auth/
+  reports/
+    axe-core/
+    html-sniffer/
+    oobee/
+    lighthouse/
+    ibm/
+    uuv/
+    pa11y/
+  analysis/
+    index.html
+    accessibility_analysis.xlsx
+    data/
       analysis.json
-      accessibility_analysis.xlsx
-      dashboard/
-    logs/
-      orchestrator.log
-      axe-core.log
-      ibm.log
-      ...
-    status.json
+    static/
+    analysis_status.json
+  logs/
+  status.json
+  full_job_summary.json
+  incoming_job_config.json
 ```
 
 ---
 
-## Requirements
+## Repos used
 
-- Python 3.10+
-- Node.js 18+
-- npm
-- Playwright Chromium
+### 1. Auth / scan service repo
+
+Example local path:
+
+```text
+/Users/user/code/github/wcag-tools-test-frameworks/auth_service
+```
+
+### 2. Reporting / analysis repo
+
+Example local path:
+
+```text
+/Users/user/code/github/wcag-tools-reporting-analysis
+```
 
 ---
 
-## Installation
+## High-level flow
 
-### 1. Create and activate a virtual environment
+1. Start the **auth service**.
+2. Start the **analysis service**.
+3. Submit a job from the auth-service form.
+4. The public result page shows queued/running/completed/failed state.
+5. When complete, the result page redirects to the dashboard.
 
-#### macOS / Linux
+---
+
+# Setup
+
+## A. Auth service setup
+
+Open a terminal:
 
 ```bash
-python -m venv venv
-source venv/bin/activate
+cd /Users/user/code/github/wcag-tools-test-frameworks/auth_service
+source auth/bin/activate
 ```
 
-#### Windows PowerShell
+Install dependencies if needed:
 
-```powershell
-python -m venv venv
-venv\Scripts\Activate.ps1
+```bash
+pip install -r requirements.txt
+playwright install chromium
+```
+
+If there is no complete `requirements.txt`, at minimum:
+
+```bash
+pip install fastapi uvicorn playwright pydantic
+playwright install chromium
 ```
 
 ---
 
-### 2. Install Python dependencies
+## B. Analysis service setup
+
+Open another terminal:
+
+```bash
+cd /Users/user/code/github/wcag-tools-reporting-analysis
+source analysis1/bin/activate
+```
+
+Install dependencies if needed:
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-### 3. Install Playwright browser
+If required, install manually:
 
 ```bash
-playwright install chromium
+pip install fastapi uvicorn openpyxl jinja2 pydantic
 ```
-
-If Playwright asks for system dependencies on Linux, install them as prompted.
 
 ---
 
-## Quick start
+# Recommended server ports
 
-### 1. Prepare a job using the example config
+Use different ports so the two apps are easy to tell apart.
 
-```bash
-python run_job.py jobs/example-job example_job_config.json
-```
-
-This will:
-
-- create the job folders
-- write `jobs/example-job/input/urls.txt`
-- run the shared authentication flow
-- save:
-  - `jobs/example-job/auth/storage_state.json`
-  - `jobs/example-job/auth/login.log`
-  - `jobs/example-job/auth/login-result.png`
-- write `jobs/example-job/status.json`
+- **Auth service**: `8001`
+- **Analysis service**: `8000`
 
 ---
 
-### 2. Run the authenticated axe-core runner
+# Start the servers
+
+## 1. Start auth service
+
+From the `auth_service` repo:
 
 ```bash
-python -m service.run_authenticated_axe_core jobs/example-job
+cd /Users/user/code/github/wcag-tools-test-frameworks/auth_service
+source auth/bin/activate
+python -m uvicorn main:app --reload --port 8001
 ```
 
-This will:
+## 2. Start analysis service
 
-- read `jobs/example-job/input/urls.txt`
-- read `jobs/example-job/auth/storage_state.json`
-- launch Playwright Chromium with the authenticated session
-- run axe-core on each URL
-- write JSON reports into:
+From the reporting repo:
+
+```bash
+cd /Users/user/code/github/wcag-tools-reporting-analysis
+source analysis1/bin/activate
+python -m uvicorn app.main:app --reload --port 8000
+```
+
+---
+
+# Primary current flow: submit from the form
+
+Open the auth service form:
 
 ```text
-jobs/example-job/reports/axe-core/
+http://127.0.0.1:8001/
+```
+
+The form now asks only for user-meaningful inputs:
+
+- **Job Name**
+- **URLs to test**
+- **Optional Login Details**
+- **Tool selection**
+
+The service generates the internal config file automatically.
+
+### Current user flow
+
+1. Fill in the form
+2. Submit the job
+3. The page redirects to the public result/status page
+4. That page auto-refreshes while the job is queued/running
+5. When the job is complete, it redirects to the dashboard
+
+---
+
+# Supporting pages
+
+## Jobs list / visibility page
+
+```text
+http://127.0.0.1:8001/jobs-view
+```
+
+This shows:
+- queued jobs
+- running jobs
+- completed jobs
+- failed jobs
+- links to public result, dashboard, workbook
+
+## Public result/status page
+
+```text
+http://127.0.0.1:8001/r/<public-slug>
+```
+
+Behavior:
+- **queued**: shows queued status and auto-refreshes
+- **running**: shows analysis in progress, elapsed timer, and auto-refreshes
+- **completed**: redirects to dashboard
+- **failed**: shows failure state and any error text
+
+---
+
+# Dashboard and analysis URLs
+
+These are served from the **analysis service**, not the auth service.
+
+## Dashboard
+
+```text
+http://127.0.0.1:8000/jobs/<job-id>/dashboard
+```
+
+## Workbook
+
+```text
+http://127.0.0.1:8000/jobs/<job-id>/workbook
+```
+
+## Analysis status
+
+```text
+http://127.0.0.1:8000/jobs/<job-id>/analysis-status
+```
+
+## Raw analysis data
+
+```text
+http://127.0.0.1:8000/jobs/<job-id>/data/analysis.json
 ```
 
 ---
 
-### 3. Run one of the scaffolded authenticated runners
+# Guide/document links from the dashboard
+
+The dashboard guide links must use **root-relative app URLs**, not job-relative URLs.
+
+Correct patterns:
+
+```text
+/readme_overview.html
+/workbook_guide.html
+/dashboard_guide.html
+/site_preview.html
+```
+
+Wrong patterns:
+
+```text
+/jobs/<job-id>/readme_overview.html
+/jobs/<job-id>/workbook_guide.html
+```
+
+If the guide links are broken, check that the generated dashboard `index.html` uses absolute root paths.
+
+---
+
+# Manual API examples
+
+## Submit a public job by API
+
+```bash
+curl -i -X POST "http://127.0.0.1:8001/jobs" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "job_name": "public-site-audit",
+    "target_urls": [
+      "https://example.com/",
+      "https://example.com/contact"
+    ],
+    "tools": ["axe-core", "html-sniffer", "oobee", "lighthouse", "ibm", "uuv", "pa11y"]
+  }'
+```
+
+## Submit an authenticated job by API
+
+```bash
+curl -i -X POST "http://127.0.0.1:8001/jobs" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "job_name": "private-site-audit",
+    "target_urls": [
+      "https://practicetestautomation.com/",
+      "https://practicetestautomation.com/practice-test-exceptions/",
+      "https://practicetestautomation.com/practice-test-table/"
+    ],
+    "login_entry_url": "https://practicetestautomation.com/practice-test-login/",
+    "credentials": {
+      "username": "student",
+      "password": "Password123"
+    },
+    "tools": ["axe-core", "html-sniffer", "oobee", "lighthouse", "ibm", "uuv", "pa11y"]
+  }'
+```
+
+## Query a job by internal id
+
+```bash
+curl "http://127.0.0.1:8001/jobs/<job-id>"
+```
+
+## List jobs
+
+```bash
+curl "http://127.0.0.1:8001/jobs-list"
+```
+
+---
+
+# Legacy/manual full-job flow
+
+This still exists and is useful for debugging, but it is no longer the main user-facing flow.
+
+## Run full job manually
+
+```bash
+curl -X POST "http://127.0.0.1:8001/jobs/example-job/run-full" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "job_config": "/Users/user/code/github/wcag-tools-test-frameworks/auth_service/example_job_config.json",
+    "analysis_repo_dir": "/Users/user/code/github/wcag-tools-reporting-analysis",
+    "auth_service_dir": "/Users/user/code/github/wcag-tools-test-frameworks/auth_service"
+  }'
+```
+
+This path is still useful if you want to drive the older orchestrated flow directly.
+
+---
+
+# Manual step-by-step debugging flow
+
+If you want to run it step-by-step instead:
+
+## Auth / prepare
+
+```bash
+cd /Users/user/code/github/wcag-tools-test-frameworks/auth_service
+source auth/bin/activate
+python3 run_job.py jobs/example-job example_job_config.json
+```
+
+## Run tools individually
+
+```bash
+python3 -m service.run_authenticated_axe_core jobs/example-job
+python3 -m service.run_authenticated_html_sniffer jobs/example-job
+python3 -m service.run_authenticated_oobee jobs/example-job
+python3 -m service.run_authenticated_lighthouse jobs/example-job
+python3 -m service.run_authenticated_ibm jobs/example-job
+python3 -m service.run_authenticated_uuv jobs/example-job
+python3 -m service.run_authenticated_pa11y jobs/example-job
+```
+
+## Build analysis manually
+
+```bash
+cd /Users/user/code/github/wcag-tools-reporting-analysis
+source analysis1/bin/activate
+
+python run_job_analysis.py \
+  --reports-dir /Users/user/code/github/wcag-tools-test-frameworks/auth_service/jobs/example-job/reports \
+  --output-dir /Users/user/code/github/wcag-tools-test-frameworks/auth_service/jobs/example-job/analysis
+```
+
+---
+
+# Tool coverage
+
+## Strong authenticated Playwright-based tools
+
+These are the cleaner, stronger authenticated runners:
+
+- axe-core
+- html-sniffer
+- oobee
+- lighthouse
+- ibm
+- uuv
+
+## Best-effort authenticated tool
+
+- pa11y-ci
+
+Pa11y is useful, but it uses a different auth approach and is more fragile than the Playwright session-sharing tools.
+
+---
+
+# Public vs authenticated jobs
+
+## Public job
+If no `login_entry_url` and no `credentials` are supplied:
+- authentication is skipped
+- the job is prepared as a public job
+- runners should work without `storage_state.json`
+
+## Authenticated job
+If both `login_entry_url` and `credentials` are supplied:
+- auth is attempted
+- storage state is created
+- authenticated pages are scanned
+
+Both login fields must be provided together, or omitted together.
+
+---
+
+# Quirks and gotchas
+
+## 1. Wrong port problems
+
+This was the most common source of confusion.
+
+### Auth service routes live on `8001`
+
+Examples:
+- `GET /`
+- `POST /jobs`
+- `GET /jobs-view`
+- `GET /r/{slug}`
+
+### Analysis service routes live on `8000`
+
+Examples:
+- `GET /jobs/{job_id}/dashboard`
+- `GET /jobs/{job_id}/workbook`
+
+### Rule of thumb
+
+- **submit / monitor jobs** on the auth service
+- **view dashboards** on the analysis service
+
+---
+
+## 2. Do not use the old global `/dashboard`
+
+Use:
+
+```text
+/jobs/<job-id>/dashboard
+```
+
+not:
+
+```text
+/dashboard
+```
+
+The old `/dashboard` route belongs to the earlier global flow and can trigger stale behaviour like trying to analyse `./reports`.
+
+---
+
+## 3. Job-aware dashboard assets matter
+
+The generated dashboard must use job-relative/static-aware links.
+
+Important patterns:
+
+- `./static/styles.css`
+- `./static/script.js`
+- `/readme_overview.html`
+- `/workbook_guide.html`
+- `/dashboard_guide.html`
+- `/site_preview.html`
+
+If old paths remain, you can get:
+- 404 on CSS/JS
+- broken guide links
+- old live-analysis calls
+
+---
+
+## 4. The analysis service must point at the auth-service jobs folder
+
+The analysis app must resolve job folders under the auth-service jobs directory.
+
+Good local default:
+
+```python
+DEFAULT_LOCAL_JOBS_DIR = Path(
+    "/Users/user/code/github/wcag-tools-test-frameworks/auth_service/jobs"
+)
+```
+
+If this path is wrong, `/jobs/<job-id>/dashboard` can 404 even when files exist.
+
+---
+
+## 5. Uvicorn path / virtualenv mix-ups
+
+A few issues came from starting the wrong app in the wrong environment.
+
+### Use module form
+
+Prefer:
+
+```bash
+python -m uvicorn ...
+```
+
+instead of:
+
+```bash
+uvicorn ...
+```
+
+This avoids stale global launchers.
+
+### Make sure each repo uses its own venv
+
+- auth service terminal should use the auth-service environment
+- analysis terminal should use the reporting environment
+
+### Correct startup targets
+
+- **auth service**: `main:app`
+- **analysis service**: `app.main:app`
 
 Examples:
 
 ```bash
-python -m service.run_authenticated_html_sniffer jobs/example-job
-python -m service.run_authenticated_lighthouse jobs/example-job
-python -m service.run_authenticated_ibm jobs/example-job
-python -m service.run_authenticated_uuv jobs/example-job
-python -m service.run_authenticated_oobee jobs/example-job
+python -m uvicorn main:app --reload --port 8001
+python -m uvicorn app.main:app --reload --port 8000
 ```
-
-These currently prove:
-
-- shared authenticated session reuse
-- shared `urls.txt`
-- per-tool report folder layout
-- service wiring
-
-They are scaffolds, so their output currently contains placeholder JSON showing where the real tool execution should be plugged in.
 
 ---
 
-## Running the API
+## 6. Pa11y exits non-zero when it finds issues
 
-Start the FastAPI app with:
+Pa11y can produce good reports and still exit non-zero because of threshold / pass-fail semantics.
 
-```bash
-uvicorn main:app --reload
+For service mode, this was treated as acceptable if reports were produced.
+
+Meaning:
+- output files matter more than raw exit code
+- this is expected behaviour, not necessarily a failed scan
+
+---
+
+## 7. UUV originally failed on findings
+
+UUV originally behaved like a test and failed the scenario when high findings existed.
+
+For service mode, that behaviour was adjusted so it:
+- still writes reports
+- does not treat findings themselves as a crash
+
+---
+
+## 8. IBM had package/API quirks
+
+IBM worked once aligned with the repo’s known-good invocation pattern and config.
+
+If IBM breaks again, check:
+- runner file version
+- `.achecker.yml`
+- package version
+- whether a newer or older runner file accidentally got copied back in
+
+---
+
+## 9. Cached browser assets can mislead
+
+After changing:
+- `script.js`
+- `index.html`
+- dashboard asset routes
+
+do a hard refresh in the browser.
+
+Old JS can cause very misleading behaviour.
+
+---
+
+## 10. Public jobs require runners to tolerate missing storage state
+
+Public jobs skip authentication, so `storage_state.json` may not exist.
+
+Playwright-based runners should only apply `storageState` if the file exists.
+
+Pattern:
+
+```javascript
+const contextOptions = { ignoreHTTPSErrors: true };
+if (fs.existsSync(STORAGE_STATE_FILE)) {
+  contextOptions.storageState = STORAGE_STATE_FILE;
+}
+const context = await browser.newContext(contextOptions);
 ```
 
-By default this will start on:
+---
+
+## 11. JSON payloads must use straight quotes
+
+When sending API payloads with `curl`, use plain JSON quotes:
 
 ```text
-http://127.0.0.1:8000
+"
 ```
 
-Interactive API docs will be available at:
+Not smart quotes:
+
+```text
+“ ”
+```
+
+Smart quotes will cause JSON decode errors.
+
+---
+
+## 12. Duplicate job ids / names
+
+The service now generates a unique internal job id from the submitted job name plus a timestamp.
+
+That means:
+- user-facing job names can repeat
+- internal job ids should still be unique
+
+If you are testing older endpoints or older DB records, duplicate id errors can still appear.
+
+---
+
+# Useful checks
+
+## Check auth-service docs
+
+```text
+http://127.0.0.1:8001/docs
+```
+
+You should see:
+- `POST /jobs`
+- `GET /jobs-view`
+- `GET /jobs-list`
+- `GET /jobs/{job_id}`
+
+## Check analysis-service docs
 
 ```text
 http://127.0.0.1:8000/docs
 ```
 
----
+You should see job dashboard/workbook/status routes there.
 
-## API usage
-
-### Health check
-
-```http
-GET /
-```
-
-Example response:
-
-```json
-{
-  "ok": true,
-  "message": "Accessibility service starter is running"
-}
-```
-
----
-
-### Create a job
-
-```http
-POST /jobs
-```
-
-Example request body:
-
-```json
-{
-  "job_id": "example-job",
-  "login_entry_url": "https://example.com",
-  "target_urls": [
-    "https://example.com/",
-    "https://example.com/account",
-    "https://example.com/products"
-  ],
-  "credentials": {
-    "username": "user@example.com",
-    "password": "secret"
-  },
-  "auth_mode": "auto",
-  "selectors": {
-    "login_trigger": null,
-    "username": null,
-    "password": null,
-    "submit": null,
-    "success": null,
-    "logged_in_text": null
-  },
-  "headless": true,
-  "timeout_ms": 20000
-}
-```
-
-This will:
-
-- create `jobs/<job-id>/`
-- save the incoming config
-- run the shared login flow
-- save the job status
-
----
-
-### Check job status
-
-```http
-GET /jobs/{job_id}
-```
-
-Example:
-
-```http
-GET /jobs/example-job
-```
-
----
-
-### Run authenticated axe-core
-
-```http
-POST /jobs/{job_id}/run/axe-core
-```
-
-Example:
-
-```http
-POST /jobs/example-job/run/axe-core
-```
-
-This writes output to:
+## Check summary file
 
 ```text
-jobs/example-job/reports/axe-core/
+auth_service/jobs/<job-id>/full_job_summary.json
 ```
 
----
+This is the first place to look if the flow ran but the dashboard looks wrong.
 
-### Run scaffolded authenticated tools
-
-```http
-POST /jobs/{job_id}/run/html-sniffer
-POST /jobs/{job_id}/run/lighthouse
-POST /jobs/{job_id}/run/ibm
-POST /jobs/{job_id}/run/uuv
-POST /jobs/{job_id}/run/oobee
-```
-
-Examples:
-
-```http
-POST /jobs/example-job/run/html-sniffer
-POST /jobs/example-job/run/lighthouse
-POST /jobs/example-job/run/ibm
-POST /jobs/example-job/run/uuv
-POST /jobs/example-job/run/oobee
-```
-
----
-
-## Authentication model
-
-The shared login module supports this idea:
-
-- user provides a login entry URL
-- that URL may be:
-  - a direct login form page
-  - a page containing a login link
-  - a page where a login trigger opens a modal
-- the module attempts to:
-  - detect the login form
-  - or detect and click a login trigger
-  - find username/email, password, and submit fields
-  - submit credentials
-  - verify success
-  - save Playwright storage state
-
-Saved artifacts include:
-
-- `auth/storage_state.json`
-- `auth/login.log`
-- `auth/login-result.png`
-
----
-
-## Selector overrides
-
-The shared auth flow supports optional selector hints for harder sites.
-
-Available override fields:
-
-- `login_trigger`
-- `username`
-- `password`
-- `submit`
-- `success`
-- `logged_in_text`
-
-These can be sent in the API request or included in a config JSON file.
-
-Example:
-
-```json
-{
-  "selectors": {
-    "login_trigger": "a[href*='login']",
-    "username": "input[name='email']",
-    "password": "input[type='password']",
-    "submit": "button[type='submit']",
-    "success": "a[href*='logout']",
-    "logged_in_text": "My account"
-  }
-}
-```
-
-This is useful when automatic detection is not reliable enough.
-
----
-
-## Example CLI workflow
-
-### Step 1: prepare the job
-
-```bash
-python run_job.py jobs/example-job example_job_config.json
-```
-
-### Step 2: inspect auth output
-
-Check:
+## Check generated config
 
 ```text
-jobs/example-job/auth/login.log
-jobs/example-job/auth/login-result.png
-jobs/example-job/auth/storage_state.json
-jobs/example-job/status.json
+auth_service/jobs/<job-id>/incoming_job_config.json
 ```
 
-### Step 3: run axe-core
+This is useful when verifying what the simplified form actually submitted.
+
+---
+
+# Suggested local operating pattern
+
+## Terminal 1 — auth service
 
 ```bash
-python -m service.run_authenticated_axe_core jobs/example-job
+cd /Users/user/code/github/wcag-tools-test-frameworks/auth_service
+source auth/bin/activate
+python -m uvicorn main:app --reload --port 8001
 ```
 
-### Step 4: inspect reports
+## Terminal 2 — analysis service
+
+```bash
+cd /Users/user/code/github/wcag-tools-reporting-analysis
+source analysis1/bin/activate
+python -m uvicorn app.main:app --reload --port 8000
+```
+
+## Browser 1 — submit job
 
 ```text
-jobs/example-job/reports/axe-core/
+http://127.0.0.1:8001/
+```
+
+## Browser 2 — job list
+
+```text
+http://127.0.0.1:8001/jobs-view
+```
+
+## Browser 3 — final dashboard
+
+```text
+http://127.0.0.1:8000/jobs/<job-id>/dashboard
 ```
 
 ---
 
-## Example API workflow
+# Next logical improvements
 
-### Start server
+- store `job_name` separately in the DB
+- show more detailed per-job progress
+- friendly failure summaries
+- async worker separation from the web service
+- persistent job registry / Postgres migration
+- hosted deployment / Render migration
+- optional auth-UX-specific scan mode later
 
-```bash
-uvicorn main:app --reload
+---
+
+# Summary
+
+The happy-path flow is now:
+
+1. start auth service
+2. start analysis service
+3. submit a job from the auth-service form
+4. land on the public result/status page
+5. wait while it auto-refreshes
+6. get redirected to the analysis dashboard when complete
+
+That is the main flow to follow.
+
+
+# EMERGENCY JOB STOP
+
+Find your jobs DB:
 ```
-
-### Create a job
-
-Use Swagger UI at `/docs`, or send a request like:
-
-```bash
-curl -X POST "http://127.0.0.1:8000/jobs" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "job_id": "example-job",
-    "login_entry_url": "https://example.com",
-    "target_urls": [
-      "https://example.com/",
-      "https://example.com/account"
-    ],
-    "credentials": {
-      "username": "user@example.com",
-      "password": "secret"
-    },
-    "auth_mode": "auto",
-    "selectors": {
-      "login_trigger": null,
-      "username": null,
-      "password": null,
-      "submit": null,
-      "success": null,
-      "logged_in_text": null
-    },
-    "headless": true,
-    "timeout_ms": 20000
-  }'
+find /Users/user/code/github/wcag-tools-test-frameworks/auth_service -name "*.db"
 ```
-
-### Run axe-core
-
-```bash
-curl -X POST "http://127.0.0.1:8000/jobs/example-job/run/axe-core"
+Then inspect the stuck row:
 ```
-
-### Get status
-
-```bash
-curl "http://127.0.0.1:8000/jobs/example-job"
+sqlite3 /path/to/your.db "select id,status,error_message from jobs where id='practice-expandtesting-com-20260428-213755';"
 ```
-
----
-
-## Current status of tool runners
-
-### Implemented as a real authenticated runner
-
-- `axe-core`
-
-### Present as authenticated scaffolds
-
-- `html-sniffer`
-- `lighthouse`
-- `ibm`
-- `uuv`
-- `oobee`
-
-These scaffolds currently validate the service pattern and file layout, but still need the real tool-specific execution logic wired in.
-
-### Explicitly deferred for authenticated mode
-
-- `pa11y-ci`
-- `axe-scan`
-
-These are intentionally left out for now because they are less suitable for complex shared authenticated flows.
-
----
-
-## Troubleshooting
-
-### `storage_state.json` was not created
-
-Check:
-
-- credentials are correct
-- login entry URL is correct
-- the login flow is being detected correctly
-- `auth/login.log`
-- `auth/login-result.png`
-
-If needed, add selector overrides.
-
----
-
-### Playwright browser is missing
-
-Install it with:
-
-```bash
-playwright install chromium
+And update it:
 ```
-
----
-
-### Node or npm errors when running tool runners
-
-Make sure Node.js and npm are installed:
-
-```bash
-node -v
-npm -v
+sqlite3 /path/to/your.db "update jobs set status='failed', error_message='Interrupted during IBM run after auth; process no longer running' where id='practice-expandtesting-com-20260428-213755';"
 ```
-
----
-
-### Login succeeds manually but not in the starter
-
-This usually means one of:
-
-- login trigger detection is wrong
-- selectors need manual overrides
-- the site uses a multi-step flow
-- the site uses SSO, MFA, or a custom login widget
-- success verification needs a better selector
-
-Try setting explicit:
-
-- `login_trigger`
-- `username`
-- `password`
-- `submit`
-- `success`
-
----
-
-## Next steps
-
-Recommended order:
-
-1. turn `html-sniffer` from scaffold into a real runner
-2. wire in the real authenticated `oobee` runner
-3. wire in the real authenticated `lighthouse` runner
-4. add per-tool logs under `jobs/<job-id>/logs/`
-5. add a combined “run all authenticated tools” endpoint
-6. connect the analysis framework to `jobs/<job-id>/reports/`
-7. write workbook/dashboard outputs into `jobs/<job-id>/analysis/`
-
----
-
-## Summary
-
-This starter is meant to prove the service architecture:
-
-- one shared auth step
-- one job folder
-- multiple compatible tools reusing the same authenticated state
-- one output structure ready for downstream analysis
-
-The first real runner is `axe-core`, and the rest are scaffolded in the same shape so they can be completed incrementally.

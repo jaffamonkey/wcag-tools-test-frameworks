@@ -27,7 +27,7 @@ async function main() {
         const out = { tool: "axe-core", url, scanned_at: new Date().toISOString(), violations: results.violations || [], passes: results.passes || [], incomplete: results.incomplete || [], inapplicable: results.inapplicable || [] };
         fs.writeFileSync(path.join(reportsDir, `${safeSlug(url)}.json`), JSON.stringify(out, null, 2));
       } catch (err) {
-        fs.writeFileSync(path.join(reportsDir, `${safeSlug(url)}-error.json`), JSON.stringify({ tool: "axe-core", url, error: String(err && err.message ? err.message : err), scanned_at: new Date().toISOString() }, null, 2));
+        fs.writeFileSync(path.join(reportsDir, `${safeSlug(url)}.json`), JSON.stringify({ tool: "axe-core", url, error: String(err && err.message ? err.message : err), scanned_at: new Date().toISOString() }, null, 2));
       } finally {
         await page.close();
       }
