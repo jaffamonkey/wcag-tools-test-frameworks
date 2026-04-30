@@ -10,6 +10,7 @@ from service.prepare_public_job import prepare_public_job
 
 DEFAULT_TOOLS = [
     "axe-core",
+    "axe-scan",
     "html-sniffer",
     "oobee",
     "lighthouse",
@@ -18,7 +19,7 @@ DEFAULT_TOOLS = [
     "pa11y",
 ]
 
-TOOL_MODULES = {
+AUTH_TOOL_MODULES = {
     "axe-core": "service.run_authenticated_axe_core",
     "html-sniffer": "service.run_authenticated_html_sniffer",
     "oobee": "service.run_authenticated_oobee",
@@ -26,6 +27,18 @@ TOOL_MODULES = {
     "ibm": "service.run_authenticated_ibm",
     "uuv": "service.run_authenticated_uuv",
     "pa11y": "service.run_authenticated_pa11y",
+    "axe-scan": "service.run_axe_scan",
+}
+
+PUBLIC_TOOL_MODULES = {
+    "axe-core": "service.run_axe_core",
+    "html-sniffer": "service.run_html_sniffer",
+    "oobee": "service.run_oobee",
+    "lighthouse": "service.run_lighthouse",
+    "ibm": "service.run_ibm",
+    "uuv": "service.run_uuv",
+    "pa11y": "service.run_pa11y",
+    "axe-scan": "service.run_axe_scan",
 }
 
 
@@ -58,6 +71,14 @@ def run_full_job(
     reports_dir = job_dir / "reports"
     analysis_dir = job_dir / "analysis"
 
+    config_data = json.loads(job_config.read_text(encoding="utf-8"))
+    credentials = config_data.get("credentials") or {}
+    requires_auth = bool(config_data.get("login_entry_url")) and bool(
+        credentials.get("username") or credentials.get("password")
+    )
+
+    tool_modules = AUTH_TOOL_MODULES if requires_auth else PUBLIC_TOOL_MODULES
+
     summary = {
         "job_id": job_id,
         "job_dir": str(job_dir),
@@ -68,9 +89,6 @@ def run_full_job(
         "tools": {},
         "analysis": {"status": "skipped" if skip_analysis else "pending"},
     }
-
-    config_data = json.loads(job_config.read_text(encoding="utf-8"))
-    requires_auth = bool(config_data.get("login_entry_url")) and bool(config_data.get("credentials"))
 
     status_path = job_dir / "status.json"
 
@@ -115,8 +133,9 @@ def run_full_job(
         }
 
     for tool in tools:
-        module = TOOL_MODULES.get(tool)
+        module = tool_modules.get(tool)
         tool_reports_dir = reports_dir / tool
+        skip_marker = tool_reports_dir / "SKIPPED"
 
         if not module:
             summary["tools"][tool] = {
@@ -129,6 +148,14 @@ def run_full_job(
             [sys.executable, "-m", module, f"jobs/{job_id}"],
             cwd=auth_service_dir,
         )
+
+        if skip_marker.exists():
+            summary["tools"][tool] = {
+                "status": "skipped",
+                "message": skip_marker.read_text(encoding="utf-8").strip(),
+                "reports_dir": str(tool_reports_dir),
+            }
+            continue
 
         report_count = len(list(tool_reports_dir.glob("*.json"))) if tool_reports_dir.exists() else 0
 

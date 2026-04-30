@@ -17,6 +17,17 @@ function sanitizeField(value, maxLength) {
   return typeof maxLength === 'number' ? truncate(cleaned, maxLength) : cleaned;
 }
 
+function buildContextOptions(storageStatePath) {
+  const options = {};
+  if (storageStatePath && fs.existsSync(storageStatePath)) {
+    options.storageState = storageStatePath;
+    console.log(`HTMLCS using storage state: ${storageStatePath}`);
+  } else {
+    console.log('HTMLCS running without storage state for public job');
+  }
+  return options;
+}
+
 (async () => {
   const jobDir = process.argv[2];
   if (!jobDir) {
@@ -33,7 +44,7 @@ function sanitizeField(value, maxLength) {
   );
 
   for (const url of urls) {
-    const context = await browser.newContext({ storageState: storageStatePath });
+    const context = await browser.newContext(buildContextOptions(storageStatePath));
     const page = await context.newPage();
 
     try {
@@ -43,6 +54,8 @@ function sanitizeField(value, maxLength) {
         waitUntil: 'domcontentloaded',
         timeout: 120000
       });
+
+      await page.waitForTimeout(1500);
 
       await page.addScriptTag({ path: htmlcsPath });
 
@@ -94,13 +107,8 @@ function sanitizeField(value, maxLength) {
 
       const base = safeSlug(url);
       const jsonPath = path.join(reportsDir, `${base}.json`);
-      // const htmlPath = path.join(reportsDir, `${base}.html`);
-      const screenshotPath = path.join(reportsDir, `${base}.png`);
 
       fs.writeFileSync(jsonPath, JSON.stringify(report, null, 2), 'utf8');
-      // fs.writeFileSync(htmlPath, await page.content(), 'utf8');
-      // await page.screenshot({ path: screenshotPath, fullPage: true });
-
       console.log(`Successfully saved ${path.basename(jsonPath)}`);
     } catch (err) {
       const errorPath = path.join(reportsDir, `${safeSlug(url)}-error.json`);

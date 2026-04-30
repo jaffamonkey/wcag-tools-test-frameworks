@@ -36,9 +36,7 @@ function lightenHtml(html, opts = {}) {
     out = out.replace(/\s(src|srcset)=["'][^"']*["']/gi, '');
   }
 
-  // Optional extra cleanup for noisy inline handlers.
   out = out.replace(/\son\w+=["'][^"']*["']/gi, '');
-
   return out;
 }
 
@@ -69,11 +67,18 @@ function shouldBlockRequest(url) {
 }
 
 async function runIbmForUrl(browser, url, storageStatePath, reportsDir) {
-  const context = await browser.newContext({
-    storageState: storageStatePath,
+  const contextOptions = {
     ignoreHTTPSErrors: true,
-  });
+  };
 
+  if (storageStatePath && fs.existsSync(storageStatePath)) {
+    console.log(`IBM using storage state: ${storageStatePath}`);
+    contextOptions.storageState = storageStatePath;
+  } else {
+    console.log('IBM running without storage state for public job');
+  }
+
+  const context = await browser.newContext(contextOptions);
   const page = await context.newPage();
 
   await page.route('**/*', async (route) => {

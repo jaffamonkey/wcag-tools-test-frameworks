@@ -1,21 +1,51 @@
 from __future__ import annotations
-from pathlib import Path
-import subprocess
 
-def run_node_tool(job_dir: Path, runner_dir_name: str, node_script: str, *, log_name: str) -> None:
+import os
+import subprocess
+from pathlib import Path
+
+
+def run_node_tool(
+    job_dir: Path,
+    runner_dir_name: str,
+    node_script: str,
+    *,
+    log_name: str,
+    require_storage_state: bool = True,
+    check: bool = True,
+) -> None:
+    job_dir = job_dir.resolve()
+
     storage_state = job_dir / "auth" / "storage_state.json"
-    urls_file = job_dir / "input" / "urls.txt"
     logs_dir = job_dir / "logs"
     logs_dir.mkdir(parents=True, exist_ok=True)
-    log_file = logs_dir / log_name
+    log_path = logs_dir / log_name
 
-    if not urls_file.exists():
-        raise FileNotFoundError(f"Missing input URLs file: {urls_file}")
-    if not storage_state.exists():
+    if require_storage_state and not storage_state.exists():
         raise FileNotFoundError(f"Missing authenticated storage state: {storage_state}")
 
-    runner_dir = Path(__file__).resolve().parent.parent / "tool_runners" / runner_dir_name
+    env = os.environ.copy()
+    if storage_state.exists():
+        env["STORAGE_STATE_PATH"] = str(storage_state)
+    else:
+        env.pop("STORAGE_STATE_PATH", None)
 
-    with log_file.open("w", encoding="utf-8") as fh:
-        subprocess.run(["npm", "install"], cwd=runner_dir, check=True, stdout=fh, stderr=subprocess.STDOUT)
-        subprocess.run(["node", "--max-old-space-size=8192", "--expose-gc", node_script, str(job_dir.resolve())], cwd=runner_dir, check=True, stdout=fh, stderr=subprocess.STDOUT)
+    auth_service_dir = Path(__file__).resolve().parents[1]
+    runner_dir = auth_service_dir / "tool_runners" / runner_dir_name
+
+    if not runner_dir.exists():
+        raise FileNotFoundError(f"Runner directory not found: {runner_dir}")
+
+    script_path = runner_dir / node_script
+    if not script_path.exists():
+        raise FileNotFoundError(f"Runner script not found: {script_path}")
+
+    with log_path.open("a", encoding="utf-8") as fh:
+        subprocess.run(
+            ["node", node_script, str(job_dir)],
+            cwd=runner_dir,
+            check=check,
+            stdout=fh,
+            stderr=subprocess.STDOUT,
+            env=env,
+        )

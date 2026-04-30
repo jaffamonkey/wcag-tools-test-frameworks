@@ -743,9 +743,9 @@ find /Users/user/code/github/wcag-tools-test-frameworks/auth_service -name "*.db
 ```
 Then inspect the stuck row:
 ```
-sqlite3 /path/to/your.db "select id,status,error_message from jobs where id='practice-expandtesting-com-20260428-213755';"
+sqlite3 /path/to/your.db "select id,status,error_message from jobs where id='aaaaaaaaaaaaaaaaaaaaaaaaaaa-20260429-170726';"
 ```
 And update it:
 ```
-sqlite3 /path/to/your.db "update jobs set status='failed', error_message='Interrupted during IBM run after auth; process no longer running' where id='practice-expandtesting-com-20260428-213755';"
+sqlite3 /path/to/your.db "update jobs set status='failed', error_message='Interrupted during IBM run after auth; process no longer running' where id='aa-noauth-20260429-201204';"
 ```

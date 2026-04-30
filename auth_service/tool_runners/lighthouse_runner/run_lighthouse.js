@@ -25,10 +25,6 @@ function ensureJob(jobDir, toolDir) {
     throw new Error(`urls.txt not found: ${urlsPath}`);
   }
 
-  if (!fs.existsSync(storageStatePath)) {
-    throw new Error(`storage_state.json not found: ${storageStatePath}`);
-  }
-
   const urls = fs
     .readFileSync(urlsPath, 'utf-8')
     .split(/\r?\n/)
@@ -53,7 +49,10 @@ async function main() {
 
   fs.mkdirSync(userDataDir, { recursive: true });
 
-  const storageState = JSON.parse(fs.readFileSync(storageStatePath, 'utf-8'));
+  const hasStorageState = storageStatePath && fs.existsSync(storageStatePath);
+  const storageState = hasStorageState
+    ? JSON.parse(fs.readFileSync(storageStatePath, 'utf-8'))
+    : null;
 
   const context = await chromium.launchPersistentContext(userDataDir, {
     headless: true,
@@ -63,8 +62,13 @@ async function main() {
   try {
     const page = context.pages()[0] ?? (await context.newPage());
 
-    if (storageState.cookies?.length) {
-      await context.addCookies(storageState.cookies);
+    if (hasStorageState) {
+      console.log(`Lighthouse using storage state: ${storageStatePath}`);
+      if (storageState.cookies?.length) {
+        await context.addCookies(storageState.cookies);
+      }
+    } else {
+      console.log('Lighthouse running without storage state for public job');
     }
 
     const failures = [];
@@ -76,14 +80,11 @@ async function main() {
         console.log(`Auditing Lighthouse accessibility: ${url}`);
 
         await page.goto(url, {
-          waitUntil: 'load',
+          waitUntil: 'domcontentloaded',
           timeout: 60000,
         });
 
-        // const htmlPath = path.join(reportsDir, `${base}.html`);
-        // const screenshotPath = path.join(reportsDir, `${base}.png`);
-        // fs.writeFileSync(htmlPath, await page.content(), 'utf8');
-        // await page.screenshot({ path: screenshotPath, fullPage: true });
+        await page.waitForTimeout(1500);
 
         const result = await lighthouse(
           url,
@@ -102,26 +103,6 @@ async function main() {
 
         const reportPath = path.join(reportsDir, `${base}.json`);
         fs.writeFileSync(reportPath, result.report, 'utf8');
-
-        // const metaPath = path.join(reportsDir, `${base}.meta.json`);
-        // fs.writeFileSync(
-        //   metaPath,
-        //   JSON.stringify(
-        //     {
-        //       tool: 'lighthouse',
-        //       url,
-        //       scanned_at: new Date().toISOString(),
-        //       accessibility_score: Math.round(
-        //         (result.lhr.categories.accessibility?.score ?? 0) * 100
-        //       ),
-        //       html_path: path.basename(htmlPath),
-        //       screenshot_path: path.basename(screenshotPath),
-        //     },
-        //     null,
-        //     2
-        //   ),
-        //   'utf8'
-        // );
 
         console.log(`Saved Lighthouse report: ${reportPath}`);
       } catch (error) {

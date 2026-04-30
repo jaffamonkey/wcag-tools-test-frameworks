@@ -17,21 +17,33 @@ fs.mkdirSync(reportDir, { recursive: true });
 if (!fs.existsSync(urlsFile)) {
   throw new Error(`urls.txt not found: ${urlsFile}`);
 }
-if (!fs.existsSync(storageStateFile)) {
-  throw new Error(`storage_state.json not found: ${storageStateFile}`);
+
+const hasStorageState = fs.existsSync(storageStateFile);
+
+if (hasStorageState) {
+  console.log(`UUV using storage state: ${storageStateFile}`);
+} else {
+  console.log('UUV running without storage state for public job');
+}
+
+const env = {
+  ...process.env,
+  JOB_DIR: resolvedJobDir,
+  URLS_FILE: urlsFile,
+  REPORT_DIR: reportDir,
+};
+
+if (hasStorageState) {
+  env.STORAGE_STATE_FILE = storageStateFile;
+} else {
+  delete env.STORAGE_STATE_FILE;
 }
 
 const result = spawnSync(
   process.platform === 'win32' ? 'npx.cmd' : 'npx',
   ['cucumber-js', '--config', 'cucumber.cjs'],
   {
-    env: {
-      ...process.env,
-      JOB_DIR: resolvedJobDir,
-      URLS_FILE: urlsFile,
-      STORAGE_STATE_FILE: storageStateFile,
-      REPORT_DIR: reportDir,
-    },
+    env,
     encoding: 'utf-8',
   }
 );

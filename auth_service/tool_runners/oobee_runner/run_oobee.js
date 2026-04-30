@@ -4,6 +4,17 @@ const fs = require('fs');
 const path = require('path');
 const { safeSlug, ensureJob } = require('../common/job_utils.cjs');
 
+function buildContextOptions(storageStatePath) {
+  const options = {};
+  if (storageStatePath && fs.existsSync(storageStatePath)) {
+    options.storageState = storageStatePath;
+    console.log(`Oobee using storage state: ${storageStatePath}`);
+  } else {
+    console.log('Oobee running without storage state for public job');
+  }
+  return options;
+}
+
 (async () => {
   const jobDir = process.argv[2];
   if (!jobDir) {
@@ -15,12 +26,17 @@ const { safeSlug, ensureJob } = require('../common/job_utils.cjs');
   const browser = await chromium.launch({ headless: true });
 
   for (const url of urls) {
-    const context = await browser.newContext({ storageState: storageStatePath });
+    const context = await browser.newContext(buildContextOptions(storageStatePath));
     const page = await context.newPage();
 
     try {
       console.log(`Navigating to: ${url}`);
-      await page.goto(url, { waitUntil: 'networkidle', timeout: 120000 });
+      await page.goto(url, {
+        waitUntil: 'domcontentloaded',
+        timeout: 120000
+      });
+
+      await page.waitForTimeout(1500);
 
       console.log('Scanning with Oobee...');
 
@@ -41,13 +57,8 @@ const { safeSlug, ensureJob } = require('../common/job_utils.cjs');
 
       const base = safeSlug(url);
       const outputPath = path.join(reportsDir, `${base}.json`);
-      // const htmlPath = path.join(reportsDir, `${base}.html`);
-      // const screenshotPath = path.join(reportsDir, `${base}.png`);
 
       fs.writeFileSync(outputPath, JSON.stringify(scanResults, null, 2), 'utf8');
-      // fs.writeFileSync(htmlPath, await page.content(), 'utf8');
-      // await page.screenshot({ path: screenshotPath, fullPage: true });
-
       console.log(`Saved results to: ${outputPath}`);
     } catch (error) {
       const errorPath = path.join(reportsDir, `${safeSlug(url)}.json`);

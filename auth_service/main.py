@@ -422,6 +422,7 @@ https://example.com/contact"></textarea>
                 <label class="tool-item"><input type="checkbox" name="tools" value="ibm" checked /> ibm</label>
                 <label class="tool-item"><input type="checkbox" name="tools" value="uuv" checked /> uuv</label>
                 <label class="tool-item"><input type="checkbox" name="tools" value="pa11y" checked /> pa11y</label>
+                <label class="tool-item"><input type="checkbox" name="tools" value="axe-scan" /> axe-scan</label>
               </div>
             </div>
 
