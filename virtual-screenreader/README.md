@@ -1,181 +1,51 @@
-# Screen Reader Snapshot Tests (Guidepup Virtual Screen Reader)
+# Virtual Screenreader (Playwright runner)
 
-This repo contains two Jest utilities that generate **deterministic screen-reader traversal logs** using **@guidepup/virtual-screen-reader**:
+This version replaces the Jest harness with a Playwright-based runner so it can:
 
-- **Fixtures runner**: loads static HTML files from `fixtures/` and writes a JSON log per file.  
-- **URL runner**: fetches HTML from URLs listed in `urls.json` and writes a JSON log per page.
+- use logged-in browser state from Playwright `storageState`
+- load real pages after client-side rendering
+- stay in sync with the rest of the accessibility job pipeline
+- write one JSON transcript per page plus a manifest
 
-Outputs are written into `./results/`.
-
----
-
-## Install (Yarn)
+## Install
 
 ```bash
-yarn install
+npm install
+npx playwright install chromium
 ```
 
-If you’re adding deps to a fresh repo:
+## Run
+
+Public pages:
 
 ```bash
-yarn add -D jest jsdom @guidepup/virtual-screen-reader
+node run_virtual_screenreader.js /path/to/job_dir
 ```
 
-> If you’re on Windows (or want cross-platform env vars in scripts), also add:
-```bash
-yarn add -D cross-env
-```
-
----
-
-## Folder layout
-
-```
-.
-├─ fixtures/
-│  ├─ card.html
-│  └─ ...
-├─ results/
-│  ├─ card.json
-│  ├─ card.items.json
-│  └─ ...
-├─ urls.json
-├─ screenreader.snippet.test.js
-└─ scrapefromurl.test.js
-```
-
----
-
-## 1) Fixtures runner (static HTML)
-
-**File:** `screenreader.snippet.test.js`
-
-This test:
-
-- Reads all `.html` files in `./fixtures`
-- Loads them into jsdom (scripts are stripped)
-- Traverses the document using the virtual cursor
-- Writes a JSON log to `./results/<fixtureName>.json`
-
-### Logging mode switch (`GUIDEPUP_LOG_MODE`)
-
-The fixtures runner supports three output modes:
-
-- `spoken` (default) → writes **spokenPhraseLog** to `results/<name>.json`
-- `item` → writes **itemTextLog** to `results/<name>.json` (reuses the same filename)
-- `both` → writes:
-  - `results/<name>.json` (spokenPhraseLog)
-  - `results/<name>.items.json` (itemTextLog)
-
-Run examples:
+Authenticated pages:
 
 ```bash
-# default: spokenPhraseLog -> results/<name>.json
-yarn jest screenreader.snippet.test.js
-
-# itemTextLog -> results/<name>.json
-GUIDEPUP_LOG_MODE=item yarn jest screenreader.snippet.test.js
-
-# both -> results/<name>.json and results/<name>.items.json
-GUIDEPUP_LOG_MODE=both yarn jest screenreader.snippet.test.js
+STORAGE_STATE_PATH=/path/to/storage_state.json node run_virtual_screenreader.js /path/to/job_dir
 ```
 
----
+The runner expects:
 
-## 2) URL runner (scrape from URL list)
+- `<job_dir>/input/urls.txt`
+- optional auth state at `STORAGE_STATE_PATH`
 
-**File:** `scrapefromurl.test.js`  
-**Config:** `urls.json`
+Outputs are written to:
 
-This test:
-
-- Reads `urls.json`
-- Fetches each URL (supports redirects + gzip/deflate)
-- Loads HTML into jsdom (scripts are stripped)
-- Traverses the page with the virtual cursor
-- Writes a JSON log to `./results/<pagename>.json`
-
-### `urls.json` format
-
-```json
-[
-  { "url": "https://example.com", "pagename": "Home" },
-  { "url": "https://example.com/about", "pagename": "About" }
-]
-```
-
-Run:
-
-```bash
-yarn jest scrapefromurl.test.js
-```
-
-> Note: the URL runner currently outputs **spokenPhraseLog only**.
-
----
-
-## Results
-
-All outputs are JSON arrays written under `./results/`:
-
-- `spokenPhraseLog` (virtual SR announcements)
-- `itemTextLog` (text of the item under the virtual cursor)
-
-These logs are designed to be easy to diff in PRs, and work well as “accessibility snapshots”.
-
----
-
-## Suggested `package.json` scripts
-
-Add something like this under `"scripts"` in your existing `package.json`:
-
-### Option A: macOS/Linux (env vars inline)
-
-```json
-{
-  "scripts": {
-    "sr:fixtures": "jest screenreader.snippet.test.js",
-    "sr:fixtures:item": "GUIDEPUP_LOG_MODE=item jest screenreader.snippet.test.js",
-    "sr:fixtures:both": "GUIDEPUP_LOG_MODE=both jest screenreader.snippet.test.js",
-    "sr:urls": "jest scrapefromurl.test.js"
-  }
-}
-```
-
-Run:
-
-```bash
-yarn sr:fixtures
-yarn sr:fixtures:item
-yarn sr:fixtures:both
-yarn sr:urls
-```
-
-### Option B: cross-platform (recommended if Windows is in the mix)
-
-Requires `cross-env`:
-
-```bash
-yarn add -D cross-env
-```
-
-Then:
-
-```json
-{
-  "scripts": {
-    "sr:fixtures": "jest screenreader.snippet.test.js",
-    "sr:fixtures:item": "cross-env GUIDEPUP_LOG_MODE=item jest screenreader.snippet.test.js",
-    "sr:fixtures:both": "cross-env GUIDEPUP_LOG_MODE=both jest screenreader.snippet.test.js",
-    "sr:urls": "jest scrapefromurl.test.js"
-  }
-}
-```
-
----
+- `<job_dir>/reports/virtual-screenreader/*.json`
+- `<job_dir>/reports/virtual-screenreader/manifest.json`
 
 ## Notes
 
-- Both runners strip `<script>` tags to keep jsdom stable and avoid flaky results.
-- Traversal includes caps/guards to avoid infinite loops on pages with cyclical focus.
-- The fixtures runner prefers traversing a dialog container (if present) before falling back to `document.body` to reduce wrap/cycle behavior.
+This keeps `@guidepup/virtual-screen-reader` for transcript generation, but switches page loading/navigation to Playwright.
+The flow is:
+
+1. Open the page in Playwright
+2. Wait for the rendered DOM
+3. Read the final HTML via `page.content()`
+4. Load that HTML into JSDOM
+5. Run Guidepup virtual screenreader against the JSDOM body
+6. Save transcript lines as JSON
