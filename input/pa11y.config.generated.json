@@ -1,0 +1,41 @@
+{
+  "defaults": {
+    "chromeLaunchConfig": {
+      "args": [
+        "--disable-dev-shm-usage",
+        "--no-sandbox",
+        "--disable-gpu"
+      ],
+      "ignoreHTTPSErrors": true,
+      "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+    },
+    "includeWarnings": true,
+    "threshold": 1,
+    "timeout": 60000,
+    "wait": 10000,
+    "concurrency": 1,
+    "standard": "WCAG2AA",
+    "runners": [
+      "htmlcs"
+    ],
+    "reporters": [
+      "cli",
+      [
+        "./custom-reporter.js",
+        {
+          "dir": "/Users/user/code/github/tool_runner/reports/pa11y-htmlcs"
+        }
+      ]
+    ]
+  },
+  "urls": [
+    {
+      "url": "https://practicetestautomation.com/logged-in-successfully/",
+      "headers": {
+        "Cookie": "nfd-enable-cf-opt=63a6825d27cab0f204d3b602"
+      }
+    },
+    "https://practice.expandtesting.com",
+    "https://practice.expandtesting.com/tips"
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "documentTitle": "Logged In Successfully | Practice Test Automation",
+  "pageUrl": "https://practicetestautomation.com/logged-in-successfully/",
+  "issues": [
+    {
+      "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.Button.Name",
+      "type": "error",
+      "typeCode": 1,
+      "message": "This button element does not have a name available to an accessibility API. Valid names are: title , element content, aria-label , aria-labelledby .",
+      "context": "<button>\n\t\t\t\t\t\t\t\t\t<svg width=\"28px\" hei...</button>",
+      "selector": "#close-mobile-menu > button",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.H42",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Heading markup should be used if this content is intended as a heading.",
+      "context": "<p class=\"has-text-align-center wp-block-paragraph\"><strong>Congratulations student...</p>",
+      "selector": "#loop-container > div > article > div:nth-child(2) > p:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.FGColour",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.",
+      "context": "<a class=\"wp-block-button__link has-text-color has-background has-very-dark-gray-background-color\" href=\"https://practicetestautomation.com/practice-test-login/\" style=\"color:#ffffff\">Log out</a>",
+      "selector": "#loop-container > div > article > div:nth-child(2) > div > div > div > a",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+      "context": "<span>\n            © Copyright 2020  ...</span>",
+      "selector": "#site-footer > div > span",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+      "context": "<a href=\"https://practicetestautomation.com/\">Practice Test Automation.</a>",
+      "selector": "#site-footer > div > span > a:nth-child(1)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Abs",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "This element is absolutely positioned and the background color can not be determined. Ensure the contrast ratio between the text and all covered parts of the background are at least 4.5:1.",
+      "context": "<a href=\"https://practicetestautomation.com/privacy-policy/\">Privacy Policy</a>",
+      "selector": "#site-footer > div > span > a:nth-child(2)",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H67.2",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Img element is marked so that it is ignored by Assistive Technology.",
+      "context": "<img src=\"https://pixel.wp.com/g.gif?v=ext&amp;blog=167878209&amp;post=257&amp;tz=-4&amp;srv=practicetestautomation.com&amp;j=1%3A15.8&amp;host=practicetestautomation.com&amp;ref=&amp;fcp=872&amp;rand=0.615340380880903\" alt=\"\" width=\"6\" height=\"5\" id...",
+      "selector": "#wpstats",
+      "runner": "htmlcs",
+      "runnerExtras": {}
+    },
+    {
+      "code": "landmark-unique",
+      "type": "warning",
+      "typeCode": 2,
+      "message": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination (https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=axeAPI)",
+      "context": "<div id=\"menu-secondary\" class=\"menu-container menu-secondary\" role=\"navigation\">\n    </div>",
+      "selector": "#menu-secondary",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure landmarks are unique",
+        "impact": "moderate",
+        "needsFurtherReview": false,
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=axeAPI"
+      }
+    },
+    {
+      "code": "color-contrast",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+      "context": "<a href=\"https://practicetestautomation.com/\">Home</a>",
+      "selector": "#menu-item-43 > a",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "impact": "serious",
+        "needsFurtherReview": true,
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+      }
+    },
+    {
+      "code": "color-contrast",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+      "context": "<a href=\"https://practicetestautomation.com/practice/\">Practice</a>",
+      "selector": "#menu-item-20 > a",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "impact": "serious",
+        "needsFurtherReview": true,
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+      }
+    },
+    {
+      "code": "color-contrast",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+      "context": "<a href=\"https://practicetestautomation.com/courses/\">Courses</a>",
+      "selector": "#menu-item-21 > a",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "impact": "serious",
+        "needsFurtherReview": true,
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+      }
+    },
+    {
+      "code": "color-contrast",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+      "context": "<a href=\"https://practicetestautomation.com/blog/\">Blog</a>",
+      "selector": "#menu-item-19 > a",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "impact": "serious",
+        "needsFurtherReview": true,
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+      }
+    },
+    {
+      "code": "color-contrast",
+      "type": "error",
+      "typeCode": 1,
+      "message": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+      "context": "<a href=\"https://practicetestautomation.com/contact/\">Contact</a>",
+      "selector": "#menu-item-18 > a",
+      "runner": "axe",
+      "runnerExtras": {
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "impact": "serious",
+        "needsFurtherReview": true,
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI"
+      }
+    }
+  ]
+}

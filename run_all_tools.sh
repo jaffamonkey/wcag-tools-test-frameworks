@@ -4,6 +4,9 @@ set -uo pipefail
 # Run all accessibility tool runners against one urls.txt file and collect output in:
 #   ./reports/<tool-name>/
 #
+# Statuses describe whether the runner completed and produced artefacts.
+# They do NOT mean the tested page passed accessibility checks.
+#
 # Usage:
 #   ./run_all_tools.sh [path/to/urls.txt]
 #
@@ -15,6 +18,7 @@ set -uo pipefail
 #   INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
 #   CLEAN_REPORTS=1 ./run_all_tools.sh urls.txt
 #   STOP_ON_FAIL=1 ./run_all_tools.sh urls.txt
+#   PLAYWRIGHT_INSTALL_CHROME=1 ./run_all_tools.sh urls.txt
 #   PLAYWRIGHT_BROWSER_CHANNEL=chrome ./run_all_tools.sh urls.txt
 #   CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ./run_all_tools.sh urls.txt
 
@@ -98,6 +102,91 @@ count_json_files() {
   fi
 }
 
+count_report_files() {
+  local dir="$1"
+  if [[ -d "$dir" ]]; then
+    find "$dir" -type f | wc -l | tr -d ' '
+  else
+    echo "0"
+  fi
+}
+
+has_report_artifacts() {
+  local dir="$1"
+  [[ "$(count_report_files "$dir")" -gt 0 ]]
+}
+
+# Some CLI accessibility tools use non-zero exit codes to mean
+# "accessibility findings were reported" rather than "the runner crashed".
+# Pa11y conventionally exits 2 when issues are found.
+is_expected_findings_exit() {
+  local tool="$1"
+  local exit_code="$2"
+
+  case "$tool:$exit_code" in
+    pa11y:2|pa11y-axe:2|pa11y-htmlcs:2)
+      return 0
+      ;;
+    *)
+      return 1
+      ;;
+  esac
+}
+
+# In this project, a successful run means the tool executed and generated
+# reports/artefacts. Accessibility findings are expected and are not treated
+# as failed tool runs.
+is_failed_status() {
+  local status="$1"
+  case "$status" in
+    failed|skipped)
+      return 0
+      ;;
+    *)
+      return 1
+      ;;
+  esac
+}
+
+run_login_if_needed() {
+  local auth_dir="$JOB_DIR/auth"
+  local login_script="$auth_dir/login_and_save_state.js"
+  local login_config="$auth_dir/login_config.json"
+  local storage_state="$auth_dir/storage_state.json"
+
+  if [[ "${RUN_LOGIN:-0}" != "1" ]]; then
+    return 0
+  fi
+
+  if [[ ! -f "$login_config" ]]; then
+    echo "RUN_LOGIN=1 but no login config found at: $login_config" >&2
+    return 1
+  fi
+
+  if [[ ! -f "$login_script" ]]; then
+    echo "RUN_LOGIN=1 but no login script found at: $login_script" >&2
+    return 1
+  fi
+
+  echo "Running login bootstrap..."
+  (
+    cd "$auth_dir" || exit 1
+    if [[ ! -d node_modules ]]; then
+      echo "Installing auth dependencies..."
+      npm install || exit 1
+      npx playwright install chromium || exit 1
+    fi
+    node "$login_script" "$JOB_DIR" || exit 1
+  ) || return 1
+
+  if [[ ! -f "$storage_state" ]]; then
+    echo "Login completed but no storage state was created: $storage_state" >&2
+    return 1
+  fi
+
+  echo "Login bootstrap complete: $storage_state"
+}
+
 write_summary_line() {
   local tool="$1"
   local status="$2"
@@ -107,15 +196,16 @@ write_summary_line() {
   local report_dir="$6"
   local log_file="$7"
   local notes="$8"
-  local json_count
+  local json_count file_count
   json_count="$(count_json_files "$report_dir")"
+  file_count="$(count_report_files "$report_dir")"
 
-  python3 - "$SUMMARY_TMP" "$tool" "$status" "$exit_code" "$started" "$ended" "$report_dir" "$log_file" "$json_count" "$notes" <<'PY'
+  python3 - "$SUMMARY_TMP" "$tool" "$status" "$exit_code" "$started" "$ended" "$report_dir" "$log_file" "$json_count" "$file_count" "$notes" <<'PY'
 import json
 import sys
 from pathlib import Path
 
-summary_tmp, tool, status, exit_code, started, ended, report_dir, log_file, json_count, notes = sys.argv[1:]
+summary_tmp, tool, status, exit_code, started, ended, report_dir, log_file, json_count, file_count, notes = sys.argv[1:]
 record = {
     "tool": tool,
     "status": status,
@@ -125,6 +215,8 @@ record = {
     "report_dir": report_dir,
     "log_file": log_file,
     "json_reports": int(json_count),
+    "report_files": int(file_count),
+    "generated_reports": int(file_count) > 0,
 }
 if notes:
     record["notes"] = notes
@@ -149,10 +241,14 @@ if src.exists():
             if line:
                 records.append(json.loads(line))
 
+failed = [r for r in records if r.get("status") in {"failed", "skipped"}]
 payload = {
     "created_at": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
+    "status_meaning": "completed means the tool runner executed and generated reports/artifacts; it does not mean the page passed accessibility checks",
     "tools_run": len(records),
-    "failed": [r for r in records if r.get("status") != "ok"],
+    "tools_completed": len(records) - len(failed),
+    "tools_failed_or_skipped": len(failed),
+    "failed": failed,
     "tools": records,
 }
 dst.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -162,22 +258,54 @@ PY
 install_deps_if_needed() {
   local runner_dir="$1"
   local package_json="$runner_dir/package.json"
-  if [[ "${INSTALL_DEPS:-0}" != "1" || ! -f "$package_json" ]]; then
+  local runner_label="${runner_dir#$SCRIPT_DIR/}"
+
+  if [[ ! -f "$package_json" ]]; then
     return 0
   fi
 
-  echo "Installing dependencies in ${runner_dir#$SCRIPT_DIR/}"
+  # INSTALL_DEPS=1 forces an install. Otherwise, install automatically when
+  # node_modules is missing, because the runners require their local packages
+  # even when using an externally installed Chrome browser.
+  if [[ "${INSTALL_DEPS:-0}" != "1" && -d "$runner_dir/node_modules" ]]; then
+    return 0
+  fi
+
+  echo "Installing Node dependencies in $runner_label"
   (
-    cd "$runner_dir" && \
-    export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 && \
-    export PUPPETEER_SKIP_DOWNLOAD=1 && \
+    cd "$runner_dir" || exit 1
+
+    # This skips the heavy bundled-browser downloads during npm install.
+    # The Playwright package itself is still installed, which is required for
+    # require('playwright') / import { chromium } from 'playwright'.
+    export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+    export PUPPETEER_SKIP_DOWNLOAD=1
+
     if [[ -f package-lock.json ]]; then
-      npm ci
+      npm ci || {
+        echo "npm ci failed in $runner_label; falling back to npm install so package-lock/package.json drift does not block the run."
+        npm install
+      }
     else
       npm install
     fi
+
+    # Optional, but useful for a clean machine: install Playwright's Chrome
+    # browser channel instead of the usual bundled Chromium browser.
+    # Enabled automatically when INSTALL_DEPS=1 unless disabled explicitly.
+    if grep -q '"playwright"\|"@playwright/test"' package.json; then
+      if [[ "${PLAYWRIGHT_INSTALL_CHROME:-${INSTALL_DEPS:-0}}" == "1" ]]; then
+        echo "Installing Playwright Chrome channel in $runner_label"
+        PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD= PUPPETEER_SKIP_DOWNLOAD= npx playwright install chrome
+      fi
+    fi
   )
 }
+
+if ! run_login_if_needed; then
+  echo "Login bootstrap failed" >&2
+  exit 1
+fi
 
 run_node_tool() {
   local tool="$1"
@@ -190,6 +318,7 @@ run_node_tool() {
   local log_file="$LOGS_DIR/${tool}.log"
   local started ended exit_code status notes
 
+  rm -rf "$report_dir"
   mkdir -p "$report_dir"
   started="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
@@ -200,35 +329,59 @@ run_node_tool() {
     return 127
   fi
 
-  install_deps_if_needed "$runner_dir" >"$log_file" 2>&1 || true
+  if ! install_deps_if_needed "$runner_dir" >"$log_file" 2>&1; then
+    exit_code=$?
+    ended="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    echo "[$tool] failed during dependency install. Log: $log_file"
+    write_summary_line "$tool" "failed" "$exit_code" "$started" "$ended" "$report_dir" "$log_file" "Dependency install failed; see log file"
+    if [[ "${STOP_ON_FAIL:-0}" == "1" ]]; then
+      finalise_summary
+      exit "$exit_code"
+    fi
+    return "$exit_code"
+  fi
 
   echo "[$tool] running..."
   (
     cd "$runner_dir" && \
     STORAGE_STATE_PATH="$JOB_DIR/auth/storage_state.json" \
+    PLAYWRIGHT_BROWSER_CHANNEL="${PLAYWRIGHT_BROWSER_CHANNEL:-chrome}" \
+    CHROME_PATH="${CHROME_PATH:-}" \
     bash -lc "$command \"$JOB_DIR\""
   ) >>"$log_file" 2>&1
   exit_code=$?
   ended="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
   if [[ "$exit_code" -eq 0 ]]; then
-    status="ok"
-    notes=""
-    echo "[$tool] ok"
+    status="completed"
+    notes="Runner completed and generated its normal output. This does not mean the scanned page passed accessibility checks."
+    echo "[$tool] completed"
+  elif is_expected_findings_exit "$tool" "$exit_code"; then
+    status="completed_with_findings"
+    notes="Tool exited with code $exit_code, which usually means accessibility findings were reported rather than the runner crashing. See log file and JSON reports."
+    echo "[$tool] completed with findings (exit code $exit_code). Log: $log_file"
+  elif has_report_artifacts "$report_dir"; then
+    status="completed_nonzero"
+    notes="Tool exited with code $exit_code but report artefacts were generated. Treat as a completed scan with non-zero tool exit; inspect log if needed."
+    echo "[$tool] completed with non-zero exit code $exit_code; reports were generated. Log: $log_file"
   else
     status="failed"
-    notes="See log file"
-    echo "[$tool] failed with exit code $exit_code. Log: $log_file"
+    notes="No report artefacts were generated. See log file."
+    echo "[$tool] failed with exit code $exit_code and no reports generated. Log: $log_file"
   fi
 
   write_summary_line "$tool" "$status" "$exit_code" "$started" "$ended" "$report_dir" "$log_file" "$notes"
 
-  if [[ "$exit_code" -ne 0 && "${STOP_ON_FAIL:-0}" == "1" ]]; then
+  if is_failed_status "$status" && [[ "${STOP_ON_FAIL:-0}" == "1" ]]; then
     finalise_summary
     exit "$exit_code"
   fi
 
-  return "$exit_code"
+  if is_failed_status "$status"; then
+    return "$exit_code"
+  fi
+
+  return 0
 }
 
 run_axe_scan() {
@@ -238,6 +391,7 @@ run_axe_scan() {
   local log_file="$LOGS_DIR/${tool}.log"
   local started ended exit_code status notes
 
+  rm -rf "$report_dir"
   mkdir -p "$report_dir"
   started="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
@@ -269,23 +423,31 @@ run_axe_scan() {
   ended="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
   if [[ "$exit_code" -eq 0 ]]; then
-    status="ok"
-    notes=""
-    echo "[$tool] ok"
+    status="completed"
+    notes="Runner completed and generated its normal output. This does not mean the scanned page passed accessibility checks."
+    echo "[$tool] completed"
+  elif has_report_artifacts "$report_dir"; then
+    status="completed_nonzero"
+    notes="Tool exited with code $exit_code but report artefacts were generated. Treat as a completed scan with non-zero tool exit; inspect log if needed."
+    echo "[$tool] completed with non-zero exit code $exit_code; reports were generated. Log: $log_file"
   else
     status="failed"
-    notes="See log file"
-    echo "[$tool] failed with exit code $exit_code. Log: $log_file"
+    notes="No report artefacts were generated. See log file."
+    echo "[$tool] failed with exit code $exit_code and no reports generated. Log: $log_file"
   fi
 
   write_summary_line "$tool" "$status" "$exit_code" "$started" "$ended" "$report_dir" "$log_file" "$notes"
 
-  if [[ "$exit_code" -ne 0 && "${STOP_ON_FAIL:-0}" == "1" ]]; then
+  if is_failed_status "$status" && [[ "${STOP_ON_FAIL:-0}" == "1" ]]; then
     finalise_summary
     exit "$exit_code"
   fi
 
-  return "$exit_code"
+  if is_failed_status "$status"; then
+    return "$exit_code"
+  fi
+
+  return 0
 }
 
 run_screenshots() {
@@ -295,15 +457,28 @@ run_screenshots() {
   local log_file="$LOGS_DIR/${tool}.log"
   local started ended exit_code status notes
 
+  rm -rf "$report_dir"
   mkdir -p "$report_dir"
   started="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
-  install_deps_if_needed "$runner_dir" >"$log_file" 2>&1 || true
+  if ! install_deps_if_needed "$runner_dir" >"$log_file" 2>&1; then
+    exit_code=$?
+    ended="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    echo "[$tool] failed during dependency install. Log: $log_file"
+    write_summary_line "$tool" "failed" "$exit_code" "$started" "$ended" "$report_dir" "$log_file" "Dependency install failed; see log file"
+    if [[ "${STOP_ON_FAIL:-0}" == "1" ]]; then
+      finalise_summary
+      exit "$exit_code"
+    fi
+    return "$exit_code"
+  fi
 
   echo "[$tool] running..."
   (
     cd "$runner_dir" && \
     STORAGE_STATE_PATH="$JOB_DIR/auth/storage_state.json" \
+    PLAYWRIGHT_BROWSER_CHANNEL="${PLAYWRIGHT_BROWSER_CHANNEL:-chrome}" \
+    CHROME_PATH="${CHROME_PATH:-}" \
     node run_screenshots.js "$JOB_DIR" && \
     rm -rf "$report_dir" && \
     mkdir -p "$report_dir" && \
@@ -313,23 +488,31 @@ run_screenshots() {
   ended="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
   if [[ "$exit_code" -eq 0 ]]; then
-    status="ok"
+    status="completed"
     notes="Screenshots are copied from ./screenshots into ./reports/screenshots for a single reports tree."
-    echo "[$tool] ok"
+    echo "[$tool] completed"
+  elif has_report_artifacts "$report_dir"; then
+    status="completed_nonzero"
+    notes="Screenshot runner exited with code $exit_code but screenshot artefacts were generated. Inspect log if needed."
+    echo "[$tool] completed with non-zero exit code $exit_code; screenshots were generated. Log: $log_file"
   else
     status="failed"
-    notes="See log file"
-    echo "[$tool] failed with exit code $exit_code. Log: $log_file"
+    notes="No screenshot artefacts were generated. See log file."
+    echo "[$tool] failed with exit code $exit_code and no screenshots generated. Log: $log_file"
   fi
 
   write_summary_line "$tool" "$status" "$exit_code" "$started" "$ended" "$report_dir" "$log_file" "$notes"
 
-  if [[ "$exit_code" -ne 0 && "${STOP_ON_FAIL:-0}" == "1" ]]; then
+  if is_failed_status "$status" && [[ "${STOP_ON_FAIL:-0}" == "1" ]]; then
     finalise_summary
     exit "$exit_code"
   fi
 
-  return "$exit_code"
+  if is_failed_status "$status"; then
+    return "$exit_code"
+  fi
+
+  return 0
 }
 
 run_tool_by_name() {
@@ -375,8 +558,9 @@ rm -f "$SUMMARY_TMP"
 
 echo "Summary: $SUMMARY_JSON"
 if [[ "$failures" -gt 0 ]]; then
-  echo "Completed with $failures failed/skipped tool(s). Check $LOGS_DIR and $SUMMARY_JSON."
+  echo "Completed with $failures tool runner failure(s)/skip(s). Check $LOGS_DIR and $SUMMARY_JSON."
   exit 1
 fi
 
-echo "Completed successfully."
+echo "Completed: all selected tool runners executed and generated their expected report artefacts."
+echo "Note: this does not mean the tested pages passed accessibility checks; inspect the JSON reports for findings."

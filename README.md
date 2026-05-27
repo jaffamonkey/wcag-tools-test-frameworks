@@ -4,6 +4,8 @@ A standalone collection of accessibility tool runners for scanning a list of URL
 
 This repo is intended to be the runner layer only: it runs the tools, captures their raw reports, screenshots, tab-order maps, and contrast data, then organises everything ready for later analysis.
 
+Important: a top-level `completed` status means the tool runner executed and generated reports or artefacts. It does **not** mean the scanned page passed accessibility checks. Accessibility findings are expected output.
+
 ## What it runs
 
 The top-level `run_all_tools.sh` script can run and collate output from:
@@ -86,9 +88,14 @@ From the repo root:
 
 ```bash
 chmod +x run_all_tools.sh
-INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
+INSTALL_DEPS=1 PLAYWRIGHT_INSTALL_CHROME=1 ./run_all_tools.sh urls.txt
 ```
 
+if you want to add login:
+
+```bash
+INSTALL_DEPS=1 PLAYWRIGHT_INSTALL_CHROME=1  RUN_LOGIN=1 ./run_all_tools.sh input/urls.txt
+```
 That will:
 
 1. copy `urls.txt` into `input/urls.txt`
@@ -118,15 +125,30 @@ Install dependencies before running:
 INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
 ```
 
-## Chrome rather than full Playwright install
+## Chrome rather than full Playwright Chromium install
 
-The runners are configured to use your installed Google Chrome by default. This avoids requiring a full `npx playwright install chromium` step for the standalone repo.
-
-The default Playwright channel is:
+The runners are configured to use the Chrome browser channel by default:
 
 ```bash
 PLAYWRIGHT_BROWSER_CHANNEL=chrome
 ```
+
+That means the repo does **not** need the usual full bundled-browser step:
+
+```bash
+npx playwright install chromium
+```
+
+However, the `playwright` **npm package** is still required by runners that do `require("playwright")`. Use this on a fresh checkout:
+
+```bash
+INSTALL_DEPS=1 PLAYWRIGHT_INSTALL_CHROME=1 ./run_all_tools.sh urls.txt
+```
+
+That does two separate things:
+
+1. installs each runner's Node dependencies, including the `playwright` package where needed;
+2. runs `npx playwright install chrome`, which installs/uses the Chrome channel rather than the bundled Chromium browser.
 
 For Pa11y/Puppeteer-based tools, the default Chrome path is inferred for macOS, Windows, and Linux. Override it when needed:
 
@@ -227,7 +249,20 @@ It includes:
 - report folder paths
 - log file paths
 - number of JSON reports found per tool
-- failed or skipped tools
+- number of JSON reports found per tool
+- total report files found per tool
+- whether reports or artefacts were generated
+- failed or skipped tool runners
+
+The run summary uses runner-focused statuses:
+
+| Status | Meaning |
+| --- | --- |
+| `completed` | The runner exited cleanly and generated its normal output. |
+| `completed_with_findings` | The runner used a non-zero exit code to indicate accessibility findings, but it still completed. Common for Pa11y exit code `2`. |
+| `completed_nonzero` | The runner exited non-zero, but report artefacts were generated, so the scan is treated as completed with a non-zero tool exit. Check the log if needed. |
+| `failed` | The runner did not generate report artefacts. Usually setup, dependency, browser, or script failure. |
+| `skipped` | The runner was unavailable, for example optional `axe-scan` was not installed. |
 
 This is useful for CI, debugging, and checking whether a run produced the expected report files.
 
@@ -317,7 +352,13 @@ Make the script executable:
 chmod +x run_all_tools.sh
 ```
 
-### A tool failed but the script continued
+### A tool shows accessibility findings
+
+That is expected. The orchestration script is concerned with whether the runner completed and produced reports, not whether the target page passed accessibility testing.
+
+For example, Pa11y can exit with code `2` when it finds issues. The script records that as `completed_with_findings`, not as a failed runner.
+
+### A runner failed but the script continued
 
 By default, the script keeps going so you can still get reports from the other tools.
 
@@ -328,7 +369,7 @@ reports/_run-summary.json
 reports/_logs/<tool-name>.log
 ```
 
-To stop on the first failure:
+To stop on the first genuine runner failure:
 
 ```bash
 STOP_ON_FAIL=1 ./run_all_tools.sh urls.txt
@@ -352,7 +393,15 @@ TOOLS="axe-core html-sniffer ibm lighthouse oobee pa11y pa11y-axe pa11y-htmlcs u
 
 ### Browser or Playwright errors
 
-This repo is set up to use installed Google Chrome rather than the full Playwright browser install.
+This repo is set up to use Chrome rather than the full Playwright bundled Chromium install.
+
+If you see `Cannot find module 'playwright'`, the browser is not the issue: the runner's Node dependencies have not been installed. Run:
+
+```bash
+INSTALL_DEPS=1 PLAYWRIGHT_INSTALL_CHROME=1 ./run_all_tools.sh urls.txt
+```
+
+This installs the npm dependencies and then runs `npx playwright install chrome` for the Chrome channel.
 
 On macOS, the default Chrome path is:
 
