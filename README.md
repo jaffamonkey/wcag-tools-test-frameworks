@@ -93,6 +93,28 @@ INSTALL_DEPS=1 PLAYWRIGHT_INSTALL_CHROME=1 ./run_all_tools.sh urls.txt
 
 if you want to add login:
 
+Add details to `auth/login_config.json`.  There is fallback intelligence to find login fields if not found by what is specificed in the login_config.json file.
+
+Example:
+
+```json
+{
+  "login_url": "https://practicetestautomation.com/practice-test-login/",
+  "username": "student",
+  "password": "Password123",
+  "success_url_contains": "/logged-in-successfully",
+  "success_selector": "",
+  "username_selector": "#username",
+  "password_selector": "#password",
+  "submit_selector": "#submit",
+  "pre_login_wait_ms": 1500,
+  "post_login_wait_ms": 3000
+}
+```
+
+
+Then run the tools with these flags:
+
 ```bash
 INSTALL_DEPS=1 PLAYWRIGHT_INSTALL_CHROME=1  RUN_LOGIN=1 ./run_all_tools.sh input/urls.txt
 ```
