@@ -15,6 +15,8 @@ set -uo pipefail
 #   INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
 #   CLEAN_REPORTS=1 ./run_all_tools.sh urls.txt
 #   STOP_ON_FAIL=1 ./run_all_tools.sh urls.txt
+#   PLAYWRIGHT_BROWSER_CHANNEL=chrome ./run_all_tools.sh urls.txt
+#   CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ./run_all_tools.sh urls.txt
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 JOB_DIR="$SCRIPT_DIR"
@@ -167,6 +169,8 @@ install_deps_if_needed() {
   echo "Installing dependencies in ${runner_dir#$SCRIPT_DIR/}"
   (
     cd "$runner_dir" && \
+    export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 && \
+    export PUPPETEER_SKIP_DOWNLOAD=1 && \
     if [[ -f package-lock.json ]]; then
       npm ci
     else

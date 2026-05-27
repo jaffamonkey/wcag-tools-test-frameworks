@@ -1,4 +1,10 @@
 import { chromium } from 'playwright';
+const browserChannel = process.env.PLAYWRIGHT_BROWSER_CHANNEL || 'chrome';
+function getBrowserLaunchOptions(extra = {}) {
+  return browserChannel
+    ? { channel: browserChannel, ...extra }
+    : { ...extra };
+}
 import lighthouse from 'lighthouse';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -79,7 +85,7 @@ async function runOneUrl(url, reportsDir, storageState) {
   let context;
 
   try {
-    context = await chromium.launchPersistentContext(userDataDir, {
+    context = await chromium.launchPersistentContext(userDataDir, getBrowserLaunchOptions({
       headless: true,
       args: [
         `--remote-debugging-port=${port}`,
@@ -87,7 +93,7 @@ async function runOneUrl(url, reportsDir, storageState) {
         '--no-default-browser-check',
         '--disable-dev-shm-usage',
       ],
-    });
+    }));
 
     const page = context.pages()[0] ?? (await context.newPage());
 

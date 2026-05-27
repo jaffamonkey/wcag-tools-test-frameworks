@@ -1,6 +1,12 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { chromium } = require('playwright');
+const browserChannel = process.env.PLAYWRIGHT_BROWSER_CHANNEL || 'chrome';
+function getBrowserLaunchOptions(extra = {}) {
+  return browserChannel
+    ? { channel: browserChannel, ...extra }
+    : { ...extra };
+}
 const { JSDOM } = require('jsdom');
 const { virtual } = require('@guidepup/virtual-screen-reader');
 
@@ -123,7 +129,7 @@ async function getVirtualScreenReaderLinesFromHtml(html) {
     fs.mkdirSync(reportsDir, { recursive: true });
 
     const urls = readUrls(urlsFile);
-    browser = await chromium.launch({ headless: true });
+    browser = await chromium.launch(getBrowserLaunchOptions({ headless: true }));
     const manifest = [];
 
     const contextOptions = {

@@ -45,10 +45,10 @@ You will need:
 - Bash
 - Node.js and npm
 - Python 3
-- Playwright browser dependencies for the runners that use Playwright
+- Google Chrome installed locally; Playwright-based runners are configured to use your installed Chrome rather than downloading the full Playwright browser bundle
 - Optional: the global `axe-scan` CLI if you want to run the `axe-scan` folder
 
-The script can install each runner's npm dependencies for you by setting `INSTALL_DEPS=1`.
+The script can install each runner's npm dependencies for you by setting `INSTALL_DEPS=1`. Browser downloads are skipped during dependency installation; the runners use local Chrome by default.
 
 ## URL input
 
@@ -116,6 +116,22 @@ Install dependencies before running:
 
 ```bash
 INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
+```
+
+## Chrome rather than full Playwright install
+
+The runners are configured to use your installed Google Chrome by default. This avoids requiring a full `npx playwright install chromium` step for the standalone repo.
+
+The default Playwright channel is:
+
+```bash
+PLAYWRIGHT_BROWSER_CHANNEL=chrome
+```
+
+For Pa11y/Puppeteer-based tools, the default Chrome path is inferred for macOS, Windows, and Linux. Override it when needed:
+
+```bash
+CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ./run_all_tools.sh urls.txt
 ```
 
 Clean old reports before running:
@@ -289,7 +305,7 @@ where a `package-lock.json` exists, otherwise:
 npm install
 ```
 
-Some packages may trigger Playwright browser installation through `postinstall` scripts.
+This repo version removes the local Playwright `postinstall` browser download hooks and sets `PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1` and `PUPPETEER_SKIP_DOWNLOAD=1` during `INSTALL_DEPS=1`, so dependency installation should not pull down full browser bundles.
 
 ## Troubleshooting
 
@@ -336,17 +352,33 @@ TOOLS="axe-core html-sniffer ibm lighthouse oobee pa11y pa11y-axe pa11y-htmlcs u
 
 ### Browser or Playwright errors
 
-Install dependencies using:
+This repo is set up to use installed Google Chrome rather than the full Playwright browser install.
 
-```bash
-INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
+On macOS, the default Chrome path is:
+
+```text
+/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
 ```
 
-If needed, install Playwright browsers manually inside the affected runner folder:
+On Linux, the default Chrome path for Pa11y/Puppeteer-based tools is:
+
+```text
+/usr/bin/google-chrome
+```
+
+If Chrome is installed somewhere else, pass it explicitly:
 
 ```bash
-npx playwright install chromium
+CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ./run_all_tools.sh urls.txt
 ```
+
+For Playwright-based tools, Chrome is selected with:
+
+```bash
+PLAYWRIGHT_BROWSER_CHANNEL=chrome ./run_all_tools.sh urls.txt
+```
+
+That is also the default. To deliberately go back to Playwright's bundled Chromium later, set `PLAYWRIGHT_BROWSER_CHANNEL=` and run the relevant Playwright install yourself.
 
 ### Old reports are still present
 

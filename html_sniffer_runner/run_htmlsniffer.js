@@ -1,4 +1,10 @@
 const { chromium } = require('playwright');
+const browserChannel = process.env.PLAYWRIGHT_BROWSER_CHANNEL || 'chrome';
+function getBrowserLaunchOptions(extra = {}) {
+  return browserChannel
+    ? { channel: browserChannel, ...extra }
+    : { ...extra };
+}
 const fs = require('fs');
 const path = require('path');
 const { safeSlug, ensureJob } = require('../common/job_utils.cjs');
@@ -36,7 +42,7 @@ function buildContextOptions(storageStatePath) {
 
   const { urls, storageStatePath, reportsDir } = ensureJob(jobDir, 'html-sniffer');
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch(getBrowserLaunchOptions({ headless: true }));
 
   const htmlcsPath = path.resolve(
     __dirname,

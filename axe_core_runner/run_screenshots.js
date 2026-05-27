@@ -1,6 +1,12 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { chromium } = require('playwright');
+const browserChannel = process.env.PLAYWRIGHT_BROWSER_CHANNEL || 'chrome';
+function getBrowserLaunchOptions(extra = {}) {
+  return browserChannel
+    ? { channel: browserChannel, ...extra }
+    : { ...extra };
+}
 
 function safeSlug(input) {
   return String(input || '')
@@ -185,7 +191,7 @@ async function settleForScreenshot(page) {
   fs.mkdirSync(screenshotsDir, { recursive: true });
 
   const urls = readUrls(urlsFile);
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch(getBrowserLaunchOptions({ headless: true }));
   const manifest = [];
 
   try {

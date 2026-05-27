@@ -11,6 +11,12 @@ const {
   setDefaultTimeout,
 } = require('@cucumber/cucumber');
 const { chromium } = require('playwright');
+const browserChannel = process.env.PLAYWRIGHT_BROWSER_CHANNEL || 'chrome';
+function getBrowserLaunchOptions(extra = {}) {
+  return browserChannel
+    ? { channel: browserChannel, ...extra }
+    : { ...extra };
+}
 const AxeBuilder = require('@axe-core/playwright').default;
 
 setDefaultTimeout(90 * 1000);
@@ -45,7 +51,7 @@ class CustomWorld {
 setWorldConstructor(CustomWorld);
 
 BeforeAll(async function () {
-  browser = await chromium.launch({ headless: true });
+  browser = await chromium.launch(getBrowserLaunchOptions({ headless: true }));
 });
 
 AfterAll(async function () {

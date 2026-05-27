@@ -1,4 +1,10 @@
 const { chromium } = require('playwright');
+const browserChannel = process.env.PLAYWRIGHT_BROWSER_CHANNEL || 'chrome';
+function getBrowserLaunchOptions(extra = {}) {
+  return browserChannel
+    ? { channel: browserChannel, ...extra }
+    : { ...extra };
+}
 const { scanPage } = require('@govtechsg/oobee');
 const fs = require('fs');
 const path = require('path');
@@ -23,7 +29,7 @@ function buildContextOptions(storageStatePath) {
 
   const { urls, storageStatePath, reportsDir } = ensureJob(jobDir, 'oobee');
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch(getBrowserLaunchOptions({ headless: true }));
 
   for (const url of urls) {
     const context = await browser.newContext(buildContextOptions(storageStatePath));

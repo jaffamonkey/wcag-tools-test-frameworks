@@ -1,4 +1,10 @@
 import { chromium } from 'playwright';
+const browserChannel = process.env.PLAYWRIGHT_BROWSER_CHANNEL || 'chrome';
+function getBrowserLaunchOptions(extra = {}) {
+  return browserChannel
+    ? { channel: browserChannel, ...extra }
+    : { ...extra };
+}
 import fs from 'node:fs';
 import path from 'node:path';
 import html2canvas from 'html2canvas';
@@ -227,7 +233,7 @@ async function main() {
   const hasStorageState = storageStatePath && fs.existsSync(storageStatePath);
 
   const manifest = [];
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch(getBrowserLaunchOptions({ headless: true }));
 
   try {
     for (const url of urls) {

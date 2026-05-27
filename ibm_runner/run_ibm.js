@@ -1,4 +1,10 @@
 // const { chromium } = require('playwright');
+const browserChannel = process.env.PLAYWRIGHT_BROWSER_CHANNEL || 'chrome';
+function getBrowserLaunchOptions(extra = {}) {
+  return browserChannel
+    ? { channel: browserChannel, ...extra }
+    : { ...extra };
+}
 // const aChecker = require('accessibility-checker');
 // const fs = require('fs');
 // const path = require('path');
@@ -202,7 +208,7 @@
 //   }
 
 //   const { urls, storageStatePath, reportsDir } = ensureJob(jobDir, 'ibm');
-//   const browser = await chromium.launch({ headless: true });
+//   const browser = await chromium.launch(getBrowserLaunchOptions({ headless: true }));
 
 //   try {
 //     for (const url of urls) {
@@ -456,7 +462,7 @@ ${bodyHtml}
     });
   }
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch(getBrowserLaunchOptions({ headless: true }));
 
   try {
     for (const url of urls) {

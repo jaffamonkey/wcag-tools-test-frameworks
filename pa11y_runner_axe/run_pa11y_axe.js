@@ -148,6 +148,13 @@ function rewriteReporterDirs(reporters, reportsDir) {
   });
 }
 
+function defaultChromePath() {
+  if (process.env.CHROME_PATH) return process.env.CHROME_PATH;
+  if (process.platform === 'darwin') return '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+  if (process.platform === 'win32') return 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+  return '/usr/bin/google-chrome';
+}
+
 const jobDir = process.argv[2];
 if (!jobDir) {
   throw new Error('Usage: node run_pa11y_axe.js <job_dir>');
@@ -190,6 +197,10 @@ const generatedConfig = {
   ...templateConfig,
   defaults: {
     ...(templateConfig.defaults || {}),
+    chromeLaunchConfig: {
+      ...((templateConfig.defaults || {}).chromeLaunchConfig || {}),
+      executablePath: defaultChromePath()
+    },
     reporters: rewriteReporterDirs(templateConfig.defaults?.reporters, reportsDir)
   },
   urls: mergeUrls(jobUrls, templateConfig.urls || [], perUrlOverrides)

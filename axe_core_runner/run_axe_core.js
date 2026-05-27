@@ -1,6 +1,12 @@
 const fs = require("fs");
 const path = require("path");
 const { chromium } = require("playwright");
+const browserChannel = process.env.PLAYWRIGHT_BROWSER_CHANNEL || 'chrome';
+function getBrowserLaunchOptions(extra = {}) {
+  return browserChannel
+    ? { channel: browserChannel, ...extra }
+    : { ...extra };
+}
 const AxeBuilder = require("@axe-core/playwright").default;
 
 function safeSlug(input) {
@@ -36,7 +42,7 @@ async function main() {
   const reportsDir = path.join(jobDir, "reports", "axe-core");
   fs.mkdirSync(reportsDir, { recursive: true });
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch(getBrowserLaunchOptions({ headless: true }));
   const context = await browser.newContext(buildContextOptions(storageStatePath));
 
   try {
