@@ -1,0 +1,164 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 773,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 773,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 744,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 741,
+                "height": 25,
+                "width": 565
+            },
+            "snippet": "<table class=\"footer\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22footer%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 585,
+    "ruleTime": 7,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 37,
+            "elementsViolation": 3,
+            "elementsViolationReview": 3,
+            "violation": 4,
+            "potentialviolation": 0,
+            "recommendation": 34,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 547
+        },
+        "scanTime": 18,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778709861846,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ETrue%20Stories%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%3Ch1%3ETrue%20Stories%3C%2Fh1%3E%0A%3Cp%3EThese%20are%20true%20and%20generally%20humorous%20or%20poignant%20stories%20that%20I've%20picked%20up%0Aover%20the%20ages%2C%20mostly%20off%20the%20'net%2C%20but%20not%20really%20shameful%2C%20or%0Athey'd%20end%20up%20on%20the%20%3Ca%20href%3D%22..%2Fwall-o-shame%22%3EWall%20O'%20Shame%3C%2Fa%3E.%3C%2Fp%3E%0A%3Cp%3E%3C%2Fp%3E%3Chr%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Cul%3E%0A%3Cli%3E%3Ca%20href%3D%22copernican-principle.html%22%3EThe%20Copernican%20Principle%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22dennys.html%22%3EDenny's%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22group-norms.html%22%3EGroup%20Norms%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22stupid_computer_users_2.html%22%3EStupid%20Computer%20Users%202%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22unix_for_the_masses.html%22%3EUnix%20For%20The%20Masses%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22a_river_runs_over_it.txt%22%3Ea_river_runs_over_it.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22bad_days.txt%22%3Ebad_days.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22bible_cd_story.txt%22%3Ebible_cd_story.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22cat_tracker.txt%22%3Ecat_tracker.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22coke_phone.txt%22%3Ecoke_phone.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22funny_ads.txt%22%3Efunny_ads.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22funny_trip.txt%22%3Efunny_trip.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22grounding_story.html%22%3EGrounding%20Story%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22jesus_v_superheroes.txt%22%3Ejesus_v_superheroes.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22linguistics_urban_legend.txt%22%3Elinguistics_urban_legend.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22martial_typo.txt%22%3Emartial_typo.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22metric_story.txt%22%3Emetric_story.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22navy_story.txt%22%3Enavy_story.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22norad_story.txt%22%3Enorad_story.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22phone_story.txt%22%3Ephone_story.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22quaylisms.txt%22%3Equaylisms.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22railroad_gauge.txt%22%3Erailroad_gauge.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22rns_anecdote.txt%22%3Erns_anecdote.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22scary_subliminal.txt%22%3Escary_subliminal.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22security_card_story.txt%22%3Esecurity_card_story.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22sex_and_food.txt%22%3Esex_and_food.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22sikh_driving.txt%22%3Esikh_driving.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22stupid_computer_users.txt%22%3Estupid_computer_users.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22stupid_nonengineers.txt%22%3Estupid_nonengineers.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22subductive_carmen.txt%22%3Esubductive_carmen.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22warning_labels.txt%22%3Ewarning_labels.txt%3C%2Fa%3E%0A%3C%2Fli%3E%3C%2Ful%3E%0A%0A%3Ctable%20class%3D%22footer%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%20%20%3Ctd%3ESite%20copyright%20%C2%A9%201994%E2%80%932024%20Dan%20Bornstein.%20All%20rights%20reserved.%3C%2Ftd%3E%0A%20%20%3Ctd%3E%3Ca%20href%3D%22%2F%22%3Emilk.com%3C%2Fa%3E%20%2F%20true-stories%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "49054a4f-58a3-46d0-9af3-e19696f83c30",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "milk.com-true-stories"
+}

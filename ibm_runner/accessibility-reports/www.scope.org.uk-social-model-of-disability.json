@@ -1,0 +1,633 @@
+{
+    "results": [
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]",
+                "aria": "/document[1]/banner[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 43,
+                "width": 784
+            },
+            "snippet": "<form data-suggester-name=\"autoSearch\" data-search-key=\"1d4fNnbpCtpKCv9Zavwm6QvOay1fTnVJgqMRU5oCKDAzSeBNccLN\" data-index=\"scope-prd-asphead-web_index_site_search\" data-search=\"scope-prd-asphead-srch\" tabindex=\"0\" action=\"/search\" method=\"get\" class=\"TopBar__search js-searchbar\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20data-suggester-name%3D%5C%22autoSearch%5C%22%20data-search-key%3D%5C%221d4fNnbpCtpKCv9Zavwm6QvOay1fTnVJgqMRU5oCKDAzSeBNccLN%5C%22%20data-index%3D%5C%22scope-prd-asphead-web_index_site_search%5C%22%20data-search%3D%5C%22scope-prd-asphead-srch%5C%22%20tabindex%3D%5C%220%5C%22%20action%3D%5C%22%2Fsearch%5C%22%20method%3D%5C%22get%5C%22%20class%3D%5C%22TopBar__search%20js-searchbar%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_keyboard_handler_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_keyboard_access",
+            "message": "Verify the <div> element with \"combobox\" role has keyboard access",
+            "messageArgs": [
+                "div",
+                "combobox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<div aria-haspopup=\"listbox\" aria-owns=\"topBarSuggestions\" aria-expanded=\"false\" role=\"combobox\" class=\"TopBar__search--combobox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_keyboard_handler_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cdiv%3E%20element%20with%20%5C%22combobox%5C%22%20role%20has%20keyboard%20access%22%2C%22snippet%22%3A%22%3Cdiv%20aria-haspopup%3D%5C%22listbox%5C%22%20aria-owns%3D%5C%22topBarSuggestions%5C%22%20aria-expanded%3D%5C%22false%5C%22%20role%3D%5C%22combobox%5C%22%20class%3D%5C%22TopBar__search--combobox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_keyboard_access%22%2C%22ruleId%22%3A%22aria_keyboard_handler_exists%22%2C%22msgArgs%22%3A%5B%22div%22%2C%22combobox%22%5D%7D"
+        },
+        {
+            "ruleId": "combobox_design_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1.1",
+            "message": "The combobox design pattern is detected as ARIA 1.1, which is not allowed by ARIA 1.2",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<div aria-haspopup=\"listbox\" aria-owns=\"topBarSuggestions\" aria-expanded=\"false\" role=\"combobox\" class=\"TopBar__search--combobox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/combobox_design_valid.html#%7B%22message%22%3A%22The%20combobox%20design%20pattern%20is%20detected%20as%20ARIA%201.1%2C%20which%20is%20not%20allowed%20by%20ARIA%201.2%22%2C%22snippet%22%3A%22%3Cdiv%20aria-haspopup%3D%5C%22listbox%5C%22%20aria-owns%3D%5C%22topBarSuggestions%5C%22%20aria-expanded%3D%5C%22false%5C%22%20role%3D%5C%22combobox%5C%22%20class%3D%5C%22TopBar__search--combobox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1.1%22%2C%22ruleId%22%3A%22combobox_design_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "Form control with \"combobox\" role has no associated label",
+            "messageArgs": [
+                "combobox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<div aria-haspopup=\"listbox\" aria-owns=\"topBarSuggestions\" aria-expanded=\"false\" role=\"combobox\" class=\"TopBar__search--combobox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20with%20%5C%22combobox%5C%22%20role%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cdiv%20aria-haspopup%3D%5C%22listbox%5C%22%20aria-owns%3D%5C%22topBarSuggestions%5C%22%20aria-expanded%3D%5C%22false%5C%22%20role%3D%5C%22combobox%5C%22%20class%3D%5C%22TopBar__search--combobox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22combobox%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"combobox\" role does not have a tabbable element",
+            "messageArgs": [
+                "combobox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<div aria-haspopup=\"listbox\" aria-owns=\"topBarSuggestions\" aria-expanded=\"false\" role=\"combobox\" class=\"TopBar__search--combobox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22combobox%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cdiv%20aria-haspopup%3D%5C%22listbox%5C%22%20aria-owns%3D%5C%22topBarSuggestions%5C%22%20aria-expanded%3D%5C%22false%5C%22%20role%3D%5C%22combobox%5C%22%20class%3D%5C%22TopBar__search--combobox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22combobox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_before",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "Label text is located after its associated text input or <select> element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input tabindex=\"-1\" required=\"\" aria-activedescendant=\"\" aria-controls=\"topBarSuggestions\" aria-autocomplete=\"list\" autocomplete=\"off\" name=\"query\" type=\"text\" class=\"TopBar__search--search\" id=\"query\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_before.html#%7B%22message%22%3A%22Label%20text%20is%20located%20after%20its%20associated%20text%20input%20or%20%3Cselect%3E%20element%22%2C%22snippet%22%3A%22%3Cinput%20tabindex%3D%5C%22-1%5C%22%20required%3D%5C%22%5C%22%20aria-activedescendant%3D%5C%22%5C%22%20aria-controls%3D%5C%22topBarSuggestions%5C%22%20aria-autocomplete%3D%5C%22list%5C%22%20autocomplete%3D%5C%22off%5C%22%20name%3D%5C%22query%5C%22%20type%3D%5C%22text%5C%22%20class%3D%5C%22TopBar__search--search%5C%22%20id%3D%5C%22query%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22input_label_before%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_activedescendant_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The 'aria-activedescendant' property is empty",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input tabindex=\"-1\" required=\"\" aria-activedescendant=\"\" aria-controls=\"topBarSuggestions\" aria-autocomplete=\"list\" autocomplete=\"off\" name=\"query\" type=\"text\" class=\"TopBar__search--search\" id=\"query\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_activedescendant_valid.html#%7B%22message%22%3A%22The%20'aria-activedescendant'%20property%20is%20empty%22%2C%22snippet%22%3A%22%3Cinput%20tabindex%3D%5C%22-1%5C%22%20required%3D%5C%22%5C%22%20aria-activedescendant%3D%5C%22%5C%22%20aria-controls%3D%5C%22topBarSuggestions%5C%22%20aria-autocomplete%3D%5C%22list%5C%22%20autocomplete%3D%5C%22off%5C%22%20name%3D%5C%22query%5C%22%20type%3D%5C%22text%5C%22%20class%3D%5C%22TopBar__search--search%5C%22%20id%3D%5C%22query%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_activedescendant_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/button[1]",
+                "aria": "/document[1]/banner[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 300,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button tabindex=\"-1\" aria-label=\"submit search\" type=\"submit\" class=\"TopBar__search-submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20tabindex%3D%5C%22-1%5C%22%20aria-label%3D%5C%22submit%20search%5C%22%20type%3D%5C%22submit%5C%22%20class%3D%5C%22TopBar__search-submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/button[1]",
+                "aria": "/document[1]/banner[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"button\" role does not have a tabbable element",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 300,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button tabindex=\"-1\" aria-label=\"submit search\" type=\"submit\" class=\"TopBar__search-submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22button%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cbutton%20tabindex%3D%5C%22-1%5C%22%20aria-label%3D%5C%22submit%20search%5C%22%20type%3D%5C%22submit%5C%22%20class%3D%5C%22TopBar__search-submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/nav[1]/ul[1]/li[1]/a[1]/img[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]/list[1]/listitem[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 426,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img data-imgs=\"https://assets-eu-01.kc-usercontent.com:443/73ea709e-f9f8-0168-3842-ebd7ad1e23ac/6f0a1386-b78b-4417-a99f-fa71f8ad65cc/home%20icon.svg\" class=\"MainNavigation__prefix-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20data-imgs%3D%5C%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F6f0a1386-b78b-4417-a99f-fa71f8ad65cc%2Fhome%2520icon.svg%5C%22%20class%3D%5C%22MainNavigation__prefix-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1122,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-expanded=\"false\" aria-controls=\"a26486d0-0\" aria-label=\"Social model of disability video transcript\" type=\"button\" class=\"Accordion__item-toggle open\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-expanded%3D%5C%22false%5C%22%20aria-controls%3D%5C%22a26486d0-0%5C%22%20aria-label%3D%5C%22Social%20model%20of%20disability%20video%20transcript%5C%22%20type%3D%5C%22button%5C%22%20class%3D%5C%22Accordion__item-toggle%20open%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]",
+                "aria": "/document[1]/main[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 28,
+                "top": 1122,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-expanded=\"true\" aria-controls=\"a26486d0-0\" aria-label=\"Social model of disability video transcript\" type=\"button\" class=\"Accordion__item-toggle close\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-expanded%3D%5C%22true%5C%22%20aria-controls%3D%5C%22a26486d0-0%5C%22%20aria-label%3D%5C%22Social%20model%20of%20disability%20video%20transcript%5C%22%20type%3D%5C%22button%5C%22%20class%3D%5C%22Accordion__item-toggle%20close%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/p[1]",
+                "aria": "/document[1]/main[1]/generic[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'What is the social model of disability?'",
+            "messageArgs": [
+                "'What is the social model of disability?'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1205,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'What%20is%20the%20social%20model%20of%20disability%3F'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'What%20is%20the%20social%20model%20of%20disability%3F'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/p[4]",
+                "aria": "/document[1]/main[1]/generic[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'left' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "left"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1364,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'left'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22left%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/p[11]",
+                "aria": "/document[1]/main[1]/generic[1]/paragraph[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Look, you must put a lift in th ... people with visual impairments.\"",
+            "messageArgs": [
+                "\"Look, you must put a lift in th ... people with visual impairments.\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1716,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Look%2C%20you%20must%20put%20a%20lift%20in%20th%20...%20people%20with%20visual%20impairments.%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Look%2C%20you%20must%20put%20a%20lift%20in%20th%20...%20people%20with%20visual%20impairments.%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/footer[1]/div[1]/div[2]/section[2]/form[1]",
+                "aria": "/document[1]/contentinfo[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3711,
+                "height": 40,
+                "width": 784
+            },
+            "snippet": "<form action=\"https://my.scope.org.uk/email-signup-form/\" method=\"post\" class=\"FNewsletter__form\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20action%3D%5C%22https%3A%2F%2Fmy.scope.org.uk%2Femail-signup-form%2F%5C%22%20method%3D%5C%22post%5C%22%20class%3D%5C%22FNewsletter__form%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/footer[1]/div[1]/div[2]/section[2]/form[1]/div[2]/input[1]",
+                "aria": "/document[1]/contentinfo[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3729,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input aria-label=\"To receive regular email updates about Scope enter your email address here\" placeholder=\"Your email address\" autocomplete=\"on\" name=\"email\" type=\"email\" class=\"FNewsletter__input\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22To%20receive%20regular%20email%20updates%20about%20Scope%20enter%20your%20email%20address%20here%5C%22%20placeholder%3D%5C%22Your%20email%20address%5C%22%20autocomplete%3D%5C%22on%5C%22%20name%3D%5C%22email%5C%22%20type%3D%5C%22email%5C%22%20class%3D%5C%22FNewsletter__input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_keyboard_handler_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/ul[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]/listbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_keyboard_access",
+            "message": "Verify the <ul> element with \"listbox\" role has keyboard access",
+            "messageArgs": [
+                "ul",
+                "listbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4016,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<ul aria-labelledby=\"topbar-search-label\" role=\"listbox\" class=\"TopBar__search--typeahead hidden\" id=\"topBarSuggestions\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_keyboard_handler_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cul%3E%20element%20with%20%5C%22listbox%5C%22%20role%20has%20keyboard%20access%22%2C%22snippet%22%3A%22%3Cul%20aria-labelledby%3D%5C%22topbar-search-label%5C%22%20role%3D%5C%22listbox%5C%22%20class%3D%5C%22TopBar__search--typeahead%20hidden%5C%22%20id%3D%5C%22topBarSuggestions%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_keyboard_access%22%2C%22ruleId%22%3A%22aria_keyboard_handler_exists%22%2C%22msgArgs%22%3A%5B%22ul%22%2C%22listbox%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/ul[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]/listbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"listbox\" role does not have a tabbable element",
+            "messageArgs": [
+                "listbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4016,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<ul aria-labelledby=\"topbar-search-label\" role=\"listbox\" class=\"TopBar__search--typeahead hidden\" id=\"topBarSuggestions\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22listbox%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cul%20aria-labelledby%3D%5C%22topbar-search-label%5C%22%20role%3D%5C%22listbox%5C%22%20class%3D%5C%22TopBar__search--typeahead%20hidden%5C%22%20id%3D%5C%22topBarSuggestions%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22listbox%22%5D%7D"
+        }
+    ],
+    "numExecuted": 2309,
+    "ruleTime": 45,
+    "nls": {
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "widget_tabbable_exists": {
+            "0": "Component must have at least one tabbable element",
+            "fail_no_tabbable": "Component with \"{0}\" role does not have a tabbable element"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_2": "Form control with \"{0}\" role has no associated label"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label"
+        },
+        "aria_form_label_unique": {
+            "0": "Each element with \"form\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"form\" role do not have unique labels"
+        },
+        "aria_keyboard_handler_exists": {
+            "0": "Interactive WAI_ARIA UI components must provide keyboard access",
+            "potential_no_keyboard_access": "Verify the <{0}> element with \"{1}\" role has keyboard access"
+        },
+        "combobox_design_valid": {
+            "0": "The combobox design pattern must be valid for ARIA 1.2",
+            "Fail_1.1": "The combobox design pattern is detected as ARIA 1.1, which is not allowed by ARIA 1.2"
+        },
+        "input_label_before": {
+            "0": "Text inputs and <select> elements must have a label before the input control",
+            "Fail_2": "Label text is located after its associated text input or <select> element"
+        },
+        "aria_activedescendant_valid": {
+            "0": "The 'aria-activedescendant' property must reference the 'id' of a non-empty, non-hidden active child element",
+            "Fail_1": "The 'aria-activedescendant' property is empty"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 16,
+            "elementsViolation": 5,
+            "elementsViolationReview": 14,
+            "violation": 7,
+            "potentialviolation": 12,
+            "recommendation": 4,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 2285
+        },
+        "scanTime": 107,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778367775045,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en-gb%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ESocial%20model%20of%20disability%20%7C%20Disability%20charity%20Scope%20UK%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22scope-share-widget%22%20style%3D%22display%3Anone%22%3E%3Cdiv%20id%3D%22floatingOptionsContainer%22%20role%3D%22region%22%20aria-label%3D%22Share%20and%20Print%20options%22%3E%3Cbutton%20class%3D%22foc-tab%22%20id%3D%22focTabBtn%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22optionsContentArea%22%20aria-label%3D%22Open%20Share%20and%20Print%20menu%22%3E%3Cdiv%20class%3D%22foc-text-container%22%3E%3Cspan%20class%3D%22foc-text%22%3EShare%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fbutton%3E%3Cdiv%20id%3D%22optionsContentArea%22%20class%3D%22foc-content%22%20aria-hidden%3D%22true%22%3E%3Cbutton%20class%3D%22pill-btn%22%20id%3D%22scope-share-button%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M18%2016.08c-.76%200-1.44.3-1.96.77L8.91%2012.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5%201.25.81%202.04.81%201.66%200%203-1.34%203-3s-1.34-3-3-3-3%201.34-3%203c0%20.24.04.47.09.7L8.04%209.81C7.5%209.31%206.79%209%206%209c-1.66%200-3%201.34-3%203s1.34%203%203%203c.79%200%201.5-.31%202.04-.81l7.12%204.16c-.05.21-.08.43-.08.65%200%201.61%201.31%202.92%202.92%202.92%201.61%200%202.92-1.31%202.92-2.92s-1.31-2.92-2.92-2.92z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EShare%20Page%3C%2Fbutton%3E%3Cbutton%20class%3D%22pill-btn%22%20id%3D%22scope-print-button%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%208h-1V3H6v5H5c-1.66%200-3%201.34-3%203v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8%205h8v3H8V5zm8%2012v2H8v-2h8zm2-2v-2H6v2H4v-4c0-.55.45-1%201-1h14c.55%200%201%20.45%201%201v4h-2z%22%3E%3C%2Fpath%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2211.5%22%20r%3D%221%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3EPrint%20Page%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22sharePopup%22%20role%3D%22dialog%22%20aria-modal%3D%22true%22%20aria-labelledby%3D%22sharePopupTitle%22%3E%3Ch3%20id%3D%22sharePopupTitle%22%3EShare%20this%20Page%3C%2Fh3%3E%3Clabel%20for%3D%22pageUrl%22%20style%3D%22position%3Aabsolute%3Bwidth%3A1px%3Bheight%3A1px%3Bmargin%3A-1px%3Boverflow%3Ahidden%3Bclip%3Arect(0%2C0%2C0%2C0)%22%3EPage%20URL%3C%2Flabel%3E%3Cinput%20type%3D%22text%22%20id%3D%22pageUrl%22%20readonly%3D%22%22%3E%3Cbutton%20style%3D%22cursor%3Apointer%3Bpadding%3A8px%2015px%3Bbackground-color%3A%23fff%3Bcolor%3A%23340458%3Bborder%3Anone%3Bborder-radius%3A4px%3Bfont-weight%3Abold%3B%22%3ECopy%20Link%3C%2Fbutton%3E%3Cdiv%20class%3D%22share-list%22%3E%3Ca%20id%3D%22emailShare%22%20href%3D%22%23%22%20target%3D%22_blank%22email')%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M20%204H4c-1.1%200-1.99.9-1.99%202L2%2018c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V6c0-1.1-.9-2-2-2zm0%204l-8%205-8-5V6l8%205%208-5v2z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EEmail%3C%2Fa%3E%3Ca%20id%3D%22whatsappShare%22%20href%3D%22%23%22%20target%3D%22_blank%22whatsapp')%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12.04%202C6.58%202%202.13%206.45%202.13%2011.91C2.13%2013.66%202.59%2015.36%203.45%2016.86L2.05%2022L7.3%2020.62C8.75%2021.41%2010.38%2021.83%2012.04%2021.83C17.5%2021.83%2021.95%2017.38%2021.95%2011.92C21.95%209.27%2020.92%206.78%2019.05%204.91C17.18%203.03%2014.69%202%2012.04%202M12.05%203.66C14.25%203.66%2016.31%204.51%2017.87%206.07C19.42%207.63%2020.28%209.69%2020.28%2011.92C20.28%2016.46%2016.58%2020.15%2012.04%2020.15C10.56%2020.15%209.11%2019.76%207.85%2019L7.55%2018.83L4.43%2019.65L5.26%2016.61L5.06%2016.29C4.24%2014.99%203.81%2013.47%203.81%2011.91C3.81%207.37%207.5%203.66%2012.05%203.66%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EWhatsApp%3C%2Fa%3E%3Ca%20id%3D%22facebookShare%22%20href%3D%22%23%22%20target%3D%22_blank%22facebook')%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202.04C6.5%202.04%202%206.53%202%2012.06C2%2017.06%205.66%2021.21%2010.44%2021.96V14.96H7.9V12.06H10.44V9.85C10.44%207.34%2011.93%205.96%2014.22%205.96C15.31%205.96%2016.45%206.15%2016.45%206.15V8.62H15.19C13.95%208.62%2013.56%209.39%2013.56%2010.18V12.06H16.34L15.89%2014.96H13.56V21.96A10%2010%200%200%200%2022%2012.06C22%206.53%2017.5%202.04%2012%202.04Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EFacebook%3C%2Fa%3E%3Ca%20id%3D%22xShare%22%20href%3D%22%23%22%20target%3D%22_blank%22twitter')%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M18.244%202.25h3.308l-7.227%208.26%208.502%2011.24H16.17l-5.214-6.817L4.99%2021.75H1.68l7.73-8.835L1.254%202.25H8.08l4.713%206.231zm-1.161%2017.52h1.833L7.084%204.126H5.117z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EX%20(Twitter)%3C%2Fa%3E%3Ca%20id%3D%22linkedinShare%22%20href%3D%22%23%22%20target%3D%22_blank%22linkedin')%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%203a2%202%200%200%201%202%202v14a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V5a2%202%200%200%201%202-2h14m-.5%2015.5v-5.3a3.26%203.26%200%200%200-3.26-3.26c-.85%200-1.84.52-2.32%201.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4%201.39-1.4a1.4%201.4%200%200%201%201.4%201.4v4.93h2.79M6.88%208.56a1.68%201.68%200%200%200%201.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69%201.69%200%200%200-1.69%201.69c0%20.93.76%201.68%201.69%201.68m1.39%209.94v-8.37H5.5v8.37h2.77z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3ELinkedIn%3C%2Fa%3E%3C%2Fdiv%3E%3Cbutton%20id%3D%22closePopupButton%22%3EClose%3C%2Fbutton%3E%3C%2Fdiv%3E%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Fix%20tiktok%20footer%20item%20--%3E%3Cmeta%20name%3D%22msvalidate.01%22%20content%3D%22B835E99CB9D4FFC65E79A5612BC249F9%22%3E%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%3Cmeta%20name%3D%22google-site-verification%22%20content%3D%22OIZ_YZEJXhvs-kKtjDhK7QWHhKV8CFhbZMyfSKYo3-0%22%3E%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%0A%20%20%20%20%3Cdiv%20class%3D%22AccessNav%20js-accessnav%22%3E%0A%20%20%20%20%3Cul%20class%3D%22AccessNav__list%22%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22AccessNav__item%22%20href%3D%22%23main%22%3ESkip%20to%20main%20content%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22AccessNav__item%22%20href%3D%22%23query%22%3ESkip%20to%20search%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22AccessNav__item%22%20href%3D%22%23nav%22%3ESkip%20to%20navigation%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3C%2Ful%3E%0A%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3C!--%20HeaderModule%20Start%20--%3E%0A%20%20%20%20%20%20%20%20%3C!--%20HeaderModule%20Start%20--%3E%0A%3Cheader%20class%3D%22HeaderModule%20js-header%22%20data-component-class%3D%22HeaderComponent%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22Navbar%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Navbar__logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22%22%20data-imgs%3D%22%2Fassets%2Fimages%2Flogo-mobile.svg%3Fv%3DCjEZZJgiTieZzt5wveUzkvLHZOXGnjPFXVZoiyWg78o%22%20alt%3D%22Scope%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3Cbutton%20class%3D%22Navbar__handle%20js-nav-handle%22%20type%3D%22button%22%20aria-controls%3D%22main-navigation%22%20id%3D%22main-navigation%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Menu%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-container-long%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22v-center%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fnav-handle-dark.svg%3Fv%3Dzfsia7IcwBnlMTyByrUZO1hkoXjYs1_SM6zRxO-NScI%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22NavigationButtons%22%3E%0A%20%20%20%20%20%20%20%20%0A%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fadvice-and-support%22%20title%3D%22Get%20support%20today%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Get%20support%20today%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcharity-shops%22%20title%3D%22Shop%20with%20us%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Shop%20with%20us%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20turquoise%22%20href%3D%22https%3A%2F%2Fdonate.scope.org.uk%2F%3Fcampaign%3D26SCWB01%22%20title%3D%22Donate%20now%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Donate%20now%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22HeaderModule__mobile-overlay%20js-nav-overlay%22%20id%3D%22main-navigation%22%20tabindex%3D%22-1%22%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22TopBar%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22TopBar__links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Faccessibility%22%20title%3D%22Accessibility%22%3E%0A%20%20%20Accessibility%0A%3C%2Fa%3E%0A%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcontact-us%22%20title%3D%22Contact%20us%22%3E%0A%20%20%20Contact%20us%0A%3C%2Fa%3E%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22TopBar__user-container%20js-dropdown-parent%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3Cbutton%20class%3D%22TopBar__close-handle%20js-nav-close%22%20aria-label%3D%22Close%20menu%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Close%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-container-long%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22v-center%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fclose-dark.svg%3Fv%3Dw3SFBu5INKWNd3fGfwYT3OkZnQvE4OqaWzXoidIkmuI%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22NavigationButtons%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fadvice-and-support%22%20title%3D%22Get%20support%20today%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Get%20support%20today%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcharity-shops%22%20title%3D%22Shop%20with%20us%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Shop%20with%20us%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20turquoise%22%20href%3D%22https%3A%2F%2Fdonate.scope.org.uk%2F%3Fcampaign%3D26SCWB01%22%20title%3D%22Donate%20now%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Donate%20now%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cform%20class%3D%22TopBar__search%20js-searchbar%22%20method%3D%22get%22%20action%3D%22%2Fsearch%22%20tabindex%3D%220%22%20data-search%3D%22scope-prd-asphead-srch%22%20data-index%3D%22scope-prd-asphead-web_index_site_search%22%20data-search-key%3D%221d4fNnbpCtpKCv9Zavwm6QvOay1fTnVJgqMRU5oCKDAzSeBNccLN%22%20data-suggester-name%3D%22autoSearch%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22TopBar__search--combobox%22%20role%3D%22combobox%22%20aria-expanded%3D%22false%22%20aria-owns%3D%22topBarSuggestions%22%20aria-haspopup%3D%22listbox%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22query%22%20class%3D%22TopBar__search--search%22%20type%3D%22text%22%20name%3D%22query%22%20autocomplete%3D%22off%22%20aria-autocomplete%3D%22list%22%20aria-controls%3D%22topBarSuggestions%22%20aria-activedescendant%3D%22%22%20required%3D%22%22%20tabindex%3D%22-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20id%3D%22topbar-search-label%22%20for%3D%22query%22%20class%3D%22TopBar__search-label%20v-center%22%3ESearch%3C%2Flabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22TopBar__search-submit%22%20type%3D%22submit%22%20aria-label%3D%22submit%20search%22%20tabindex%3D%22-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22v-center%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fsearch.svg%3Fv%3DE6CVkeEJ1gB-87h99TSU6eEIjacCAiZDagzS2ugKaJE%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fform%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22BrandBanner%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22corner-decoration%20top-left%20yellow%20vertical%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22corner-decoration%20bottom-right%20yellow%20vertical%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22BrandBanner__logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22%22%20data-imgs%3D%22%2Fassets%2Fimages%2Flogo.svg%3Fv%3DQyvRG8-CpYDkjrxuVa8tqqZxo-JArTfqdXIkiSq0ZWQ%22%20alt%3D%22Scope%20homepage%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22NavigationButtons%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fadvice-and-support%22%20title%3D%22Get%20support%20today%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Get%20support%20today%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcharity-shops%22%20title%3D%22Shop%20with%20us%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Shop%20with%20us%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20turquoise%22%20href%3D%22https%3A%2F%2Fdonate.scope.org.uk%2F%3Fcampaign%3D26SCWB01%22%20title%3D%22Donate%20now%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Donate%20now%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cnav%20id%3D%22nav%22%20class%3D%22MainNavigation%22%20tabindex%3D%22-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22MainNavigation__list%22%20role%3D%22list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__prefix-icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F6f0a1386-b78b-4417-a99f-fa71f8ad65cc%2Fhome%2520icon.svg%22%3E%20Home%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22MainNavigation__subwrapper%20js-dropdown-parent%22%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22navHandle-5%22%20class%3D%22MainNavigation__handle%20js-dropdown-handle%20current%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22navSublist-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20About%20us%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20MainNavigation__postfix-icon--handle%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow.svg%3Fv%3D5cOe2lu520H9yv0iAAVpdsD5pxgc42if5IcbuavqEHY%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%3Cul%20id%3D%22navSublist-5%22%20class%3D%22MainNavigation__sublist%20js-dropdown%22%20aria-labelledby%3D%22navHandle-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fabout-us%22%3EAbout%20the%20charity%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fabout-us%2Fvision-mission-values%22%3EVision%20mission%20and%20values%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fabout-us%2Fpurplespace%22%3EPurpleSpace%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fabout-us%2Faccessibility-at-scope%22%3EAccessibility%20at%20Scope%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20link_isactive%22%20href%3D%22%2Fsocial-model-of-disability%22%3ESocial%20model%20of%20disability%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fcontact-us%22%3EContact%20us%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22MainNavigation__subwrapper%20js-dropdown-parent%22%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22navHandle-5%22%20class%3D%22MainNavigation__handle%20js-dropdown-handle%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22navSublist-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20Advice%20and%20support%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20MainNavigation__postfix-icon--handle%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow.svg%3Fv%3D5cOe2lu520H9yv0iAAVpdsD5pxgc42if5IcbuavqEHY%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%3Cul%20id%3D%22navSublist-5%22%20class%3D%22MainNavigation__sublist%20js-dropdown%22%20aria-labelledby%3D%22navHandle-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22https%3A%2F%2Fforum.scope.org.uk%2F%22%3EOnline%20community%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fadvice-and-support%22%3EOnline%20advice%20and%20support%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fhelpline%22%3ETelephone%20helpline%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fservices%22%3ESupport%20services%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fleeds-community-hub%22%3ELeeds%20Community%20Hub%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%22%20href%3D%22%2Fcampaigns%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Campaigns%20%20%20%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20link%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow-link.svg%3Fv%3DGfvNN9NmMm_dFdU080AASvm23itNWCI34HBbCLWKP-g%22%20alt%3D%22%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22MainNavigation__subwrapper%20js-dropdown-parent%22%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22navHandle-5%22%20class%3D%22MainNavigation__handle%20js-dropdown-handle%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22navSublist-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Get%20involved%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20MainNavigation__postfix-icon--handle%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow.svg%3Fv%3D5cOe2lu520H9yv0iAAVpdsD5pxgc42if5IcbuavqEHY%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%3Cul%20id%3D%22navSublist-5%22%20class%3D%22MainNavigation__sublist%20js-dropdown%22%20aria-labelledby%3D%22navHandle-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fgiving%22%3EGive%20to%20Scope%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fmembership%22%3EBecome%20a%20member%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fpartnerships%22%3EPartner%20with%20us%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fvolunteering%22%3EVolunteer%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fresearch-panel%22%3EResearch%20panel%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fevents%22%3EFind%20an%20event%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fjobs-at-scope%22%3EJobs%20at%20Scope%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Fcharity-shops%22%3EShop%20with%20us%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%22%20href%3D%22%2Ffundraising%22%3EFundraise%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%22%20href%3D%22%2Fnews-and-stories%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20News%20and%20stories%20%20%20%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20link%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow-link.svg%3Fv%3DGfvNN9NmMm_dFdU080AASvm23itNWCI34HBbCLWKP-g%22%20alt%3D%22%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%20MainNavigation__item-mobile%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%22%20href%3D%22%2Faccessibility%22%3E%0A%20%20%20%20%20%20%20%20Accessibility%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20link%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow-link.svg%3Fv%3DGfvNN9NmMm_dFdU080AASvm23itNWCI34HBbCLWKP-g%22%20alt%3D%22%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fnav%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fheader%3E%0A%3C!--%20HeaderModule%20End--%3E%0A%20%20%20%20%20%20%20%20%3C!--%20HeaderModule%20End--%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Body%20Start%20--%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%3Cdiv%20class%3D%22Breadcrumb%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22Breadcrumb__list%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22Breadcrumb__item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22Breadcrumb__anchor%22%20href%3D%22%2F%22%3EHome%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22Breadcrumb__item%22%3ESocial%20model%20of%20disability%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%3Cmain%20id%3D%22main%22%20tabindex%3D%22-1%22%3E%0A%20%20%20%20%0A%0A%3Cdiv%3E%0A%0A%3Cdiv%20data-component-class%3D%22ArticleHeroComponent%22%20data-component-parm%3D%22%7B%26quot%3Bid%26quot%3B%3A%26quot%3B3m_EbRH1aF4%26quot%3B%7D%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22Hero%20Hero--page%20bottom-margin%20js-slim-hero-wrapper%22%20style%3D%22display%3A%20block%3B%20width%3A%20100vw%3B%20position%3A%20relative%3B%20left%3A%2050%25%3B%20right%3A%2050%25%3B%20margin-left%3A%20-50vw%3B%20margin-right%3A%20-50vw%3B%20overflow%3A%20hidden%3B%20max-width%3A%20100vw%3B%22%3E%3Cdiv%20class%3D%22scope-hero-wrapper%22%3E%3Cdiv%20class%3D%22scope-hero-img-box%22%3E%3Cimg%20class%3D%22scope-hero-img%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%20fetchpriority%3D%22high%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22scope-hero-overlay%22%3E%3Cdiv%20class%3D%22scope-hero-inner-text%22%3E%3Ch1%20id%3D%22dynamic-hero-title%22%20class%3D%22scope-hero-title%22%3ESocial%20model%20of%20disability%3C%2Fh1%3E%3Cp%20id%3D%22dynamic-hero-desc%22%20class%3D%22scope-hero-desc%22%3EA%20way%20of%20viewing%20the%20world%2C%20developed%20by%20disabled%20people.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22scope-hero-gradient%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22Hero%20Hero--article%20js-hero-video%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Hero__container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Hero__img-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22Hero__img%22%20data-imgs%3D%22%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22corner-decoration%20top-right%20horizontal%20purple%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Hero__decoration-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22corner-decoration%20bottom-left%20vertical%20yellow%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Hero__video-placeholder%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Hero__video-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22Hero__video-handle%20js-player-handle%22%20aria-label%3D%22Play%20video%22%20data-id%3D%223m_EbRH1aF4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-container-tall%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22v-center%22%20data-imgs%3D%22~%2Fassets%2Fimages%2Fplay.svg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3EPlay%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Hero__video-player%20js-video-container%22%20id%3D%22video-player%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Accordion--hero-video%20js-accordion%20bottom-margin%20%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Accordion__item%20js-accordion-toggle%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22wrapper%20rte%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Accordion__item-trigger%20js-accordion-trigger%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22Accordion__item-toggle%20open%22%20type%3D%22button%22%20aria-label%3D%22Social%20model%20of%20disability%20video%20transcript%22%20aria-controls%3D%22a26486d0-0%22%20aria-expanded%3D%22false%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22%22%20data-imgs%3D%22~%2Fassets%2Fimages%2Fplus.svg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22Accordion__item-toggle%20close%22%20type%3D%22button%22%20aria-label%3D%22Social%20model%20of%20disability%20video%20transcript%22%20aria-controls%3D%22a26486d0-0%22%20aria-expanded%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22%22%20data-imgs%3D%22~%2Fassets%2Fimages%2Fminus.svg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch4%20class%3D%22Accordion__item-title%22%3ESocial%20model%20of%20disability%20video%20transcript%3C%2Fh4%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22a26486d0-0%22%20class%3D%22Accordion__item-text%20js-accordion-text%22%20aria-hidden%3D%22%22%20tabindex%3D%22-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E'What%20is%20the%20social%20model%20of%20disability%3F'%3C%2Fp%3E%3Cp%3E%3Cstrong%3EOssie%20Stuart%20(Disability%20consultant)%3A%3C%2Fstrong%3E%26nbsp%3BI%20always%20felt%20being%20a%20disabled%20person%20was%20a%20problem.%20After%20learning%20about%20the%20social%20model%2C%20it%20challenged%20me%20to%20look%20at%20disability%20completely%20differently.%20I%20myself%20was%20able%20to%20gain%20some%20confidence%20and...%20self-esteem.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EIan%20Macrae%20(Editor%2C%20Disability%20Now)%3A%3C%2Fstrong%3E%26nbsp%3BThe%20social%20model%20basically%20says%2C%20we%20are%20people%20with%20impairments%20and%20those%20impairments%20clearly%20have%20an%20impact%20on%20how%20we%20live%20our%20lives.%20But%20the%20impairments%20are%20not%20the%20things%20which%20disable%20us.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EMik%20Scarlet%20(Broadcaster%20and%20journalist)%3A%3C%2Fstrong%3E%26nbsp%3BI'm%20disabled%20by%20the%20world%20around%20me%20and%20if%20the%20world%20was%20more%20accessible%2C%20I%20would%20be%20less%20disabled%20and%20then%20I%20would%20just%20be%20left%20with%20my%20%22impairment%22%20i.e.%20what%20doesn't%20work.%3C%2Fp%3E%3Cp%3EIt's%20not%20that%20my%20legs%20don't%20work%20that%20disabling%20me.%20It's%20the%20fact%20that%20if%20I'm%20on%20a%20flat%20surface%2C%20I%20can%20wheel%20around%20fine%2C%20I'm%20wonderfully%20happy.%20It's%20only%20when%20I%20come%20up%20to%20a%20flight%20of%20stairs.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EAlice%20Maynard%20(Chair%202008-2014%2C%20Scope)%3A%3C%2Fstrong%3E%26nbsp%3BAs%20a%20wheelchair%20user%2C%20you%20have%20a%20slightly%20easier%20job%20of%20explaining%20the%20social%20model.%20Whereas%20if%20you're%20trying%20to%20explain%20the%20less%20physical%20barriers%2C%20it's%20much%20harder.%3C%2Fp%3E%3Cp%3E%3Cstrong%3ELaurence%20Clark%20(Comedian%20and%20writer)%3A%3C%2Fstrong%3E%26nbsp%3BThere%20are%20barriers%20everywhere%20in%20life.%20It's%20to%20do%20with%20how%20communicate%2C%20to%20do%20with%20people's%20attitudes...%3C%2Fp%3E%3Cp%3E%3Cstrong%3EKiruna%20Stamell%20(Actress)%3A%3C%2Fstrong%3E%26nbsp%3BDiscovering%20the%20social%20model%20was%20a%20massive%20liberation%20on%20another%20level.%20Yeah%20I%20was%20being%20treated%20differently%20and%20no%20it%20wasn't%20me%20being%20deficient.%20It%20was%20everybody%20else's%20social%20anxieties%20being%20projected%20onto%20me.%3C%2Fp%3E%3Cp%3E%3Cstrong%3ELaurence%3A%3C%2Fstrong%3E%26nbsp%3BThe%20blame%20for%20you%20not%20fitting%20in%20is%20no%20longer%20on%20your%20shoulders.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EIan%3A%3C%2Fstrong%3E%26nbsp%3BSuddenly%20my%20disability%20was%20out%20there%20and%20not%20in%20here.%20It%20was%20what%20made%20me%20realise%20that%20I%20was%20something%20beyond%20the%20thing%20that%20other%20people%20thought%20I%20was.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EMik%3A%3C%2Fstrong%3E%26nbsp%3BIt's%20a%20really%20liberating%20thing%2C%20but%20it%20also%20means%20you%20can%20change%20it.%20We%20can%20say%20to%20the%20world%2C%20%22Look%2C%20you%20must%20put%20a%20lift%20in%20this%20building.%20You%20must%20make%20sure%20that%20the%20signage%20is%20readable%20for%20people%20with%20visual%20impairments.%22%3C%2Fp%3E%3Cp%3E%3Cstrong%3EKiruna%3A%3C%2Fstrong%3E%26nbsp%3BIf%20you%20want%20that%20equality%20to%20be%20real%2C%20you've%20really%20got%20to%20tackle%20the%20inequality%20people%20are%20experiencing%20in%20schools%2C%20workplaces%2C%20transport.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EIan%3A%3C%2Fstrong%3E%26nbsp%3BThe%20main%20reason%20that%20the%20social%20model%2C%20I%20think%2C%20is%20important%20to%20disabled%20people%20is%20that%20it%20allows%20us%20to%20be%20a%20community.%20You%20achieve%20a%20lot%20more%20as%20a%20group.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EMik%3A%3C%2Fstrong%3E%26nbsp%3BAs%20long%20as%20we%2C%20as%20disabled%20people%2C%20make%20sure%20that%20our%20voices%20are%20heard%20and%20that%20all%20those%20people%20that%20support%20us%20also%20have%20their%20voices%20heard%2C%20then%20I%20think%20we%20will%20get%20there.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EAlice%3A%3C%2Fstrong%3E%26nbsp%3BI%20hope%20that%20Scope%20is%20doing%20work%20that%20will%20help%20disabled%20people%20to%20become%20prouder%20of%20who%20we%20are.%20Pushing%20boundaries%20around%20who%20can%20be%20included%20and%20where.%3C%2Fp%3E%3Cp%3E%3Cstrong%3ELaurence%3A%3C%2Fstrong%3E%26nbsp%3BCome%20the%20glorious%20day%20if%20it%20ever%20came%20where%20all%20the%20barriers%20went%2C%20y'know.%20We'd%20just%20be%20people%20with%20impairments.%20We%20wouldn't%20be%20disabled%20people%20any%20more.%3C%2Fp%3E%3Cp%3EFind%20out%20more%20about%20Scope's%20work%20and%20how%20to%20get%20involved%2C%20subscribe%20to%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fwww.youtube.com%2Fuser%2Fscopestories%22%3EScope%20on%20YouTube%3C%2Fa%3E.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Hero--article__title%20wrapper%20rte%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22underline%22%3ESocial%20model%20of%20disability%3C%2Fh1%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%0A%0A%20%20%20%20%3Cdiv%20class%3D%22wrapper%20rte%20bottom-margin%20%22%3E%0A%20%20%20%20%20%20%20%20%0A%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EThe%20social%20model%20of%20disability%20is%20a%20way%20of%20viewing%20the%20world%2C%20developed%20by%20disabled%20people.%26nbsp%3BScope's%20strategy%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fabout-us%2Fan-equal-future-strategy%22%3EAn%20Equal%20Future%3C%2Fa%3E%26nbsp%3Bis%26nbsp%3Bbased%20on%20this%20model%20of%20disability.%3C%2Fp%3E%3Cp%3EThe%20model%20says%20that%20people%20are%20disabled%20by%20barriers%20in%20society%2C%20not%20by%20their%20impairment%20or%20condition.%20Barriers%20can%20be%20physical%2C%20like%20buildings%20not%20having%20accessible%20toilets.%20Or%20they%20can%20be%20caused%20by%20people's%20attitudes%20to%20difference%2C%20like%20assuming%20disabled%20people%20can't%20do%20certain%20things.%3C%2Fp%3E%3Cp%3EThe%20social%20model%20helps%20us%20recognise%20barriers%20that%20make%20life%20harder%20for%20disabled%20people.%20Removing%20these%20barriers%20creates%20equality%20and%20offers%20disabled%20people%20more%20independence%2C%20choice%20and%20control.%3C%2Fp%3E%3Cp%3ENot%20everyone%20uses%20the%20social%20model%20and%20that%E2%80%99s%20ok.%20How%20anyone%20chooses%20to%20talk%20about%20their%20impairment%20is%20up%20to%20them.%26nbsp%3B%3C%2Fp%3E%3Cp%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fadvice-and-support%2Fexplaining-disability-to-kids%2F%22%3EExplaining%20the%20social%20model%20of%20disability%20to%20kids%3C%2Fa%3E.%3C%2Fp%3E%3Ch2%3EChanging%20attitudes%20towards%20disabled%20people%3C%2Fh2%3E%3Cp%3ENegative%20attitudes%20based%20on%20prejudice%20or%20stereotype%20can%20stop%20disabled%20people%20from%20having%20equal%20opportunities.%20This%20is%20sometimes%20referred%20to%20as%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fabout-us%2Fdisablism%2F%22%3Edisablism%3C%2Fa%3E.%3C%2Fp%3E%3Cp%3EExamples%20of%20negative%20attitudes%20include%20assuming%20that%20disabled%20people%20can%E2%80%99t%3A%3C%2Fp%3E%3Cul%3E%0A%20%20%3Cli%3Ework%3C%2Fli%3E%0A%20%20%3Cli%3Elive%20independently%3C%2Fli%3E%0A%20%20%3Cli%3Ehave%20sex%3C%2Fli%3E%0A%20%20%3Cli%3Ehave%20children%3C%2Fli%3E%0A%3C%2Ful%3E%3Ch2%3EMedical%20model%20of%20disability%3C%2Fh2%3E%3Cp%3EThe%20medical%20model%20of%20disability%20says%20people%20are%20disabled%20by%20their%20impairments%20or%20conditions.%3C%2Fp%3E%3Cp%3EThe%20medical%20model%20looks%20at%20what%20is%20'wrong'%20with%20the%20person%2C%20not%20what%20the%20person%20needs.%20We%20believe%20it%20creates%20low%20expectations%20and%20leads%20to%20people%20losing%20independence%2C%20choice%20and%20control%20in%20their%20lives.%3C%2Fp%3E%3Ch2%3EExamples%20of%20the%20social%20model%20in%20action%3C%2Fh2%3E%3Cul%3E%0A%20%20%3Cli%3EYou%20are%20a%20disabled%20person%20who%20can't%20use%20stairs%20and%20wants%20to%20get%20into%20a%20building%20with%20a%20step%20at%20the%20entrance.%20The%20social%20model%20recognises%20that%20this%20is%20a%20problem%20with%20the%20building%2C%20not%20the%20person%2C%20and%20would%20suggest%20adding%20a%20ramp%20to%20the%20entrance.%3C%2Fli%3E%0A%20%20%3Cli%3EYour%20child%20with%20a%20visual%20impairment%20wants%20to%20read%20the%20latest%20best-selling%20book%2C%20so%20they%20can%20chat%20about%20it%20with%20their%20friends.%20The%20social%20model%20solution%20makes%20full-text%20recordings%20available%20when%20the%20book%20is%20published.%3C%2Fli%3E%0A%20%20%3Cli%3EYou%20are%20a%20teenager%20with%20a%20learning%20difficulty%20who%20wants%20to%20live%20independently%20in%20your%20own%20home%2C%20but%20you%20don't%20know%20how%20to%20pay%20the%20rent.%20The%20social%20model%20recognises%20that%20with%20the%20right%20support%20on%20how%20to%20pay%20your%20rent%2C%20you%20can%20live%20the%20life%20you%20choose.%20The%20medical%20model%20might%20assume%20that%20the%20barriers%20to%20independent%20living%20are%20insurmountable%2C%20and%20you%20might%20be%20expected%20to%20live%20in%20a%20care%20home.%26nbsp%3B%3C%2Fli%3E%0A%3C%2Ful%3E%3Cp%3ETalk%20with%20disabled%20people%20about%20the%20social%20model%20and%20more%20in%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fforum.scope.org.uk%2F%22%3EScope's%20online%20community%3C%2Fa%3E.%3C%2Fp%3E%3Cp%3ELearn%20about%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fabout-us%2Fhouse-style-guide%2F%22%3Ehow%20Scope%20uses%20the%20social%20model%20to%20talk%20about%20disability%3C%2Fa%3E.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%0A%0A%20%20%20%20%0A%0A%20%20%20%20%0A%0A%0A%3C%2Fdiv%3E%0A%3C%2Fmain%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Body%20End%20--%3E%0A%20%20%20%20%20%20%20%20%3C!--%20FooterModule%20Start%20--%3E%0A%20%20%20%20%20%20%20%20%0A%3C!--%20FooterModule%20Start%20--%3E%0A%3Cfooter%20class%3D%22Footer%20js-footer%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22Footer__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Footer__head%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Footer__title%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22Footer__logo%22%20data-imgs%3D%22%2Fassets%2Fimages%2Flogo-footer.svg%3Fv%3DF2DpDzr0lxOHAbssyg6Q38tYirxFB1XlClyT_SE4O9c%22%20alt%3D%22Scope%20footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csection%20class%3D%22FContacts%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__header%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22FContacts__title%20title%22%3EFree%20disability%20helpline%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22FContacts__sub%22%3EOpen%20Monday%20to%20Saturday%2C%2010am%20to%205pm.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__contact%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22FContacts__list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22FContacts__item%22%20style%3D%22margin-bottom%3A0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FContacts__icon%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fphone.svg%3Fv%3DuqyhsMXoyACUWVSAGPgm9pFH25uNMqMltZUxAfFf6RA%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__ltitle%20title%22%3EHelpline%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__lvalue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22tel%3A08088003333%22%3E0808%20800%203333%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22FContacts__item%22%20style%3D%22margin-bottom%3A0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FContacts__icon%20lazy%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F538e31c6-0ee5-49e3-8eca-a79a7fea2350%2Flive-chat.svg%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__ltitle%20title%22%3ELive%20chat%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__lvalue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fhelpline%23%3A~%3Atext%3DWarning-%2CChat%2520to%2520us%2C-We%2520will%2520be%22%3EChat%20with%20an%20adviser%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22FContacts__item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FContacts__icon%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fmail.svg%3Fv%3DtuZuLBbftV_y8Un2vS-tEx32w2XhZDi0CMpot3eYqZM%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__ltitle%20title%22%3EEmail%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__lvalue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22mailto%3Ahelpline%40scope.org.uk%22%3Ehelpline%40scope.org.uk%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__item%22%20style%3D%22margin-bottom%3A0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FContacts__icon%22%20style%3D%22top%3A30%25%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fphone.svg%3Fv%3DuqyhsMXoyACUWVSAGPgm9pFH25uNMqMltZUxAfFf6RA%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__ltitle%20title%22%3ESupporter%20Care%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__lvalue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESpeak%20with%20Supporter%20Care%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__ltitle%20title%22%20style%3D%22margin-top%3A0.5em%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22tel%3A03002225744%22%3E0300%20222%205744%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__fundraising%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.fundraisingregulator.org.uk%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20data-imgs%3D%22%2Fassets%2Fimages%2Ffundraising-regulator.svg%3Fv%3DO2ovw1Pfhcexz9u154zO_5hFow9dGh-RJXsS4E1wIhc%22%20alt%3D%22Fundraising%20Regulator%20Home%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsection%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Footer__links-news%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csection%20class%3D%22FLinks%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22FLinks__title%20title%22%3EScope%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22FLinks__list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcontact-us%22%3EContact%20us%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fjobs-at-scope%22%3EJobs%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fpartnerships%22%3EPartners%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fmedia%22%3EMedia%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fterms-conditions%22%3ETerms%20and%20conditions%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fprivacy%22%3EPrivacy%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcookies%22%3ECookies%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fmodern-slavery%22%3EModern%20slavery%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcomplaints-and-compliments%22%3EComplaints%20and%20compliments%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fsafeguarding-policy%22%3ESafeguarding%20policy%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22FLinks__link%20cky-banner-element%22%20href%3D%22%23%22%3EManage%20cookies%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsection%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csection%20class%3D%22FNewsletter%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22FNewsletter__title%20title%22%3ESign%20up%20for%20our%20email%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cform%20class%3D%22FNewsletter__form%22%20method%3D%22post%22%20action%3D%22https%3A%2F%2Fmy.scope.org.uk%2Femail-signup-form%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22formUrl%22%20value%3D%22https%3A%2F%2Fmy.scope.org.uk%2Femail-signup-form%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22formFieldName%22%20value%3D%22Email%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FNewsletter__label%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Receive%20all%20the%20latest%20news%20and%20information%20about%20Scope%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FNewsletter__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20class%3D%22FNewsletter__input%22%20type%3D%22email%22%20name%3D%22email%22%20autocomplete%3D%22on%22%20placeholder%3D%22Your%20email%20address%22%20aria-label%3D%22To%20receive%20regular%20email%20updates%20about%20Scope%20enter%20your%20email%20address%20here%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22FNewsletter__submit%20btn%20turquoise%22%20type%3D%22submit%22%3ESign%20up%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fform%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsection%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Csection%20class%3D%22FSocials%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22FSocials__title%22%3ESocials%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22FSocials__list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.facebook.com%2FScope%2F%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F0fc64c49-39ab-4894-ad39-b5495096f0b3%2FSocialIcon%2520-%2520Facebook.png%22%20alt%3D%22Scope's%20Facebook%20page%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.instagram.com%2Fscopecharity%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F66ca0b2c-7717-4c73-ab3d-05fac53f53dc%2FSocialIcon%2520-%2520In.png%22%20alt%3D%22Scope's%20Instagram%20page%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Ftwitter.com%2Fscope%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2Fdcd2fe70-f3fb-4f0f-a678-70fdfc09421f%2FSocialIcon%2520-%2520sha.png%22%20alt%3D%22Scope's%20X%20page%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fuk.linkedin.com%2Fcompany%2Fscope%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2Fa99f8095-cb3f-4add-a0f4-7bc729ebd29f%2FSocialIcon%2520-%2520LinkedIn.png%22%20alt%3D%22Scope's%20LinkedIn%20page%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.youtube.com%2Fscopecharity%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F3a19886d-aa5a-4abd-ba8c-72db7b4aba02%2FSocialIcon%2520-%2520YouTube.png%22%20alt%3D%22Scope's%20YouTube%20page%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.tiktok.com%2F%40scope_charity%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2Fc14fd9e8-9e29-426e-abc9-7bc6840bc1d7%2FScope_RGB_Social%2520media%2520-%2520tiktok%25201.png%22%20alt%3D%22TikTok%20logo%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%3Csmall%20class%3D%22FSocials__number%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Scope%20is%20a%20registered%20charity%20in%20England%20and%20Wales%20(208231)%2C%20Scotland%20(SC053490)%20and%20operates%20in%20Northern%20Ireland.%20Scope%20is%20a%20company%20limited%20by%20guarantee%2C%20registered%20in%20England%20and%20Wales%20company%20number%20(00520866).%20Registered%20office%3A%20Here%20East%20Press%20Centre%2C%2014%20East%20Bay%20Lane%2C%20London%2C%20E15%202GW.%20%0A%20%20%20%20%20%20%20%20%3C%2Fsmall%3E%0A%20%20%20%20%3C%2Fsection%3E%0A%0A%3C%2Ffooter%3E%0A%3C!--%20FooterModule%20End%20--%3E%0A%20%20%20%20%20%20%20%20%3C!--%20FooterModule%20End%20--%3E%0A%20%20%20%20%20%20%20%20%0A%3C!--%20Google%20Tag%20Manager%20(noscript)%20--%3E%0A%0A%3Cnoscript%3E%3C%2Fnoscript%3E%0A%0A%3C!--%20End%20Google%20Tag%20Manager%20(noscript)%20--%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%3C%2Fdiv%3E%3Cul%20id%3D%22topBarSuggestions%22%20class%3D%22TopBar__search--typeahead%20hidden%22%20role%3D%22listbox%22%20aria-labelledby%3D%22topbar-search-label%22%3E%3C%2Ful%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "9e5cb97d-a565-4a13-93e6-cc73129c2d44",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.scope.org.uk-social-model-of-disability"
+}

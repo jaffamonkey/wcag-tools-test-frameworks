@@ -1,0 +1,1852 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 148,
+                "width": 784
+            },
+            "snippet": "<div style=\"background-color: #1c3dc2;\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background-color%3A%20%231c3dc2%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[1]/div[1]/a[1]",
+                "aria": "/document[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 156,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-navbar-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-navbar-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[1]/div[1]/a[1]",
+                "aria": "/document[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 156,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-navbar-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-navbar-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[1]/div[1]/a[1]/span[1]/img[1]",
+                "aria": "/document[1]/navigation[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 171,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/section[1]/div[1]/h1[1]/br[1]",
+                "aria": "/document[1]/heading[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'loves FutureMe' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "loves FutureMe"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 156,
+                "top": 354,
+                "height": 27,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'loves%20FutureMe'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22loves%20FutureMe%22%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/div[1]/blockquote[1]",
+                "aria": "/document[1]/article[1]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 463,
+                "height": 19,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-bubble-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-bubble-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/div[1]/figure[1]/svg[1]",
+                "aria": "/document[1]/article[1]/figure[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 502,
+                "height": 10,
+                "width": 20
+            },
+            "snippet": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 20 10\" height=\"10\" width=\"20\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2020%2010%5C%22%20height%3D%5C%2210%5C%22%20width%3D%5C%2220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[1]/footer[1]/figure[1]/img[1]",
+                "aria": "/document[1]/article[1]/figure[2]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 567,
+                "height": 32,
+                "width": 32
+            },
+            "snippet": "<img width=\"32\" height=\"32\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%2232%5C%22%20height%3D%5C%2232%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[2]/div[1]/blockquote[1]",
+                "aria": "/document[1]/article[2]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 619,
+                "height": 19,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-bubble-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-bubble-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[2]/div[1]/figure[1]/svg[1]",
+                "aria": "/document[1]/article[2]/figure[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 658,
+                "height": 10,
+                "width": 20
+            },
+            "snippet": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 20 10\" height=\"10\" width=\"20\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2020%2010%5C%22%20height%3D%5C%2210%5C%22%20width%3D%5C%2220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[2]/footer[1]/strong[1]/img[1]",
+                "aria": "/document[1]/article[2]/strong[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 702,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[3]/div[1]/blockquote[1]",
+                "aria": "/document[1]/article[3]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 722,
+                "height": 19,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-bubble-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-bubble-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[3]/div[1]/figure[1]/svg[1]",
+                "aria": "/document[1]/article[3]/figure[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 761,
+                "height": 10,
+                "width": 20
+            },
+            "snippet": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 20 10\" height=\"10\" width=\"20\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2020%2010%5C%22%20height%3D%5C%2210%5C%22%20width%3D%5C%2220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[3]/footer[1]/strong[1]/img[1]",
+                "aria": "/document[1]/article[3]/strong[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 806,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[4]/div[1]/blockquote[1]",
+                "aria": "/document[1]/article[4]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 826,
+                "height": 19,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-bubble-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-bubble-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[4]/div[1]/figure[1]/svg[1]",
+                "aria": "/document[1]/article[4]/figure[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 865,
+                "height": 10,
+                "width": 20
+            },
+            "snippet": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 20 10\" height=\"10\" width=\"20\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2020%2010%5C%22%20height%3D%5C%2210%5C%22%20width%3D%5C%2220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[4]/footer[1]/figure[1]/img[1]",
+                "aria": "/document[1]/article[4]/figure[2]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 929,
+                "height": 32,
+                "width": 32
+            },
+            "snippet": "<img width=\"32\" height=\"32\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%2232%5C%22%20height%3D%5C%2232%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[5]/div[1]/blockquote[1]",
+                "aria": "/document[1]/article[5]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 981,
+                "height": 19,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-bubble-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-bubble-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[5]/div[1]/figure[1]/svg[1]",
+                "aria": "/document[1]/article[5]/figure[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1020,
+                "height": 10,
+                "width": 20
+            },
+            "snippet": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 20 10\" height=\"10\" width=\"20\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2020%2010%5C%22%20height%3D%5C%2210%5C%22%20width%3D%5C%2220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[5]/footer[1]/strong[1]/img[1]",
+                "aria": "/document[1]/article[5]/strong[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1065,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[6]/div[1]/blockquote[1]",
+                "aria": "/document[1]/article[6]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1085,
+                "height": 37,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-bubble-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-bubble-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[6]/div[1]/figure[1]/svg[1]",
+                "aria": "/document[1]/article[6]/figure[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1142,
+                "height": 10,
+                "width": 20
+            },
+            "snippet": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 20 10\" height=\"10\" width=\"20\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2020%2010%5C%22%20height%3D%5C%2210%5C%22%20width%3D%5C%2220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[6]/footer[1]/figure[1]/img[1]",
+                "aria": "/document[1]/article[6]/figure[2]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1207,
+                "height": 32,
+                "width": 32
+            },
+            "snippet": "<img width=\"32\" height=\"32\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%2232%5C%22%20height%3D%5C%2232%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[7]/div[1]/blockquote[1]",
+                "aria": "/document[1]/article[7]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1259,
+                "height": 19,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-bubble-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-bubble-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[7]/div[1]/figure[1]/svg[1]",
+                "aria": "/document[1]/article[7]/figure[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1298,
+                "height": 10,
+                "width": 20
+            },
+            "snippet": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 20 10\" height=\"10\" width=\"20\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2020%2010%5C%22%20height%3D%5C%2210%5C%22%20width%3D%5C%2220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/article[7]/footer[1]/strong[1]/img[1]",
+                "aria": "/document[1]/article[7]/strong[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1342,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/article[1]/div[1]/figure[1]/img[1]",
+                "aria": "/document[1]/article[8]/figure[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 2710,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/article[1]/div[1]/div[1]",
+                "aria": "/document[1]/article[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"In a time of dopamine-drenched  ... ld’s slowest messaging service.\"",
+            "messageArgs": [
+                "\"In a time of dopamine-drenched  ... ld’s slowest messaging service.\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2730,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div class=\"fm-article-title fm-title\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22In%20a%20time%20of%20dopamine-drenched%20%20...%20ld%E2%80%99s%20slowest%20messaging%20service.%5C%22%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22fm-article-title%20fm-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22In%20a%20time%20of%20dopamine-drenched%20%20...%20ld%E2%80%99s%20slowest%20messaging%20service.%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/article[2]/div[1]/figure[1]/img[1]",
+                "aria": "/document[1]/article[9]/figure[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 2798,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/article[3]/div[1]/figure[1]/img[1]",
+                "aria": "/document[1]/article[10]/figure[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 2885,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/article[4]/div[1]/figure[1]/img[1]",
+                "aria": "/document[1]/article[11]/figure[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 2973,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/article[5]/div[1]/figure[1]/img[1]",
+                "aria": "/document[1]/article[12]/figure[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3060,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/article[6]/div[1]/figure[1]/img[1]",
+                "aria": "/document[1]/article[13]/figure[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3148,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/article[7]/div[1]/figure[1]/img[1]",
+                "aria": "/document[1]/article[14]/figure[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3235,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/article[1]/blockquote[1]",
+                "aria": "/document[1]/article[15]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3460,
+                "height": 37,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-testimonial-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-testimonial-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/article[2]/blockquote[1]",
+                "aria": "/document[1]/article[16]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3547,
+                "height": 93,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-testimonial-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-testimonial-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/article[3]/blockquote[1]",
+                "aria": "/document[1]/article[17]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3690,
+                "height": 56,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-testimonial-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-testimonial-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/article[4]/blockquote[1]",
+                "aria": "/document[1]/article[18]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3796,
+                "height": 56,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-testimonial-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-testimonial-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/article[5]/blockquote[1]",
+                "aria": "/document[1]/article[19]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3902,
+                "height": 37,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-testimonial-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-testimonial-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/article[5]/blockquote[1]",
+                "aria": "/document[1]/article[19]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'huge'",
+            "messageArgs": [
+                "huge"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3902,
+                "height": 37,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-testimonial-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'huge'%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-testimonial-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22huge%22%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/article[6]/blockquote[1]",
+                "aria": "/document[1]/article[20]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3955,
+                "height": 56,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-testimonial-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-testimonial-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/article[7]/blockquote[1]",
+                "aria": "/document[1]/article[21]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 4061,
+                "height": 37,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-testimonial-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-testimonial-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/article[7]/blockquote[1]",
+                "aria": "/document[1]/article[21]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'bottom' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "bottom"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 4061,
+                "height": 37,
+                "width": 704
+            },
+            "snippet": "<blockquote class=\"fm-testimonial-quote\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'bottom'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cblockquote%20class%3D%5C%22fm-testimonial-quote%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22bottom%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5503,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5503,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/img[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5518,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_descendant_valid",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[2]/form[1]/button[1]",
+                "aria": "/document[1]/contentinfo[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_child_implicit_role",
+            "message": "The element with role \"button\" contains descendants with implicit roles \"strong\" which are ignored by browsers",
+            "messageArgs": [
+                "button",
+                "strong"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5540,
+                "height": 22,
+                "width": 103
+            },
+            "snippet": "<button type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_descendant_valid.html#%7B%22message%22%3A%22The%20element%20with%20role%20%5C%22button%5C%22%20contains%20descendants%20with%20implicit%20roles%20%5C%22strong%5C%22%20which%20are%20ignored%20by%20browsers%22%2C%22snippet%22%3A%22%3Cbutton%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_child_implicit_role%22%2C%22ruleId%22%3A%22aria_descendant_valid%22%2C%22msgArgs%22%3A%5B%22button%22%2C%22strong%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://twitter.com/futureme\" class=\"fm-icon is-twitter is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-twitter%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://twitter.com/futureme\" class=\"fm-icon is-twitter is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-twitter%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.facebook.com/futureme\" class=\"fm-icon is-facebook is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-facebook%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.facebook.com/futureme\" class=\"fm-icon is-facebook is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-facebook%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[3]",
+                "aria": "/document[1]/contentinfo[1]/link[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.youtube.com/channel/UC6RKoiEdLnf2Fz91NImhUgg\" class=\"fm-icon is-youtube is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC6RKoiEdLnf2Fz91NImhUgg%5C%22%20class%3D%5C%22fm-icon%20is-youtube%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[3]",
+                "aria": "/document[1]/contentinfo[1]/link[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.youtube.com/channel/UC6RKoiEdLnf2Fz91NImhUgg\" class=\"fm-icon is-youtube is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC6RKoiEdLnf2Fz91NImhUgg%5C%22%20class%3D%5C%22fm-icon%20is-youtube%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[4]",
+                "aria": "/document[1]/contentinfo[1]/link[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.linkedin.com/company/futureme-labs/?viewAsMember=true\" class=\"fm-icon is-linked is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ffutureme-labs%2F%3FviewAsMember%3Dtrue%5C%22%20class%3D%5C%22fm-icon%20is-linked%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[4]",
+                "aria": "/document[1]/contentinfo[1]/link[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.linkedin.com/company/futureme-labs/?viewAsMember=true\" class=\"fm-icon is-linked is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ffutureme-labs%2F%3FviewAsMember%3Dtrue%5C%22%20class%3D%5C%22fm-icon%20is-linked%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[5]",
+                "aria": "/document[1]/contentinfo[1]/link[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.instagram.com/futureme_official/?hl=en\" class=\"fm-icon is-instagram is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.instagram.com%2Ffutureme_official%2F%3Fhl%3Den%5C%22%20class%3D%5C%22fm-icon%20is-instagram%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[5]",
+                "aria": "/document[1]/contentinfo[1]/link[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.instagram.com/futureme_official/?hl=en\" class=\"fm-icon is-instagram is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.instagram.com%2Ffutureme_official%2F%3Fhl%3Den%5C%22%20class%3D%5C%22fm-icon%20is-instagram%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://apple.co/3PlaxUc\" target=\"_blank\" class=\"fm-image is-app-store\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fapple.co%2F3PlaxUc%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-app-store%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5705,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://apple.co/3PlaxUc\" target=\"_blank\" class=\"fm-image is-app-store\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fapple.co%2F3PlaxUc%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-app-store%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[1]/img[1]",
+                "aria": "/document[1]/contentinfo[1]/link[11]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5719,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 5705,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://bit.ly/38qZ30P\" target=\"_blank\" class=\"fm-image is-google-play\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fbit.ly%2F38qZ30P%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-google-play%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 5705,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://bit.ly/38qZ30P\" target=\"_blank\" class=\"fm-image is-google-play\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fbit.ly%2F38qZ30P%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-google-play%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[2]/img[1]",
+                "aria": "/document[1]/contentinfo[1]/link[12]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 5719,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1965,
+    "ruleTime": 29,
+    "nls": {
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "aria_descendant_valid": {
+            "0": "Browsers ignore the explicit and implicit ARIA roles of the descendants of certain elements",
+            "potential_child_implicit_role": "The element with role \"{0}\" contains descendants with implicit roles \"{1}\" which are ignored by browsers"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "blockquote_cite_exists": {
+            "0": "Use <blockquote> only for quotations, not indentation",
+            "Potential_1": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 89,
+            "elementsViolation": 34,
+            "elementsViolationReview": 52,
+            "violation": 34,
+            "potentialviolation": 29,
+            "recommendation": 35,
+            "potentialrecommendation": 12,
+            "manual": 1,
+            "pass": 1854
+        },
+        "scanTime": 96,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779045431921,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ESome%20nice%20things%20people%20say%20about%20FutureMe%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%20%20%0A%0A%20%20%3Cdiv%20style%3D%22background-color%3A%20%231c3dc2%3B%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-ad-above-navbar%20p2%20is-hidden-desktop%22%3E%0A%20%20%20%20%0A%3C!--%20Landscape%20Top%20Fixed%20Mobile%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%22%20style%3D%22display%3Ainline-block%3Bwidth%3A320px%3Bheight%3A50px%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%222381674570%22%3E%3C%2Fins%3E%0A%0A%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22fm-ad-above-navbar%20p2%20is-hidden-mobile%22%3E%0A%20%20%20%20%0A%3C!--%20Landscape%20Top%20Fixed%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-landscape-top%22%20style%3D%22display%3Ainline-block%3Bwidth%3A728px%3Bheight%3A90px%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%229631369396%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%3C%2Fdiv%3E%0A%0A%3C%2Fdiv%3E%0A%0A%3Cnav%20class%3D%22fm-navbar%20is-primary%22%20data-controller%3D%22burger-menu%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-navbar-brand%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-navbar-logo%22%20href%3D%22%2F%22%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22fm-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22fm-navbar-start%22%3E%0A%20%20%20%20%20%20%3Cul%20class%3D%22fm-navbar-links%22%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fletters%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-pencil%20fa-xs%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EWrite%20a%20Letter%20to%20the%20Future%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-burger%20fm-navbar-burger%20burger%22%20data-action%3D%22click-%26gt%3Bburger-menu%23toggle%22%3E%0A%20%20%20%20%3Cdiv%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%3E%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20id%3D%22nav-menu%22%20class%3D%22fm-navbar-menu%22%20data-burger-menu-target%3D%22menu%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-end%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-navbar-links%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20Public%20Letters%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fblog%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EBlog%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fprops%22%20class%3D%22is-active%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EPress%20%26amp%3B%20Props%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-dropdown%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-dropdown-main%20is-duo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Mobile%20version%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-desktop%20fm-btn%20is-outlined%20is-tight%22%20href%3D%22%2Fsessions%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20In%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-desktop%20fm-btn%20is-bold%20is-tight%20is-primary%22%20data-action%3D%22tealium-events%23trackTealiumEvent%3Acapture%22%20data-tealium-events-event-name-param%3D%22sign_up_clicked%22%20href%3D%22%2Fusers%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20Up%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Desktop%20version%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-mobile%20fm-btn%20is-outlined%20is-tight%20is-invert%22%20href%3D%22%2Fsessions%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20In%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-mobile%20fm-btn%20is-bold%20is-tight%20%22%20data-action%3D%22tealium-events%23trackTealiumEvent%3Acapture%22%20data-tealium-events-event-name-param%3D%22sign_up_clicked%22%20href%3D%22%2Fusers%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20Up%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-dropdown-body%20is-hidden-navbar-desktop%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%20is-hidden-navbar-start-desktop%22%20href%3D%22%2Fletters%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-pencil%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EWrite%20a%20Letter%20to%20the%20Future%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%20is-hidden-navbar-start-desktop%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-book-open-reader%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20Public%20Letters%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%22%20href%3D%22%2Fblog%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-rss%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EBlog%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%20is-active%22%20href%3D%22%2Fprops%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-newspaper%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EPress%20%26amp%3B%20Props%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fnav%3E%0A%0A%20%20%3Cdiv%20class%3D%22two-column-layout%22%3E%0A%20%20%3Cdiv%20class%3D%22w-100%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-props-welcome%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-props-welcome-container%22%3E%0A%20%20%20%20%20%20%3Csection%20class%3D%22fm-hero%20is-props%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-hero-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22fm-hero-title%20fm-title%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Why%20everyone%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20loves%20FutureMe%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fh1%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22fm-hero-subtitle%20fm-title%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Some%20of%20the%20nice%20things%20people%20have%20said%20about%20FutureMe%20over%20the%20years%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fm-emoji%20is-smiling-face-with-smiling-eyes%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fm-emoji%20is-folded-hands%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fm-emoji%20is-hugging-face%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fm-emoji%20is-party-popper%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fm-emoji%20is-raising-hands%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fm-emoji%20is-red-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fm-emoji%20is-smiling-face-with-heart-eyes%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fsection%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-bubbles%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Carticle%20id%3D%22bubble-save%22%20class%3D%22fm-bubble%20is-testimonial%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-bubble-body%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cblockquote%20class%3D%22fm-bubble-quote%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%80%9CHonestly%20love%20you%20guys%2C%20you've%20saved%20my%20life!%E2%80%9D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-bubble-arrow%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2220%22%20height%3D%2210%22%20viewBox%3D%220%200%2020%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M20%200H0L8.58579%208.58579C9.36683%209.36683%2010.6332%209.36684%2011.4142%208.58579L20%200Z%22%20fill%3D%22%23DCFAF5%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-bubble-footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstrong%20class%3D%22fm-bubble-author%22%3EElisabeth%20M.%3C%2Fstrong%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-bubble-avatar%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20height%3D%2232%22%20width%3D%2232%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Farticle%3E%0A%20%20%20%20%20%20%20%20%20%20%3Carticle%20id%3D%22bubble-npr%22%20class%3D%22fm-bubble%20is-press%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-bubble-body%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cblockquote%20class%3D%22fm-bubble-quote%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%80%9CYou%20learn%20about%20human%20beings%20by%20reading%20through%20these%20messages%E2%80%9D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-bubble-arrow%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2220%22%20height%3D%2210%22%20viewBox%3D%220%200%2020%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M20%200H0L8.58579%208.58579C9.36683%209.36683%2010.6332%209.36684%2011.4142%208.58579L20%200Z%22%20fill%3D%22%23DCFAF5%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-bubble-footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstrong%20class%3D%22fm-bubble-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fstrong%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Farticle%3E%0A%20%20%20%20%20%20%20%20%20%20%3Carticle%20id%3D%22bubble-cnn%22%20class%3D%22fm-bubble%20is-press%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-bubble-body%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cblockquote%20class%3D%22fm-bubble-quote%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%80%9CA%20tool%20for%20backcasting%E2%80%9D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-bubble-arrow%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2220%22%20height%3D%2210%22%20viewBox%3D%220%200%2020%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M20%200H0L8.58579%208.58579C9.36683%209.36683%2010.6332%209.36684%2011.4142%208.58579L20%200Z%22%20fill%3D%22%23DCFAF5%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-bubble-footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstrong%20class%3D%22fm-bubble-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fstrong%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Farticle%3E%0A%20%20%20%20%20%20%20%20%20%20%3Carticle%20id%3D%22bubble-tears%22%20class%3D%22fm-bubble%20is-testimonial%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-bubble-body%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cblockquote%20class%3D%22fm-bubble-quote%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%80%9CThis%20webpage%20is%20amazing%2C%20and%20that%20it%20has%20brought%20tears%20to%20my%20eyes!%E2%80%9D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-bubble-arrow%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2220%22%20height%3D%2210%22%20viewBox%3D%220%200%2020%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M20%200H0L8.58579%208.58579C9.36683%209.36683%2010.6332%209.36684%2011.4142%208.58579L20%200Z%22%20fill%3D%22%23DCFAF5%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-bubble-footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstrong%20class%3D%22fm-bubble-author%22%3ETimothy%20S.%3C%2Fstrong%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-bubble-avatar%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20height%3D%2232%22%20width%3D%2232%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Farticle%3E%0A%20%20%20%20%20%20%20%20%20%20%3Carticle%20id%3D%22bubble-bbc%22%20class%3D%22fm-bubble%20is-press%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-bubble-body%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cblockquote%20class%3D%22fm-bubble-quote%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%80%9CAn%20insight%20into%20the%20experiences%20of%20people.%E2%80%9D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-bubble-arrow%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2220%22%20height%3D%2210%22%20viewBox%3D%220%200%2020%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M20%200H0L8.58579%208.58579C9.36683%209.36683%2010.6332%209.36684%2011.4142%208.58579L20%200Z%22%20fill%3D%22%23DCFAF5%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-bubble-footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstrong%20class%3D%22fm-bubble-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fstrong%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Farticle%3E%0A%20%20%20%20%20%20%20%20%20%20%3Carticle%20id%3D%22bubble-nostalgia%22%20class%3D%22fm-bubble%20is-testimonial%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-bubble-body%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cblockquote%20class%3D%22fm-bubble-quote%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%80%9CI%20love%20this%20so%20much%2C%20every%20time%20I%20receive%20a%20letter%20it%20fills%20me%20with%20nostalgia%20and%20overwhelms%20me%20with%20emotion.%20Thank%20you!%E2%80%9D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-bubble-arrow%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2220%22%20height%3D%2210%22%20viewBox%3D%220%200%2020%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M20%200H0L8.58579%208.58579C9.36683%209.36683%2010.6332%209.36684%2011.4142%208.58579L20%200Z%22%20fill%3D%22%23DCFAF5%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-bubble-footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstrong%20class%3D%22fm-bubble-author%22%3ELaura%20K.%3C%2Fstrong%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-bubble-avatar%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20height%3D%2232%22%20width%3D%2232%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Farticle%3E%0A%20%20%20%20%20%20%20%20%20%20%3Carticle%20id%3D%22bubble-latimes%22%20class%3D%22fm-bubble%20is-press%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-bubble-body%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cblockquote%20class%3D%22fm-bubble-quote%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%80%9CA%20quiet%20phenomenon%E2%80%9D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-bubble-arrow%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2220%22%20height%3D%2210%22%20viewBox%3D%220%200%2020%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M20%200H0L8.58579%208.58579C9.36683%209.36683%2010.6332%209.36684%2011.4142%208.58579L20%200Z%22%20fill%3D%22%23DCFAF5%22%3E%3C%2Fpath%3E%0A%3C%2Fsvg%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-bubble-footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstrong%20class%3D%22fm-bubble-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fstrong%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Farticle%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3Cdiv%20class%3D%22column%20is-narrow%20%20background-color-primary-invert%20is-hidden-touch%22%20style%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%20%20%0A%0A%3Cdiv%20class%3D%22fm-props-heading%20fm-container%20mt6%22%3E%0A%20%20%3Cdiv%3E%0A%20%20%20%20%3Ch2%20class%3D%22fm-title%20level-3%22%3E%0A%20%20%20%20%20%20Press%20mentions%0A%20%20%20%20%3C%2Fh2%3E%0A%0A%20%20%20%20%3Ch2%20class%3D%22fm-title%20level-5%20color-text-70%22%3E%0A%20%20%20%20%20%20When%20FutureMe%20is%20featured%20in%20the%20news%2C%20on%20the%20radio%2C%20in%20a%20podcast%E2%80%A6%0A%20%20%20%20%3C%2Fh2%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Ca%20class%3D%22fm-btn%20is-tight%20size-small%20is-ghost%22%20href%3D%22%2Fprops%2Fpress%22%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20%20%20View%20all%0A%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fspan%3E%0A%3C%2Fa%3E%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22fm-carousel%20is-props%20fm-block%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-carousel-scroller%22%3E%0A%20%20%20%20%20%20%3Carticle%20id%3D%22article-guardian%22%20class%3D%22%0A%20%20%20%20%20%20fm-article%0A%20%20%20%20%20%20is-guardian%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20is-blended%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22%20style%3D%22%0A%20%20%20%20%20%20--background%3A%20%231e2e61%3B%0A%20%20%20%20%20%20--color%3A%20%23FFFFFF%3B%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-article-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-article-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-article-title%20fm-title%22%3E%0A%20%20%20%20%20%20%20%20%22In%20a%20time%20of%20dopamine-drenched%20social%20media%20feeds%2C%20this%20might%20be%20the%20world%E2%80%99s%20slowest%20messaging%20service.%22%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-article-link%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fwww.theguardian.com%2Flifeandstyle%2F2022%2Fapr%2F22%2Ffutureme-email-from-myself-life-advice%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20article%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22article-cnn%22%20class%3D%22%0A%20%20%20%20%20%20fm-article%0A%20%20%20%20%20%20is-cnn%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20has-large-title%0A%20%20%20%20%20%20%22%20style%3D%22%0A%20%20%20%20%20%20--background%3A%20%23CC0000%3B%0A%20%20%20%20%20%20--color%3A%20%23FFFFFF%3B%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-article-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-article-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-article-title%20fm-title%22%3E%0A%20%20%20%20%20%20%20%20%22Backcasting%22%20to%20the%20future%20feature%20in%20CNN%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-article-link%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Fwww.cnn.com%2F2015%2F10%2F22%2Fhealth%2Fbackcasting-to-the-future%2Findex.html%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20article%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22article-latimes%22%20class%3D%22%0A%20%20%20%20%20%20fm-article%0A%20%20%20%20%20%20is-latimes%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20is-blended%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22%20style%3D%22%0A%20%20%20%20%20%20--background%3A%20%231F2329%3B%0A%20%20%20%20%20%20--color%3A%20%23FFFFFF%3B%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-article-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-article-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-article-title%20fm-title%22%3E%0A%20%20%20%20%20%20%20%20Magazine%20feature%20article%20(and%20silly%20picture!)%20in%20the%20LA%20Times%20written%20by%20Pulitizer%20Prize%20winning%20author%20J.R.%20Moehringer%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-article-link%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Fwww.latimes.com%2Ffeatures%2Fmagazine%2Fwest%2Fla-tm-futureme12mar25%2C0%2C3900374.story%3Fcoll%3Dla-home-magazine%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20article%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22article-bbc%22%20class%3D%22%0A%20%20%20%20%20%20fm-article%0A%20%20%20%20%20%20is-bbc%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20is-blended%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22%20style%3D%22%0A%20%20%20%20%20%20--background%3A%20%23368A9C%3B%0A%20%20%20%20%20%20--color%3A%20%23FFFFFF%3B%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-article-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-article-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-article-title%20fm-title%22%3E%0A%20%20%20%20%20%20%20%20The%20experiences%20of%20people%20who%20have%20written%20letters%20to%20themselves%20to%20be%20opened%20in%20years%20to%20come.%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-article-link%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Fwww.bbc.co.uk%2Fprogrammes%2Fb00dx16j%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20article%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22article-dailymail%22%20class%3D%22%0A%20%20%20%20%20%20fm-article%0A%20%20%20%20%20%20is-dailymail%0A%20%20%20%20%20%20is-outlined%0A%20%20%20%20%20%20is-blended%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20has-large-title%0A%20%20%20%20%20%20%22%20style%3D%22%0A%20%20%20%20%20%20--background%3A%20%23ffffff%3B%0A%20%20%20%20%20%20--color%3A%20%23000000%3B%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-article-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-article-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-article-title%20fm-title%22%3E%0A%20%20%20%20%20%20%20%20%E2%80%9CTime%20travel%20magic%E2%80%9D%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-article-link%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Fwww.dailymail.co.uk%2Fsciencetech%2Farticle-2149914%2FFutureMe-lets-emails-travel-time--send-advice-warnings-simple-Hello-future.html%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20article%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22article-npr%22%20class%3D%22%0A%20%20%20%20%20%20fm-article%0A%20%20%20%20%20%20is-npr%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22%20style%3D%22%0A%20%20%20%20%20%20--background%3A%20%23E63D3E%3B%0A%20%20%20%20%20%20--color%3A%20%23FFFFFF%3B%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-article-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-article-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-article-title%20fm-title%22%3E%0A%20%20%20%20%20%20%20%20FutureMe%20founder%20Matt%20interviewed%20by%20Scott%20Simon%20on%20Weekend%20Edition%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-article-link%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Fwww.npr.org%2Ftemplates%2Fstory%2Fstory.php%3FstoryId%3D9261640%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20article%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22article-oprah%22%20class%3D%22%0A%20%20%20%20%20%20fm-article%0A%20%20%20%20%20%20is-oprah%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20is-blended%0A%20%20%20%20%20%20has-large-logo%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%22%20style%3D%22%0A%20%20%20%20%20%20--background%3A%20%23731e80%3B%0A%20%20%20%20%20%20--color%3A%20%23FFFFFF%3B%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-article-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cfigure%20class%3D%22fm-article-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffigure%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-article-title%20fm-title%22%3E%0A%20%20%20%20%20%20%20%20Oprah%20gave%20us%20props%20in%20her%20magazine.%20One%20of%20our%20Facebook%20fans%20even%20scanned%20and%20posted%20it!%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-article-link%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Fpid%3D10064417%26amp%3Bo%3Dall%26amp%3Bop%3D1%26amp%3Bview%3Dall%26amp%3Bsubj%3D119300243371%26amp%3Baid%3D-1%26amp%3Bid%3D719000575%26amp%3Boid%3D119300243371%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20article%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-carousel-last%22%3E%0A%20%20%20%20%20%20%3Ca%20class%3D%22fm-btn%20is-selected%20size-medium%22%20href%3D%22%2Fprops%2Fpress%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20View%20all%20press%20articles%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22fm-props-heading%20fm-container%20mt6%22%3E%0A%20%20%3Cdiv%3E%0A%20%20%20%20%3Ch2%20class%3D%22fm-title%20level-3%22%3E%0A%20%20%20%20%20%20Testimonials%0A%20%20%20%20%3C%2Fh2%3E%0A%0A%20%20%20%20%3Ch2%20class%3D%22fm-title%20level-5%20color-text-70%22%3E%0A%20%20%20%20%20%20Lovely%20messages%20from%20FutureMe%20users%0A%20%20%20%20%3C%2Fh2%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Ca%20class%3D%22fm-btn%20is-tight%20size-small%20is-ghost%22%20href%3D%22%2Fprops%2Ftestimonials%22%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20%20%20View%20all%0A%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fspan%3E%0A%3C%2Fa%3E%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22two-column-layout%22%3E%0A%20%20%3Cdiv%20class%3D%22w-100%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-container%20mt4%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-testimonials%22%3E%0A%20%20%20%20%20%20%20%20%3Carticle%20id%3D%22testimonial-%22%20class%3D%22%0A%20%20%20%20%20%20fm-testimonial%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cblockquote%20class%3D%22fm-testimonial-quote%22%3E%0A%20%20%20%20%20%20%E2%80%9CI%20just%20wanted%20to%20say%2C%20you%20guys%20are%20wonderful.%20thanks%20for%20giving%20me%20this%20opportunity%20to%20bitch%20to%20my%20future%20self%2C%20or%20make%20sure%20my%20future%20self%20is%20motivated%20enough%20to%20do%20all%20the%20things%20my%20past%20self%20intended%20to%20do.%E2%80%9D%0A%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-testimonial-author%22%3E%0A%20%20%20%20%20%20%20%20A.%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22testimonial-%22%20class%3D%22%0A%20%20%20%20%20%20fm-testimonial%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cblockquote%20class%3D%22fm-testimonial-quote%22%3E%0A%20%20%20%20%20%20%E2%80%9CThere%20is%20something%20special%20in%20hearing%20from%20your%20past%20self.%20You%20are%20the%20same%20person%20yet%20a%20better%2C%20more%20mature%20version.%20Older%20through%20experience%2C%20wiser%20through%20mistakes%20or%20victories.%20Futureme%20is%20the%20perfect%20platform%20to%20showcase%20human%20change%2C%20the%20creators%20may%20not%20have%20a%20psychology%20background%20but%20hit%20the%20nail%20on%20the%20head%20when%20they%20worked%20on%20the%20item%20that%20we%20ALL%20want%20to%20be%20remembered%20or%20reminded.%20Bless%20you%20people%2C%20you%20are%20a%20truly%20making%20a%20difference.%E2%80%9D%0A%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-testimonial-author%22%3E%0A%20%20%20%20%20%20%20%20O.%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22testimonial-%22%20class%3D%22%0A%20%20%20%20%20%20fm-testimonial%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cblockquote%20class%3D%22fm-testimonial-quote%22%3E%0A%20%20%20%20%20%20%E2%80%9CI%20love%20FutureMe.%20I've%20been%20writing%20myself%20a%20birthday%20letter%20every%20year%20since%202011.%20And%20when%20I%20forget%20about%20it%2C%20the%20surprise%20is%20amazing!%20It%20really%20makes%20your%20day.%20Writing%20the%20letter%20is%20also%20therapeutic.%20It%20helps%20me%20set%20my%20goals%20for%20the%20future%2C%20and%20reminds%20me%20to%20become%20a%20better%20person.%E2%80%9D%0A%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-testimonial-author%22%3E%0A%20%20%20%20%20%20%20%20W.%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22testimonial-%22%20class%3D%22%0A%20%20%20%20%20%20fm-testimonial%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cblockquote%20class%3D%22fm-testimonial-quote%22%3E%0A%20%20%20%20%20%20%E2%80%9CI%20just%20received%20a%20letter%20from%20past%20Jenny%20from%20a%20year%20ago%2C%20and%20it%20made%20me%20tear%20up%20in%20a%20coffee%20shop.%20It's%20exactly%20what%20I%20needed%20to%20hear%20right%20now%2C%20thank%20you%20for%20having%20this%20site%20I%20can't%20express%20how%20much%20it%20has%20helped%20me%2C%20I%20will%20be%20recommending%20it%20to%20all%20of%20my%20friends!%E2%80%9D%0A%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-testimonial-author%22%3E%0A%20%20%20%20%20%20%20%20R.%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22testimonial-%22%20class%3D%22%0A%20%20%20%20%20%20fm-testimonial%0A%20%20%20%20%20%20is-short%0A%20%20%20%20%20%20%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cblockquote%20class%3D%22fm-testimonial-quote%22%3E%0A%20%20%20%20%20%20%E2%80%9CYou%20guys%20are%20amazing%20I%20love%20what%20you%20do%20and%20you%20are%20a%20huge%20help%20in%20my%20life%20for%20my%20personal%20recovery%20and%20healing%20process.%E2%80%9D%0A%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-testimonial-author%22%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22testimonial-%22%20class%3D%22%0A%20%20%20%20%20%20fm-testimonial%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cblockquote%20class%3D%22fm-testimonial-quote%22%3E%0A%20%20%20%20%20%20%E2%80%9CToday%20I%20received%20an%20email%20from%20myself%20that%20I%20had%20written%20in%20May%20of%20this%20year.%20I%20was%20moved%20to%20tears...tears%20of%20compassion%20for%20myself%2C%20and%20healing%20because%20this%20letter%20was%20SO%20timely%20I%20couldn't%20have%20received%20a%20better%20message%20of%20encouragement%20from%20any%20friend.%E2%80%9D%0A%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-testimonial-author%22%3E%0A%20%20%20%20%20%20%20%20A%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%20%20%3Carticle%20id%3D%22testimonial-%22%20class%3D%22%0A%20%20%20%20%20%20fm-testimonial%0A%20%20%20%20%20%20is-short%0A%20%20%20%20%20%20%0A%20%20%20%20%22%3E%0A%20%20%20%20%3Cblockquote%20class%3D%22fm-testimonial-quote%22%3E%0A%20%20%20%20%20%20%E2%80%9CI%20received%20a%20letter%20this%20morning%20from%20myself%2C%20dated%20five%20years%20ago.%20What%20a%20beautiful%20gift%20that%20was.%20Thank%20you%2C%20from%20the%20bottom%20of%20my%20heart.%E2%80%9D%0A%20%20%20%20%3C%2Fblockquote%3E%0A%0A%20%20%20%20%20%20%3Cfooter%20class%3D%22fm-testimonial-author%22%3E%0A%20%20%20%20%20%20%20%20A.%0A%20%20%20%20%20%20%3C%2Ffooter%3E%0A%20%20%3C%2Farticle%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22column%20is-narrow%20%20background-color-primary-invert%20is-hidden-touch%22%20style%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22fm-props-heading%20fm-container%20mt6%22%3E%0A%20%20%3Cdiv%3E%0A%20%20%20%20%3Ch2%20class%3D%22fm-title%20level-3%22%3E%0A%20%20%20%20%20%20Social%20media%0A%20%20%20%20%3C%2Fh2%3E%0A%0A%20%20%20%20%3Ch2%20class%3D%22fm-title%20level-5%20color-text-70%22%3E%0A%20%20%20%20%20%20Tweets%20from%20all%20around%20the%20world%0A%20%20%20%20%3C%2Fh2%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Ca%20class%3D%22fm-btn%20is-tight%20size-small%20is-ghost%22%20href%3D%22%2Fprops%2Fsocial-media%22%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20%20%20View%20all%0A%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fspan%3E%0A%3C%2Fa%3E%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22fm-container%20mt4%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-tweets%20is-props%22%3E%0A%20%20%20%20%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22fm-props-contact%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-message%20is-info%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-message-content%22%3E%0A%20%20%20%20%20%20Do%20you%20have%20a%20FutureMe%20story%20to%20share%3F%0A%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20Please%20let%20us%20know%20on%20%3Ca%20href%3D%22https%3A%2F%2Ftwitter.com%2Ffutureme%22%20target%3D%22_blank%22%3ETwitter%3C%2Fa%3E%20or%20by%20email%20at%20%3Cstrong%3Efeedback%40futureme.org%3C%2Fstrong%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%20%20%0A%0A%3Cdiv%20class%3D%22is-hidden-touch%20flex%20justify-center%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22ad%20center%20tc%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Landscape%20Fixed%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-landscape%22%20style%3D%22display%3Ablock%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%226832765911%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%3C%2Fdiv%3E%0A%0A%0A%3Cfooter%20class%3D%22fm-footer%20is-default%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-footer-main%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-footer-logo%20fm-block%22%3E%0A%20%20%20%20%20%20%3Ca%20class%3D%22fm-logo%22%20href%3D%22%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-footer-links%20fm-block%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%2Fletters%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-pencil%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3Cstrong%3EWrite%20a%20letter%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%3Ca%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-book-open-reader%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3Cstrong%3ERead%20Public%20Letters%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-right-to-bracket%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%3ESign%20In%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fusers%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-user%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%3ESign%20Up%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Cform%20class%3D%22button_to%22%20method%3D%22get%22%20action%3D%22%2Freferrals%2Finvite%22%20data-remote%3D%22true%22%3E%3Cbutton%20type%3D%22submit%22%3E%0A%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%3Ci%20class%3D%22fa-solid%20fa-paper-plane%20fa-sm%22%3E%3C%2Fi%3E%3C%2Fspan%3E%0A%20%20%20%20%3Cstrong%3EInvite%20a%20friend%3C%2Fstrong%3E%0A%3C%2Fbutton%3E%3C%2Fform%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cul%20class%3D%22fm-footer-list%20fm-block%22%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2F%22%3EHome%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fprops%22%3EPress%20%26amp%3B%20Props%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fpages%2Fjobs%22%3EJobs%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22mailto%3Aadvertising%40futureme.org%3FSubject%3DFutureMe%2520Advertising%2520Inquiry%22%3EAdvertise%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fsupport.memories.net%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3ESupport%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fblog%22%3EBlog%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3C%2Ful%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-block%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-icons%20is-start%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-twitter%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Ftwitter.com%2Ffutureme%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-twitter%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-facebook%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.facebook.com%2Ffutureme%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-facebook-f%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-youtube%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC6RKoiEdLnf2Fz91NImhUgg%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-youtube%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-linked%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ffutureme-labs%2F%3FviewAsMember%3Dtrue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-linkedin%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-instagram%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.instagram.com%2Ffutureme_official%2F%3Fhl%3Den%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-instagram%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-block%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-images%22%3E%0A%20%20%3Ca%20class%3D%22fm-image%20is-app-store%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fapple.co%2F3PlaxUc%22%3E%3Cimg%3E%3C%2Fa%3E%0A%20%20%3Ca%20class%3D%22fm-image%20is-google-play%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fbit.ly%2F38qZ30P%22%3E%3Cimg%3E%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-footer-tsp%22%3E%0A%20%20%20%20%20%20%3Cul%20class%3D%22fm-footer-list%22%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fpages%2Ftos%22%3ETerms%20of%20use%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fpages%2Fprivacy-policy%22%3EPrivacy%20Policy%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%0A%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20FutureMe%E2%84%A2%20brought%20to%20you%20by%20Memories%20Group%20Limited%20%C2%A9%202002%20-%202026.%0A%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20Yup%20-%20we've%20been%20sending%20letters%20to%20the%20future%20for%20over%2024%20years%20now%0A%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%20%20%20%20%3Cdiv%20data-controller%3D%22gdpr%22%20id%3D%22gdpr_consent_notification%22%20class%3D%22notification%20bg-mid-gray%20sticky%20is-flex%22%20style%3D%22margin-bottom%3A%200px%3B%20align-items%3A%20center%3B%22%3E%0A%20%20%20%20%3Cp%20class%3D%22mr2%22%3EFutureMe%20uses%20cookies%2C%20%26nbsp%3B%3Ca%20href%3D%22%2Fpages%2Ftos%22%20target%3D%22_blank%22%3Eread%20how%3C%2Fa%3E%20%3C%2Fp%3E%0A%20%20%20%20%3Cbutton%20id%3D%22gdpr_consent_button%22%20class%3D%22button%20is-success%20is-outlined%22%20style%3D%22margin-top%3A%205px%3B%22%3EGot%20it!%3C%2Fbutton%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20id%3D%22invite-friend-container%22%3E%3C%2Fdiv%3E%0A%0A%20%20%0A%20%20%0A%20%20%0A%0A%0A%3Cimg%20height%3D%221%22%20width%3D%221%22%20fetchpriority%3D%22high%22%20style%3D%22display%3A%20none%3B%22%3E%3Cimg%20height%3D%221%22%20width%3D%221%22%20fetchpriority%3D%22high%22%20style%3D%22display%3A%20none%3B%22%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "65882db0-7d5b-4b84-b32a-378df627b40c",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.futureme.org-props"
+}

@@ -1,0 +1,134 @@
+{
+    "results": [
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 1491,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/a[1]/svg[1]",
+                "aria": "/document[1]/link[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 40,
+                "width": 40
+            },
+            "snippet": "<svg viewBox=\"0 0 512 512\" height=\"40\" width=\"40\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%20512%20512%5C%22%20height%3D%5C%2240%5C%22%20width%3D%5C%2240%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[2]/p[2]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'shape'",
+            "messageArgs": [
+                "shape"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 293,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p class=\"right\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'shape'%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22right%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22shape%22%5D%7D"
+        }
+    ],
+    "numExecuted": 226,
+    "ruleTime": 2,
+    "nls": {
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 17,
+            "elementsViolation": 2,
+            "elementsViolationReview": 4,
+            "violation": 2,
+            "potentialviolation": 1,
+            "recommendation": 12,
+            "potentialrecommendation": 1,
+            "manual": 1,
+            "pass": 209
+        },
+        "scanTime": 14,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778500574471,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EStrobe%20Illusion%20-%20Hallucinate%20with%20this%20amazing%20optical%20illusion!%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%09%09%3Ca%20href%3D%22https%3A%2F%2Fneave.com%2F%22%20target%3D%22_top%22%20class%3D%22neave%22%3E%0A%09%09%09%3Cspan%20class%3D%22disc%22%3E%3C%2Fspan%3E%0A%09%09%09%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%20512%20512%22%3E%0A%09%09%09%09%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M361%20360.95L191%20290.5v57.1l-40%2016.6V151.05l170%2070.3v-57.2l1-.4.1-.05%2038.9-15.9%22%3E%3C%2Fpath%3E%0A%09%09%09%3C%2Fsvg%3E%0A%09%09%09%3Cspan%20class%3D%22title%22%3ENeave%20Interactive%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%09%3Csection%20class%3D%22alt%20webgl%20hidden%22%3E%0A%09%09%09%3Ch1%3E%3Cspan%20class%3D%22stripes%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22title%22%3E%3C%2Fspan%3E%3Cspan%3EStrobe%20Illusion%3C%2Fspan%3E%3C%2Fh1%3E%0A%09%09%09%3Cp%3EReady%20to%20hallucinate%3F%3Cbr%3EGet%20the%20free%20iOS%20app%3A%3C%2Fp%3E%0A%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fstrobe-illusion%2Fid383453939%22%20target%3D%22_blank%22%20class%3D%22button%20fade%22%3E%3Cp%3E%3Cspan%20class%3D%22apple%22%3E%3C%2Fspan%3EDownload%3C%2Fp%3E%3C%2Fa%3E%0A%09%09%3C%2Fsection%3E%0A%09%09%3Csection%20class%3D%22intro%22%3E%0A%09%09%09%3Ch1%20class%3D%22fade%22%3E%3Cspan%20class%3D%22stripes%20fade%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22title%22%3E%3C%2Fspan%3E%3Cspan%3EStrobe%20Illusion%3C%2Fspan%3E%3C%2Fh1%3E%0A%09%09%09%3Cp%20class%3D%22fade%22%3EYou%20are%20about%20to%20hallucinate.%3C%2Fp%3E%0A%09%09%09%3Cp%20class%3D%22right%22%3EThe%20world%20around%20you%20will%20change%20shape%2C%20appearing%26nbsp%3Bto%20warp%20and%26nbsp%3Bdistort.%3C%2Fp%3E%0A%09%09%09%3Cdiv%20class%3D%22button%20hidden%22%3E%0A%09%09%09%09%3Cp%3EStart%3C%2Fp%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fsection%3E%0A%09%09%3Csection%20class%3D%22instructions%20hidden%22%3E%0A%09%09%09%3Cp%3EYou%20will%20see%20a%20stroboscopic%20animation.%3C%2Fp%3E%0A%09%09%09%3Cp%3EStare%20at%20the%20center%20of%20the%20animation%20for%2030%20seconds%E2%80%A6%20then%26nbsp%3Blook%26nbsp%3Baway%20and%20around%26nbsp%3Byou.%3C%2Fp%3E%0A%09%09%09%3Cdiv%20class%3D%22button%22%3E%0A%09%09%09%09%3Cp%3ELet%E2%80%99s%20go%3C%2Fp%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22warning%22%3E%0A%09%09%09%09%3Ch2%3EWarning%3C%2Fh2%3E%0A%09%09%09%09%3Cp%3EDo%20not%20continue%20if%20you%20are%20sensitive%20to%20flashing%20lights.%3C%2Fp%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fsection%3E%0A%09%09%3Ccanvas%20class%3D%22strobe%20hidden%22%20width%3D%221280%22%20height%3D%22720%22%3E%3C%2Fcanvas%3E%0A%09%09%3Cp%20class%3D%22timer%20hidden%22%3E%3C%2Fp%3E%0A%09%09%3Csection%20class%3D%22outro%20hidden%22%3E%0A%09%09%09%3Ch2%3ELook%20around%20you!%3C%2Fh2%3E%0A%09%09%09%3Cp%3EDid%20it%20work%20for%20you%3F%3C%2Fp%3E%0A%09%09%09%3Cdiv%20class%3D%22button%20share%22%20data-url%3D%22https%3A%2F%2Fstrobe.cool%2F%22%20data-text%3D%22Wow!%20I%20just%20hallucinated%20with%20Strobe%20Illusion%3A%22%20data-locale%3D%22en%22%3E%0A%09%09%09%09%3Cp%3EWow%2C%20yes!%3C%2Fp%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22button%20repeat%22%3E%0A%09%09%09%09%3Cp%3EDo%20it%20again%3C%2Fp%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3Cp%20class%3D%22app%22%3EWant%20more%3F%3C%2Fp%3E%0A%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fneave.com%2F%22%20target%3D%22_top%22%20class%3D%22button%20app%22%3E%0A%09%09%09%09%3Cp%3ENeave%20Interactive%3C%2Fp%3E%0A%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fsection%3E%0A%09%09%3Cnoscript%3E%0A%09%09%09%3Cp%20class%3D%22alt%20js%22%3EPlease%20enable%20JavaScript.%3C%2Fp%3E%0A%09%09%3C%2Fnoscript%3E%0A%09%09%0A%09%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "62b0d378-2fa0-4dba-9825-b87c5e27f224",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "strobe.cool"
+}

@@ -1,0 +1,920 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]",
+                "aria": "/document[1]/banner[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 222,
+                "width": 784
+            },
+            "snippet": "<div style=\"will-change: background; background-color: rgba(255, 255, 255, 0);\" data-doc-height=\"1\" data-duration=\"400\" data-no-scroll=\"1\" role=\"banner\" data-w-id=\"29bb31cc-22a9-3935-b4e9-60496141ff11\" data-collapse=\"medium\" data-easing=\"ease\" data-easing2=\"ease\" class=\"nav w-nav\" data-animation=\"default\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22will-change%3A%20background%3B%20background-color%3A%20rgba(255%2C%20255%2C%20255%2C%200)%3B%5C%22%20data-doc-height%3D%5C%221%5C%22%20data-duration%3D%5C%22400%5C%22%20data-no-scroll%3D%5C%221%5C%22%20role%3D%5C%22banner%5C%22%20data-w-id%3D%5C%2229bb31cc-22a9-3935-b4e9-60496141ff11%5C%22%20data-collapse%3D%5C%22medium%5C%22%20data-easing%3D%5C%22ease%5C%22%20data-easing2%3D%5C%22ease%5C%22%20class%3D%5C%22nav%20w-nav%5C%22%20data-animation%3D%5C%22default%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[1]/div[1]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 406,
+                "height": 788,
+                "width": 784
+            },
+            "snippet": "<a class=\"down-arrow w-inline-block\" href=\"#what-we-do\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22down-arrow%20w-inline-block%5C%22%20href%3D%5C%22%23what-we-do%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[1]/div[1]/a[1]/div[1]/svg[1]",
+                "aria": "/document[1]/link[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 406,
+                "height": 784,
+                "width": 784
+            },
+            "snippet": "<svg style=\"width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;\" preserveAspectRatio=\"xMidYMid meet\" height=\"500\" width=\"500\" viewBox=\"0 0 500 500\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20style%3D%5C%22width%3A%20100%25%3B%20height%3A%20100%25%3B%20transform%3A%20translate3d(0px%2C%200px%2C%200px)%3B%20content-visibility%3A%20visible%3B%5C%22%20preserveAspectRatio%3D%5C%22xMidYMid%20meet%5C%22%20height%3D%5C%22500%5C%22%20width%3D%5C%22500%5C%22%20viewBox%3D%5C%220%200%20500%20500%5C%22%20xmlns%3Axlink%3D%5C%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[2]/div[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1213,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div class=\"text-style-all-caps color-primary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22text-style-all-caps%20color-primary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[2]/div[1]/h1[1]/strong[1]",
+                "aria": "/document[1]/heading[2]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                24,
+                700,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1252,
+                "height": 27,
+                "width": 756
+            },
+            "snippet": "<strong>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cstrong%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C24%2C700%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[2]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1299,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p class=\"paragraph-3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22paragraph-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[2]/div[1]/a[1]",
+                "aria": "/document[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1370,
+                "height": 788,
+                "width": 784
+            },
+            "snippet": "<a class=\"down-arrow w-inline-block\" href=\"#how-we-do-it\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22down-arrow%20w-inline-block%5C%22%20href%3D%5C%22%23how-we-do-it%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[2]/div[1]/a[1]/div[1]/svg[1]",
+                "aria": "/document[1]/link[2]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1370,
+                "height": 784,
+                "width": 784
+            },
+            "snippet": "<svg style=\"width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;\" preserveAspectRatio=\"xMidYMid meet\" height=\"500\" width=\"500\" viewBox=\"0 0 500 500\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20style%3D%5C%22width%3A%20100%25%3B%20height%3A%20100%25%3B%20transform%3A%20translate3d(0px%2C%200px%2C%200px)%3B%20content-visibility%3A%20visible%3B%5C%22%20preserveAspectRatio%3D%5C%22xMidYMid%20meet%5C%22%20height%3D%5C%22500%5C%22%20width%3D%5C%22500%5C%22%20viewBox%3D%5C%220%200%20500%20500%5C%22%20xmlns%3Axlink%3D%5C%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[3]/div[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2177,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div class=\"text-style-all-caps color-primary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22text-style-all-caps%20color-primary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[3]/div[1]/h1[1]/span[1]/strong[1]",
+                "aria": "/document[1]/heading[3]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                24,
+                700,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2216,
+                "height": 27,
+                "width": 778
+            },
+            "snippet": "<strong>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cstrong%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C24%2C700%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[3]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2262,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p class=\"paragraph-3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22paragraph-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[3]/div[1]/a[1]",
+                "aria": "/document[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2334,
+                "height": 788,
+                "width": 784
+            },
+            "snippet": "<a class=\"down-arrow w-inline-block\" href=\"#why-we-do-it\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22down-arrow%20w-inline-block%5C%22%20href%3D%5C%22%23why-we-do-it%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[3]/div[1]/a[1]/div[1]/svg[1]",
+                "aria": "/document[1]/link[3]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2334,
+                "height": 784,
+                "width": 784
+            },
+            "snippet": "<svg style=\"width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;\" preserveAspectRatio=\"xMidYMid meet\" height=\"500\" width=\"500\" viewBox=\"0 0 500 500\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20style%3D%5C%22width%3A%20100%25%3B%20height%3A%20100%25%3B%20transform%3A%20translate3d(0px%2C%200px%2C%200px)%3B%20content-visibility%3A%20visible%3B%5C%22%20preserveAspectRatio%3D%5C%22xMidYMid%20meet%5C%22%20height%3D%5C%22500%5C%22%20width%3D%5C%22500%5C%22%20viewBox%3D%5C%220%200%20500%20500%5C%22%20xmlns%3Axlink%3D%5C%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[4]/div[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3140,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div class=\"text-style-all-caps color-primary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22text-style-all-caps%20color-primary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[4]/div[1]/h1[1]/span[1]/strong[1]",
+                "aria": "/document[1]/heading[4]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                24,
+                700,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3179,
+                "height": 27,
+                "width": 626
+            },
+            "snippet": "<strong>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cstrong%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C24%2C700%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[4]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3226,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p class=\"paragraph-3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22paragraph-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[4]/div[1]/a[1]",
+                "aria": "/document[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3298,
+                "height": 788,
+                "width": 784
+            },
+            "snippet": "<a class=\"down-arrow w-inline-block\" href=\"#how-you-can-help\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22down-arrow%20w-inline-block%5C%22%20href%3D%5C%22%23how-you-can-help%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[4]/div[1]/a[1]/div[1]/svg[1]",
+                "aria": "/document[1]/link[4]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3298,
+                "height": 784,
+                "width": 784
+            },
+            "snippet": "<svg style=\"width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;\" preserveAspectRatio=\"xMidYMid meet\" height=\"500\" width=\"500\" viewBox=\"0 0 500 500\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20style%3D%5C%22width%3A%20100%25%3B%20height%3A%20100%25%3B%20transform%3A%20translate3d(0px%2C%200px%2C%200px)%3B%20content-visibility%3A%20visible%3B%5C%22%20preserveAspectRatio%3D%5C%22xMidYMid%20meet%5C%22%20height%3D%5C%22500%5C%22%20width%3D%5C%22500%5C%22%20viewBox%3D%5C%220%200%20500%20500%5C%22%20xmlns%3Axlink%3D%5C%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[5]/div[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4104,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div class=\"text-style-all-caps color-primary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22text-style-all-caps%20color-primary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[5]/div[1]/h1[1]/strong[1]",
+                "aria": "/document[1]/heading[5]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                24,
+                700,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4143,
+                "height": 27,
+                "width": 552
+            },
+            "snippet": "<strong>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cstrong%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C24%2C700%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[5]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4190,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p class=\"paragraph-3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22paragraph-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[5]/div[1]/a[1]",
+                "aria": "/document[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4262,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"down-arrow w-inline-block\" href=\"#get-involved\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22down-arrow%20w-inline-block%5C%22%20href%3D%5C%22%23get-involved%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[5]/div[1]/a[1]",
+                "aria": "/document[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4262,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"down-arrow w-inline-block\" href=\"#get-involved\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22down-arrow%20w-inline-block%5C%22%20href%3D%5C%22%23get-involved%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[5]/div[1]/a[2]",
+                "aria": "/document[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4262,
+                "height": 18,
+                "width": 104
+            },
+            "snippet": "<a class=\"button donate w-button\" href=\"/our-team/partnerships\" id=\"w-node-_0e74b82d-b693-7927-92c4-4a8b81b9b49c-298d3f4b\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22button%20donate%20w-button%5C%22%20href%3D%5C%22%2Four-team%2Fpartnerships%5C%22%20id%3D%5C%22w-node-_0e74b82d-b693-7927-92c4-4a8b81b9b49c-298d3f4b%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[7]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4280,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"footer-logo w-inline-block\" href=\"/template/all-sections/all-sections-light\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22footer-logo%20w-inline-block%5C%22%20href%3D%5C%22%2Ftemplate%2Fall-sections%2Fall-sections-light%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[7]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4280,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"footer-logo w-inline-block\" href=\"/template/all-sections/all-sections-light\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22footer-logo%20w-inline-block%5C%22%20href%3D%5C%22%2Ftemplate%2Fall-sections%2Fall-sections-light%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[7]/div[1]/div[6]/form[1]/input[3]",
+                "aria": "/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 434,
+                "top": 4465,
+                "height": 22,
+                "width": 79
+            },
+            "snippet": "<input value=\"Subscribe!\" class=\"button small nav-cta w-button\" data-wait=\"Please wait...\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Subscribe!%5C%22%20class%3D%5C%22button%20small%20nav-cta%20w-button%5C%22%20data-wait%3D%5C%22Please%20wait...%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1443,
+    "ruleTime": 16,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "potential_same_color": "The foreground text and its background color are both detected as {3}. Verify the text meets the WCAG AA requirements for minimum contrast"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 39,
+            "elementsViolation": 10,
+            "elementsViolationReview": 25,
+            "violation": 10,
+            "potentialviolation": 17,
+            "recommendation": 10,
+            "potentialrecommendation": 5,
+            "manual": 1,
+            "pass": 1400
+        },
+        "scanTime": 52,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778341270606,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22es%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EOur%20Mission%20Light%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20data-scroll-time%3D%220.7%22%20class%3D%22light%22%3E%3Cdiv%20data-animation%3D%22default%22%20class%3D%22nav%20w-nav%22%20data-easing2%3D%22ease%22%20data-easing%3D%22ease%22%20data-collapse%3D%22medium%22%20data-w-id%3D%2229bb31cc-22a9-3935-b4e9-60496141ff11%22%20role%3D%22banner%22%20data-no-scroll%3D%221%22%20data-duration%3D%22400%22%20data-doc-height%3D%221%22%20style%3D%22will-change%3A%20background%3B%20background-color%3A%20rgba(255%2C%20255%2C%20255%2C%200)%3B%22%3E%3Ca%20href%3D%22%2F%22%20id%3D%22w-node-_29bb31cc-22a9-3935-b4e9-60496141ff12-6141ff11%22%20class%3D%22brand%20w-nav-brand%22%20aria-label%3D%22home%22%3E%3Cimg%20alt%3D%22Neighbor%20Idaho%20Logo%22%20sizes%3D%22(max-width%3A%20479px)%2098vw%2C%20(max-width%3A%20767px)%2099vw%2C%20(max-width%3A%201222px)%20100vw%2C%201222px%22%20class%3D%22image-19%22%3E%3C%2Fa%3E%3Clink%20rel%3D%22prefetch%22%20href%3D%22%2F%22%3E%3Cnav%20role%3D%22navigation%22%20id%3D%22w-node-_29bb31cc-22a9-3935-b4e9-60496141ff14-6141ff11%22%20class%3D%22nav-items-wrapper%20w-nav-menu%22%3E%3Cdiv%20class%3D%22button%20close%20w-nav-button%22%20style%3D%22-webkit-user-select%3A%20text%3B%22%20aria-label%3D%22menu%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-controls%3D%22w-nav-overlay-0%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%3E%3Cimg%20loading%3D%22lazy%22%20alt%3D%22%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22nav-links-wrapper%22%3E%3Cdiv%20data-hover%3D%22false%22%20data-delay%3D%220%22%20class%3D%22w-dropdown%22%3E%3Cdiv%20class%3D%22w-dropdown-toggle%22%20id%3D%22w-dropdown-toggle-0%22%20aria-controls%3D%22w-dropdown-list-0%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20role%3D%22button%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22w-icon-dropdown-toggle%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22text-block%20nav-link%22%3EWHO%26nbsp%3BWE%26nbsp%3BARE%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22w-dropdown-list%22%20id%3D%22w-dropdown-list-0%22%20aria-labelledby%3D%22w-dropdown-toggle-0%22%3E%3Ca%20href%3D%22%2Four-team%2Four-founders%22%20class%3D%22dropdown-link%20w-dropdown-link%22%20tabindex%3D%220%22%3EAlumni%3C%2Fa%3E%3Ca%20href%3D%22%2Four-mission%2Four-mission-light%22%20aria-current%3D%22page%22%20class%3D%22w-dropdown-link%20w--current%22%20tabindex%3D%220%22%3EOur%20Mission%3C%2Fa%3E%3Ca%20href%3D%22%2Four-team%2F2gi%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EOur%20Team%3C%2Fa%3E%3Ca%20href%3D%22%2Ffinancials%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EFinancials%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3Cdiv%20data-hover%3D%22false%22%20data-delay%3D%220%22%20class%3D%22w-dropdown%22%3E%3Cdiv%20class%3D%22w-dropdown-toggle%22%20id%3D%22w-dropdown-toggle-1%22%20aria-controls%3D%22w-dropdown-list-1%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20role%3D%22button%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22w-icon-dropdown-toggle%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22text-block%20nav-link%22%3EWHAT%26nbsp%3BWE%26nbsp%3BDO%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22w-dropdown-list%22%20id%3D%22w-dropdown-list-1%22%20aria-labelledby%3D%22w-dropdown-toggle-1%22%3E%3Ca%20href%3D%22%2Four-programs%22%20class%3D%22dropdown-link%20w-dropdown-link%22%20tabindex%3D%220%22%3EOur%20Programs%3C%2Fa%3E%3Ca%20href%3D%22%2Fin-the-news%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3E2GI%26nbsp%3BIn%20The%20News%3C%2Fa%3E%3Ca%20href%3D%22%2Fprograms-latam-the-caribbean%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3ELatin%20American%20and%20Caribbean%20Program%3Cbr%3E%3C%2Fa%3E%3Ca%20href%3D%22%2Fthe-blog%2Fblog%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3E2GI%20Blog%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3Cdiv%20data-hover%3D%22false%22%20data-delay%3D%220%22%20class%3D%22w-dropdown%22%3E%3Cdiv%20class%3D%22w-dropdown-toggle%22%20id%3D%22w-dropdown-toggle-2%22%20aria-controls%3D%22w-dropdown-list-2%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20role%3D%22button%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22w-icon-dropdown-toggle%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22text-block%20nav-link%22%3EGET%26nbsp%3BINVOLVED%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22w-dropdown-list%22%20id%3D%22w-dropdown-list-2%22%20aria-labelledby%3D%22w-dropdown-toggle-2%22%3E%3Ca%20href%3D%22%2Four-team%2Fpartnerships%22%20class%3D%22dropdown-link%20w-dropdown-link%22%20tabindex%3D%220%22%3EPartnerships%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EDonate%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20target%3D%22_blank%22%20class%3D%22button%20mobile-nav-cta%20w-button%22%3EDonate%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fnav%3E%3Cdiv%20id%3D%22w-node-_29bb31cc-22a9-3935-b4e9-60496141ff2b-6141ff11%22%20class%3D%22nav-button-group%22%3E%3Cdiv%20class%3D%22button%20donate%20menuasdf%20w-nav-button%22%20style%3D%22-webkit-user-select%3A%20text%3B%22%20aria-label%3D%22menu%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-controls%3D%22w-nav-overlay-0%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%3E%3Cdiv%3EMenu%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ca%20href%3D%22%2Flogin%22%20class%3D%22button%20login%20w-button%22%3ELogin%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20target%3D%22_blank%22%20class%3D%22button%20donate%20w-button%22%3EDonate%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22w-nav-overlay%22%20data-wf-ignore%3D%22%22%20id%3D%22w-nav-overlay-0%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22our-mission%22%20class%3D%22anchor%22%3E%3C%2Fdiv%3E%3Csection%20data-w-id%3D%220b2c6ffb-e0a5-6e5c-1cf9-a03742f365d4%22%20class%3D%22section%20mission%22%20style%3D%22will-change%3A%20transform%3B%20transform%3A%20translate3d(0px%2C%200%25%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cimg%20data-w-id%3D%22eecd790e-5cec-a7fe-572b-caa201166a83%22%20sizes%3D%22(max-width%3A%201200px)%20100vw%2C%201200px%22%20alt%3D%22%22%20class%3D%22image%20our-mission%22%20style%3D%22will-change%3A%20opacity%2C%20transform%3B%20opacity%3A%201%3B%20transform%3A%20translate3d(0px%2C%20-0.0024vh%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cdiv%20class%3D%22content-block%22%20style%3D%22will-change%3A%20opacity%3B%20opacity%3A%201%3B%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-primary%22%3EOur%20Mission%3C%2Fdiv%3E%3Ch1%20class%3D%22heading-3%20other-tagf%22%3E%3Cstrong%3EConnect%20disabled%20founders%20with%20the%20resources%20they%20need%20to%20thrive.%3C%2Fstrong%3E%3C%2Fh1%3E%3Cp%20class%3D%22paragraph-3%22%3EDisabled%20people%20are%20historically%20underserved%20by%20resources%20and%20programs%20targeting%20entrepreneurs.%202GI%20seeks%20to%20challenge%20the%20entrepreneurial%20ecosystem%20by%20supporting%20founders%20with%20disabilities%2C%20and%20flipping%20the%20narrative%20to%20see%20disability%20as%20a%20competitive%20advantage%20for%20businesses.%3C%2Fp%3E%3Ca%20href%3D%22%23what-we-do%22%20class%3D%22down-arrow%20w-inline-block%22%3E%3Cdiv%20class%3D%22lottie-animation%22%20data-w-id%3D%22eb97cfa7-7fd7-6018-4396-daf61550d1a3%22%20data-animation-type%3D%22lottie%22%20data-src%3D%22https%3A%2F%2Fcdn.prod.website-files.com%2F622a90d02dc43857eb55fed3%2F628a91632706b46e966279b6_88988-down-arrow-for-more.json%22%20data-loop%3D%221%22%20data-direction%3D%221%22%20data-autoplay%3D%221%22%20data-is-ix2-target%3D%220%22%20data-renderer%3D%22svg%22%20data-default-duration%3D%221%22%20data-duration%3D%220%22%20data-loading%3D%22eager%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20500%20500%22%20width%3D%22500%22%20height%3D%22500%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20style%3D%22width%3A%20100%25%3B%20height%3A%20100%25%3B%20transform%3A%20translate3d(0px%2C%200px%2C%200px)%3B%20content-visibility%3A%20visible%3B%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22__lottie_element_5%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20x%3D%220%22%20y%3D%220%22%3E%3C%2Frect%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20clip-path%3D%22url(%23__lottie_element_5)%22%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C117.40400695800781%2C249.3854522705078)%22%20opacity%3D%221%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C132.5959930419922%2C101.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(22%2C18%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.954999923706055%20C57.59600067138672%2C-26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20C-0.0010000000474974513%2C26.954999923706055%20-57.59700012207031%2C-26.954999923706055%20-57.59700012207031%2C-26.954999923706055%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C177.40399169921875%2C240.2201690673828)%22%20opacity%3D%220.8%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C72.59600067138672%2C41.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(55%2C51%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.954999923706055%20C57.59600067138672%2C-26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20C-0.0010000000474974513%2C26.954999923706055%20-57.59700012207031%2C-26.954999923706055%20-57.59700012207031%2C-26.954999923706055%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C177.40399169921875%2C170.57489013671875)%22%20opacity%3D%220.5%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C72.59600067138672%2C41.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(99%2C96%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.95599937438965%20C57.59600067138672%2C-26.95599937438965%20-0.0010000000474974513%2C26.95599937438965%20-0.0010000000474974513%2C26.95599937438965%20C-0.0010000000474974513%2C26.95599937438965%20-57.59700012207031%2C-26.95599937438965%20-57.59700012207031%2C-26.95599937438965%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Cdiv%20id%3D%22what-we-do%22%20class%3D%22anchor%22%3E%3C%2Fdiv%3E%3Csection%20data-w-id%3D%22306f33da-7351-cd08-8cbe-29e06fa6d123%22%20class%3D%22section%20mission%22%20style%3D%22will-change%3A%20transform%3B%20transform%3A%20translate3d(0px%2C%200%25%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cimg%20sizes%3D%22(max-width%3A%203613px)%20100vw%2C%203613px%22%20alt%3D%22%22%20class%3D%22image%20our-mission%22%20style%3D%22will-change%3A%20opacity%2C%20transform%3B%20opacity%3A%200%3B%20transform%3A%20translate3d(0px%2C%20-20vh%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cdiv%20class%3D%22content-block%22%20style%3D%22will-change%3A%20opacity%3B%20opacity%3A%200%3B%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-primary%22%3EWhat%20we%20Do%3C%2Fdiv%3E%3Ch1%20class%3D%22heading-3%20other-tagf%22%3E%3Cstrong%3ESupport%20high-growth%2C%20high-impact%20startups%20led%20by%20people%20with%20disabilities.%3C%2Fstrong%3E%3C%2Fh1%3E%3Cp%20class%3D%22paragraph-3%22%3EAt%202Gether-International%20we%E2%80%99re%20creating%20entrepreneurial%20communities%2C%20where%20peer%20support%2C%20expert%20mentorship%2C%20and%20a%20network%20of%20possibilities%20is%20within%20reach%20for%20Disabled%20Founders.%20We%E2%80%99re%20bringing%20together%20masters%20of%20industry%20and%20emerging%20leaders%2C%20committed%20to%20expanding%20businesses%20and%20accommodation%20for%20people%20with%20disabilities.%3C%2Fp%3E%3Ca%20href%3D%22%23how-we-do-it%22%20class%3D%22down-arrow%20w-inline-block%22%3E%3Cdiv%20class%3D%22lottie-animation%22%20data-w-id%3D%220efd9dad-7166-7922-0661-360b0e0b3859%22%20data-animation-type%3D%22lottie%22%20data-src%3D%22https%3A%2F%2Fcdn.prod.website-files.com%2F622a90d02dc43857eb55fed3%2F628a91632706b46e966279b6_88988-down-arrow-for-more.json%22%20data-loop%3D%221%22%20data-direction%3D%221%22%20data-autoplay%3D%221%22%20data-is-ix2-target%3D%220%22%20data-renderer%3D%22svg%22%20data-default-duration%3D%221%22%20data-duration%3D%220%22%20data-loading%3D%22eager%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20500%20500%22%20width%3D%22500%22%20height%3D%22500%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20style%3D%22width%3A%20100%25%3B%20height%3A%20100%25%3B%20transform%3A%20translate3d(0px%2C%200px%2C%200px)%3B%20content-visibility%3A%20visible%3B%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22__lottie_element_15%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20x%3D%220%22%20y%3D%220%22%3E%3C%2Frect%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20clip-path%3D%22url(%23__lottie_element_15)%22%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C117.40400695800781%2C249.3854522705078)%22%20opacity%3D%221%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C132.5959930419922%2C101.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(22%2C18%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.954999923706055%20C57.59600067138672%2C-26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20C-0.0010000000474974513%2C26.954999923706055%20-57.59700012207031%2C-26.954999923706055%20-57.59700012207031%2C-26.954999923706055%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C177.40399169921875%2C240.2201690673828)%22%20opacity%3D%220.8%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C72.59600067138672%2C41.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(55%2C51%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.954999923706055%20C57.59600067138672%2C-26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20C-0.0010000000474974513%2C26.954999923706055%20-57.59700012207031%2C-26.954999923706055%20-57.59700012207031%2C-26.954999923706055%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C177.40399169921875%2C170.57489013671875)%22%20opacity%3D%220.5%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C72.59600067138672%2C41.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(99%2C96%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.95599937438965%20C57.59600067138672%2C-26.95599937438965%20-0.0010000000474974513%2C26.95599937438965%20-0.0010000000474974513%2C26.95599937438965%20C-0.0010000000474974513%2C26.95599937438965%20-57.59700012207031%2C-26.95599937438965%20-57.59700012207031%2C-26.95599937438965%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Cdiv%20id%3D%22how-we-do-it%22%20class%3D%22anchor%22%3E%3C%2Fdiv%3E%3Csection%20data-w-id%3D%22429eaf02-f00c-a51d-b669-e7bae2e7bed3%22%20class%3D%22section%20mission%22%20style%3D%22will-change%3A%20transform%3B%20transform%3A%20translate3d(0px%2C%200%25%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cimg%20sizes%3D%22(max-width%3A%203495px)%20100vw%2C%203495px%22%20alt%3D%22%22%20class%3D%22image%20our-mission%22%20style%3D%22will-change%3A%20opacity%2C%20transform%3B%20opacity%3A%200%3B%20transform%3A%20translate3d(0px%2C%20-20vh%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cdiv%20class%3D%22content-block%22%20style%3D%22will-change%3A%20opacity%3B%20opacity%3A%200%3B%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-primary%22%3EHow%20We%20Do%20It%3C%2Fdiv%3E%3Ch1%3E%3Cspan%20class%3D%22heading-3%20other-tagf%22%3E%3Cstrong%3EExpert%20mentorship%2C%20peer%20support%2C%20and%20programs%20for%20disabled%20entrepreneurs.%3C%2Fstrong%3E%3C%2Fspan%3E%3C%2Fh1%3E%3Cp%20class%3D%22paragraph-3%22%3EWe%20offer%20a%20robust%20curriculum%20of%20community%20meet%20ups%2C%20one-on-one%20coaching%2C%20mentorship%20from%20industry%20leaders%2C%20and%20curated%20business%20development%20education%2C%20with%20the%20singular%20goal%20of%20setting%20Disabled%20Founders%20up%20for%20success.%20We%E2%80%99re%20changing%20the%20landscape%20of%20business%20ownership%2C%20together%20with%20our%20network%20of%20community%20collaborators%20and%20partners.%3C%2Fp%3E%3Ca%20href%3D%22%23why-we-do-it%22%20class%3D%22down-arrow%20w-inline-block%22%3E%3Cdiv%20class%3D%22lottie-animation%22%20data-w-id%3D%2230180e1e-3bcb-af07-de4b-201274386465%22%20data-animation-type%3D%22lottie%22%20data-src%3D%22https%3A%2F%2Fcdn.prod.website-files.com%2F622a90d02dc43857eb55fed3%2F628a91632706b46e966279b6_88988-down-arrow-for-more.json%22%20data-loop%3D%221%22%20data-direction%3D%221%22%20data-autoplay%3D%221%22%20data-is-ix2-target%3D%220%22%20data-renderer%3D%22svg%22%20data-default-duration%3D%221%22%20data-duration%3D%220%22%20data-loading%3D%22eager%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20500%20500%22%20width%3D%22500%22%20height%3D%22500%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20style%3D%22width%3A%20100%25%3B%20height%3A%20100%25%3B%20transform%3A%20translate3d(0px%2C%200px%2C%200px)%3B%20content-visibility%3A%20visible%3B%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22__lottie_element_25%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20x%3D%220%22%20y%3D%220%22%3E%3C%2Frect%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20clip-path%3D%22url(%23__lottie_element_25)%22%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C117.40400695800781%2C249.3854522705078)%22%20opacity%3D%221%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C132.5959930419922%2C101.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(22%2C18%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.954999923706055%20C57.59600067138672%2C-26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20C-0.0010000000474974513%2C26.954999923706055%20-57.59700012207031%2C-26.954999923706055%20-57.59700012207031%2C-26.954999923706055%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C177.40399169921875%2C240.2201690673828)%22%20opacity%3D%220.8%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C72.59600067138672%2C41.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(55%2C51%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.954999923706055%20C57.59600067138672%2C-26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20C-0.0010000000474974513%2C26.954999923706055%20-57.59700012207031%2C-26.954999923706055%20-57.59700012207031%2C-26.954999923706055%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C177.40399169921875%2C170.57489013671875)%22%20opacity%3D%220.5%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C72.59600067138672%2C41.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(99%2C96%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.95599937438965%20C57.59600067138672%2C-26.95599937438965%20-0.0010000000474974513%2C26.95599937438965%20-0.0010000000474974513%2C26.95599937438965%20C-0.0010000000474974513%2C26.95599937438965%20-57.59700012207031%2C-26.95599937438965%20-57.59700012207031%2C-26.95599937438965%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Cdiv%20id%3D%22why-we-do-it%22%20class%3D%22anchor%22%3E%3C%2Fdiv%3E%3Csection%20data-w-id%3D%22e21c8df9-9be1-5ea7-179c-79fb453329d8%22%20class%3D%22section%20mission%22%20style%3D%22will-change%3A%20transform%3B%20transform%3A%20translate3d(0px%2C%200%25%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cimg%20sizes%3D%22(max-width%3A%20834px)%20100vw%2C%20834px%22%20alt%3D%22%22%20class%3D%22image%20our-mission%22%20style%3D%22will-change%3A%20opacity%2C%20transform%3B%20opacity%3A%200%3B%20transform%3A%20translate3d(0px%2C%20-20vh%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cdiv%20class%3D%22content-block%22%20style%3D%22will-change%3A%20opacity%3B%20opacity%3A%200%3B%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-primary%22%3EWhy%20We%20Do%20IT%3C%2Fdiv%3E%3Ch1%3E%3Cspan%20class%3D%22heading-3%20other-tagf%22%3E%3Cstrong%3EBecause%20we%20believe%20in%20the%20potential%20of%20people%20with%20disabilities.%3C%2Fstrong%3E%3C%2Fspan%3E%3C%2Fh1%3E%3Cp%20class%3D%22paragraph-3%22%3EThe%20innate%20entrepreneurial%20mindset%20of%20disabled%20people%20has%20been%20an%20overlooked%20asset%20in%20the%20professional%20ecosystem%20for%20far%20too%20long.%20We%20believe%20that%20every%20disabled%20person%20has%20the%20potential%20to%20be%20a%20creator%2C%20an%20innovator%2C%20and%20a%20leader%20in%20the%20entrepreneurial%20space.%20We%E2%80%99re%20here%20to%20make%20sure%20they%20have%20the%20resources%20they%20need%20to%20thrive.%3C%2Fp%3E%3Ca%20href%3D%22%23how-you-can-help%22%20class%3D%22down-arrow%20w-inline-block%22%3E%3Cdiv%20class%3D%22lottie-animation%22%20data-w-id%3D%228619539f-76f7-f2c9-88bd-d384764708c9%22%20data-animation-type%3D%22lottie%22%20data-src%3D%22https%3A%2F%2Fcdn.prod.website-files.com%2F622a90d02dc43857eb55fed3%2F628a91632706b46e966279b6_88988-down-arrow-for-more.json%22%20data-loop%3D%221%22%20data-direction%3D%221%22%20data-autoplay%3D%221%22%20data-is-ix2-target%3D%220%22%20data-renderer%3D%22svg%22%20data-default-duration%3D%221%22%20data-duration%3D%220%22%20data-loading%3D%22eager%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20500%20500%22%20width%3D%22500%22%20height%3D%22500%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20style%3D%22width%3A%20100%25%3B%20height%3A%20100%25%3B%20transform%3A%20translate3d(0px%2C%200px%2C%200px)%3B%20content-visibility%3A%20visible%3B%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22__lottie_element_35%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20x%3D%220%22%20y%3D%220%22%3E%3C%2Frect%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20clip-path%3D%22url(%23__lottie_element_35)%22%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C117.40400695800781%2C249.3854522705078)%22%20opacity%3D%221%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C132.5959930419922%2C101.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(22%2C18%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.954999923706055%20C57.59600067138672%2C-26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20C-0.0010000000474974513%2C26.954999923706055%20-57.59700012207031%2C-26.954999923706055%20-57.59700012207031%2C-26.954999923706055%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C177.40399169921875%2C240.2201690673828)%22%20opacity%3D%220.8%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C72.59600067138672%2C41.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(55%2C51%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.954999923706055%20C57.59600067138672%2C-26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20-0.0010000000474974513%2C26.954999923706055%20C-0.0010000000474974513%2C26.954999923706055%20-57.59700012207031%2C-26.954999923706055%20-57.59700012207031%2C-26.954999923706055%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20transform%3D%22matrix(1%2C0%2C0%2C1%2C177.40399169921875%2C170.57489013671875)%22%20opacity%3D%220.5%22%20style%3D%22display%3A%20block%3B%22%3E%3Cg%20opacity%3D%221%22%20transform%3D%22matrix(1%2C0%2C0%2C1%2C72.59600067138672%2C41.95500183105469)%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill-opacity%3D%220%22%20stroke%3D%22rgb(99%2C96%2C255)%22%20stroke-opacity%3D%221%22%20stroke-width%3D%2230%22%20d%3D%22%20M57.59600067138672%2C-26.95599937438965%20C57.59600067138672%2C-26.95599937438965%20-0.0010000000474974513%2C26.95599937438965%20-0.0010000000474974513%2C26.95599937438965%20C-0.0010000000474974513%2C26.95599937438965%20-57.59700012207031%2C-26.95599937438965%20-57.59700012207031%2C-26.95599937438965%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Cdiv%20id%3D%22how-you-can-help%22%20class%3D%22anchor%22%3E%3C%2Fdiv%3E%3Csection%20data-w-id%3D%2267d77579-0b56-10b5-e086-dcc927699ad1%22%20class%3D%22section%20mission%22%20style%3D%22will-change%3A%20transform%3B%20transform%3A%20translate3d(0px%2C%200%25%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cimg%20sizes%3D%22(max-width%3A%201440px)%20100vw%2C%201440px%22%20alt%3D%22Friends%20hanging%20out%22%20class%3D%22image%20our-mission%22%20style%3D%22will-change%3A%20opacity%2C%20transform%3B%20opacity%3A%200%3B%20transform%3A%20translate3d(0px%2C%20-20vh%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cdiv%20class%3D%22content-block%22%20style%3D%22will-change%3A%20opacity%3B%20opacity%3A%200%3B%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-primary%22%3EHow%20you%20can%20Help%3C%2Fdiv%3E%3Ch1%20class%3D%22heading-3%20other-tagf%22%3E%3Cstrong%3EPartner%20with%20us%20to%20flip%20the%20narrative%20around%20disability.%3C%2Fstrong%3E%3C%2Fh1%3E%3Cp%20class%3D%22paragraph-3%22%3EWhen%20you%20partner%20with%202GI%20as%20a%20donor%2C%20volunteer%2C%20sponsor%2C%20or%20community%20partner%20you%E2%80%99re%20joining%20a%20team%20of%20industry%20change-makers%20leading%20the%20way%20for%20disabled%20entrepreneurs%20everywhere.%20Together%20we%E2%80%99re%20creating%20a%20startup%20landscape%20that%20is%20not%20only%20accessible%20but%20built%20especially%20for%20people%20with%20disabilities.%3C%2Fp%3E%3Ca%20href%3D%22%23get-involved%22%20class%3D%22down-arrow%20w-inline-block%22%3E%3C%2Fa%3E%3Ca%20id%3D%22w-node-_0e74b82d-b693-7927-92c4-4a8b81b9b49c-298d3f4b%22%20href%3D%22%2Four-team%2Fpartnerships%22%20class%3D%22button%20donate%20w-button%22%3EPartner%20With%20Us%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20id%3D%22get-involved%22%20class%3D%22section%20background-color-secondary%20no-margin%22%3E%3C%2Fsection%3E%3Cdiv%20class%3D%22footer%22%3E%3Cdiv%20class%3D%22primary-footer%22%3E%3Cdiv%20id%3D%22w-node-_0f8ec7a1-724e-e762-3398-dfeb49a228fb-1186b488%22%20class%3D%22footer-links-wrapper%22%3E%3Ca%20href%3D%22%2Ftemplate%2Fall-sections%2Fall-sections-light%22%20class%3D%22footer-logo%20w-inline-block%22%3E%3Cimg%20sizes%3D%22(max-width%3A%201222px)%20100vw%2C%201222px%22%20alt%3D%22%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22social-icons-wrapper%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.facebook.com%2F2getherInternational%2F%22%20target%3D%22_blank%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Facebook%20icon%22%3E%3C%2Fa%3E%3Ca%20href%3D%22mailto%3Ahi%40abelhancock.com%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Email%20icon%22%3E%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.instagram.com%2F2gether_international%22%20target%3D%22_blank%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Instagram%20icon%22%3E%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fmobile.twitter.com%2F2getherinternat%22%20target%3D%22_blank%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Twitter%20icon%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EWho%20we%20ARe%3C%2Fdiv%3E%3Ca%20href%3D%22%2Four-team%2Four-founders%22%20class%3D%22footer-link%22%3EOur%20Founders%3C%2Fa%3E%3Ca%20href%3D%22%2Four-mission%2Four-mission-light%22%20aria-current%3D%22page%22%20class%3D%22footer-link%20w--current%22%3EOur%20Mission%3C%2Fa%3E%3Ca%20href%3D%22%2Four-team%2F2gi%22%20class%3D%22footer-link%22%3EOur%20Team%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EWhat%20we%20Do%3C%2Fdiv%3E%3Ca%20href%3D%22%2Four-programs%22%20class%3D%22footer-link%22%3EPrograms%3C%2Fa%3E%3Ca%20href%3D%22%2Fin-the-news%22%20class%3D%22footer-link%22%3ENews%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EGet%20Involved%3C%2Fdiv%3E%3Ca%20href%3D%22%2Four-team%2Fpartnerships%22%20class%3D%22footer-link%22%3EPartnerships%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20class%3D%22footer-link%22%3EDonate%3C%2Fa%3E%3Ca%20href%3D%22%2Fcontact%2Fcontact-light%22%20class%3D%22footer-link%22%3EContact%20Us%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EOther%20Links%3C%2Fdiv%3E%3Ca%20href%3D%22https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdjb9HHW7QnH-gyOI8irw3mRlbOrHRm-JoSISUERZAt1vnLHQ%2Fviewform%22%20class%3D%22footer-link%22%3EWB%26nbsp%3BPolicy%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Facrobat.adobe.com%2Fid%2Furn%3Aaaid%3Asc%3AUS%3Af52ff4a4-01ee-4974-92cc-fb5c7a8be01c%22%20class%3D%22footer-link%22%3E%3Cstrong%3E2GI%20Event%20Privacy%20Policy%3C%2Fstrong%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-_422a992f-e58c-7479-1abd-da6c8cac605c-1186b488%22%20class%3D%22form-block%20footer-subscribe%20w-form%22%3E%3Cform%20id%3D%22wf-form-Newsletter-Subscription%22%20name%3D%22wf-form-Newsletter-Subscription%22%20data-name%3D%22Newsletter%20Subscription%22%20method%3D%22get%22%20data-wf-page-id%3D%2262b5cedad5605813298d3f4b%22%20data-wf-element-id%3D%22422a992f-e58c-7479-1abd-da6c8cac605d%22%20aria-label%3D%22Newsletter%20Subscription%22%3E%3Clabel%20for%3D%22name%22%3EName%3C%2Flabel%3E%3Cinput%20class%3D%22form-field%20w-input%22%20maxlength%3D%22256%22%20name%3D%22name%22%20data-name%3D%22Name%22%20placeholder%3D%22%22%20type%3D%22text%22%20id%3D%22name%22%3E%3Clabel%20for%3D%22email%22%3EEmail%20Address%3C%2Flabel%3E%3Cinput%20class%3D%22form-field%20w-input%22%20maxlength%3D%22256%22%20name%3D%22email%22%20data-name%3D%22Email%22%20placeholder%3D%22%22%20type%3D%22email%22%20id%3D%22email%22%20required%3D%22%22%3E%3Cinput%20type%3D%22submit%22%20data-wait%3D%22Please%20wait...%22%20class%3D%22button%20small%20nav-cta%20w-button%22%20value%3D%22Subscribe!%22%3E%3C%2Fform%3E%3Cdiv%20class%3D%22form-success-message%20w-form-done%22%20tabindex%3D%22-1%22%20role%3D%22region%22%20aria-label%3D%22Newsletter%20Subscription%20success%22%3E%3Cdiv%3EThank%20you!%20Your%20submission%20has%20been%20received!%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22form-error-message%20w-form-fail%22%20tabindex%3D%22-1%22%20role%3D%22region%22%20aria-label%3D%22Newsletter%20Subscription%20failure%22%3E%3Cdiv%3EOops!%20Something%20went%20wrong%20while%20submitting%20the%20form.%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22secondary-footer%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!--%20Google%20Tag%20Manager%20(noscript)%20--%3E%0A%3Cnoscript%3E%3C%2Fnoscript%3E%0A%3C!--%20End%20Google%20Tag%20Manager%20(noscript)%20--%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "4ec5bce2-c2d3-4f88-ba47-c7b9722bfbc8",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.2gether-international.org-our-mission-our-mission-light"
+}

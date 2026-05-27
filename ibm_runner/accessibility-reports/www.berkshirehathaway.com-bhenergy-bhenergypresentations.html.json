@@ -1,0 +1,284 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 331,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 16,
+                "height": 297,
+                "width": 784
+            },
+            "snippet": "<body bgcolor=\"#ffffff\" vlink=\"#800080\" link=\"#ff0000\" text=\"#000000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20bgcolor%3D%5C%22%23ffffff%5C%22%20vlink%3D%5C%22%23800080%5C%22%20link%3D%5C%22%23ff0000%5C%22%20text%3D%5C%22%23000000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/b[1]/font[3]/p[1]/a[1]",
+                "aria": "/document[1]/paragraph[3]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 18px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                18,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 186,
+                "top": 116,
+                "height": 20,
+                "width": 430
+            },
+            "snippet": "<a href=\"BHE2026InvestPresent.pdf\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2018px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22BHE2026InvestPresent.pdf%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C18%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/b[1]/font[3]/p[2]/font[1]/a[1]",
+                "aria": "/document[1]/paragraph[4]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 18px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                18,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 186,
+                "top": 155,
+                "height": 20,
+                "width": 430
+            },
+            "snippet": "<a href=\"BHE2025InvestPresent.pdf\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2018px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22BHE2025InvestPresent.pdf%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C18%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/b[1]/font[3]/p[3]/font[1]/font[1]/a[1]",
+                "aria": "/document[1]/paragraph[5]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 18px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                18,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 186,
+                "top": 194,
+                "height": 20,
+                "width": 430
+            },
+            "snippet": "<a href=\"BHE2024InvestPresent.pdf\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2018px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22BHE2024InvestPresent.pdf%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C18%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/b[1]/font[3]/p[4]/font[1]/font[1]/font[1]/a[1]",
+                "aria": "/document[1]/paragraph[6]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 18px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                18,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 186,
+                "top": 233,
+                "height": 20,
+                "width": 430
+            },
+            "snippet": "<a href=\"BHE2023InvestPresent.pdf\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2018px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22BHE2023InvestPresent.pdf%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C18%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/b[1]/font[3]/p[5]/font[1]/font[1]/font[1]/a[1]",
+                "aria": "/document[1]/paragraph[7]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 18px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                18,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 186,
+                "top": 272,
+                "height": 20,
+                "width": 430
+            },
+            "snippet": "<a href=\"BHE2022InvestPresent.pdf\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2018px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22BHE2022InvestPresent.pdf%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C18%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        }
+    ],
+    "numExecuted": 224,
+    "ruleTime": 2,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 9,
+            "elementsViolation": 6,
+            "elementsViolationReview": 7,
+            "violation": 6,
+            "potentialviolation": 1,
+            "recommendation": 6,
+            "potentialrecommendation": 0,
+            "manual": 5,
+            "pass": 206
+        },
+        "scanTime": 10,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778727124345,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EBH%20Energy%20Presentations%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20text%3D%22%23000000%22%20link%3D%22%23ff0000%22%20vlink%3D%22%23800080%22%20bgcolor%3D%22%23ffffff%22%3E%0A%0A%3Cp%3E%3C!--Berkshire%20Hathaway%20Inc.--%3E%3C%2Fp%3E%0A%3Cb%3E%3Cfont%20size%3D%226%22%3E%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20size%3D%226%22%3EB%3C%2Ffont%3E%3Cfont%20size%3D%224%22%3EERKSHIRE%3C%2Ffont%3E%20%3Cfont%20size%3D%226%22%3EH%3C%2Ffont%3E%3Cfont%20size%3D%224%22%3EATHAWAY%3C%2Ffont%3E%20%3Cfont%20size%3D%222%22%3EINC.%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20size%3D%222%22%3E%0A%3C%2Ffont%3E%0A%0A%3Chr%3E%0A%3Cbr%3E%3Cfont%20size%3D%224%22%3E%3Cp%20align%3D%22center%22%3E%0A%3Ca%20href%3D%22BHE2026InvestPresent.pdf%22%3E2026%20Berkshire%20Hathaway%20Energy%20Investor%20Presentation%3C%2Fa%3E%0A%0A%3Cbr%3E%3Cfont%20size%3D%224%22%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cp%20align%3D%22center%22%3E%3Cfont%20size%3D%224%22%3E%0A%3Ca%20href%3D%22BHE2025InvestPresent.pdf%22%3E2025%20Berkshire%20Hathaway%20Energy%20Investor%20Presentation%3C%2Fa%3E%0A%0A%3Cbr%3E%3Cfont%20size%3D%224%22%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cp%20align%3D%22center%22%3E%3Cfont%20size%3D%224%22%3E%3Cfont%20size%3D%224%22%3E%0A%3Ca%20href%3D%22BHE2024InvestPresent.pdf%22%3E2024%20Berkshire%20Hathaway%20Energy%20Investor%20Presentation%3C%2Fa%3E%0A%0A%3Cbr%3E%3Cfont%20size%3D%224%22%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cp%20align%3D%22center%22%3E%3Cfont%20size%3D%224%22%3E%3Cfont%20size%3D%224%22%3E%3Cfont%20size%3D%224%22%3E%0A%3Ca%20href%3D%22BHE2023InvestPresent.pdf%22%3E2023%20Berkshire%20Hathaway%20Energy%20Investor%20Presentation%3C%2Fa%3E%0A%3Cbr%3E%3Cfont%20size%3D%224%22%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cp%20align%3D%22center%22%3E%3Cfont%20size%3D%224%22%3E%3Cfont%20size%3D%224%22%3E%3Cfont%20size%3D%224%22%3E%0A%0A%3Ca%20href%3D%22BHE2022InvestPresent.pdf%22%3E2022%20Berkshire%20Hathaway%20Energy%20Investor%20Presentation%3C%2Fa%3E%0A%0A%0A%0A%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%3Chr%3E%3Cfont%20size%3D%224%22%3E%3Cfont%20size%3D%224%22%3E%3Cfont%20size%3D%224%22%3E%0A%0A%3Cp%3E%3C%2Fp%3E%0A%0A%0A%0A%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "1da2f94d-fc60-4815-ac2a-210a75515240",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.berkshirehathaway.com-bhenergy-bhenergypresentations.html"
+}

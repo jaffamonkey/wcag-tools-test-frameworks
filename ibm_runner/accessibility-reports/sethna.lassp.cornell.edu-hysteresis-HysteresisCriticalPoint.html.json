@@ -1,0 +1,947 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1207,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1207,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 1170,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'large, small'",
+            "messageArgs": [
+                "large, small"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 117,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'large%2C%20small'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22large%2C%20small%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[2]/a[1]",
+                "aria": "/document[1]/paragraph[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 207,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"transition_entire.mpg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22transition_entire.mpg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[2]/a[1]",
+                "aria": "/document[1]/paragraph[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 207,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"transition_entire.mpg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22transition_entire.mpg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[2]/a[1]/img[1]",
+                "aria": "/document[1]/paragraph[2]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 222,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[2]/a[2]",
+                "aria": "/document[1]/paragraph[2]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 207,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"transition.mpg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22transition.mpg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[2]/a[2]",
+                "aria": "/document[1]/paragraph[2]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 207,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"transition.mpg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22transition.mpg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[2]/a[2]/img[1]",
+                "aria": "/document[1]/paragraph[2]/link[2]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 222,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/em[1]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'above, below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "above, below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 242,
+                "height": 74,
+                "width": 779
+            },
+            "snippet": "<em>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'above%2C%20below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cem%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22above%2C%20below%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[5]/a[1]",
+                "aria": "/document[1]/paragraph[5]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 332,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"2D_movies/avalanche_movie_big_R1.mpg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%222D_movies%2Favalanche_movie_big_R1.mpg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[5]/a[1]",
+                "aria": "/document[1]/paragraph[5]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 332,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"2D_movies/avalanche_movie_big_R1.mpg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%222D_movies%2Favalanche_movie_big_R1.mpg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[5]/a[1]/img[1]",
+                "aria": "/document[1]/paragraph[5]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 346,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[6]",
+                "aria": "/document[1]/paragraph[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'above' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "above"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 366,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'above'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22above%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[6]",
+                "aria": "/document[1]/paragraph[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'large'",
+            "messageArgs": [
+                "large"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 366,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'large'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22large%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[7]/a[1]",
+                "aria": "/document[1]/paragraph[7]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 401,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"2D_movies/avalanche_movie_jumps_.8.mpg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%222D_movies%2Favalanche_movie_jumps_.8.mpg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[7]/a[1]",
+                "aria": "/document[1]/paragraph[7]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 401,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"2D_movies/avalanche_movie_jumps_.8.mpg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%222D_movies%2Favalanche_movie_jumps_.8.mpg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[7]/a[1]/img[1]",
+                "aria": "/document[1]/paragraph[7]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 415,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[8]",
+                "aria": "/document[1]/paragraph[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'big'",
+            "messageArgs": [
+                "big"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 435,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'big'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22big%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[9]/a[1]",
+                "aria": "/document[1]/paragraph[9]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 525,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"AvalancheSizes.gif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22AvalancheSizes.gif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[9]/a[1]",
+                "aria": "/document[1]/paragraph[9]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 525,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"AvalancheSizes.gif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22AvalancheSizes.gif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[9]/a[1]/img[1]",
+                "aria": "/document[1]/paragraph[9]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 540,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[10]/em[1]",
+                "aria": "/document[1]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'avalanche-size, size'",
+            "messageArgs": [
+                "avalanche-size, size"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 560,
+                "height": 55,
+                "width": 773
+            },
+            "snippet": "<em>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'avalanche-size%2C%20size'%22%2C%22snippet%22%3A%22%3Cem%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22avalanche-size%2C%20size%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[11]",
+                "aria": "/document[1]/paragraph[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'large'",
+            "messageArgs": [
+                "large"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 631,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'large'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22large%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/dl[1]/dt[2]/a[1]/img[1]",
+                "aria": "/document[1]/term[2]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1002,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/dl[1]/dt[3]/a[1]/img[1]",
+                "aria": "/document[1]/term[3]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1021,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[13]/a[1]",
+                "aria": "/document[1]/paragraph[13]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1085,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://sethna.lassp.cornell.edu/sethna.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fsethna.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[13]/a[1]",
+                "aria": "/document[1]/paragraph[13]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1085,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://sethna.lassp.cornell.edu/sethna.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fsethna.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[13]/a[1]/img[1]",
+                "aria": "/document[1]/paragraph[13]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1100,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[14]/a[1]/img[1]",
+                "aria": "/document[1]/paragraph[14]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1169,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 548,
+    "ruleTime": 10,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 38,
+            "elementsViolation": 17,
+            "elementsViolationReview": 23,
+            "violation": 18,
+            "potentialviolation": 13,
+            "recommendation": 14,
+            "potentialrecommendation": 1,
+            "manual": 4,
+            "pass": 498
+        },
+        "scanTime": 23,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778712398248,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EHysteresis%20Critical%20Point%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%0A%3Ch1%3EThe%20Critical%20Point%20for%20Hysteresis%20(Dahmen%2C%20Perkovic'%3B%0A%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fpub.html%2366%22%3E66%2C%2068%2C%2069%2C%3C%2Fa%3E%0A%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fpub.html%2375%22%3E%2075%3C%2Fa%3E)%3C%2Fh1%3E%0A%0A%3Cp%3E%0AWe%20found%20a%20critical%20point%20in%20our%20model%2C%20separating%20smooth%20hysteresis%20loops%0Afrom%20loops%20with%20a%20macroscopic%20jump%20or%20burst.%20%20At%20large%20disorder%2C%20every%0Adomain%20flips%20independently%3B%20at%20disorder%20small%20compared%20to%20the%20coupling%0Abetween%20domains%2C%20a%20single%20domain%20flip%20can%20send%20its%20neighbors%20flipping%0Auntil%20most%20of%20the%20system%20transforms%20in%20one%20burst.%20%20At%20the%20critical%0Adisorder%2C%20we%20get%20universal%20power%20laws%20and%20scaling.%0A%3C%2Fp%3E%3Cp%3E%0A%0A%3Ca%20href%3D%22transition_entire.mpg%22%3E%3Cimg%3E%3C%2Fa%3E%0A%3Ca%20href%3D%22transition.mpg%22%3E%3Cimg%3E%3C%2Fa%3E%3C%2Fp%3E%3Cp%3E%0A%0A%3Cstrong%3EPhase%20transition%20as%20we%20vary%20disorder.%3C%2Fstrong%3E%20%0A%3Cem%3EThree%20%3Cem%3EH(M)%3C%2Fem%3E%20curves%20for%20different%20levels%20of%20disorder%3A%20above%2C%20%0Abelow%2C%20and%20near%20the%20critical%20disorder%3Cem%3ER_c%3C%2Fem%3Ehen%20the%20burst%20disappears.%0A(Select%20it%20for%20an%20animation!)%0AFor%20%3Cem%3ER%20%26gt%3B%20R_c%3C%2Fem%3E%20the%20hysteresis%20loop%20is%20macroscopically%20smooth%2C%0Aalthough%20of%20course%20microscopically%20it%20is%20a%20sequence%20of%20sizable%20avalanches.%0AThe%20jump%20in%20the%20magnetization%20scales%20as%20%3Cem%3E(R-R_c)%5Ebeta%3C%2Fem%3E%2C%20and%20the%0Amagnetization%20at%20%3Cem%3ER_c%3C%2Fem%3E%20has%20a%20power-law%20form%20%3Cem%3EM%20-%20M_c%20~%20(H-H_c)%5E%7B1%2Fdelta%7D%3C%2Fem%3E.%3C%2Fem%3E%0A%3C%2Fp%3E%3Cp%3E%0A%0A%3C%2Fp%3E%3Cp%3E%0A%3Ca%20href%3D%222D_movies%2Favalanche_movie_big_R1.mpg%22%3E%0A%3Cimg%3E%3C%2Fa%3E%0A%3C%2Fp%3E%3Cp%3E%0AThis%20is%20a%20simulation%20of%20a%20two-dimensional%20somewhat%20above%20the%20critical%20point%2C%20%0Awhere%20none%20of%20the%20avalanches%20are%20very%20large.%0A%0A%3C%2Fp%3E%3Cp%3E%0A%3Ca%20href%3D%222D_movies%2Favalanche_movie_jumps_.8.mpg%22%3E%0A%3Cimg%3E%3C%2Fa%3E%0A%3C%2Fp%3E%3Cp%3E%0AThis%20is%20a%20simulation%20closer%20to%20the%20transition.%20%20Notice%20the%20big%20avalanche%0Awhich%20goes%20from%20one%20end%20of%20the%20system%20to%20the%20other!%20%20We're%20not%20sure%20yet%0Awhether%20there%20is%20a%20real%20transition%20in%20two%20dimensions%3A%20it's%20conceivable%20that%0Ano%20matter%20how%20weak%20the%20disorder%2C%20in%20a%20big%20enough%20system%20all%20avalanches%0Awould%20come%20to%20a%20halt%20at%20finite%20sizes.%20%20(We're%20sure%20that%20it%20happens%20that%0Away%20in%20one%20dimension%3A%20there%20a%20single%20stuck%20spin%20can%20block%20the%20avalanche!)%0A%3C%2Fp%3E%3Cp%3E%0A%0A%0A%3Ca%20href%3D%22AvalancheSizes.gif%22%3E%3Cimg%3E%3C%2Fa%3E%3C%2Fp%3E%3Cp%3E%0A%3Cstrong%3EAvalanches%20come%20in%20various%20sizes%3A%3C%2Fstrong%3E%20%0A%3Cem%3ELog-Log%20Plot%20of%20the%20avalanche-size%20distribution%20%3Cem%3ED(s)%3C%2Fem%3E%20vs.%0Aavalanche%20size%20%3Cem%3Es%3C%2Fem%3E%2C%20integrated%20over%20one%20sweep%20of%20the%20magnetic%20field%20from%0A%3Cem%3E-infinity%3C%2Fem%3E%20to%20%3Cem%3E%2Binfinity%3C%2Fem%3E%2C%20averaged%20over%205%20systems%20of%20size%20%0A%3Cem%3E120%5E3%3C%2Fem%3E.%20%20Notice%20the%20power-law%20region%20%0A%3Cem%3ED(s)%20~%20s%5E%7B-(tau%20%2B%20sigma%20beta%20delta)%7D%3C%2Fem%3E%20and%0Athe%20cutoff%20at%20%3Cem%3Es_%7Bmax%7D%20~%20(R-R_c)%5E%7B-1%2Fsigma%7D%3C%2Fem%3E.%3C%2Fem%3E%0A%3C%2Fp%3E%3Cp%3E%0A%0AThe%20critical%20point%20is%20where%20an%20infinite%20avalanche%20first%20occurs.%20%20Naturally%2C%0Anear%20the%20critical%20point%2C%20some%20of%20the%20avalanches%20get%20rather%20large%20-%20indeed%2C%0Aone%20gets%20avalanches%20of%20all%20scales.%20%20At%20least%20in%20our%20model%2C%20one%20gets%20rather%0Alarge%20avalanches%20even%20pretty%20far%20from%20the%20critical%20point%3A%20we%20believe%0Athe%20noise%20in%20hysteresis%20loops%20is%20due%20to%20this%20critical%20point.%0A%3C%2Fp%3E%3Cp%3E%0A%0A%0A%3C%2Fp%3E%3Ch2%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2Fhysteresis.html%22%3E%0AMore%20Information%20about%20Hysteresis%20and%20Avalanches%3C%2Fa%3E%3C%2Fh2%3E%0A%3Cul%20compact%3D%22%22%3E%0A%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2Fauthors.html%22%3E%0AAuthors%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2Fhysteresis.html%22%3E%0AHysteresis%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2FWhatIsHysteresis.html%22%3E%0AWhat%20is%20Hysteresis%3F%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2Fnoise.html%22%3E%0ANoise%20in%20Hysteresis%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2FReturnPointMemory.html%22%3E%0AReturn%20Point%20Memory%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2FHysteresisCriticalPoint.html%22%3E%0AThe%20Critical%20Point%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2FEpsilonExpansion.html%22%3E%0AThe%20Epsilon%20Expansion%3C%2Fa%3E%0A%3C%2Fli%3E%3C%2Ful%3E%0A%0A%3Chr%3E%0A%0A%3Ch2%3ELinks%20Back%3C%2Fh2%3E%0A%3Cdl%20compact%3D%22%22%3E%0A%3Cdt%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fresearch94%2Fresearch94.html%22%3E%0ASethna's%20Research%2090-94%3C%2Fa%3E%0A%3C%2Fdt%3E%3Cdt%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.lassp.cornell.edu%2FLASSP_Science.html%22%3E%0A%3Cimg%3E%0AEntertaining%20Science%3C%2Fa%3E%20done%20at%3C%2Fdt%3E%0A%3Cdt%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.lassp.cornell.edu%2F%22%3E%0A%3Cimg%3E%20LASSP.%3C%2Fa%3E%3C%2Fdt%3E%0A%3C%2Fdl%3E%0A%0A%3Chr%3E%0ALast%20modified%3A%20December%2012%2C%201994%3Cp%3E%0A%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fsethna.html%22%3E%0A%3Cimg%3E%0A%3C%2Fa%3E%3C%2Fp%3E%3Caddress%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fsethna.html%22%3EJames%20P.%20Sethna%2C%20sethna%40lassp.cornell.edu%3C%2Fa%3E%3C%2Faddress%3E%0A%0A%3Cp%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2FStatMech%22%3E%0A%3Cimg%3E%20%0AStatistical%20Mechanics%3A%20Entropy%2C%20Order%20Parameters%2C%20and%20Complexity%3C%2Fa%3E%2C%20%0Anow%20available%20at%20%0AOxford%20University%20Press%20%0A(%3Ca%20href%3D%22http%3A%2F%2Fwww.us.oup.com%2Fus%2Fcatalog%2Fgeneral%2Fsubject%2FPhysics%2FQuantumPhysics%2F%3Fview%3Dusa%26amp%3Bci%3D9780198566779%22%3EUSA%3C%2Fa%3E%2C%0A%3Ca%20href%3D%22http%3A%2F%2Fwww.oup.com%2Fuk%2Fcatalogue%2F%3Fci%3D9780198566779%22%3EEurope%3C%2Fa%3E).%0A%0A%0A%0A%0A%3C%2Fp%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "9850010d-037c-4acf-a6c8-2523ba85a871",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "sethna.lassp.cornell.edu-hysteresis-HysteresisCriticalPoint.html"
+}

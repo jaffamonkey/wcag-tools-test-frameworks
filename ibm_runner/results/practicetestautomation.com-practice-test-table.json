@@ -1,0 +1,552 @@
+{
+    "results": [
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 18,
+                "width": 201
+            },
+            "snippet": "<a href=\"#main-container\" class=\"skip-content\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%23main-container%5C%22%20class%3D%5C%22skip-content%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "navigation",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 27,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div role=\"navigation\" class=\"menu-container menu-secondary\" id=\"menu-secondary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22navigation%5C%22%20class%3D%5C%22menu-container%20menu-secondary%5C%22%20id%3D%5C%22menu-secondary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22navigation%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_navigation_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 27,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div role=\"navigation\" class=\"menu-container menu-secondary\" id=\"menu-secondary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_navigation_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22navigation%5C%22%20class%3D%5C%22menu-container%20menu-secondary%5C%22%20id%3D%5C%22menu-secondary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_navigation_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/banner[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 45,
+                "height": 38,
+                "width": 44
+            },
+            "snippet": "<button>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[1]/button[1]/svg[1]",
+                "aria": "/document[1]/banner[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 16,
+                "top": 48,
+                "height": 28,
+                "width": 28
+            },
+            "snippet": "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"0 0 28 28\" height=\"28px\" width=\"28px\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3Axlink%3D%5C%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20version%3D%5C%221.1%5C%22%20viewBox%3D%5C%220%200%2028%2028%5C%22%20height%3D%5C%2228px%5C%22%20width%3D%5C%2228px%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[2]/div[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "navigation",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 99,
+                "height": 93,
+                "width": 784
+            },
+            "snippet": "<div role=\"navigation\" class=\"menu-container menu-primary\" id=\"menu-primary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22navigation%5C%22%20class%3D%5C%22menu-container%20menu-primary%5C%22%20id%3D%5C%22menu-primary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22navigation%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_navigation_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[2]/div[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 99,
+                "height": 93,
+                "width": 784
+            },
+            "snippet": "<div role=\"navigation\" class=\"menu-container menu-primary\" id=\"menu-primary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_navigation_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22navigation%5C%22%20class%3D%5C%22menu-container%20menu-primary%5C%22%20id%3D%5C%22menu-primary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_navigation_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_navigation_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[2]/div[1]/nav[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 99,
+                "height": 93,
+                "width": 784
+            },
+            "snippet": "<nav class=\"menu\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_navigation_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cnav%20class%3D%5C%22menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_navigation_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[2]/button[1]/svg[1]",
+                "aria": "/document[1]/banner[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 87,
+                "top": 210,
+                "height": 24,
+                "width": 36
+            },
+            "snippet": "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"0 0 36 24\" height=\"24px\" width=\"36px\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3Axlink%3D%5C%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20version%3D%5C%221.1%5C%22%20viewBox%3D%5C%220%200%2036%2024%5C%22%20height%3D%5C%2224px%5C%22%20width%3D%5C%2236px%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/section[1]/article[1]/div[1]/p[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 302,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<p class=\"wp-block-paragraph\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22wp-block-paragraph%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        },
+        {
+            "ruleId": "element_id_unique",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/section[1]/article[1]/div[1]/section[1]",
+                "aria": "/document[1]/main[1]/article[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_in_use",
+            "message": "The <section> element has the id \"xpath-table\" that is already in use",
+            "messageArgs": [
+                "section",
+                "xpath-table"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 396,
+                "height": 707,
+                "width": 784
+            },
+            "snippet": "<section id=\"xpath-table\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_id_unique.html#%7B%22message%22%3A%22The%20%3Csection%3E%20element%20has%20the%20id%20%5C%22xpath-table%5C%22%20that%20is%20already%20in%20use%22%2C%22snippet%22%3A%22%3Csection%20id%3D%5C%22xpath-table%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_in_use%22%2C%22ruleId%22%3A%22element_id_unique%22%2C%22msgArgs%22%3A%5B%22section%22%2C%22xpath-table%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_keyboard_handler_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/section[1]/article[1]/div[1]/section[1]/div[2]/fieldset[3]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/group[3]/listbox[1]"
+            },
+            "ruleTime": 2,
+            "reasonId": "potential_no_keyboard_access",
+            "message": "Verify the <div> element with \"listbox\" role has keyboard access",
+            "messageArgs": [
+                "div",
+                "listbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 620,
+                "height": 109,
+                "width": 752
+            },
+            "snippet": "<div aria-label=\"Minimum enrollments\" role=\"listbox\" tabindex=\"0\" data-value=\"any\" id=\"enrollDropdown\" class=\"dropdown\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_keyboard_handler_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cdiv%3E%20element%20with%20%5C%22listbox%5C%22%20role%20has%20keyboard%20access%22%2C%22snippet%22%3A%22%3Cdiv%20aria-label%3D%5C%22Minimum%20enrollments%5C%22%20role%3D%5C%22listbox%5C%22%20tabindex%3D%5C%220%5C%22%20data-value%3D%5C%22any%5C%22%20id%3D%5C%22enrollDropdown%5C%22%20class%3D%5C%22dropdown%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_keyboard_access%22%2C%22ruleId%22%3A%22aria_keyboard_handler_exists%22%2C%22msgArgs%22%3A%5B%22div%22%2C%22listbox%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_single",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/section[1]/article[1]/div[1]/section[1]/div[2]/fieldset[3]/div[1]",
+                "aria": "/document[1]/main[1]/article[1]/group[3]/listbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_multiple_tabbable",
+            "message": "Component with \"listbox\" role has more than one tabbable element",
+            "messageArgs": [
+                "listbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 620,
+                "height": 109,
+                "width": 752
+            },
+            "snippet": "<div aria-label=\"Minimum enrollments\" role=\"listbox\" tabindex=\"0\" data-value=\"any\" id=\"enrollDropdown\" class=\"dropdown\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/widget_tabbable_single.html#%7B%22message%22%3A%22Component%20with%20%5C%22listbox%5C%22%20role%20has%20more%20than%20one%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cdiv%20aria-label%3D%5C%22Minimum%20enrollments%5C%22%20role%3D%5C%22listbox%5C%22%20tabindex%3D%5C%220%5C%22%20data-value%3D%5C%22any%5C%22%20id%3D%5C%22enrollDropdown%5C%22%20class%3D%5C%22dropdown%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_multiple_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_single%22%2C%22msgArgs%22%3A%5B%22listbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/section[1]/article[1]/div[1]/section[1]/div[2]/fieldset[3]/div[1]/ul[1]",
+                "aria": "/document[1]/main[1]/article[1]/group[3]/listbox[1]/listbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "Form control with \"listbox\" role has no associated label",
+            "messageArgs": [
+                "listbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 654,
+                "height": 74,
+                "width": 752
+            },
+            "snippet": "<ul role=\"listbox\" class=\"dropdown-menu\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20with%20%5C%22listbox%5C%22%20role%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cul%20role%3D%5C%22listbox%5C%22%20class%3D%5C%22dropdown-menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22listbox%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_child_tabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/section[1]/article[1]/div[1]/section[1]/div[2]/fieldset[3]/div[1]/ul[1]",
+                "aria": "/document[1]/main[1]/article[1]/group[3]/listbox[1]/listbox[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_missing_child",
+            "message": "None of the descendent elements with \"option\" role is tabbable",
+            "messageArgs": [
+                "li",
+                "option"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 654,
+                "height": 74,
+                "width": 752
+            },
+            "snippet": "<ul role=\"listbox\" class=\"dropdown-menu\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_child_tabbable.html#%7B%22message%22%3A%22None%20of%20the%20descendent%20elements%20with%20%5C%22option%5C%22%20role%20is%20tabbable%22%2C%22snippet%22%3A%22%3Cul%20role%3D%5C%22listbox%5C%22%20class%3D%5C%22dropdown-menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_missing_child%22%2C%22ruleId%22%3A%22aria_child_tabbable%22%2C%22msgArgs%22%3A%5B%22li%22%2C%22option%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/section[1]/article[1]/div[1]/section[1]/div[2]/div[2]/select[1]",
+                "aria": "/document[1]/main[1]/article[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 64,
+                "top": 757,
+                "height": 19,
+                "width": 105
+            },
+            "snippet": "<select id=\"sortBy\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22sortBy%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1630,
+    "ruleTime": 22,
+    "nls": {
+        "aria_content_in_landmark": {
+            "0": "All content must reside within an element with a landmark role",
+            "Fail_1": "Content is not within a landmark element"
+        },
+        "element_id_unique": {
+            "0": "Element 'id' attribute values must be unique within a document",
+            "potential_in_use": "The <{0}> element has the id \"{1}\" that is already in use"
+        },
+        "widget_tabbable_single": {
+            "0": "Components with a widget role must have no more than one tabbable element",
+            "potential_multiple_tabbable": "Component with \"{0}\" role has more than one tabbable element"
+        },
+        "aria_keyboard_handler_exists": {
+            "0": "Interactive WAI_ARIA UI components must provide keyboard access",
+            "potential_no_keyboard_access": "Verify the <{0}> element with \"{1}\" role has keyboard access"
+        },
+        "aria_landmark_name_unique": {
+            "0": "Each landmark should have a unique 'aria-labelledby' or 'aria-label' or be nested in a different parent region",
+            "fail_label_not_unique": "Multiple elements with \"{0}\" landmarks within the same parent region are not distinguished from one another because they have the same \"{1}\" label"
+        },
+        "aria_navigation_label_unique": {
+            "0": "Each element with \"navigation\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"navigation\" role do not have unique labels"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label",
+            "Fail_2": "Form control with \"{0}\" role has no associated label"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "aria_child_tabbable": {
+            "0": "UI component must have at least one tabbable descendant for keyboard access",
+            "fail_missing_child": "None of the descendent elements with \"{1}\" role is tabbable"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 25,
+            "elementsViolation": 8,
+            "elementsViolationReview": 13,
+            "violation": 11,
+            "potentialviolation": 5,
+            "recommendation": 7,
+            "potentialrecommendation": 9,
+            "manual": 1,
+            "pass": 1597
+        },
+        "scanTime": 81,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "IBM_Accessibility"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779658108068,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en-US%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ETest%20Table%20%7C%20Practice%20Test%20Automation%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20id%3D%22modern-store-modified%22%20class%3D%22wp-singular%20page-template%20page-template-test_table%20page-template-test_table-php%20page%20page-id-963%20wp-custom-logo%20wp-theme-modern-store-modified%20full-post%22%3E%0A%09%09%09%3Ca%20class%3D%22skip-content%22%20href%3D%22%23main-container%22%3EPress%20%22Enter%22%20to%20skip%20to%20content%3C%2Fa%3E%0A%09%3Cdiv%20id%3D%22overflow-container%22%20class%3D%22overflow-container%22%3E%0A%09%09%3Cdiv%20id%3D%22max-width%22%20class%3D%22max-width%22%3E%0A%09%09%09%09%09%09%3Cheader%20class%3D%22site-header%22%20id%3D%22site-header%22%20role%3D%22banner%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22header-top%22%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22menu-secondary-container%22%20class%3D%22menu-secondary-container%22%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22menu-secondary%22%20class%3D%22menu-container%20menu-secondary%22%20role%3D%22navigation%22%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22social-icons-container%22%20class%3D%22social-icons-container%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22header-middle%22%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22title-container%22%20class%3D%22title-container%22%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22site-title%22%20class%3D%22site-title%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2F%22%20class%3D%22custom-logo-link%22%20rel%3D%22home%22%3E%3Cimg%20width%3D%22305%22%20height%3D%2296%22%20class%3D%22custom-logo%22%20alt%3D%22Practice%20Test%20Automation%22%20decoding%3D%22async%22%20sizes%3D%22(max-width%3A%20305px)%20100vw%2C%20305px%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22header-bottom%22%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22mobile-menu-container%22%20class%3D%22mobile-menu-container%22%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22mobile-menu-container-inner%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22close-mobile-menu%22%20class%3D%22close-mobile-menu%22%3E%0A%09%09%09%09%09%09%09%09%3Cbutton%3E%0A%09%09%09%09%09%09%09%09%09%3Csvg%20width%3D%2228px%22%20height%3D%2228px%22%20viewBox%3D%220%200%2028%2028%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%09%09%09%09%09%09%09%09%3Cg%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(-174.000000%2C%20-18.000000)%22%20fill%3D%22%23FFFFFF%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(174.000000%2C%2018.000000)%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Crect%20transform%3D%22translate(14.000000%2C%2014.000000)%20rotate(-45.000000)%20translate(-14.000000%2C%20-14.000000)%20%22%20x%3D%22-4%22%20y%3D%2213%22%20width%3D%2236%22%20height%3D%222%22%3E%3C%2Frect%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Crect%20transform%3D%22translate(14.000000%2C%2014.000000)%20rotate(45.000000)%20translate(-14.000000%2C%20-14.000000)%20%22%20x%3D%22-4%22%20y%3D%2213%22%20width%3D%2236%22%20height%3D%222%22%3E%3C%2Frect%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%3C%2Fsvg%3E%09%09%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22menu-primary-container%22%20class%3D%22menu-primary-container%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20id%3D%22menu-primary%22%20class%3D%22menu-container%20menu-primary%22%20role%3D%22navigation%22%3E%0A%20%20%20%20%3Cnav%20class%3D%22menu%22%3E%3Cul%20id%3D%22menu-primary-items%22%20class%3D%22menu-primary-items%22%3E%3Cli%20id%3D%22menu-item-43%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-home%20menu-item-43%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2F%22%3EHome%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-20%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-20%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fpractice%2F%22%3EPractice%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-21%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-21%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fcourses%2F%22%3ECourses%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-19%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-19%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fblog%2F%22%3EBlog%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-18%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-18%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fcontact%2F%22%3EContact%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%3C%2Fnav%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22toggle-container%22%20class%3D%22toggle-container%22%3E%0A%09%09%09%09%09%09%3Cbutton%20id%3D%22toggle-navigation%22%20class%3D%22toggle-navigation%22%20name%3D%22toggle-navigation%22%20aria-expanded%3D%22false%22%3E%0A%09%09%09%09%09%09%09%3Cspan%20class%3D%22screen-reader-text%22%3Eopen%20menu%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%3Csvg%20width%3D%2236px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2036%2024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%09%09%09%09%09%09%09%09%3Cg%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(-198.000000%2C%20-90.000000)%22%20fill%3D%22%23FFFFFF%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(0.000000%2C%2018.000000)%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(0.000000%2C%2060.000000)%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(141.000000%2C%2012.000000)%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(57.000000%2C%200.000000)%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Crect%20x%3D%220%22%20y%3D%2222%22%20width%3D%2236%22%20height%3D%222%22%3E%3C%2Frect%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Crect%20x%3D%220%22%20y%3D%2211%22%20width%3D%2236%22%20height%3D%222%22%3E%3C%2Frect%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2236%22%20height%3D%222%22%3E%3C%2Frect%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%3C%2Fsvg%3E%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fheader%3E%0A%09%09%09%09%09%09%09%09%09%3Csection%20id%3D%22main-container%22%20class%3D%22main-container%22%20role%3D%22main%22%3E%0A%09%09%09%09%0A%3Csection%20id%3D%22xpath-table%22%20class%3D%22entry%22%3E%0A%20%3Carticle%20class%3D%22post-963%20page%20type-page%20status-publish%20hentry%20entry%22%20style%3D%22max-width%3A100%25%3B%22%3E%0A%20%20%20%20%3Cheader%20class%3D%22post-header%22%3E%0A%20%20%20%20%20%20%3Ch1%20class%3D%22post-title%22%3ETest%20Table%3C%2Fh1%3E%0A%20%20%20%20%3C%2Fheader%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22post-content%22%3E%0A%20%20%20%20%20%20%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EThis%20page%20is%20created%20to%20practice%20building%20XPath%20locators%20for%20real-world%20tables.%20Use%20the%20table%20below%20to%20locate%20specific%20cells%2C%20rows%2C%20and%20links%20based%20on%20attributes%20like%20%3Ccode%3Edata-col%3C%2Fcode%3E%2C%20%3Ccode%3Eheaders%3C%2Fcode%3E%2C%20or%20text%20content.%20Try%20writing%20locators%20for%20courses%20by%20language%2C%20level%2C%20or%20enrollment%20numbers%2C%20and%20verify%20that%20clicking%20a%20course%20link%20opens%20the%20correct%20page.%20If%20you%20want%20to%20learn%20how%20to%20master%20XPath%20and%20apply%20it%20in%20Selenium%20tests%2C%20check%20out%20my%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fxpath-course-coupon%22%3EXPath%20Locators%20for%20Selenium%3C%2Fa%3E%20program.%3C%2Fp%3E%0A%0A%0A%0A%3Csection%20id%3D%22xpath-table%22%3E%0A%20%20%3Ch2%3EAutomation%20Courses%3C%2Fh2%3E%0A%0A%20%20%3C!--%20CONTROLS%20--%3E%0A%20%20%3Cdiv%20class%3D%22controls-title%22%3E%0A%20%20%20%20%3Ch3%3EFilters%3C%2Fh3%3E%0A%20%20%20%20%3Cdiv%20class%3D%22reset-row%22%3E%0A%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20id%3D%22resetFilters%22%20aria-label%3D%22Reset%20filters%22%20style%3D%22display%3A%20none%3B%22%3EReset%3C%2Fbutton%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22filter-columns%22%3E%0A%20%20%20%20%3C!--%20Language%20--%3E%0A%20%20%20%20%3Cfieldset%20class%3D%22filter-group%20vertical%22%3E%0A%20%20%20%20%20%20%3Clegend%3ELanguage%3C%2Flegend%3E%0A%20%20%20%20%20%20%3Clabel%3E%3Cinput%20type%3D%22radio%22%20name%3D%22lang%22%20value%3D%22Any%22%20checked%3D%22%22%3E%20Any%3C%2Flabel%3E%0A%20%20%20%20%20%20%3Clabel%3E%3Cinput%20type%3D%22radio%22%20name%3D%22lang%22%20value%3D%22Java%22%3E%20Java%3C%2Flabel%3E%0A%20%20%20%20%20%20%3Clabel%3E%3Cinput%20type%3D%22radio%22%20name%3D%22lang%22%20value%3D%22Python%22%3E%20Python%3C%2Flabel%3E%0A%20%20%20%20%3C%2Ffieldset%3E%0A%0A%20%20%20%20%3C!--%20Level%20--%3E%0A%20%20%20%20%3Cfieldset%20class%3D%22filter-group%20vertical%22%3E%0A%20%20%20%20%20%20%3Clegend%3ELevel%3C%2Flegend%3E%0A%20%20%20%20%20%20%3Clabel%3E%3Cinput%20type%3D%22checkbox%22%20name%3D%22level%22%20value%3D%22Beginner%22%20checked%3D%22%22%3E%20Beginner%3C%2Flabel%3E%0A%20%20%20%20%20%20%3Clabel%3E%3Cinput%20type%3D%22checkbox%22%20name%3D%22level%22%20value%3D%22Intermediate%22%20checked%3D%22%22%3E%20Intermediate%3C%2Flabel%3E%0A%20%20%20%20%20%20%3Clabel%3E%3Cinput%20type%3D%22checkbox%22%20name%3D%22level%22%20value%3D%22Advanced%22%20checked%3D%22%22%3E%20Advanced%3C%2Flabel%3E%0A%20%20%20%20%3C%2Ffieldset%3E%0A%0A%20%20%20%20%3C!--%20Min%20enrollments%20--%3E%0A%20%20%20%20%3Cfieldset%20class%3D%22filter-group%22%3E%0A%20%20%20%20%20%20%3Clegend%3EMin%20enrollments%3C%2Flegend%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22dropdown%22%20id%3D%22enrollDropdown%22%20data-value%3D%22any%22%20tabindex%3D%220%22%20role%3D%22listbox%22%20aria-label%3D%22Minimum%20enrollments%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22dropdown-button%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-expanded%3D%22false%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22dropdown-label%22%3EAny%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22dropdown-menu%22%20role%3D%22listbox%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20role%3D%22option%22%20data-value%3D%22any%22%20aria-selected%3D%22true%22%3EAny%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20role%3D%22option%22%20data-value%3D%225000%22%3E5%2C000%2B%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20role%3D%22option%22%20data-value%3D%2210000%22%3E10%2C000%2B%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20role%3D%22option%22%20data-value%3D%2250000%22%3E50%2C000%2B%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Ffieldset%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22controls-sep%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%0A%0A%20%20%20%20%3C!--%20Sort%20row%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22sort-row%22%3E%0A%20%20%20%20%20%20%3Clabel%20for%3D%22sortBy%22%3ESort%20by%3A%3C%2Flabel%3E%0A%20%20%20%20%20%20%3Cselect%20id%3D%22sortBy%22%3E%0A%20%20%20%20%20%20%20%20%3Coption%20value%3D%22col_id%22%3EID%3C%2Foption%3E%0A%20%20%20%20%20%20%20%20%3Coption%20value%3D%22col_course%22%3ECourse%20Name%3C%2Foption%3E%0A%20%20%20%20%20%20%20%20%3Coption%20value%3D%22col_lang%22%3ELanguage%3C%2Foption%3E%0A%20%20%20%20%20%20%20%20%3Coption%20value%3D%22col_level%22%3ELevel%3C%2Foption%3E%0A%20%20%20%20%20%20%20%20%3Coption%20value%3D%22col_enroll%22%3EEnrollments%3C%2Foption%3E%0A%20%20%20%20%20%20%3C%2Fselect%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3C!--%20%2FCONTROLS%20--%3E%0A%0A%20%20%3Cdiv%20id%3D%22noData%22%20class%3D%22no-data%22%20style%3D%22display%3Anone%3B%20margin%3A8px%200%3B%20font-weight%3A600%3B%22%3E%0A%20%20%20%20No%20matching%20courses.%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Ctable%20id%3D%22courses_table%22%20border%3D%221%22%20cellpadding%3D%226%22%20cellspacing%3D%220%22%3E%0A%20%20%20%20%3Cthead%3E%0A%20%20%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%20%20%3Cth%20id%3D%22col_id%22%20scope%3D%22col%22%3EID%3C%2Fth%3E%0A%20%20%20%20%20%20%20%20%3Cth%20id%3D%22col_course%22%20scope%3D%22col%22%3ECourse%20Name%3C%2Fth%3E%0A%20%20%20%20%20%20%20%20%3Cth%20id%3D%22col_lang%22%20scope%3D%22col%22%3ELanguage%3C%2Fth%3E%0A%20%20%20%20%20%20%20%20%3Cth%20id%3D%22col_level%22%20scope%3D%22col%22%3ELevel%3C%2Fth%3E%0A%20%20%20%20%20%20%20%20%3Cth%20id%3D%22col_enroll%22%20scope%3D%22col%22%3EEnrollments%3C%2Fth%3E%0A%20%20%20%20%20%20%20%20%3Cth%20id%3D%22col_link%22%20scope%3D%22col%22%3ELink%3C%2Fth%3E%0A%20%20%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3C%2Fthead%3E%0A%20%20%20%20%3Ctbody%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_id%22%20data-col%3D%22id%22%3E1517620%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_course%22%20data-col%3D%22course%22%3ESelenium%20Framework%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_lang%22%20data-col%3D%22language%22%3EJava%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_level%22%20data-col%3D%22level%22%3EAdvanced%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_enroll%22%20data-col%3D%22enrollments%22%3E2667%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_link%22%20data-col%3D%22link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fselenium-webdriver-test-framework-from-scratch-referralCode%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3EView%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3C%2Ftr%3E%3Ctr%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_id%22%20data-col%3D%22id%22%3E1693880%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_course%22%20data-col%3D%22course%22%3ESelenium%20with%20Java%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_lang%22%20data-col%3D%22language%22%3EJava%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_level%22%20data-col%3D%22level%22%3EBeginner%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_enroll%22%20data-col%3D%22enrollments%22%3E64284%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_link%22%20data-col%3D%22link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fbeginners-course-coupon%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3EView%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3C%2Ftr%3E%3Ctr%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_id%22%20data-col%3D%22id%22%3E1743612%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_course%22%20data-col%3D%22course%22%3EXPath%20Locators%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_lang%22%20data-col%3D%22language%22%3EAny%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_level%22%20data-col%3D%22level%22%3EBeginner%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_enroll%22%20data-col%3D%22enrollments%22%3E14762%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_link%22%20data-col%3D%22link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fxpath-course-coupon%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3EView%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3C%2Ftr%3E%3Ctr%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_id%22%20data-col%3D%22id%22%3E1904956%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_course%22%20data-col%3D%22course%22%3EAdvanced%20Selenium%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_lang%22%20data-col%3D%22language%22%3EJava%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_level%22%20data-col%3D%22level%22%3EIntermediate%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_enroll%22%20data-col%3D%22enrollments%22%3E16452%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_link%22%20data-col%3D%22link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fadvanced-course-coupon%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3EView%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3C%2Ftr%3E%3Ctr%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_id%22%20data-col%3D%22id%22%3E2854476%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_course%22%20data-col%3D%22course%22%3EREST%20Assured%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_lang%22%20data-col%3D%22language%22%3EJava%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_level%22%20data-col%3D%22level%22%3EIntermediate%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_enroll%22%20data-col%3D%22enrollments%22%3E8254%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_link%22%20data-col%3D%22link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Frest-assured-course-coupon%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3EView%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3C%2Ftr%3E%3Ctr%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_id%22%20data-col%3D%22id%22%3E3970682%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_course%22%20data-col%3D%22course%22%3ESelenium%20Grid%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_lang%22%20data-col%3D%22language%22%3EJava%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_level%22%20data-col%3D%22level%22%3EAdvanced%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_enroll%22%20data-col%3D%22enrollments%22%3E2207%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_link%22%20data-col%3D%22link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fselenium-grid%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3EView%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3C%2Ftr%3E%3Ctr%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_id%22%20data-col%3D%22id%22%3E4536644%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_course%22%20data-col%3D%22course%22%3EJava%20for%20Testers%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_lang%22%20data-col%3D%22language%22%3EJava%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_level%22%20data-col%3D%22level%22%3EBeginner%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_enroll%22%20data-col%3D%22enrollments%22%3E6678%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_link%22%20data-col%3D%22link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fjava-for-testers-udemy%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3EView%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3C%2Ftr%3E%3Ctr%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_id%22%20data-col%3D%22id%22%3E4824578%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_course%22%20data-col%3D%22course%22%3ESelenium%20with%20Python%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_lang%22%20data-col%3D%22language%22%3EPython%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_level%22%20data-col%3D%22level%22%3EBeginner%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_enroll%22%20data-col%3D%22enrollments%22%3E10705%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_link%22%20data-col%3D%22link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fselenium-python-udemy%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3EView%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3C%2Ftr%3E%3Ctr%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_id%22%20data-col%3D%22id%22%3E5393658%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_course%22%20data-col%3D%22course%22%3EPython%20for%20Testers%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_lang%22%20data-col%3D%22language%22%3EPython%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_level%22%20data-col%3D%22level%22%3EBeginner%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_enroll%22%20data-col%3D%22enrollments%22%3E1365%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3Ctd%20headers%3D%22col_link%22%20data-col%3D%22link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fpython-for-testers%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3EView%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3C%2Ftr%3E%3C%2Ftbody%3E%0A%20%20%3C%2Ftable%3E%0A%0A%20%20%0A%3C%2Fsection%3E%0A%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-alpha-channel-opacity%22%3E%0A%0A%0A%0A%3Ch5%20class%3D%22wp-block-heading%22%3ETest%20case%201%3A%20Language%20filter%20%E2%86%92%20Java%3C%2Fh5%3E%0A%0A%0A%0A%3Col%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EOpen%20page%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ESelect%20Language%20%3D%20Java%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20only%20Java%20courses%20are%20visible%3C%2Fli%3E%0A%3C%2Fol%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EFails%20if%20language%20filter%20is%20not%20reapplied%20on%20change%3C%2Fp%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-alpha-channel-opacity%22%3E%0A%0A%0A%0A%3Ch5%20class%3D%22wp-block-heading%22%3ETest%20case%202%3A%20Level%20filter%20%E2%86%92%20Beginner%20only%3C%2Fh5%3E%0A%0A%0A%0A%3Col%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EOpen%20page%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EUncheck%20Intermediate%20and%20Advanced%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20that%20only%20Beginner%20courses%20are%20visible%3C%2Fli%3E%0A%3C%2Fol%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EFails%20if%20unchecked%20levels%20still%20pass%20the%20filter%3C%2Fp%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-alpha-channel-opacity%22%3E%0A%0A%0A%0A%3Ch5%20class%3D%22wp-block-heading%22%3ETest%20case%203%3A%20Min%20enrollments%20%E2%86%92%2010%2C000%2B%3C%2Fh5%3E%0A%0A%0A%0A%3Col%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EOpen%20page%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EOpen%20%E2%80%9CMin%20enrollments%E2%80%9D%20dropdown%20and%20choose%2010%2C000%2B%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20every%20visible%20row%20shows%20enrollments%20%E2%89%A5%2010%2C000%3C%2Fli%3E%0A%3C%2Fol%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EFails%20if%20numeric%20comparison%20is%20done%20as%20strings%3C%2Fp%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-alpha-channel-opacity%22%3E%0A%0A%0A%0A%3Ch5%20class%3D%22wp-block-heading%22%3ETest%20case%204%3A%20Combined%20filters%20%E2%86%92%20Python%20%2B%20Beginner%20%2B%2010%2C000%2B%3C%2Fh5%3E%0A%0A%0A%0A%3Col%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EOpen%20page%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ESelect%20Language%20%3D%20Python%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EUncheck%20Intermediate%20and%20Advanced%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ESet%20Min%20enrollments%20%3D%2010%2C000%2B%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20only%20Python%20Beginner%20courses%20with%20%E2%89%A5%2010%2C000%20enrollments%20are%20visible%3C%2Fli%3E%0A%3C%2Fol%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EFails%20if%20incorrect%20courses%20are%20visible%3C%2Fp%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-alpha-channel-opacity%22%3E%0A%0A%0A%0A%3Ch5%20class%3D%22wp-block-heading%22%3ETest%20case%205%3A%20No%20results%20state%3C%2Fh5%3E%0A%0A%0A%0A%3Col%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EOpen%20page%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ESelect%20a%20combination%20that%20yields%20no%20matches%20(e.g.%2C%20Language%20with%20Level%20that%20does%20not%20exist)%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20%E2%80%9CNo%20matching%20courses.%E2%80%9D%20is%20shown%3C%2Fli%3E%0A%3C%2Fol%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EFails%20if%20no-data%20state%20does%20not%20toggle%20with%20filters%3C%2Fp%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-alpha-channel-opacity%22%3E%0A%0A%0A%0A%3Ch5%20class%3D%22wp-block-heading%22%3ETest%20case%206%3A%20Reset%20button%20visibility%20and%20behavior%3C%2Fh5%3E%0A%0A%0A%0A%3Col%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EOpen%20page%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EChange%20any%20filter%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20the%20Reset%20button%20becomes%20visible%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EClick%20Reset%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20Language%20%3D%20Any%2C%20all%20Levels%20checked%2C%20Min%20enrollments%20%3D%20Any%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20the%20Reset%20button%20is%20hidden%20and%20all%20rows%20are%20visible%3C%2Fli%3E%0A%3C%2Fol%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EFails%20if%20defaults%20or%20visibility%20logic%20are%20not%20restored%3C%2Fp%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-alpha-channel-opacity%22%3E%0A%0A%0A%0A%3Ch5%20class%3D%22wp-block-heading%22%3ETest%20case%207%3A%20Sort%20by%20Enrollments%20(ascending%2C%20numeric)%3C%2Fh5%3E%0A%0A%0A%0A%3Col%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EOpen%20page%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ESet%20Sort%20by%20%3D%20Enrollments%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20visible%20rows%20are%20ordered%20from%20smallest%20to%20largest%20enrollment%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20numbers%20with%20commas%20sort%20correctly%3C%2Fli%3E%0A%3C%2Fol%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EFails%20if%20the%20sort%20is%20lexicographic%3C%2Fp%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-alpha-channel-opacity%22%3E%0A%0A%0A%0A%3Ch5%20class%3D%22wp-block-heading%22%3ETest%20case%208%3A%20Sort%20by%20Course%20Name%20(alphabetical)%3C%2Fh5%3E%0A%0A%0A%0A%3Col%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EOpen%20page%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ESet%20Sort%20by%20%3D%20Course%20Name%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20visible%20rows%20are%20ordered%20A%E2%86%92Z%20by%20course%20name%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EVerify%20order%20updates%20after%20changing%20filters%3C%2Fli%3E%0A%3C%2Fol%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EFails%20if%20string%20compare%20ignores%20case%2Fwhitespace%20inconsistently%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3C%2Fp%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Farticle%3E%0A%3C%2Fsection%3E%0A%0A%0A%3C%2Fsection%3E%20%3C!--%20.main-container%20--%3E%0A%0A%3Cfooter%20id%3D%22site-footer%22%20class%3D%22site-footer%22%20role%3D%22contentinfo%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22design-credit%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%C2%A9%20Copyright%202020%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2F%22%3EPractice%20Test%20Automation.%3C%2Fa%3E%20%20All%20rights%20reserved%20%20%7C%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fprivacy-policy%2F%22%3EPrivacy%20Policy%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%3C%2Fdiv%3E%3C!--%20.max-width%20--%3E%0A%3C%2Fdiv%3E%3C!--%20.overflow-container%20--%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cimg%20alt%3D%22%22%20width%3D%226%22%20height%3D%225%22%20id%3D%22wpstats%22%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "9a936a10-e01b-4b47-857e-065b65a9b050",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "practicetestautomation.com-practice-test-table"
+}

@@ -1,0 +1,396 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1191,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1191,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1191,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1191,
+                "width": 800
+            },
+            "snippet": "<body marginheight=\"0\" marginwidth=\"0\" leftmargin=\"0\" topmargin=\"0\" text=\"#000000\" vlink=\"#0000CC\" link=\"#0066FF\" bgcolor=\"#FFFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20marginheight%3D%5C%220%5C%22%20marginwidth%3D%5C%220%5C%22%20leftmargin%3D%5C%220%5C%22%20topmargin%3D%5C%220%5C%22%20text%3D%5C%22%23000000%5C%22%20vlink%3D%5C%22%230000CC%5C%22%20link%3D%5C%22%230066FF%5C%22%20bgcolor%3D%5C%22%23FFFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 78,
+                "width": 600
+            },
+            "snippet": "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22600%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 78,
+                "height": 1113,
+                "width": 600
+            },
+            "snippet": "<table width=\"600\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22600%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20cellpadding%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 78,
+                "height": 1112,
+                "width": 100
+            },
+            "snippet": "<table width=\"100\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22100%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 78,
+                "height": 564,
+                "width": 100
+            },
+            "snippet": "<table width=\"100\" cellpadding=\"2\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22100%5C%22%20cellpadding%3D%5C%222%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1]/font[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 18,
+                "top": 117,
+                "height": 15,
+                "width": 65
+            },
+            "snippet": "<font face=\"Arial,Helvetica,Univers,Zurich BT\" size=\"-1\" color=\"#FFFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20face%3D%5C%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%5C%22%20size%3D%5C%22-1%5C%22%20color%3D%5C%22%23FFFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 100,
+                "top": 78,
+                "height": 1113,
+                "width": 500
+            },
+            "snippet": "<table width=\"500\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22500%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 100,
+                "top": 78,
+                "height": 1113,
+                "width": 500
+            },
+            "snippet": "<table width=\"500\" cellpadding=\"0\" cellspacing=\"2\" border=\"1\" id=\"Table1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22500%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%222%5C%22%20border%3D%5C%221%5C%22%20id%3D%5C%22Table1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 137,
+                "top": 151,
+                "height": 19,
+                "width": 426
+            },
+            "snippet": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"426\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%22426%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 536,
+    "ruleTime": 3,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 10,
+            "elementsViolation": 9,
+            "elementsViolationReview": 10,
+            "violation": 10,
+            "potentialviolation": 2,
+            "recommendation": 3,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 521
+        },
+        "scanTime": 23,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779109494058,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3E1711-2000%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23FFFFFF%22%20link%3D%22%230066FF%22%20vlink%3D%22%230000CC%22%20text%3D%22%23000000%22%20topmargin%3D%220%22%20leftmargin%3D%220%22%20marginwidth%3D%220%22%20marginheight%3D%220%22%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22600%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%22600%22%20height%3D%2278%22%20align%3D%22left%22%20valign%3D%22top%22%3E%3Cimg%20id%3D%22Picture5%22%20height%3D%2278%22%20width%3D%22600%22%20border%3D%220%22%20alt%3D%22TV%20Go%20Home%22%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3Ctable%20cellpadding%3D%220%22%20cellspacing%3D%220%22%20border%3D%220%22%20width%3D%22600%22%3E%0A%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%3Ctd%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22100%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%22100%22%20height%3D%221112%22%20bgcolor%3D%22%23000000%22%3E%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%222%22%20width%3D%22100%22%3E%3Ctbody%3E%3Ctr%3E%3Ctd%3E%0A%0A%3Cp%20align%3D%22CENTER%22%3E%3Cbr%3E%3Ca%20href%3D%22%2F%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3EFront%20Page%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fp%3E%3Cp%20align%3D%22CENTER%22%3E%0A%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Farchive%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3EArchive%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fp%3E%3Cp%20align%3D%22CENTER%22%3E%0A%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Fsuggestions%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3ESuggestions%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fp%3E%3Cp%20align%3D%22CENTER%22%3E%0A%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Fsubscribe%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3ESubscribe%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fp%3E%3Cp%20align%3D%22CENTER%22%3E%0A%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Ffaq%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3EF.A.Q.%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fp%3E%3Cp%20align%3D%22CENTER%22%3E%0A%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Fcontacts%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3EContact%20TVGH%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fp%3E%3Cp%20align%3D%22CENTER%22%3E%0A%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Flinks%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3ELinks%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fp%3E%3Cp%20align%3D%22CENTER%22%3E%0A%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3EEntire%20contents%3Cbr%3E(c)%20%3C%2Fi%3E%3C%2Ffont%3E%3Ca%20href%3D%22https%3A%2F%2Fweb.archive.org%2Fweb%2F20041204112147%2Fmailto%3Atvgohome%40tvgohome.com%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3ETVGH%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3E%202000%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3E%0A%3Cp%20align%3D%22CENTER%22%3EPart%20of%20the%20%3Ca%20href%3D%22http%3A%2F%2Fwww.zeppotron.com%2F%22%3E%3Cimg%20id%3D%22Picture10%22%20height%3D%2217%22%20width%3D%2290%22%20vspace%3D%220%22%20hspace%3D%220%22%20align%3D%22TOP%22%20border%3D%220%22%20alt%3D%22Zeppotron%22%3E%3C%2Fa%3E%20conspiracy%3C%2Fp%3E%0A%3Cp%20align%3D%22CENTER%22%3ENo%20reproduction%20without%20consent%3C%2Fp%3E%0A%3C%2Fi%3E%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3ETV%20Go%20Home%20is%26nbsp%3B%20supported%20by%3Cbr%3E%3C%2Fi%3E%3C%2Ffont%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.ntk.net%2F%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3ENeed%20to%20Know%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fp%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3Ci%3EPowered%20by%3Cbr%3E%3C%2Fi%3E%3C%2Ffont%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.usp.net%2F%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3EUSP%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3E%3Cbr%3E%26nbsp%3B%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fp%3E%3C%2Ftd%3E%3C%2Ftr%3E%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%3Ctd%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22500%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%22500%22%20height%3D%221111%22%3E%0A%09%20%20%3Ctable%20id%3D%22Table1%22%20border%3D%221%22%20cellspacing%3D%222%22%20cellpadding%3D%220%22%20width%3D%22500%22%3E%0A%09%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%09%3Ctd%20width%3D%22494%22%20height%3D%221105%22%3E%0A%3Cp%20align%3D%22CENTER%22%3E%3Cbr%3E%0A%3Ca%20href%3D%22%2F0311-2000%22%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%26lt%3B%26lt%3B%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%26nbsp%3B%20%0A%3C%2Ffont%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%20Black%2CHelvetica%20Black%2CLB%20Helvetica%20Black%2CUnivers%20Black%2CZurich%20Blk%20BT%22%3E17th%0ANovember%202000%20%3C%2Ffont%3E%20%3Ca%20href%3D%22%2F0112-2000%22%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%26gt%3B%26gt%3B%3C%2Ffont%3E%3C%2Fa%3E%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%0A%3C%2Fp%3E%3Cdiv%20align%3D%22CENTER%22%3E%0A%3Ctable%20width%3D%22426%22%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%3E%3Ctbody%3E%3Ctr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ctd%3E%3Cimg%20id%3D%22Picture7%22%20height%3D%221034%22%20width%3D%22426%22%20border%3D%220%22%20alt%3D%22TVGH%20--%20Loading%22%3E%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ftr%3E%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3C%2Ftd%3E%0A%09%20%3C%2Ftr%3E%0A%09%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "58a98966-ce8e-432c-a31c-94d02d119dda",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "tvgohome.netlify.app-1711-2000"
+}

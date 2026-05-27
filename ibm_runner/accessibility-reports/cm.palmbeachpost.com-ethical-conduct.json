@@ -1,0 +1,808 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 3741,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 3741,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.palmbeachpost.com/\" class=\"logo-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.palmbeachpost.com%2F%5C%22%20class%3D%5C%22logo-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.palmbeachpost.com/\" class=\"logo-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.palmbeachpost.com%2F%5C%22%20class%3D%5C%22logo-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/a[1]/img[1]",
+                "aria": "/document[1]/banner[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 23,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"logo-image\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22logo-image%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[4]",
+                "aria": "/document[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'II. Serving the public interest II. Serving the public interest' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "II. Serving the public interest II. Serving the public interest"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 541,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'II.%20Serving%20the%20public%20interest%20II.%20Serving%20the%20public%20interest'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22II.%20Serving%20the%20public%20interest%20II.%20Serving%20the%20public%20interest%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[5]",
+                "aria": "/document[1]/paragraph[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'III. Exercising fair play III. Exercising fair play' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "III. Exercising fair play III. Exercising fair play"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 850,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'III.%20Exercising%20fair%20play%20III.%20Exercising%20fair%20play'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22III.%20Exercising%20fair%20play%20III.%20Exercising%20fair%20play%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[6]",
+                "aria": "/document[1]/paragraph[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'IV. Maintaining independence IV. Maintaining independence' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "IV. Maintaining independence IV. Maintaining independence"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1086,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'IV.%20Maintaining%20independence%20IV.%20Maintaining%20independence'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22IV.%20Maintaining%20independence%20IV.%20Maintaining%20independence%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[7]",
+                "aria": "/document[1]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'V. Acting with integrity V. Acting with integrity' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "V. Acting with integrity V. Acting with integrity"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1414,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'V.%20Acting%20with%20integrity%20V.%20Acting%20with%20integrity'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22V.%20Acting%20with%20integrity%20V.%20Acting%20with%20integrity%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[8]",
+                "aria": "/document[1]/paragraph[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'PURPOSE PURPOSE' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "PURPOSE PURPOSE"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1756,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'PURPOSE%20PURPOSE'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22PURPOSE%20PURPOSE%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[9]",
+                "aria": "/document[1]/paragraph[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'TRANSPARENCY & DISCLOSURE TRANSPARENCY & DISCLOSURE' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "TRANSPARENCY & DISCLOSURE TRANSPARENCY & DISCLOSURE"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1917,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'TRANSPARENCY%20%26%20DISCLOSURE%20TRANSPARENCY%20%26%20DISCLOSURE'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22TRANSPARENCY%20%26%20DISCLOSURE%20TRANSPARENCY%20%26%20DISCLOSURE%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[10]",
+                "aria": "/document[1]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'ACCURACY & VERIFICATION ACCURACY & VERIFICATION' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "ACCURACY & VERIFICATION ACCURACY & VERIFICATION"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2005,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'ACCURACY%20%26%20VERIFICATION%20ACCURACY%20%26%20VERIFICATION'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22ACCURACY%20%26%20VERIFICATION%20ACCURACY%20%26%20VERIFICATION%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[11]",
+                "aria": "/document[1]/paragraph[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'EDITORIAL JUDGMENT EDITORIAL JUDGMENT' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "EDITORIAL JUDGMENT EDITORIAL JUDGMENT"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2148,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'EDITORIAL%20JUDGMENT%20EDITORIAL%20JUDGMENT'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22EDITORIAL%20JUDGMENT%20EDITORIAL%20JUDGMENT%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[12]",
+                "aria": "/document[1]/paragraph[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'FAIR USE FAIR USE' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "FAIR USE FAIR USE"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2235,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'FAIR%20USE%20FAIR%20USE'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22FAIR%20USE%20FAIR%20USE%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[13]",
+                "aria": "/document[1]/paragraph[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'AI VISUAL TOOLS AI VISUAL TOOLS' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "AI VISUAL TOOLS AI VISUAL TOOLS"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2323,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'AI%20VISUAL%20TOOLS%20AI%20VISUAL%20TOOLS'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22AI%20VISUAL%20TOOLS%20AI%20VISUAL%20TOOLS%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[14]",
+                "aria": "/document[1]/paragraph[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'PRIVACY & DATA PROTECTION PRIVACY & DATA PROTECTION' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "PRIVACY & DATA PROTECTION PRIVACY & DATA PROTECTION"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2484,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'PRIVACY%20%26%20DATA%20PROTECTION%20PRIVACY%20%26%20DATA%20PROTECTION'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22PRIVACY%20%26%20DATA%20PROTECTION%20PRIVACY%20%26%20DATA%20PROTECTION%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[15]",
+                "aria": "/document[1]/paragraph[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'BIAS & DISCRIMINATION BIAS & DISCRIMINATION' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "BIAS & DISCRIMINATION BIAS & DISCRIMINATION"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2609,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'BIAS%20%26%20DISCRIMINATION%20BIAS%20%26%20DISCRIMINATION'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22BIAS%20%26%20DISCRIMINATION%20BIAS%20%26%20DISCRIMINATION%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[16]",
+                "aria": "/document[1]/paragraph[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'SAFETY & SECURITY SAFETY & SECURITY' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "SAFETY & SECURITY SAFETY & SECURITY"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2678,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'SAFETY%20%26%20SECURITY%20SAFETY%20%26%20SECURITY'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22SAFETY%20%26%20SECURITY%20SAFETY%20%26%20SECURITY%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[17]",
+                "aria": "/document[1]/paragraph[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'HUMAN-IN-THE-LOOP REQUIREMENT HUMAN-IN-THE-LOOP REQUIREMENT' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "HUMAN-IN-THE-LOOP REQUIREMENT HUMAN-IN-THE-LOOP REQUIREMENT"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2765,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'HUMAN-IN-THE-LOOP%20REQUIREMENT%20HUMAN-IN-THE-LOOP%20REQUIREMENT'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22HUMAN-IN-THE-LOOP%20REQUIREMENT%20HUMAN-IN-THE-LOOP%20REQUIREMENT%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[18]",
+                "aria": "/document[1]/paragraph[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'ACCOUNTABILITY & RESPONSIBILITY ACCOUNTABILITY & RESPONSIBILITY' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "ACCOUNTABILITY & RESPONSIBILITY ACCOUNTABILITY & RESPONSIBILITY"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2871,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'ACCOUNTABILITY%20%26%20RESPONSIBILITY%20ACCOUNTABILITY%20%26%20RESPONSIBILITY'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22ACCOUNTABILITY%20%26%20RESPONSIBILITY%20ACCOUNTABILITY%20%26%20RESPONSIBILITY%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[19]",
+                "aria": "/document[1]/paragraph[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'TRAINING & DEVELOPMENT TRAINING & DEVELOPMENT' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "TRAINING & DEVELOPMENT TRAINING & DEVELOPMENT"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2940,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'TRAINING%20%26%20DEVELOPMENT%20TRAINING%20%26%20DEVELOPMENT'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22TRAINING%20%26%20DEVELOPMENT%20TRAINING%20%26%20DEVELOPMENT%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/center[1]/div[1]/p[20]",
+                "aria": "/document[1]/paragraph[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'CONCLUSION CONCLUSION' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "CONCLUSION CONCLUSION"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3028,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'CONCLUSION%20CONCLUSION'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22CONCLUSION%20CONCLUSION%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/footer[1]/ul[1]/li[5]/a[1]/svg[1]",
+                "aria": "/document[1]/contentinfo[1]/list[1]/listitem[5]/link[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3210,
+                "height": 14,
+                "width": 30
+            },
+            "snippet": "<svg style=\"height:14px;width:auto;top:2px;position:relative;margin-right:4px;\" viewBox=\"0 0 25 12\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20style%3D%5C%22height%3A14px%3Bwidth%3Aauto%3Btop%3A2px%3Bposition%3Arelative%3Bmargin-right%3A4px%3B%5C%22%20viewBox%3D%5C%220%200%2025%2012%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]",
+                "aria": "/document[1]/dialog[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'bottom' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "bottom"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3384,
+                "height": 130,
+                "width": 784
+            },
+            "snippet": "<div id=\"onetrust-policy-text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'bottom'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cdiv%20id%3D%5C%22onetrust-policy-text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22bottom%22%5D%7D"
+        },
+        {
+            "ruleId": "label_name_visible",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]",
+                "aria": "/document[1]/dialog[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Accessible name does not match or contain the visible label text",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3476,
+                "height": 37,
+                "width": 777
+            },
+            "snippet": "<a target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"More information about your privacy, opens in a new tab\" href=\"/privacy\" class=\"ot-cookie-policy-link\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/label_name_visible.html#%7B%22message%22%3A%22Accessible%20name%20does%20not%20match%20or%20contain%20the%20visible%20label%20text%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20rel%3D%5C%22noopener%20noreferrer%5C%22%20aria-label%3D%5C%22More%20information%20about%20your%20privacy%2C%20opens%20in%20a%20new%20tab%5C%22%20href%3D%5C%22%2Fprivacy%5C%22%20class%3D%5C%22ot-cookie-policy-link%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22label_name_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 942,
+    "ruleTime": 10,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "label_name_visible": {
+            "0": "Accessible name must match or contain the visible label text",
+            "Fail_1": "Accessible name does not match or contain the visible label text"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 27,
+            "elementsViolation": 5,
+            "elementsViolationReview": 24,
+            "violation": 6,
+            "potentialviolation": 19,
+            "recommendation": 3,
+            "potentialrecommendation": 1,
+            "manual": 1,
+            "pass": 912
+        },
+        "scanTime": 41,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778709831768,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20Palm%20Beach%20Post%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%0A%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cheader%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22cobrand-header%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22header-wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22logo-button%22%20href%3D%22https%3A%2F%2Fwww.palmbeachpost.com%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22logo-image%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22login-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22loggedOut%22%20cm-unauthenticated%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22subscribe%22%20data-client-action-header-subscribe%3D%22%22header-subscribe')%22%3E%3Cspan%3ESubscribe%3C%2Fspan%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22login%22%20data-client-action-header-signin%3D%22%22header-signin')%22%3ESign%20In%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22loggedIn%22%20hidden%3D%22%22%20cm-authenticated%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22subscribe%22%20cm-no-market-access%3D%22%22%20data-client-action-header-subscribe%3D%22%22%20hidden%3D%22%22header-subscribe')%22%3E%3Cspan%3ESubscribe%3C%2Fspan%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22userSalutation%22%20data-client-action-header-usersalutation%3D%22%22header-userSalutation')%22%3E%3Cspan%3EHi%2C%20%3Cspan%20class%3D%22userName%22%3E%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22signOut%22%20data-client-action-header-signout%3D%22%22header-signOut')%22%3ESign%20Out%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fheader%3E%0A%20%20%20%20%0A%0A%20%20%20%20%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%3Ccenter%20class%3D%22cm-flatpage-card%22%3E%20%3Cdiv%20class%3D%22cm-main-content%22%20style%3D%22text-align%3Aleft%3Bfont-family%3AArial%2Csans-serif%3Bdisplay%3Ablock%22%3E%20%3Ch1%20class%3D%22page-title%22%3EUSA%20TODAY%20NETWORK%20Principles%20of%20Ethical%20Conduct%20for%20Newsrooms%3C%2Fh1%3E%20%3Cp%20style%3D%22text-align%3Aleft%22%3EUSA%20TODAY%20Network%E2%80%99s%20Principles%20of%20Ethical%20Conduct%20for%20Newsrooms%20include%20concepts%20and%20language%20developed%20by%20the%20Radio%20and%20Television%20Digital%20News%20Association%2C%20USA%20TODAY%20Media%20leadership%20and%20USA%20TODAY%20Co.'s%20mission%20to%20empower%20communities%20with%20trusted%20information%20and%20content.%20These%20principles%20are%20designed%20to%20guide%20journalists%20working%20with%20any%20news%20platform%2C%20including%20newspapers%2C%20websites%2C%20mobile%20devices%2C%20video%2C%20social%20media%20channels%20and%20live%20story%20events.%3C%2Fp%3E%20%3Cp%3E%3Cstrong%3EWE%20ARE%20COMMITTED%20TO%3A%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cp%3E%3Cstrong%3EI.%20Seeking%20and%20reporting%20the%20truth%20in%20a%20truthful%20way%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EWe%20will%20be%20honest%20in%20the%20way%20we%20gather%2C%20report%20and%20present%20news%20-%20with%20relevancy%2C%20context%2C%20thoroughness%20and%20balance.%3C%2Fli%3E%20%3Cli%3EWe%20will%20seek%20to%20gain%20understanding%20of%20the%20communities%2C%20individuals%20and%20issues%20we%20cover%20to%20provide%20an%20informed%20account%20of%20activities.%3C%2Fli%3E%20%3Cli%3EWe%20will%20hold%20factual%20information%20in%20editorials%20and%20other%20opinion%20pieces%20to%20the%20same%20standards%20of%20accuracy%20as%20news%20stories.%3C%2Fli%3E%20%3Cli%3EWe%20will%20treat%20information%20from%20unofficial%20sources%2C%20which%20may%20include%20social%20media%2C%20with%20skepticism%20and%20will%20seek%20to%20corroborate%20information.%3C%2Fli%3E%20%3Cli%3EWhen%20considering%20news%20content%20created%20outside%20of%20the%20USA%20TODAY%20Network%2C%20we%20will%20factor%20the%20credibility%20of%20the%20source%20and%20weigh%20the%20value%20and%20accuracy%20of%20information%20provided.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EII.%20Serving%20the%20public%20interest%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EWe%20will%20uphold%20First%20Amendment%20principles%20to%20serve%20the%20democratic%20process.%3C%2Fli%3E%20%3Cli%3EWe%20will%20be%20vigilant%20watchdogs%20of%20government%20and%20institutions%20that%20affect%20the%20public%2C%20fighting%20to%20ensure%20that%20the%20public's%20business%20is%20conducted%20in%20public.%3C%2Fli%3E%20%3Cli%3EWe%20will%20seek%20solutions%20as%20well%20as%20expose%20problems%20and%20wrongdoing%20in%20order%20to%20effect%20change%20for%20the%20good%20in%20the%20communities%20we%20serve.%3C%2Fli%3E%20%3Cli%3EWe%20will%20provide%20public%20forums%20for%20diverse%20thoughts%20and%20perspectives.%3C%2Fli%3E%20%3Cli%3EWe%20will%20reflect%20and%20encourage%20understanding%20of%20the%20communities%20and%20audiences%20we%20serve.%3C%2Fli%3E%20%3Cli%3EWe%20will%20provide%20editorial%20and%20community%20leadership.%3C%2Fli%3E%20%3Cli%3EWe%20will%20seek%20to%20promote%20understanding%20of%20complex%20issues.%3C%2Fli%3E%20%3Cli%3EWhen%20sharing%20editorials%20and%20other%20opinion%20articles%2C%20we%20will%20encourage%20and%20promote%20views%20that%20foster%20understanding%2C%20insight%20and%20civil%20discourse.%20We%20seek%20to%20offer%20viewpoints%20that%20represent%20various%20views%20on%20a%20particular%20topic.%3C%2Fli%3E%20%3Cli%3EWe%20will%20consider%20providing%20free%20access%20to%20some%20news%20coverage%20during%20public%20safety%20emergencies%20and%20as%20a%20public%20service%20when%20appropriate%2C%20such%20as%20elections%20and%20moments%20including%20natural%20disasters.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EIII.%20Exercising%20fair%20play%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EWe%20will%20treat%20people%20with%20respect%20and%20compassion.%3C%2Fli%3E%20%3Cli%3EWe%20will%20correct%20errors%20promptly%20and%20transparently.%3C%2Fli%3E%20%3Cli%3EWe%20will%20strive%20to%20include%20all%20sides%20relevant%20to%20a%20story.%20When%20news%20develops%20and%20we%20can't%20include%20important%20perspectives%20immediately%2C%20we%20will%20share%20updates%2C%20including%20additional%20sources%2C%20when%20possible.%20We%20also%20will%20share%20attempts%20to%20reach%20sources%20who%20add%20value%20to%20the%20story.%3C%2Fli%3E%20%3Cli%3EWe%20will%20explain%20to%20audiences%20our%20journalistic%20processes%20to%20promote%20transparency%20and%20engagement.%3C%2Fli%3E%20%3Cli%3EWe%20will%20give%20particular%20attention%20to%20fairness%20in%20relations%20with%20people%20unaccustomed%20to%20dealing%20with%20the%20news%20media.%3C%2Fli%3E%20%3Cli%3EWe%20will%20use%20confidential%20sources%20as%20the%20sole%20basis%20for%20published%20information%20only%20as%20a%20last%20resort%20and%20under%20specific%20procedures%20that%20best%20serve%20the%20public's%20right%20to%20know.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EIV.%20Maintaining%20independence%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EWe%20will%20remain%20free%20of%20outside%20interests%2C%20investments%20or%20business%20relationships%20that%20may%20compromise%20the%20credibility%20of%20our%20news%20reporting.%3C%2Fli%3E%20%3Cli%3EWe%20will%20maintain%20an%20impartial%2C%20arm's-length%20relationship%20with%20anyone%20seeking%20to%20influence%20the%20news.%3C%2Fli%3E%20%3Cli%3EWe%20will%20not%20support%20political%20campaigns%20or%20causes%20through%20the%20display%20of%20bumper%20stickers%2C%20signs%2C%20pins%2C%20public%2Fprivate%20donations%2C%20participation%20in%20demonstrations%2C%20petitions%20or%20in%20social%20media%20posts.%3C%2Fli%3E%20%3Cli%3EIndividual%20viewpoints%20that%20might%20cause%20readers%20to%20question%20our%20impartiality%20in%20news%20coverage%20should%20remain%20private.%20This%20principle%20does%20not%20apply%20to%20those%20who%20are%20paid%20to%20write%20and%20share%20opinion.%3C%2Fli%3E%20%3Cli%3EWe%20will%20avoid%20potential%20conflicts%20of%20interest%20and%20eliminate%20inappropriate%20influence%20on%20content.%3C%2Fli%3E%20%3Cli%3EWe%20will%20be%20free%20of%20improper%20obligations%20to%20news%20sources%2C%20social%20and%20digital%20platforms%2C%20newsmakers%20and%20advertisers.%3C%2Fli%3E%20%3Cli%3EWe%20will%20not%20blur%20the%20line%20between%20advertising%20and%20editorial%20content.%20We%20will%20provide%20appropriate%20disclosures%2C%20exercise%20transparency%20and%20avoid%20actual%20or%20implicit%20commercial%20endorsements%20by%20our%20journalists.%3C%2Fli%3E%20%3Cli%3EWhen%20sponsorships%20of%20news%20are%20appropriate%2C%20we%20will%20not%20allow%20them%20to%20determine%2C%20change%20or%20restrict%20content.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EV.%20Acting%20with%20integrity%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EWe%20will%20act%20honorably%20and%20ethically%20in%20dealing%20with%20news%20sources%2C%20the%20public%20and%20our%20colleagues.%3C%2Fli%3E%20%3Cli%3EWe%20will%20obey%20the%20law.%3C%2Fli%3E%20%3Cli%3EWe%20will%20observe%20standards%20of%20decency.%3C%2Fli%3E%20%3Cli%3EWe%20will%20take%20responsibility%20for%20our%20decisions%20and%20consider%20the%20possible%20consequences%20of%20our%20actions.%3C%2Fli%3E%20%3Cli%3EWe%20will%20be%20conscientious%20in%20observing%20these%20principles.%3C%2Fli%3E%20%3Cli%3EWe%20will%20use%20technological%20tools%20with%20skill%20and%20thoughtfulness%2C%20avoiding%20approaches%20that%20skew%20facts%2C%20distort%20reality%2C%20or%20sensationalize%20events.%3C%2Fli%3E%20%3Cli%3EWe%20will%20not%20plagiarize%20or%20fabricate%20information.%3C%2Fli%3E%20%3Cli%3EWe%20will%20not%20alter%20photos%2C%20video%20or%20audio%20to%20misrepresent%20events%20or%20mislead%20audiences.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Chr%20style%3D%22margin%3A%202em%200%3B%22%3E%20%3Ch2%3EEthical%20Guidelines%20and%20Policy%20for%20USA%20TODAY%20Media%20Journalists%20Regarding%20AI-Generated%20or%20Assisted%20Content%3C%2Fh2%3E%20%3Cp%3E%3Cstrong%3EPURPOSE%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EAI%20(Artificial%20Intelligence)%20has%20emerged%20as%20a%20collection%20of%20helpful%20tools.%20Journalists%20must%20use%20AI%20tools%20approved%20by%20the%20AI%20Council%2C%20an%20internal%20cross-functional%20group%20that%20evaluates%20and%20guides%20AI%20tools%20and%20initiatives%20to%20ensure%20they%20align%20with%20our%20business%20goals%2C%20standards%2C%20and%20responsible%20use%20principles.%3C%2Fli%3E%20%3Cli%3EThis%20policy%20provides%20ethical%20guidelines%20for%20USA%20TODAY%20Network%20journalists%20using%20AI-generated%20or%20AI-assisted%20content%20%E2%80%94%20whether%20written%2C%20visual%2C%20or%20audio%20%E2%80%94%20to%20ensure%20reporting%20and%20content%20remains%20transparent%2C%20accurate%2C%20fair%2C%20and%20accountable.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3ETRANSPARENCY%20%26amp%3B%20DISCLOSURE%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EAI%20is%20not%20always%20transparent%20about%20sourcing.%20AI-generated%20content%20should%20always%20be%20validated%20and%20confirmed%20by%20a%20human%20journalist.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EACCURACY%20%26amp%3B%20VERIFICATION%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EWe%20may%20use%20approved%20AI%20tools%20to%20create%20key%20points%20or%20headlines%20that%20are%20reviewed%20and%20approved%20by%20a%20human%20journalist%20or%20editor.%3C%2Fli%3E%20%3Cli%3EIf%20additional%20AI-generated%20content%20is%20published%2C%20journalists%20must%20include%20AI%20disclosure%20language%20for%20transparency.%20All%20AI-generated%20or%20assisted%20content%20must%20be%20verified%20by%20a%20human%20for%20accuracy%20prior%20to%20publication.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EEDITORIAL%20JUDGMENT%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EJournalists%20must%20maintain%20professional%20judgment%20when%20using%20AI%20tools%20and%20ensure%20all%20content%20meets%20USA%20TODAY%20Network%20editorial%20and%20ethical%20standards.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EFAIR%20USE%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EJournalists%20must%20comply%20with%20legal%20and%20ethical%20fair%20use%20standards%20and%20avoid%20infringing%20on%20intellectual%20property%20rights.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EAI%20VISUAL%20TOOLS%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EUse%20of%20generative%20AI%20visual%20or%20audio%20content%20carries%20significant%20risks%20related%20to%20accuracy%2C%20reputation%2C%20and%20copyright.%3C%2Fli%3E%20%3Cli%3EThe%20USA%20TODAY%20Network%20does%20not%20fabricate%20or%20manipulate%20news%20images.%3C%2Fli%3E%20%3Cli%3EAI-generated%20images%20must%20not%20be%20used%20on%20any%20USA%20TODAY%20Co.%20Media%20platforms.%3C%2Fli%3E%20%3Cli%3EJournalists%20must%20apply%20heightened%20scrutiny%20to%20externally%20submitted%20visual%20or%20audio%20materials%2C%20particularly%20during%20elections%20or%20breaking%20news%20events.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EPRIVACY%20%26amp%3B%20DATA%20PROTECTION%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EJournalists%20must%20ensure%20AI%20use%20does%20not%20violate%20privacy%20rights%20or%20data%20protection%20laws.%3C%2Fli%3E%20%3Cli%3EJournalists%20are%20expected%20not%20to%20enter%20personal%2C%20company%2C%20or%20sensitive%20information%20(e.g.%2C%20birth%20dates%2C%20medical%20records%2C%20home%20addresses%2C%20emails)%20into%20unapproved%20AI%20tools%2C%20as%20this%20may%20expose%20individuals%20to%20harm.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EBIAS%20%26amp%3B%20DISCRIMINATION%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EJournalists%20must%20be%20alert%20to%20and%20guard%20against%20potential%20biases%20in%20AI-generated%20content.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3ESAFETY%20%26amp%3B%20SECURITY%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EJournalists%20must%20ensure%20AI-assisted%20content%20does%20not%20contribute%20to%20misinformation%2C%20disinformation%2C%20or%20public%20harm.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EHUMAN-IN-THE-LOOP%20REQUIREMENT%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EUSA%20TODAY%20Network%20requires%20human%20review%20prior%20to%20publication%20of%20any%20AI-assisted%20or%20AI-generated%20content%20to%20ensure%20accuracy%20and%20adherence%20to%20our%20standards.%3C%2Fli%3E%20%3Cli%3EJournalists%20retain%20final%20editorial%20responsibility%20for%20all%20published%20content.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3EACCOUNTABILITY%20%26amp%3B%20RESPONSIBILITY%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EJournalists%20are%20accountable%20for%20errors%20or%20inaccuracies%20and%20must%20take%20corrective%20action%20when%20necessary.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3ETRAINING%20%26amp%3B%20DEVELOPMENT%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EJournalists%20must%20receive%20training%20on%20ethical%20and%20effective%20AI%20use%20and%20remain%20informed%20about%20evolving%20risks.%3C%2Fli%3E%20%3C%2Ful%3E%20%3Cp%3E%3Cstrong%3ECONCLUSION%3C%2Fstrong%3E%3C%2Fp%3E%20%3Cul%3E%20%3Cli%3EThese%20guidelines%20ensure%20AI%20is%20used%20transparently%2C%20ethically%2C%20and%20responsibly%20across%20USA%20TODAY%20Media%20to%20maintain%20public%20trust.%3C%2Fli%3E%20%3Cli%3EThese%20guidelines%20may%20be%20revised%20as%20AI%20technology%20evolves.%3C%2Fli%3E%20%3C%2Ful%3E%20%20%3C%2Fdiv%3E%3C%2Fcenter%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%0A%20%20%20%20%3Cfooter%20class%3D%22bg-lightest-gray%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22footer-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22http%3A%2F%2Fhelp.palmbeachpost.com%2F%22%3EHelp%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fcm.palmbeachpost.com%2Fterms%2F%22%3ETerms%20of%20Service%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fcm.palmbeachpost.com%2Fprivacy%2F%22%3EPrivacy%20Policy%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fcm.palmbeachpost.com%2Fcalifornia-collection-notice%2F%22%3ECalifornia%20Notice%20at%20Collection%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fcm.palmbeachpost.com%2Fyour-privacy-choices%2F%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2025%2012%22%20style%3D%22height%3A14px%3Bwidth%3Aauto%3Btop%3A2px%3Bposition%3Arelative%3Bmargin-right%3A4px%3B%22%3E%3Cpath%20fill%3D%22%231366FF%22%20d%3D%22M19.07%200H5.93A5.93%205.93%200%200%200%200%205.93v.115a5.93%205.93%200%200%200%205.93%205.93h13.14A5.93%205.93%200%200%200%2025%206.044v-.116A5.93%205.93%200%200%200%2019.07%200Z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M6.061%201.022a4.89%204.89%200%200%200-4.875%204.876v.14a4.89%204.89%200%200%200%204.875%204.876h5.298c.03%200%20.056-.02.063-.05l2.67-9.758a.065.065%200%200%200-.062-.083H6.062Zm14.947%206.906-1.924-1.96%201.862-1.896a.527.527%200%201%200-.751-.739l-1.849%201.883-1.849-1.883a.527.527%200%201%200-.751.739l1.862%201.896-1.924%201.96a.527.527%200%201%200%20.752.738l1.91-1.946%201.911%201.946a.525.525%200%200%200%20.745.007.527.527%200%200%200%20.007-.745h-.001Z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%231366FF%22%20d%3D%22M6.694%208.673a.527.527%200%200%201-.37-.151L4.358%206.584a.527.527%200%201%201%20.74-.75l1.56%201.537%203.25-3.846a.527.527%200%200%201%20.805.68L7.096%208.486a.528.528%200%200%201-.38.187h-.023Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EYour%20Privacy%20Choices%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.palmbeachpost.com%2Fsubscriberguide%2F%23apps%22%3EMobile%20Apps%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%C2%A9%26nbsp%3BUSA%20TODAY%20Co.%2C%20Inc.%202026.%20All%20Rights%20Reserved.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%3C%2Ffooter%3E%0A%20%20%20%20%0A%3C%2Fdiv%3E%0A%0A%20%20%20%20%0A%0A%0A%0A%0A%0A%0A%3Cdiv%20id%3D%22onetrust-consent-sdk%22%20data-nosnippet%3D%22true%22%3E%3Cdiv%20class%3D%22onetrust-pc-dark-filter%20ot-hide%20ot-fade-in%22%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22onetrust-banner-sdk%22%20class%3D%22otCenterRounded%20otRelFont%20ot-iab-2%20default%20vertical-align-content%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22ot-sdk-container%22%20role%3D%22dialog%22%20aria-label%3D%22About%20Your%20Privacy%22%3E%3Cdiv%20class%3D%22ot-sdk-row%22%3E%3Cdiv%20id%3D%22onetrust-group-container%22%20class%3D%22ot-sdk-twelve%20ot-sdk-columns%22%3E%3Cdiv%20id%3D%22onetrust-policy%22%3E%3Cdiv%20class%3D%22banner-header%22%3E%3Cdiv%20class%3D%22banner_logo%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ch2%20id%3D%22onetrust-policy-title%22%3EAbout%20Your%20Privacy%3C%2Fh2%3E%3Cspan%20class%3D%22ot-b-addl-desc%22%3E%3Cbr%3E%3Cb%3EClicking%20on%20the%20%22Reject%20All%22%20Button%20retains%20the%20default%20setting%20of%20only%20strictly%20necessary%20cookies.%3C%2Fb%3E%3C%2Fspan%3E%3Cdiv%20id%3D%22onetrust-policy-text%22%3EWe%20and%20our%20%3Cspan%20class%3D%22ot-tcf2-vendor-count%20ot-text-bold%22%3E152%3C%2Fspan%3E%20partners%20store%20and%20access%20personal%20data%2C%20like%20browsing%20data%20or%20unique%20identifiers%2C%20on%20your%20device.%20Selecting%20Accept%20All%20enables%20tracking%20technologies%20to%20support%20the%20purposes%20shown%20under%20we%20and%20our%20partners%20process%20data%20to%20provide.%20Selecting%20Reject%20All%20or%20withdrawing%20your%20consent%20will%20disable%20them.%20If%20trackers%20are%20disabled%2C%20some%20content%20and%20ads%20you%20see%20may%20not%20be%20as%20relevant%20to%20you.%20You%20can%20resurface%20this%20menu%20to%20change%20your%20choices%20or%20withdraw%20consent%20at%20any%20time%20by%20clicking%20the%20Manage%20Cookies%20link%20on%20the%20bottom%20of%20the%20webpage.%20Your%20choices%20will%20have%20effect%20within%20our%20Website.%20For%20more%20details%2C%20refer%20to%20our%20Privacy%20Policy.%3Ca%20class%3D%22ot-cookie-policy-link%22%20href%3D%22%2Fprivacy%22%20aria-label%3D%22More%20information%20about%20your%20privacy%2C%20opens%20in%20a%20new%20tab%22%20rel%3D%22noopener%20noreferrer%22%20target%3D%22_blank%22%3EFor%20more%20information%20about%20how%20we%20use%20your%20data%20visit%20our%20Privacy%20Policy.%20%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22ot-dpd-container%22%3E%3Ch3%20class%3D%22ot-dpd-title%22%3E%3Cbr%3EIf%20you%20click%20%22Accept%20All%22%2C%20we%20and%20our%20partners%20may%20process%20personal%20data%20for%20the%20following%20purposes%3A%3C%2Fh3%3E%3Cdiv%20class%3D%22ot-dpd-content%22%3E%3Cp%20class%3D%22ot-dpd-desc%22%3EUse%20precise%20geolocation%20data.%20Actively%20scan%20device%20characteristics%20for%20identification.%20Store%20and%2For%20access%20information%20on%20a%20device.%20Personalised%20advertising%20and%20content%2C%20advertising%20and%20content%20measurement%2C%20audience%20research%20and%20services%20development.%20%3Cbutton%20class%3D%22ot-link-btn%20onetrust-vendors-list-handler%22%3E%0A%20%20%20%20%20%20%20%20List%20of%20Partners%20(vendors)%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22onetrust-button-group-parent%22%20class%3D%22ot-sdk-twelve%20ot-sdk-columns%20has-reject-all-button%22%3E%3Cdiv%20id%3D%22onetrust-button-group%22%3E%3Cbutton%20id%3D%22onetrust-pc-btn-handler%22%20aria-label%3D%22Manage%20Cookies%2C%20Opens%20the%20preference%20center%20dialog%22%3EManage%20Cookies%3C%2Fbutton%3E%3Cdiv%20class%3D%22banner-actions-container%22%3E%3Cbutton%20id%3D%22onetrust-reject-all-handler%22%3EReject%20All%3C%2Fbutton%3E%20%3Cbutton%20id%3D%22onetrust-accept-btn-handler%22%3EAccept%20All%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!--%20Close%20Button%20--%3E%3Cdiv%20id%3D%22onetrust-close-btn-container%22%3E%3C%2Fdiv%3E%3C!--%20Close%20Button%20END--%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "86eefde6-82d2-4bb4-ab20-c6332306fd18",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "cm.palmbeachpost.com-ethical-conduct"
+}

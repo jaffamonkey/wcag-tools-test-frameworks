@@ -1,0 +1,1611 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1891,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 970,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"tp-rotv_b\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22tp-rotv_b%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "label_content_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The <label> element does not have descriptive text that identifies the expected input",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1018,
+                "height": 173,
+                "width": 784
+            },
+            "snippet": "<label class=\"tp-ckbv_l\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/label_content_exists.html#%7B%22message%22%3A%22The%20%3Clabel%3E%20element%20does%20not%20have%20descriptive%20text%20that%20identifies%20the%20expected%20input%22%2C%22snippet%22%3A%22%3Clabel%20class%3D%5C%22tp-ckbv_l%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22label_content_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]",
+                "aria": "/document[1]/checkbox[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 1020,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\" class=\"tp-ckbv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%20class%3D%5C%22tp-ckbv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]",
+                "aria": "/document[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 1020,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\" class=\"tp-ckbv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%20class%3D%5C%22tp-ckbv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]",
+                "aria": "/document[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 1020,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\" class=\"tp-ckbv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%20class%3D%5C%22tp-ckbv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1037,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "label_content_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/label[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The <label> element does not have descriptive text that identifies the expected input",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1211,
+                "height": 173,
+                "width": 784
+            },
+            "snippet": "<label class=\"tp-ckbv_l\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/label_content_exists.html#%7B%22message%22%3A%22The%20%3Clabel%3E%20element%20does%20not%20have%20descriptive%20text%20that%20identifies%20the%20expected%20input%22%2C%22snippet%22%3A%22%3Clabel%20class%3D%5C%22tp-ckbv_l%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22label_content_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/label[1]/input[1]",
+                "aria": "/document[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 1212,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\" class=\"tp-ckbv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%20class%3D%5C%22tp-ckbv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/label[1]/input[1]",
+                "aria": "/document[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 1212,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\" class=\"tp-ckbv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%20class%3D%5C%22tp-ckbv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/label[1]/input[1]",
+                "aria": "/document[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 1212,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\" class=\"tp-ckbv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%20class%3D%5C%22tp-ckbv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/label[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1229,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'Top' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1383,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div class=\"tp-lblv_l\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'Top'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22tp-lblv_l%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Top%22%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1402,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div style=\"background-color: rgb(238, 238, 238);\" class=\"tp-colswv_sw\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background-color%3A%20rgb(238%2C%20238%2C%20238)%3B%5C%22%20class%3D%5C%22tp-colswv_sw%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1413,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"tp-colswv_b\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22tp-colswv_b%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1413,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"tp-colswv_b\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22tp-colswv_b%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1420,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1420,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1442,
+                "height": 68,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"tp-svpv\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22tp-svpv%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1510,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"tp-hplv\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22tp-hplv%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/select[1]",
+                "aria": "/document[1]/combobox[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1510,
+                "height": 19,
+                "width": 51
+            },
+            "snippet": "<select class=\"tp-coltxtv_ms\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cselect%20class%3D%5C%22tp-coltxtv_ms%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/select[1]",
+                "aria": "/document[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <select> has no associated label",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1510,
+                "height": 19,
+                "width": 51
+            },
+            "snippet": "<select class=\"tp-coltxtv_ms\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cselect%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cselect%20class%3D%5C%22tp-coltxtv_ms%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1529,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1683,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1683,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1705,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg class=\"tp-txtv_g\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22tp-txtv_g%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1859,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1880,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg class=\"tp-txtv_g\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22tp-txtv_g%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2034,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2056,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg class=\"tp-txtv_g\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22tp-txtv_g%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'Bottom' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "Bottom"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2210,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div class=\"tp-lblv_l\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'Bottom'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22tp-lblv_l%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Bottom%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/button[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2240,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"tp-colswv_b\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22tp-colswv_b%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2247,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2336,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"tp-hplv\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22tp-hplv%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/select[1]",
+                "aria": "/document[1]/combobox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <select> has no associated label",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2337,
+                "height": 19,
+                "width": 51
+            },
+            "snippet": "<select class=\"tp-coltxtv_ms\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cselect%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cselect%20class%3D%5C%22tp-coltxtv_ms%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2356,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2510,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2531,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg class=\"tp-txtv_g\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22tp-txtv_g%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2685,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2707,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg class=\"tp-txtv_g\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22tp-txtv_g%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2861,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[4]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2882,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg class=\"tp-txtv_g\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22tp-txtv_g%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[5]/div[2]/div[1]/div[1]/div[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3055,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"tp-sldv_t\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22tp-sldv_t%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[5]/div[2]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3055,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[5]/div[2]/div[1]/div[2]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3076,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg class=\"tp-txtv_g\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22tp-txtv_g%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[6]/div[2]/div[1]/div[1]/div[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3249,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"tp-sldv_t\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22tp-sldv_t%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[6]/div[2]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3249,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input type=\"text\" class=\"tp-txtv_i\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%20class%3D%5C%22tp-txtv_i%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/div[2]/div[6]/div[2]/div[1]/div[2]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3270,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<svg class=\"tp-txtv_g\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22tp-txtv_g%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/p[2]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'top, bottom' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "top, bottom"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1104,
+                "height": 93,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'top%2C%20bottom'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22top%2C%20bottom%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/p[3]",
+                "aria": "/document[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'size'",
+            "messageArgs": [
+                "size"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1213,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'size'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22size%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/p[4]",
+                "aria": "/document[1]/paragraph[5]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'top, bottom' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "top, bottom"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1284,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'top%2C%20bottom'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22top%2C%20bottom%22%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/blockquote[1]",
+                "aria": "/document[1]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1390,
+                "height": 37,
+                "width": 704
+            },
+            "snippet": "<blockquote>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/p[6]",
+                "aria": "/document[1]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'shape'",
+            "messageArgs": [
+                "shape"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1443,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'shape'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22shape%22%5D%7D"
+        }
+    ],
+    "numExecuted": 1355,
+    "ruleTime": 30,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "element_tabbable_unobscured": {
+            "0": "When an element receives focus, it is not entirely covered by other content",
+            "potential_obscured": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "label_content_exists": {
+            "0": "A <label> element must have non-empty descriptive text that identifies the purpose of the interactive component",
+            "Fail_1": "The <label> element does not have descriptive text that identifies the expected input"
+        },
+        "input_checkboxes_grouped": {
+            "0": "Related sets of radio buttons or checkboxes should be programmatically grouped",
+            "potential_unnamedcheckbox": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'"
+        },
+        "blockquote_cite_exists": {
+            "0": "Use <blockquote> only for quotations, not indentation",
+            "Potential_1": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 62,
+            "elementsViolation": 31,
+            "elementsViolationReview": 49,
+            "violation": 31,
+            "potentialviolation": 22,
+            "recommendation": 35,
+            "potentialrecommendation": 12,
+            "manual": 4,
+            "pass": 1251
+        },
+        "scanTime": 83,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778712181438,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ESchroders%20Stairs%20-%20Optical%20Illusion%20%26%20Explanation%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22illusion%22%3E%3Cdiv%20class%3D%22wrapper%22%3E%3Cdiv%20class%3D%22optical-toy%20themeA%22%3E%3Cdiv%20class%3D%22menu%22%3E%3Cdiv%20class%3D%22mainMenu%22%3E%3Ch2%3E%3Ca%20href%3D%22%2F%22%3EOptical%20Toys%3C%2Fa%3E%3C%2Fh2%3E%3Ch3%3ESchroders%20Stairs%3C%2Fh3%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22submenu%22%3E%3Ca%20href%3D%22%23%22%20id%3D%22random-illusion%22%3ERandom%20Illusion%20%F0%9F%8E%B2%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22submenu%20fit%22%3EScroll%20%F0%9F%91%87%20to%20Understand%3C%2Fdiv%3E%3Cdiv%20class%3D%22submenu%20share-settings%20hidden%22%20id%3D%22share-settings%22%20style%3D%22display%3Anone%22%3E%3Ca%20href%3D%22%23%22%20id%3D%22share-link%22%3E%F0%9F%93%8B%20Share%20Settings%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22the-toy%20griddedBackground%22%3E%3Ccanvas%20id%3D%22canvas%22%20class%3D%22clickable%22%20width%3D%221064%22%20height%3D%22684%22%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22instructions%22%3E%3Cdiv%20class%3D%22how-and-what%22%3E%3Ch2%3EHow%2FWhat%3F%3C%2Fh2%3E%3Cp%3EWhich%20side%20is%20the%20front%3F%20Stare%20at%20either%20side%20and%20imagine%20%22Front%22%20or%20%22Back%22%20for%205-10%20seconds%2C%20and%20you'll%20be%20able%20to%20change%20the%20orientation%20of%20the%20stairs!%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22controls%22%3E%3Cdiv%20class%3D%22tp-rotv%20tp-cntv%20tp-rotv-expanded%20tp-rotv-cpl%20tp-rotv-not%22%3E%3Cbutton%20class%3D%22tp-rotv_b%22%3E%3Cdiv%20class%3D%22tp-rotv_t%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-rotv_m%22%3E%3C%2Fdiv%3E%3C%2Fbutton%3E%3Cdiv%20class%3D%22tp-rotv_i%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-brkv%20tp-rotv_c%22%20style%3D%22height%3A%20auto%3B%22%3E%3Cdiv%20class%3D%22tp-fldv%20tp-cntv%20tp-fldv-cpl%20tp-v-fst%20tp-v-vfst%20tp-v-lst%20tp-v-vlst%22%3E%3Cbutton%20class%3D%22tp-fldv_b%22%3E%3Cdiv%20class%3D%22tp-fldv_t%22%3ECustomize%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-fldv_m%22%3E%3C%2Fdiv%3E%3C%2Fbutton%3E%3Cdiv%20class%3D%22tp-fldv_i%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-brkv%20tp-fldv_c%20tp-v-fst%20tp-v-vfst%20tp-v-lst%20tp-v-vlst%22%20style%3D%22height%3A%200px%3B%22%3E%3Cdiv%20class%3D%22tp-lblv%20tp-v-fst%20tp-v-vfst%22%3E%3Cdiv%20class%3D%22tp-lblv_l%22%3EShow%20Labels%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv_v%22%3E%3Cdiv%20class%3D%22tp-ckbv%22%3E%3Clabel%20class%3D%22tp-ckbv_l%22%3E%3Cinput%20class%3D%22tp-ckbv_i%22%20type%3D%22checkbox%22%3E%3Cdiv%20class%3D%22tp-ckbv_w%22%3E%3Csvg%3E%3Cpath%20d%3D%22M2%208l4%204l8%20-8%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Flabel%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv%22%3E%3Cdiv%20class%3D%22tp-lblv_l%22%3EFront%2FBack%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv_v%22%3E%3Cdiv%20class%3D%22tp-ckbv%22%3E%3Clabel%20class%3D%22tp-ckbv_l%22%3E%3Cinput%20class%3D%22tp-ckbv_i%22%20type%3D%22checkbox%22%3E%3Cdiv%20class%3D%22tp-ckbv_w%22%3E%3Csvg%3E%3Cpath%20d%3D%22M2%208l4%204l8%20-8%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Flabel%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv%22%3E%3Cdiv%20class%3D%22tp-lblv_l%22%3ETop%20Color%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv_v%22%3E%3Cdiv%20class%3D%22tp-colv%20tp-colv-cpl%22%3E%3Cdiv%20class%3D%22tp-colv_h%22%3E%3Cdiv%20class%3D%22tp-colv_s%22%3E%3Cdiv%20class%3D%22tp-colswv%22%3E%3Cdiv%20class%3D%22tp-colswv_sw%22%20style%3D%22background-color%3A%20rgb(238%2C%20238%2C%20238)%3B%22%3E%3C%2Fdiv%3E%3Cbutton%20class%3D%22tp-colswv_b%22%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-colv_t%22%3E%3Cdiv%20class%3D%22tp-txtv%22%3E%3Cinput%20class%3D%22tp-txtv_i%22%20type%3D%22text%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-popv%22%3E%3Cdiv%20class%3D%22tp-colpv%22%3E%3Cdiv%20class%3D%22tp-colpv_hsv%22%3E%3Cdiv%20class%3D%22tp-colpv_sv%22%3E%3Cdiv%20class%3D%22tp-svpv%22%20tabindex%3D%220%22%3E%3Ccanvas%20height%3D%2264%22%20width%3D%2264%22%20class%3D%22tp-svpv_c%22%3E%3C%2Fcanvas%3E%3Cdiv%20class%3D%22tp-svpv_m%22%20style%3D%22left%3A%200%25%3B%20top%3A%206.66667%25%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-colpv_h%22%3E%3Cdiv%20class%3D%22tp-hplv%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22tp-hplv_c%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-hplv_m%22%20style%3D%22background-color%3A%20rgb(255%2C%200%2C%200)%3B%20left%3A%200%25%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-colpv_rgb%22%3E%3Cdiv%20class%3D%22tp-coltxtv%22%3E%3Cdiv%20class%3D%22tp-coltxtv_m%22%3E%3Cselect%20class%3D%22tp-coltxtv_ms%22%3E%3Coption%20value%3D%22rgb%22%3ERGB%3C%2Foption%3E%3Coption%20value%3D%22hsl%22%3EHSL%3C%2Foption%3E%3Coption%20value%3D%22hsv%22%3EHSV%3C%2Foption%3E%3C%2Fselect%3E%3Cdiv%20class%3D%22tp-coltxtv_mm%22%3E%3Csvg%3E%3Cpath%20d%3D%22M5%207h6l-3%203%20z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-coltxtv_w%22%3E%3Cdiv%20class%3D%22tp-coltxtv_c%22%3E%3Cdiv%20class%3D%22tp-txtv%20tp-txtv-num%20tp-txtv-fst%22%3E%3Cinput%20class%3D%22tp-txtv_i%22%20type%3D%22text%22%3E%3Cdiv%20class%3D%22tp-txtv_k%22%3E%3Csvg%20class%3D%22tp-txtv_g%22%3E%3Cpath%20class%3D%22tp-txtv_gb%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22tp-txtv_gh%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22tp-ttv%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-coltxtv_c%22%3E%3Cdiv%20class%3D%22tp-txtv%20tp-txtv-num%20tp-txtv-mid%22%3E%3Cinput%20class%3D%22tp-txtv_i%22%20type%3D%22text%22%3E%3Cdiv%20class%3D%22tp-txtv_k%22%3E%3Csvg%20class%3D%22tp-txtv_g%22%3E%3Cpath%20class%3D%22tp-txtv_gb%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22tp-txtv_gh%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22tp-ttv%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-coltxtv_c%22%3E%3Cdiv%20class%3D%22tp-txtv%20tp-txtv-num%20tp-txtv-lst%22%3E%3Cinput%20class%3D%22tp-txtv_i%22%20type%3D%22text%22%3E%3Cdiv%20class%3D%22tp-txtv_k%22%3E%3Csvg%20class%3D%22tp-txtv_g%22%3E%3Cpath%20class%3D%22tp-txtv_gb%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22tp-txtv_gh%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22tp-ttv%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv%22%3E%3Cdiv%20class%3D%22tp-lblv_l%22%3EBottom%20Color%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv_v%22%3E%3Cdiv%20class%3D%22tp-colv%20tp-colv-cpl%22%3E%3Cdiv%20class%3D%22tp-colv_h%22%3E%3Cdiv%20class%3D%22tp-colv_s%22%3E%3Cdiv%20class%3D%22tp-colswv%22%3E%3Cdiv%20class%3D%22tp-colswv_sw%22%20style%3D%22background-color%3A%20rgb(238%2C%20238%2C%20238)%3B%22%3E%3C%2Fdiv%3E%3Cbutton%20class%3D%22tp-colswv_b%22%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-colv_t%22%3E%3Cdiv%20class%3D%22tp-txtv%22%3E%3Cinput%20class%3D%22tp-txtv_i%22%20type%3D%22text%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-popv%22%3E%3Cdiv%20class%3D%22tp-colpv%22%3E%3Cdiv%20class%3D%22tp-colpv_hsv%22%3E%3Cdiv%20class%3D%22tp-colpv_sv%22%3E%3Cdiv%20class%3D%22tp-svpv%22%20tabindex%3D%220%22%3E%3Ccanvas%20height%3D%2264%22%20width%3D%2264%22%20class%3D%22tp-svpv_c%22%3E%3C%2Fcanvas%3E%3Cdiv%20class%3D%22tp-svpv_m%22%20style%3D%22left%3A%200%25%3B%20top%3A%206.66667%25%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-colpv_h%22%3E%3Cdiv%20class%3D%22tp-hplv%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22tp-hplv_c%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-hplv_m%22%20style%3D%22background-color%3A%20rgb(255%2C%200%2C%200)%3B%20left%3A%200%25%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-colpv_rgb%22%3E%3Cdiv%20class%3D%22tp-coltxtv%22%3E%3Cdiv%20class%3D%22tp-coltxtv_m%22%3E%3Cselect%20class%3D%22tp-coltxtv_ms%22%3E%3Coption%20value%3D%22rgb%22%3ERGB%3C%2Foption%3E%3Coption%20value%3D%22hsl%22%3EHSL%3C%2Foption%3E%3Coption%20value%3D%22hsv%22%3EHSV%3C%2Foption%3E%3C%2Fselect%3E%3Cdiv%20class%3D%22tp-coltxtv_mm%22%3E%3Csvg%3E%3Cpath%20d%3D%22M5%207h6l-3%203%20z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-coltxtv_w%22%3E%3Cdiv%20class%3D%22tp-coltxtv_c%22%3E%3Cdiv%20class%3D%22tp-txtv%20tp-txtv-num%20tp-txtv-fst%22%3E%3Cinput%20class%3D%22tp-txtv_i%22%20type%3D%22text%22%3E%3Cdiv%20class%3D%22tp-txtv_k%22%3E%3Csvg%20class%3D%22tp-txtv_g%22%3E%3Cpath%20class%3D%22tp-txtv_gb%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22tp-txtv_gh%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22tp-ttv%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-coltxtv_c%22%3E%3Cdiv%20class%3D%22tp-txtv%20tp-txtv-num%20tp-txtv-mid%22%3E%3Cinput%20class%3D%22tp-txtv_i%22%20type%3D%22text%22%3E%3Cdiv%20class%3D%22tp-txtv_k%22%3E%3Csvg%20class%3D%22tp-txtv_g%22%3E%3Cpath%20class%3D%22tp-txtv_gb%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22tp-txtv_gh%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22tp-ttv%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-coltxtv_c%22%3E%3Cdiv%20class%3D%22tp-txtv%20tp-txtv-num%20tp-txtv-lst%22%3E%3Cinput%20class%3D%22tp-txtv_i%22%20type%3D%22text%22%3E%3Cdiv%20class%3D%22tp-txtv_k%22%3E%3Csvg%20class%3D%22tp-txtv_g%22%3E%3Cpath%20class%3D%22tp-txtv_gb%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22tp-txtv_gh%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22tp-ttv%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv%22%3E%3Cdiv%20class%3D%22tp-lblv_l%22%3Estairs%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv_v%22%3E%3Cdiv%20class%3D%22tp-sldtxtv%22%3E%3Cdiv%20class%3D%22tp-sldtxtv_s%22%3E%3Cdiv%20class%3D%22tp-sldv%22%3E%3Cdiv%20class%3D%22tp-sldv_t%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22tp-sldv_k%22%20style%3D%22width%3A%2010.4167%25%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-sldtxtv_t%22%3E%3Cdiv%20class%3D%22tp-txtv%20tp-txtv-num%22%3E%3Cinput%20class%3D%22tp-txtv_i%22%20type%3D%22text%22%3E%3Cdiv%20class%3D%22tp-txtv_k%22%3E%3Csvg%20class%3D%22tp-txtv_g%22%3E%3Cpath%20class%3D%22tp-txtv_gb%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22tp-txtv_gh%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22tp-ttv%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv%20tp-v-lst%20tp-v-vlst%22%3E%3Cdiv%20class%3D%22tp-lblv_l%22%3EstairSize%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-lblv_v%22%3E%3Cdiv%20class%3D%22tp-sldtxtv%22%3E%3Cdiv%20class%3D%22tp-sldtxtv_s%22%3E%3Cdiv%20class%3D%22tp-sldv%22%3E%3Cdiv%20class%3D%22tp-sldv_t%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22tp-sldv_k%22%20style%3D%22width%3A%2032%25%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tp-sldtxtv_t%22%3E%3Cdiv%20class%3D%22tp-txtv%20tp-txtv-num%22%3E%3Cinput%20class%3D%22tp-txtv_i%22%20type%3D%22text%22%3E%3Cdiv%20class%3D%22tp-txtv_k%22%3E%3Csvg%20class%3D%22tp-txtv_g%22%3E%3Cpath%20class%3D%22tp-txtv_gb%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22tp-txtv_gh%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22tp-ttv%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22ad%20right-ad%20themeA%22%3E%3Cdiv%20data-pw-desk%3D%22sky_atf%22%20id%3D%22pwDeskSkyAtf%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22mobile-ad%22%3E%3Cdiv%20data-pw-mobi%3D%22leaderboard_atf%22%20id%3D%22pwMobiLbAtf%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22about%22%3E%3Cp%3E%3Cstrong%3EWhat%3A%3C%2Fstrong%3E%20This%20finnicky%20optical%20illusion%20is%20called%20schroders%20stairs%2C%20which%20is%20aptly%20named%20after%20it%E2%80%99s%20author%2C%20Heinrich%20Schr%C3%B6der%2C%20who%20published%20the%20illusion%20in%201858%20%5B1%5D%20The%20illusion%20uitilizes%20a%20phenomena%20Multistable%20perception%2C%20which%20is%20a%20type%20of%20perceptual%20ambiguity%20that%20occurs%20when%20an%20image%20can%20be%20seen%20in%20multiple%20ways.%20In%20this%20case%2C%20the%20stairs%20can%20be%20seen%20as%20either%20going%20up%20or%20down%2C%20depending%20on%20which%20side%20you%20focus%20on.%3C%2Fp%3E%3Cdiv%20class%3D%22desktop-ad%22%3E%3Cdiv%20data-pw-desk%3D%22leaderboard_btf%22%20id%3D%22pwDeskLbBtf1%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cp%3E%3Cstrong%3EHow%20To%20Experience%3A%3C%2Fstrong%3E%20This%20illusion%20is%20a%20tricky%20one%2C%20for%20some%20people%20it%20will%20come%20easy%2C%20for%20some%20it%20will%20take%20time.%20I%E2%80%99ve%20placed%20the%20letters%20A%20%26amp%3B%20B%20on%20the%20top%20and%20bottom%20side%20to%20give%20you%20a%20focal%20point.%20As%20you%20focus%20on%20this%20point%2C%20you%20should%20imagine%20in%20your%20mind%20that%20the%20side%20of%20the%20stairs%20you%E2%80%99re%20looking%20at%20is%20the%20%E2%80%9Cfront%E2%80%9D%20of%20the%20staircase.%20After%205-10%20seconds%2C%20the%20stairs%20should%20orient%20into%20this%20position%20in%20your%20mind!%20If%20you%20already%20see%20that%20side%20as%20front%2C%20then%20look%20to%20the%20other%20dot%20and%20imagine%20%E2%80%9Cfront%E2%80%9D%20there%2C%20and%20again%20after%205-10%20seconds%20the%20stairs%20should%20flip!%3C%2Fp%3E%3Cp%3EIf%20this%20doesn%E2%80%99t%20work%20for%20you%2C%20there%20is%20an%20option%20in%20the%20controls%20to%20add%20the%20words%20front%2Fback%2C%20which%20can%20help%20with%20the%20visualization.%20There%E2%80%99s%20also%20some%20settings%20to%20change%20the%20stair%20count%20and%20size%2C%20which%20I%20have%20found%20can%20help%20triggering%20the%20flip%20as%20well.%3C%2Fp%3E%3Cp%3EAnd%20finally%2C%20if%20this%20doesn%E2%80%99t%20work%20for%20you%2C%20there%E2%80%99s%20some%20controls%20in%20there%20to%20change%20the%20top%20and%20bottom%20colors%2C%20you%20can%20fade%20these%20so%20one%20side%20looks%20more%20shadowed%20than%20the%20other%2C%20then%20try%20to%20switch%20them%20quickly.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EExplain%20it%3A%3C%2Fstrong%3E%20This%20illusion%20is%20a%20great%20example%20of%20multistable%20perception%20%5B2%5D%2C%20where%20the%20brain%20can%20interpret%20the%20same%20image%20in%20multiple%20ways.%3C%2Fp%3E%3Cblockquote%3E%3Cp%3EBistable%20perception%20is%20a%20perceptual%20phenomenon%20characterized%20by%20changes%20in%20subjective%20perception%20while%20sensory%20input%20remains%20constant%3C%2Fp%3E%3C%2Fblockquote%3E%3Cp%3EThere%20are%20no%20true%20%E2%80%9Cthree%E2%80%9D%20dimensions%20to%20the%20lines%20drawn%20on%20screen%2C%20but%20naturally%20the%20brain%20will%20try%20to%20assign%20a%20shape%20to%20them%2C%20especially%20since%20they%20appear%20so%20commonly%20in%20our%20world.%20As%20the%20brain%20is%20assessing%2C%20there%20are%20seeming%20flips%20to%20your%20perception%2C%20which%20your%20brain%20will%20convay%20to%20you%20as%20a%20change%20in%20the%20orientation%20of%20the%20stairs.%3C%2Fp%3E%3Cp%3EIt%20is%20reported%20that%20the%20activity%20in%20the%20visual%20cortex%20is%20what%20correlates%20with%20the%20dominant%20perceptual%20appearance%20is%20responsible%20for%20the%20flip%2C%20but%20the%20exact%20mechanism%20is%20still%20not%20fully%20understood.%3C%2Fp%3E%3Ch3%20id%3D%22cites-and-extras%22%3ECites%20and%20Extras%3A%3C%2Fh3%3E%3Cul%3E%3Cli%3E%5B1%5D%20%3Ca%20href%3D%22https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DUDnvBQAAQBAJ%26amp%3Bpg%3DPA674%23v%3Donepage%26amp%3Bq%26amp%3Bf%3Dfalse%22%3EReference%20to%20the%20intitial%20paper%3C%2Fa%3E%2C%20that%20said%20I%E2%80%99ve%20not%20been%20able%20to%20find%20a%20copy%20of%20the%20original.%20Which%20was%20in%20the%20German%20Journal%20%3Ca%20href%3D%22https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAnnalen_der_Physik%22%3EAnnalen%20der%20Physik%3C%2Fa%3E%20which%20itself%20is%20a%20wormhole%20of%20amazing%20history!%3C%2Fli%3E%3Cli%3E%5B2%5D%20%3Ca%20href%3D%22https%3A%2F%2Fwww.sciencedirect.com%2Ftopics%2Fneuroscience%2Fmultistable-perception%22%3ESome%20reading%20on%20multistable%20perception%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.discovermagazine.com%2Fthe-sciences%2Fa-lunar-illusion-youll-flip-over%22%3EThe%20Lunar%20Illusion%3C%2Fa%3E%20is%20another%20great%20example%20of%20multistable%20perception%2C%20where%20the%20moon%20appears%20to%20flip%20in%20orientation%20as%20it%20rises%20in%20the%20sky.%3C%2Fli%3E%3Cli%3EMC%20Escher%E2%80%99s%20%3Ca%20href%3D%22https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAscending_and_Descending%22%3EAscending%20and%20Descending%3C%2Fa%3E%20has%20used%20similar%20ideas%20and%20themes%20in%20his%20drawings%20and%20art%2C%20relating%20to%20this%20very%20effect.%3C%2Fli%3E%3Cli%3EThe%20%3Ca%20href%3D%22https%3A%2F%2Foptical.toys%2Fspinning-duck%2F%22%3ESpinning%20Duck%3C%2Fa%3E%20is%20another%20ambiguous%20figure%20on%20the%20site%20where%20your%20brain%20flips%20between%20two%20equally%20valid%20interpretations!%3C%2Fli%3E%3C%2Ful%3E%3Cp%20class%3D%22disclaimer%22%3EI've%20researched%20these%20optical%20illusions%20in%20my%20spare%20time%20but%20am%20clearly%0Anot%20any%20kind%20of%20expert%20and%20my%20explainations%20are%20pretty%20smooth%20brained%2C%0Aif%20you%20find%20something%20mis-cited%2C%20earlier%20examples%2C%20or%20general%20mistakes%0Aplease%20new%20let%20me%20know%20via%20%3Cb%3Etoymaker%40toms.toys%3C%2Fb%3E%2C%20be%20kind!%3C%2Fp%3E%3C%2Fdiv%3E%3Cfooter%20class%3D%22footer%22%3E%3Ca%20href%3D%22https%3A%2F%2Foptical.toys%22%3Eoptical.toys%3C%2Fa%3E%20%3Cspan%3E%C2%A9%3C%2Fspan%3E%0A%3Ca%20href%3D%22https%3A%2F%2Ftoybox.toms.toys%22%3Etoms.toys%3C%2Fa%3E%3C%2Ffooter%3E%0A%3Cdiv%20id%3D%22adBanner%22%20class%3D%22adLeaderboard%20adBanner%20leaderboard_ad%22%20style%3D%22background-color%3A%20transparent%3B%20height%3A%2010px%3B%20width%3A%2010px%3B%20position%3A%20fixed%3B%20bottom%3A%20-100px%3B%20left%3A%20-100px%3B%22%3E%26nbsp%3B%3C%2Fdiv%3E%3Cdiv%20class%3D%22ad_row%20adbannertop%20ad-mobile%20ad_sidebar%20adpopup%20boxad%20contentAd%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20m5c2t8q%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20v8n6y4p%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20w3p9m6d%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20k2y8f7x%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20q7d5z1l%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20x9a7b3k%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "18287eae-ec24-4f98-baf7-879dcd01fa79",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "optical.toys-schroders-stairs"
+}

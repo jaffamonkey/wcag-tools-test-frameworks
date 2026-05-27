@@ -1,0 +1,226 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1467,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1467,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/form[1]/fieldset[1]/input[1]",
+                "aria": "/document[1]/main[1]/form[1]/group[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 330,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input class=\"url\" name=\"_gotcha\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20class%3D%5C%22url%5C%22%20name%3D%5C%22_gotcha%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/form[1]/fieldset[1]/input[2]",
+                "aria": "/document[1]/main[1]/form[1]/group[1]/textbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 175,
+                "top": 330,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input placeholder=\"Email address\" name=\"_replyto\" type=\"email\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20placeholder%3D%5C%22Email%20address%5C%22%20name%3D%5C%22_replyto%5C%22%20type%3D%5C%22email%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/form[1]/fieldset[1]/textarea[1]",
+                "aria": "/document[1]/main[1]/form[1]/group[1]/textbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 326,
+                "top": 184,
+                "height": 161,
+                "width": 183
+            },
+            "snippet": "<textarea placeholder=\"Your message\" rows=\"10\" id=\"Comments\" name=\"Comments\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Ctextarea%20placeholder%3D%5C%22Your%20message%5C%22%20rows%3D%5C%2210%5C%22%20id%3D%5C%22Comments%5C%22%20name%3D%5C%22Comments%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/form[1]/fieldset[1]/dl[1]/dd[7]/span[1]",
+                "aria": "/document[1]/main[1]/form[1]/group[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 651,
+                "top": 793,
+                "height": 18,
+                "width": 102
+            },
+            "snippet": "<span style=\"color: #900; text-decoration: overline;\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22color%3A%20%23900%3B%20text-decoration%3A%20overline%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 588,
+    "ruleTime": 12,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 6,
+            "elementsViolation": 2,
+            "elementsViolationReview": 6,
+            "violation": 3,
+            "potentialviolation": 3,
+            "recommendation": 0,
+            "potentialrecommendation": 0,
+            "manual": 2,
+            "pass": 580
+        },
+        "scanTime": 28,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779034461704,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EContact%20-%20Ptable%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%0A%3Cheader%3E%0A%20%3Ca%20href%3D%22%2F%22%3E%3Cimg%20alt%3D%22Ptable%22%3E%3C%2Fa%3E%0A%20%3Ch1%3EContact%3C%2Fh1%3E%0A%3C%2Fheader%3E%0A%0A%3Cmain%3E%0A%3Cp%3EGet%20in%20touch%20with%20Ptable%C2%AE's%20creator.%20Include%20your%20e-mail%20address%20to%20receive%20a%20personal%20reply.%20You%20can%20also%20call%20or%20text%20Ptable%20at%20%3Ca%20href%3D%22sms%3A%2F%2F%2B17404782253%22%3E%2B1%20(740)%204-PTABLE%3C%2Fa%3E.%3C%2Fp%3E%0A%0A%3Cform%20action%3D%22https%3A%2F%2Fformspree.io%2Ff%2Fmgejzyvw%22%20method%3D%22post%22%20id%3D%22feedback%22%3E%0A%0A%3C!--%0A%3Cfieldset%3E%0A%20%3Clegend%3E%3Ca%20href%3D%22https%3A%2F%2Ffeedback.ptable.com%2F%22%3ESuggest%20a%20feature%3C%2Fa%3E%3C%2Flegend%3E%0A%20%3Cp%20style%3D%22padding%3A%200%200.5em%3B%22%3EHave%20an%20idea%20to%20improve%20Ptable%3F%20I'd%20love%20to%20hear%20your%20ideas%20for%20new%20features%2C%20suggestions%20for%20improvements%2C%20or%20even%20annoyances%20you'd%20like%20to%20see%20fixed.%3C%2Fp%3E%0A%3C%2Ffieldset%3E%0A--%3E%0A%0A%3Cfieldset%3E%0A%20%3Clegend%3ESend%20a%20message%3C%2Flegend%3E%0A%20%3Cinput%20type%3D%22text%22%20name%3D%22_gotcha%22%20class%3D%22url%22%3E%0A%20%3Cinput%20type%3D%22email%22%20name%3D%22_replyto%22%20placeholder%3D%22Email%20address%22%3E%0A%20%3Ctextarea%20name%3D%22Comments%22%20id%3D%22Comments%22%20rows%3D%2210%22%20placeholder%3D%22Your%20message%22%3E%3C%2Ftextarea%3E%0A%3C!--%0A%20%3Cinput%20class%3D%22Blocked%22%20type%3D%22checkbox%22%20name%3D%22AdBlock%22%20id%3D%22AdblockEnabled%22%20disabled%20checked%3E%0A%20%3Clabel%20id%3D%22AdblockLabel%22%20class%3D%22Blocked%22%20for%3D%22AdblockEnabled%22%3EI%20am%20blocking%20Ptable's%20single%20ad%20banner%3C%2Flabel%3E%0A--%3E%0A%20%3Cdl%3E%0A%20%20%3Cdt%20id%3D%22HeliumQ%22%3EHelium%20isn't%20a%20solid%20at%20absolute%20zero.%3C%2Fdt%3E%0A%20%20%3Cdd%20id%3D%22HeliumA%22%3EThe%20temperature%20slider%20shows%20melting%20and%20boiling%20points%20at%20standard%20pressure.%20Unlike%20any%20other%20element%2C%20helium%20will%20remain%20liquid%20down%20to%20absolute%20zero%20at%20normal%20pressures.%20This%20is%20a%20direct%20effect%20of%20quantum%20mechanics%3A%20specifically%2C%20the%20zero%20point%20energy%20of%20the%20system%20is%20too%20high%20to%20allow%20freezing.%20At%202.5MPa%2C%20a%20very%20high%20pressure%2C%20it%20will%20become%20solid.%20Then%20again%2C%20so%20will%20almost%20every%20other%20element.%3C%2Fdd%3E%0A%0A%20%20%3Cdt%20id%3D%22CaesiumQ%22%3EYou%20misspelled%20cesium%2Faluminum.%3C%2Fdt%3E%0A%20%20%3Cdd%20id%3D%22CaesiumA%22%3EWhen%20the%20USA%20submitted%20to%20the%20oversight%20of%20the%20International%20Union%20of%20Pure%20and%20Applied%20Chemistry%20(which%20allowed%20it%20to%20have%20some%20names%20for%20element%20104-111%2C%20but%20not%20all%20of%20them)%2C%20compromises%20were%20made.%20Aluminium%20is%20the%20British%20spelling%2C%20as%20is%20caesium.%20In%20exchange%2C%20the%20American%20spelling%20of%20sulfur%20(vs.%20sulphur)%20became%20the%20international%20standard.%3C%2Fdd%3E%0A%0A%20%20%3Cdt%20id%3D%22RomanQ%22%3EWhere%20are%20the%20Roman%20numeral%20group%20numbers%20like%20VIIB%3F%3C%2Fdt%3E%0A%20%20%3Cdd%20id%3D%22RomanA%22%3ERoman%20numerals%20for%20groups%20were%20scrapped%20in%201990%20by%20IUPAC%20because%20they're%20different%20and%20conflicting%20in%20the%20US%20and%20UK%20and%20Ptable%20has%20an%20international%20audience.%20If%20you're%20seeing%20them%20elsewhere%2C%20that%20source%20hasn't%20been%20updated%20in%20over%20three%20decades.%3C%2Fdd%3E%0A%0A%20%20%3Cdt%20id%3D%22ValenceQ%22%3EWhere%20can%20I%20find%20valence%20numbers%3F%3C%2Fdt%3E%0A%20%20%3Cdd%20id%3D%22ValenceA%22%3EElectron-related%20properties%20can%20be%20found%20under%20%3Ca%20href%3D%22%2F%23Electrons%2FOxidationStates%22%3Eoxidation%20states%20in%20the%20Electrons%20tab%3C%2Fa%3E.%3C%2Fdd%3E%0A%0A%20%20%3Cdt%20id%3D%22WeightQ%22%3EIt's%20supposed%20to%20be%20atomic%20mass%2C%20not%20weight.%3C%2Fdt%3E%0A%20%20%3Cdd%20id%3D%22WeightA%22%3EAtomic%20weight%20is%20the%20official%20term%20used%20by%20IUPAC%20to%20refer%20to%20the%20relative%20atomic%20masses%20published%20specifically%20for%20inclusion%20in%20periodic%20tables.%20The%20term%20is%20used%20because%20they%20are%20%3Cb%3Eweighted%3C%2Fb%3E%20averages.%3C%2Fdd%3E%0A%0A%20%20%3Cdt%20id%3D%22ActinoidQ%22%3EIsn't%20it%20supposed%20to%20be%20Lanthan%3Cu%3Eide%3C%2Fu%3E%2C%20not%20-%3Cu%3Eoid%3C%2Fu%3E%3F%3C%2Fdt%3E%0A%20%20%3Cdd%20id%3D%22ActinoidA%22%3ENo%2C%20not%20%3Ca%20href%3D%22http%3A%2F%2Fold.iupac.org%2Fpublications%2Fbooks%2Frbook%2FRed_Book_2005.pdf%22%3Eaccording%20to%20IUPAC%20%5BPDF%5D%3C%2Fa%3E%20(IR-3.5).%3C%2Fdd%3E%0A%0A%20%20%3Cdt%20id%3D%22ConfigQ%22%3EThe%20electron%20configuration%20for%20an%20element%20is%20wrong.%3C%2Fdt%3E%0A%20%20%3Cdd%20id%3D%22ConfigA%22%3EPtable%20shows%20true%2C%20experimental%20values%20for%20electron%20configuration.%20The%20method%20of%20drawing%20arrows%20you%20learned%20in%20class%20works%20most%20of%20the%20time%20but%20%3Ca%20href%3D%22https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FElectron_configuration%23Other_exceptions_to_Madelung.27s_rule%22%3Ehas%20about%2020%20exceptions%3C%2Fa%3E.%20Ptable%20shows%20these%20exceptions%20%3Cspan%20style%3D%22color%3A%20%23900%3B%20text-decoration%3A%20overline%3B%22%3Eoverlined%20in%20red%3C%2Fspan%3E.%3C%2Fdd%3E%0A%0A%20%20%3Cdt%20id%3D%22BlocksQ%22%3ELa%2FAc%20or%20Lu%2FLr%20should%20be%20in%20group%203%20with%20the%20d-block.%3C%2Fdt%3E%0A%20%20%3Cdd%20id%3D%22BlocksA%22%3EThis%20is%20hotly%20debated%20and%20%3Ca%20href%3D%22https%3A%2F%2Fiupac.org%2Fprojects%2Fproject-details%2F%3Fproject_nr%3D2015-039-2-200%22%3Ean%20IUPAC%20task%20force%20headed%20by%20Eric%20Scerri%20is%20dedicated%20to%20finding%20an%20answer%3C%2Fa%3E.%20IUPAC's%20secretary%20general%20suggests%20we%20not%20hold%20our%20breath%20for%20a%20quick%20resolution.%20There%20are%20merits%20to%20including%20Lu%2FLr%20or%20La%2FAc%20inline%20rather%20than%20at%20the%20end%20of%20the%20f-block%2C%20but%20there%20are%20also%20drawbacks.%20Unqualified%20to%20weigh%20in%20on%20these%20arguments%20and%20make%20sweeping%20conclusions%20that'll%20affect%20how%20millions%20a%20week%20see%20the%20periodic%20table%2C%20Ptable%20mirrors%20the%20%3Ca%20href%3D%22https%3A%2F%2Fiupac.org%2Fwhat-we-do%2Fperiodic-table-of-elements%2F%22%3Eofficial%20IUPAC%20layout%3C%2Fa%3E.%3C%2Fdd%3E%0A%0A%20%20%3Cdt%20id%3D%22BuyAdsQ%22%3EMy%20company%20would%20like%20to%20purchase%20advertising.%3C%2Fdt%3E%0A%20%20%3Cdd%20id%3D%22BuyAdsA%22%3ECreate%20a%20campaign%20in%20Google%20Ads%20targeting%20this%20domain.%20I%20do%20not%20accept%20video%20ads%2C%20expanding%20ads%2C%20or%20interstitials%3B%20these%20will%20not%20run%20at%20any%20price.%20Do%20not%20contact%20me%20to%20publish%20%22articles%22%20with%20backlinks%20(blogspam)%2C%20paid%20links%2C%20or%20any%20other%20link%20schemes.%3C%2Fdd%3E%0A%20%3C%2Fdl%3E%0A%0A%20%3Cbutton%20type%3D%22submit%22%3ESend%3C%2Fbutton%3E%0A%3C%2Ffieldset%3E%0A%0A%3C%2Fform%3E%0A%3C%2Fmain%3E%0A%0A%3Cfooter%3E%0A%20%3Cdl%3E%0A%20%20%3Cdt%3EAbout%3C%2Fdt%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2Fdemo%22%3EWhat's%20new%3C%2Fa%3E%3C%2Fdd%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2Fabout%2F%22%3EQuestions%3C%2Fa%3E%3C%2Fdd%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2Fabout%2F%23privacy%22%3EPrivacy%3C%2Fa%3E%3C%2Fdd%3E%0A%20%3C%2Fdl%3E%0A%20%3Cdl%3E%0A%20%20%3Cdt%3EProducts%3C%2Fdt%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2Fposter%2F%22%3EPoster%3C%2Fa%3E%3C%2Fdd%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2Flessonplans%2F%22%3ELesson%20plans%3C%2Fa%3E%3C%2Fdd%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2F%2Fwww.patreon.com%2Foauth2%2Fauthorize%3Fresponse_type%3Dcode%26amp%3Bclient_id%3DsN8bpQO5TsIYTlhXxjS3-ZLYdtqZOHgjiPC928SlNyQLBnafLFEfj1rmMDjcnO3A%26amp%3Bredirect_uri%3Dhttps%253A%252F%252Fptable.com%252Fdonate%252F%22%3ERemove%20ads%3C%2Fa%3E%3C%2Fdd%3E%0A%20%3C%2Fdl%3E%0A%20%3Cdl%3E%0A%20%20%3Cdt%3EEditions%3C%2Fdt%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2F%22%3EPeriodic%20table%3C%2Fa%3E%3C%2Fdd%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2Fprint%2F%22%3EPrint%20PDF%3C%2Fa%3E%3C%2Fdd%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2Fimage%2Fperiodic-table.svg%22%20alt%3D%22Periodic%20table%22%3EImage%3C%2Fa%3E%3C%2Fdd%3E%0A%20%3C%2Fdl%3E%0A%20%3Cdl%3E%0A%20%20%3Cdt%3EEngage%3C%2Fdt%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2F%2Fchem.chat%2F%22%3EDiscord%3C%2Fa%3E%3C%2Fdd%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2F%2Ftwitter.com%2Fptable%22%3ETwitter%3C%2Fa%3E%3C%2Fdd%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2F%2Fwww.instagram.com%2Fptable%2F%22%3EInstagram%3C%2Fa%3E%3C%2Fdd%3E%0A%20%20%3Cdd%3E%3Ca%20href%3D%22%2Fcontact%2F%22%3EContact%3C%2Fa%3E%3C%2Fdd%3E%0A%20%3C%2Fdl%3E%0A%20%3Caddr%3EPtable%C2%AE%20%3Cspan%3Eis%20a%20registered%20trademark%20of%3C%2Fspan%3E%20%3Ca%20href%3D%22https%3A%2F%2Fdayah.com%2F%22%3EMichael%20Dayah%3C%2Fa%3E%3C%2Faddr%3E%0A%3C%2Ffooter%3E%0A%0A%20%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "77c0c067-ee9f-4dc2-b338-da547efe8b73",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "ptable.com-contact"
+}

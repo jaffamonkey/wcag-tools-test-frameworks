@@ -1,0 +1,994 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 2493,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 2493,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 2469,
+                "width": 784
+            },
+            "snippet": "<body bgcolor=\"#feff1f\" vlink=\"#800080\" link=\"#0000ff\" text=\"#000000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20bgcolor%3D%5C%22%23feff1f%5C%22%20vlink%3D%5C%22%23800080%5C%22%20link%3D%5C%22%230000ff%5C%22%20text%3D%5C%22%23000000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 169,
+                "top": 8,
+                "height": 193,
+                "width": 462
+            },
+            "snippet": "<table width=\"462\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22462%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[1]/tbody[1]/tr[1]/td[1]/h1[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/heading[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 187,
+                "top": 37,
+                "height": 112,
+                "width": 72
+            },
+            "snippet": "<img height=\"112\" width=\"72\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%22112%5C%22%20width%3D%5C%2272%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[1]/tbody[1]/tr[1]/td[3]/h1[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[3]/heading[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 545,
+                "top": 37,
+                "height": 112,
+                "width": 72
+            },
+            "snippet": "<img height=\"112\" width=\"72\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%22112%5C%22%20width%3D%5C%2272%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[2]/table[1]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 516,
+                "height": 139,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[2]/table[1]/tbody[1]/tr[1]/td[2]/p[1]/a[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 560,
+                "top": 539,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"smoking/label.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22smoking%2Flabel.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[2]/table[1]/tbody[1]/tr[1]/td[2]/p[1]/a[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 560,
+                "top": 539,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"smoking/label.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22smoking%2Flabel.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[2]/table[1]/tbody[1]/tr[1]/td[2]/p[1]/a[1]/img[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/paragraph[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 560,
+                "top": 554,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[3]/table[1]",
+                "aria": "/document[1]/table[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 671,
+                "height": 192,
+                "width": 637
+            },
+            "snippet": "<table width=\"637\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22637%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[3]/table[1]/tbody[1]/tr[1]/td[2]/p[1]/img[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 357,
+                "top": 708,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[4]/table[1]",
+                "aria": "/document[1]/table[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 992,
+                "height": 157,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[4]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/img[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[1]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 270,
+                "top": 1030,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[5]/table[1]",
+                "aria": "/document[1]/table[5]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 1165,
+                "height": 65,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[5]/table[1]/tbody[1]/tr[1]/td[2]/p[1]/img[1]",
+                "aria": "/document[1]/table[5]/rowgroup[1]/row[1]/cell[2]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 534,
+                "top": 1203,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[6]/table[1]",
+                "aria": "/document[1]/table[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 1246,
+                "height": 65,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[6]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/img[1]",
+                "aria": "/document[1]/table[6]/rowgroup[1]/row[1]/cell[1]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 267,
+                "top": 1283,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[7]/table[1]",
+                "aria": "/document[1]/table[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 1326,
+                "height": 65,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[7]/table[1]/tbody[1]/tr[1]/td[2]/p[1]/img[1]",
+                "aria": "/document[1]/table[7]/rowgroup[1]/row[1]/cell[2]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 534,
+                "top": 1364,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[8]/table[1]",
+                "aria": "/document[1]/table[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 1407,
+                "height": 83,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[8]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/img[1]",
+                "aria": "/document[1]/table[8]/rowgroup[1]/row[1]/cell[1]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 267,
+                "top": 1453,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[9]/table[1]",
+                "aria": "/document[1]/table[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 1672,
+                "height": 102,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[9]/table[1]/tbody[1]/tr[1]/td[2]/p[1]/img[1]",
+                "aria": "/document[1]/table[9]/rowgroup[1]/row[1]/cell[2]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 534,
+                "top": 1710,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[10]/table[1]",
+                "aria": "/document[1]/table[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 1790,
+                "height": 176,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[10]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/img[1]",
+                "aria": "/document[1]/table[10]/rowgroup[1]/row[1]/cell[1]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 270,
+                "top": 1827,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[11]/table[1]",
+                "aria": "/document[1]/table[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 1981,
+                "height": 83,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[11]/table[1]/tbody[1]/tr[1]/td[2]/p[1]/img[1]",
+                "aria": "/document[1]/table[11]/rowgroup[1]/row[1]/cell[2]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 534,
+                "top": 2019,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[12]/table[1]",
+                "aria": "/document[1]/table[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 2080,
+                "height": 139,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[12]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/img[1]",
+                "aria": "/document[1]/table[12]/rowgroup[1]/row[1]/cell[1]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 270,
+                "top": 2118,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[12]/table[1]/tbody[1]/tr[1]/td[2]/p[1]",
+                "aria": "/document[1]/table[12]/rowgroup[1]/row[1]/cell[2]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"ball of charred goo\"",
+            "messageArgs": [
+                "\"ball of charred goo\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 465,
+                "top": 2103,
+                "height": 93,
+                "width": 248
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22ball%20of%20charred%20goo%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22ball%20of%20charred%20goo%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[13]/table[1]",
+                "aria": "/document[1]/table[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 2235,
+                "height": 83,
+                "width": 638
+            },
+            "snippet": "<table width=\"638\" cellpadding=\"7\" border=\"0\" cellspacing=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22638%5C%22%20cellpadding%3D%5C%227%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[13]/table[1]/tbody[1]/tr[1]/td[2]/p[1]/img[1]",
+                "aria": "/document[1]/table[13]/rowgroup[1]/row[1]/cell[2]/paragraph[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 534,
+                "top": 2272,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 810,
+    "ruleTime": 4,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 36,
+            "elementsViolation": 30,
+            "elementsViolationReview": 31,
+            "violation": 31,
+            "potentialviolation": 2,
+            "recommendation": 20,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 757
+        },
+        "scanTime": 29,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778459430273,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EPeeps%2C%20Smoking%20%26%20Alcohol%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20text%3D%22%23000000%22%20link%3D%22%230000ff%22%20vlink%3D%22%23800080%22%20bgcolor%3D%22%23feff1f%22%3E%0A%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22462%22%3E%0A%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2223%25%22%20valign%3D%22TOP%22%3E%0A%3Ch1%20align%3D%22CENTER%22%3E%3Cimg%20width%3D%2272%22%20height%3D%22112%22%3E%3C%2Fh1%3E%3C%2Ftd%3E%0A%3Ctd%20width%3D%2255%25%22%20valign%3D%22MIDDLE%22%3E%0A%3Ch1%20align%3D%22CENTER%22%3EPeeps%2C%20Smoking%3C%2Fh1%3E%0A%3Cp%20align%3D%22CENTER%22%3E%26amp%3B%3C%2Fp%3E%0A%3Ch1%20align%3D%22CENTER%22%3EAlcohol%3C%2Fh1%3E%3C%2Ftd%3E%0A%3Ctd%20width%3D%2222%25%22%20valign%3D%22TOP%22%3E%0A%3Ch1%20align%3D%22CENTER%22%3E%3Cimg%20width%3D%2272%22%20height%3D%22112%22%3E%3C%2Fh1%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Chr%3E%0A%3Cp%3E%3C%2Fp%3E%3Ch3%3E%3Ccenter%3EA%20Three-Part%20Study%3C%2Fcenter%3E%3C%2Fh3%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Cp%3E%3Cb%3EIntroduction%3A%3C%2Fb%3E%20Physicians%20are%20continually%20warning%20the%20public%20of%20the%20risks%20involved%20in%20smoking%20and%20drinking.%20%20Here%2C%20we%20investigate%20whether%20these%20same%20health%20risks%20apply%20to%20Peeps.%3C%2Fp%3E%0A%0A%3Cp%3E%3Cb%3EMethods%3A%3C%2Fb%3E%20To%20fully%20understand%20the%20effects%20of%20these%20substances%2C%20we%20decided%20to%20expose%20Peeps%20to%20each%20condition%20individually%2C%20and%20then%20in%20combination.%20%20%3C%2Fp%3E%0A%0A%0A%3Cp%3EStep%201%3A%20%20Peeps%20and%20Alcohol%20%3Cbr%3E%0AStep%202%3A%20%20Peeps%20and%20Cigarettes%20%3Cbr%3E%0AStep%203%3A%20%20Peeps%2C%20Alcohol%20and%20Cigarettes%20%3C%2Fp%3E%0A%0A%3Chr%3E%20%0A%3Ch3%3E%3Cb%3E%3Ca%20name%3D%22alcohol%22%3EStep%201%3A%3C%2Fa%3E%20Peeps%20and%20Alcohol%3C%2Fb%3E%3C%2Fh3%3E%0A%0A%3Cp%20align%3D%22CENTER%22%3E%3C%2Fp%3E%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2250%25%22%20valign%3D%22MIDDLE%22%3E%0A%3Cp%3E%3Cb%3EMaterials%3A%20%3C%2Fb%3E%3Cbr%3E%0AThis%20study%20began%20(as%20many%20do)%20with%20one%20gallon%20of%2095%25%20%5B190%20proof%5D%20ethyl%20alcohol.%20%20The%20precise%20text%20on%20the%20label%20may%20be%20viewed%20by%20clicking%20on%20the%20image%20to%20the%20right.%3C%2Fp%3E%3C%2Ftd%3E%0A%3Ctd%20width%3D%2250%25%22%20valign%3D%22TOP%22%3E%0A%3Cp%20align%3D%22CENTER%22%3E%3Ca%20href%3D%22smoking%2Flabel.html%22%3E%3Cimg%3E%3C%2Fa%3E%3C%2Fp%3E%0A%3Cp%3E%26nbsp%3B%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%0A%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22637%22%3E%0A%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2242%25%22%20valign%3D%22MIDDLE%22%3E%0A%3Cp%3E%3Cb%3EMethods%3A%3C%2Fb%3E%3C%2Fp%3E%0A%3Cp%3EThe%20peep%20imbibed%20liberally.%20%20Note%20that%20this%20Peep%20is%20having%20trouble%20swimming%20upright.%20%20This%20same%20peep%20bumped%20into%20the%20sides%20of%20the%20experimental%20chamber%20several%20times%20over%20the%20duration%20of%20this%20study.%20%3C%2Fp%3E%3C%2Ftd%3E%0A%3Ctd%20width%3D%2258%25%22%20valign%3D%22TOP%22%3E%0A%3Cp%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Cp%3E%3Cb%3EResults%3A%3C%2Fb%3E%20The%20test%20subject%20did%20report%20a%20moderate%20headache%20and%20some%20nausea%20the%20day%20following%20this%20study.%20%20Otherwise%2C%20however%2C%20this%20Peep%20was%20not%20substantially%20or%20permanently%20impaired.%3C%2Fp%3E%0A%0A%3Chr%3E%0A%0A%3Ch3%3E%3Cb%3EStep%202%3A%20Peeps%20and%20Cigarettes%3C%2Fb%3E%3C%2Fh3%3E%20%0A%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2259%25%22%20valign%3D%22TOP%22%3E%0A%3Cp%20align%3D%22CENTER%22%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%3Ctd%20width%3D%2241%25%22%20valign%3D%22MIDDLE%22%3E%0A%3Cp%3E%3Cb%3EMaterials%3A%3C%2Fb%3E%20Our%20Peep%20subject%20was%20permitted%20to%20select%20the%20cigarette%20brand%20of%20its%20choice.%20%20Please%20remember%20that%20representatives%20of%20the%20tobacco%20industry%20insist%20that%20they%20have%20never%20marketed%20their%20products%20to%20young%20chicks.%20%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2242%25%22%20valign%3D%22MIDDLE%22%3E%0A%3Cp%3EThe%20peep%20grabbed%20a%20smoke...%3C%2Fp%3E%3C%2Ftd%3E%0A%3Ctd%20width%3D%2258%25%22%20valign%3D%22TOP%22%3E%0A%3Cp%20align%3D%22CENTER%22%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2258%25%22%20valign%3D%22MIDDLE%22%3E%0A%3Cp%20align%3D%22CENTER%22%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%3Ctd%20width%3D%2242%25%22%20valign%3D%22MIDDLE%22%3E%0A%3Cp%3EAnd%20lit%20up.%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%20%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2242%25%22%20valign%3D%22MIDDLE%22%3E%0A%20%3Cp%3EThe%20subject%20began%20smoking...%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3Ctd%20width%3D%2258%25%22%20valign%3D%22TOP%22%3E%0A%20%3Cp%20align%3D%22CENTER%22%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%20%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%20%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2258%25%22%20valign%3D%22MIDDLE%22%3E%0A%20%3Cp%20align%3D%22CENTER%22%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3Ctd%20width%3D%2242%25%22%20valign%3D%22MIDDLE%22%3E%0A%20%3Cp%3Eand%20continued%20until%20its%20nicotine%20craving%20was%20fully%20satiated.%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Cp%3E%3Cb%3EResults%3A%3C%2Fb%3E%20The%20Peep%20showed%20no%20adverse%20signs%20to%20smoking%20this%20cigarette%2C%20although%20it%20expressed%20concern%20that%20it%20might%20someday%20be%20forced%20to%20huddle%20outside%20public%20buildings%20in%20the%20snow.%20%20Of%20course%2C%20it%20can%20quit%20anytime%20it%20wants%20to...%3C%2Fp%3E%0A%0A%3Chr%3E%0A%0A%3Ch3%3E%3Cb%3EStep%203%3A%20Peeps%2C%20Cigarettes%20and%20Alcohol%3C%2Fb%3E%3C%2Fh3%3E%20%0A%0A%3Cp%3ELesser%20scientists%20might%20have%20decided%20%20that%20alcohol%20and%20tobacco%20are%20benign%20substances%20after%20seeing%20the%20first%20two%20studies.%20%20We%20decided%2C%20however%2C%20to%20plunge%20deeper%20into%20this%20investigation...%20%3C%2Fp%3E%0A%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%20%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2242%25%22%20valign%3D%22MIDDLE%22%3E%0A%20%3Cp%3E%3Cb%3EMaterials%3A%3C%2Fb%3E%20Here%2C%20we%20bring%20together%20the%20elements%20from%20the%20first%20two%20parts%20of%20the%20study.%20%20%20%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3Ctd%20width%3D%2258%25%22%20valign%3D%22TOP%22%3E%0A%20%3Cp%20align%3D%22CENTER%22%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%20%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%20%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2259%25%22%20valign%3D%22TOP%22%3E%0A%20%3Cp%20align%3D%22CENTER%22%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3Ctd%20width%3D%2241%25%22%20valign%3D%22MIDDLE%22%3E%0A%20%3Cp%3EUnfortunately%2C%20the%20subject%20began%20to%20show%20some%20adverse%20signs%20to%20the%20combination%20of%20treatments.%20%20Note%20in%20particular%20the%20blackening%20along%20the%20lower%20extremities%2C%20the%20faint%20flame%20surrounding%20the%20subject%2C%20and%20the%20mild%20scent%20of%20caramelizing%20sugar.%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%20%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2242%25%22%20valign%3D%22MIDDLE%22%3E%0A%20%3Cp%3EThe%20initial%20symptoms%20began%20to%20be%20expressed%20more%20definitively...%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3Ctd%20width%3D%2258%25%22%20valign%3D%22TOP%22%3E%0A%20%3Cp%20align%3D%22CENTER%22%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%20%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%20%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2259%25%22%20valign%3D%22TOP%22%3E%0A%20%3Cp%20align%3D%22CENTER%22%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3Ctd%20width%3D%2241%25%22%20valign%3D%22MIDDLE%22%3E%0A%20%3Cp%3E...soon%20the%20flames%20became%20quite%20substantial%2C%20initiating%20a%20metamorphosis.%20%20The%20subject%20entered%20the%20stage%20which%20scientists%20call%20%22ball%20of%20charred%20goo%22.%20%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Ccenter%3E%3Ctable%20cellspacing%3D%220%22%20border%3D%220%22%20cellpadding%3D%227%22%20width%3D%22638%22%3E%0A%20%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%2242%25%22%20valign%3D%22MIDDLE%22%3E%0A%20%3Cp%3EFlames%20were%20extinguished%20shortly%20thereafter.%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3Ctd%20width%3D%2258%25%22%20valign%3D%22TOP%22%3E%0A%20%3Cp%20align%3D%22CENTER%22%3E%3Cimg%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%3C%2Fcenter%3E%3Cp%3E%3C%2Fp%3E%0A%0A%0A%3Cp%3E%3Cb%3EConclusion%3A%3C%2Fb%3E%20The%20synergistic%20effect%20of%20smoking%20and%20alcohol%20in%20Peeps%20produces%20a%20rapidly%20exothermic%20oxidation%20reaction%2C%20leading%20to%20a%20chemical%20and%20morphological%20divergence%20from%20the%20wild-type%20Peep%20phenotypes.%3C%2Fp%3E%3Cp%3E%0A%0A%3C%2Fp%3E%3Cp%3EAssistant%20lab%20members%20described%20these%20divergent%20Peeps%20as%20%22less%20sweet%2C%22%20%22crunchier%2C%22%20and%20%22gross%22%20when%20compared%20to%20the%20Peeps%20which%20used%20either%20alcohol%20or%20tobacco%2C%20but%20not%20both.%20%20For%20these%20reasons%2C%20it%20is%20our%20strong%20recommendation%20to%20JustBorn%20Corporation%20that%20they%20supervise%20young%20Peeps%20and%20educate%20them%20of%20the%20risks%20associated%20with%20smoking%20and%20alcohol.%3C%2Fp%3E%0A%0A%3Cp%3E%3Ca%20href%3D%22index.html%22%3EReturn%20to%20the%20Peep%20home%20page%3C%2Fa%3E%3C%2Fp%3E%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "7b401b58-81f6-4eca-a8a9-e5d8d1f7030d",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.peepresearch.org-smoking.html"
+}

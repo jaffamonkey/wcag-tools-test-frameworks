@@ -1,0 +1,566 @@
+{
+    "results": [
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 18,
+                "width": 201
+            },
+            "snippet": "<a href=\"#main-container\" class=\"skip-content\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%23main-container%5C%22%20class%3D%5C%22skip-content%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "navigation",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 27,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div role=\"navigation\" class=\"menu-container menu-secondary\" id=\"menu-secondary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22navigation%5C%22%20class%3D%5C%22menu-container%20menu-secondary%5C%22%20id%3D%5C%22menu-secondary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22navigation%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_navigation_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 27,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div role=\"navigation\" class=\"menu-container menu-secondary\" id=\"menu-secondary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_navigation_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22navigation%5C%22%20class%3D%5C%22menu-container%20menu-secondary%5C%22%20id%3D%5C%22menu-secondary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_navigation_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/banner[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 45,
+                "height": 38,
+                "width": 44
+            },
+            "snippet": "<button>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[1]/button[1]/svg[1]",
+                "aria": "/document[1]/banner[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 16,
+                "top": 48,
+                "height": 28,
+                "width": 28
+            },
+            "snippet": "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"0 0 28 28\" height=\"28px\" width=\"28px\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3Axlink%3D%5C%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20version%3D%5C%221.1%5C%22%20viewBox%3D%5C%220%200%2028%2028%5C%22%20height%3D%5C%2228px%5C%22%20width%3D%5C%2228px%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[2]/div[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "navigation",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 99,
+                "height": 93,
+                "width": 784
+            },
+            "snippet": "<div role=\"navigation\" class=\"menu-container menu-primary\" id=\"menu-primary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22navigation%5C%22%20class%3D%5C%22menu-container%20menu-primary%5C%22%20id%3D%5C%22menu-primary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22navigation%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_navigation_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[2]/div[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 99,
+                "height": 93,
+                "width": 784
+            },
+            "snippet": "<div role=\"navigation\" class=\"menu-container menu-primary\" id=\"menu-primary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_navigation_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22navigation%5C%22%20class%3D%5C%22menu-container%20menu-primary%5C%22%20id%3D%5C%22menu-primary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_navigation_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_navigation_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[2]/div[1]/nav[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 99,
+                "height": 93,
+                "width": 784
+            },
+            "snippet": "<nav class=\"menu\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_navigation_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cnav%20class%3D%5C%22menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_navigation_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/header[1]/div[3]/div[2]/button[1]/svg[1]",
+                "aria": "/document[1]/banner[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 87,
+                "top": 210,
+                "height": 24,
+                "width": 36
+            },
+            "snippet": "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"0 0 36 24\" height=\"24px\" width=\"36px\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3Axlink%3D%5C%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20version%3D%5C%221.1%5C%22%20viewBox%3D%5C%220%200%2036%2024%5C%22%20height%3D%5C%2224px%5C%22%20width%3D%5C%2236px%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/article[1]/div[2]/div[2]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 982,
+                "height": 18,
+                "width": 201
+            },
+            "snippet": "<a rel=\"noreferrer noopener\" target=\"_blank\" style=\"background-color:#36d3cc\" href=\"https://practicetestautomation.com/beginners-course-coupon\" class=\"wp-block-button__link has-black-color has-text-color has-background wp-element-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noreferrer%20noopener%5C%22%20target%3D%5C%22_blank%5C%22%20style%3D%5C%22background-color%3A%2336d3cc%5C%22%20href%3D%5C%22https%3A%2F%2Fpracticetestautomation.com%2Fbeginners-course-coupon%5C%22%20class%3D%5C%22wp-block-button__link%20has-black-color%20has-text-color%20has-background%20wp-element-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_id_unique",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/article[1]/div[2]/h2[2]",
+                "aria": "/document[1]/main[1]/article[1]/heading[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_in_use",
+            "message": "The <h2> element has the id \"selenium-webdriver-with-java-for-beginners\" that is already in use",
+            "messageArgs": [
+                "h2",
+                "selenium-webdriver-with-java-for-beginners"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1030,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 id=\"selenium-webdriver-with-java-for-beginners\" class=\"wp-block-heading\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_id_unique.html#%7B%22message%22%3A%22The%20%3Ch2%3E%20element%20has%20the%20id%20%5C%22selenium-webdriver-with-java-for-beginners%5C%22%20that%20is%20already%20in%20use%22%2C%22snippet%22%3A%22%3Ch2%20id%3D%5C%22selenium-webdriver-with-java-for-beginners%5C%22%20class%3D%5C%22wp-block-heading%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_in_use%22%2C%22ruleId%22%3A%22element_id_unique%22%2C%22msgArgs%22%3A%5B%22h2%22%2C%22selenium-webdriver-with-java-for-beginners%22%5D%7D"
+        },
+        {
+            "ruleId": "element_id_unique",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/article[1]/div[2]/h2[4]",
+                "aria": "/document[1]/main[1]/article[1]/heading[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_in_use",
+            "message": "The <h2> element has the id \"selenium-webdriver-with-java-for-beginners\" that is already in use",
+            "messageArgs": [
+                "h2",
+                "selenium-webdriver-with-java-for-beginners"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2434,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 id=\"selenium-webdriver-with-java-for-beginners\" class=\"wp-block-heading\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_id_unique.html#%7B%22message%22%3A%22The%20%3Ch2%3E%20element%20has%20the%20id%20%5C%22selenium-webdriver-with-java-for-beginners%5C%22%20that%20is%20already%20in%20use%22%2C%22snippet%22%3A%22%3Ch2%20id%3D%5C%22selenium-webdriver-with-java-for-beginners%5C%22%20class%3D%5C%22wp-block-heading%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_in_use%22%2C%22ruleId%22%3A%22element_id_unique%22%2C%22msgArgs%22%3A%5B%22h2%22%2C%22selenium-webdriver-with-java-for-beginners%22%5D%7D"
+        },
+        {
+            "ruleId": "element_id_unique",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/article[1]/div[2]/h2[5]",
+                "aria": "/document[1]/main[1]/article[1]/heading[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_in_use",
+            "message": "The <h2> element has the id \"advanced-selenium-webdriver-with-java-and-testng\" that is already in use",
+            "messageArgs": [
+                "h2",
+                "advanced-selenium-webdriver-with-java-and-testng"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3092,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 id=\"advanced-selenium-webdriver-with-java-and-testng\" class=\"wp-block-heading\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_id_unique.html#%7B%22message%22%3A%22The%20%3Ch2%3E%20element%20has%20the%20id%20%5C%22advanced-selenium-webdriver-with-java-and-testng%5C%22%20that%20is%20already%20in%20use%22%2C%22snippet%22%3A%22%3Ch2%20id%3D%5C%22advanced-selenium-webdriver-with-java-and-testng%5C%22%20class%3D%5C%22wp-block-heading%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_in_use%22%2C%22ruleId%22%3A%22element_id_unique%22%2C%22msgArgs%22%3A%5B%22h2%22%2C%22advanced-selenium-webdriver-with-java-and-testng%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/article[1]/div[2]/div[20]/form[1]/div[1]/div[1]/div[2]/div[2]/input[1]",
+                "aria": "/document[1]/main[1]/article[1]/form[1]/textbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7615,
+                "height": 47,
+                "width": 784
+            },
+            "snippet": "<input data-parsley-required-message=\"This field is required.\" aria-required=\"true\" required=\"\" data-parsley-required=\"true\" data-parsley-names=\"[\"Please specify a valid name.\",\"Addresses in names are not permitted, please add your name instead.\"]\" data-parsley-errors-container=\".mailpoet_error_1h75o\" aria-label=\"Name *\" placeholder=\"Name *\" data-automation-id=\"form_first_name\" style=\"width: 100%; box-sizing: border-box; padding: 10px; margin: 0px auto 0px 0px; font-family: Cairo, Lato, sans-serif; font-size: 15px; line-height: 1.5; height: auto;\" value=\"\" title=\"Name\" name=\"data[form_field_OTlkMTBlNjFjOGUwX2ZpcnN0X25hbWU=]\" id=\"form_first_name_8\" class=\"mailpoet_text\" autocomplete=\"given-name\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20data-parsley-required-message%3D%5C%22This%20field%20is%20required.%5C%22%20aria-required%3D%5C%22true%5C%22%20required%3D%5C%22%5C%22%20data-parsley-required%3D%5C%22true%5C%22%20data-parsley-names%3D%5C%22%5B%5C%22Please%20specify%20a%20valid%20name.%5C%22%2C%5C%22Addresses%20in%20names%20are%20not%20permitted%2C%20please%20add%20your%20name%20instead.%5C%22%5D%5C%22%20data-parsley-errors-container%3D%5C%22.mailpoet_error_1h75o%5C%22%20aria-label%3D%5C%22Name%20*%5C%22%20placeholder%3D%5C%22Name%20*%5C%22%20data-automation-id%3D%5C%22form_first_name%5C%22%20style%3D%5C%22width%3A%20100%25%3B%20box-sizing%3A%20border-box%3B%20padding%3A%2010px%3B%20margin%3A%200px%20auto%200px%200px%3B%20font-family%3A%20Cairo%2C%20Lato%2C%20sans-serif%3B%20font-size%3A%2015px%3B%20line-height%3A%201.5%3B%20height%3A%20auto%3B%5C%22%20value%3D%5C%22%5C%22%20title%3D%5C%22Name%5C%22%20name%3D%5C%22data%5Bform_field_OTlkMTBlNjFjOGUwX2ZpcnN0X25hbWU%3D%5D%5C%22%20id%3D%5C%22form_first_name_8%5C%22%20class%3D%5C%22mailpoet_text%5C%22%20autocomplete%3D%5C%22given-name%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/article[1]/div[2]/div[20]/form[1]/div[1]/div[1]/div[2]/div[3]/input[1]",
+                "aria": "/document[1]/main[1]/article[1]/form[1]/textbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7661,
+                "height": 47,
+                "width": 784
+            },
+            "snippet": "<input data-parsley-required-message=\"This field is required.\" data-parsley-type-message=\"This value should be a valid email.\" data-parsley-maxlength=\"150\" data-parsley-minlength=\"6\" aria-required=\"true\" required=\"\" data-parsley-required=\"true\" data-parsley-errors-container=\".mailpoet_error_13u7t\" aria-label=\"Email Address *\" placeholder=\"Email Address *\" data-automation-id=\"form_email\" style=\"width: 100%; box-sizing: border-box; padding: 10px; margin: 0px auto 0px 0px; font-family: Cairo, Lato, sans-serif; font-size: 15px; line-height: 1.5; height: auto;\" value=\"\" title=\"Email Address\" name=\"data[form_field_ODhhN2IwZjQ3NTMzX2VtYWls]\" id=\"form_email_8\" class=\"mailpoet_text\" autocomplete=\"email\" type=\"email\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20data-parsley-required-message%3D%5C%22This%20field%20is%20required.%5C%22%20data-parsley-type-message%3D%5C%22This%20value%20should%20be%20a%20valid%20email.%5C%22%20data-parsley-maxlength%3D%5C%22150%5C%22%20data-parsley-minlength%3D%5C%226%5C%22%20aria-required%3D%5C%22true%5C%22%20required%3D%5C%22%5C%22%20data-parsley-required%3D%5C%22true%5C%22%20data-parsley-errors-container%3D%5C%22.mailpoet_error_13u7t%5C%22%20aria-label%3D%5C%22Email%20Address%20*%5C%22%20placeholder%3D%5C%22Email%20Address%20*%5C%22%20data-automation-id%3D%5C%22form_email%5C%22%20style%3D%5C%22width%3A%20100%25%3B%20box-sizing%3A%20border-box%3B%20padding%3A%2010px%3B%20margin%3A%200px%20auto%200px%200px%3B%20font-family%3A%20Cairo%2C%20Lato%2C%20sans-serif%3B%20font-size%3A%2015px%3B%20line-height%3A%201.5%3B%20height%3A%20auto%3B%5C%22%20value%3D%5C%22%5C%22%20title%3D%5C%22Email%20Address%5C%22%20name%3D%5C%22data%5Bform_field_ODhhN2IwZjQ3NTMzX2VtYWls%5D%5C%22%20id%3D%5C%22form_email_8%5C%22%20class%3D%5C%22mailpoet_text%5C%22%20autocomplete%3D%5C%22email%5C%22%20type%3D%5C%22email%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/article[1]/div[2]/div[20]/form[1]/div[1]/div[1]/div[2]/div[4]/input[1]",
+                "aria": "/document[1]/main[1]/article[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7708,
+                "height": 47,
+                "width": 784
+            },
+            "snippet": "<input style=\"width: 100%; box-sizing: border-box; padding: 10px; margin: 0px auto 0px 0px; font-family: inherit; font-size: 15px; line-height: 1.5; height: auto; border-color: transparent;\" data-automation-id=\"subscribe-submit-button\" value=\"GET XPATH CHEAT SHEET\" class=\"mailpoet_submit\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cinput%20style%3D%5C%22width%3A%20100%25%3B%20box-sizing%3A%20border-box%3B%20padding%3A%2010px%3B%20margin%3A%200px%20auto%200px%200px%3B%20font-family%3A%20inherit%3B%20font-size%3A%2015px%3B%20line-height%3A%201.5%3B%20height%3A%20auto%3B%20border-color%3A%20transparent%3B%5C%22%20data-automation-id%3D%5C%22subscribe-submit-button%5C%22%20value%3D%5C%22GET%20XPATH%20CHEAT%20SHEET%5C%22%20class%3D%5C%22mailpoet_submit%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/article[1]/div[2]/div[20]/form[1]/div[1]/div[1]/div[2]/div[4]/input[1]",
+                "aria": "/document[1]/main[1]/article[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7708,
+                "height": 47,
+                "width": 784
+            },
+            "snippet": "<input style=\"width: 100%; box-sizing: border-box; padding: 10px; margin: 0px auto 0px 0px; font-family: inherit; font-size: 15px; line-height: 1.5; height: auto; border-color: transparent;\" data-automation-id=\"subscribe-submit-button\" value=\"GET XPATH CHEAT SHEET\" class=\"mailpoet_submit\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20style%3D%5C%22width%3A%20100%25%3B%20box-sizing%3A%20border-box%3B%20padding%3A%2010px%3B%20margin%3A%200px%20auto%200px%200px%3B%20font-family%3A%20inherit%3B%20font-size%3A%2015px%3B%20line-height%3A%201.5%3B%20height%3A%20auto%3B%20border-color%3A%20transparent%3B%5C%22%20data-automation-id%3D%5C%22subscribe-submit-button%5C%22%20value%3D%5C%22GET%20XPATH%20CHEAT%20SHEET%5C%22%20class%3D%5C%22mailpoet_submit%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1857,
+    "ruleTime": 21,
+    "nls": {
+        "aria_content_in_landmark": {
+            "0": "All content must reside within an element with a landmark role",
+            "Fail_1": "Content is not within a landmark element"
+        },
+        "element_id_unique": {
+            "0": "Element 'id' attribute values must be unique within a document",
+            "potential_in_use": "The <{0}> element has the id \"{1}\" that is already in use"
+        },
+        "style_focus_visible": {
+            "0": "The keyboard focus indicator should be visible when default border or outline is modified by CSS",
+            "potential_focus_not_visible": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'"
+        },
+        "aria_landmark_name_unique": {
+            "0": "Each landmark should have a unique 'aria-labelledby' or 'aria-label' or be nested in a different parent region",
+            "fail_label_not_unique": "Multiple elements with \"{0}\" landmarks within the same parent region are not distinguished from one another because they have the same \"{1}\" label"
+        },
+        "aria_navigation_label_unique": {
+            "0": "Each element with \"navigation\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"navigation\" role do not have unique labels"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 44,
+            "elementsViolation": 7,
+            "elementsViolationReview": 14,
+            "violation": 9,
+            "potentialviolation": 8,
+            "recommendation": 16,
+            "potentialrecommendation": 19,
+            "manual": 1,
+            "pass": 1804
+        },
+        "scanTime": 80,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "IBM_Accessibility"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779658113676,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en-US%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ECourses%20%7C%20Practice%20Test%20Automation%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20id%3D%22modern-store-modified%22%20class%3D%22wp-singular%20page-template-default%20page%20page-id-9%20wp-custom-logo%20wp-theme-modern-store-modified%20full-post%22%3E%0A%09%09%09%3Ca%20class%3D%22skip-content%22%20href%3D%22%23main-container%22%3EPress%20%22Enter%22%20to%20skip%20to%20content%3C%2Fa%3E%0A%09%3Cdiv%20id%3D%22overflow-container%22%20class%3D%22overflow-container%22%3E%0A%09%09%3Cdiv%20id%3D%22max-width%22%20class%3D%22max-width%22%3E%0A%09%09%09%09%09%09%3Cheader%20class%3D%22site-header%22%20id%3D%22site-header%22%20role%3D%22banner%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22header-top%22%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22menu-secondary-container%22%20class%3D%22menu-secondary-container%22%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22menu-secondary%22%20class%3D%22menu-container%20menu-secondary%22%20role%3D%22navigation%22%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22social-icons-container%22%20class%3D%22social-icons-container%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22header-middle%22%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22title-container%22%20class%3D%22title-container%22%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22site-title%22%20class%3D%22site-title%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2F%22%20class%3D%22custom-logo-link%22%20rel%3D%22home%22%3E%3Cimg%20width%3D%22305%22%20height%3D%2296%22%20class%3D%22custom-logo%22%20alt%3D%22Practice%20Test%20Automation%22%20decoding%3D%22async%22%20sizes%3D%22(max-width%3A%20305px)%20100vw%2C%20305px%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22header-bottom%22%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22mobile-menu-container%22%20class%3D%22mobile-menu-container%22%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22mobile-menu-container-inner%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22close-mobile-menu%22%20class%3D%22close-mobile-menu%22%3E%0A%09%09%09%09%09%09%09%09%3Cbutton%3E%0A%09%09%09%09%09%09%09%09%09%3Csvg%20width%3D%2228px%22%20height%3D%2228px%22%20viewBox%3D%220%200%2028%2028%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%09%09%09%09%09%09%09%09%3Cg%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(-174.000000%2C%20-18.000000)%22%20fill%3D%22%23FFFFFF%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(174.000000%2C%2018.000000)%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Crect%20transform%3D%22translate(14.000000%2C%2014.000000)%20rotate(-45.000000)%20translate(-14.000000%2C%20-14.000000)%20%22%20x%3D%22-4%22%20y%3D%2213%22%20width%3D%2236%22%20height%3D%222%22%3E%3C%2Frect%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Crect%20transform%3D%22translate(14.000000%2C%2014.000000)%20rotate(45.000000)%20translate(-14.000000%2C%20-14.000000)%20%22%20x%3D%22-4%22%20y%3D%2213%22%20width%3D%2236%22%20height%3D%222%22%3E%3C%2Frect%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%3C%2Fsvg%3E%09%09%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22menu-primary-container%22%20class%3D%22menu-primary-container%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20id%3D%22menu-primary%22%20class%3D%22menu-container%20menu-primary%22%20role%3D%22navigation%22%3E%0A%20%20%20%20%3Cnav%20class%3D%22menu%22%3E%3Cul%20id%3D%22menu-primary-items%22%20class%3D%22menu-primary-items%22%3E%3Cli%20id%3D%22menu-item-43%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-home%20menu-item-43%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2F%22%3EHome%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-20%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-20%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fpractice%2F%22%3EPractice%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-21%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20current-menu-item%20page_item%20page-item-9%20current_page_item%20menu-item-21%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fcourses%2F%22%20aria-current%3D%22page%22%3ECourses%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-19%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-19%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fblog%2F%22%3EBlog%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-18%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-18%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fcontact%2F%22%3EContact%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%3C%2Fnav%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22toggle-container%22%20class%3D%22toggle-container%22%3E%0A%09%09%09%09%09%09%3Cbutton%20id%3D%22toggle-navigation%22%20class%3D%22toggle-navigation%22%20name%3D%22toggle-navigation%22%20aria-expanded%3D%22false%22%3E%0A%09%09%09%09%09%09%09%3Cspan%20class%3D%22screen-reader-text%22%3Eopen%20menu%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%3Csvg%20width%3D%2236px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2036%2024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%09%09%09%09%09%09%09%09%3Cg%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(-198.000000%2C%20-90.000000)%22%20fill%3D%22%23FFFFFF%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(0.000000%2C%2018.000000)%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(0.000000%2C%2060.000000)%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(141.000000%2C%2012.000000)%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cg%20transform%3D%22translate(57.000000%2C%200.000000)%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Crect%20x%3D%220%22%20y%3D%2222%22%20width%3D%2236%22%20height%3D%222%22%3E%3C%2Frect%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Crect%20x%3D%220%22%20y%3D%2211%22%20width%3D%2236%22%20height%3D%222%22%3E%3C%2Frect%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2236%22%20height%3D%222%22%3E%3C%2Frect%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%09%09%3C%2Fsvg%3E%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fheader%3E%0A%09%09%09%09%09%09%09%09%09%3Csection%20id%3D%22main-container%22%20class%3D%22main-container%22%20role%3D%22main%22%3E%0A%09%09%09%09%0A%3Cdiv%20id%3D%22loop-container%22%20class%3D%22loop-container%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22post-9%20page%20type-page%20status-publish%20hentry%20entry%22%3E%0A%09%09%3Carticle%3E%0A%09%09%3Cdiv%20class%3D%22post-header%22%3E%0A%09%09%09%3Ch1%20class%3D%22post-title%22%3ECourses%3C%2Fh1%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22post-content%22%3E%0A%09%09%09%0A%3Ch2%20class%3D%22wp-block-heading%22%20id%3D%22selenium-webdriver-with-java-for-beginners%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fbeginners-course-coupon%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3ESelenium%20WebDriver%3A%20Selenium%20Automation%20Testing%20with%20Java%3C%2Fa%3E%3C%2Fh2%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3ELearn%20Selenium%20WebDriver%20with%20Java%20and%20TestNG%20from%20scratch.%20Perfect%20for%20manual%20testers%20and%20complete%20beginners%20ready%20to%20start%20automating%20real-world%20tests.%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22has-text-align-center%20has-very-light-gray-background-color%20has-background%20wp-block-paragraph%22%3E%3Cstrong%3EMy%20top-rated%2C%20best-selling%20course%3C%2Fstrong%3E%20%E2%80%93%20%3Cstrong%3Efully%20updated%20in%202024%3C%2Fstrong%3E%20for%20faster%20learning%20and%20career%20growth%3C%2Fp%3E%0A%0A%0A%3Cdiv%20class%3D%22wp-block-image%20is-style-default%22%3E%0A%3Cfigure%20class%3D%22alignright%20size-full%22%3E%3Cimg%20fetchpriority%3D%22high%22%20decoding%3D%22async%22%20width%3D%22234%22%20height%3D%22346%22%20alt%3D%22%22%20class%3D%22wp-image-937%22%20sizes%3D%22(max-width%3A%20234px)%20100vw%2C%20234px%22%3E%3C%2Ffigure%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3Cstrong%3EWhat%20you%E2%80%99ll%20learn%20in%20this%20course%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cul%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EBuild%20a%20complete%20test%20automation%20framework%20with%20Selenium%20WebDriver%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EWrite%20and%20run%20your%20first%20real%20browser%20automation%20tests%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EUse%20TestNG%20for%20powerful%20test%20structure%20and%20reporting%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ERun%20cross-browser%20tests%20in%20Chrome%2C%20Firefox%2C%20and%20Edge%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EDebug%20and%20fix%20common%20Selenium%20test%20failures%20with%20confidence%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ELearn%20Java%20programming%20essentials%20tailored%20for%20test%20automation%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EPrepare%20for%20interviews%20and%20build%20your%20job-ready%20portfolio%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-buttons%20alignfull%20is-horizontal%20is-content-justification-center%20is-layout-flex%20wp-container-core-buttons-is-layout-7d812b4c%20wp-block-buttons-is-layout-flex%22%3E%0A%3Cdiv%20class%3D%22is-style-fill%20wp-block-button%22%3E%3Ca%20class%3D%22wp-block-button__link%20has-black-color%20has-text-color%20has-background%20wp-element-button%22%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fbeginners-course-coupon%22%20style%3D%22background-color%3A%2336d3cc%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EEnroll%20in%20this%20course%20on%20Udemy%3C%2Fa%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-css-opacity%22%3E%0A%0A%0A%0A%3Ch2%20class%3D%22wp-block-heading%22%20id%3D%22selenium-webdriver-with-java-for-beginners%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fselenium-python-udemy%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3ESelenium%20WebDriver%3A%20Selenium%20Automation%20Testing%20with%20Python%3C%2Fa%3E%3C%2Fh2%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3ELearn%20Selenium%20WebDriver%20with%20Python%20and%20PyTest%20from%20scratch.%20This%20hands-on%20course%20is%20perfect%20for%20manual%20testers%20and%20anyone%20new%20to%20automation.%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22has-text-align-center%20has-very-light-gray-background-color%20has-background%20wp-block-paragraph%22%3ETop-rated%2C%20easy-to-follow%20course%20updated%20in%202024%20%E2%80%93%20start%20automating%20real%20browser%20tests%20fast%3C%2Fp%3E%0A%0A%0A%3Cdiv%20class%3D%22wp-block-image%20is-style-default%22%3E%0A%3Cfigure%20class%3D%22alignright%20size-full%22%3E%3Cimg%20decoding%3D%22async%22%20width%3D%22234%22%20height%3D%22348%22%20alt%3D%22%22%20class%3D%22wp-image-938%22%20sizes%3D%22(max-width%3A%20234px)%20100vw%2C%20234px%22%3E%3C%2Ffigure%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3Cstrong%3EWhat%20you%E2%80%99ll%20learn%20in%20this%20course%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cul%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3ESet%20up%20test%20automation%20framework%20with%20Selenium%20WebDriver%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EAutomate%20your%20first%20Selenium%20WebDriver%20test%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EAutomate%20software%20tests%20using%20Python%20and%20PyTest%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EExecute%20tests%20in%20Chrome%2C%20Firefox%2C%20and%20other%20browsers%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ERecognize%20test%20failures%20and%20exceptions%2C%20and%20fix%20them%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EUse%20PyTest%20for%20better%20test%20structure%20and%20maintenance%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-buttons%20alignfull%20is-horizontal%20is-content-justification-center%20is-layout-flex%20wp-container-core-buttons-is-layout-7d812b4c%20wp-block-buttons-is-layout-flex%22%3E%0A%3Cdiv%20class%3D%22is-style-fill%20wp-block-button%22%3E%3Ca%20class%3D%22wp-block-button__link%20has-black-color%20has-text-color%20has-background%20wp-element-button%22%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fselenium-python-udemy%22%20style%3D%22background-color%3A%2336d3cc%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EEnroll%20in%20this%20course%20on%20Udemy%3C%2Fa%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-css-opacity%22%3E%0A%0A%0A%0A%3Ch2%20class%3D%22wp-block-heading%22%20id%3D%22advanced-selenium-webdriver-with-java-and-testng%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fjava-for-testers-udemy%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EJava%20for%20Testers%3C%2Fa%3E%3C%2Fh2%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EStart%20your%20test%20automation%20career%20by%20learning%20Java%20from%20this%20specifically%20designed%20for%20beginners%20course.%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22has-text-align-center%20has-very-light-gray-background-color%20has-background%20wp-block-paragraph%22%3EAll%20Java%20you%20need%20to%20start%20learning%20test%20automation%3C%2Fp%3E%0A%0A%0A%3Cdiv%20class%3D%22wp-block-image%20is-style-default%22%3E%0A%3Cfigure%20class%3D%22alignright%20size-full%22%3E%3Cimg%20decoding%3D%22async%22%20width%3D%22236%22%20height%3D%22307%22%20alt%3D%22%22%20class%3D%22wp-image-939%22%20sizes%3D%22(max-width%3A%20236px)%20100vw%2C%20236px%22%3E%3C%2Ffigure%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3Cstrong%3EIn%20this%20course%20you%20will%20learn%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cul%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EStarting%20from%20the%20scratch%2C%20installing%20Java%20and%20IDEs%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ECreating%20a%20first%20project%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ELearning%20basic%20things%2C%20data%20types%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ELearning%20methods%2C%20classes%2C%20different%20functions%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EPrinciples%20of%20Object%20Oriented%20Programimg%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EAdvanced%20Java%20functions%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EWorking%20with%20files%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ETest%20frameworks%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-buttons%20alignfull%20is-horizontal%20is-content-justification-center%20is-layout-flex%20wp-container-core-buttons-is-layout-7d812b4c%20wp-block-buttons-is-layout-flex%22%3E%0A%3Cdiv%20class%3D%22is-style-fill%20wp-block-button%22%3E%3Ca%20class%3D%22wp-block-button__link%20has-black-color%20has-text-color%20has-background%20wp-element-button%22%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fjava-for-testers-udemy%22%20style%3D%22background-color%3A%2336d3cc%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EEnroll%20in%20this%20course%20on%20Udemy%3C%2Fa%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-css-opacity%22%3E%0A%0A%0A%0A%3Ch2%20class%3D%22wp-block-heading%22%20id%3D%22selenium-webdriver-with-java-for-beginners%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fpython-for-testers%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EPython%3A%20The%20Complete%20Guide%20for%20Software%20Testers%3C%2Fa%3E%3C%2Fh2%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EMaster%20Python%20for%20Testing%3A%20Automate%20Tests%2C%20Handle%20Exceptions%2C%20Explore%20OOP%2C%20and%20Dive%20into%20Python%20Libraries.%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22has-text-align-center%20has-very-light-gray-background-color%20has-background%20wp-block-paragraph%22%3EDive%20Deep%20Into%20Python%20for%20Professional%20Software%20Testing%3C%2Fp%3E%0A%0A%0A%3Cdiv%20class%3D%22wp-block-image%20is-style-default%22%3E%0A%3Cfigure%20class%3D%22alignright%20size-full%22%3E%3Cimg%20loading%3D%22lazy%22%20decoding%3D%22async%22%20width%3D%22238%22%20height%3D%22331%22%20alt%3D%22%22%20class%3D%22wp-image-940%22%20sizes%3D%22auto%2C%20(max-width%3A%20238px)%20100vw%2C%20238px%22%3E%3C%2Ffigure%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3Cstrong%3EIn%20this%20course%20you%20will%20learn%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cul%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EMaster%20the%20basics%20and%20advanced%20concepts%20of%20Python%20programming.%20%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EGain%20a%20deep%20understanding%20of%20Python%E2%80%99s%20data%20types%2C%20structures%2C%20and%20control%20structures.%20%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ELearn%20Object-Oriented%20Programming%20(OOP)%20in%20Python%20and%20apply%20OOP%20concepts%20like%20inheritance%2C%20encapsulation%2C%20and%20polymorphism.%20%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EAcquire%20skills%20for%20software%20testing%20in%20Python%2C%20including%20unit%20testing%20with%20PyTest%2C%20and%20handling%20exceptions%20%26amp%3B%20errors.%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-buttons%20alignfull%20is-horizontal%20is-content-justification-center%20is-layout-flex%20wp-container-core-buttons-is-layout-7d812b4c%20wp-block-buttons-is-layout-flex%22%3E%0A%3Cdiv%20class%3D%22is-style-fill%20wp-block-button%22%3E%3Ca%20class%3D%22wp-block-button__link%20has-black-color%20has-text-color%20has-background%20wp-element-button%22%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fpython-for-testers%22%20style%3D%22background-color%3A%2336d3cc%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EEnroll%20in%20this%20course%20on%20Udemy%3C%2Fa%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-css-opacity%22%3E%0A%0A%0A%0A%3Ch2%20class%3D%22wp-block-heading%22%20id%3D%22advanced-selenium-webdriver-with-java-and-testng%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fadvanced-course-coupon%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EAdvanced%20Selenium%20WebDriver%20with%20Java%20and%20TestNG%3C%2Fa%3E%3C%2Fh2%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EA%20real-world%20example%20of%20Advanced%20Selenium%20WebDriver%20test%20automation%20framework%20with%20Java%20and%20TestNG%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22has-text-align-center%20has-very-light-gray-background-color%20has-background%20wp-block-paragraph%22%3EThis%20course%20will%20make%20you%20a%20%3Cstrong%3E%3Cem%3ESelenium%20Pro%3C%2Fem%3E%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%0A%3Cdiv%20class%3D%22wp-block-image%22%3E%0A%3Cfigure%20class%3D%22alignright%20size-full%22%3E%3Cimg%20loading%3D%22lazy%22%20decoding%3D%22async%22%20width%3D%22235%22%20height%3D%22348%22%20alt%3D%22%22%20class%3D%22wp-image-941%22%20sizes%3D%22auto%2C%20(max-width%3A%20235px)%20100vw%2C%20235px%22%3E%3C%2Ffigure%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3Cstrong%3EIn%20this%20course%20you%20will%20learn%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cul%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EDevelop%20Full-Stack%20Test%20Automation%20Framework%20from%20scratch%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EImplement%20Data-Driven%20Test%20Framework%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EUse%20Page%20Object%20Model%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EAutomate%20almost%20any%20test%20case%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EUse%20advanced%20Selenium%20WebDriver%20techniques%20(Taking%20screenshots%2C%20capturing%20JS%20console%20errors%2C%20etc)%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-buttons%20alignfull%20is-horizontal%20is-content-justification-center%20is-layout-flex%20wp-container-core-buttons-is-layout-7d812b4c%20wp-block-buttons-is-layout-flex%22%3E%0A%3Cdiv%20class%3D%22is-style-fill%20wp-block-button%22%3E%3Ca%20class%3D%22wp-block-button__link%20has-black-color%20has-text-color%20has-background%20wp-element-button%22%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fadvanced-course-coupon%22%20style%3D%22background-color%3A%2336d3cc%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EEnroll%20in%20this%20course%20on%20Udemy%3C%2Fa%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-css-opacity%22%3E%0A%0A%0A%0A%3Ch2%20class%3D%22wp-block-heading%22%20id%3D%22xpath-locators-for-selenium%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fxpath-course-coupon%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EXPath%20locators%20for%20Selenium%3C%2Fa%3E%3C%2Fh2%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EBuild%20complex%20XPath%20locators%20for%20Selenium%20automation%20that%20will%20work%20on%20any%20web%20element%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22has-text-align-center%20has-very-light-gray-background-color%20has-background%20wp-block-paragraph%22%3E%3Cem%3E%3Cstrong%3EBestseller%3C%2Fstrong%3E%20course%20in%20the%20%3C%2Fem%3ESelenium%20Testing%20Framework%3Cem%3E%20category%3C%2Fem%3E%3C%2Fp%3E%0A%0A%0A%3Cdiv%20class%3D%22wp-block-image%22%3E%0A%3Cfigure%20class%3D%22alignright%20size-full%22%3E%3Cimg%20loading%3D%22lazy%22%20decoding%3D%22async%22%20width%3D%22233%22%20height%3D%22327%22%20alt%3D%22%22%20class%3D%22wp-image-942%22%20sizes%3D%22auto%2C%20(max-width%3A%20233px)%20100vw%2C%20233px%22%3E%3C%2Ffigure%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EThe%20XPath%26nbsp%3Bis%26nbsp%3Bthe%26nbsp%3Bmost%20complicated%26nbsp%3Bmethod%20of%20identifying%20elements.%20It%20can%20find%20the%26nbsp%3Blocation%20of%20any%26nbsp%3Belement%26nbsp%3Bon%20a%20web%20page%2C%20even%20those%20without%20class%2C%20name%2C%20or%20id%20attributes.%26nbsp%3BXPath%20produces%20reliable%20locators%26nbsp%3Bif%20used%20correctly.%20%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3Cstrong%3EIn%20this%20course%20you%20will%20learn%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cul%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EBuild%20complex%20XPath%20locators%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ELocate%20ANY%20element%20on%20the%20page%20with%20XPath%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EAutomate%20testing%20of%20any%20element%20on%20the%20web%20page%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-buttons%20alignfull%20is-horizontal%20is-content-justification-center%20is-layout-flex%20wp-container-core-buttons-is-layout-7d812b4c%20wp-block-buttons-is-layout-flex%22%3E%0A%3Cdiv%20class%3D%22is-style-fill%20wp-block-button%22%3E%3Ca%20class%3D%22wp-block-button__link%20has-black-color%20has-text-color%20has-background%20wp-element-button%22%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fxpath-course-coupon%22%20style%3D%22background-color%3A%2336d3cc%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EEnroll%20in%20this%20course%20on%20Udemy%3C%2Fa%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-css-opacity%22%3E%0A%0A%0A%0A%3Ch2%20class%3D%22wp-block-heading%22%20id%3D%22rest-assured-api-test-automation-for-beginners%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Frest-assured-course-coupon%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EREST%20Assured.%20API%20test%20automation%20for%20beginners%3C%2Fa%3E%3C%2Fh2%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3ERest%20API%20test%20automation%20from%20scratch.%20Create%20a%20cool%20REST%20Assured%20framework%20with%20Java%20and%20TestNG%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22has-text-align-center%20has-very-light-gray-background-color%20has-background%20wp-block-paragraph%22%3E%3Cstrong%3E%3Cem%3EH%3C%2Fem%3Ei%3Cem%3Eghest%20Rated%3C%2Fem%3E%3C%2Fstrong%3E%3Cem%3E%20course%20in%20the%20%3C%2Fem%3EREST%20Assured%3Cem%3E%20category%3C%2Fem%3E%3C%2Fp%3E%0A%0A%0A%3Cdiv%20class%3D%22wp-block-image%22%3E%0A%3Cfigure%20class%3D%22alignright%20size-full%22%3E%3Cimg%20loading%3D%22lazy%22%20decoding%3D%22async%22%20width%3D%22234%22%20height%3D%22327%22%20alt%3D%22%22%20class%3D%22wp-image-944%22%20sizes%3D%22auto%2C%20(max-width%3A%20234px)%20100vw%2C%20234px%22%3E%3C%2Ffigure%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3Cstrong%3EIn%20this%20course%20you%20will%20learn%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cul%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EHow%20to%20start%20REST%20API%20Automation%20using%20REST%20Assured%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ECreating%20REST%20API%20testing%20framework%20from%20scratch%20with%20Maven%20and%20TestNG%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3E%20Use%20JsonPath%20and%20XmlPath%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3E%20Serialize%20and%20De-Serialize%20POJOs%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3E%20Work%20with%20Headers%20and%20Cookies%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3E%20Use%20Basic%20Authentication%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-buttons%20alignfull%20is-horizontal%20is-content-justification-center%20is-layout-flex%20wp-container-core-buttons-is-layout-7d812b4c%20wp-block-buttons-is-layout-flex%22%3E%0A%3Cdiv%20class%3D%22is-style-fill%20wp-block-button%22%3E%3Ca%20class%3D%22wp-block-button__link%20has-black-color%20has-text-color%20has-background%20wp-element-button%22%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Frest-assured-course-coupon%22%20style%3D%22background-color%3A%2336d3cc%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EEnroll%20in%20this%20course%20on%20Udemy%3C%2Fa%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-css-opacity%22%3E%0A%0A%0A%0A%3Ch2%20class%3D%22wp-block-heading%22%20id%3D%22advanced-selenium-grid-and-cloud%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fselenium-grid%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EAdvanced%20Selenium%20Grid%20and%20Cloud%3C%2Fa%3E%3C%2Fh2%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3EAdvanced%20Selenium%20WebDriver%20test%20automation%20framework%20with%20Selenium%20Grid%2C%20Cloud%20and%20continuous%20test%20execution%20in%20Jenkins%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22has-text-align-center%20has-very-light-gray-background-color%20has-background%20wp-block-paragraph%22%3E%3Cem%3EBecome%20%3Cstrong%3ESDET%3C%2Fstrong%3E%20or%20even%20%3Cstrong%3ETest%20Automation%20Architect%3C%2Fstrong%3E%20by%20learning%20Selenium%20Grid!%3C%2Fem%3E%3C%2Fp%3E%0A%0A%0A%3Cdiv%20class%3D%22wp-block-image%22%3E%0A%3Cfigure%20class%3D%22alignright%20size-full%22%3E%3Cimg%20loading%3D%22lazy%22%20decoding%3D%22async%22%20width%3D%22236%22%20height%3D%22349%22%20alt%3D%22%22%20class%3D%22wp-image-945%22%20sizes%3D%22auto%2C%20(max-width%3A%20236px)%20100vw%2C%20236px%22%3E%3C%2Ffigure%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3Cstrong%3EIn%20this%20course%20you%20will%20learn%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cul%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3ESetting%20up%20Selenium%20Grid%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ERunning%20tests%20on%20Selenium%20Grid%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EAdvantages%20and%20disadvantages%20of%20Selenium%20Grid%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ETest%20Automation%20cloud%20providers%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ERunning%20tests%20in%20the%20cloud%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ERunning%20tests%20on%20SauceLabs%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EJenkins%20and%20continuous%20test%20execution%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-buttons%20alignfull%20is-horizontal%20is-content-justification-center%20is-layout-flex%20wp-container-core-buttons-is-layout-7d812b4c%20wp-block-buttons-is-layout-flex%22%3E%0A%3Cdiv%20class%3D%22is-style-fill%20wp-block-button%22%3E%3Ca%20class%3D%22wp-block-button__link%20has-black-color%20has-text-color%20has-background%20wp-element-button%22%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fselenium-grid%22%20style%3D%22background-color%3A%2336d3cc%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EEnroll%20in%20this%20course%20on%20Udemy%3C%2Fa%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Chr%20class%3D%22wp-block-separator%20has-css-opacity%22%3E%0A%0A%0A%0A%3Ch2%20class%3D%22wp-block-heading%22%20id%3D%22advanced-selenium-testing-framework-with-java%22%3E%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fselenium-webdriver-test-framework-from-scratch-referralCode%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EAdvanced%20Selenium%20testing%20framework%20with%20Java%3C%2Fa%3E%3C%2Fh2%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3ESelenium%20WebDriver%20with%20Java%2C%20TestNG%2C%20and%20Maven.%20Learn%20Selenium%20Testing%20Framework%20with%20Java%20and%20TestNG%3C%2Fp%3E%0A%0A%0A%0A%3Cp%20class%3D%22has-text-align-center%20has-very-light-gray-background-color%20has-background%20wp-block-paragraph%22%3E%3Cem%3EQuick-paced%20course%20%3C%2Fem%3Efor%20test%20automation%20engineers%20that%20want%20to%20improve%20their%20framework-building%20skills%3C%2Fp%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-columns%20is-layout-flex%20wp-container-core-columns-is-layout-8f761849%20wp-block-columns-is-layout-flex%22%3E%0A%3Cdiv%20class%3D%22wp-block-column%20is-layout-flow%20wp-block-column-is-layout-flow%22%3E%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3Cstrong%3EIn%20this%20course%20you%20will%20learn%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%0A%0A%3Cul%20id%3D%22block-e79ff438-fba3-4b27-b28e-81d421a0f205%22%20class%3D%22wp-block-list%22%3E%0A%3Cli%20class%3D%22%22%3EBuild%20test%20framework%20in%20Selenium%20WebDriver%20from%20scratch%20using%20Java%20and%20TestNG%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ECreate%20reliable%2C%20stable%2C%20and%20easily%20maintainable%20automated%20tests%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EUse%20the%20Page%20Object%20Model%20for%20the%20better%20test%20structure%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3EMaster%20Selenium%20Webdriver%3C%2Fli%3E%0A%0A%0A%0A%3Cli%20class%3D%22%22%3ECreate%20Data-Driven%20Test%20Framework%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-column%20is-layout-flow%20wp-block-column-is-layout-flow%22%3E%3Cdiv%20class%3D%22wp-block-image%22%3E%0A%3Cfigure%20class%3D%22alignright%20size-full%22%3E%3Cimg%20loading%3D%22lazy%22%20decoding%3D%22async%22%20width%3D%22236%22%20height%3D%22350%22%20alt%3D%22%22%20class%3D%22wp-image-946%22%20sizes%3D%22auto%2C%20(max-width%3A%20236px)%20100vw%2C%20236px%22%3E%3C%2Ffigure%3E%0A%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Cdiv%20class%3D%22wp-block-buttons%20alignfull%20is-horizontal%20is-content-justification-center%20is-layout-flex%20wp-container-core-buttons-is-layout-7d812b4c%20wp-block-buttons-is-layout-flex%22%3E%0A%3Cdiv%20class%3D%22is-style-fill%20wp-block-button%22%3E%3Ca%20class%3D%22wp-block-button__link%20has-black-color%20has-text-color%20has-background%20wp-element-button%22%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fselenium-webdriver-test-framework-from-scratch-referralCode%22%20style%3D%22background-color%3A%2336d3cc%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3EEnroll%20in%20this%20course%20on%20Udemy%3C%2Fa%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%3Cp%20class%3D%22wp-block-paragraph%22%3E%3C%2Fp%3E%0A%20%20%0A%20%20%0A%20%20%3Cdiv%20class%3D%22%0A%20%20%20%20mailpoet_form_popup_overlay%0A%20%20%20%20%20%20%20%20%20%20mailpoet_form_overlay_animation_right%0A%20%20%20%20%20%20mailpoet_form_overlay_animation%0A%20%20%20%20%20%20%22%3E%3C%2Fdiv%3E%0A%20%20%3Cdiv%20id%3D%22mp_form_slide_in8%22%20class%3D%22mailpoet_form%20mailpoet_form_slide_in%20mailpoet_form_position_right%20mailpoet_form_animation_right%20starting-to-show%22%20style%3D%22font-family%3A%20Cairo%2C%20Lato%2C%20sans-serif%3B%22%3E%0A%0A%20%20%20%20%0A%0A%20%20%20%20%3Cform%20target%3D%22_self%22%20method%3D%22post%22%20action%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fwp-admin%2Fadmin-post.php%3Faction%3Dmailpoet_subscription_form%22%20class%3D%22mailpoet_form%20mailpoet_form_form%20mailpoet_form_slide_in%22%20novalidate%3D%22%22%20data-delay%3D%2215%22%20data-exit-intent-enabled%3D%22%22%20data-font-family%3D%22Cairo%22%20data-cookie-expiration-time%3D%227%22%3E%0A%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22data%5Bform_id%5D%22%20value%3D%228%22%20style%3D%22font-family%3A%20inherit%3B%22%3E%0A%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22token%22%20value%3D%225d38355af0%22%20style%3D%22font-family%3A%20inherit%3B%22%3E%0A%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22api_version%22%20value%3D%22v1%22%20style%3D%22font-family%3A%20inherit%3B%22%3E%0A%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22endpoint%22%20value%3D%22subscribers%22%20style%3D%22font-family%3A%20inherit%3B%22%3E%0A%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22mailpoet_method%22%20value%3D%22subscribe%22%20style%3D%22font-family%3A%20inherit%3B%22%3E%0A%0A%20%20%20%20%20%20%3Clabel%20class%3D%22mailpoet_hp_email_label%22%20style%3D%22display%3A%20none%20!important%3B%22%3EPlease%20leave%20this%20field%20empty%3Cinput%20type%3D%22email%22%20name%3D%22data%5Bemail%5D%22%20style%3D%22font-family%3A%20Cairo%2C%20Lato%2C%20sans-serif%3B%22%3E%3C%2Flabel%3E%3Cdiv%20class%3D%22mailpoet_form_columns_container%22%3E%3Cdiv%20class%3D%22mailpoet_form_columns%20mailpoet_paragraph%20mailpoet_stack_on_mobile%22%3E%3Cdiv%20class%3D%22mailpoet_form_column%20mailpoet_vertically_align_top%22%20style%3D%22flex-basis%3A50%25%3B%22%3E%3Cdiv%20class%3D%22mailpoet_form_image%22%3E%3Cfigure%20class%3D%22size-large%20aligncenter%22%3E%3Cimg%20data-recalc-dims%3D%221%22%20loading%3D%22lazy%22%20decoding%3D%22async%22%20width%3D%22791%22%20height%3D%221024%22%20alt%3D%22%22%20class%3D%22wp-image-505%22%3E%3C%2Ffigure%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22mailpoet_form_column%22%20style%3D%22flex-basis%3A50%25%3B%22%3E%3Cdiv%20class%3D%22mailpoet_spacer%22%20style%3D%22height%3A%201px%3B%22%3E%3C%2Fdiv%3E%0A%3Ch4%20class%3D%22mailpoet-heading%20%22%20style%3D%22text-align%3A%20left%3B%20color%3A%20rgb(0%2C%200%2C%200)%3B%20font-family%3A%20inherit%3B%22%3E%3Cspan%20style%3D%22font-family%3A%20Cairo%2C%20Lato%2C%20sans-serif%3B%22%20data-font%3D%22Cairo%22%20class%3D%22mailpoet-has-font%22%3E%3Cstrong%3ESUBSCRIBE%20AND%20GET%20FREE%20XPATH%20CHEAT%20SHEET!%3C%2Fstrong%3E%3C%2Fspan%3E%3C%2Fh4%3E%0A%3Cdiv%20class%3D%22mailpoet_paragraph%20%22%3E%3Cinput%20type%3D%22text%22%20autocomplete%3D%22given-name%22%20class%3D%22mailpoet_text%22%20id%3D%22form_first_name_8%22%20name%3D%22data%5Bform_field_OTlkMTBlNjFjOGUwX2ZpcnN0X25hbWU%3D%5D%22%20title%3D%22Name%22%20value%3D%22%22%20style%3D%22width%3A%20100%25%3B%20box-sizing%3A%20border-box%3B%20padding%3A%2010px%3B%20margin%3A%200px%20auto%200px%200px%3B%20font-family%3A%20Cairo%2C%20Lato%2C%20sans-serif%3B%20font-size%3A%2015px%3B%20line-height%3A%201.5%3B%20height%3A%20auto%3B%22%20data-automation-id%3D%22form_first_name%22%20placeholder%3D%22Name%20*%22%20aria-label%3D%22Name%20*%22%20data-parsley-errors-container%3D%22.mailpoet_error_1h75o%22%20data-parsley-names%3D%22%5B%26quot%3BPlease%20specify%20a%20valid%20name.%26quot%3B%2C%26quot%3BAddresses%20in%20names%20are%20not%20permitted%2C%20please%20add%20your%20name%20instead.%26quot%3B%5D%22%20data-parsley-required%3D%22true%22%20required%3D%22%22%20aria-required%3D%22true%22%20data-parsley-required-message%3D%22This%20field%20is%20required.%22%3E%3Cspan%20class%3D%22mailpoet_error_1h75o%22%3E%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22mailpoet_paragraph%20%22%3E%3Cinput%20type%3D%22email%22%20autocomplete%3D%22email%22%20class%3D%22mailpoet_text%22%20id%3D%22form_email_8%22%20name%3D%22data%5Bform_field_ODhhN2IwZjQ3NTMzX2VtYWls%5D%22%20title%3D%22Email%20Address%22%20value%3D%22%22%20style%3D%22width%3A%20100%25%3B%20box-sizing%3A%20border-box%3B%20padding%3A%2010px%3B%20margin%3A%200px%20auto%200px%200px%3B%20font-family%3A%20Cairo%2C%20Lato%2C%20sans-serif%3B%20font-size%3A%2015px%3B%20line-height%3A%201.5%3B%20height%3A%20auto%3B%22%20data-automation-id%3D%22form_email%22%20placeholder%3D%22Email%20Address%20*%22%20aria-label%3D%22Email%20Address%20*%22%20data-parsley-errors-container%3D%22.mailpoet_error_13u7t%22%20data-parsley-required%3D%22true%22%20required%3D%22%22%20aria-required%3D%22true%22%20data-parsley-minlength%3D%226%22%20data-parsley-maxlength%3D%22150%22%20data-parsley-type-message%3D%22This%20value%20should%20be%20a%20valid%20email.%22%20data-parsley-required-message%3D%22This%20field%20is%20required.%22%3E%3Cspan%20class%3D%22mailpoet_error_13u7t%22%3E%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22mailpoet_paragraph%20%22%3E%3Cinput%20type%3D%22submit%22%20class%3D%22mailpoet_submit%22%20value%3D%22GET%20XPATH%20CHEAT%20SHEET%22%20data-automation-id%3D%22subscribe-submit-button%22%20style%3D%22width%3A%20100%25%3B%20box-sizing%3A%20border-box%3B%20padding%3A%2010px%3B%20margin%3A%200px%20auto%200px%200px%3B%20font-family%3A%20inherit%3B%20font-size%3A%2015px%3B%20line-height%3A%201.5%3B%20height%3A%20auto%3B%20border-color%3A%20transparent%3B%22%3E%3Cspan%20class%3D%22mailpoet_form_loading%22%3E%3Cspan%20class%3D%22mailpoet_bounce1%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22mailpoet_bounce2%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22mailpoet_bounce3%22%3E%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Cp%20class%3D%22mailpoet_form_paragraph%20%20mailpoet-has-font-size%22%20style%3D%22text-align%3A%20left%3B%20color%3A%20%231e1e1e%3B%20font-size%3A%2015px%22%3E%3Cspan%20style%3D%22font-family%3A%20Cairo%2C%20Lato%2C%20sans-serif%3B%22%20data-font%3D%22Cairo%22%20class%3D%22mailpoet-has-font%22%3EWe%20don%E2%80%99t%20spam!%20Read%20our%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fprivacy-policy%2F%22%20data-type%3D%22URL%22%20data-id%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fprivacy-policy%2F%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%20noopener%22%3Eprivacy%20policy%3C%2Fa%3E%20for%20more%20info.%3C%2Fspan%3E%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22mailpoet_message%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22mailpoet_validate_success%22%20style%3D%22display%3Anone%3B%22%3ECheck%20your%20inbox%20or%20spam%20folder%20to%20confirm%20your%20subscription%20and%20get%20your%20FREE%20XPath%20cheat%20sheet.%0A%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22mailpoet_validate_error%22%20style%3D%22display%3Anone%3B%22%3E%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fform%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22image%22%20class%3D%22mailpoet_form_close_icon%22%20alt%3D%22Close%22%20style%3D%22font-family%3A%20inherit%3B%22%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%09%09%09%09%09%3C%2Fdiv%3E%0A%09%3C%2Farticle%3E%0A%09%09%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%0A%3C%2Fsection%3E%20%3C!--%20.main-container%20--%3E%0A%0A%3Cfooter%20id%3D%22site-footer%22%20class%3D%22site-footer%22%20role%3D%22contentinfo%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22design-credit%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%C2%A9%20Copyright%202020%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2F%22%3EPractice%20Test%20Automation.%3C%2Fa%3E%20%20All%20rights%20reserved%20%20%7C%20%20%3Ca%20href%3D%22https%3A%2F%2Fpracticetestautomation.com%2Fprivacy-policy%2F%22%3EPrivacy%20Policy%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%3C%2Fdiv%3E%3C!--%20.max-width%20--%3E%0A%3C%2Fdiv%3E%3C!--%20.overflow-container%20--%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cimg%20alt%3D%22%22%20width%3D%226%22%20height%3D%225%22%20id%3D%22wpstats%22%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "9a936a10-e01b-4b47-857e-065b65a9b050",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "practicetestautomation.com-courses"
+}

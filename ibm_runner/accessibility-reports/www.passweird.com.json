@@ -1,0 +1,132 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 308,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 308,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 271,
+                "width": 784
+            },
+            "snippet": "<body style=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20style%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 186,
+    "ruleTime": 6,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 6,
+            "elementsViolation": 2,
+            "elementsViolationReview": 2,
+            "violation": 3,
+            "potentialviolation": 0,
+            "recommendation": 4,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 179
+        },
+        "scanTime": 20,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778712098603,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EPassweird%20-%20Passwords%20too%20Gross%20to%20Steal%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20style%3D%22%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22wrapper%22%3E%0A%20%20%20%20%20%20%3Ch1%3EPassweird%3C%2Fh1%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22wrap%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22js-placeholder%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22welcome%20desktop-only%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cem%3EWelcome%2C%3C%2Fem%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20This%20website%20will%20create%20for%20you%20passwords%20that%20are%20not%20only%20secure*%2C%20but%20also%20%3Cstrong%3Eso%20utterly%20repulsive%3C%2Fstrong%3E%20that%20not%20even%20the%20most%20hardened%20criminal%2C%20identity%20thief%2C%20NSA%20agent%2C%20or%20jealous%20boyfriend%20would%20ever%20want%20to%20use%20them.%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22welcome%20mobile-only%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Create%20secure*%20passwords%20so%20repulsive%20not%20even%20the%20most%20hardened%20criminal%2C%20NSA%20agent%2C%20or%20jealous%20bf%20would%20want%20to%20use%20them.%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%20title%3D%22Generate%20Passweird%22%20id%3D%22js-generate%22%20class%3D%22btn%22%3E%3Cspan%20class%3D%22char1%22%3EG%3C%2Fspan%3E%3Cspan%20class%3D%22char2%22%3Ee%3C%2Fspan%3E%3Cspan%20class%3D%22char3%22%3En%3C%2Fspan%3E%3Cspan%20class%3D%22char4%22%3Ee%3C%2Fspan%3E%3Cspan%20class%3D%22char5%22%3Er%3C%2Fspan%3E%3Cspan%20class%3D%22char6%22%3Ea%3C%2Fspan%3E%3Cspan%20class%3D%22char7%22%3Et%3C%2Fspan%3E%3Cspan%20class%3D%22char8%22%3Ee%3C%2Fspan%3E%3Cspan%20class%3D%22char9%22%3E%20%3C%2Fspan%3E%3Cspan%20class%3D%22char10%22%3EP%3C%2Fspan%3E%3Cspan%20class%3D%22char11%22%3Ea%3C%2Fspan%3E%3Cspan%20class%3D%22char12%22%3Es%3C%2Fspan%3E%3Cspan%20class%3D%22char13%22%3Es%3C%2Fspan%3E%3Cspan%20class%3D%22char14%22%3Ew%3C%2Fspan%3E%3Cspan%20class%3D%22char15%22%3Ee%3C%2Fspan%3E%3Cspan%20class%3D%22char16%22%3Ei%3C%2Fspan%3E%3Cspan%20class%3D%22char17%22%3Er%3C%2Fspan%3E%3Cspan%20class%3D%22char18%22%3Ed%3C%2Fspan%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Cp%20class%3D%22asterisk%22%3E*ish%2C%20but%20probably%20not.%20Don't%20use%20these%20for%20real.%3C%2Fp%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22credits%22%3ECreated%20by%20weird%20humans%0A%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22http%3A%2F%2Fhumanshapes.co%22%20title%3D%22View%20Cody's%20Website%22%3ECody%26nbsp%3BPeterson%3C%2Fa%3E%20%26amp%3B%20%3Ca%20href%3D%22http%3A%2F%2Fplaidmtn.com%22%20title%3D%22View%20Matt's%20Work%22%3EMatt%26nbsp%3BCarlson%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20id%3D%22hallucination%22%3E%3Cdiv%20id%3D%22spinner%22%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22cat%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%0A%20%20%20%20%0A%20%20%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "3050ae42-fbe6-41c2-8b0e-062af560dd4e",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.passweird.com"
+}

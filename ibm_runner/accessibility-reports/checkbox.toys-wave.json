@@ -1,0 +1,1912 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 271,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_single",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/a[1]",
+                "aria": "/document[1]/banner[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_multiple_tabbable",
+            "message": "Component with \"link\" role has more than one tabbable element",
+            "messageArgs": [
+                "link"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 20,
+                "width": 784
+            },
+            "snippet": "<a class=\"logoLink\" href=\"/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_single.html#%7B%22message%22%3A%22Component%20with%20%5C%22link%5C%22%20role%20has%20more%20than%20one%20tabbable%20element%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22logoLink%5C%22%20href%3D%5C%22%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_multiple_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_single%22%2C%22msgArgs%22%3A%5B%22link%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/a[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 61,
+                "top": 11,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" type=\"checkbox\" class=\"logoSmaller\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20type%3D%5C%22checkbox%5C%22%20class%3D%5C%22logoSmaller%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/a[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 61,
+                "top": 11,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" type=\"checkbox\" class=\"logoSmaller\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20type%3D%5C%22checkbox%5C%22%20class%3D%5C%22logoSmaller%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/a[1]/div[1]/input[2]",
+                "aria": "/document[1]/banner[1]/link[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 89,
+                "top": 11,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" type=\"checkbox\" class=\"logoBigger\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20type%3D%5C%22checkbox%5C%22%20class%3D%5C%22logoBigger%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/a[1]/div[1]/input[2]",
+                "aria": "/document[1]/banner[1]/link[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 89,
+                "top": 11,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" type=\"checkbox\" class=\"logoBigger\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20type%3D%5C%22checkbox%5C%22%20class%3D%5C%22logoBigger%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_single",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+                "aria": "/document[1]/list[1]/listitem[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_multiple_tabbable",
+            "message": "Component with \"link\" role has more than one tabbable element",
+            "messageArgs": [
+                "link"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 64,
+                "height": 18,
+                "width": 55
+            },
+            "snippet": "<a href=\"/scale\" class=\"nav-name\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_single.html#%7B%22message%22%3A%22Component%20with%20%5C%22link%5C%22%20role%20has%20more%20than%20one%20tabbable%20element%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fscale%5C%22%20class%3D%5C%22nav-name%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_multiple_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_single%22%2C%22msgArgs%22%3A%5B%22link%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/input[1]",
+                "aria": "/document[1]/list[1]/listitem[2]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 66,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/input[1]",
+                "aria": "/document[1]/list[1]/listitem[2]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 66,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_single",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+                "aria": "/document[1]/list[1]/listitem[3]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_multiple_tabbable",
+            "message": "Component with \"link\" role has more than one tabbable element",
+            "messageArgs": [
+                "link"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 84,
+                "height": 18,
+                "width": 58
+            },
+            "snippet": "<a href=\"/catch\" class=\"nav-name\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_single.html#%7B%22message%22%3A%22Component%20with%20%5C%22link%5C%22%20role%20has%20more%20than%20one%20tabbable%20element%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fcatch%5C%22%20class%3D%5C%22nav-name%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_multiple_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_single%22%2C%22msgArgs%22%3A%5B%22link%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/input[1]",
+                "aria": "/document[1]/list[1]/listitem[3]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 86,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/input[1]",
+                "aria": "/document[1]/list[1]/listitem[3]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 86,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_single",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+                "aria": "/document[1]/list[1]/listitem[4]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_multiple_tabbable",
+            "message": "Component with \"link\" role has more than one tabbable element",
+            "messageArgs": [
+                "link"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 104,
+                "height": 18,
+                "width": 68
+            },
+            "snippet": "<a href=\"/zigzag\" class=\"nav-name\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_single.html#%7B%22message%22%3A%22Component%20with%20%5C%22link%5C%22%20role%20has%20more%20than%20one%20tabbable%20element%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fzigzag%5C%22%20class%3D%5C%22nav-name%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_multiple_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_single%22%2C%22msgArgs%22%3A%5B%22link%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[4]/a[1]/input[1]",
+                "aria": "/document[1]/list[1]/listitem[4]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 106,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[4]/a[1]/input[1]",
+                "aria": "/document[1]/list[1]/listitem[4]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 106,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_single",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+                "aria": "/document[1]/list[1]/listitem[5]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_multiple_tabbable",
+            "message": "Component with \"link\" role has more than one tabbable element",
+            "messageArgs": [
+                "link"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 124,
+                "height": 18,
+                "width": 57
+            },
+            "snippet": "<a href=\"/wave\" class=\"nav-name\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_single.html#%7B%22message%22%3A%22Component%20with%20%5C%22link%5C%22%20role%20has%20more%20than%20one%20tabbable%20element%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fwave%5C%22%20class%3D%5C%22nav-name%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_multiple_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_single%22%2C%22msgArgs%22%3A%5B%22link%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[5]/a[1]/input[1]",
+                "aria": "/document[1]/list[1]/listitem[5]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 126,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[5]/a[1]/input[1]",
+                "aria": "/document[1]/list[1]/listitem[5]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 126,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_single",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[6]/a[1]",
+                "aria": "/document[1]/list[1]/listitem[6]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_multiple_tabbable",
+            "message": "Component with \"link\" role has more than one tabbable element",
+            "messageArgs": [
+                "link"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 144,
+                "height": 18,
+                "width": 60
+            },
+            "snippet": "<a href=\"/sprint\" class=\"nav-name\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_single.html#%7B%22message%22%3A%22Component%20with%20%5C%22link%5C%22%20role%20has%20more%20than%20one%20tabbable%20element%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fsprint%5C%22%20class%3D%5C%22nav-name%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_multiple_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_single%22%2C%22msgArgs%22%3A%5B%22link%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[6]/a[1]/input[1]",
+                "aria": "/document[1]/list[1]/listitem[6]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 146,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/ul[1]/li[6]/a[1]/input[1]",
+                "aria": "/document[1]/list[1]/listitem[6]/link[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 146,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[1]",
+                "aria": "/document[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-1\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-1%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[1]",
+                "aria": "/document[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-1\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-1%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[2]",
+                "aria": "/document[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 36,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-2\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-2%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[2]",
+                "aria": "/document[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 36,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-2\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-2%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[3]",
+                "aria": "/document[1]/checkbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 60,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-3\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-3%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[3]",
+                "aria": "/document[1]/checkbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 60,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-3\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-3%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[4]",
+                "aria": "/document[1]/checkbox[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 84,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-4\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-4%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[4]",
+                "aria": "/document[1]/checkbox[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 84,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-4\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-4%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[5]",
+                "aria": "/document[1]/checkbox[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-5\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-5%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[5]",
+                "aria": "/document[1]/checkbox[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-5\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-5%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[6]",
+                "aria": "/document[1]/checkbox[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 132,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-6\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-6%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[6]",
+                "aria": "/document[1]/checkbox[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 132,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-6\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-6%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[7]",
+                "aria": "/document[1]/checkbox[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 156,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-7\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-7%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[7]",
+                "aria": "/document[1]/checkbox[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 156,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-7\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-7%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[8]",
+                "aria": "/document[1]/checkbox[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 180,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-8\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-8%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[8]",
+                "aria": "/document[1]/checkbox[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 180,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-8\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-8%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[9]",
+                "aria": "/document[1]/checkbox[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 204,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-9\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-9%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[9]",
+                "aria": "/document[1]/checkbox[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 204,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-9\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-9%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[10]",
+                "aria": "/document[1]/checkbox[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 228,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-10\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-10%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[10]",
+                "aria": "/document[1]/checkbox[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 228,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-10\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-10%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[11]",
+                "aria": "/document[1]/checkbox[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 252,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-11\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-11%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[11]",
+                "aria": "/document[1]/checkbox[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 252,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-11\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-11%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[12]",
+                "aria": "/document[1]/checkbox[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 276,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-12\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-12%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[12]",
+                "aria": "/document[1]/checkbox[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 276,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-12\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-12%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[13]",
+                "aria": "/document[1]/checkbox[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 300,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-13\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-13%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[13]",
+                "aria": "/document[1]/checkbox[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 300,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-13\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-13%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[14]",
+                "aria": "/document[1]/checkbox[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 324,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-14\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-14%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[14]",
+                "aria": "/document[1]/checkbox[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 324,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-14\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-14%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[15]",
+                "aria": "/document[1]/checkbox[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 348,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-15\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-15%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[15]",
+                "aria": "/document[1]/checkbox[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 348,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-15\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-15%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[16]",
+                "aria": "/document[1]/checkbox[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 372,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-16\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-16%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[16]",
+                "aria": "/document[1]/checkbox[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 372,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-16\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-16%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[17]",
+                "aria": "/document[1]/checkbox[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 396,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-17\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-17%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[17]",
+                "aria": "/document[1]/checkbox[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 396,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-17\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-17%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[18]",
+                "aria": "/document[1]/checkbox[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 420,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-18\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-18%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[18]",
+                "aria": "/document[1]/checkbox[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 420,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-18\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-18%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[19]",
+                "aria": "/document[1]/checkbox[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 444,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-19\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-19%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[19]",
+                "aria": "/document[1]/checkbox[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 444,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-19\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-19%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[20]",
+                "aria": "/document[1]/checkbox[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 468,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-20\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-20%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/input[20]",
+                "aria": "/document[1]/checkbox[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 468,
+                "top": 227,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" id=\"checkbox-20\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20id%3D%5C%22checkbox-20%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": -100,
+                "top": 690,
+                "height": 10,
+                "width": 10
+            },
+            "snippet": "<div style=\"background-color: transparent; height: 10px; width: 10px; position: fixed; bottom: -100px; left: -100px;\" class=\"adLeaderboard adBanner leaderboard_ad\" id=\"adBanner\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background-color%3A%20transparent%3B%20height%3A%2010px%3B%20width%3A%2010px%3B%20position%3A%20fixed%3B%20bottom%3A%20-100px%3B%20left%3A%20-100px%3B%5C%22%20class%3D%5C%22adLeaderboard%20adBanner%20leaderboard_ad%5C%22%20id%3D%5C%22adBanner%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 556,
+    "ruleTime": 3,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "widget_tabbable_single": {
+            "0": "Components with a widget role must have no more than one tabbable element",
+            "potential_multiple_tabbable": "Component with \"{0}\" role has more than one tabbable element"
+        },
+        "input_checkboxes_grouped": {
+            "0": "Related sets of radio buttons or checkboxes should be programmatically grouped",
+            "potential_unnamedcheckbox": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 38,
+            "elementsViolation": 27,
+            "elementsViolationReview": 35,
+            "violation": 27,
+            "potentialviolation": 35,
+            "recommendation": 4,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 489
+        },
+        "scanTime": 16,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778714398302,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20Wave%20on%20Checkbox%20Olympics%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22full-body%22%3E%3Cdiv%20class%3D%22fullwidth%22%3E%3Cheader%20class%3D%22game-header%22%3E%3Ca%20href%3D%22%2F%22%20class%3D%22logoLink%22%3E%3Cdiv%20class%3D%22logo%20small%22%3ECheckb%3Cinput%20class%3D%22logoSmaller%22%20type%3D%22checkbox%22%20checked%3D%22%22%3Ex%3Cinput%20class%3D%22logoBigger%22%20type%3D%22checkbox%22%20checked%3D%22%22%3Elympics%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fheader%3E%3Cdiv%20class%3D%22game-nav%22%3E%3Cul%3E%3Cli%3E%3Ca%20class%3D%22nav-header%22%20href%3D%22%2F%22%3ESEASON%201%3C%2Fa%3E%3C%2Fli%3E%3Cli%20id%3D%22s1-scale%22%3E%3Ca%20class%3D%22nav-name%22%20href%3D%22%2Fscale%22%3E%3Cinput%20type%3D%22checkbox%22%3EScale%3C%2Fa%3E%3Cspan%20class%3D%22navscore%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3Cli%20id%3D%22s1-catch%22%3E%3Ca%20class%3D%22nav-name%22%20href%3D%22%2Fcatch%22%3E%3Cinput%20type%3D%22checkbox%22%3ECatch%3C%2Fa%3E%3Cspan%20class%3D%22navscore%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3Cli%20id%3D%22s1-zigzag%22%3E%3Ca%20class%3D%22nav-name%22%20href%3D%22%2Fzigzag%22%3E%3Cinput%20type%3D%22checkbox%22%3EZigZag%3C%2Fa%3E%3Cspan%20class%3D%22navscore%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3Cli%20id%3D%22s1-wave%22%3E%3Ca%20class%3D%22nav-name%22%20href%3D%22%2Fwave%22%3E%3Cinput%20type%3D%22checkbox%22%3EWave%3C%2Fa%3E%3Cspan%20class%3D%22navscore%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3Cli%20id%3D%22s1-sprint%22%3E%3Ca%20class%3D%22nav-name%22%20href%3D%22%2Fsprint%22%3E%3Cinput%20type%3D%22checkbox%22%3ESprint%3C%2Fa%3E%3Cspan%20class%3D%22navscore%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22nav-name%20nav-total%22%20href%3D%22%2F%23total%22%3ETotal%20%3Cspan%20class%3D%22hand%22%3E%E2%98%9E%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22game%20wave%22%20data-type%3D%22wave%22%3E%3Cdiv%20class%3D%22controls%22%3E%3Cspan%20class%3D%22tip%22%3EDon't%20get%20hypnotized%3C%2Fspan%3E%0A%3Cbutton%20class%3D%22startButton%22%3ESTART%20COUNTDOWN%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22checkboxes%22%3E%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-1%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-2%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-3%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-4%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-5%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-6%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-7%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-8%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-9%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-10%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-11%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-12%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-13%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-14%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-15%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-16%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-17%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-18%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-19%22%20disabled%3D%22%22%3E%0A%3Cinput%20type%3D%22checkbox%22%20id%3D%22checkbox-20%22%20disabled%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22fullwidth%22%3E%3Cdiv%20class%3D%22game-block%22%3E%3Cdiv%20data-pw-desk%3D%22leaderboard_atf%22%20id%3D%22pwDeskLbAtf%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cfooter%20class%3D%22game-footer%22%3E%3Ca%20href%3D%22%2F%22%3Echeckbox.toys%3C%2Fa%3E%20%C2%A9%20%3Ca%20href%3D%22https%3A%2F%2Ftoms.toys%22%3Etoms.toys%3C%2Fa%3E%3C%2Ffooter%3E%3C%2Fdiv%3E%3C!--%20Google%20tag%20(gtag.js)%20--%3E%0A%0A%3Cdiv%20id%3D%22adBanner%22%20class%3D%22adLeaderboard%20adBanner%20leaderboard_ad%22%20style%3D%22background-color%3A%20transparent%3B%20height%3A%2010px%3B%20width%3A%2010px%3B%20position%3A%20fixed%3B%20bottom%3A%20-100px%3B%20left%3A%20-100px%3B%22%3E%26nbsp%3B%3C%2Fdiv%3E%3Cdiv%20class%3D%22ad_row%20adbannertop%20ad-mobile%20ad_sidebar%20adpopup%20boxad%20contentAd%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20m5c2t8q%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20v8n6y4p%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20w3p9m6d%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20k2y8f7x%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20q7d5z1l%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20x9a7b3k%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "96468281-11b1-4e27-9793-0de52b5991f9",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "checkbox.toys-wave"
+}

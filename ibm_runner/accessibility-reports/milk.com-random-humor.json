@@ -1,0 +1,164 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 607,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 607,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 577,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 574,
+                "height": 25,
+                "width": 589
+            },
+            "snippet": "<table class=\"footer\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22footer%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 442,
+    "ruleTime": 3,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 28,
+            "elementsViolation": 3,
+            "elementsViolationReview": 3,
+            "violation": 4,
+            "potentialviolation": 0,
+            "recommendation": 25,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 413
+        },
+        "scanTime": 13,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778709857347,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20J.%20Random%20Humor%20Archive%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%3Ch1%3EThe%20J.%20Random%20Humor%20Archive%3C%2Fh1%3E%0AThis%20is%20a%20bunch%20of%20humor%20bits%20I've%20picked%20up%20over%20the%20ages%2C%20mostly%0Aoff%20the%20'net.%0A%0A%3Cp%3E%3C%2Fp%3E%3Chr%3E%3Cp%3E%3C%2Fp%3E%0A%0A%3Cul%3E%0A%3Cli%3E%3Ca%20href%3D%22abbreviation_joke.html%22%3EAbbreviation%20Joke%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22banjo_jokes.html%22%3EBanjo%20Jokes%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22blind_matzah_joke.html%22%3EBlind%2FMatzah%20Joke%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22brain_quote.html%22%3EBrain%20Quote%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22buffalo_joke.html%22%3EBuffalo%20Joke%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22elephant_fable.html%22%3EElephant%20Fable%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22expensive_microwave.html%22%3EExpensive%20Microwave%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22fishing_show.html%22%3EFishing%20Show%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22grape_racing.html%22%3EGrape%20Racing%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22horseshoe_joke.html%22%3EHorseshoe%20Joke%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22if_my_dear.html%22%3EIf%2C%20My%20Dear%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22kaleida_labs_bagel_policy.html%22%3EKaleida%20Labs%20Bagel%20Policy%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22lfo_album.html%22%3ELFO%20Album%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22philosophy_joke.html%22%3EPhilosophy%20Joke%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22quantum_physics_product_warnings.html%22%3EQuantum%20Physics%20Product%20Warnings%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22rancher_joke.html%22%3ERancher%20Joke%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22rhombus.html%22%3ERhombus%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22sublimation_joke.html%22%3ESublimation%20Joke%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22suit_joke.html%22%3ESuit%20Joke%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22torment_telemarketers.html%22%3ETormenting%20Telemarketers%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22trolling_for_taillights.html%22%3ETrolling%20For%20Taillights%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22veggie_joke.html%22%3EVeggie%20Joke%3C%2Fa%3E%0A%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22znn_headbang.html%22%3EZNN%20Headbang%20News%3C%2Fa%3E%0A%3C%2Fli%3E%3C%2Ful%3E%0A%0A%3Ctable%20class%3D%22footer%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%20%20%3Ctd%3ESite%20copyright%20%C2%A9%201994%E2%80%932024%20Dan%20Bornstein.%20All%20rights%20reserved.%3C%2Ftd%3E%0A%20%20%3Ctd%3E%3Ca%20href%3D%22%2F%22%3Emilk.com%3C%2Fa%3E%20%2F%20random-humor%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "49054a4f-58a3-46d0-9af3-e19696f83c30",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "milk.com-random-humor"
+}

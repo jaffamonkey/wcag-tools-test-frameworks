@@ -1,0 +1,100 @@
+{
+    "results": [
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 260,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/img[1]",
+                "aria": "/document[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 23,
+                "height": 0,
+                "width": 154
+            },
+            "snippet": "<img width=\"154\" id=\"logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%22154%5C%22%20id%3D%5C%22logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 93,
+    "ruleTime": 1,
+    "nls": {
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 5,
+            "elementsViolation": 2,
+            "elementsViolationReview": 2,
+            "violation": 2,
+            "potentialviolation": 0,
+            "recommendation": 3,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 88
+        },
+        "scanTime": 7,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778443915640,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EWhoops!%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%3Cdiv%20id%3D%22whoops_wrapper%22%3E%0A%20%20%20%20%3Cimg%20id%3D%22logo%22%20width%3D%22154%22%3E%0A%20%20%20%20%3Ch1%3E%0A%20%20%20%20%20%20%20%20This%20page%20is%20%3Cbr%3Ecurrently%20unavailable.%0A%20%20%20%20%3C%2Fh1%3E%0A%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20The%20Team%20is%20currently%20working%20to%20return%20you%20to%20the%20service%20as%20quickly%20as%20possible.%3Cbr%3E%0A%20%20%20%20%20%20%20%20If%20you%20need%20to%20reach%20us%20immediately%2C%20please%20%3Ca%20href%3D%22https%3A%2F%2Fwww.eventbrite.com%2Fsupport%2Fcontact-us%22%3Econtact%20us%3C%2Fa%3E.%0A%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20We'll%20keep%20you%20updated%20on%20%3Ca%20href%3D%22https%3A%2F%2Fwww.twitter.com%2Feventbritehelp%22%3ETwitter%3C%2Fa%3E.%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.eventbritestatus.com%2F%22%3EEventbrite%20Status%20Page%3C%2Fa%3E%0A%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%3Cp%3E%3Cfont%20size%3D%22-2%22%3EResponse%20code%3A%20429%20Too%20Many%20Requests%20-%20WAF%3C%2Ffont%3E%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "97148205-a341-474b-9f73-45aefc1f3ea0",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.eventbrite.co.uk-blog-category-tools-and-features"
+}

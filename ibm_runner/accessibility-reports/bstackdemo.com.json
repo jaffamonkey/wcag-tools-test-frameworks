@@ -1,0 +1,1149 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 5073,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 5073,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 5073,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 45,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input aria-label=\"Search\" class=\"px-4 py-1 border border-gray-300 rounded-l focus:outline-none\" placeholder=\"Search\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22Search%5C%22%20class%3D%5C%22px-4%20py-1%20border%20border-gray-300%20rounded-l%20focus%3Aoutline-none%5C%22%20placeholder%3D%5C%22Search%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/nav[1]/span[1]",
+                "aria": "/document[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"link\" role does not have a tabbable element",
+            "messageArgs": [
+                "link"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 90,
+                "height": 18,
+                "width": 47
+            },
+            "snippet": "<span role=\"link\" id=\"signin\" class=\"Navbar_link__3Blki logout-link mt-2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22link%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cspan%20role%3D%5C%22link%5C%22%20id%3D%5C%22signin%5C%22%20class%3D%5C%22Navbar_link__3Blki%20logout-link%20mt-2%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22link%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[1]/label[1]/input[1]",
+                "aria": "/document[1]/main[1]/checkbox[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 28,
+                "top": 473,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"Apple\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Apple%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[2]/label[1]/input[1]",
+                "aria": "/document[1]/main[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 28,
+                "top": 493,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"Samsung\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Samsung%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[3]/label[1]/input[1]",
+                "aria": "/document[1]/main[1]/checkbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 28,
+                "top": 513,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"Google\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Google%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[4]/label[1]/input[1]",
+                "aria": "/document[1]/main[1]/checkbox[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_unnamedcheckbox",
+            "message": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 28,
+                "top": 533,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"OnePlus\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20un-named%2C%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22OnePlus%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_unnamedcheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]",
+                "aria": "/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Products' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Products"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 566,
+                "height": 3747,
+                "width": 753
+            },
+            "snippet": "<div class=\"shelf-container\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Products'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22shelf-container%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Products%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[1]",
+                "aria": "/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Products' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Products"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 566,
+                "height": 28,
+                "width": 753
+            },
+            "snippet": "<div style=\"font-size: 1.5em; font-weight: bold; margin: 0.67em 0px;\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Products'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22font-size%3A%201.5em%3B%20font-weight%3A%20bold%3B%20margin%3A%200.67em%200px%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Products%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[2]/div[1]/select[1]",
+                "aria": "/document[1]/main[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <select> has no associated label",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 643,
+                "height": 19,
+                "width": 126
+            },
+            "snippet": "<select>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cselect%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cselect%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[3]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 662,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[4]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 808,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[5]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 954,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[6]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 1100,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[7]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 1246,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[8]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 1392,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[9]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 1538,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[10]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 1684,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[11]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 1830,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[12]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 1976,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[13]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 2122,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[14]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 2268,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[15]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 2414,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[16]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 2560,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[17]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 2706,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[18]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 2852,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[19]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 2998,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[20]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 3144,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[21]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 3290,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[22]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 3436,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[23]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[21]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 3582,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[24]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[22]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 3728,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[25]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[23]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 3874,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[26]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[24]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 4020,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/div[27]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[25]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 4166,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"delete\" type=\"button\" tabindex=\"0\" class=\"MuiButtonBase-root MuiIconButton-root Button \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22delete%5C%22%20type%3D%5C%22button%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[2]/form[1]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5044,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input required=\"\" placeholder=\"Email\" type=\"email\" class=\"inputClr border border-gray-300 p-2 mx-2\" name=\"email-addr\" id=\"newsletter-email\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20required%3D%5C%22%5C%22%20placeholder%3D%5C%22Email%5C%22%20type%3D%5C%22email%5C%22%20class%3D%5C%22inputClr%20border%20border-gray-300%20p-2%20mx-2%5C%22%20name%3D%5C%22email-addr%5C%22%20id%3D%5C%22newsletter-email%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 3059,
+    "ruleTime": 50,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "widget_tabbable_exists": {
+            "0": "Component must have at least one tabbable element",
+            "fail_no_tabbable": "Component with \"{0}\" role does not have a tabbable element"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "input_checkboxes_grouped": {
+            "0": "Related sets of radio buttons or checkboxes should be programmatically grouped",
+            "potential_unnamedcheckbox": "Verify that this un-named, ungrouped checkbox input is not related to other checkboxes"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 44,
+            "elementsViolation": 2,
+            "elementsViolationReview": 37,
+            "violation": 3,
+            "potentialviolation": 35,
+            "recommendation": 8,
+            "potentialrecommendation": 2,
+            "manual": 1,
+            "pass": 3010
+        },
+        "scanTime": 125,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778707085916,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EStackDemo%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cdiv%20id%3D%22__next%22%3E%3Cdiv%3E%3Cdiv%20class%3D%22App%22%3E%3Cdiv%20class%3D%22Navbar_root__2kbI9%22%3E%3Cdiv%20class%3D%22mx-auto%20max-w-8xl%20px-6%22%3E%3Cdiv%20class%3D%22flex%20justify-between%20align-center%20flex-row%20py-4%20md%3Apy-6%20%3Apy-6%20relative%22%3E%3Cdiv%20class%3D%22flex%20flex-1%20items-center%22%3E%3Ca%20class%3D%22Navbar_logo__26S5Y%22%20href%3D%22%2F%22%3E%3Cimg%20class%3D%22Navbar_logo__image__3Blki%22%20alt%3D%22logo%22%20style%3D%22width%3A%20265px%3B%20height%3A%20auto%3B%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22space-x-4%20ml-6%20menu%22%20style%3D%22display%3A%20grid%3B%20grid-template-columns%3A%20repeat(3%2C%20auto)%3B%20gap%3A%201rem%3B%22%3E%3Ca%20id%3D%22favourites%22%20class%3D%22Navbar_link__3Blki%20menu-item%22%20href%3D%22%2Ffavourites%22%20style%3D%22order%3A%203%3B%22%3E%3Cstrong%3EFavourites%3C%2Fstrong%3E%3C%2Fa%3E%3Ca%20id%3D%22orders%22%20class%3D%22Navbar_link__3Blki%20menu-item%22%20href%3D%22%2Forders%22%20style%3D%22order%3A%202%3B%22%3E%3Cstrong%3EOrders%3C%2Fstrong%3E%3C%2Fa%3E%3Ca%20id%3D%22offers%22%20class%3D%22Navbar_link__3Blki%20menu-item%22%20href%3D%22%2Foffers%22%20style%3D%22order%3A%201%3B%22%3E%3Cstrong%3EOffers%3C%2Fstrong%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22flex%20flex-1%20justify-end%20align-center%20space-x-8%22%3E%3Cdiv%20class%3D%22flex%20items-center%22%3E%3Cinput%20type%3D%22text%22%20placeholder%3D%22Search%22%20class%3D%22px-4%20py-1%20border%20border-gray-300%20rounded-l%20focus%3Aoutline-none%22%20aria-label%3D%22Search%22%3E%3Cbutton%20class%3D%22px-4%20py-1%20bg-gray-100%20border%20border-l-0%20border-gray-300%22%20role%3D%22button%22%20style%3D%22display%3A%20flex%3B%20align-items%3A%20center%3B%20justify-content%3A%20center%3B%20cursor%3A%20pointer%3B%22%3E%3Cimg%20class%3D%22m-auto%20h-56%20%22%20alt%3D%22flowchart%20main%22%20style%3D%22width%3A%2017px%3B%20height%3A%2017px%3B%20margin-right%3A%207px%3B%22%3ESearch%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22UserNav_root__343id%20align-center%20pt-1%22%3E%3Cspan%20class%3D%22Navbar_link__3Blki%20logout-link%20mt-2%22%20id%3D%22signin%22%20role%3D%22link%22%3ESign%20In%3C%2Fspan%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cmain%20style%3D%22padding%3A%2020px%202%25%3B%20margin%3A%200px%20auto%3B%22%3E%3Ca%20href%3D%22%23%22%3E%3Cimg%20class%3D%22m-auto%20h-56%20%22%20alt%3D%22banner%20main%22%20style%3D%22min-width%3A%20750px%3B%20min-height%3A%20280px%3B%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22filters%22%3E%3Ch4%20class%3D%22title%22%3EVendors%3A%3C%2Fh4%3E%3Cdiv%20class%3D%22filters-available-size%22%3E%3Clabel%3E%3Cinput%20type%3D%22checkbox%22%20value%3D%22Apple%22%3E%3Cspan%20class%3D%22checkmark%22%3EApple%3C%2Fspan%3E%3C%2Flabel%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22filters-available-size%22%3E%3Clabel%3E%3Cinput%20type%3D%22checkbox%22%20value%3D%22Samsung%22%3E%3Cspan%20class%3D%22checkmark%22%3ESamsung%3C%2Fspan%3E%3C%2Flabel%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22filters-available-size%22%3E%3Clabel%3E%3Cinput%20type%3D%22checkbox%22%20value%3D%22Google%22%3E%3Cspan%20class%3D%22checkmark%22%3EGoogle%3C%2Fspan%3E%3C%2Flabel%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22filters-available-size%22%3E%3Clabel%3E%3Cinput%20type%3D%22checkbox%22%20value%3D%22OnePlus%22%3E%3Cspan%20class%3D%22checkmark%22%3EOnePlus%3C%2Fspan%3E%3C%2Flabel%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-container%22%3E%3Cdiv%20style%3D%22font-size%3A%201.5em%3B%20font-weight%3A%20bold%3B%20margin%3A%200.67em%200px%3B%22%3EProducts%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-container-header%22%20style%3D%22margin-right%3A%2050px%3B%22%3E%3Csmall%20class%3D%22products-found%22%3E%3Ch3%3E25%20Product(s)%20found.%3C%2Fh3%3E%3C%2Fsmall%3E%3Cdiv%20class%3D%22sort%22%3EOrder%20by%3Cselect%3E%3Coption%20value%3D%22%22%3ESelect%3C%2Foption%3E%3Coption%20value%3D%22lowestprice%22%3ELowest%20to%20highest%3C%2Foption%3E%3Coption%20value%3D%22highestprice%22%3EHighest%20to%20lowest%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22clearfix%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22iPhone12-device-info.png%22%20id%3D%221%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22img%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EiPhone%2012%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E799%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%209%20x%3C%2Fspan%3E%3Cb%3E%20%24%2088.78%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22iPhone12-device-info.png%22%20id%3D%222%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22img%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EiPhone%2012%20Mini%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E699%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%209%20x%3C%2Fspan%3E%3Cb%3E%20%24%2077.67%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22iPhone12-device-info.png%22%20id%3D%223%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22img%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EiPhone%2012%20Pro%20Max%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E1099%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%209%20x%3C%2Fspan%3E%3Cb%3E%20%24%20122.11%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22iPhone12Pro-device-info.png%22%20id%3D%224%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22img%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EiPhone%2012%20Pro%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E999%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%205%20x%3C%2Fspan%3E%3Cb%3E%20%24%20199.80%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22iPhone11-device-info.png%22%20id%3D%225%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22img%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EiPhone%2011%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E599%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%208%20x%3C%2Fspan%3E%3Cb%3E%20%24%2074.88%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22infocardiphone11Pro.png%22%20id%3D%226%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22img%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EiPhone%2011%20Pro%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E699%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%203%20x%3C%2Fspan%3E%3Cb%3E%20%24%20233.00%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22infocard.png%22%20id%3D%227%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22iPhone%20XS%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EiPhone%20XS%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E549%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%204%20x%3C%2Fspan%3E%3Cb%3E%20%24%20137.25%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22infoiphoneXR.png%22%20id%3D%228%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22iPhone%20XR%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EiPhone%20XR%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E499%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%205%20x%3C%2Fspan%3E%3Cb%3E%20%24%2099.80%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22infocard.png%22%20id%3D%229%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22iPhone%20XS%20Max%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EiPhone%20XS%20Max%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E649%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%207%20x%3C%2Fspan%3E%3Cb%3E%20%24%2092.71%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22samsung-S20-device-info.png%22%20id%3D%2210%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22Galaxy%20S20%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EGalaxy%20S20%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E999%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%209%20x%3C%2Fspan%3E%3Cb%3E%20%24%20111.00%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22samsung-S20%2B-device-info.png%22%20id%3D%2211%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22Galaxy%20S20%2B%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EGalaxy%20S20%2B%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E1199%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%209%20x%3C%2Fspan%3E%3Cb%3E%20%24%20133.22%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22samsung-S20Ultra-device-info.png%22%20id%3D%2212%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22Galaxy%20S20%20Ultra%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EGalaxy%20S20%20Ultra%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E1399%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%2012%20x%3C%2Fspan%3E%3Cb%3E%20%24%20116.58%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22samsung-S10-device-info.png%22%20id%3D%2213%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22Galaxy%20S10%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EGalaxy%20S10%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E899%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%205%20x%3C%2Fspan%3E%3Cb%3E%20%24%20179.80%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22samsung-s9-device-info.png%22%20id%3D%2214%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22Galaxy%20S9%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EGalaxy%20S9%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E699%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%205%20x%3C%2Fspan%3E%3Cb%3E%20%24%20139.80%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22Note20-device-info.png%22%20id%3D%2215%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22Galaxy%20Note%2020%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EGalaxy%20Note%2020%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E999%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%207%20x%3C%2Fspan%3E%3Cb%3E%20%24%20142.71%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22Note20Ultra-device-info.png%22%20id%3D%2216%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22Galaxy%20Note%2020%20Ultra%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EGalaxy%20Note%2020%20Ultra%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E1299%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%207%20x%3C%2Fspan%3E%3Cb%3E%20%24%20185.57%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22GooglePixel4-device-info.png%22%20id%3D%2217%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22Pixel%204%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EPixel%204%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E899%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%205%20x%3C%2Fspan%3E%3Cb%3E%20%24%20179.80%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22GooglePixel3-device-info.png%22%20id%3D%2218%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22Pixel%203%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EPixel%203%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E599%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%205%20x%3C%2Fspan%3E%3Cb%3E%20%24%20119.80%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22device-info.jpg%22%20id%3D%2219%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22Pixel%202%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EPixel%202%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E399%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%203%20x%3C%2Fspan%3E%3Cb%3E%20%24%20133.00%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22OnePlus8-device-info.png%22%20id%3D%2220%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22One%20Plus%208%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EOne%20Plus%208%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E799%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%206%20x%3C%2Fspan%3E%3Cb%3E%20%24%20133.17%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22OnePlus8-device-info.png%22%20id%3D%2221%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22One%20Plus%208T%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EOne%20Plus%208T%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E899%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%206%20x%3C%2Fspan%3E%3Cb%3E%20%24%20149.83%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22OnePlus8-device-info.png%22%20id%3D%2222%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22One%20Plus%208%20Pro%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EOne%20Plus%208%20Pro%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E899%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%206%20x%3C%2Fspan%3E%3Cb%3E%20%24%20149.83%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22OnePlus7T-DeviceInfo.png%22%20id%3D%2223%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22One%20Plus%207T%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EOne%20Plus%207T%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E599%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%206%20x%3C%2Fspan%3E%3Cb%3E%20%24%2099.83%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22oneplus7device-info.png%22%20id%3D%2224%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22One%20Plus%207%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EOne%20Plus%207%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E499%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%203%20x%3C%2Fspan%3E%3Cb%3E%20%24%20166.33%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item%22%20data-sku%3D%22Oneplus6T_infocard.png%22%20id%3D%2225%22%3E%3Cdiv%20class%3D%22shelf-stopper%22%3E%3Cbutton%20class%3D%22MuiButtonBase-root%20MuiIconButton-root%20Button%20%22%20tabindex%3D%220%22%20type%3D%22button%22%20aria-label%3D%22delete%22%3E%3Cspan%20class%3D%22MuiIconButton-label%22%3E%3Csvg%20class%3D%22MuiSvgIcon-root%20Icon%22%20focusable%3D%22false%22%20viewBox%3D%220%200%2024%2024%22%20aria-hidden%3D%22true%22%3E%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3Cspan%20class%3D%22MuiTouchRipple-root%22%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__thumb%22%3E%3Cimg%20alt%3D%22One%20Plus%206T%22%20style%3D%22height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3Cp%20class%3D%22shelf-item__title%22%3EOne%20Plus%206T%3C%2Fp%3E%3Cdiv%20class%3D%22shelf-item__price%22%3E%3Cdiv%20class%3D%22val%22%3E%3Csmall%3E%24%3C%2Fsmall%3E%3Cb%3E429%3C%2Fb%3E%3Cspan%3E.00%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22installment%22%3E%3Cspan%3Eor%203%20x%3C%2Fspan%3E%3Cb%3E%20%24%20143.00%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22shelf-item__buy-btn%22%3EAdd%20to%20cart%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22clearfix%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22clearfix%22%3E%3C%2Fdiv%3E%3C%2Fmain%3E%3Cdiv%20class%3D%22float-cart%22%3E%3Cspan%20class%3D%22bag%20bag--float-cart-closed%22%3E%3Cspan%20class%3D%22bag__quantity%22%3E0%3C%2Fspan%3E%3C%2Fspan%3E%3Cdiv%20class%3D%22float-cart__content%22%3E%3Cdiv%20class%3D%22float-cart__header%22%3E%3Cspan%20class%3D%22bag%22%3E%3Cspan%20class%3D%22bag__quantity%22%3E0%3C%2Fspan%3E%3C%2Fspan%3E%3Cspan%20class%3D%22header-title%22%3EBag%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22float-cart__shelf-container%22%3E%3Cp%20class%3D%22shelf-empty%22%3EAdd%20some%20products%20in%20the%20bag%20%3Cbr%3E%3A)%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22float-cart__footer%22%3E%3Cdiv%20class%3D%22sub%22%3ESUBTOTAL%3C%2Fdiv%3E%3Cdiv%20class%3D%22sub-price%22%3E%3Cp%20class%3D%22sub-price__val%22%3E%24%200.00%3C%2Fp%3E%3Csmall%20class%3D%22sub-price__installment%22%3E%3C%2Fsmall%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22buy-btn%22%3EContinue%20Shopping%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%3E%3Chr%20style%3D%22padding%3A%200px%3B%20margin%3A%200px%3B%22%3E%3Cimg%20class%3D%22m-auto%20h-56%20%22%20alt%3D%22flowchart%20main%22%20style%3D%22min-width%3A%20860px%3B%20min-height%3A%20320px%3B%22%3E%3Cdiv%20class%3D%22gradient-fail-bg%20example%22%3EExclusive%20offers%20coming%20soon%3C%2Fdiv%3E%3Cdiv%20class%3D%22mx-auto%20max-w-8xl%20px-6%20%22%20style%3D%22justify-content%3A%20space-between%3B%22%3E%3Cdiv%20class%3D%22footer-section-wrapper%22%20id%3D%22custom-footer%22%3E%3Cdiv%20class%3D%22container%22%3E%3Cdiv%20class%3D%22footer-links%22%3E%3Ca%20href%3D%22%2Foffers%22%3EOffers%3C%2Fa%3E%3Cbr%3E%3Ca%20href%3D%22%2Fcontact%22%3EContact%20Us%3C%2Fa%3E%3Cbr%3E%3Ca%20href%3D%22%2Fprivacy%22%3EPrivacy%20Policy%3C%2Fa%3E%3Cbr%3E%3Ca%20href%3D%22%2Fcareers%22%3ECareers%3C%2Fa%3E%3C%2Fdiv%3E%3Cul%3E%3Cli%3EA%20single%2C%20simple%20list%20item.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3E%C2%A9%202026%20BrowserStack%20Demo%3C%2Fp%3E%3C%2Fdiv%3E%3Cspan%20class%3D%22block%20absolute%22%20style%3D%22right%3A%2016px%3B%22%3EPrivacy%20Policy%20%3Ca%20href%3D%22%2F%22%3ERead%20More%3C%2Fa%3E%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22py-12%20flex%20flex-col%20md%3Aflex-row%20justify-between%20items-center%20space-y-4%22%3E%3Cdiv%20class%3D%22%20relative%22%20style%3D%22width%3A%2040%25%3B%22%3E%3C%2Fdiv%3E%3Cform%3E%3Cinput%20id%3D%22newsletter-email%22%20name%3D%22email-addr%22%20class%3D%22inputClr%20border%20border-gray-300%20p-2%20mx-2%22%20type%3D%22email%22%20placeholder%3D%22Email%22%20required%3D%22%22%3E%3Cbutton%20type%3D%22submit%22%20class%3D%22bg-blue-500%20text-white%20p-2%22%3ESubscribe%20to%20Newsletter%3C%2Fbutton%3E%3C%2Fform%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "84e1d26b-10a5-43eb-a3dd-485df6e881b1",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "bstackdemo.com"
+}

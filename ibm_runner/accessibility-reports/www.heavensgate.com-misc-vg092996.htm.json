@@ -1,0 +1,1222 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 17829,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 17829,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 17802,
+                "width": 784
+            },
+            "snippet": "<body alink=\"#990066\" vlink=\"#993366\" link=\"#009933\" text=\"#000000\" bgcolor=\"#ffffff\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20alink%3D%5C%22%23990066%5C%22%20vlink%3D%5C%22%23993366%5C%22%20link%3D%5C%22%23009933%5C%22%20text%3D%5C%22%23000000%5C%22%20bgcolor%3D%5C%22%23ffffff%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/h1[1]/font[1]",
+                "aria": "/document[1]/heading[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 149,
+                "top": 31,
+                "height": 73,
+                "width": 504
+            },
+            "snippet": "<font color=\"#cc0000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23cc0000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/h1[1]/font[1]/br[1]",
+                "aria": "/document[1]/heading[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'bevor sie erneuert wird !' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "bevor sie erneuert wird !"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 652,
+                "top": 31,
+                "height": 36,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'bevor%20sie%20erneuert%20wird%20!'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22bevor%20sie%20erneuert%20wird%20!%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 87,
+                "top": 135,
+                "height": 387,
+                "width": 628
+            },
+            "snippet": "<table width=\"80%\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%2280%25%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[1]/tbody[1]/tr[1]/td[1]/em[1]/font[1]/br[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text '29. September 1996' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "29. September 1996"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 661,
+                "top": 139,
+                "height": 27,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'29.%20September%201996'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%2229.%20September%201996%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'DO', 'DO', 'TI und DO', 'UFO Pa ...  oder 1991-1992, mit dem Namen '",
+            "messageArgs": [
+                "'DO', 'DO', 'TI und DO', 'UFO Pa ...  oder 1991-1992, mit dem Namen '"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 210,
+                "height": 293,
+                "width": 618
+            },
+            "snippet": "<font size=\"4\" color=\"#000066\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'DO'%2C%20'DO'%2C%20'TI%20und%20DO'%2C%20'UFO%20Pa%20...%20%20oder%201991-1992%2C%20mit%20dem%20Namen%20'%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%224%5C%22%20color%3D%5C%22%23000066%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'DO'%2C%20'DO'%2C%20'TI%20und%20DO'%2C%20'UFO%20Pa%20...%20%20oder%201991-1992%2C%20mit%20dem%20Namen%20'%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[2]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 87,
+                "top": 522,
+                "height": 2166,
+                "width": 628
+            },
+            "snippet": "<table border=\"0\" width=\"80%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20border%3D%5C%220%5C%22%20width%3D%5C%2280%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[2]/tbody[1]/tr[1]/td[1]/font[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Gut, aber wer bist du, daß du soetwas behaupten kannst?'",
+            "messageArgs": [
+                "'Gut, aber wer bist du, daß du soetwas behaupten kannst?'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 526,
+                "height": 2142,
+                "width": 622
+            },
+            "snippet": "<font size=\"4\" color=\"#000066\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Gut%2C%20aber%20wer%20bist%20du%2C%20da%C3%9F%20du%20soetwas%20behaupten%20kannst%3F'%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%224%5C%22%20color%3D%5C%22%23000066%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Gut%2C%20aber%20wer%20bist%20du%2C%20da%C3%9F%20du%20soetwas%20behaupten%20kannst%3F'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[2]/tbody[1]/tr[1]/td[1]/font[1]/p[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Letzte Chance den Planeten Erde ... akuieren bevor er erneuert wird'",
+            "messageArgs": [
+                "'Letzte Chance den Planeten Erde ... akuieren bevor er erneuert wird'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 732,
+                "height": 336,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Letzte%20Chance%20den%20Planeten%20Erde%20...%20akuieren%20bevor%20er%20erneuert%20wird'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Letzte%20Chance%20den%20Planeten%20Erde%20...%20akuieren%20bevor%20er%20erneuert%20wird'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[2]/tbody[1]/tr[1]/td[1]/font[1]/p[7]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Ich werde dir etwas über ein Kö ...  Moment den Schlüssel dazu hat.'",
+            "messageArgs": [
+                "'Ich werde dir etwas über ein Kö ...  Moment den Schlüssel dazu hat.'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 2436,
+                "height": 231,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Ich%20werde%20dir%20etwas%20%C3%BCber%20ein%20K%C3%B6%20...%20%20Moment%20den%20Schl%C3%BCssel%20dazu%20hat.'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Ich%20werde%20dir%20etwas%20%C3%BCber%20ein%20K%C3%B6%20...%20%20Moment%20den%20Schl%C3%BCssel%20dazu%20hat.'%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]",
+                "aria": "/document[1]/table[3]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 87,
+                "top": 2688,
+                "height": 14929,
+                "width": 628
+            },
+            "snippet": "<table border=\"0\" width=\"80%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20border%3D%5C%220%5C%22%20width%3D%5C%2280%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Diese Welt (das Himmelreich) is ... igene Gefolgsleute führen kann.'",
+            "messageArgs": [
+                "'Diese Welt (das Himmelreich) is ... igene Gefolgsleute führen kann.'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 2692,
+                "height": 14826,
+                "width": 622
+            },
+            "snippet": "<font size=\"4\" color=\"#000066\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Diese%20Welt%20(das%20Himmelreich)%20is%20...%20igene%20Gefolgsleute%20f%C3%BChren%20kann.'%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%224%5C%22%20color%3D%5C%22%23000066%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Diese%20Welt%20(das%20Himmelreich)%20is%20...%20igene%20Gefolgsleute%20f%C3%BChren%20kann.'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[3]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'aliens, weil man sie auch als ' ... rdische), böse ', 'space aliens'",
+            "messageArgs": [
+                "'aliens, weil man sie auch als ' ... rdische), böse ', 'space aliens'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 3585,
+                "height": 315,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'aliens%2C%20weil%20man%20sie%20auch%20als%20'%20...%20rdische)%2C%20b%C3%B6se%20'%2C%20'space%20aliens'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'aliens%2C%20weil%20man%20sie%20auch%20als%20'%20...%20rdische)%2C%20b%C3%B6se%20'%2C%20'space%20aliens'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[5]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'schnell undgeradeaus'",
+            "messageArgs": [
+                "'schnell undgeradeaus'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 4041,
+                "height": 273,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'schnell%20undgeradeaus'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'schnell%20undgeradeaus'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[7]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Nun, das macht keinenSinn.\", 'D ... es Lebens einesKindes gechieht.'",
+            "messageArgs": [
+                "\"Nun, das macht keinenSinn.\", 'D ... es Lebens einesKindes gechieht.'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 4602,
+                "height": 525,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Nun%2C%20das%20macht%20keinenSinn.%5C%22%2C%20'D%20...%20es%20Lebens%20einesKindes%20gechieht.'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Nun%2C%20das%20macht%20keinenSinn.%5C%22%2C%20'D%20...%20es%20Lebens%20einesKindes%20gechieht.'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[8]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Du meinst, daß du und TI 1972 i ... per gekommen seid, so seid ihr '",
+            "messageArgs": [
+                "'Du meinst, daß du und TI 1972 i ... per gekommen seid, so seid ihr '"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 5145,
+                "height": 504,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Du%20meinst%2C%20da%C3%9F%20du%20und%20TI%201972%20i%20...%20per%20gekommen%20seid%2C%20so%20seid%20ihr%20'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Du%20meinst%2C%20da%C3%9F%20du%20und%20TI%201972%20i%20...%20per%20gekommen%20seid%2C%20so%20seid%20ihr%20'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[12]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Oh ja, wir gehengelegentlich zu ... ertrauen. Das ist mein Glauben.'",
+            "messageArgs": [
+                "'Oh ja, wir gehengelegentlich zu ... ertrauen. Das ist mein Glauben.'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 6624,
+                "height": 504,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Oh%20ja%2C%20wir%20gehengelegentlich%20zu%20...%20ertrauen.%20Das%20ist%20mein%20Glauben.'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Oh%20ja%2C%20wir%20gehengelegentlich%20zu%20...%20ertrauen.%20Das%20ist%20mein%20Glauben.'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[13]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Ich komme aus dem Himmelreich.\"",
+            "messageArgs": [
+                "\"Ich komme aus dem Himmelreich.\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 7146,
+                "height": 378,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Ich%20komme%20aus%20dem%20Himmelreich.%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Ich%20komme%20aus%20dem%20Himmelreich.%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[13]/i[4]/b[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Ich bin aus dem Himmelreich.'",
+            "messageArgs": [
+                "'Ich bin aus dem Himmelreich.'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 140,
+                "top": 7420,
+                "height": 20,
+                "width": 237
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Ich%20bin%20aus%20dem%20Himmelreich.'%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Ich%20bin%20aus%20dem%20Himmelreich.'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[14]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Ich bin vom Himmelreich, ich ka ... elfen ins Himmelreich zu gehen,'",
+            "messageArgs": [
+                "'Ich bin vom Himmelreich, ich ka ... elfen ins Himmelreich zu gehen,'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 7542,
+                "height": 273,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Ich%20bin%20vom%20Himmelreich%2C%20ich%20ka%20...%20elfen%20ins%20Himmelreich%20zu%20gehen%2C'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Ich%20bin%20vom%20Himmelreich%2C%20ich%20ka%20...%20elfen%20ins%20Himmelreich%20zu%20gehen%2C'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[15]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Dies isteure Chance. Ich bin hi ... hen führen. Aber er sagte auch,'",
+            "messageArgs": [
+                "'Dies isteure Chance. Ich bin hi ... hen führen. Aber er sagte auch,'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 7833,
+                "height": 420,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Dies%20isteure%20Chance.%20Ich%20bin%20hi%20...%20hen%20f%C3%BChren.%20Aber%20er%20sagte%20auch%2C'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Dies%20isteure%20Chance.%20Ich%20bin%20hi%20...%20hen%20f%C3%BChren.%20Aber%20er%20sagte%20auch%2C'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[15]/i[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Ich bin aus dem Himmelreich. Geht und erzähltdie guten Nachrichten'",
+            "messageArgs": [
+                "'Ich bin aus dem Himmelreich. Geht und erzähltdie guten Nachrichten'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 7876,
+                "height": 20,
+                "width": 515
+            },
+            "snippet": "<i>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Ich%20bin%20aus%20dem%20Himmelreich.%20Geht%20und%20erz%C3%A4hltdie%20guten%20Nachrichten'%22%2C%22snippet%22%3A%22%3Ci%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Ich%20bin%20aus%20dem%20Himmelreich.%20Geht%20und%20erz%C3%A4hltdie%20guten%20Nachrichten'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[15]/i[2]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Geht und erzählt dieguten Nachrichten, daß das Himmelreich hier ist'",
+            "messageArgs": [
+                "'Geht und erzählt dieguten Nachrichten, daß das Himmelreich hier ist'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 7897,
+                "height": 41,
+                "width": 592
+            },
+            "snippet": "<i>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Geht%20und%20erz%C3%A4hlt%20dieguten%20Nachrichten%2C%20da%C3%9F%20das%20Himmelreich%20hier%20ist'%22%2C%22snippet%22%3A%22%3Ci%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Geht%20und%20erz%C3%A4hlt%20dieguten%20Nachrichten%2C%20da%C3%9F%20das%20Himmelreich%20hier%20ist'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[15]/b[2]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Verlasse alles und komm und folgemir'",
+            "messageArgs": [
+                "'Verlasse alles und komm und folgemir'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 258,
+                "top": 8023,
+                "height": 20,
+                "width": 309
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Verlasse%20alles%20und%20komm%20und%20folgemir'%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Verlasse%20alles%20und%20komm%20und%20folgemir'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[18]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Kleideranzug\", 'böse', 'Kleider ... bereits begonnen zu sagen, wie '",
+            "messageArgs": [
+                "\"Kleideranzug\", 'böse', 'Kleider ... bereits begonnen zu sagen, wie '"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 9105,
+                "height": 483,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Kleideranzug%5C%22%2C%20'b%C3%B6se'%2C%20'Kleider%20...%20bereits%20begonnen%20zu%20sagen%2C%20wie%20'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Kleideranzug%5C%22%2C%20'b%C3%B6se'%2C%20'Kleider%20...%20bereits%20begonnen%20zu%20sagen%2C%20wie%20'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[28]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[28]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Was ist los mit euch Jungs? Sei ... twas, was manüblicherweise als '",
+            "messageArgs": [
+                "'Was ist los mit euch Jungs? Sei ... twas, was manüblicherweise als '"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 12393,
+                "height": 462,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Was%20ist%20los%20mit%20euch%20Jungs%3F%20Sei%20...%20twas%2C%20was%20man%C3%BCblicherweise%20als%20'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Was%20ist%20los%20mit%20euch%20Jungs%3F%20Sei%20...%20twas%2C%20was%20man%C3%BCblicherweise%20als%20'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[28]/i[3]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[28]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Ich möchte in derRichtung gehen ... nGott zu kommen in dieser Zeit.'",
+            "messageArgs": [
+                "'Ich möchte in derRichtung gehen ... nGott zu kommen in dieser Zeit.'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 12772,
+                "height": 83,
+                "width": 614
+            },
+            "snippet": "<i>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Ich%20m%C3%B6chte%20in%20derRichtung%20gehen%20...%20nGott%20zu%20kommen%20in%20dieser%20Zeit.'%22%2C%22snippet%22%3A%22%3Ci%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Ich%20m%C3%B6chte%20in%20derRichtung%20gehen%20...%20nGott%20zu%20kommen%20in%20dieser%20Zeit.'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[29]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[29]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Kults, oder in in dieser Art vo ... Welt verdorben ist. Sie sagen, '",
+            "messageArgs": [
+                "'Kults, oder in in dieser Art vo ... Welt verdorben ist. Sie sagen, '"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 12873,
+                "height": 210,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Kults%2C%20oder%20in%20in%20dieser%20Art%20vo%20...%20Welt%20verdorben%20ist.%20Sie%20sagen%2C%20'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Kults%2C%20oder%20in%20in%20dieser%20Art%20vo%20...%20Welt%20verdorben%20ist.%20Sie%20sagen%2C%20'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[30]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[30]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Sielieben mich mehr als diese W ... ung zu eineranderen Zeit geben.'",
+            "messageArgs": [
+                "'Sielieben mich mehr als diese W ... ung zu eineranderen Zeit geben.'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 13101,
+                "height": 399,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Sielieben%20mich%20mehr%20als%20diese%20W%20...%20ung%20zu%20eineranderen%20Zeit%20geben.'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Sielieben%20mich%20mehr%20als%20diese%20W%20...%20ung%20zu%20eineranderen%20Zeit%20geben.'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[32]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[32]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Junge, du möchtest mir wirklichAngst machen, nicht wahr?'",
+            "messageArgs": [
+                "'Junge, du möchtest mir wirklichAngst machen, nicht wahr?'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 13956,
+                "height": 315,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Junge%2C%20du%20m%C3%B6chtest%20mir%20wirklichAngst%20machen%2C%20nicht%20wahr%3F'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Junge%2C%20du%20m%C3%B6chtest%20mir%20wirklichAngst%20machen%2C%20nicht%20wahr%3F'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[33]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[33]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Letzte Chance den Planeten Erde zu evakuieren'",
+            "messageArgs": [
+                "'Letzte Chance den Planeten Erde zu evakuieren'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 14289,
+                "height": 189,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Letzte%20Chance%20den%20Planeten%20Erde%20zu%20evakuieren'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Letzte%20Chance%20den%20Planeten%20Erde%20zu%20evakuieren'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[34]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[34]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Religionen', 'Frieden auf Erden'",
+            "messageArgs": [
+                "'Religionen', 'Frieden auf Erden'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 14496,
+                "height": 441,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Religionen'%2C%20'Frieden%20auf%20Erden'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Religionen'%2C%20'Frieden%20auf%20Erden'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[35]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[35]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Ich binhier. Ich bin von der Ex ... ofort die große Mehrheit sagt, '",
+            "messageArgs": [
+                "'Ich binhier. Ich bin von der Ex ... ofort die große Mehrheit sagt, '"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 14955,
+                "height": 210,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Ich%20binhier.%20Ich%20bin%20von%20der%20Ex%20...%20ofort%20die%20gro%C3%9Fe%20Mehrheit%20sagt%2C%20'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Ich%20binhier.%20Ich%20bin%20von%20der%20Ex%20...%20ofort%20die%20gro%C3%9Fe%20Mehrheit%20sagt%2C%20'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[38]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[38]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: 'Waswürde geschehen wenn jeder i ... en würde undkommt und folgt DO?'",
+            "messageArgs": [
+                "'Waswürde geschehen wenn jeder i ... en würde undkommt und folgt DO?'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 15870,
+                "height": 399,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'Wasw%C3%BCrde%20geschehen%20wenn%20jeder%20i%20...%20en%20w%C3%BCrde%20undkommt%20und%20folgt%20DO%3F'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'Wasw%C3%BCrde%20geschehen%20wenn%20jeder%20i%20...%20en%20w%C3%BCrde%20undkommt%20und%20folgt%20DO%3F'%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[2]/img[1]",
+                "aria": "/document[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 400,
+                "top": 17648,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[3]/img[1]",
+                "aria": "/document[1]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 400,
+                "top": 17682,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "heading_markup_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/h3[1]",
+                "aria": "/document[1]/heading[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that the heading element is a genuine heading",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 17705,
+                "height": 105,
+                "width": 784
+            },
+            "snippet": "<h3>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/heading_markup_misuse.html#%7B%22message%22%3A%22Verify%20that%20the%20heading%20element%20is%20a%20genuine%20heading%22%2C%22snippet%22%3A%22%3Ch3%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22heading_markup_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1410,
+    "ruleTime": 20,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "heading_markup_misuse": {
+            "0": "Heading elements must not be used for presentation",
+            "Potential_1": "Verify that the heading element is a genuine heading"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 42,
+            "elementsViolation": 7,
+            "elementsViolationReview": 38,
+            "violation": 8,
+            "potentialviolation": 31,
+            "recommendation": 6,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 1365
+        },
+        "scanTime": 81,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778712115676,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ELetzte%20Chance%20die%20Erde%20zu%20verlassen%2C%20bevor%20sie%20erneuert%20wird%20!%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23ffffff%22%20text%3D%22%23000000%22%20link%3D%22%23009933%22%20vlink%3D%22%23993366%22%20alink%3D%22%23990066%22%3E%0A%0A%0A%0A%3Ccenter%3E%0A%3Chr%20width%3D%2280%25%22%20size%3D%221%22%3E%0A%3Ch1%3E%0A%3Cfont%20color%3D%22%23cc0000%22%3E%0ALetzte%20Chance%20die%20Erde%20zu%20verlassen%2C%0A%3Cbr%3E%0Abevor%20sie%20erneuert%20wird%20!%0A%3C%2Ffont%3E%0A%3C%2Fh1%3E%0A%3Chr%20width%3D%2280%25%22%20size%3D%221%22%3E%0A%0A%3Ctable%20border%3D%220%22%20width%3D%2280%25%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%3Ctd%3E%0A%3Cem%3E%3Cfont%20color%3D%22%23990000%22%20size%3D%225%22%3E%0AEine%20%C3%BCbersetzte%2C%20bearbeitete%20Abschrift%20einer%20Videoaufnahme%3Cbr%3E%0A29.%20September%201996%0A%3C%2Ffont%3E%3C%2Fem%3E%0A%3Cp%3E%0A%3Cfont%20color%3D%22%23000066%22%20size%3D%224%22%3E%0ADies%20ist%20der%2029.%20September%201996.%20Ich%20bin%20DO.%20DO%20sagt%20wahrscheinlich%20vielen%0ALeuten%20gar%20nichts.%20Den%20Leuten%20die%20schon%20etwas%20von%20'DO'%20geh%C3%B6rt%20haben%2C%20m%C3%B6chte%0Aich%20sagen%2C%20da%C3%9F%20'DO'%20sich%20auf%20'TI%20und%20DO'%20bezieht%2C%20die%20als%20'UFO%20Paar'%20bekannt%0Awaren%2C%20die%20von%20den%20Medien%20als%20'UFO%20Kult'%20bezeichnet%20wurden%20und%20die%201975%20f%C3%BCr%0Aetwas%20Wirbel%20in%20den%20Nachrichten%20gesorgt%20haben%20und%20kurz%20darauf%20untergetaucht%20%0Awaren.%20Einige%20von%20euch%20k%C3%B6nnten%20sogar%20von%20unseren%20Bem%C3%BChungen%20geh%C3%B6rt%20haben%2C%20%0Adie%20wir%20periodisch%20zwischen%201975%20und%20jetzt%20unternommen%20haben%2C%20um%20zu%20versuchen%20%0Aein%20wenig%20von%20dem%20was%20wir%20gelernt%20haben%20mit%20der%20%C3%96ffentlichkeit%20zu%20teilen.%0AWir%20haben%20eine%20Erkl%C3%A4rung%20ver%C3%B6ffentlicht%2C%20genannt%20'88%20Update%2C%20und%20%0Aanschlie%C3%9Fend%20eine%20Serie%20von%20Beitr%C3%A4gen%20auf%20Videob%C3%A4ndern%20aufgenommen%2C%20ich%0Aglaube%20es%20war%20im%20Jahr%201992%2C%20oder%201991-1992%2C%20mit%20dem%20Namen%20'Jenseits%20der%0AMenschheit'.%20%20Nun%2C%20heute%20haben%20wir%20ein%20etwas%20verschiedenes%2C%20dringendes%20Anliegen.%20Es%20ist%0Adringend%20f%C3%BCr%20mich%20und%20es%20ist%20dringend%20f%C3%BCr%20die%0AStudenten%20die%20vor%20mir%20sitzen.%20Der%20Grund%20weshalb%20wir%20zu%20euch%20sprechen%20ist%2C%0Aweil%20wir%20f%C3%BChlen%20%3Cb%3Eeuch%20warnen%3C%2Fb%3E%20zu%20m%C3%BCssen%20%C3%BCber%20das%20was%20gerade%20dabei%20%0Aist%20zugeschehen.%0A%3C%2Ffont%3E%3C%2Fp%3E%3Cp%3E%3Cfont%20color%3D%22%23000066%22%20size%3D%224%22%3E%0A%3C%2Ffont%3E%0A%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%20%20%20%20%0A%3Ctable%20width%3D%2280%25%22%20border%3D%220%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%3Ctd%3E%0A%3Cfont%20color%3D%22%23000066%22%20size%3D%224%22%3E%0AIch%20versuche%20mich%20so%20kurz%20und%20klar%20zu%20fassen%2C%20wie%20ich%20nur%20kann.%20Dieser%20Planet%20%0Aist%20gerade%20dabei%20erneuert%2C%20aufpoliert%20oder%20neu%20gestartet%20zu%20werden.%20Das%0Abedeutet%20nicht%2C%20da%C3%9F%20er%20zerst%C3%B6rt%20wird%2C%20es%20bedeutet%20auch%20nicht%20da%C3%9F%20es%20das%20Ende%0Ader%20Welt%20ist.%20Aber%20es%20bedeutet%20da%C3%9F%20er%20grunds%C3%A4tzlich%20erneuert%20wird.%20Nun%0Akannst%20du%20sagen%3A%20'Gut%2C%20aber%20wer%20bist%20du%2C%20da%C3%9F%20du%20soetwas%20behaupten%20kannst%3F'%0AUnd%20ich%20werde%20dir%20sagen%20wer%20ich%20bin.%20Ob%20du%20mir%20glaubst%20oder%20nicht%20liegt%20bei%0Adir.%20Und%20ob%20du%20glaubst%20oder%20nicht%2C%20da%C3%9F%20diese%20Zivilisation%20erneuert%20oder%20neu%0Agestartet%20wird%20liegt%20an%20dir.%20Das%20Ziel%20dieser%20Videokassette%20ist%20es%20darauf%0A%3Cb%3Ehinzuweisen%3C%2Fb%3E%2C%20da%C3%9F%20dieses%20geschehen%20wird%20und%20da%C3%9F%20es%20sehr%20bald%20geschehen%0Awird.%0A%3Cp%3E%0AWenn%20ich%20diese%20Videokassette%20benennen%20w%C3%BCrde%2C%20so%20w%C3%BCrde%20ich%20ihr%20den%20Namen%20%0A'Letzte%20Chance%20den%20Planeten%20Erde%20zu%20evakuieren%20bevor%20er%20erneuert%20wird'%20geben%20-%20%0A%3Ci%3Eletzte%20Chance%20den%20Planeten%20%3Cb%3EErde%20zu%20verlassen%3C%2Fb%3E%20bevor%20er%20%3Cb%3Eerneuert%20und%0Awiederverwendet%3C%2Fb%3E%20wird.%3C%2Fi%3E%20Wenn%20du%20einige%20unserer%20Lehren%20-%20die%20Informationen%20die%0Auns%20zur%20Verf%C3%BCgung%20stehen%20-%20gelesen%20haben%20w%C3%BCrdest%2C%20so%20w%C3%BCrdest%20du%20wissen%2C%0Ada%C3%9F%20unser%20Benehmen%20sehr%20streng%20ist%2C%20da%C3%9F%20wir%20lehren%20'menschliche%0AGewohnheiten%20zu%20%C3%BCberwinden'%2C%20menschliche%20Abh%C3%A4ngigkeiten%20zu%20%C3%BCberwinden.%20%0ADieses%20geschieht%20nicht%20aus%20religi%C3%B6sen%20oder%20moralischen%20Gr%C3%BCnden%20oder%20um%0A'gerecht'%20zu%20werden.%20Dies%20geschieht%20aus%20dem%20Grund%2C%20%3Ci%3Eum%20in%20den%20Himmel%20zu%0Agelangen%3C%2Fi%3E.%20%20Die%20Menschen%20haben%20einige%20Vorstellungen%2C%20weil%20sie%20von%20den%20negativen%0AKr%C3%A4ften%20in%20dem%20Glauben%20gelassen%20wurden%2C%20oder%20weil%20sie%20zu%20dem%20Glauben%0A%3Cb%3Egef%C3%BChrt%3C%2Fb%3E%20wurden%20-%20die%20Menschen%20haben%20die%20Vorstellung%2C%20da%C3%9F%20durch%20die%0AReligion%2C%20wenn%20sie%20ein%20gutes%20Leben%20gef%C3%BChrt%20haben%2C%20sie%20ins%20Himmelreich%0Anach%20dem%20Tode%20eingehen%20werden.%20Und%20sie%20wissen%20nicht%20was%20das%0AHimmelreich%20ist%2C%20aber%20sie%20glauben%2C%20da%C3%9F%20das%20Himmelreich%20dort%20ist%2C%20wo%0AGott%20ist%20und%20das%20Himmelreich%20ist%20dort%20wo%20auch%20immer%20der%20F%C3%BChrer%20ihrer%0AReligion%20ist%20und%20sie%20werden%20mit%20ihm%20gehen%2C%20wenn%20sie%20ein%20gutes%20Leben%2C%0Anach%20dem%20Standard%20der%20jeweiligen%20Religion%2C%20gelebt%20haben.%20%0A%3C%2Fp%3E%3Cp%3E%0ATatsache%20ist%20aber%2C%20da%C3%9F%20nur%20ein%20einziges%20Himmelreich%20existiert%20-%20ein%20%3Ci%3EReich%3C%2Fi%3E%2C%20%0Aso%20wie%20es%20ein%20%3Ci%3EMenschenreich%3C%2Fi%3E%20gibt%20-%20%3Ci%3Ees%20gibt%20nur%20eine%20einzige%20Existenzstufe%0Aoberhalb%20des%20Menschenreiches%3C%2Fi%3E%20und%20diese%20Welt%20hat%20das%20Menschenreich%20%3Cb%3Egeschaffen%3C%2Fb%3E%0Aund%20hat%20den%20Planeten%20entworfen%20und%20hat%20alle%20seine%20Resourcen%20entworfen%20und%20hat%20%0Aalle%20seine%20Lebensformen%20entworfen%20und%20hat%20alle%20Menschen%20entworfen%20und%20hat%0Asogar%20Menschen%20entworfen%20mit%20dem%20Potential%20das%20Menschenreich%20zu%20verlassen%20um%0Ain%20die%20Existenzstufe%20oberhalb%20der%20Menschen%20einzugehen.%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20das%20Erschreckende%20f%C3%BCr%20viele%20ist%2C%20da%C3%9F%20die%20Existenzstufe%20oberhalb%20der%0AMenschheit%20%3Ci%3E%3Cb%3Ephysikalisch%20real%3C%2Fb%3E%3C%2Fi%3E%20ist.%20Es%20gibt%20einige%20Ideen%2C%20da%C3%9F%20die%0AExistenzstufe%20oberhalb%20der%20Menschen%20%3Ci%3Espirituell%3C%2Fi%3E%20ist%2C%20als%20ob%20sie%20darauf%0A%3Ci%3Ebeschr%C3%A4nkt%3C%2Fi%3E%20w%C3%A4re%20spirituell%20zu%20sein.%20Sie%20%3Ci%3Eist%3C%2Fi%3E%20spirituell%20%0Ain%20dem%20Sinne%2C%20da%C3%9F%0Awenn%20man%20an%20'Verstand'%20als%20Synonym%20f%C3%BCr%20'Geist'%20denkt%20und%20man%20zu%20etwas%20wird%0Adas%20sich%20mit%20dem%20dem%20%3Cb%3EVerstand%3C%2Fb%3E%20identifiziert%20anstatt%20mit%20dem%20'Kleideranzug%20%0A(%3Dphys.K%C3%B6rper)'%20den%20man%20tr%C3%A4gt%2C%20dann%20ist%20es%20spirituell%2C%20weil%20der%0AVerstand%2FGeist%20zur%20neuen%20%3Ci%3EIdentit%C3%A4t%3C%2Fi%3E%20wird.%20Sogar%20in%20der%20Welt%20der%20Menschen%20-%0Awenn%20sich%20die%20Menschen%20mit%20ihrem%20Verstand%20oder%20mit%20ihrem%20Geist%20(zur%0AErinnerung%3A%20diese%20beiden%20Begriffe%20sind%20Synonyme)%20identifizieren%20-%20wenn%20sie%0Asich%20also%20mit%20dem%20Verstand%2FGedankengut%20identifizieren%2C%20dann%20glauben%20sie%0Anicht%2C%20da%C3%9F%20sie%20sterben%20werden%2C%20wenn%20der%20K%C3%B6rper%2C%20den%20sie%20tragen%2C%20zerf%C3%A4llt.%0ASie%20glauben%2C%20da%C3%9F%20sie%20eine%20andere%20Welt%20betreten.%20Ob%20die%20Menschen%20eine%20%3Ci%3Eandere%20%0AWelt%3C%2Fi%3E%20betreten%2C%20wenn%20sie%20ihren%20K%C3%B6rper%20verlassen%2C%20h%C3%A4ngt%20tats%C3%A4chlich%20davon%20ab%2C%20%0Aob%20sie%20%3Ci%3Everbunden%3C%2Fi%3E%20sind%20oder%20nicht%2C%20oder%20es%20h%C3%A4ngt%20von%20deren%0AInformationsstand%20ab%2C%20oder%20es%20h%C3%A4ngt%20ab%20von%20ihren%20F%C3%A4higkeiten%20etwas%0Azu%20wissen%20und%20zu%20tun%20was%20sie%20fr%C3%BCher%20lernen%20wollten.%0A%3C%2Fp%3E%3Cp%3E%0ADu%20wei%C3%9Ft%2C%20die%20n%C3%A4chste%20Stufe%2C%20oder%20die%20n%C3%A4chste%20Entwicklungsstufe%20jenseits%0Ader%20Menschen%20-%20oops%2C%20ich%20habe%20das%20schlimme%20Wort%20gesagt%3A%20%3Ci%3EEntwicklungsstufe%3C%2Fi%3E.%0AWeil%20religi%C3%B6se%20Menschen%20denken%3A%20'Oh%2C%20'Evolution'%2C%20bedeutet%20dies%2C%20da%C3%9F%20du%0Anicht%20an%20die%20Sch%C3%B6pfung%20glaubst%3F'%20Das%20ist%20die%20l%C3%A4cherlichste%20Sache%20an%20die%0Ajemand%20nur%20denken%20kann%20-%20das%20Evolution%20nicht%20ein%20Teil%20der%20Sch%C3%B6pfung%20sei.%0ADie%20Existenzstufe%20hat%20alles%20%3Ci%3E%3Cb%3Egeschaffen%3C%2Fb%3E%3C%2Fi%3E%20was%20ist%2C%20oder%20es%20hat%20alles%20%3Ci%3E%3Cb%3Egemacht%3C%2Fb%3E%3C%2Fi%3E%0Awas%20ist%20und%20unter%20all%20diesen%20Sachen%20hat%20es%20einige%20Sachen%20geschaffen%2C%20die%0Asich%20in%20einem%20%3Ci%3E%3Cb%3EEvolutionsprozess%20weiterentwickeln%3C%2Fb%3E%3C%2Fi%3E.%20Wenn%20wir%20also%20%C3%BCber%20die%0AStufe%20oberhalb%20der%20Menschen%20sprechen%2C%20so%20sollten%20wir%20uns%20nicht%20%3Ci%3Escheuen%3C%2Fi%3E%20das%0AWort%20'Evolutionsstufe'%20oberhalb%20der%20Menschen%20zu%20benutzen.%20Es%20ist%20eigentlich%0Anicht%20wirklich%20eine%20Evolutionsstufe%20%3Ci%3Eoberhalb%3C%2Fi%3E%20der%20Menschen%2C%20in%20der%20sich%0AGesch%C3%B6pfe%20aus%20dem%20Menschenreich%2C%20aus%20eigener%20Kraft%20hineinentwickeln%0Ak%C3%B6nnen%2C%20weil%20sie%20es%20nicht%20schaffen.%20Das%20klingt%20komisch.%20Nun%2C%20es%20ist%20%0AGesch%C3%B6pfen%20aus%20unserer%20Welt%20prinzipiell%20m%C3%B6glich%20sich%20dorthin%20zu%20entwickeln%2C%20%0Adoch%20sie%20k%C3%B6nnen%20es%20nicht%20alleine%20schaffen.%0A%3C%2Fp%3E%3Cp%3E%0ADieselbe%20Evolutionsstufe%2C%20die%20das%20Menschenreich%20geschaffen%20hat%2C%20mu%C3%9F%0Asich%20%3Ci%3E%3Cb%3Ephysikalisch%20in%20diese%20Welt%20inkarnieren%3C%2Fb%3E%3C%2Fi%3E%20um%20ihnen%20(den%20f%C3%A4higen%0AGesch%C3%B6pfen%20dieser%20Welt)%20%3Ci%3E%3Cb%3ELeben%20anzubieten%3C%2Fb%3E%3C%2Fi%3E%20-%20ihnen%20%3Ci%3E%3Cb%3EInformationen%0Aanzubieten%3C%2Fb%3E%3C%2Fi%3E%20-%20w%C3%A4rend%20sie%20sich%20in%20einem%20menschlichen%20K%C3%B6rper%0Abefindet.%20Wenn%20ein%20Empf%C3%A4nger%20%3Ci%3E%3Cb%3Edurstig%3C%2Fb%3E%3C%2Fi%3E%20genug%20f%C3%BCr%20das%20Gedankengut%20ist%2C%0Adann%20erkennt%20dieser%20Empf%C3%A4nger%2C%20da%C3%9F%20er%20real%20mit%20einer%20%3Ci%3E%3Cb%3EQuelle%20von%20der%0AN%C3%A4chsten%20Stufe%3C%2Fb%3E%3C%2Fi%3E%20(der%20inkarnierte%20Repr%C3%A4sentant%20der%20N%C3%A4chsten%20Stufe)%2C%0Ader%20in%20%3Ci%3E%3Cb%3Ephysikalischer%20Anwesenheit%20existiert%3C%2Fb%3E%3C%2Fi%3E%2C%20verbunden%20ist.%20Vergi%C3%9F%0Anicht%2C%20die%20N%C3%A4chste%20Stufe%20ist%20nicht%20ein%20spirituelles%20Reich.%20Ihre%0AMitglieder%20%3Ci%3Eidentifizieren%3C%2Fi%3E%20sich%20zwar%20mit%20dem%20Geist%2FSeel%2C%20aber%20sie%0Atragen%20%3Ci%3Ephysikalische%20K%C3%B6rper%3C%2Fi%3E.%20Schaust%20du%20nachts%20in%20den%20Himmel%3F%20Warum%20siehst%20du%0Aphysikalische%20K%C3%B6rper%20im%20Himmel%3F%20Wenn%20es%20nur%20ein%20spiritueller%20Himmel%20w%C3%A4re%2C%0Aso%20w%C3%BCrdest%20du%20keinen%20einzigen%20dieser%20K%C3%B6rper%20sehen.%20Sie%20w%C3%BCrden%20alle%20%0A%C3%A4therisch%20sein.%20Aber%20du%20%3Ci%3Esiehst%3C%2Fi%3E%20die%20Himmelsk%C3%B6rper.%20Du%20siehst%20nur%20einen%20sehr%2C%0Asehr%20kleinen%20Teil%20Bruchteil%20der%20physikalischen%20K%C3%B6rpern%20im%20Himmelreich.%20Es%0Agibt%20auch%20viele%20andere%20himmlische%2C%20physikalische%20K%C3%B6rper%20die%20mit%20dem%0Amenschlichen%20Auge%20nicht%20gesehen%20werden%20k%C3%B6nnen.%0A%3C%2Fp%3E%3Cp%3E%0ADas%20bedeutet%20nicht%2C%20da%C3%9F%20unser%20himmlisches%20Vaterland%2C%20oder%20das%20K%C3%B6nigreich%0AGottes%2C%20oder%20die%20Evolutionsstufe%20oberhalb%20der%20Menschen%2C%20etwas%20%3Ci%3EKleineres%3C%2Fi%3E%0Adarstellt%2C%20nur%20weil%20es%20physikalische%20Eigenschaften%20besitzt.%20Es%20hat%20%3Ci%3Ealle%3C%2Fi%3E%0AEigenschaften%20-%20alles%20wor%C3%BCber%20du%20sprechen%20kannst%20kommt%20von%20ihnen%20-%0Aeinschlie%C3%9Flich%20das%20'B%C3%B6se'%20-%20einschlie%C3%9Flich%20all%20dem%2C%20da%C3%9F%20dich%20in%20die%20Irre%0Af%C3%BChren%20kann%2C%20wenn%20du%20auf%20die%20falschen%20Quellen%20h%C3%B6rst.%20Du%20k%C3%B6nntest%20sagen%3A%0A'Das%20ist%20unwahrscheinlich.'.%20%3Ci%3EEs%20gibt%20nichts%3C%2Fi%3E%2C%20was%20nicht%20von%20der%20Existenzstufe%0Aoberhalb%20der%20Menschen%20geschaffen%20wurde.%20Und%20der%20Grund%2C%20warum%20sie%20all%20das%0Ageschaffen%20haben%20was%20ist%2C%20einschlie%C3%9Flich%20den%20negativen%20M%C3%B6glichkeiten%2C%20ist%0Ada%C3%9F%20du%20die%20M%C3%B6glichkeit%20hast%20%3Ci%3Egenau%20das%20zu%20werden%20was%20du%20w%C3%A4hlst%20zu%20werden%3C%2Fi%3E%2C%0Awenn%20du%20die%20M%C3%B6glichkeit%20dazu%20bekommst.%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20der%20einzige%20Zeitpunkt%20an%20dem%20wir%20die%20M%C3%B6glichkeit%20haben%20das%0AMenschenreich%20zu%20verlassen%20und%20in%20die%20Evolutionsstufe%20oberhalb%20der%20Menschen%0Azu%20gehen%2C%20ist%20wenn%20%3Ci%3E%3Cb%3Eein%20Mitglied%20des%20Himmelreiches%2C%20in%20menschlicher%20Gestalt%3C%2Fb%3E%3C%2Fi%3E%2C%0Adir%20sagt%3A%20'Ich%20werde%20dir%20etwas%20%C3%BCber%20ein%20K%C3%B6nigreich%20jenseits%20von%20hier%0Aerz%C3%A4hlen%20und%20wenn%20du%20dorthin%20gehen%20m%C3%B6chtest%2C%20so%20solltest%20du%20mir%20folgen%2C%0Aweil%20ich%20derjenige%20bin%20der%20im%20Moment%20den%20Schl%C3%BCssel%20dazu%20hat.'%20Wasimmer%20f%C3%BCr%0Aein%20Mitglied%20des%20Himmelreiches%20geschickt%20wurde%20und%20in%20das%20Menschenreich%0Akommt%2C%20so%20ist%20der%20Repr%C3%A4sentant%20derjenige%20der%20den%20Schl%C3%BCssel%20zum%0AHimmelreich%2C%20f%C3%BCr%20eine%20bestimmte%20Zeitspanne%2C%20hat.%20Und%20es%20ist%20Notwendig%2C%0Awenn%20du%20die%20Entwicklungsstufe%20betrittst%2C%20da%C3%9F%20du%20dich%20%3Ci%3E%3Cb%3Evon%20allem%20menschlichem%0Atrennst%20-%20menschliche%20Verhaltensweise%2C%20menschliche%20Ignoranz%2C%20menschliche%0AFehlinformation.%3C%2Fb%3E%3C%2Fi%3E%0A%3C%2Fp%3E%3C%2Ffont%3E%3Cp%3E%3Cfont%20color%3D%22%23000066%22%20size%3D%224%22%3E%0A%3C%2Ffont%3E%0A%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%20%20%20%20%0A%3Ctable%20width%3D%2280%25%22%20border%3D%220%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%3Ctd%3E%0A%3Cfont%20color%3D%22%23000066%22%20size%3D%224%22%3E%0AEine%20lange%20Zeit%20vorher%2C%20bevor%20diese%20Zivilisation%20begonnen%20hat%20(und%20ich%20wei%C3%9F%0Anicht%20wie%20viele%20Male%20sich%20dieses%20sp%C3%A4ter%20wiederholt%20hat)%2C%20hatte%20das%20%0AHimmelreich%20einen%20Repr%C3%A4sentanten%20in%20der%20menschlichen%20Zivilisation%20und%20%0AMitglieder%20in%20einer%20Klasse%2C%20die%20gerade%20dabei%20waren%20ihre%20menschlichen%20%0AEigenschaften%20zu%20%C3%BCberwinden.%20Einige%20dieser%20Sch%C3%BCler%2C%20die%20begonnen%20hatten%20in%0Aelementarer%20Weise%20der%20Entwicklungsstufe%20oberhalb%20der%20Menschen%20zu%20dienen%2C%0Ahatten%20beschlossen%2C%20da%C3%9F%20sie%20nicht%20mehr%20auf%20die%20Repr%C3%A4sentanten%20des%0AHimmelreiches%20h%C3%B6ren%20wollten%2C%20da%C3%9F%20sie%20die%20Sachen%20machen%20konnten%2C%20die%20sie%0Amachen%20wollten%2C%20und%20sie%20waren%20nicht%20mehr%20sicher%20ob%20sie%20sich%20von%20den%20%0Amenschlichen%20Verhaltensweisen%20trennen%20wollen.%20Und%20so%20begannen%20sie%20Fehler%20zu%0Asuchen%2C%20in%20dem%20Mitglied%20des%20Himmelreiches%2C%20der%20ihnen%20einen%20Weg%20aus%20dem%0AMenschenreich%20angeboten%20hat.%20Nun%2C%20du%20kennst%20die%20Geschichte%20von%20da%20an%20-%0A%3Ci%3Egefallene%20Engel%2C%20Lucifer%2C%20Satan%2C%20ein%20Drittel%20des%20Himmels%3C%2Fi%3E%20folgt%20einem%0AAbtr%C3%BCnigen%20der%20beschlossen%20hat%3A%20'Diese%20Welt%20(das%20Himmelreich)%20ist%20nicht%0Af%C3%BCr%20mich.%20Ich%20kann%20mein%20eigener%20'Gott'%20sein.%20Ich%20brauche%20nicht%20diejenige%0AExistenzstufe.%20Ich%20%C3%A4rgere%20mich%20dar%C3%BCber%2C%20da%C3%9F%20ich%20nicht%20meine%20eigene%20nat%C3%BCrliche%20Person%20sein%20kann%2C%20-%20da%C3%9F%20ich%20nicht%20meine%20eigene%20Gefolgsleute%20f%C3%BChren%20kann.'%0A%3Cp%3E%0ANun%2C%20die%20Entwicklungsstufe%20oberhalb%20der%20Menschen%20hat%20denjenigen%20und%20sein%0AGefolge%20gelassen%2C%20seine%20Herde%20zu%20f%C3%BChren%20-%20sie%20haben%20sie%20gelassen%20das%20zu%20tun%0Awas%20sie%20tun%20wollten%20-%20und%20haben%20dieses%20als%20Mittel%20benutzt%2C%20das%20einem%20Zweck%0Aim%20Bew%C3%A4hrungsaufstieg%20zur%20N%C3%A4chsten%20Stufe%20dient.%20Und%20diese%20sehr%20b%C3%B6se%0AGegenwart%20ist%20%3Cb%3Erechlich%20vorhanden%3C%2Fb%3E%20auf%20diesem%20Planeten%2C%20weil%20es%20das%20Ende%20eines%0AZeitalters%20ist.%20Es%20ist%20so%20reichlich%20vorhanden%2C%20da%C3%9F%20es%20%3Ci%3Edir%20%3Cb%3Enicht%3C%2Fb%3E%20erlauben%0Aw%C3%BCrde%2C%20auch%20nur%20ein%20einziges%20Wort%20zu%20glauben%20das%20ich%20dir%20sage%3C%2Fi%3E%20und%20es%20w%C3%BCrde%0A%3Ci%3Edir%20%3Cb%3Enicht%3C%2Fb%3E%20erlauben%20etwas%20anzunehmen%3C%2Fi%3E%2C%20da%C3%9F%20dir%20erm%C3%B6glichen%20w%C3%BCrde%20ein%0AEmpf%C3%A4nger%20des%20Reiches%20zu%20sein%2C%20das%20sie%20verlassen%20haben%20(von%20wo%20sie%0Arausgeworfen%20wurden%20und%20wohin%20sie%20niemandem%20erlauben%20m%C3%B6chten%0Ahinzugehen).%20Sie%20sind%20nachtragend%20-%20und%20stehen%20%3Ci%3Eim%20Gegensatz%3C%2Fi%3E%20zur%20wahren%0AEntwicklungsstufe%20oberhalb%20der%20Menschen%2C%20vergi%C3%9F%20nicht%2C%20das%20Reich%0AGottes%2C%20das%20Himmelreich.%20%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20das%20%3Cb%3EEnde%20eines%20Zeitalters%3C%2Fb%3E%2C%20das%20%3Cb%3EEnde%20einer%20Zivilisation%3C%2Fb%3E%2C%20ist%20die%0A%3Cb%3Eschlimmste%20Zeit%3C%2Fb%3E%20f%C3%BCr%20diejenige%20abtr%C3%BCnige%20Existenzstufe%20(diejenigen%2C%20die%0ASch%C3%BCler%20der%20N%C3%A4chsten%20Stufe%20waren%20und%20abtr%C3%BCnig%20geworden%20sind).%20Wenn%20du%20in%0Aden%20historischen%20Daten%20liest%2C%20da%C3%9F%20es%20auch%20eine%20H%C3%B6lle%20gab%20(und%20es%20gibt%20eine%0AH%C3%B6lle)%20und%20die%20H%C3%B6lle%20ist%20dort%20wo%20diese%20b%C3%B6sen%20Kr%C3%A4fte%20sind%20-%20so%20kannst%20du%0Adir%20vorstellen%2C%20da%C3%9F%20ein%20Teil%20der%20H%C3%B6lle%20der%20Planet%20Erde%20ist.%20Als%20diese%0A'b%C3%B6sen'%20Individuen%20(die%20Anh%C3%A4nger%20von%20Lucifer%2C%20von%20Satan)%20gew%C3%A4hlt%20hatten%0Ain%20die%20Irre%20zu%20gehen%2C%20wurden%20sie%20aus%20der%20Entwicklungsstufe%20oberhalb%20der%0AMenschen%20rausgeworfen.%20Ihre%20Existenz%20wurde%20nicht%20nur%20auf%20den%20Planeten%20Erde%0Abeschr%C3%A4nkt%2C%20sondern%20auch%20auf%20jeden%20anderen%20Planeten%20mit%20dieser%20Art%20von%0AGravitation%20und%20Umwelt%2C%20die%20als%20nat%C3%BCrliche%20Lebenswelt%20f%C3%BCr%20Lebewesen%20aus%0Adem%20Menschnreich%20dienen%20kann.%20Sie%20%3Ci%3Ebrauchen%3C%2Fi%3E%20eine%20menschliche%20Zivilisation.%0ASie%20%3Ci%3Ebenutzen%20K%C3%B6rper%3C%2Fi%3E%20von%20dieser%20Zivilisation.%20Sie%20machen%20Hybridk%C3%B6rper%2C%20weil%0Asie%20weiterleben%20m%C3%B6chten.%0A%3C%2Fp%3E%3Cp%3E%0AVergi%C3%9F%20nicht%2C%20sie%20haben%20gelernt%20was%20'Geist'%20bedeutet.%20Sie%20haben%20gelernt%0Aihren%20Verstand%20-%20ihren%20Geist%20-%20von%20dem%20menschlichen%20K%C3%B6rper%20zu%20trennen%20und%0Asie%20wissen%2C%20da%C3%9F%20ihre%20Identit%C3%A4t%20nicht%20verloren%20geht%2C%20wenn%20sie%20einen%20K%C3%B6rper%0Averlieren.%20Sie%20haben%20gelernt%20den%20K%C3%B6rper%20zu%20verlassen%20ohne%20dabei%20ihr%0ABewusstsein%20zu%20verlieren%20und%20sie%20haben%20sogar%20gelernt%20in%20einen%20anderen%0AK%C3%B6rper%2C%20der%20f%C3%BCr%20sie%20'vorbereitet'%20war%2C%20einzudringen%20und%20seine%20Kontrolle%20zu%20%0A%C3%BCbernehmen.%20Sie%20k%C3%B6nnen%20sein%20Leben%20erhalten.%20In%20den%20meisten%20F%C3%A4llen%2C%20nutzen%0Asie%20aber%20die%20Vorteile%20der%20%3Ci%3Emenschlichen%20'Pflanzen'%20(%3DMenschen)%3C%2Fi%3E%20-%20die%20Gesch%C3%B6pfe%20%0Adieser%20Zivilisation%20-%20f%C3%BCr%20ihre%20Zwecke.%20Diese%20%3Ci%3E'aliens'%20(%3DAusserirdische)%3C%2Fi%3E%20-%20ich%20nenne%20sie%20'aliens'%2C%20weil%20man%20sie%20auch%20als%20'space%20aliens'%20(%3DRaum%20Ausserirdische)%2C%20%0Ab%C3%B6se%20'space%20aliens'%2C%20bezeichnen%20kann%20-%20aber%20sie%20sind%20nicht%20wirklich%20%0A'space%20aliens'%20weil%20sie%20sich%20nur%20in%20sehr%20%3Ci%3Ebeschr%C3%A4nkten%3C%2Fi%3E%20Teilen%20des%20Raumes%20%0Abewegen%20k%C3%B6nnen.%20Ihre%20Existenz%20ist%20auf%20Umwelten%20beschr%C3%A4nkt%20(so%20wie%20auch%20diese%20%0Airdische%20Zivilisation)%20in%20denen%20s%C3%A4ugetier%C3%A4hnliche%20Menschen%20oder%20menschliche%0AZivilisationen%20existieren.%20Sie%20sind%20also%20keine%20'eindeutigen'%0Aspace%20aliens.%20Aber%20der%20allgemeine%20Ausdruck%20ist%0A'space%20aliens'.%20Und%20deshalb%20nenne%20ich%20sie%20'space%20aliens'.%20%0A%3C%2Fp%3E%3Cp%3E%0AWenn%20das%20Reich%20Gottes%2C%20das%20Himmelreich%2C%20die%20Evolutionsstufe%20oberhalb%20der%0AMenschen%2C%20%3Ci%3Enahe%20ist%3C%2Fi%3E%20und%20uns%20unterst%C3%BCtzt%2C%20wegen%20unserer%20%3Ci%3EAnwesenheit%3C%2Fi%3E%20hier%2C%20so%0Aw%C3%BCrde%20man%20%3Ci%3Esie%3C%2Fi%3E%20sicherlich%20nicht%20'aliens'%20(Fremde)%20nennen%2C%20weil%20dieses%20ihr%0AGarten%20ist.%20%3Ci%3E%3Cb%3ESie%20haben%20ihn%20geschaffen.%20Wir%20sind%20ihr%20Experiment%2C%20wir%20sind%20ihre%0AGesch%C3%B6pfe%2C%20wir%20sind%20ihre%20Sch%C3%B6pfung.%20Sie%20haben%20uns%20gemacht%20-%20alles%20was%20wir%0Asind.%3C%2Fb%3E%3C%2Fi%3E%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20m%C3%B6chte%20ich%20zur%C3%BCck%20zum%20Anfang%20dieser%20Kassette%20gehen%2C%20weil%20ich%20nicht%0Am%C3%B6chte%2C%20da%C3%9F%20du%20meiner%20Philosophie%2C%20meiner%20Ideologie%2C%20meinem%20Wissen%20das%20ich%0Ahabe%2C%20zuh%C3%B6rst.%20Ich%20m%C3%B6chte%2C%20da%C3%9F%20du%20dir%20bewusst%20wirst%2C%20da%C3%9F%20die%20Tatsache%2C%0A%3Ci%3E%3Cb%3Eda%C3%9F%20dies%20das%20Ende%20des%20Zeitalters%20ist%3C%2Fb%3E%3C%2Fi%3E%2C%20im%20Blickpunkt%20steht.%20Am%20Ende%20eines%0AZeitalters%20wird%20der%20Planet%20%3Cb%3Esaubergefegt%20-%20aufpoliert%20-%20verj%C3%BCngt%3C%2Fb%3E.%20Das%20Chaos%2C%0Adas%20die%20Menschen%20hinterlassen%20haben%2C%20w%C3%A4rend%20dieser%20Zivilisation%20wird%0Aaufger%C3%A4umt.%20Der%20Planet%20wird%20geheielt.%20Dies%20wird%20wahrscheinlich%20'schnell%20und%0Ageradeaus'%20geschehen.%20Es%20wird%20wahrscheinlich%20nicht%20viel%20Zeit%20in%20Anspruch%0Anehmen%2C%20nach%20menschlichem%20Zeitma%C3%9F.%20Aber%20selbst%20wenn%20es%20tausend%20Jahre%0Adauern%20w%C3%BCrde%2C%20ist%20das%20eine%20sehr%20kurze%20Zeit%2C%20bezogen%20auf%20die%20Zeit%20in%20der%20%0AN%C3%A4chsten%20Stufe.%20Wir%20wissen%20nicht%20wie%20lange%20es%20dauern%20wird.%20Wir%20k%C3%B6nnen%20es%0Anicht%20absch%C3%A4tzen%2C%20weil%20wir%20%C3%BCber%20zwei%20verschiedene%20Zeiteinheiten%20sprechen.%0AIch%20meine%2C%20ich%20versuche%20mich%20hier%20in%20menschlichen%20Zeiteinheiten%20auszudr%C3%BCcken%20%0Aund%20ich%20bin%20schon%20mehr%20zu%20Hause%2C%20in%20der%20Zeiteinheit%20der%20N%C3%A4chsten%20Stufe.%0A%3C%2Fp%3E%3Cp%3E%0AWenn%20dieser%20Planet%20erneuert%20-%20wiederverwendet%20-%20aufpoliert%20wird%2C%20so%20sind%20die%0Aeinzigen%2C%20%3Ci%3Edie%20ihn%20verlassen%3C%2Fi%3E%2C%20diejenige%20die%20ihn%20auch%20%3Ci%3Ewirklich%20verlassen%0Awollen%3C%2Fi%3E.%20Die%20einzigen%2C%20die%20%3Ci%3Eden%20Recycling-Prozess%20%C3%BCberleben%3C%2Fi%3E%20werden%2C%20sind%0Adiejenige%20die%20%3Ci%3Eraus%20wollen%3C%2Fi%3E%20-%20die%20einen%20Lehrer%20gefunden%20haben%2C%20jemand%20der%20ihnen%0Adie%20Informationen%20geben%20kann%2C%20die%20sie%20f%C3%BCr%20%3Ci%3Edas%20Verlassen%3C%2Fi%3E%20des%20Planeten%20%0Aben%C3%B6tigen%2C%20oder%20jemanden%20der%20ihenen%20dieses%20Informationen%2C%20die%20zum%20%0Aeventuellen%20Verlassen%20%3Ci%3Ef%C3%BChren%20k%C3%B6nnen%3C%2Fi%3E%2C%20tats%C3%A4chlich%20gibt.%20Nun%2C%20was%20ich%20damit%0Ameine%20ist%2C%20%3Cb%3Eda%C3%9F%20diese%20Informationen%20nur%20w%C3%A4rend%20der%20Zeit%20zur%20Verf%C3%BCgung%0Astehen%2C%20in%20der%20wir%20hier%20anwesend%20sind%3C%2Fb%3E.%20Und%20%3Cb%3Ehier%20bin%20ich%3C%2Fb%3E%2C%20ich%20bin%20DO%2C%20DO%20von%0ATI%20und%20DO%2C%20von%20dem%20kleinen%20religi%C3%B6sen%20'UFO%20Kult'%20(weil%20das%20ist%2C%20als%20was%20uns%0Adie%20Medien%20abgestempelt%20haben).%20%3Ci%3E%3Cb%3EUnd%20nun%20TI%2C%20der%20mein%20Vater%20ist%2C%20der%20mein%0A'%C3%A4lteres%20Mitglied'%20ist%2C%20der%20mich%20geboren%20hat%20im%20Himmelreich%20lange%20bevor%0Adiese%20Zivilisation%20begonnen%20hat%2C%20TI%20war%20hier%20mit%20mir%20auf%20dieser%20besonderen%0AMission.%3C%2Fb%3E%3C%2Fi%3E%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20la%C3%9F%20mich%20f%C3%BCr%20einen%20Moment%20diese%20Mission%20beschreiben.%20TI%20hat%20uns%201985%2C%0Ain%20Erdenzeit%2C%20verlassen%2C%20weil%20TI%20soweit%20geholfen%20hatte%2C%20da%C3%9F%20es%20Zeit%20wurde%0Adie%20Verantwortung%20auf%20DO%20zu%20%C3%BCbertragen%20und%20f%C3%BCr%20mich%20bagann%20dann%20eine%0Aernstere%20Kommunikation%20mit%20meinem%20%C3%A4lteren%20Mitglied%20%20und%20ich%20begann%20%3Ci%3Evon%20ihm%0Aabh%C3%A4ngig%20zu%20werden%3C%2Fi%3E%20und%20%3Ci%3Emich%20auf%20ihn%20zu%20verlassen%3C%2Fi%3E.%20Als%20TI%20und%20ich%0Aaufwachten%2C%20betraten%20wir%20diese%20Umwelt%20(in%20jeder%20bedeutenden%20Hinsicht)%20in%20den%0Afr%C3%BChen%2070er.%20Du%20betrachtest%20den%20K%C3%B6rper%20den%20ich%20trage%20und%20du%20sagst%2C%20'Du%0Atratest%20in%20den%2070er%20ein%3F%20Du%20bist%20sicherlich%20etwas%20mehr%20als%2020%20Jahre%20alt.'%0ADer%20K%C3%B6rper%20den%20ich%20trage%20ist%2C%20wow!%2C%2065%20Jahre%20alt.%20'Ich'%20(Verstand%2FSeele%20der%20%0AN%C3%A4chsten%20Stufe)%20traten%20ein%20zur%20gleichen%20Zeit%20wie%20mein%20%C3%A4lteres%20Mitglied%2C%0Adas%20war%20in%20den%20fr%C3%BChen%2070er.%20Du%20k%C3%B6nntest%20denken%2C%20%22Nun%2C%20das%20macht%20keinen%0ASinn.%22%20Wenn%20du%20der%20'New%20Age'%20Bewegung%20anh%C3%A4ngst%20-%20oder%20was%20auch%20immer%20dein%0AGlauben%20%C3%BCber%20die%20Reinkarnation%20ist%20-%20so%20k%C3%B6nntest%20du%20denken%2C%20'Nun%2C%20ich%0Averstehe%20nicht%2C%20ich%20dachte%20da%C3%9F%20die%20Reinkarnation%20zu%20Beginn%20des%20Lebens%20eines%0AKindes%20gechieht.'%20Nein%2C%20es%20tut%20mir%20leid%20es%20zu%20sagen%2C%20das%20ist%20nicht%20genau.%0ADer%20%3Ci%3EVerstand%2FGedankengut%3C%2Fi%3E%20beginnt%20wenn%20das%20Kind%20geboren%20wird%20und%20das%0Agenetische%20Erbgut%20beginnt%20sich%20selbst%20auszudr%C3%BCcken%20wenn%20sich%20der%20Verstand%0Aentwickelt.%20Und%20es%20ist%20ein%20Verstand%2C%20es%20ist%20ein%20Geist.%20Aber%20ein%20Geist%20oder%0Aein%20Verstand%2FGedankengut%2C%20das%20vorher%20eine%20andere%20menschliche%20Pflanze%0A(menschlichen%20K%C3%B6rper)%20besetzt%20hatte%2C%20aber%20dann%20in%20die%20spirituelle%20Welt%0Aeingegangen%20ist%20(oder%20er%20befindet%20sich%20au%C3%9Ferhalb%20eines%20K%C3%B6rpers%2C%20weil%20er%0Asein%20K%C3%B6rper%20infolge%20des%20Todes%2C%20oder%20was%20auch%20immer%2C%20verloren%20hat%2C%20aber%20er%0Abefindet%20sich%20immer%20noch%20in%20der%20Umgebung)%2C%20kann%20dann%20den%20K%C3%B6rper%20%3Cb%3Ebetreten%3C%2Fb%3E%0Aihn%20%3Cb%3E%C3%BCbernehmen%3C%2Fb%3E%20und%20kann%20%3Cb%3Est%C3%A4rker%3C%2Fb%3E%20als%20der%20Verstand%20sein%2C%20der%20sich%0A%3Cb%3Eurspr%C3%BCnglich%3C%2Fb%3E%20in%20dem%20Vehikel%20(%3DK%C3%B6rper)%20befand.%20Er%20(der%20Geist)%20kann%20den%0AK%C3%B6rper%20%3Cb%3E%C3%BCbernehmen%3C%2Fb%3E.%20Er%20kann%20ziemlich%20gut%20den%20urspr%C3%BCnglichen%20Verstand%0Ades%20Vehikels%20still%20halten%20und%20mit%20dem%20Vehikel%20tun%20was%20ihm%20beliebt.%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20die%20niederen%20Kr%C3%A4fte%20wissen%20dies.%20Sie%20lehren%20die%20Geister%20dies%20zu%20tun%0Anachdem%20sie%20ihre%20K%C3%B6rper%20verlassen.%20Sie%20lassen%20sie%20wissen%2C%20da%C3%9F%20sie%20dazu%0Af%C3%A4hig%20sind.%20Du%20k%C3%B6nntest%20sagen%2C%20'Du%20meinst%2C%20da%C3%9F%20du%20und%20TI%201972%20in%20eure%0AK%C3%B6rper%20gekommen%20seid%2C%20so%20seid%20ihr%20'K%C3%B6rperf%C3%A4nger%20(%3Dbody%20snatchers)'%20im%0Agewissen%20Sinne'.%20Nun%2C%20die%20Stufe%20oberhalb%20der%20Menschen%20haben%20diesen%0AGarten%20%3Ci%3Eentworfen%20und%20geschaffen%3C%2Fi%3E%3B%20sie%20haben%20die%20menschlichen%20Pflanzen%20f%C3%BCr%0Aihre%20Zwecke%20%3Ci%3Egeschaffen%3C%2Fi%3E%2C%20und%20mein%20Gro%C3%9Fvater%20(TI's%20Vater)%20schickte%20uns%20in%0Adiese%20Umwelt%20mit%20einem%20Team%2C%20das%20Arbeit%20zu%20tun%20hatte.%20Nun%2C%20wir%20traten%20ein%0Aund%20wir%20bereiteten%20die%20'Vehikel'%20vor.%20Wir%20haben%20wirklich%20diese%20'Pflanze'%2C%0Adie%20ich%20trage%20(dieses%20'Vehikel'%2C%20das%20ich%20trage)%20beiseite%20gelegt%20und%20die%0APflanzen%20der%20Mannschaft%20(die%20Schulklasse)%20und%20die%20Pflanze%20die%20TI%20ausgew%C3%A4hlt%0Ahat%20zu%20tragen.%20Eine%20'Ablage'%20einer%20kleinen%20Menge%20von%20Information%20wurde%0Adenjenigen%20Pflanzen%20zugef%C3%BCgt%2C%20die%20sie%20beiseite%20gelegt%20hatten%20f%C3%BCr%20die%20Zeit%0Awenn%20der%20Verstand%20(mind)%20%3Cb%3Etats%C3%A4chlich%3C%2Fb%3E%20eintreten%20sollte.%20Und%20deswegen%20kann%0Aman%20den%20Verstand%20der%20sich%20jetzt%20in%20meinem%20Vehikel%20(K%C3%B6rper)%20befindet%20nicht%0Ain%20Bezug%20zur%20Geschichte%20meines%20Vehikels%2C%20bevor%20mein%20Verstand%20endg%C3%BCltig%20%0Aeintrat%2C%20setzen.%20So%3B%20wer%20die%20Pflanze%2C%20die%20ich%20jetzt%20trage%2C%20vor%20den%2070er%0AJahren%20gewesen%20war%20ist%20nur%20eine%20verschwommene%2C%20d%C3%BCstere%20Erinnerung%2C%20weil%20es%0Agenauso%20ist%2C%20wie%20wenn%20man%20einen%20Kleideranzug%2C%20der%20eine%20bestimmte%20Geschichte%0Ahatte%2C%20anlegt.%20Und%20wenn%20ich%20versuchen%20w%C3%BCrde%2C%20so%20k%C3%B6nnte%20ich%20in%20diejenige%0AGeschichte%20eindringen%20und%20einiges%20herausholen%2C%20aber%20das%20ist%20so%20unattraktiv%20%0Af%C3%BCr%20mich%20und%20es%20verursacht%20eine%20so%20niedrige%20Vibration%20in%20mir%20(wenn%20ich%20das%20%0AWort%20benutzen%20kann%2C%20ohne%20einigen%20nach%20'New%20Age'%20zu%20klingen)%20-%20es%20ist%20%0Aabsto%C3%9Fend%20f%C3%BCr%20mich%2C%20weil%20es%20sicherlich%20sehr%20menschlich%20ist.%20Dieser%20K%C3%B6rper%0Agibt%20sicherlich%20dem%20menschlichen%20Benehmen%2C%20den%20menschlichen%20Abh%C3%A4ngigkeiten%2C%0Aden%20menschlichen%20Verhaltensweisen%20nach%2C%20so%20wie%20jeder%20andere%20Mensch%20es%20tut.%0A%3C%2Fp%3E%3Cp%3E%0AEin%20Raumschiff%20brachte%20uns%20hierher%2C%20als%20TI%20und%20ich%20in%20diese%20Umwelt%2C%20in%20den%0Afr%C3%BChen%2070er%20Jahren%2C%20gebracht%20wurden%20-%20zur%20Erinnerung%2C%20dies%20ist%20eine%0Aphysikalische%20Welt.%20Und%20tats%C3%A4chlich%20kamen%20wir%20fr%C3%BCher%20und%20machten%20Ablagen%2C%0Aoder%20kleine%20'Informationsablagen'%2C%20in%20unsere%20Vehikel%20als%20sie%20Kinder%20waren.%0ASo%2C%20da%C3%9F%20bedeutet%2C%20da%C3%9F%20wir%20in%20den%20sp%C3%A4ten%2020er%20und%20fr%C3%BChen%2030er%20%0Ahierhergekommen%20sein%20mu%C3%9Ften.%20Wir%20mu%C3%9Ften%20auch%20herkommen%20und%20Ablagen%20in%20den%0AVehikeln%20aller%20Klassenmitglieder%20machen%2C%20die%20jetzt%20vor%20mir%20sitzen%2C%20zu%20den%0Averschiedenen%20Zeiten%2C%20als%20sie%20noch%20Kinder%20waren.%20%20%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20es%20ist%20schwierig%20die%20Informationen%20zu%20akzeptieren%2C%20die%20ich%20euch%20sage.%0AWenn%20ihr%20wissen%20w%C3%BCrdet%2C%20wie%20ihr%20einige%20der%20religi%C3%B6sen%20Dokumente%2C%20die%20f%C3%BCr%20%0Aeuch%20hinterlassen%20wurden%2C%20interpretieren%20solltet%2C%20so%20w%C3%BCrdet%20ihr%20sie%20genauso%0Ainterpretieren%20wie%20ich%20es%20euch%20gesagt%20habe.%20Aber%20es%20ist%20nicht%20popul%C3%A4r%0Adieses%20so%20zu%20tun%20-%20die%20negativen%20Kr%C3%A4fte%20w%C3%BCrden%20euch%20lassen%20diese%20%0AInformationen%2C%20diese%20Dokumente%20vollkommen%20anders%20zu%20interpretieren.%20Weil%20die%0Ageringeren%20Kr%C3%A4fte%20(Satan%2C%20Lucifer%2C%20die%20gefallenen%20Engel%20-%20alle%20diejenigen%2C%0Adie%20%3Cb%3Egegen%3C%2Fb%3E%20das%20wahre%20Himmelreich%20sind)%20%3Ci%3Enicht%20m%C3%B6chten%2C%20da%C3%9F%20du%20das%0AHimmelreich%20erreichst%3C%2Fi%3E.%20Sie%20erfreuen%20sich%20daran%20dir%20als%20dein%20'Gott'%20zu%20dienen.%0ASie%20werden%20dir%20die%20Sachen%20geben%2C%20die%20dich%20gl%C3%BCcklich%20%3Ci%3Ein%20dieser%20Welt%3C%2Fi%3E%20machen.%0AWenn%20du%20m%C3%B6chtest%2C%20so%20kannst%20du%20ihre%20Namen%20loben%20und%20um%20Reicht%C3%BCmer%20bitten%2C%0Aoder%20du%20kannst%20um%20alles%20was%20du%20willst%20bitten.%20Sie%20werden%20dir%20die%20Sachen%0Ageben%20die%20du%20m%C3%B6chtest%20und%20dich%20gl%C3%BCcklich%20machen.%20Es%20ist%20heutzutage%20so%0Apopul%C3%A4r%20in%20den%20Religionen%20zu%20predigen%2C%20da%C3%9F%20'Gott%20m%C3%B6chte%20da%C3%9F%20du%20in%20einem%0Areichlichem%20Leben%20lebst%2C%20so%20sage%20ihm%20doch%20was%20deine%20W%C3%BCnsche%20sind.%20Er%0Am%C3%B6chte%20nicht%20da%C3%9F%20du%20zerlumpt%20und%20arm%20bist'.%20Und%20sicherlich%2C%20das%20ist%20wahr%2C%0Aer%20m%C3%B6chte%20es%20nicht.%20Aber%20dieses%20berechtigt%20nicht%20%3Cb%3Eeine%20Welt%20hier%20zu%20suchen%0Aanstatt%20sein%20Reich%20zu%20suchen.%20Ihr%20sucht%20nicht%20sein%20Reich%20solange%20ihr%20nicht%0Asucht%20aus%20dieser%20Welt%20herauszukommen%20anstrebt%3C%2Fb%3E.%20Ihr%20k%C3%B6nnt%20nicht%20beides%0Ahaben.%20Sein%20Reich%20wird%20niemals%20zusammen%20mit%20dieser%20Welt%20koexistieren.%20Das%20ist%0Aunm%C3%B6glich.%20Das%20w%C3%A4re%20genauso%20wie%20wenn%20die%20Menschen%20auf%20allen%20Vieren%20gehen%0Aw%C3%BCrden%2C%20in%20der%20Welt%20der%20Hunde%20leben%20w%C3%BCrden%20und%20sich%20auf%20Hundewohnungen%2C%20%0AHundenahrung%20und%20Hundeverhalten%20beschr%C3%A4nken%20w%C3%BCrden.%20Es%20macht%20%C3%BCberhaupt%0Akeinen%20Sinn.%20Warum%20sollte%20die%20Welt%2C%20die%20das%20Menschenreich%20%3Cb%3Egeschaffen%3C%2Fb%3E%20hat%2C%0AErf%C3%BCllung%20%3Ci%3Ein%3C%2Fi%3E%20dem%20Menschenreich%20finden%3F%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20es%20existiert%20eine%20bemerkenswerte%20Tatsache%20-%20die%20bemerkenswerteste%0ATatsache%20die%20ihr%20euch%20wahrscheinlich%20vorstellen%20k%C3%B6nnt%20und%20das%20ist%20-%20ihr%0AKonzept%20erlaubt%20es%20ihnen%2C%20kleine%20'mentale%20Ablagen'%20in%20menschliche%20Pflanzen%0Azu%20machen.%20Wir%20werden%20diese%20'Ablagen'%2C%20um%20besser%20verst%C3%A4ndlich%20zu%20werden%2C%0Adie%20%3Cb%3E'Seele'%3C%2Fb%3E%20nennen.%20Und%20diese%20Ablagen%20sind%20wirklich%20wie%20ein%20kleiner%20Teil%20der%0A'Hardware'%20der%20N%C3%A4chsten%20Stufe%2C%20mit%20der%20F%C3%A4higkeit%20Informationen%20aus%20der%0AN%C3%A4chsten%20Stufe%20aufzunehmen.%20Diese%20Ablage%2FSeele%20ist%20nicht%20nur%20ein%20Lagerhaus%2C%0Asondern%20auch%20eine%20%3Ci%3E%3Cb%3ETrennungsvorrichtung%3C%2Fb%3E%3C%2Fi%3E%20f%C3%BCr%20Informationen.%20Und%20diese%0AAblage%2FSeele%20kommt%20urspr%C3%BCnglich%20mit%20einem%20Kern%20von%20Gedankengut%20von%20der%0AN%C3%A4chsten%20Stufe.%20Und%20woimmer%20die%20N%C3%A4chste%20Stufe%20diese%20%3Ci%3EAblagen%20von%20Seelen%3C%2Fi%3E%20in%0Amenschliche%20Pflanzen%20durchf%C3%BChrt%2C%20dort%20enthalten%20diese%20Ablagen%20einen%20kleinen%0ATeil%20von%20Informationen%2C%20die%20dem%20Empf%C3%A4nger%20erlauben%20die%20Art%20der%20Information%0Azu%20%3Ci%3Eerkennen%3C%2Fi%3E%2C%20die%20ich%20euch%20%C3%BCbermittle.%20Es%20hat%20sogar%20die%20F%C3%A4higkeit%20den%20%0ATr%C3%A4ger%20(den%20Repr%C3%A4sentanten)%20der%20Informationen%20oder%20Gedankenguts%20der%20%0AN%C3%A4chsten%20Stufe%2C%20zu%20erkennen.%0A%3C%2Fp%3E%3Cp%3E%0ASogar%20wenn%20du%20mir%20zuh%C3%B6rst%20k%C3%B6nntest%20du%20mich%20und%20diejenigen%20Informationen%0Aerkennen%2C%20aber%20die%20niederen%20Kr%C3%A4fte%20und%20dein%20genetisches%20Programm%20sagt%2C%20'Oh%2C%0Ah%C3%B6re%20nicht%20auf%20das.%20H%C3%B6re%20nicht%20auf%20das.%20Das%20ist%20schrecklich.%20Das%20ist%20der%0AAnti-Christ.%20Das%20ist%20nicht%20Gott%2C%20wie%20ich%20ihn%20kenne.%20Das%20ist%20etwas%20v%C3%B6llig%0Aanderes.'.%20Ich%20bef%C3%BCrchte%2C%20da%C3%9F%20das%20worauf%20du%20h%C3%B6rst%20-%20ich%20beschuldige%20dich%0Anicht%20daf%C3%BCr%2C%20da%C3%9F%20du%20es%20h%C3%B6rst%2C%20du%20hattest%20kaum%20eine%20andere%20Wahl%20-%20sind%20die%0Aniederen%20Kr%C3%A4fte.%20Diese%20niederen%20Kr%C3%A4fte%20sind%20so%20stark%2C%20da%C3%9F%20sie%20die%20Menschen%0Aeiner%20%3Ci%3EGehirnw%C3%A4sche%3C%2Fi%3E%20unterzogen%20haben%20und%20da%C3%9F%20sie%20die%20Menschen%20auf%20jeder%0AStufe%20v%C3%B6llig%20%3Ci%3Evergiftet%20(betrunken)%3C%2Fi%3E%20haben%2C%20rund%20um%20den%20Globus%2C%20so%20stark%2C%20da%C3%9F%20die%0AMenschen%20vollst%C3%A4ndig%20damit%20besch%C3%A4ftigt%20sind%20mit%3A%20Geld%20verdienen%2C%20das%20Geld%0Aauf%20ein%20Bankkonto%20einzahlen%2C%20mehr%20Kinder%20haben%2C%20mehr%20Enkel%20haben%2C%20die%20Kinder%0Azur%20Schule%20schicken%2C%20eine%20Vielzahl%20von%20'Sicherheiten'%20zur%C3%BCcklassen%0Asoda%C3%9F%20sie%20und%20ihre%20Kinder%20eine%20Zukunft%20haben.%20Wozu%20f%C3%BChrt%20das%3F%20-%20das%0AMenschenreich%20%3Ci%3Eauszudehnen%3C%2Fi%3E%20und%20das%20Menschenreich%20%3Ci%3Eauszudehnen%3C%2Fi%3E%20und%20das%0AMenschenreich%20%3Ci%3Eauszudehnen%3C%2Fi%3E%20und%20dabei%20keine%20Vorstellungen%20zu%20haben%2C%20was%20f%C3%BCr%0AM%C3%B6glichkeiten%20jenseits%20davon%20existieren.%20Du%20sagst%2C%20'Oh%20ja%2C%20wir%20gehen%0Agelegentlich%20zur%20Kirche%20und%20wir%20reden%20%C3%BCber%20den%20Himmel%2C%20wir%20reden%20%C3%BCber%20das%0AHimmelreich'.%20Aber%20die%20meisten%20Leute%20m%C3%B6chten%20gar%20nicht%20das%20Thema%0AHimmelreich%20erw%C3%A4hnen%2C%20weil%20sie%20eigentlich%20gar%20nicht%20wirklich%20wissen%20was%20es%20%0Aist.%20Sie%20haben%20nur%20den%20Glauben%2C%20da%C3%9F%20'es%20dort%20ist%20wo%20ich%20hingehen%20werde%2C%0Awenn%20ich%20gut%20war%20und%20ich%20mu%C3%9F%20nur%20darauf%20vertrauen%2C%20da%C3%9F%20es%20dort%20ist%20wo%20ich%0Ahingehen%20werde.'.%20Das%20macht%20%C3%BCberhaupt%20keinen%20Sinn.%20Nun%2C%20du%20kannst%20fragen%2C%0A'Warum%20sagst%20du%20mir%2C%20da%C3%9F%20es%20%C3%BCberhaupt%20keinen%20Sinn%20macht%3F%20Das%20ist%20mein%0AVertrauen.%20Das%20ist%20mein%20Glauben.'%20%3Cb%3EIch%20wei%C3%9F%2C%20da%C3%9F%20es%20ist.%20Es%20ist%20nicht%20deine%0ASchuld.%3C%2Fb%3E%20%3Ci%3EIch%20wei%C3%9F%3C%2Fi%3E%2C%20da%C3%9F%20es%20dein%20Vertrauen%20ist%2C%20%3Ci%3Eich%20wei%C3%9F%3C%2Fi%3E%2C%20da%C3%9F%20es%20dein%0AGlauben%20ist.%20Und%20%3Ci%3E%3Cb%3Eich%20versuche%20verzweifelt%20dir%20Hilfe%20zu%20geben%3C%2Fb%3E%3C%2Fi%3E%2C%20soda%C3%9F%20du%0Adiesen%20Ort%20%3Ci%3E%3Cb%3Everlassen%3C%2Fb%3E%3C%2Fi%3E%20kannst.%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20drei%20Arten%20von%20Individuen%20k%C3%B6nnen%20eine%20m%C3%A4gliche%20Zukunft%20im%20Reich%20Gottes%2C%0Aim%20Himmelreich%2C%20haben.%20Oh%2C%20einige%20Minuten%20zuvor%2C%20hatte%20ich%20begonnen%20%C3%BCber%0Adieses%20bemerkenswerte%20Design%20zu%20sprechen%20und%20ich%20m%C3%B6chte%20nun%20darauf%0Azur%C3%BCckkommen.%20Dieses%20bemerkenswerte%20Design%20ist%20%3Ci%3Ewas%20eine%20Seele%20werden%20kann%3C%2Fi%3E%0Aund%20%3Ci%3Ewie%20eine%20Seele%20in%20ein%20menschliches%20Vehikel%20abgelagert%20werden%20kann%3C%2Fi%3E.%20Diese%0AAblagen%20wurden%20kurz%20vorher%20gemacht%20bevor%20ein%20Repr%C3%A4sentant%20der%20Existenzstufe%20%0Aoberhalb%20der%20Menschen%20in%20das%20Menschenreich%20kommt%2C%20einen%20menschlichen%20K%C3%B6rper%0Aeinnimmt%20und%20die%20Wahrheit%20dar%C3%BCber%20sagt%2C%20was%20das%20Menschenreich%20wirklich%20ist%2C%0Awas%20das%20Himmlereich%20wirklich%20ist%20und%20den%20Informationen%20eine%20Chance%20gibt%20in%0Adie%20Seelen%20eingebunden%20zu%20werden.%20Nun%2C%20wenn%20eine%20menschliche%20Pflanze%20eine%0ASeele%20hat%2C%20so%20m%C3%BCsste%20die%20menschliche%20Pflanze%20jemanden%20aus%20dem%20Himmelreich%0A%3Cb%3Efinden%3C%2Fb%3E%20und%20mit%20ihm%20in%20%3Cb%3EKontakt%20treten%3C%2Fb%3E.%20Und%20weil%20der%20Repr%C3%A4sentant%20hier%20ist%0Aum%20zu%20versuchen%20denjenigen%20zu%20helfen%20die%20Informationen%20zu%20bekommen%2C%20die%20sie%0Aaus%20dieser%20Welt%20%3Ci%3Eherausf%C3%BChren%3C%2Fi%3E%20k%C3%B6nnen%2C%20dann%20wird%20der%20Repr%C3%A4sentant%20sagen%2C%0A%3Ci%3E%3Cb%3E'Ich%20bin%20aus%20dem%20Himmelreich.'%3C%2Fb%3E%3C%2Fi%3E.%20Wie%20gottesl%C3%A4sterlich%20kann%20jemand%20sein%2C%20zu%20sagen%2C%0A%22Ich%20komme%20aus%20dem%20Himmelreich.%22%0AWie%20sonst%20kann%20ein%20Repr%C3%A4sentant%20dir%20alles%0Aanbieten%2C%20wenn%20er%20sich%20nicht%20mit%20dem%20was%20er%20ist%20identifiziert%3F%20Er%20sagt%2C%0A%3Ci%3E'M%C3%B6chtest%20du%20in%20den%20Himmel%20gehen%3F%20Ich%20bin%20hier!%20Ich%20wurde%20%3Cb%3Ehierher%20geschickt%3C%2Fb%3E%0Amit%20dem%20ausdr%C3%BCcklichem%20Ziel%20dir%20zu%20helfen%20ins%20Himmelreich%20zu%20kommen.'%3C%2Fi%3E%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20der%20bemerkenswerte%2C%20kleine%20Prozess%20der%20geschieht%20-%20wenn%20ein%20Individuum%2C%0Adas%20die%20kleine%20Seelenablage%20in%20sich%20tr%C3%A4gt%20und%20die%20Stimme%20h%C3%B6rt%20die%20sagt%2C%20%0A'Ich%20bin%20vom%20Himmelreich%2C%20ich%20kann%20dir%20helfen%20ins%20Himmelreich%20zu%20gehen%2C'%20-%20%0Adann%20erf%C3%A4hrt%20das%20Individuum%20ernste%20Furcht%2FSchmerz%20und%20%3Cb%3Ebeginnt%20sich%20von%20der%20%0AWelt%20loszul%C3%B6sen%3C%2Fb%3E%20und%20beginnt%20zu%20gehen%2C%20%3Cb%3Ephysikalisch%20zu%20gehen%20und%20beim%20%0ARepr%C3%A4sentanten%20des%20Himmelreiches%20zu%20sein.%3C%2Fb%3E%20Der%20Repr%C3%A4sentant%20wei%C3%9F%20genau%2C%0Ada%C3%9F%20sie%20zu%20jeder%20Zeit%20fragen%20werden%2C%20'Ist%20dieser%20wirklich%20jemand%20aus%20dem%0AHimmelreich%20oder%20aus%20der%20Stufe%20oberhalb%20der%20Menschen%3F%20Weil%20wenn%20er%20es%20nicht%0Aist%2C%20du%20wei%C3%9Ft%2C%20ich%20m%C3%B6chte%20nicht%20in%20einem%20'Kult'%20gefangen%20werden.%20Ich%0Am%C3%B6chte%20nicht%20auf%20jemanden%20h%C3%B6ren%2C%20der%20mich%20in%20die%20Irre%20f%C3%BChren%20kann.%20Aber%0Awenn%20er%20jemand%20aus%20dem%20Himmelreich%20ist%20und%20wenn%20ich%20die%20kleine%0AInformationseinheit%20in%20meinem%20Kopf%20habe%2C%20dann%20werde%20ich%20ein%20gewisses%0ABewusstsein%20haben%2C%20da%C3%9F%20%3Ci%3Eetwas%20Wahres%3C%2Fi%3E%20in%20dem%20sein%20k%C3%B6nnte%20was%20diese%20Person%0Asagt%2C%20%3Ci%3Edie%20behauptet%3C%2Fi%3E%20sie%20sei%20aus%20dem%20Himmelreich.'%0A%3C%2Fp%3E%3Cp%3E%0AVergi%C3%9F%20nicht%2C%20einige%20tausend%20Jahre%20fr%C3%BCher%2C%20war%20ein%20Repr%C3%A4sentant%20des%0AHimmelreiches%20oder%20der%20Entwicklungsstufe%20oberhalb%20der%20Menschen%20hier%0Agegenw%C3%A4rtig%20und%20hat%20gesagt%2C%20%3Ci%3E'Ich%20bin%20aus%20dem%20Himmelreich.%20Geht%20und%20erz%C3%A4hlt%0Adie%20guten%20Nachrichten'%3C%2Fi%3E.%20Er%20sagte%20seinen%20Anh%C3%A4ngern%2C%20%3Ci%3E'Geht%20und%20erz%C3%A4hlt%20die%0Aguten%20Nachrichten%2C%20da%C3%9F%20das%20Himmelreich%20hier%20ist'%3C%2Fi%3E.%20Das%20bedeutete%2C%20'Dies%20ist%0Aeure%20Chance.%20Ich%20bin%20hier.%20Ich%20kann%20euch%20von%20hier%20herausholen.%20Ich%20kann%20euch%0Ain%20die%20Existenzstufe%20oberhalb%20der%20Menschen%20f%C3%BChren'.%20Aber%20er%20sagte%20auch%2C%0A'Das%20kann%20nicht%20geschehen%20solange%20ihr%20nicht%20die%20menschliche%20Welt%20verlasst%2C%0Ain%20der%20ihr%20euch%20gerade%20befindet%20und%20kommt%20und%20mir%20folgt.%20%3Cb%3EKommt%20und%20folgt%0Amir%3C%2Fb%3E'.%20Das%20bedeutete%20nicht%20an%20den%20Sonntagen%2C%20es%20bedeutete%20nicht%20nur%0Azeitweilig.%20Es%20bedeutete%20vollst%C3%A4ndig%20-%20%3Cb%3E'Verlasse%20alles%20und%20komm%20und%20folge%0Amir'%3C%2Fb%3E.%20Und%20du%20kannst%20sagen%2C%20'Nun%2C%20meine%20Informationen%20sagen%20mir%20das%20ist%0Aschrecklich'.%20Nun%2C%20pruefe%20es%20selbst.%20Geh%20und%20lie%C3%9F%20das%20Neue%20Testament.%20Geh%0Aund%20lie%C3%9F%20die%20roten%20Buchstaben%20im%20Neuen%20Testament.%20Siehe%20was%20der%0ARepr%C3%A4sentant%20wirklich%20sagte%2C%20%3Cb%3E'Solange%20du%20nicht%20alles%20verl%C3%A4%C3%9Ft%20und%20mir%0Afolgst%2C%20solange%20du%20nicht%20alles%20was%20in%20dieser%20Welt%20ist%20%3Ci%3Eha%C3%9Ft%3C%2Fi%3E%20und%20nicht%20kommst%20%0Aund%20mir%20folgst%2C%20solange%20wirst%20du%20weder%20meinen%20Vater%20kennen%20noch%20sein%0AReich'%3C%2Fb%3E.%20Geh%20und%20lie%C3%9F%20es.%20Es%20ist%20lang.%20Es%20ist%20gr%C3%BCndlich.%20Es%20ist%0Abemerkenswert%2C%20da%C3%9F%20es%20noch%20dort%20steht.%20Ich%20bin%20sicher%2C%20da%C3%9F%20die%20Stufe%0Aoberhalb%20der%20Menschen%20intervenieren%20mu%C3%9Fte%2C%20weil%20sonst%20die%20niederen%20Kr%C3%A4fte%20%0Adiese%20Botschaft%20schon%20l%C3%A4ngst%20aus%20den%20Niederschriften%2C%20die%20die%20Leute%20als%0Areligi%C3%B6se%20Schriften%20oder%20religi%C3%B6se%20Literatur%20bezeichnen%2C%20eliminiert%0Ah%C3%A4tten.%0A%3C%2Fp%3E%3Cp%3E%0AJede%20Religion%20ist%20%3Cb%3Eweniger%20als%3C%2Fb%3E%20die%20'Wahrheit'.%20%3Cb%3ESie%20wird%20zu%20einer%20Religion%0Awenn%20sie%20weniger%20als%20die%20Wahrheit%20wird.%3C%2Fb%3E%20Tats%C3%A4chlich%20kann%20jede%20Religion%0Ajemanden%20vorbereiten%2C%20%3Cb%3Emehr%20vorbereitet%20zu%20sein%3C%2Fb%3E%20f%C3%BCr%20die%20Zeit%20wenn%20ein%0ARepr%C3%A4sentant%20von%20der%20Existenzstufe%20oberhalb%20der%20Menschen%20herkommt%3A%20es%20ist%0Aalso%20nicht%20so%2C%20da%C3%9F%20die%20Stufe%20oberhalb%20der%20Menschen%20nur%20f%C3%BCr%20Wei%C3%9Fe%2C%20oder%0ASchwarze%2C%20oder%20Juden%2C%20oder%20Christen%2C%20oder%20Moslems%2C%20oder%20was%20auch%20immer%20der%0AFall%20sein%20sollte%2C%20existiert.%20Sie%20ist%20offen%20f%C3%BCr%20alle%20diejenigen%20die%2C%20wenn%0Aein%20Repr%C3%A4sentant%20anwesend%20ist%2C%20%3Cb%3Ew%C3%A4hlen%20alles%20hinter%20sich%20zu%20lassen%2C%20dem%0ARepr%C3%A4sentanten%20zu%20folgen%20und%20sich%20an%20dem%20Repr%C3%A4sentanten%20'anzuheften'%3C%2Fb%3E%3B%20und%0Adas%20Anheften%20w%C3%A4chst%20w%C3%A4rend%20sie%20mehr%20Gedankengut%20von%20ihm%20%C3%BCbernehmen.%20Nun%2C%0Asie%20%C3%BCbernehmen%20nicht%20wirklich%20das%20%3Ci%3EGedankengut%20des%20Repr%C3%A4sentanten%3C%2Fi%3E%2C%20weil%20das%0AGedankengut%2C%20das%20%3Ci%3Eim%3C%2Fi%3E%20Repr%C3%A4sentanten%20vorhanden%20ist%20nicht%20%3Ci%3Esein%3C%2Fi%3E%20eigenes%0AGedankengut%20ist.%20Das%20Gedankengut%20das%20%3Ci%3Edurch%3C%2Fi%3E%20mich%20kommt%20ist%20nicht%20mein%0AGedankengut%2C%20es%20ist%20das%20Gedankengut%20meines%20%C3%A4lteren%20Mitgliedes%20-%20wir%20w%C3%A4ren%0Ain%20einer%20schlechten%20Lage%20wenn%20es%20%3Ci%3E%3Cb%3Emein%3C%2Fb%3E%3C%2Fi%3E%20Gedankengut%20w%C3%A4re.%20Es%20ist%20mein%2C%20weil%0Aes%20mir%20von%20meinem%20%C3%A4lteren%20Mitglied%20und%20von%20der%20Existenzstufe%20oberhalb%20der%0AMenschen%20%3Ci%3E%3Cb%3Egegeben%3C%2Fb%3E%3C%2Fi%3E%20wurde%20%20-%20aber%20es%20ist%20nicht%20%3Ci%3E%3Cb%3Evon%3C%2Fb%3E%3C%2Fi%3E%20mir.%20Ich%20k%C3%BCmmere%20mich%20nicht%0Aum%20Ruhm.%20Ich%20wei%C3%9F%20da%C3%9F%20es%20die%20letzte%20Sache%20ist%2C%20die%20mir%20jemand%20auf%20diesem%0APlaneten%20geben%20w%C3%BCrde%20und%20ich%20schere%20mich%20nicht%20darum.%20Aber%20ich%20%3Ci%3E%3Cb%3Ek%C3%BCmmere%0Amich%3C%2Fb%3E%3C%2Fi%3E%20darum%20die%20Stufe%20oberhalb%20der%20Menschen%20zu%20r%C3%BChmen.%20%3Ci%3E%3Cb%3EIch%20k%C3%BCmmere%20mich%0Adarum%2C%20meinen%20Vater%2C%20der%20mir%20das%20Leben%20gegeben%20hat%2C%20zu%20r%C3%BChmen.%3C%2Fb%3E%3C%2Fi%3E%20Es%20ist%0Aschwer%20f%C3%BCr%20mich%20dar%C3%BCber%20zu%20sprechen%20ohne%20dabei%20schwach%20zu%20werden%2C%20wie%20ihr%0Abeobachten%20k%C3%B6nnt.%0A%3C%2Fp%3E%3Cp%3E%0AOkay%2C%20hier%20ist%20eine%20Person%20die%20sagt%2C%20'Ich%20m%C3%B6chte%20raus%20aus%20dieser%20Welt'.%0ANun%2C%20diese%20Welt%20zu%20verlassen%20ist%20nicht%20einfach.%20Es%20ist%20schwierig.%20Es%20ist%0Ahart.%20Und%20Verlassen%20bedeutet%20nicht%2C%20da%C3%9F%20ich%20irgendwohin%20gehe%20um%20mit%20diesem%20%0Akleinen%20Kult%20zu%20leben%20und%20meine%20Wochenenden%2C%20oder%20zumindest%20die%20Ferien%2C%20mit%0Ameiner%20Familie%2C%20die%20ich%20zur%C3%BCckgelassen%20habe%2C%20zu%20verbringen%2C%20weil%20ja%20sie%0Ameine%20Familie%20sind.%20%3Ci%3ENein%2C%20es%20bedeutet%2C%20da%C3%9F%20du%20die%20Welt%20zur%C3%BCckl%C3%A4%C3%9Ft.%20Du%0Awirst%20sogar%20ein%20anderes%20Individuum.%3C%2Fi%3E%20Es%20bedeutet%2C%20da%C3%9F%20sogar%20der%0A'Verstand%2FGedankengut'%20den%20du%20als%20Mensch%20hattest%20'weggetan'%20wird%20und%20die%0ASeele%20die%20dir%20gegeben%20wurde%20wird%20mit%20Informationen%20aus%20der%20N%C3%A4chsten%20Stufe%0A-%20das%20Gedankengut%20der%20N%C3%A4chsten%20Stufe%20-%20gef%C3%BCllt%20und%20%3Ci%3Eeine%20neue%20Kreatur%20%0Awird%20geboren%3C%2Fi%3E%2C%20eine%20die%20nicht%20Mensch%20ist.%20Nun%2C%20das%20Gedankengut%20das%20die%20Seele%0Af%C3%BCllt%2C%20kommt%20aus%20der%20Existenzstufe%20oberhalb%20der%20Menschen%20-%20das%20Reich%20Gottes.%0ASo%2C%20das%20bedeutet%2C%20da%C3%9F%20sogar%20das%20was%20die%20Seele%20f%C3%BCllt%20%3Cb%3Evon%20dem%20Himmelreich%20%0Akommt%3C%2Fb%3E.%20Und%20deshalb%20wird%20diese%20neue%20Kreatur%20zu%20etwas%20das%20von%20derjenigen%20Welt%20%0Astammt%2C%20oder%20ist%20sogar%20etwas%20%3Cb%3Evon%3C%2Fb%3E%20derjenigen%20Welt.%20Es%20ist%20die%20interessanteste%0ASache%20die%20es%20gibt%2C%20wie%20die%20Kreatur%20zum%20Leben%20erweckt%20wird%20(entsteht).%20So%20ist%20%0Aes%20wie%20Babies%20in%20der%20Existenzstufe%20oberhalb%20der%20Menschen%20gemacht%20werden%20-%20%0Asicherlich%20nicht%20auf%20S%C3%A4ugetierweise%2C%20sicherlich%20nicht%20in%20Handlungen%20die%20f%C3%BCr%20%0Adie%20Mitglieder%20des%20Himmelreiches%20abscheulich%20sind.%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20das%20bedeutet%20nicht%2C%20da%C3%9F%20es%20'b%C3%B6se'%20ist%20ein%20Reproduktionsakt%20im%0AMenschenreich%20zu%20haben%20-%20es%20ist%20sicherlich%20'b%C3%B6se'%20wenn%20ich%20es%20tue%20und%0Awenn%20ich%20dabei%20das%20Menschenreich%20%3Ci%3Everlassen%3C%2Fi%3E%20m%C3%B6chte.%20Es%20ist%20'b%C3%B6se'%0Aweil%20es%20barbarisch%20ist%2C%20es%20ist%20primitiv%2C%20es%20ist%20unterhalb%20meiner%0AW%C3%BCrde.%20Die%20Mitglieder%20in%20der%20Existenzstufe%20oberhalb%20der%20Menschen%20sind%0Akeine%20S%C3%A4ugetiere%20-%20dort%20gibt%20es%20keine%20M%C3%A4nner%2C%20dort%20gibt%20es%20keine%0AFrauen.%20Sie%20brauchen%20nicht%20Sachen%20zu%20konsumieren%20f%C3%BCr%20die%20man%20Gebisse%0Aund%20Z%C3%A4hne%20ben%C3%B6tigt.%20Sie%20k%C3%B6nnen%20Nahrung%20von%20einer%20Pille%20erhalten%2C%0Aoder%20von%20einer%20Vibrationswelle%20durch%20die%20sie%20einfach%0Ahindurchgehen.%20Die%20Umwelt%20in%20der%20sie%20sich%20gerade%20befinden%2C%20bestimmt%20was%20das%20Vehikel%20%0A(oder%20%22Kleideranzug%22(%3DK%C3%B6rper))%2C%20das%20sie%20f%C3%BCr%20die%20Aufgabe%20tragen%2C%20ben%C3%B6tigt.%0AVergi%C3%9F%20nicht%2C%0Asie%20identifizieren%20sich%20mit%20dem%20Gedankengut%20-%20gleichbedeutend%20mit%20Geist%20-%0Asie%20sind%20nicht%20der%20'Kleideranzug'.%20Aber%20sie%20tragen%20physikalisch%20reale%0A'Kleideranz%C3%BCge'%20und%20diese%20physikalisch%20realen%20Kleideranz%C3%BCge%20sehen%20genauso%0Aaus%20wie%20-%20nun%2C%20ich%20hatte%20bereits%20begonnen%20zu%20sagen%2C%20wie%20'Au%C3%9Ferirdische'.%0AWie%20auch%20immer%2C%20die%20meisten%20Darstellungen%20von%20Au%C3%9Ferirdischen%2C%20die%20von%0Amenschlichen%20Artisten%20gemacht%20wurden%2C%20sind%20die%20groteskesten%20Sachen%0Adie%20du%20dir%20nur%20Vorstellen%20kannst.%20Die%20Artisten%20lassen%20sie%20aussehen%20wie%0AGottesanbeterinnen%20oder%20wie%20Insekten%20mit%20einem%20komischem%20Aussehen%20und%20Form.%0AUnd%20das%20ist%20l%C3%A4cherlich.%20Die%20K%C3%B6rper%20der%20Mitglieder%20der%20N%C3%A4chsten%20Stufe%20sind%0Aperfekte%2C%20sch%C3%B6ne%20'Kleideranz%C3%BCge'.%20Sie%20sind%20perfekte%2C%20sch%C3%B6ne%20K%C3%B6rper%20-%0Aweder%20m%C3%A4nnlich%20noch%20weiblich.%20Sie%20haben%20keine%20Haare%2C%20die%20geschnitten%20werden%0Am%C3%BCssen%2C%20sie%20brauchen%20keinen%20Lockenwickler.%20Sie%20brauchen%20kein%20MakeUp%20zu%0Abenutzen.%20Es%20ist%20ein%20K%C3%B6rper%20der%20f%C3%BCr%20die%20gr%C3%B6%C3%9Fte%20Zeit%20in%20einer%0Anicht-zerst%C3%B6rerischen%20Umwelt%20existiert%2C%20mit%20Ausnahme%20wenn%20sie%20zu%20einem%20Ort%0Awie%20dem%20Planeten%20Erde%20gehen%20m%C3%BCssen.%20Es%20ist%20also%20ein%20potentiell%20%3Ci%3Eewiger%0AK%C3%B6rper%20-%20ein%20immerw%C3%A4hrender%20K%C3%B6rper%3C%2Fi%3E.%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20es%20gef%C3%A4lt%20mir%20nicht%20Ausdr%C3%BCcke%20wie%20'immerw%C3%A4hrend'%20zu%20benutzen%2C%20weil%2C%0Abingo%2C%20es%20klingt%20als%20ob%20ich%20spirituell%20oder%20religi%C3%B6s%20sprechen%20w%C3%BCrde.%0AVergi%C3%9F%20nicht%2C%20Religion%20ist%20weniger%20als%20die%20Wahrheit.%20Spirituelles%20Gerede%0Aist%20weniger%20als%20die%20Wahrheit.%20Es%20ist%20ein%20%3Cb%3EMi%C3%9Fbrauch%20der%20Wahrheit%3C%2Fb%3E%20-%20es%20ist%0A%3Cb%3Eein%20Ersatz%20f%C3%BCr%20die%20Wahrheit%3C%2Fb%3E%2C%20den%20die%20niederen%20Kr%C3%A4fte%20eingef%C3%BChrt%20haben.%20%3Cb%3EJe%0Amehr%20religi%C3%B6s%20du%20wirst%2C%20desto%20st%C3%A4rker%20wirst%20du%20von%20oberfl%C3%A4chlichen%0AInformationen%20abh%C3%A4ngig%2C%20die%20dich%20dann%20weg%20von%20der%20Wahrheit%20f%C3%BChren.%3C%2Fb%3E%20Es%20ist%0Agenau%20wie%20mit%20Ritualen%20und%20mit%20Gebeten%20und%20mit%20den%20Fallen%20die%20die%20Religionen%0Abegleiten%20-%20sie%20k%C3%B6nnen%20so%20suchterzeugend%20sein%2C%20sie%20k%C3%B6nnen%20so%20beruhigend%0Asein%2C%20sie%20k%C3%B6nnen%20so%20entspannend%20sein%2C%20sie%20k%C3%B6nnen%20sich%20so%20wundervoll%0Aanf%C3%BChlen.%20Und%20all%20diese%20Sachen%20beiseitezulegen%20im%20Austausch%20f%C3%BCr%20die%0ARealit%C3%A4t%2C%20die%20da%20hei%C3%9Ft%20Entwicklungsstufe%20oberhalb%20der%20Menschen%2C%20%3Ci%3Edie%20all%20%0Adiese%20Sachen%20nicht%20ben%C3%B6tigt%3C%2Fi%3E%2C%20ist%20eine%20sehr%20schwieriges%20Unterfangen.%20Es%20ist%0Avergleichbar%20schwierig%20die%20religi%C3%B6sen%20Zw%C3%A4nge%20beiseitezulegen%2C%20wie%0Adas%20Beiseitelegen%20der%20Bindungen%20zu%20der%20Pflanze%20die%20du%20tr%C3%A4gst%20-%20diese%0ABindungen%20zu%20den%20Nachkommen%20oder%20zum%20Ehegatten%20oder%20zu%20den%20Eltern%20der%0APflanzen.%0A%3C%2Fp%3E%3Cp%3E%0ADie%20komische%20Tatsache%20ist%20aber%2C%20da%C3%9F%20in%20Wirklichkeit%2C%20die%20menschlichen%0AEltern%20nicht%20ihre%20Nachkommen%20%3Cb%3Ebesitzen%3C%2Fb%3E.%20Es%20ist%20eine%20sehr%20'b%C3%B6se'%20Sache%20von%0Aden%20Menschen%20zu%20denken%2C%20da%C3%9F%20ihre%20Nachkommen%20%3Ci%3Eihnen%3C%2Fi%3E%20geh%C3%B6ren%2C%20da%C3%9F%20sie%20ihre%0AProdukte%20sind%2C%20ihr%20Eigentum.%20Die%20Menschen%20sind%20eher%20von%20den%20au%C3%9Ferirdischen%0AKr%C3%A4ften%2C%20oder%20den%20Raum-Au%C3%9Ferirdischen%2C%20oder%20den%20negativen%20Kreaturen%2C%20%0Aprogrammiert%20zu%20glauben%2C%20da%C3%9F%20die%20Kinder%20ihren%20Eltern%20geh%C3%B6ren%20oder%20da%C3%9F%20%0Adie%20Eltern%20ihre%20Kinder%20besitzen%2C%20als%20da%C3%9F%20sie%20aus%20eigenem%20Antrieb%20m%C3%B6chten%20%0Ada%C3%9F%20der%20entstandene%20Geist%2C%20der%20Verstand%20(der%20sich%20in%20dem%20K%C3%B6rper%20befindet%2C%20%0Aden%20sie%20versorgen)%20das%20wird%20was%20er%20m%C3%B6chte.%20%20Die%20Programmierung%20%0Adurch%20die%20niederen%20Kr%C3%A4fte%20entspricht%20nicht%20der%20Wahrheit.%20Es%20ist%20grausam%20%0Asogar%20so%20zu%20denken.%20Je%20mehr%20Gedankengut%20aus%20der%20N%C3%A4chsten%20Stufe%20jemand%20hat%2C%20%0Adesto%20mehr%20m%C3%B6chte%20derjenige%20sein%20eigenes%20Leben%20f%C3%BChren%20und%20nicht%20eigenn%C3%BCtzig%20%0Azu%20werden%20und%20zu%20sagen%2C%20'Nun%2C%20Ich%20habe%20dich%20in%20diese%20Welt%20gebracht.%20Ich%20%0Am%C3%B6chte%20mich%20an%20dich%20%3Ci%3Eanheften%3C%2Fi%3E.%20Du%20%3Ci%3Egeh%C3%B6rst%3C%2Fi%3E%20zu%20mir'.%20Das%20wird%20nicht%20standhalten.%20%0ADie%20Kinder%20haben%20dich%20nicht%20gebeten%20sie%20in%20die%20Welt%20zu%20setzen.%20Existieren%0Airgendwelche%20Niederschriften%2C%20die%20besagen%2C%20da%C3%9F%20die%20Eltern%20ihre%20Kinder%0Abesitzen%3F%20Nun%2C%20die%20Eltern%20%3Ci%3Esind%20verantwortlich%3C%2Fi%3E%20f%C3%BCr%20ihre%20Kinder%2C%20weil%20die%0AEltern%20die%20Wahl%20f%C3%BCr%20die%20Erschaffung%20(Reproduktion%2C%20Kopie)%20einer%20anderen%0Amenschlichen%20Pflanze%20hatten.%20Und%20weil%20sie%20die%20Wahl%20getroffen%20haben%20sich%20fortzupflanzen%0Aund%20weil%20sie%20entsprechende%20Handlungen%20durchgef%C3%BChrt%20haben%20-%20ja%2C%20das%20ist%20der%20%0Aentscheidende%20Punkt%20hier%2C%20nicht%20wahr%20-%20m%C3%B6chten%20wir%20das%20Thema%20der%20%0A'menschlichen%20Fortpflanzung'%20untersuchen.%0A%3C%2Fp%3E%3Cp%3E%0AMensch%2C%20die%20schlimmste%20Sache%20die%20du%20dir%20f%C3%BCr%20Menschen%20vorstellen%20kannst%2C%20ist%0Avon%20diesen%20Raum-Au%C3%9Ferirdischen%20gelehrt%20zu%20werden%20-%20sogar%20unter%20Benutzung%0Ader%20Religionen%20und%20der%20Moral%20der%20Regierung%20-%20da%C3%9F%20der%20Reproduktionsakt%20eine%0AGott-gegebene%20wundervolle%20Sache%20sei.%20Sie%20ist%20Gott-gegeben%20in%20dem%20Sinne%2C%20da%C3%9F%0AHunde%20und%20Pferde%20auch%20von%20Gott%20kommen.%20Alles%20stammt%20aus%20dem%20Himmelreich%2C%0Aeinschlie%C3%9Flich%20Menschen%20und%20ihr%20Reproduktionssystem.%20Aber%20was%20die%0AExistenzstufe%20oberhalb%20der%20Menschen%2C%20das%20Reich%20Gottes%2C%20das%20Himmelreich%2C%0A%3Ci%3Em%C3%B6chte%3C%2Fi%3E%20ist%20%3Ci%3Edir%20ihr%20Reich%20anzubieten%3C%2Fi%3E%2C%20und%20dies%20tun%20sie%20auch%20systematisch%20und%20%0Aperiodisch.%20Aber%20es%20ist%20dazu%20notwendig%2C%20wenn%20sie%20dies%20tun%2C%20da%C3%9F%20du%20auf%20sie%20%0A%3Ci%3Eh%C3%B6rst%3C%2Fi%3E%20und%20da%C3%9F%20du%20das%20%3Ci%3Etust%3C%2Fi%3E%20was%20sie%20von%20dir%20verlangen%2C%20wenn%20du%20aus%20dieser%0AWelt%20heraus%20m%C3%B6chtest.%20Und%20diese%20Welt%20zu%20verlassen%20erfordert%2C%20da%C3%9F%20du%20%3Ci%3Ealles%0Ahinter%20dich%20l%C3%A4%C3%9Ft%3C%2Fi%3E%20und%20%3Ci%3Ezu%20jemandem%20hingehst%2C%20der%20dich%20in%20die%20Existenzstufe%0Aoberhalb%20der%20Menschen%20f%C3%BChren%20kann%2C%20und%20ihm%20folgst%3C%2Fi%3E.%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20ich%20habe%20dir%20eine%20kurze%20Zeit%20vorher%20gesagt%2C%20da%C3%9F%20es%20drei%20Arten%20von%0APersonen%20gibt%2C%20die%20die%20Erneuerung%20(das%20Umgraben%2C%20den%20Spatenstich)%20am%20Ende%20%0Ader%20Zeit%20vermeiden%20k%C3%B6nnen.%20%3Ci%3EDas%20sind%20sicherlich%20zuerst%20diejenigen%20Seelen%2C%0Adie%20abgelagert%20wurden%20und%20die%20aufgewacht%20sind%20und%20die%20dann%20Nahrung%20erhalten%0Ahaben%20und%20alles%20hinter%20sich%20gelassen%20haben%20und%20die%20sich%20angeheftet%20-%20%0Aangeklammert%20-%20haben%20an%20den%20Repr%C3%A4sentanten%20von%20der%20Stufe%20oberhalb%20der%20%0AMenschen%20und%20die%20sich%20von%20allem%20getrennt%20haben.%3C%2Fi%3E%20Nun%2C%20einige%20von%20diesen%20%0AIndividuen%20sitzen%20vor%20mir.%20Ich%20k%C3%B6nnte%20mi%C3%9Fverstanden%20werden%2C%20aber%20ich%20glaube%20%0Anicht%20da%C3%9F%20einer%20von%20ihnen%20ihr%20Lebensanfang%20in%20der%20N%C3%A4chsten%20Stufe%20in%20%3Ci%3Edieser%3C%2Fi%3E%0AZeitperiode%20-%20in%20dieser%20Generation%20-%20haben%20wird.%20Ich%20wei%C3%9F%2C%20da%C3%9F%20jeder%0Aeinzelne%20von%20ihnen%20%3Ci%3Ein%20der%20Obhut%3C%2Fi%3E%20der%20Existenzstufe%20oberhalb%20der%20Menschen%20war%2C%0A%3Ci%3Ebevor%3C%2Fi%3E%20sie%20in%20diese%20Zeit%20kamen.%20Diese%20Zeit%20war%20f%C3%BCr%20sie%20eine%20Chance%20eine%0AMenge%20Sachen%20zu%20lernen%2C%20die%20sie%20fr%C3%BCher%20nicht%20gut%20genug%20gelernt%20haben%2C%20oder%0Asie%20hatten%20damals%20keine%20M%C3%B6glichkeit%20gehabt%20sie%20zu%20vervollst%C3%A4ndigen%2C%20oder%0Asie%20mu%C3%9Ften%20an%20einige%20Sachen%20mehr%20arbeiten%20bis%20sie%20sich%20vom%20Menschenreich%0A%3Ci%3Elosl%C3%B6sen%3C%2Fi%3E%20konnten.%20%0ASie%20hatten%20eine%20Gelegenheit%20gehabt%2C%20diejenigen%20Sachen%0Aweiterzuentwickeln%2C%20soda%C3%9F%20sie%20nicht%20in%20einem%0Amenschliche%20Welt%20zu%20einer%20anderen%20Zeit%20zur%C3%BCckverpflanzt%20werden-%20soda%C3%9F%20sie%20in%20die%20Existenzstufe%20oberhalb%20der%20Menschen%0Aeintreten%20k%C3%B6nnen%2C%20Kleideranz%C3%BCge%2C%20oder%20K%C3%B6rper%20aus%20der%20Existenzstufe%20anziehen%0Ak%C3%B6nnen%20und%20dienen%20und%20ihre%20Arbeit%20in%20der%20Existenzstufe%20oberhalb%20der%0AMenschen%20verrichten%20k%C3%B6nnen.%0A%3C%2Fp%3E%3Cp%3E%0AIch%20wei%C3%9F%2C%20ich%20kann%20einige%20Menschen%2C%20die%20sich%20dieses%20Band%20anschauen%2C%20h%C3%B6ren%0Awie%20sie%20sagen%2C%20'Oh%20mein%20Gott%2C%20wenn%20ich%20das%20tun%20w%C3%BCrde%20was%20du%20sagst%2C%20dann%0Aw%C3%BCrde%20ich%20nicht%20einmal%20ein%20humanit%C3%A4rer%20Mensch%20mehr%20sein.%20Ich%20w%C3%BCrde%20meine%0AVerantwortung%20f%C3%BCr%20das%20Menschenreich%20aufgeben'.%20%3Ci%3E%3Cb%3EDu%20mu%C3%9Ft%20das%20Menschenreich%0Aaufgeben%2C%20wenn%20du%20erwartest%2C%20da%C3%9F%20du%20jemals%20von%20Nutzen%20in%20der%20Existenzstufe%0Aoberhalb%20der%20Menschen%20sein%20kannst.%3C%2Fb%3E%3C%2Fi%3E%20Du%20kannst%20nicht%20beides%20haben.%20Du%20kannst%0Anicht%20sagen%2C%20du%20wei%C3%9Ft%2C%20'12%20Stunden%20pro%20Tag%20werde%20ich%20im%20Menschenreich%0Aarbeiten%20und%20die%20anderen%2012%20Stunden%20werde%20ich%20in%20der%20%20Existenzstufe%20oberhalb%20%0Ader%20Menschen%20arbeiten'.%20Nein%2C%20%3Ci%3Edas%20Menschenreich%20zu%20verlassen%20erfordert%0Aalles%20von%20dir%20was%20du%20hast%3C%2Fi%3E.%0A%3C%2Fp%3E%3Cp%3E%0ADer%20zweite%20Typ%20Mensch%20der%20ins%20Himmelreich%20kommen%20kann%20ist%20jemand%2C%20der%0A%3Ci%3Eden%20Repr%C3%A4sentanten%20erkennt%3C%2Fi%3E%2C%20%3Ci%3Edie%20Informationen%3C%2Fi%3E%20aus%20der%20N%C3%A4chsten%20Stufe%0Adie%20durch%20den%20Repr%C3%A4sentanten%20kommen%20%3Ci%3Eerkennt%3C%2Fi%3E%2C%20%3Ci%3Ewei%C3%9F%20da%C3%9F%20die%20Informationen%0Awahr%20sind%3C%2Fi%3E%20und%20hat%20noch%20nicht%20(jetzt)%20die%20Kraft%20sie%20auszuf%C3%BChren.%20Dieser%20Typ%0A%3Ci%3Evertraut%3C%2Fi%3E%20immer%20noch%20der%20N%C3%A4chsten%20Stufe%2C%20%3Ci%3Eglaubt%3C%2Fi%3E%20immer%20noch%20da%C3%9F%20es%20die%0Aeinzige%20Wahrheit%20ist%20und%20%3Ci%3Edas%20ist%20es%2Cwas%20seinen%20Glauben%20und%20sein%20Vertrauen%20ausmacht%3C%2Fi%3E.%20%0AUnd%20diese%20Menschen%20werden%20in%20der%20Obhut%20der%0AExistenzstufe%20oberhalb%20der%20Menschen%20behalten%20und%20zu%20einer%20anderen%20Zeit%0A%3Ci%3Ewiederverpflanzt%3C%2Fi%3E%20werden%20und%20ihnen%20wird%20eine%20andere%20Chance%20gegeben.%0A%3C%2Fp%3E%3Cp%3E%0AJedoch%2C%20obwohl%20das%20Himmelreich%20fair%20ist%2C%20nur%20weil%20jemand%20mit%20einer%0ASeelenablagerung%20zu%20ihnen%20kommt%2C%20ist%20noch%20keine%20Garantie%20daf%C3%BCr%2C%20da%C3%9F%0Aderjenige%20auch%20in%20die%20Existenzstufe%20oberhalb%20der%20Menschen%20eintreten%20wird.%0AWenn%20sie%20kommen%2C%20so%20k%C3%B6nnen%20sie%20sich%20anstrengen%20um%20sich%20zu%20%C3%A4ndern%20nach%0Aihren%20(gro%C3%9Fes%20Fragezeichen%20f%C3%BCr%20das%20n%C3%A4chste%20Wort)%20F%C3%A4higkeiten%20und%0AM%C3%B6glichkeiten.%20Es%20erfordert%20eine%20Menge%20Anstrengung.%20Und%20%3Ci%3Eselbst%20deine%20eigene%0AAnstrengung%3C%2Fi%3E%20kann%20dich%20nicht%20dahin%20bringen.%20Du%20mu%C3%9Ft%20dein%20%C3%A4lteres%20Mitglied%0Azufriedenstellen.%20%3Cb%3EIch%20mu%C3%9Fte%20auch%2C%20und%20ich%20mu%C3%9F%2C%20mein%20%C3%A4lteres%20Mitglied%20zufriedenstellen.%3C%2Fb%3E%20Als%0A%3Ci%3Eich%3C%2Fi%3E%20zuerst%20in%20der%20Existenzstufe%20geboren%20wurde%2C%20so%20geschah%20dieses%20weil%20ich%0Ameinen%20Lehrer%20-%20mein%20%C3%A4lteres%20Mitglied%20-%20derjenige%20der%20mir%20das%20Leben%20im%0AHimmelreich%20gab%2C%20gebeten%20hatte.%20%20Unabh%C3%A4ngig%20davon%20wie%20hart%20ich%20arbeite%2C%20%0Adiejenige%20Arbeit%20hat%20keinen%20Wert%2C%0Awenn%20sie%20mein%20%C3%A4lteres%20Mitglied%20nicht%20%3Ci%3Ezufriedenstellt%3C%2Fi%3E%2C%20denjenigen%20der%20%0Amich%20in%20das%20Reich%20gebracht%20hat.%20%20Das%20ist%20immernoch%0Awahr.%20Mit%20anderen%20Worten%2C%20diese%20Klasse%20mu%C3%9F%20nicht%20nur%20%3Ci%3Emich%20zufriedenstellen%3C%2Fi%3E%2C%0Asie%20mu%C3%9F%20auch%20%3Ci%3Emein%20%C3%A4lteres%20Mitglied%20zufriedenstellen%3C%2Fi%3E.%20So%2C%20nur%20weil%20sie%0Ahier%20sitzen%20und%20ihre%20Welt%20hinter%20sich%20gelassen%20haben%2C%20bedeutet%20es%20nicht%20da%C3%9F%0Asie%20einen%20K%C3%B6rper%20oder%20einen%20Kleideranzug%20aus%20der%20N%C3%A4chsten%20Stufe%2C%20erhalten%0Awerden.%0A%3C%2Fp%3E%3Cp%3E%0AOkay%2C%20la%C3%9Ft%20uns%20sagen%20sie%20versuchen%20nach%20dem%20Besten%20ihrer%20F%C3%A4higkeiten%20und%0Agem%C3%A4%C3%9F%20dem%20Urteilsverm%C3%B6gen%20der%20N%C3%A4chsten%20Stufe%20sind%20sie%20noch%20nicht%20soweit%0Aeinen%20K%C3%B6rper%2C%20der%20zur%20N%C3%A4chsten%20Stufe%20geh%C3%B6rt%2C%20f%C3%BCr%20den%20Dienst%20zu%20erhalten.%0AWenn%20sie%20ihr%20Bestes%20geben%20und%20wenn%20sie%20ihre%20Lehrer%20zufriedenstellen%20und%20wenn%0Asie%20die%20Lehrer%20ihrer%20Lehrer%20zufriedenstellen%2C%20dann%20werden%20sie%20eine%20Zukunft%0Ahaben.%20Sie%20werden%20wiederverpflanzt%20werden%2C%20sie%20werden%20eine%20andere%20Zeit%20mit%0Aeinem%20Repr%C3%A4sentanten%2C%20der%20ins%20Menschenreich%20kommt%2C%20haben%20und%20werden%20dann%20die%0ANahrung%20haben.%20Nun%2C%20das%20ist%20der%20zweite%20Typ.%20So%2C%20der%20erste%20Typ%20ist%20derjenige%0Amit%20der%20Seelenablagerung%2C%20der%20zu%20einer%20neuen%20Kreatur%20wird%2C%20der%20bereit%20ist%20in%0Adie%20Existenzstufe%20oberhalb%20der%20Menschen%20zu%20gehen%2C%20einen%20K%C3%B6rper%20erh%C3%A4lt%20und%0Aseinen%20Dienst%20beginnt.%20Der%20zweite%20ist%20derjenige%2C%20der%20in%20der%20beschriebenen%20%0AEntwicklung%20ist%2C%20aber%20ist%20nicht%20ganz%20bereit%20f%C3%BCr%20den%20'Quartiermeister'%0A-%20ist%20nicht%20ganz%20bereit%20einen%20K%C3%B6rper%20zu%20haben%2C%20weil%20mehr%20Arbeit%0An%C3%B6tig%20ist%20um%20ihn%20vom%20Mensch-sein%20zu%20trennen.%20Wir%20werden%20sp%C3%A4ter%0A%C3%BCber%20die%20Arbeit%20sprechen%2C%20die%20n%C3%B6tig%20f%C3%BCr%20die%20Separation%20ist.%20%0A%3C%2Fp%3E%3Cp%3E%0AEs%20gibt%20ein%20Nebenproblem%20zur%20Pr%C3%A4senz%20der%20N%C3%A4chsten%20Stufe%2C%20das%20ein%20sehr%0Ainteressantes%20Ph%C3%A4nomen%20darstellt.%20W%C3%A4hrend%20der%20Zeit%2C%20wenn%20die%20N%C3%A4chste%0AStufe%20nahe%20an%20einem%20Planeten%20ist%2C%20weil%20sie%20einen%20Repr%C3%A4sentanten%20dort%20haben%0Aund%20weil%20sie%20fortdauernd%20mit%20dem%20Repr%C3%A4sentanten%20kommunizieren%2C%20befindet%0Asich%20%3Ci%3E%3Cb%3EGedankengut%3C%2Fb%3E%3C%2Fi%3E%20in%20der%20Umgebung%2C%20das%20selbst%20die%20niederen%20Kr%C3%A4fte%20anzapfen%20%0Ak%C3%B6nnen%20um%20Vorteile%20daraus%20zu%20ziehen%2C%20indem%20sie%20ihr%20Wissen%20und%20ihre%20%0Atechnischen%20M%C3%B6glichkeiten%20u.a.%20weiterentwickeln.%20Nun%2C%20wie%20lange%20war%20die%0AN%C3%A4chste%20Stufe%20hier%20bei%20mir%20und%20bei%20meinem%20%C3%A4lteren%20Mitglied%3F%20Seit%20den%0Afr%C3%BChen%2020er.%20Nun%2C%20denke%20an%20den%20technischen%20und%20den%20wissenschaftlichen%0AFortschritt%2C%20der%20seit%20den%20fr%C3%BChen%2020er%20Jahren%20stattgefunden%20hat%2C%20weil%20%0Adiejenige%20Pr%C3%A4senz%20hier%20war%20von%20der%20%3Ci%3Ealle%3C%2Fi%3E%20Kreaturen%20Informationen%20entziehen%20%0Akonnten%2C%20einschlie%C3%9Flich%20den%20geringen%20Kreaturen%2C%20die%20hier%20vorhanden%20sind%20%0Aund%20die%20nicht%20glauben%2C%20da%C3%9F%20sie%20in%20das%20Reich%20meines%20Vaters%20gehen%20wollen.%20Sie%0Awollen%20Menschen%20bleiben.%20%0A%3C%2Fp%3E%3Cp%3E%0AOkay%2C%20zur%C3%BCck%20zu%20den%20drei%20Typen%3A%20Der%20erste%2C%20das%20sind%20diejenigen%20die%20fertig%0Af%C3%BCr%20den%20Quartiermeister%20sind%20(diejenigen%20die%20bereit%20sind%20einen%20K%C3%B6rper%20aus%0Ader%20N%C3%A4chsten%20Stufe%20zu%20erhalten)%3B%20der%20zweite%2C%20das%20sind%20diejenigen%20die%20nicht%0Av%C3%B6llig%20bereit%20sind%20und%20%3Ci%3Eder%20dritte%20Typ%3A%20das%20sind%20diejenigen%20die%20die%0AInformationen%20der%20N%C3%A4chsten%20Stufe%20wiedererkennen%20und%20versuchen%2C%20auch%20ohne%0Aetwas%20von%20der%20Anwesenheit%20des%20Repr%C3%A4sentanten%20zu%20wissen%2C%20auf%20eigene%20Faust%0Aherauszukommen.%3C%2Fi%3E%20Nun%2C%20wenn%20sie%20versuchen%20herauszukommen%2C%20auf%20ihre%20eigene%20Art%0Aund%20Weise%2C%20und%20sind%20sich%20nicht%20bewu%C3%9Ft%20da%C3%9F%20ich%20hier%20bin%20oder%20da%C3%9F%20mein%0A%C3%A4lteres%20Mitglied%20zu%20dieser%20besonderen%20Zeit%20hier%20war%2C%20so%20f%C3%BChlen%20sie%20sich%0Aauf%20die%20eine%20oder%20andere%20Art%20zu%20denen%20hingezogen%2C%20die%20ebenfalls%20versuchen%0Aherauszukommen%20(break%20away).%20Sie%20finden%20sich%20ebenfalls%20umgeben%20von%20einer%0Aentgegengesetzt%20denkenden%20Art%20von%20Leuten%20die%20sagen%2C%20'Was%20ist%20los%20mit%20euch%20%0AJungs%3F%20Seid%20ihr%20verr%C3%BCckt%3F%20Ihr%20verla%C3%9Ft%20eure%20Karriere%3F%20Ihr%20beachtet%20nicht%20%0Amehr%20eure%20Kinder%3F'.%20Dies%20geschieht%20oft.%20Viele%20Leute%20gehen%20in%20etwas%2C%20was%20man%0A%C3%BCblicherweise%20als%20'Kult'%20bezeichnet%20-%20sie%20%3Ci%3E%3Cb%3Ebeginnen%20sich%20von%20der%20Welt%20zu%20trennen%3C%2Fb%3E%3C%2Fi%3E.%0ADie%20Leute%2C%20die%20%0Aihren%20Gott%20so%20sehr%20lieben%2C%20auf%20ihre%20eigene%20Art%20und%20Weise%2C%20da%C3%9F%20sie%20enden%20wie%0Adas%20was%20geschehen%20ist%20bei%20Randy%20Weaver%2C%20bei%20Ruby%20Ridge%2C%20was%20geschehen%20ist%20bei%20%0AWaco%2C%20was%20geschieht%20in%20ganzen%20Nationen%20die%2C%20sogar%20in%20ihren%20Regierungen%2C%0Aw%C3%BCnschen%20Gott%20zu%20ehren%20-%20auf%20Gott%20zu%20h%C3%B6ren%20-%20vollst%C3%A4ndig%2C%20anstatt%20die%0AGesetze%20der%20Menschen%2C%20die%20Bed%C3%BCrfnisse%20der%20Menschen%2C%20die%20Regeln%20der%20Menschen%0Aanzunehmen.%20%3Ci%3ESie%20%3Cb%3Everlassen%20die%20Welt%3C%2Fb%3E.%20Sie%20sind%20sich%20bewu%C3%9Ft%2C%20da%C3%9F%20hier%20eine%0Agewisse%20Pr%C3%A4senz%20Gottes%20vorhanden%20ist%20und%20sie%20sagen%2C%20'Ich%20m%C3%B6chte%20in%20der%0ARichtung%20gehen.%20Ich%20werde%20sogar%20mein%20Leben%20aufs%20Spiel%20setzen%20um%20n%C3%A4her%20an%0AGott%20zu%20kommen%20in%20dieser%20Zeit.'%3C%2Fi%3E%0A%3C%2Fp%3E%3Cp%3E%0AIch%20bin%20nicht%20qualifiziert%20genug%2C%20um%20euch%20zu%20sagen%20wo%20sich%20all%20diese%0Averschiedenen%20Typen%20befinden.%20Aber%20ich%20habe%20euch%20einige%20Illustrationen%0Agegeben.%20Es%20scheint%20da%C3%9F%20sich%20dieser%20Typ%20in%20patriotischen%20Bewegungen%2C%20oder%20%0Ain%20milition%C3%A4re%20Bewegungen%2C%20oder%20in%20'Kults'%2C%20oder%20in%20in%20dieser%20Art%20von%20%0Areligi%C3%B6sem%20Radikalismus%20oder%20in%20etwas%20anderem%20befinden%20kann%20und%20wei%C3%9F%2C%20da%C3%9F%20%0Adiese%20Welt%20verdorben%20ist.%20Sie%20sagen%2C%20'Ich%20m%C3%B6chte%20lieber%20sterben%20um%20meiner%20%0AInterpretation%20von%20Gott%20zu%20dienen%2C%20als%20hier%20zu%20bleiben'.%20%3Ci%3EDiese%20jungen%20Seelen%2C%20%0Adiese%20jungen%20Geister%2C%20diese%20jungen%20Ged%C3%A4chtnisse%20werden%20gerettet.%20Sie%20werden%20%0Azur%20Seite%20getan%20-%20sie%20werden%20'auf%20Eis%20gelegt'%2C%20so%20zu%20sagen%20-%20und%20werden%20eine%20%0A%3Cb%3EZukunft%3C%2Fb%3E%20haben%2C%20werden%20eine%20andere%20Pflanzung%20in%20einer%20anderen%20Zivilisation%20f%C3%BCr%0Aweitere%20N%C3%A4hrung%20haben.%3C%2Fi%3E%0A%3C%2Fp%3E%3Cp%3E%0AWas%20sagt%20uns%20dies%20alles%3F%20Dies%20alles%20sagt%20uns%2C%20da%C3%9F%20diejenigen%2C%20die%20diese%0AWelt%20lieben%20und%20die%20das%20Menschenreich%20lieben%2C%20zu%20mir%20und%20zu%20allen%20anderen%0Awie%20ich%20(oder%20alle%20anderen%20die%20wir%20besprochen%20haben%20-%20alle%20aus%20den%0Averschiedenen%20Kategorieen)%20sagen%2C%20'Sie%20sind%20irre%2C%20sie%20sind%0Averr%C3%BCckt.%20Sie%20sind%20radikale.%20Sie%20sind%20gegen%20die%20Welt.%20Sie%20sind%20keine%0AMenschen%20-%20sie%20sind%20Unmenschen.%20Sie%20sind%20Tyrannen%20oder%20sie%20sind%0ATerroristen'.%20Nun%2C%20mi%C3%9Fversteht%20mich%20nicht.%20Ich%20verteidige%20nicht%20die%0AGewalt.%20Ich%20rechtfertige%20es%20nicht%20hinauszugehen%20und%20zu%20versuchen%20einen%0AKrieg%20anzufangen.%20Der%20Krieg%2C%20der%20ein%20%3Ci%3Enat%C3%BCrliches%20Ph%C3%A4nomen%3C%2Fi%3E%20ist%2C%20das%0Amit%20dem%20Ende%20des%20Zeitalters%20kommt%2C%20wird%20%3Ci%3Edenen%20auferzwungen%3C%2Fi%3E%20die%20diesen%0AOrt%20veralssen%20m%C3%B6chten.%20Es%20ist%20nicht%20etwas%2C%20das%20wir%20zu%20tun%20oder%20zu%0Aschaffen%20haben.%20Und%20einige%2C%20die%20sich%20bewu%C3%9Ft%20sind%2C%20da%C3%9F%20das%20geschehen%0Awird%20-%20sogar%20einige%20die%20in%20die%20Existenzstufe%20oberhalb%20der%20Menschen%0Agehen%20m%C3%B6chten%20-%20f%C3%BChlen%20sich%20f%C3%A4lschlicher%20Weise%20verantwortlich%20f%C3%BCr%0Adie%20Anzettelung%20derjenigen%20Kriege.%20Sie%20haben%20nicht%20alle%20Teile%0A(Informationen%2FErfahrungen)%20richtig%20zusammengef%C3%BCgt.%20Aber%20wenn%20sie%20es%20aus%20dem%0Arichtigen%20Grund%20tun%2C%20dann%20wird%2C%20nicht%20ich%2C%20aber%20mein%20Vater%20und%20meines%0AVaters%20Vater%20und%20die%20Existenzstufe%20oberhalb%20der%20Menschen%20sagen%2C%20'Sie%0Alieben%20mich%20mehr%20als%20diese%20Welt.%20Und%20sie%20lieben%20mich%20mehr%20als%20die%0AWelt%2C%20w%C3%A4hrend%20der%20Zeit%20als%20ich%20einen%20Repr%C3%A4sentanten%20anwesend%0Ahatte.%20Und%20ich%20werde%20dieses%20belohnen.%20Ich%20will%20sie%20herausnehmen.%20Ich%0Awill%20sie%20beiseite%20legen.%20Ich%20will%20ihnen%20eine%20Verpflanzung%20zu%20einer%0Aanderen%20Zeit%20geben.'%20%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20du%20wei%C3%9Ft%2C%20eine%20der%20Sachen%20die%20mich%20am%20meisten%20st%C3%B6ren%20ist%2C%20da%C3%9F%0Adiejenigen%20die%20sehr%20religi%C3%B6s%20sind%2C%20in%20welchem%20Namen%20auch%20immer%2C%20diejenigen%0Asind%20%3Cb%3Edie%20eine%20Seele%20empfangen%3C%2Fb%3E%20haben%2C%20die%20einen%20kleinen%20Informationsteil%20aus%0Ader%20N%C3%A4chsten%20Stufe%20empfangen%20haben%2C%20eine%20kleine%20Ablagerung%20aus%20der%0AExistenzstufe%20oberhalb%20der%20Menschen%20erhalten%20haben.%20Und%20die%20niederen%20Kr%C3%A4fte%0Asind%20sich%20dessen%20bewu%C3%9Ft.%20Und%20so%20kommt%20es%2C%20da%C3%9F%20die%20niederen%20Kr%C3%A4fte%20%3Ci%3Ealles%0Atun%20was%20sie%20k%C3%B6nnen%3C%2Fi%3E%2C%20um%20diese%20Leute%20davon%20fernzuhalten%20jemals%20zu%20wissen%2C%20was%0Adas%20Reich%20Gottes%20eigentlich%20ist.%20So%20treten%20sie%20ein%20und%20bieten%20denjenigen%0AEmpf%C3%A4ngern%20ihre%20Version%20vom%20'Reich%20Gottes'%20an%2C%20durch%20ihre%20Religionen%2C%20aber%0Adie%20ist%20v%C3%B6llig%20%3Ci%3E%3Cb%3Everf%C3%A4lscht%3C%2Fb%3E%3C%2Fi%3E.%20Sie%20ist%20v%C3%B6llig%20%3Ci%3E%3Cb%3Efalsch%3C%2Fb%3E%3C%2Fi%3E.%20Ihre%20Darstellung%0Abesch%C3%A4ftigt%20sich%20mit%20der%20Heilung%20von%20Krebs%2C%20mit%20der%20Heilung%20von%20dem%20was%0Afalsch%20ist%2C%20mit%20dem%20Festlegen%20der%20Geldb%C3%B6rse%2C%20oder%20dein%20Gesch%C3%A4ft%20in%20Ordnung%0Azu%20bringen%2C%20oder%20alle%20m%C3%B6glichen%20Sachen%20zu%20tun%20um%20%3Ci%3E%3Cb%3Edas%20Leben%20hier%20zu%0Averl%C3%A4ngern%3C%2Fb%3E%3C%2Fi%3E%20-%20und%20vor%20allem%2C%20dazu%20zu%20neigen%20eine%20Familie%20zu%20gr%C3%BCnden%2C%20dazu%0Azu%20neigen%20eine%20'Zukunft'%20zu%20haben%2C%20dazu%20zu%20neigen%20alle%20diejenigen%20Sachen%20zu%20%0Ahaben%20die%20unseren%20Kindern%20eine%20Zukunft%20bieten%20werden.%20Wenn%20das%20dein%20%0AVertieftsein%20ist%2C%20dann%20kannst%20du%20das%20Himmelreich%20nicht%20kennen%20lernen%20und%20du%0Awirst%20%3Ci%3E%3Cb%3Ekeine%3C%2Fb%3E%3C%2Fi%3E%20Zukunft%20haben.%20Wenn%20du%20das%20Himmelreich%2C%20oder%20das%20Reich%20Gottes%2C%0Aoder%20die%20Stufe%20oberhalb%20der%20Menschen%2C%20nach%20jedwelchen%20Ausdr%C3%BCcken%2C%20die%20in%0Adeinem%20Kopf%20sind%2C%20liebst%20und%20wenn%20du%20diese%20Welt%20ha%C3%9Ft%20und%20sie%20verlassen%0Am%C3%B6chtest%2C%20dann%20%3Ci%3E%3Cb%3Ewirst%3C%2Fb%3E%3C%2Fi%3E%20du%20eine%20Zukunft%20mit%20und%20in%20der%20realen%20Existenzstufe%2C%20die%0Adich%20geschaffen%20hat%2C%20haben.%0A%3C%2Fp%3E%3Cp%3E%0AVergi%C3%9F%20nicht%20da%C3%9F%20wir%20uns%20in%20einer%20sehr%20ungew%C3%B6hnlichen%20Zeit%20befinden%20-%20das%0AEnde%20des%20Zeitalters.%20Du%20kannst%20sagen%2C%20'Junge%2C%20du%20m%C3%B6chtest%20mir%20wirklich%0AAngst%20machen%2C%20nicht%20wahr%3F'%20Wenn%20es%20funktionieren%20w%C3%BCrde%2C%20so%20w%C3%BCrde%20ich%20es%0Atun.%20Ich%20w%C3%BCrde%20alles%20tun%20was%20ich%20kann%20um%20dich%20aufzuwecken%2C%20wenn%20du%20das%0APotential%20hast%20dasjenige%20Reich%20zu%20kennen%2C%20um%20gerettet%20zu%20werden%20von%20dem%0ASpatenstich%2C%20von%20dieser%20Erneuerung.%20Ich%20meine%2C%20ich%20k%C3%BCmmere%20mich%20nicht%20f%C3%BCr%0Ameinen%20Ruf%20oder%20f%C3%BCr%20den%20Ruhm%20in%20der%20Welt%20der%20Menschen.%20Er%20ist%20absolut%0Awertlos%20f%C3%BCr%20mich.%20Ich%20kann%20kaum%20darauf%20warten%20von%20hier%20herauszukommen.%20Es%0Agibt%20nichts%20was%20mir%20dieser%20Planet%2C%20oder%20diese%20Zivilisation%20oder%20diese%0AExistenzstufe%20zu%20bieten%20hat.%20Ich%20bin%20getrennt%20von%20meinem%20Vater%20um%20hier%20zu%0Asein.%20%3Ci%3EAlles%20was%20ich%20in%20dieser%20Welt%20opfern%20k%C3%B6nnte%20ist%20%C3%BCberhaupt%20kein%20Opfer%0Aim%20Vergleich%20zu%20dem%20was%20ich%20opfere%20wenn%20ich%20meine%20Welt%20verlasse%20um%20hierher%0Azu%20kommen%2C%20um%20zu%20versuchen%20denen%20zu%20helfen%20die%20mir%20als%20Aufgabe%20anvertraut%20%0Awurden.%3C%2Fi%3E%20Ich%20entschuldige%20mich%20so%20emotional%20zu%20sein%2C%20aber%20das%20ist%20wirklich%0Adie%20Wahrheit.%20Ich%20m%C3%B6chte%20raus%20von%20hier.%20Nun%2C%20ich%20befinde%20mich%20jetzt%20in%0Aeinem%20Vehikel%2C%20das%20bereits%20beginnt%20von%20mir%20wegzufallen%20und%20ich%20versuche%0Averzweifelt%20dir%20zu%20helfen%20eine%20letzte%20Chance%20zu%20haben%20von%20hier%20webzugehen.%0A%3C%2Fp%3E%3Cp%3E%0ALa%C3%9Ft%20uns%20zur%C3%BCck%20zum%20Anfang%20dieses%20Bandes%20gehen.%20Der%20Titel%20dieses%20Bandes%0Alautet%20'Letzte%20Chance%20den%20Planeten%20Erde%20zu%20evakuieren'%20-%20%3Ci%3E%3Cb%3Eaus%3C%2Fb%3E%3C%2Fi%3E%20dem%20Menschenreich%0Arauszukommen%2C%20%3Ci%3E%3Cb%3Evom%3C%2Fb%3E%3C%2Fi%3E%20Planeten%20wegzukommen%2C%20%3Ci%3E%3Cb%3Eihn%20wirklich%20zu%20verlassen%3C%2Fb%3E%3C%2Fi%3E.%20Nun%2C%20'ihn%0Awirklich%20zu%20verlassen'%20bedeutet%20-%20nun%2C%20was%20ist%20wirklich%20-%20da%C3%9F%20es%20Notwendig%0Aist%2C%20da%C3%9F%20du%20beginnst%20dich%20%3Ci%3Emit%20dem%20Verstand%2FGedankengut%3C%2Fi%3E%2C%20das%20dich%20mit%20diesen%0AInformationen%20verbinden%20kann%2C%20%3Ci%3Ezu%20identifizieren%3C%2Fi%3E%20und%20dich%20nicht%20mit%20dem%0AK%C3%B6rper%20den%20du%20tr%C3%A4gst%20zu%20identifizieren.%20Und%20da%C3%9F%20du%20Vorteile%20aus%20allem%20was%0Adu%20kannst%20ziehst%2C%20um%20mehr%20%C3%BCber%20diese%20Informationen%20zu%20lernen%2C%20um%20mit%20ihnen%0Amehr%20verbunden%20zu%20werden%20und%20ihnen%20zu%20folgen%20wie%20ein%20Schaf%20dem%20Hirten%20folgt%0Amit%20dem%20Versuch%20diesen%20Ort%20zu%20verlassen.%0A%3C%2Fp%3E%3Cp%3E%0ADeshalb%20hasse%20ich%20die%20niederen%20Kr%C3%A4fte%2C%20die%20die%20anf%C3%A4nglichen%20Wahrheiten%2C%0A%3Ci%3Edie%20urspr%C3%BCnglich%20die%20Wahrheit%20waren%3C%2Fi%3E%2C%20weggenommen%20haben%20und%20sie%20zu%0A'Religionen'%20reduziert%20haben%20und%20sie%20haben%20die%20Religionen%20mehr%20attraktiv%20und%0Amehr%20human%20gemacht%2C%20so%20da%C3%9F%20diejenigen%20die%20Ablagerungen%20haben%20und%20diejenigen%0Adie%20die%20Anwesenheit%20des%20Repr%C3%A4sentanten%20der%20Existenzstufe%20oberhalb%20der%20Menschen%0Asuchen%2C%20w%C3%BCrden%2C%20wenn%20er%20kommt%2C%20nach%20dem%20falschen%20Ausschau%20halten%20-%20nach%0Ademjenigen%20der%20'Frieden%20auf%20Erden'%20bringen%20w%C3%BCrde.%20Hier%20stehen%20wir%20nun%20am%0AEnde%20des%20Zeitalters%20und%20es%20gibt%20eine%20ganze%20Welt%20voll%20von%20vielen%2C%20vielen%0ALeuten%20die%20behaupten%2C%20'Wir%20kommen%20zum%20Ende%20des%20Zeitalters%2C%20wir%20kommen%20zur%0Azweiten%20Wiederkunft%2C%20wir%20kommen%20zu%20der%20Zeit%20wo%20Jesus%20wiederkehrt%2C%20oder%20da%C3%9F%0Adas%20Himmelreich%20wiederkommen%20wird%20-%20und%20sein%20Sohn%20wird%20sein%20Reich%20vorbereiten%2C%0Ahier%20auf%20Erden%20und%20die%20Erde%20wird%20dann%20der%20%3Ci%3EHimmel%3C%2Fi%3E%20sein'.%20Dies%20wird%20niemals%0Ageschehen.%20Ihr%20w%C3%BCrdet%20es%20nicht%20haben%2C%20selbst%20wenn%20es%20geschehen%20w%C3%BCrde.%20Wenn%0Aihr%20einmal%20wissen%20w%C3%BCrdet%20was%20es%20ist%2C%20so%20w%C3%BCrdet%20ihr%20nicht%20standhalten.%20Ihr%0Ak%C3%B6nnt%20euch%20nicht%20an%20einem%20S%C3%A4ugetier%20anklammern%20und%20mit%20anderen%0AS%C3%A4ugetieren%20verbunden%20sein%20und%20erwarten%20in%20derjenigen%20Existenzstufe%20des%0ALebens%2C%20das%20jenseits%20der%20der%20S%C3%A4ugetiere%20ist%2C%20einzugehen.%20Nun%2C%20ihr%0Ak%C3%B6nnt%20gerade%20jetzt%20in%20den%20Niederschriften%20eurer%20Religionen%20suchen%20und%0Asie%20werden%20euch%20deutlich%20sagen%2C%20da%C3%9F%20es%20im%20Himmel%20keine%20M%C3%A4nner%20und%0Akeine%20Frauen%20gibt%20(es%20ist%20geschlechtslos).%20Es%20ist%20keine%20s%C3%A4ugetier%0AExistenz%2C%20es%20ist%20keine%20menschliche%20Existenz.%20Und%20diejenigen%0ANiederschriften%20werden%20euch%20auch%20deutlich%20sagen%2C%20da%C3%9F%20ihr%20alles%20im%0AMenschenreich%20zur%C3%BCcklassen%20m%C3%BC%C3%9Ft%20um%20die%20N%C3%A4chste%20Stufe%20zu%20erfahren%0Aoder%20das%20Himmelreich%20zu%20sehen.%20%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20nochmals%2C%20die%20schreckliche%20Sache%20die%20geschieht%2C%20aus%20eurer%20Perspektive%0Aaus%2C%20wenn%20die%20Stufe%20oberhalb%20der%20Menschen%20in%20das%20Menschenreich%20kommt%20und%0Asich%20in%20einem%20menschlichen%20K%C3%B6rper%20inkarniert%2C%20ist%20da%C3%9F%20der%20Repr%C3%A4sentant%2C%0Aden%20sie%20geschickt%20haben%20sagt%20-%20um%20Gefolgsleute%20zu%20finden%20-%20'Ich%20bin%0Ahier.%20Ich%20bin%20von%20der%20Existenzstufe%20oberhalb%20der%20Menschen'.%20Wozu%20f%C3%BChrt%20das%3F%0ADas%20f%C3%BChrt%20dazu%2C%20da%C3%9F%20sofort%20die%20gro%C3%9Fe%20Mehrheit%20sagt%2C%20'Kult%2C%20ein%20religi%C3%B6ser%0ARadikaler%2C%20eine%20gottesl%C3%A4sterliche%20Person%20der%20die%20Leute%20%C3%BCbervorteilen%20m%C3%B6chte%0A-%20du%20wei%C3%9Ft%2C%20er%20hat%20irgendwo%20einige%20gro%C3%9Fe%20Bankkonten%20und%20sie%20nehmen%20%0Ajedwelchen%20Besitz%2C%20den%20die%20Gefolgschaft%20mit%20sich%20bringen%20k%C3%B6nnte%20oder%20sie%20%0Ahaben%20Zugang%20dazu'.%20Ich%20w%C3%BCnsche%2C%20ihr%20w%C3%BCrdet%20mir%20zeigen%2C%20wo%20sich%20diese%20%0ABankkonten%20befinden%2C%20soda%C3%9F%20wir%20sie%20benutzen%20k%C3%B6nnen%20um%20diese%20Informationen%20%0Aherauszubringen.%0A%3C%2Fp%3E%3Cp%3E%0AIch%20m%C3%B6chte%20keine%20Witze%20dar%C3%BCber%20machen.%20Ich%20bin%20verzweifelt%20-%20um%20euer%20Heil.%0AInnerhalb%20der%20letzten%2024%20Stunden%20wurde%20ich%20ganz%20klar%20von%20meinem%20%C3%A4lteren%0AMitglied%20informiert%2C%20wie%20kurz%20die%20%C3%BCbriggebliebene%20Zeit%20ist%3B%20wie%20klar%20wir%0Auns%20auf%20nichts%20anderes%20Konzentrieren%20k%C3%B6nnen%20als%20auf%20die%20Prespektive%20die%0Asagt%3A%20%3Ci%3E%3Cb%3Edas%20Ende%20der%20Zivilisation%20ist%20sehr%20nahe.%3C%2Fb%3E%3C%2Fi%3E%20Das%20Ende%20der%20Zivilisation%0Awird%20begleitet%20vom%20Spatenstich%2C%20vom%20Aufpolieren%20des%20Planeten%20in%20der%0AVorbereitung%20auf%20eine%20andere%20Zivilisation.%20Und%20die%20einzigen%2C%20die%20diese%0AErfahrung%20%C3%BCberleben%20k%C3%B6nnen%2C%20sind%20diejenigen%20die%20in%20der%20Obhut%20der%0AEntwicklungsstufe%20oberhalb%20der%20Menschen%20genommen%20werden.%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20es%20gibt%20einige%20komische%20M%C3%B6glichkeiten%20die%20geschehen%20k%C3%B6nnen%2C%20die%20ich%0Azuvor%20nicht%20erw%C3%A4hnt%20habe.%20Wie%20wird%20das%20Ende%20dieser%20Zivilisation%20geschehen%3F%20%0ANun%2C%20ich%20wei%C3%9F%20nicht%20alle%20Einzelheiten.%20Sprich%20mit%20den%20Leuten%20die%20Erdbeben%20%0Aerw%C3%A4hnen%20und%20sprich%20%C3%BCber%20Wetterph%C3%A4nomene%20und%20sprich%20%C3%BCber%20Ozonl%C3%B6cher.%20%0AUnd%20sprich%20mit%20Umweltleuten%20und%20sie%20werden%20sagen%2C%20'Nun%2C%20es%20gibt%20auf%20dem%20Gebiet%20%0AProbleme%20auf%20dem%20Planet'.%20Sprich%20%C3%BCber%20die%20Art%20und%20Weise%20wie%20die%20Leute%20%0Anicht%20mehr%20l%C3%A4nger%20zur%C3%BCckhaltend%20sind%20und%20ihre%20Nachbarn%20nicht%20mehr%20%0Arespektieren.%20Sie%20sind%20so%20unbeherrscht%20(z%C3%BCgellos)%2C%20da%C3%9F%20wenn%20du%20etwas%20sagst%0Adas%20sie%20ungl%C3%BCcklich%20macht%2C%20sie%20anfangen%20Steine%20auf%20dich%20zu%20werfen%20und%20die%0An%C3%A4chste%20Sache%20die%20du%20wei%C3%9Ft%20ist%20da%C3%9F%20du%20einen%20Krieg%20in%20der%20Nachbarschaft%0Ahast%2C%20da%C3%9F%20du%20einen%20kleinen%20etnischen%20Krieg%20in%20der%20oder%20der%20anderen%20Nation%20%0Ahast.%20Und%20es%20gibt%20so%20wenig%20Beherrschung%2C%20da%C3%9F%20diese%20kleinen%20Gruppen%2C%20diese%0Akleinen%20etnischen%20Gruppen%2C%20diese%20kleinen%20religi%C3%B6sen%20Gruppen%2C%20diese%20kleinen%0ARegierungen%20die%20sich%20im%20Konflikt%20befinden%20-%20sie%20scheinen%20untereinander%20einen%20%0Asignifikanten%20Anteil%20an%20dem%20%3Ci%3ESpatenstich%3C%2Fi%3E%20beizutragen.%20Die%20Leute%0Ascheinen%20so%20schnell%20dabei%20zu%20sein%2C%20andere%20zu%20verurteilen.%20Nun%2C%20was%0Asteht%20in%20den%20Geschichtsb%C3%BCchern%20%C3%BCber%20die%20Wahrheit%20geschrieben%3F%20Es%0Asteht%3A%20sei%20vorsichtig%20nicht%20jemand%20anderes%20vorschnell%20zu%20verurteilen%0Aoder%20du%20wirst%20selbst%20verurteilt.%20Das%20gilt%20nicht%20mehr%20-%20jeder%20ist%0Aschnell%20dabei%20zu%20verurteilen.%20Ich%20meine%20sie%20'schauen'%20nicht%20einmal%0Amehr%20hin.%20Sie%20sehen%20nur%20einen%20winzig%20kleinen%20Teil%20von%20etwas%20anderem%0Aund%20sie%20bestimmen%20schnell%2C%20da%C3%9F%20sie%20so%20brilliant%20sind%20da%C3%9F%20sie%0Aurteilen%20k%C3%B6nnen%2C%20da%C3%9F%20es%20etwas%20ist%2C%20nachdem%20sie%20nicht%20suchen%20-%20etwas%20%0Awertloses%2C%20eine%20radikale%20Bewegung%2C%20eine%20Bewegung%20die%20sicherlich%20unter%20ihnen%0Asteht.%20Nun%2C%20das%20kommt%20davon%20vorschnelle%20Urteile%20zu%20f%C3%A4llen%20-%20diese%20Art%20von%0Aschnell-andere-zu-verurteilen%20Haltung%2C%20die%20Art%20von%20Gewalt%2C%20die%20andere%0Azerst%C3%B6ren%20m%C3%B6chte.%0A%3C%2Fp%3E%3Cp%3E%0ADu%20wei%C3%9Ft%2C%20die%20Welt%20und%20ihre%20Mehrheiten%20haben%20Gesetze%20geschaffen%2C%20die%0Aversuchen%20Individuuen%20wie%20wir%2C%20nicht-existent%20zu%20halten%2C%20weil%20wir%20das%20System%2C%20%0Ain%20dem%20das%20System%20der%20Mehrheit%20existiert%2C%20bedrohen.%20Du%20kannst%20sagen%2C%20'Was%0Aw%C3%BCrde%20geschehen%20wenn%20jeder%20in%20der%20Welt%20seine%20Familien%20verlassen%20w%C3%BCrde%20und%0Akommt%20und%20folgt%20DO%3F'%20Nun%2C%20du%20brauchst%20dich%20dar%C3%BCber%20nicht%20zu%20sorgen%20-%20das%0Awird%20nicht%20geschehen.%20Du%20wei%C3%9Ft%2C%20nur%20ein%20kleiner%2C%20kleiner%20Bruchteil%20der%0APflanzen%2C%20die%20auf%20dem%20Planeten%20existieren%2C%20sind%20%C3%BCberhaupt%20f%C3%A4hig%20den%0A%C3%9Cbergang%20vom%20Menschenreich%20in%20das%20Himmelreich%20zu%20bew%C3%A4ltigen.%20Genauso%0Averh%C3%A4lt%20es%20sich%20mit%20der%20Aufgabe(Verzicht)%20der%20menschlichen%20Verhaltensweisen.%20%0ADu%20kannst%20sagen%2C%20'Nun%2C%20was%20w%C3%BCrde%20geschehen%20wenn%20alle%20ihre%20menschlichen%20und%0As%C3%A4ugetier%C3%A4hnlichen%20Reproduktionsaktivit%C3%A4ten%20aufgeben%20w%C3%BCrden%20-%20es%20w%C3%BCrden%0Akeine%20Menschen%20mehr%20%C3%BCbrigbleiben'.%20Oh%2C%20dann%20glaubst%20du%20also%20nicht%2C%20da%C3%9F%0Adie%20Existenzstufe%20oberhalb%20der%20Menschen%20f%C3%A4hig%20ist%20Individuuen%20zu%20produzieren%3F%0ADa%C3%9F%20sie%20%3Cb%3Esie%20nicht%20erschaffen%20oder%20%3Ci%3Emachen%3C%2Fi%3E%20k%C3%B6nnen%3C%2Fb%3E%3F%20Da%C3%9F%20sie%20abh%C3%A4ngig%20sind%20%0Avon%20den%20Reproduktionsaktivit%C3%A4ten%20der%20Menschen%3F%20Du%20w%C3%BCrdest%20ihnen%20sicherlich%20nicht%20%0Aviel%20zutrauen.%20Sie%20haben%20die%20ersten%20geschaffen.%20Sie%20haben%20sie%20sogar%20entworfen%20%0Amit%20der%20Fa%22higkeit%20zur%20Fortpflanzung.%20Wenn%20sich%20die%20Menschen%20nicht%20%0Afortpflanzen%20w%C3%BCrden%2C%20so%20w%C3%BCrde%20die%20N%C3%A4chste%20Stufe%20soviele%20davon%20machen%0Awieviele%20sie%20wollen.%20Sie%20(die%20Mitglieder%20der%20N%C3%A4chsten%20Stufe)%20waren%20schon%20immer%0Adazu%20in%20der%20Lage.%20Sie%20sind%20in%20keiner%20Weise%20von%20den%20Menschen%20abh%C3%A4ngig.%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20ich%20wei%C3%9F%20dies%20k%C3%B6nnte%20komisch%20klingen%2C%20aber%20ich%20w%C3%BCnsche%20du%20k%C3%B6nntest%0Amir%20glauben.%20Warum%20w%C3%BCnsche%20ich%2C%20da%C3%9F%20du%20mir%20glauben%20k%C3%B6nntest%3F%20Weil%20wenn%20du%0A%3Ci%3E%3Cb%3Emir%20wirklich%20glauben%3C%2Fb%3E%3C%2Fi%3E%20w%C3%BCrdest%2C%20so%20w%C3%BCrdest%20du%20%3Ci%3E%3Cb%3Eauf%20das%20schauen%3C%2Fb%3E%3C%2Fi%3E%20was%20wir%20zu%0Asagen%20haben.%20Du%20wei%C3%9Ft%2C%20diese%20kleine%20Schulklasse%20von%20Studenten%2C%20die%20gerade%0Adabei%20ist%20in%20die%20Stufe%20oberhalb%20der%20Menschen%20einzuziehen%2C%20und%20mir%20beim%0AVerlassen%20folgen%20-%20und%20wir%20werden%20schnell%20von%20hier%20weggehen%20-%20tun%20alles%20was%0Asie%20k%C3%B6nnen%20um%20nicht-Menschen%20zu%20sein.%20Das%20bedeutet%20nicht%2C%20da%C3%9F%20sie%0Agef%C3%BChlslos%20sind.%20Sie%20sind%20empfindlicher%20als%20du%20dir%20jemals%20vorstellen%0Akannst.%20Sie%20sind%20mehr%20gef%C3%BChlsvoller%20als%20du%20dir%20vorstellen%20kannst.%20Diese%0AEigenschaften%20die%20sie%20haben%20%C3%BCbersteigen%20deine%20Vorstellungskraft%20-%20weil%20sie%0Agenug%20Informationen%20der%20N%C3%A4chsten%20Stufe%20geh%C3%B6rt%20und%20aufgenommen%20haben%2C%0Asoda%C3%9F%20sie%20den%20Informationen%20glauben%20und%20sie%20ein%20Teil%20von%20ihnen%20geworden%0Asind.%20%3Cb%3EUnd%20es%20bedeutet%20alles%20f%C3%BCr%20sie%3C%2Fb%3E.%20Sie%20wissen%2C%20da%C3%9F%20bei%20der%20Trennung%20von%0Ader%20Welt%2C%20das%20die%20Vehikel%20die%20sie%20tragen%20-%20die%20Pflanzen%20die%20sie%20tragen%20-%0AKummer%20bei%20den%20einzelnen%20Individuuen%20erzeugen.%20Davon%20gibt%20es%20auch%0Aeinen%20anderen%20Aspekt%3A%20die%20Existenzstufe%20oberhalb%20der%20Menschen%20ist%0Aebenfalls%20darauf%20bedacht%2C%20da%C3%9F%20keine%20der%20vom%20Separationsprozess%0Abetroffenen%20Leben%20besch%C3%A4digt%20wird.%20Sie%20k%C3%B6nnen%20zeitweilig%20verletzt%0Awerden.%20Das%20bedeutet%20aber%20nicht%2C%20da%C3%9F%20sie%20besch%C3%A4digt%20sind.%20In%20vielen%0AF%C3%A4llen%20-%20oder%20immer%20-%20%3Ci%3Ekann%3C%2Fi%3E%20diejenige%20Art%20von%20Verletzung%20zu%20etwas%0Agr%C3%B6%C3%9Ferem%2C%20f%C3%BCr%20das%20Individuum%20das%20den%20Schmerz%20der%20Trennung%20erf%C3%A4hrt%2C%0APositivem%2C%20f%C3%BChren.%20%0A%3C%2Fp%3E%3Cp%3E%0ANun%2C%20ich%20begann%2C%20vor%20einer%20oder%20zwei%20Minuten%20zuvor%2C%20euch%20zu%20sagen%2C%20da%C3%9F%20wir%0Aneulich%20eine%20Webseite%20im%20Internet%20gemacht%20haben%20-%20genannt%20'Heavensgate'.%20Wir%0Ahaben%20darin%20hineingetan%2C%20alles%20was%20wir%20zu%20sagen%20haben%2C%20soweit%20wir%20dazu%0Af%C3%A4hig%20sind.%20Die%20Zeit%20die%20ich%20mit%20euch%20hier%20sitze%20ist%20eine%20winzig%20kleiner%0AZeitbruchteil.%20Ich%20k%C3%B6nnte%20euch%20nicht%20alle%20Sachen%20erz%C3%A4hlen%2C%20die%20ich%20wei%C3%9F%0Aselbst%20wenn%20wir%20hier%20Tage%20und%20Tage%20und%20Tage%20sitzen%20w%C3%BCrden.%20Aber%20wenn%20ihr%0Amehr%20%C3%BCber%20uns%20wissen%20m%C3%B6chtet%2C%20wenn%20ihr%20glauben%20k%C3%B6nnt%20was%20ich%20euch%20sage%0Aund%20wenn%20ihr%20mehr%20%C3%BCber%20all%20das%20wissen%20m%C3%B6chtet%2C%20so%20k%C3%B6nnt%20ihr%20zu%0AHeavensgate%20im%20Internet%20gehen.%20Ihr%20k%C3%B6nnt%20dort%20alles%20m%C3%B6gliche%20Zeug%2C%0Adas%20wir%20geschrieben%20haben%20herunterladen%2C%20Sachen%20die%20wir%20getan%20haben%2C%20Sachen%0A%C3%BCber%20unsere%20Geschichte.%20Wir%20haben%20sogar%20ein%20Buch%2C%20das%20f%C3%BCr%20euch%20verf%C3%BCgbar%0Aist%20-%20ich%20m%C3%B6chte%20nicht%20jetzt%20meine%20Zeit%20damit%20verbringen%20euch%20B%C3%BCcher%20zu%0Averkaufen.%20Aber%20es%20ist%20ein%20Buch%20verf%C3%BCgbar%20und%20ihr%20k%C3%B6nnt%20es%20auf%20der%0AHeavensgate%20Webseite%20finden.%0A%3C%2Fp%3E%3Cp%3E%0AIch%20m%C3%B6chte%20nicht%20die%20Ernsthaftigkeit%20des%20Augenblickes%20wegnehmen%2C%20weil%20ich%0Abesorgt%20bin%2C%20da%C3%9F%20die%20Zeit%20kurz%20ist.%20Nochmals%2C%20das%20Thema%20dieser%20Videokassette%0Aist%3A%20Letzte%20Chance%20das%20Menschenreich%20-%20den%20Planeten%20Erde%20-%20zu%20evakuieren%2C%0Aaus%20diesem%20Raum%20herauszukommen%2C%20soda%C3%9F%20dieser%20Garten%20erneuert%20werden%20kann.%0AIch%20hoffe%20f%C3%BCr%20euer%20Wohl%2C%20da%C3%9F%20ihr%20eine%20gewisse%20Neugier%20habt%20%C3%BCber%20das%20was%0Aich%20auf%20diesem%20Band%20gesprochen%20habe%20und%20da%C3%9F%20ihr%20gr%C3%BCndlich%20dar%C3%BCber%20nachdenken%0Awerdet.%20Wenn%20du%20mich%20tiefgehend%20verurteilst%20und%20mich%20den%20Anti-Christ%20nennst%2C%20oder%20wie%20auch%20%0Aimmer%20du%20mich%20nennen%20m%C3%B6chtest%2C%20so%20wird%20es%20mich%20nicht%20verletzen.%20Es%20wird%20%0Adich%20verletzen.%20Wenn%20du%20mich%20verurteilst%2C%20so%20wirst%20du%20verurteilt%20werden.%0ANiemand%20kann%20uns%20verletzen.%20Die%20Sachen%0Adie%20wir%20hier%20erfahren%20k%C3%B6nnten%2C%20auch%20wenn%20es%20die%20schrecklichsten%20Sachen%0A%C3%BCberhaupt%20w%C3%A4ren%2C%20von%20eurem%20Gesichtspunkt%20aus%2C%20w%C3%BCrden%20uns%20nur%20dazu%20dienen%20%0Azu%20helfen%20zur%20Existenzstufe%20oberhalb%20der%20Menschen%20schneller%20zur%C3%BCckzukehren%2C%20%0Aund%20das%20ist%20es%20was%20wir%20begehren.%0A%3C%2Fp%3E%3Cp%3E%0AIch%20wei%C3%9F%2C%20da%C3%9F%20die%20Presentation%20dieses%20kleinen%20Bandes%20nicht%20das%20ist%20was%20man%0Aals%20geschickt%20oder%20poliert%20bezeichnen%20w%C3%BCrde.%20Es%20enth%C3%A4lt%20nicht%20die%20Sachen%2C%0Adie%20die%20Menschen%20sehen%20m%C3%B6chten%20in%20ihren%20Presentationen.%20Aber%20ich%20wei%C3%9F%20es%0Aist%20die%20Wahrheit.%20Und%20%3Ci%3Eda%C3%9F%20jeder%20von%20euch%2C%20in%20dem%20%3Cb%3Eein%20Bruchteil%20der%20Wahrheit%0Asteckt%2C%20sich%20mit%20der%20Wahrheit%20in%20Verbindung%20setzen%20kann.%3C%2Fb%3E%3C%2Fi%3E%20Und%20wenn%20du%20der%0AWahrheit%20%3Ci%3Efolgst%3C%2Fi%3E%2C%20so%20brauchst%20du%20dich%20nicht%20um%20das%20zu%20sorgen%20was%20kommen%20wird%2C%0Aweil%20du%20eine%20Zukunft%20haben%20wirst.%20%3Ci%3EDu%20wirst%20in%20der%20Obhut%20der%20Existenzstufe%0Aoberhalb%20der%20Menschen%20sein.%3C%2Fi%3E%20Ich%20hoffe%20verzweifelt%2C%20um%20deines%20Heils%20Willen%2C%0Ada%C3%9F%20du%20daraus%20Vorteile%20ziehen%20wirst.%20Und%20was%20mit%20denen%20geschieht%2C%20die%20uns%0Aantworten%20-%20auf%20der%20einen%20oder%20anderen%20Weise%20-%20ist%20alles%20ein%20Teil%20des%0Agro%C3%9Fen%20Spatenstiches%2C%20selbst%20das%20was%20mit%20uns%20geschehen%20wird%20als%20Resultat%20%0Adieses%20kleinen%20Bandes%2C%20oder%20welche%20konsequenten%20Sachen%20auch%20immer%20wir%20tun%0Awerden%20in%20der%20Beziehung%20zu%20dir%20zwischen%20jetzt%20und%20unserer%20Abfahrt.%0A%3C%2Fp%3E%3C%2Ffont%3E%3Cp%3E%3Cfont%20color%3D%22%23000066%22%20size%3D%224%22%3E%0AIch%20hoffe%2C%20da%C3%9F%20ihr%20all%20dieses%20ausn%C3%BCtzen%20k%C3%B6nnt.%20Ich%20hoffe%2C%20da%C3%9F%20ich%20ein%0ADiener%20der%20N%C3%A4chsten%20Stufe%20bin%20und%20da%C3%9F%20du%20die%20N%C3%A4chste%20Stufe%20durch%20diese%0Abescheidenen%20Anstregungen%20n%C3%A4her%20kennenlernen%20wirst.%20%0A%3C%2Ffont%3E%0A%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fcenter%3E%0A%0A%0A%3Cp%3E%0A%3C%2Fp%3E%3Ccenter%3E%3Cimg%3E%3C%2Fcenter%3E%3Cp%3E%0A%3C%2Fp%3E%3Ccenter%3E%3Cimg%3E%3C%2Fcenter%3E%3Cp%3E%0A%3C%2Fp%3E%3Ch3%3E%3Ccenter%3E%0AFor%20the%20next%20topic%20on%20our%20list%3A%20%3Ca%20href%3D%22vg100596.htm%22%3E%3Cstrong%3E%7C%3C%2Fstrong%3E%20Der%20Planet%20ist%20gerade%20dabei%20erneuert%20zu%20werden%20-%20Deine%20einzige%20Chance%20zu%20%C3%BCberleben%20%3Cstrong%3E%7C%3C%2Fstrong%3E%3C%2Fa%3E%0A%3Cbr%3E%0AFor%20subsequent%20topics%20return%20to%3A%20%3Ca%20href%3D%22..%2Findex.html%23keys%22%3E%3Cstrong%3E%7C%3C%2Fstrong%3E%20Home%20Page%20Bookmarks%20%3Cstrong%3E%7C%3C%2Fstrong%3E%3C%2Fa%3E%20%0A%3Cp%3E%0ATo%20Send%20Us%20an%20Email%20Use%3Cstrong%3E%3A%3C%2Fstrong%3E%20%26nbsp%3B%0A%3Ca%20href%3D%22mailto%3Arep%40heavensgate.com%22%3E%20%0Arep%40heavensgate.com%3C%2Fa%3E%0A%3C%2Fp%3E%3C%2Fcenter%3E%3C%2Fh3%3E%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "9f974450-8d23-4359-af40-98f0774f303f",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.heavensgate.com-misc-vg092996.htm"
+}

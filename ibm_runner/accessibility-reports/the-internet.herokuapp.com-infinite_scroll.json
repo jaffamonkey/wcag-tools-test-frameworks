@@ -1,0 +1,132 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 770,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 19,
+                "height": 743,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 19,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://github.com/tourdedave/the-internet\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fgithub.com%2Ftourdedave%2Fthe-internet%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 120,
+    "ruleTime": 0,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 6,
+            "elementsViolation": 1,
+            "elementsViolationReview": 4,
+            "violation": 1,
+            "potentialviolation": 2,
+            "recommendation": 3,
+            "potentialrecommendation": 1,
+            "manual": 1,
+            "pass": 112
+        },
+        "scanTime": 9,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778246857765,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20Internet%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22flash-messages%22%20class%3D%22large-12%20columns%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Ftourdedave%2Fthe-internet%22%3E%3Cimg%20style%3D%22position%3A%20absolute%3B%20top%3A%200%3B%20right%3A%200%3B%20border%3A%200%3B%22%20alt%3D%22Fork%20me%20on%20GitHub%22%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22content%22%20class%3D%22large-12%20columns%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22example%22%3E%0A%20%20%3Ch3%3EInfinite%20Scroll%3C%2Fh3%3E%0A%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22scroll%20large-8%20columns%20large-centered%22%3E%3Cdiv%20class%3D%22jscroll-inner%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%3Cdiv%20class%3D%22jscroll-added%22%3E%3Cbr%3EEa%20qui%20maxime%20est%20et%20rerum%20exercitationem%20error%20officia%20ab%20ex%20minima%20harum%20excepturi%20ab%20animi%20qui%20autem%20ut%20ut%20amet%20ea%20reiciendis%20nemo%20nobis%20enim%20vitae%20sunt%20qui%20nihil%20tenetur%20earum%20in%20quae%20ut%20voluptate%20vel%20soluta%20eveniet%20maiores%20omnis%20ut%20asperiores%20voluptas%20dicta%20assumenda%20dolorum%20nesciunt%20accusamus%20sed%20suscipit%20aut%20dolor%20consequatur%20ut%20et%20vitae%20quis%20commodi%20dolor%20autem%20rerum%20sequi%20vel%20non%20quas%20sunt%20iure%20error%20quidem%20necessitatibus%20officiis%20ut%20quia%20culpa%20voluptatem%20optio%20quo%20veniam%20impedit%20incidunt%20aut%20repellat%20in%20architecto%20dolorem%20maxime%20quia%20exercitationem%20blanditiis%20numquam%20facilis%20ad%20mollitia%20deserunt%20et%20et%20animi%20esse%20laboriosam%20et%20nihil%20qui%20a%20ipsum%20sit%20illo%20est%20laborum%20delectus%20distinctio%20unde%20voluptas%20maiores%20reprehenderit%20cum%20dolores%20dolorum%20in%20eos%20eum%20iste%20occaecati%20ipsum%20dicta%20laudantium%20vero%20doloremque%20aut%20et%20voluptatem%20quod%20aspernatur%20laborum%20cumque%20est%20consequatur%20cumque%20omnis%20tempora%20sed%20incidunt%20tempore%20earum%20ea%20in%20at%20quia%20porro%20atque%20occaecati%20non%20id%20mollitia%20laudantium%20voluptatem%20rerum%20fugit%20a%20iusto%20itaque%20modi%20provident%20id%20ipsam%20enim%20quibusdam%20quis%20accusantium%20debitis%20eos%20aut%20aut%20sunt%20velit%20neque%20quia%20hic%20ducimus%20quas%20aut%20molestiae%20molestiae%20repudiandae%20modi%20soluta%20totam%20ut%20iusto%20rem%20pariatur%20eius%20voluptates%20ratione%20nam%20voluptatum%20quo%20ipsa%20aperiam%20numquam%20asperiores%20possimus%20beatae%20eum%20non%20doloremque%20cupiditate%20harum%20aut%20omnis%20velit%20quae%20minus%20corporis%20sapiente%20enim%20consectetur%20et%20dolore%20rerum%20consequuntur%20et%20sit%20nostrum%20ratione%20sapiente%20dignissimos%20aut%20illum%20facilis%20dignissimos%20quos%20qui%20et%20assumenda%20sed%20nulla%20est%20sed%20eum%20eaque%20ipsam%20est%20praesentium%20eum%20pariatur%20officiis%20dolores%20eveniet%20aut%20libero%20dolorem%20unde%20debitis%20quis%20vel%20quam%20fuga%20molestias%20consequatur%20sunt%20molestias%20quo%20at%20id%20qui%20repellendus%20et%20laboriosam%20veritatis%20illo%20nisi%20neque%20veniam%20repellendus%20et%20itaque%20ipsa%20consequatur%20velit%20esse%20accusantium%20perspiciatis%20minus%20sint%20porro%20consequatur%20facere%20non%20aliquam%20qui%20nesciunt%20et%20consectetur%20tenetur%20et%20beatae%20et%20vel%20nihil.%20%20%20%20%3C%2Fdiv%3E%3Cdiv%20class%3D%22jscroll-added%22%3E%3Cbr%3ECulpa%20officia%20at%20sit%20id%20et%20optio%20iste%20dolorem%20voluptatem%20omnis%20fuga%20sint%20dolores%20error%20commodi%20aliquid%20et%20exercitationem%20earum%20laborum%20nihil%20alias%20nam%20dolorem%20expedita%20sunt%20corrupti%20sequi%20ab%20eum%20qui%20praesentium%20quod%20sint%20esse%20blanditiis%20qui%20perspiciatis%20perferendis%20unde%20aut%20ad%20fugiat%20adipisci%20culpa%20perferendis%20nisi%20et%20laboriosam%20fugit%20et%20quia%20iure%20consequatur%20sequi%20et%20vitae%20voluptas%20dolor%20qui%20et%20enim%20eligendi%20quis%20quo%20tenetur%20asperiores%20maxime%20ratione%20rerum%20debitis%20saepe%20unde%20quam%20tempora%20molestiae%20ipsum%20sed%20nemo%20eaque%20accusantium%20nulla%20dignissimos%20natus%20et%20et%20ut%20eius%20et%20ut%20consequatur%20dicta%20doloremque%20ipsa%20numquam%20fuga%20quis%20corporis%20aspernatur%20natus%20est%20assumenda%20rerum%20reiciendis%20ut%20qui%20veritatis%20assumenda%20aut%20atque%20incidunt%20iusto%20deserunt%20pariatur%20reprehenderit%20aliquid%20ex%20magni%20adipisci%20non%20nulla%20nihil%20incidunt%20iure%20sunt%20porro%20necessitatibus%20autem%20magnam%20alias%20ut%20vel%20doloremque%20occaecati%20odio%20optio%20non%20est%20id%20voluptatem%20voluptatem%20vel%20delectus%20rerum%20ducimus%20eligendi%20a%20soluta%20eos%20omnis%20tempora%20consequatur%20voluptas%20repellendus%20odit%20odio%20et%20voluptate%20enim%20enim%20aut%20ullam%20dolores%20quos%20maxime%20deleniti%20ea%20cum%20voluptas%20sed%20dolor%20velit%20eum%20aliquam%20quaerat%20qui%20tempore%20excepturi%20libero%20in%20maiores%20hic%20similique%20nobis%20numquam%20repudiandae%20et%20consectetur%20ex%20aut%20voluptatum%20vel%20possimus%20facere%20qui%20qui%20eum%20harum%20consequuntur%20repellendus%20error%20a%20sapiente%20necessitatibus%20inventore%20velit%20suscipit%20et%20sit%20quia%20expedita%20quia%20ut%20possimus%20placeat%20qui%20distinctio%20neque%20est%20eum%20reiciendis%20voluptates%20ea%20explicabo%20est%20repellat%20est%20animi%20dolor%20et%20id%20aut%20est%20consequatur%20non%20blanditiis%20eos%20sunt%20cumque%20vero%20minima%20repudiandae%20velit%20aut%20nisi%20et%20qui%20placeat%20quisquam%20est%20dolore%20ea%20quas%20inventore%20ullam%20nesciunt%20quibusdam%20iusto%20illo%20nemo%20dolorem%20autem%20sunt%20et%20nam%20fugit%20libero%20quae%20rerum%20dolorum%20quam%20laudantium%20quisquam%20quidem%20temporibus%20iste%20rem%20quia%20quod%20in%20molestiae%20ut%20consectetur%20vitae%20cumque%20consequuntur%20excepturi%20quasi%20vel%20facilis%20impedit%20consequatur%20quas%20officiis%20ut%20totam%20sit%20mollitia%20aliquam%20atque%20veniam%20dicta.%20%20%20%20%3Cdiv%20class%3D%22jscroll-next-parent%22%20style%3D%22display%3A%20none%3B%22%3E%3Ca%20href%3D%22%2Finfinite_scroll%2F3%22%3Enext%20page%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20id%3D%22page-footer%22%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22large-4%20large-centered%20columns%22%3E%0A%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22text-align%3A%20center%3B%22%3EPowered%20by%20%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Felementalselenium.com%2F%22%3EElemental%20Selenium%3C%2Fa%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "de922ddd-7c97-44e8-b08e-21b9f4362df2",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "the-internet.herokuapp.com-infinite_scroll"
+}

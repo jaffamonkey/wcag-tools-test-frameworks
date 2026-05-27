@@ -1,0 +1,364 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 295,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 600,
+                "width": 800
+            },
+            "snippet": "<button style=\"position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; font-size: 0px; background: transparent; cursor: pointer;\" id=\"react-burger-menu-btn\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cbutton%20style%3D%5C%22position%3A%20absolute%3B%20left%3A%200px%3B%20top%3A%200px%3B%20z-index%3A%201%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20margin%3A%200px%3B%20padding%3A%200px%3B%20border-width%3A%20medium%3B%20border-style%3A%20none%3B%20border-color%3A%20currentcolor%3B%20border-image%3A%20initial%3B%20font-size%3A%200px%3B%20background%3A%20transparent%3B%20cursor%3A%20pointer%3B%5C%22%20id%3D%5C%22react-burger-menu-btn%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 600,
+                "width": 800
+            },
+            "snippet": "<button style=\"position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; font-size: 0px; background: transparent; cursor: pointer;\" id=\"react-burger-menu-btn\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cbutton%20style%3D%5C%22position%3A%20absolute%3B%20left%3A%200px%3B%20top%3A%200px%3B%20z-index%3A%201%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20margin%3A%200px%3B%20padding%3A%200px%3B%20border-width%3A%20medium%3B%20border-style%3A%20none%3B%20border-color%3A%20currentcolor%3B%20border-image%3A%20initial%3B%20font-size%3A%200px%3B%20background%3A%20transparent%3B%20cursor%3A%20pointer%3B%5C%22%20id%3D%5C%22react-burger-menu-btn%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 600,
+                "width": 800
+            },
+            "snippet": "<button style=\"position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; margin: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; font-size: 0px; background: transparent; cursor: pointer;\" id=\"react-burger-menu-btn\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cbutton%20style%3D%5C%22position%3A%20absolute%3B%20left%3A%200px%3B%20top%3A%200px%3B%20z-index%3A%201%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20margin%3A%200px%3B%20padding%3A%200px%3B%20border-width%3A%20medium%3B%20border-style%3A%20none%3B%20border-color%3A%20currentcolor%3B%20border-image%3A%20initial%3B%20font-size%3A%200px%3B%20background%3A%20transparent%3B%20cursor%3A%20pointer%3B%5C%22%20id%3D%5C%22react-burger-menu-btn%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 45,
+                "height": 22,
+                "width": 181
+            },
+            "snippet": "<button name=\"back-to-products\" id=\"back-to-products\" data-test=\"back-to-products\" class=\"btn btn_secondary back btn_large inventory_details_back_button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cbutton%20name%3D%5C%22back-to-products%5C%22%20id%3D%5C%22back-to-products%5C%22%20data-test%3D%5C%22back-to-products%5C%22%20class%3D%5C%22btn%20btn_secondary%20back%20btn_large%20inventory_details_back_button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 45,
+                "height": 22,
+                "width": 181
+            },
+            "snippet": "<button name=\"back-to-products\" id=\"back-to-products\" data-test=\"back-to-products\" class=\"btn btn_secondary back btn_large inventory_details_back_button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cbutton%20name%3D%5C%22back-to-products%5C%22%20id%3D%5C%22back-to-products%5C%22%20data-test%3D%5C%22back-to-products%5C%22%20class%3D%5C%22btn%20btn_secondary%20back%20btn_large%20inventory_details_back_button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]",
+                "aria": "/document[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 160,
+                "height": 22,
+                "width": 81
+            },
+            "snippet": "<button name=\"add-to-cart\" id=\"add-to-cart\" data-test=\"add-to-cart\" class=\"btn btn_primary btn_small btn_inventory\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cbutton%20name%3D%5C%22add-to-cart%5C%22%20id%3D%5C%22add-to-cart%5C%22%20data-test%3D%5C%22add-to-cart%5C%22%20class%3D%5C%22btn%20btn_primary%20btn_small%20btn_inventory%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/button[1]",
+                "aria": "/document[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 160,
+                "height": 22,
+                "width": 81
+            },
+            "snippet": "<button name=\"add-to-cart\" id=\"add-to-cart\" data-test=\"add-to-cart\" class=\"btn btn_primary btn_small btn_inventory\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cbutton%20name%3D%5C%22add-to-cart%5C%22%20id%3D%5C%22add-to-cart%5C%22%20data-test%3D%5C%22add-to-cart%5C%22%20class%3D%5C%22btn%20btn_primary%20btn_small%20btn_inventory%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/footer[1]/ul[1]/li[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/list[1]/listitem[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 197,
+                "height": 18,
+                "width": 46
+            },
+            "snippet": "<a data-test=\"social-twitter\" rel=\"noreferrer\" target=\"_blank\" href=\"https://twitter.com/saucelabs\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20data-test%3D%5C%22social-twitter%5C%22%20rel%3D%5C%22noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Fsaucelabs%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/footer[1]/ul[1]/li[2]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/list[1]/listitem[2]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 216,
+                "height": 18,
+                "width": 63
+            },
+            "snippet": "<a data-test=\"social-facebook\" rel=\"noreferrer\" target=\"_blank\" href=\"https://www.facebook.com/saucelabs\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20data-test%3D%5C%22social-facebook%5C%22%20rel%3D%5C%22noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Fsaucelabs%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/footer[1]/ul[1]/li[3]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/list[1]/listitem[3]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 234,
+                "height": 18,
+                "width": 59
+            },
+            "snippet": "<a data-test=\"social-linkedin\" rel=\"noreferrer\" target=\"_blank\" href=\"https://www.linkedin.com/company/sauce-labs/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20data-test%3D%5C%22social-linkedin%5C%22%20rel%3D%5C%22noreferrer%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsauce-labs%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 248,
+    "ruleTime": 2,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "aria_content_in_landmark": {
+            "0": "All content must reside within an element with a landmark role",
+            "Fail_1": "Content is not within a landmark element"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "element_tabbable_unobscured": {
+            "0": "When an element receives focus, it is not entirely covered by other content",
+            "potential_obscured": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus"
+        },
+        "style_focus_visible": {
+            "0": "The keyboard focus indicator should be visible when default border or outline is modified by CSS",
+            "potential_focus_not_visible": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 9,
+            "elementsViolation": 3,
+            "elementsViolationReview": 8,
+            "violation": 3,
+            "potentialviolation": 8,
+            "recommendation": 1,
+            "potentialrecommendation": 3,
+            "manual": 1,
+            "pass": 232
+        },
+        "scanTime": 13,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "IBM_Accessibility"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779884389006,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ESwag%20Labs%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cnoscript%3EYou%20need%20to%20enable%20JavaScript%20to%20run%20this%20app.%3C%2Fnoscript%3E%3Cdiv%20id%3D%22root%22%3E%3Cdiv%20id%3D%22page_wrapper%22%3E%3Cdiv%20id%3D%22contents_wrapper%22%3E%3Cdiv%20id%3D%22header_container%22%20class%3D%22header_container%20inventory_details%22%20data-test%3D%22header-container%22%3E%3Cdiv%20class%3D%22primary_header%22%20data-test%3D%22primary-header%22%3E%3Cdiv%20id%3D%22menu_button_container%22%3E%3Cdiv%3E%3Cdiv%3E%3Cdiv%20class%3D%22bm-burger-button%22%20style%3D%22z-index%3A%201000%3B%22%3E%3Cbutton%20type%3D%22button%22%20id%3D%22react-burger-menu-btn%22%20style%3D%22position%3A%20absolute%3B%20left%3A%200px%3B%20top%3A%200px%3B%20z-index%3A%201%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20margin%3A%200px%3B%20padding%3A%200px%3B%20border-width%3A%20medium%3B%20border-style%3A%20none%3B%20border-color%3A%20currentcolor%3B%20border-image%3A%20initial%3B%20font-size%3A%200px%3B%20background%3A%20transparent%3B%20cursor%3A%20pointer%3B%22%3EOpen%20Menu%3C%2Fbutton%3E%3Cimg%20class%3D%22bm-icon%22%20alt%3D%22Open%20Menu%22%20data-test%3D%22open-menu%22%20style%3D%22width%3A%20100%25%3B%20height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22%22%20class%3D%22bm-menu-wrap%22%20aria-hidden%3D%22true%22%20hidden%3D%22true%22%20style%3D%22position%3A%20fixed%3B%20right%3A%20inherit%3B%20z-index%3A%201100%3B%20width%3A%20300px%3B%20height%3A%20100%25%3B%20transform%3A%20translate3d(-100%25%2C%200px%2C%200px)%3B%20transition%3A%200.5s%3B%22%3E%3Cdiv%20class%3D%22bm-menu%22%20style%3D%22height%3A%20100%25%3B%20box-sizing%3A%20border-box%3B%20overflow%3A%20auto%3B%22%3E%3Cnav%20class%3D%22bm-item-list%22%20style%3D%22height%3A%20100%25%3B%22%3E%3Ca%20id%3D%22inventory_sidebar_link%22%20class%3D%22bm-item%20menu-item%22%20href%3D%22%23%22%20data-test%3D%22inventory-sidebar-link%22%20tabindex%3D%22-1%22%20style%3D%22display%3A%20block%3B%22%3EAll%20Items%3C%2Fa%3E%3Ca%20id%3D%22about_sidebar_link%22%20class%3D%22bm-item%20menu-item%22%20href%3D%22https%3A%2F%2Fsaucelabs.com%2F%22%20data-test%3D%22about-sidebar-link%22%20tabindex%3D%22-1%22%20style%3D%22display%3A%20block%3B%22%3EAbout%3C%2Fa%3E%3Ca%20id%3D%22logout_sidebar_link%22%20class%3D%22bm-item%20menu-item%22%20href%3D%22%23%22%20data-test%3D%22logout-sidebar-link%22%20tabindex%3D%22-1%22%20style%3D%22display%3A%20block%3B%22%3ELogout%3C%2Fa%3E%3Ca%20id%3D%22reset_sidebar_link%22%20class%3D%22bm-item%20menu-item%22%20href%3D%22%23%22%20data-test%3D%22reset-sidebar-link%22%20tabindex%3D%22-1%22%20style%3D%22display%3A%20block%3B%22%3EReset%20App%20State%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3Cdiv%3E%3Cdiv%20class%3D%22bm-cross-button%22%20style%3D%22position%3A%20absolute%3B%20width%3A%2024px%3B%20height%3A%2024px%3B%20right%3A%208px%3B%20top%3A%208px%3B%22%3E%3Cbutton%20type%3D%22button%22%20id%3D%22react-burger-cross-btn%22%20tabindex%3D%22-1%22%20style%3D%22position%3A%20absolute%3B%20left%3A%200px%3B%20top%3A%200px%3B%20z-index%3A%201%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20margin%3A%200px%3B%20padding%3A%200px%3B%20border-width%3A%20medium%3B%20border-style%3A%20none%3B%20border-color%3A%20currentcolor%3B%20border-image%3A%20initial%3B%20font-size%3A%200px%3B%20background%3A%20transparent%3B%20cursor%3A%20pointer%3B%22%3EClose%20Menu%3C%2Fbutton%3E%3Cimg%20class%3D%22bm-cross%22%20alt%3D%22Close%20Menu%22%20data-test%3D%22close-menu%22%20style%3D%22width%3A%20100%25%3B%20height%3A%20100%25%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22header_label%22%3E%3Cdiv%20class%3D%22app_logo%22%3ESwag%20Labs%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22shopping_cart_container%22%20class%3D%22shopping_cart_container%22%3E%3Ca%20class%3D%22shopping_cart_link%22%20data-test%3D%22shopping-cart-link%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22header_secondary_container%22%20data-test%3D%22secondary-header%22%3E%3Cdiv%20class%3D%22left_component%22%3E%3Cbutton%20class%3D%22btn%20btn_secondary%20back%20btn_large%20inventory_details_back_button%22%20data-test%3D%22back-to-products%22%20id%3D%22back-to-products%22%20name%3D%22back-to-products%22%3E%3Cimg%20class%3D%22back-image%22%20alt%3D%22Go%20back%22%3EBack%20to%20products%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22inventory_item_container%22%20class%3D%22inventory_item_container%22%20data-test%3D%22inventory-container%22%3E%3Cdiv%20class%3D%22inventory_details%22%3E%3Cdiv%20class%3D%22inventory_details_container%22%20data-test%3D%22inventory-item%22%3E%3Cdiv%20class%3D%22inventory_details_img_container%22%3E%3Cimg%20alt%3D%22Sauce%20Labs%20Backpack%22%20class%3D%22inventory_details_img%22%20data-test%3D%22item-sauce-labs-backpack-img%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22inventory_details_desc_container%22%3E%3Cdiv%20class%3D%22inventory_details_name%20large_size%22%20data-test%3D%22inventory-item-name%22%3ESauce%20Labs%20Backpack%3C%2Fdiv%3E%3Cdiv%20class%3D%22inventory_details_desc%20large_size%22%20data-test%3D%22inventory-item-desc%22%3Ecarry.allTheThings()%20with%20the%20sleek%2C%20streamlined%20Sly%20Pack%20that%20melds%20uncompromising%20style%20with%20unequaled%20laptop%20and%20tablet%20protection.%3C%2Fdiv%3E%3Cdiv%20class%3D%22inventory_details_price%22%20data-test%3D%22inventory-item-price%22%3E%2429.99%3C%2Fdiv%3E%3Cbutton%20class%3D%22btn%20btn_primary%20btn_small%20btn_inventory%22%20data-test%3D%22add-to-cart%22%20id%3D%22add-to-cart%22%20name%3D%22add-to-cart%22%3EAdd%20to%20cart%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cfooter%20class%3D%22footer%22%20data-test%3D%22footer%22%3E%3Cul%20class%3D%22social%22%3E%3Cli%20class%3D%22social_twitter%22%3E%3Ca%20href%3D%22https%3A%2F%2Ftwitter.com%2Fsaucelabs%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%22%20data-test%3D%22social-twitter%22%3ETwitter%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22social_facebook%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.facebook.com%2Fsaucelabs%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%22%20data-test%3D%22social-facebook%22%3EFacebook%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22social_linkedin%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsauce-labs%2F%22%20target%3D%22_blank%22%20rel%3D%22noreferrer%22%20data-test%3D%22social-linkedin%22%3ELinkedIn%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cdiv%20class%3D%22footer_copy%22%20data-test%3D%22footer-copy%22%3E%C2%A9%202026%20Sauce%20Labs.%20All%20Rights%20Reserved.%20Terms%20of%20Service%20%7C%20Privacy%20Policy%3C%2Fdiv%3E%3C%2Ffooter%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "a8e32c99-1f11-420a-97c5-039e6eff705f",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.saucedemo.com-inventory-item.html-id-4"
+}

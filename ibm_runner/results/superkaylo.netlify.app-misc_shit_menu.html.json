@@ -1,0 +1,912 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 910,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 910,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 910,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 16,
+                "height": 878,
+                "width": 780
+            },
+            "snippet": "<body marginheight=\"16\" marginwidth=\"10\" leftmargin=\"10\" topmargin=\"16\" text=\"#000000\" vlink=\"#990099\" link=\"#0000FF\" background=\"assets/images/backdrop-stain.jpg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20marginheight%3D%5C%2216%5C%22%20marginwidth%3D%5C%2210%5C%22%20leftmargin%3D%5C%2210%5C%22%20topmargin%3D%5C%2216%5C%22%20text%3D%5C%22%23000000%5C%22%20vlink%3D%5C%22%23990099%5C%22%20link%3D%5C%22%230000FF%5C%22%20background%3D%5C%22assets%2Fimages%2Fbackdrop-stain.jpg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 16,
+                "height": 96,
+                "width": 400
+            },
+            "snippet": "<table width=\"400\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22400%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 16,
+                "height": 96,
+                "width": 400
+            },
+            "snippet": "<table width=\"400\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22400%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 30,
+                "height": 1,
+                "width": 400
+            },
+            "snippet": "<img border=\"0\" height=\"1\" width=\"400\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%221%5C%22%20width%3D%5C%22400%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/p[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Miscellaneous Shit Miscellaneous Shit' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Miscellaneous Shit Miscellaneous Shit"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 57,
+                "height": 39,
+                "width": 400
+            },
+            "snippet": "<p align=\"CENTER\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Miscellaneous%20Shit%20Miscellaneous%20Shit'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20align%3D%5C%22CENTER%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Miscellaneous%20Shit%20Miscellaneous%20Shit%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 112,
+                "height": 67,
+                "width": 604
+            },
+            "snippet": "<table width=\"604\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22604%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[3]",
+                "aria": "/document[1]/table[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 179,
+                "height": 573,
+                "width": 600
+            },
+            "snippet": "<table width=\"600\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22600%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20cellpadding%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 179,
+                "height": 280,
+                "width": 425
+            },
+            "snippet": "<table width=\"425\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22425%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 179,
+                "height": 280,
+                "width": 425
+            },
+            "snippet": "<table width=\"425\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22425%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/img[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 192,
+                "height": 1,
+                "width": 25
+            },
+            "snippet": "<img border=\"0\" height=\"1\" width=\"25\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%221%5C%22%20width%3D%5C%2225%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/img[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[2]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 35,
+                "top": 192,
+                "height": 1,
+                "width": 400
+            },
+            "snippet": "<img border=\"0\" height=\"1\" width=\"400\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%221%5C%22%20width%3D%5C%22400%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[2]/table[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 435,
+                "top": 179,
+                "height": 573,
+                "width": 175
+            },
+            "snippet": "<table width=\"175\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22175%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[2]/table[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 435,
+                "top": 179,
+                "height": 573,
+                "width": 175
+            },
+            "snippet": "<table width=\"175\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22175%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/img[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 435,
+                "top": 192,
+                "height": 1,
+                "width": 25
+            },
+            "snippet": "<img border=\"0\" height=\"1\" width=\"25\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%221%5C%22%20width%3D%5C%2225%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[3]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[2]/img[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[2]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 460,
+                "top": 192,
+                "height": 1,
+                "width": 150
+            },
+            "snippet": "<img border=\"0\" height=\"1\" width=\"150\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%221%5C%22%20width%3D%5C%22150%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]",
+                "aria": "/document[1]/table[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 752,
+                "height": 143,
+                "width": 588
+            },
+            "snippet": "<table width=\"580\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22580%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20cellpadding%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 752,
+                "height": 117,
+                "width": 53
+            },
+            "snippet": "<table width=\"45\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%2245%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 752,
+                "height": 117,
+                "width": 53
+            },
+            "snippet": "<table width=\"45\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%2245%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/img[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 765,
+                "height": 1,
+                "width": 15
+            },
+            "snippet": "<img border=\"0\" height=\"1\" width=\"15\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%221%5C%22%20width%3D%5C%2215%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[2]/table[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[2]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 63,
+                "top": 752,
+                "height": 124,
+                "width": 180
+            },
+            "snippet": "<table width=\"180\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22180%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[2]/table[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[2]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 63,
+                "top": 752,
+                "height": 124,
+                "width": 180
+            },
+            "snippet": "<table width=\"180\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22180%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/img[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 63,
+                "top": 765,
+                "height": 1,
+                "width": 5
+            },
+            "snippet": "<img border=\"0\" height=\"1\" width=\"5\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%221%5C%22%20width%3D%5C%225%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[2]/img[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[2]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 68,
+                "top": 765,
+                "height": 1,
+                "width": 175
+            },
+            "snippet": "<img border=\"0\" height=\"1\" width=\"175\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%221%5C%22%20width%3D%5C%22175%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[2]/td[2]/p[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[2]/cell[2]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'www.superkaylo.com  www.superkaylo.com ' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "www.superkaylo.com  www.superkaylo.com "
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 68,
+                "top": 841,
+                "height": 19,
+                "width": 175
+            },
+            "snippet": "<p align=\"CENTER\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'www.superkaylo.com%C2%A0%20www.superkaylo.com%C2%A0'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20align%3D%5C%22CENTER%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22www.superkaylo.com%C2%A0%20www.superkaylo.com%C2%A0%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[3]/table[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[3]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 752,
+                "height": 143,
+                "width": 355
+            },
+            "snippet": "<table width=\"355\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22355%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[3]/table[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[3]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 752,
+                "height": 143,
+                "width": 355
+            },
+            "snippet": "<table width=\"355\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22355%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]/tbody[1]/tr[1]/td[3]/table[1]/tbody[1]/tr[1]/td[1]/img[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[3]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 765,
+                "height": 1,
+                "width": 150
+            },
+            "snippet": "<img border=\"0\" height=\"1\" width=\"150\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%221%5C%22%20width%3D%5C%22150%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1175,
+    "ruleTime": 7,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "aria_content_in_landmark": {
+            "0": "All content must reside within an element with a landmark role",
+            "Fail_1": "Content is not within a landmark element"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 133,
+            "elementsViolation": 20,
+            "elementsViolationReview": 22,
+            "violation": 27,
+            "potentialviolation": 3,
+            "recommendation": 132,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 1012
+        },
+        "scanTime": 40,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "IBM_Accessibility"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779565020070,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EMisc%20Shit%20Menu%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20background%3D%22assets%2Fimages%2Fbackdrop-stain.jpg%22%20link%3D%22%230000FF%22%20vlink%3D%22%23990099%22%20text%3D%22%23000000%22%20topmargin%3D%2216%22%20leftmargin%3D%2210%22%20marginwidth%3D%2210%22%20marginheight%3D%2216%22%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22400%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%22400%22%20height%3D%2225%22%3E%3Cimg%20width%3D%22400%22%20height%3D%221%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%20%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%22400%22%3E%0A%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Ci%3E%3Cfont%20size%3D%22%2B3%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EMiscellaneous%20Shit%3C%2Ffont%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22604%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20height%3D%223%22%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%20%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%22604%22%20height%3D%2264%22%20align%3D%22left%22%20valign%3D%22top%22%3E%3Cimg%20id%3D%22Picture47%22%20height%3D%2264%22%20width%3D%22604%22%20border%3D%220%22%20alt%3D%22Picture%22%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3Ctable%20cellpadding%3D%220%22%20cellspacing%3D%220%22%20border%3D%220%22%20width%3D%22600%22%3E%0A%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%3Ctd%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22425%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%2225%22%20height%3D%2217%22%3E%3Cimg%20width%3D%2225%22%20height%3D%221%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%09%3Ctd%20width%3D%22400%22%3E%3Cimg%20width%3D%22400%22%20height%3D%221%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%20%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%3E%3C%2Ftd%3E%0A%09%3Ctd%20width%3D%22400%22%3E%0A%3Cp%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EAs%20the%20name%20implies%2C%20nay%2C%20states%20outright%2C%20this%20is%20a%20selection%20of%20miscellaneous%20cartoons%2C%20some%20of%20which%20are%20shit.%20Still%2C%20if%20you've%20got%20a%20slow%20connection%20(and%20you've%20been%20patient%20thus%20far)%2C%20you%20can%20hang%20out%20that%20bunting%20now%3A%20most%20of%20these%20files%20are%20teeny%20weeny%20black%20%26amp%3B%20white%20numbers.%20Some%20are%20old%2C%20some%20are%20new%2C%20none%20are%20borrowed%2C%20and%20whether%20or%20not%20they're%20%60blue'%20rather%20depends%20on%20your%20definition%20of%20the%20word%2C%20really.%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3Cp%3EAnyway%2C%20I%20hope%20you%20enjoy%20reading%20them%20more%20than%20I%20did%20making%20them%3A%20I%20%3Ci%3Efucking%20hate%3C%2Fi%3E%20drawing%20cartoons.%3C%2Fp%3E%0A%3C%2Ffont%3E%3Cp%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%26nbsp%3B%3C%2Ffont%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%3Ctd%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22175%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%2225%22%20height%3D%2217%22%3E%3Cimg%20width%3D%2225%22%20height%3D%221%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%09%3Ctd%20width%3D%22150%22%3E%3Cimg%20width%3D%22150%22%20height%3D%221%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%20%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%3E%3C%2Ftd%3E%0A%09%3Ctd%20width%3D%22150%22%3E%0A%3Cp%20align%3D%22CENTER%22%3E%3Ca%20href%3D%22%2Fmuttworld1-01%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EMuttWorld%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fmugger%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EMugger%20Gag%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fblowdry%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EHilarious%20Joke%20%231%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fcrunchie%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EHilarious%20Joke%20%232%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Firrational%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EDoctor%20Irrational%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fcurtis_bolton%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3ECurtis%20Bolton%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fwhat_a_far_happier_world_it_wo%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EWhat%20A%20Far%20Happier%20World%20It%20Would%20Be%20If...%20%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fwhy_do_we_watch_this_shit%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EWhy%20Do%20We%20Watch%20This%20Shit%3F%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fbig_elbows%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EBig%20Elbows%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fkids2day%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EKids%20Today%2C%20Eh%3F%20%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fjock_the_aggressive_doorknob%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EJock%20the%20Aggressive%20Doorknob%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fdale_tales%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EDale%20Tales%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fpocket_jury%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EPocket%20Jury%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%0A%3C%2Ffont%3E%3C%2Fb%3E%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3Ca%20href%3D%22%2Fworker%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3EWorker%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3Ctable%20cellpadding%3D%220%22%20cellspacing%3D%220%22%20border%3D%220%22%20width%3D%22580%22%3E%0A%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%3Ctd%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%2245%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%2215%22%20height%3D%2264%22%3E%3Cimg%20width%3D%2215%22%20height%3D%221%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%09%3Ctd%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%20%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20height%3D%2230%22%3E%3C%2Ftd%3E%0A%09%3Ctd%20width%3D%2230%22%20align%3D%22left%22%20valign%3D%22top%22%3E%3Ca%20href%3D%22%2Fmain_menu%22%3E%3Cimg%20id%3D%22Picture5%22%20height%3D%2230%22%20width%3D%2230%22%20border%3D%220%22%20alt%3D%22Main%20Menu%22%3E%3C%2Fa%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%3Ctd%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22180%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%225%22%20height%3D%2273%22%3E%3Cimg%20width%3D%225%22%20height%3D%221%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%09%3Ctd%20width%3D%22175%22%3E%3Cimg%20width%3D%22175%22%20height%3D%221%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%20%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%3E%3C%2Ftd%3E%0A%09%3Ctd%20width%3D%22175%22%3E%0A%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22-2%22%20face%3D%22Verdana%2CTahoma%2CArial%2CHelvetica%22%3Ewww.%3Ci%3Esuperkaylo%3C%2Fi%3E.com%26nbsp%3B%20%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%3Ctd%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22355%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%22150%22%20height%3D%2217%22%3E%3Cimg%20width%3D%22150%22%20height%3D%221%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%09%3Ctd%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%20%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20height%3D%22124%22%3E%3C%2Ftd%3E%0A%09%3Ctd%20width%3D%22205%22%20align%3D%22left%22%20valign%3D%22top%22%3E%3Cimg%20id%3D%22Picture4%22%20height%3D%22124%22%20width%3D%22205%22%20border%3D%220%22%20alt%3D%22Picture%22%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "939c4f8e-b2a6-403f-af0a-de982c86f577",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "superkaylo.netlify.app-misc_shit_menu.html"
+}

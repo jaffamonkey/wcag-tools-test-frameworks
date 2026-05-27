@@ -1,0 +1,323 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]",
+                "aria": "/document[1]/banner[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 222,
+                "width": 784
+            },
+            "snippet": "<div style=\"will-change: background; background-color: rgba(255, 255, 255, 0);\" data-doc-height=\"1\" data-duration=\"400\" data-no-scroll=\"1\" role=\"banner\" data-w-id=\"29bb31cc-22a9-3935-b4e9-60496141ff11\" data-collapse=\"medium\" data-easing=\"ease\" data-easing2=\"ease\" class=\"nav w-nav\" data-animation=\"default\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22will-change%3A%20background%3B%20background-color%3A%20rgba(255%2C%20255%2C%20255%2C%200)%3B%5C%22%20data-doc-height%3D%5C%221%5C%22%20data-duration%3D%5C%22400%5C%22%20data-no-scroll%3D%5C%221%5C%22%20role%3D%5C%22banner%5C%22%20data-w-id%3D%5C%2229bb31cc-22a9-3935-b4e9-60496141ff11%5C%22%20data-collapse%3D%5C%22medium%5C%22%20data-easing%3D%5C%22ease%5C%22%20data-easing2%3D%5C%22ease%5C%22%20class%3D%5C%22nav%20w-nav%5C%22%20data-animation%3D%5C%22default%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[1]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 298,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        },
+        {
+            "ruleId": "label_ref_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[1]/div[1]/div[1]/form[1]/label[1]",
+                "aria": "/document[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_invalid",
+            "message": "The value \"Name-2\" of the 'for' attribute is not the 'id' of a valid element",
+            "messageArgs": [
+                "Name-2"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 355,
+                "height": 18,
+                "width": 39
+            },
+            "snippet": "<label for=\"Name-2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/label_ref_valid.html#%7B%22message%22%3A%22The%20value%20%5C%22Name-2%5C%22%20of%20the%20'for'%20attribute%20is%20not%20the%20'id'%20of%20a%20valid%20element%22%2C%22snippet%22%3A%22%3Clabel%20for%3D%5C%22Name-2%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_invalid%22%2C%22ruleId%22%3A%22label_ref_valid%22%2C%22msgArgs%22%3A%5B%22Name-2%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[1]/div[1]/div[1]/form[1]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 47,
+                "top": 354,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input id=\"Name\" type=\"text\" placeholder=\"\" data-name=\"Name\" name=\"Name\" maxlength=\"256\" class=\"form-field w-input\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20id%3D%5C%22Name%5C%22%20type%3D%5C%22text%5C%22%20placeholder%3D%5C%22%5C%22%20data-name%3D%5C%22Name%5C%22%20name%3D%5C%22Name%5C%22%20maxlength%3D%5C%22256%5C%22%20class%3D%5C%22form-field%20w-input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[1]/div[1]/div[1]/form[1]/textarea[1]",
+                "aria": "/document[1]/form[1]/textbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 490,
+                "top": 332,
+                "height": 37,
+                "width": 183
+            },
+            "snippet": "<textarea class=\"form-field w-input\" required=\"\" data-name=\"Message\" name=\"Message\" id=\"Message\" maxlength=\"5000\" placeholder=\"How can we help?\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Ctextarea%20class%3D%5C%22form-field%20w-input%5C%22%20required%3D%5C%22%5C%22%20data-name%3D%5C%22Message%5C%22%20name%3D%5C%22Message%5C%22%20id%3D%5C%22Message%5C%22%20maxlength%3D%5C%225000%5C%22%20placeholder%3D%5C%22How%20can%20we%20help%3F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[1]/div[1]/div[1]/form[1]/input[3]",
+                "aria": "/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 673,
+                "top": 354,
+                "height": 22,
+                "width": 48
+            },
+            "snippet": "<input value=\"Send\" class=\"button donate w-button\" data-wait=\"Please wait...\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Send%5C%22%20class%3D%5C%22button%20donate%20w-button%5C%22%20data-wait%3D%5C%22Please%20wait...%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 431,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"footer-logo w-inline-block\" href=\"/template/all-sections/all-sections-light\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22footer-logo%20w-inline-block%5C%22%20href%3D%5C%22%2Ftemplate%2Fall-sections%2Fall-sections-light%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 431,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"footer-logo w-inline-block\" href=\"/template/all-sections/all-sections-light\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22footer-logo%20w-inline-block%5C%22%20href%3D%5C%22%2Ftemplate%2Fall-sections%2Fall-sections-light%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[6]/form[1]/input[3]",
+                "aria": "/document[1]/form[2]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 434,
+                "top": 616,
+                "height": 22,
+                "width": 79
+            },
+            "snippet": "<input value=\"Subscribe!\" class=\"button small nav-cta w-button\" data-wait=\"Please wait...\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Subscribe!%5C%22%20class%3D%5C%22button%20small%20nav-cta%20w-button%5C%22%20data-wait%3D%5C%22Please%20wait...%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 939,
+    "ruleTime": 14,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "label_ref_valid": {
+            "0": "The 'for' attribute for a label should reference a non-empty, unique 'id' attribute of a valid element",
+            "fail_invalid": "The value \"{0}\" of the 'for' attribute is not the 'id' of a valid element"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 18,
+            "elementsViolation": 3,
+            "elementsViolationReview": 8,
+            "violation": 3,
+            "potentialviolation": 6,
+            "recommendation": 6,
+            "potentialrecommendation": 7,
+            "manual": 1,
+            "pass": 916
+        },
+        "scanTime": 44,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778341261696,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22es%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ELimitless%20-%20Webflow%20HTML%20website%20template%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22light%22%3E%3Cdiv%20data-animation%3D%22default%22%20class%3D%22nav%20w-nav%22%20data-easing2%3D%22ease%22%20data-easing%3D%22ease%22%20data-collapse%3D%22medium%22%20data-w-id%3D%2229bb31cc-22a9-3935-b4e9-60496141ff11%22%20role%3D%22banner%22%20data-no-scroll%3D%221%22%20data-duration%3D%22400%22%20data-doc-height%3D%221%22%20style%3D%22will-change%3A%20background%3B%20background-color%3A%20rgba(255%2C%20255%2C%20255%2C%200)%3B%22%3E%3Ca%20href%3D%22%2F%22%20id%3D%22w-node-_29bb31cc-22a9-3935-b4e9-60496141ff12-6141ff11%22%20class%3D%22brand%20w-nav-brand%22%20aria-label%3D%22home%22%3E%3Cimg%20alt%3D%22Neighbor%20Idaho%20Logo%22%20sizes%3D%22(max-width%3A%20479px)%2098vw%2C%20(max-width%3A%20767px)%2099vw%2C%20(max-width%3A%201222px)%20100vw%2C%201222px%22%20class%3D%22image-19%22%3E%3C%2Fa%3E%3Clink%20rel%3D%22prefetch%22%20href%3D%22%2F%22%3E%3Cnav%20role%3D%22navigation%22%20id%3D%22w-node-_29bb31cc-22a9-3935-b4e9-60496141ff14-6141ff11%22%20class%3D%22nav-items-wrapper%20w-nav-menu%22%3E%3Cdiv%20class%3D%22button%20close%20w-nav-button%22%20style%3D%22-webkit-user-select%3A%20text%3B%22%20aria-label%3D%22menu%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-controls%3D%22w-nav-overlay-0%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%3E%3Cimg%20loading%3D%22lazy%22%20alt%3D%22%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22nav-links-wrapper%22%3E%3Cdiv%20data-hover%3D%22false%22%20data-delay%3D%220%22%20class%3D%22w-dropdown%22%3E%3Cdiv%20class%3D%22w-dropdown-toggle%22%20id%3D%22w-dropdown-toggle-0%22%20aria-controls%3D%22w-dropdown-list-0%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20role%3D%22button%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22w-icon-dropdown-toggle%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22text-block%20nav-link%22%3EWHO%26nbsp%3BWE%26nbsp%3BARE%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22w-dropdown-list%22%20id%3D%22w-dropdown-list-0%22%20aria-labelledby%3D%22w-dropdown-toggle-0%22%3E%3Ca%20href%3D%22%2Four-team%2Four-founders%22%20class%3D%22dropdown-link%20w-dropdown-link%22%20tabindex%3D%220%22%3EAlumni%3C%2Fa%3E%3Ca%20href%3D%22%2Four-mission%2Four-mission-light%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EOur%20Mission%3C%2Fa%3E%3Ca%20href%3D%22%2Four-team%2F2gi%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EOur%20Team%3C%2Fa%3E%3Ca%20href%3D%22%2Ffinancials%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EFinancials%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3Cdiv%20data-hover%3D%22false%22%20data-delay%3D%220%22%20class%3D%22w-dropdown%22%3E%3Cdiv%20class%3D%22w-dropdown-toggle%22%20id%3D%22w-dropdown-toggle-1%22%20aria-controls%3D%22w-dropdown-list-1%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20role%3D%22button%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22w-icon-dropdown-toggle%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22text-block%20nav-link%22%3EWHAT%26nbsp%3BWE%26nbsp%3BDO%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22w-dropdown-list%22%20id%3D%22w-dropdown-list-1%22%20aria-labelledby%3D%22w-dropdown-toggle-1%22%3E%3Ca%20href%3D%22%2Four-programs%22%20class%3D%22dropdown-link%20w-dropdown-link%22%20tabindex%3D%220%22%3EOur%20Programs%3C%2Fa%3E%3Ca%20href%3D%22%2Fin-the-news%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3E2GI%26nbsp%3BIn%20The%20News%3C%2Fa%3E%3Ca%20href%3D%22%2Fprograms-latam-the-caribbean%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3ELatin%20American%20and%20Caribbean%20Program%3Cbr%3E%3C%2Fa%3E%3Ca%20href%3D%22%2Fthe-blog%2Fblog%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3E2GI%20Blog%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3Cdiv%20data-hover%3D%22false%22%20data-delay%3D%220%22%20class%3D%22w-dropdown%22%3E%3Cdiv%20class%3D%22w-dropdown-toggle%22%20id%3D%22w-dropdown-toggle-2%22%20aria-controls%3D%22w-dropdown-list-2%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20role%3D%22button%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22w-icon-dropdown-toggle%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22text-block%20nav-link%22%3EGET%26nbsp%3BINVOLVED%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22w-dropdown-list%22%20id%3D%22w-dropdown-list-2%22%20aria-labelledby%3D%22w-dropdown-toggle-2%22%3E%3Ca%20href%3D%22%2Four-team%2Fpartnerships%22%20class%3D%22dropdown-link%20w-dropdown-link%22%20tabindex%3D%220%22%3EPartnerships%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EDonate%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20target%3D%22_blank%22%20class%3D%22button%20mobile-nav-cta%20w-button%22%3EDonate%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fnav%3E%3Cdiv%20id%3D%22w-node-_29bb31cc-22a9-3935-b4e9-60496141ff2b-6141ff11%22%20class%3D%22nav-button-group%22%3E%3Cdiv%20class%3D%22button%20donate%20menuasdf%20w-nav-button%22%20style%3D%22-webkit-user-select%3A%20text%3B%22%20aria-label%3D%22menu%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-controls%3D%22w-nav-overlay-0%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%3E%3Cdiv%3EMenu%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ca%20href%3D%22%2Flogin%22%20class%3D%22button%20login%20w-button%22%3ELogin%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20target%3D%22_blank%22%20class%3D%22button%20donate%20w-button%22%3EDonate%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22w-nav-overlay%22%20data-wf-ignore%3D%22%22%20id%3D%22w-nav-overlay-0%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Csection%20class%3D%22section%20_50-50-overlap-hero%22%3E%3Cdiv%20id%3D%22w-node-bffd487d-4464-1c1f-5fd6-e7758682f4c3-2e8d3f2a%22%20class%3D%22content-block%20padded%20light%22%3E%3Ch1%3EContact%20Us%3C%2Fh1%3E%3Cp%3EWe'd%20love%20to%20get%20in%20touch%20with%20you!%20Send%20us%20a%20message%20below%20and%20we'll%20contact%20you%20soon.%3C%2Fp%3E%3Cdiv%20class%3D%22hero-form%20w-form%22%3E%3Cform%20id%3D%22wf-form-Contact%22%20name%3D%22wf-form-Contact%22%20data-name%3D%22Contact%22%20method%3D%22get%22%20class%3D%22form%22%20data-wf-page-id%3D%2262b5cedad56058262e8d3f2a%22%20data-wf-element-id%3D%224168eb49-e7d6-9a55-70d8-2c8085977015%22%20aria-label%3D%22Contact%22%3E%3Clabel%20for%3D%22Name-2%22%3EName%3C%2Flabel%3E%3Cinput%20class%3D%22form-field%20w-input%22%20maxlength%3D%22256%22%20name%3D%22Name%22%20data-name%3D%22Name%22%20placeholder%3D%22%22%20type%3D%22text%22%20id%3D%22Name%22%3E%3Clabel%20for%3D%22Email-2%22%3EEmail%20Address%3C%2Flabel%3E%3Cinput%20class%3D%22form-field%20w-input%22%20maxlength%3D%22256%22%20name%3D%22Email%22%20data-name%3D%22Email%22%20placeholder%3D%22%22%20type%3D%22email%22%20id%3D%22Email-2%22%20required%3D%22%22%3E%3Clabel%20for%3D%22Message%22%3EMessage%3C%2Flabel%3E%3Ctextarea%20placeholder%3D%22How%20can%20we%20help%3F%22%20maxlength%3D%225000%22%20id%3D%22Message%22%20name%3D%22Message%22%20data-name%3D%22Message%22%20required%3D%22%22%20class%3D%22form-field%20w-input%22%3E%3C%2Ftextarea%3E%3Cinput%20type%3D%22submit%22%20data-wait%3D%22Please%20wait...%22%20class%3D%22button%20donate%20w-button%22%20value%3D%22Send%22%3E%3C%2Fform%3E%3Cdiv%20class%3D%22form-success-message%20w-form-done%22%20tabindex%3D%22-1%22%20role%3D%22region%22%20aria-label%3D%22Contact%20success%22%3E%3Cdiv%3EThank%20you!%20Your%20submission%20has%20been%20received!%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22form-error-message%20w-form-fail%22%20tabindex%3D%22-1%22%20role%3D%22region%22%20aria-label%3D%22Contact%20failure%22%3E%3Cdiv%3EOops!%20Something%20went%20wrong%20while%20submitting%20the%20form.%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cimg%20data-w-id%3D%22fb43349c-af97-e0cf-a0f5-e6d7f3c6db4e%22%20id%3D%22w-node-fb43349c-af97-e0cf-a0f5-e6d7f3c6db4e-2e8d3f2a%22%20loading%3D%22lazy%22%20alt%3D%22%22%20class%3D%22image%22%20style%3D%22will-change%3A%20transform%3B%20transform%3A%20translate3d(0px%2C%20-4.5532%25%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3C%2Fsection%3E%3Cdiv%20class%3D%22section%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer%22%3E%3Cdiv%20class%3D%22primary-footer%22%3E%3Cdiv%20id%3D%22w-node-_0f8ec7a1-724e-e762-3398-dfeb49a228fb-1186b488%22%20class%3D%22footer-links-wrapper%22%3E%3Ca%20href%3D%22%2Ftemplate%2Fall-sections%2Fall-sections-light%22%20class%3D%22footer-logo%20w-inline-block%22%3E%3Cimg%20sizes%3D%22(max-width%3A%201222px)%20100vw%2C%201222px%22%20alt%3D%22%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22social-icons-wrapper%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.facebook.com%2F2getherInternational%2F%22%20target%3D%22_blank%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Facebook%20icon%22%3E%3C%2Fa%3E%3Ca%20href%3D%22mailto%3Ahi%40abelhancock.com%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Email%20icon%22%3E%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.instagram.com%2F2gether_international%22%20target%3D%22_blank%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Instagram%20icon%22%3E%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fmobile.twitter.com%2F2getherinternat%22%20target%3D%22_blank%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Twitter%20icon%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EWho%20we%20ARe%3C%2Fdiv%3E%3Ca%20href%3D%22%2Four-team%2Four-founders%22%20class%3D%22footer-link%22%3EOur%20Founders%3C%2Fa%3E%3Ca%20href%3D%22%2Four-mission%2Four-mission-light%22%20class%3D%22footer-link%22%3EOur%20Mission%3C%2Fa%3E%3Ca%20href%3D%22%2Four-team%2F2gi%22%20class%3D%22footer-link%22%3EOur%20Team%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EWhat%20we%20Do%3C%2Fdiv%3E%3Ca%20href%3D%22%2Four-programs%22%20class%3D%22footer-link%22%3EPrograms%3C%2Fa%3E%3Ca%20href%3D%22%2Fin-the-news%22%20class%3D%22footer-link%22%3ENews%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EGet%20Involved%3C%2Fdiv%3E%3Ca%20href%3D%22%2Four-team%2Fpartnerships%22%20class%3D%22footer-link%22%3EPartnerships%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20class%3D%22footer-link%22%3EDonate%3C%2Fa%3E%3Ca%20href%3D%22%2Fcontact%2Fcontact-light%22%20aria-current%3D%22page%22%20class%3D%22footer-link%20w--current%22%3EContact%20Us%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EOther%20Links%3C%2Fdiv%3E%3Ca%20href%3D%22https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdjb9HHW7QnH-gyOI8irw3mRlbOrHRm-JoSISUERZAt1vnLHQ%2Fviewform%22%20class%3D%22footer-link%22%3EWB%26nbsp%3BPolicy%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Facrobat.adobe.com%2Fid%2Furn%3Aaaid%3Asc%3AUS%3Af52ff4a4-01ee-4974-92cc-fb5c7a8be01c%22%20class%3D%22footer-link%22%3E%3Cstrong%3E2GI%20Event%20Privacy%20Policy%3C%2Fstrong%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-_422a992f-e58c-7479-1abd-da6c8cac605c-1186b488%22%20class%3D%22form-block%20footer-subscribe%20w-form%22%3E%3Cform%20id%3D%22wf-form-Newsletter-Subscription%22%20name%3D%22wf-form-Newsletter-Subscription%22%20data-name%3D%22Newsletter%20Subscription%22%20method%3D%22get%22%20data-wf-page-id%3D%2262b5cedad56058262e8d3f2a%22%20data-wf-element-id%3D%22422a992f-e58c-7479-1abd-da6c8cac605d%22%20aria-label%3D%22Newsletter%20Subscription%22%3E%3Clabel%20for%3D%22name%22%3EName%3C%2Flabel%3E%3Cinput%20class%3D%22form-field%20w-input%22%20maxlength%3D%22256%22%20name%3D%22name%22%20data-name%3D%22Name%22%20placeholder%3D%22%22%20type%3D%22text%22%20id%3D%22name%22%3E%3Clabel%20for%3D%22email%22%3EEmail%20Address%3C%2Flabel%3E%3Cinput%20class%3D%22form-field%20w-input%22%20maxlength%3D%22256%22%20name%3D%22email%22%20data-name%3D%22Email%22%20placeholder%3D%22%22%20type%3D%22email%22%20id%3D%22email%22%20required%3D%22%22%3E%3Cinput%20type%3D%22submit%22%20data-wait%3D%22Please%20wait...%22%20class%3D%22button%20small%20nav-cta%20w-button%22%20value%3D%22Subscribe!%22%3E%3C%2Fform%3E%3Cdiv%20class%3D%22form-success-message%20w-form-done%22%20tabindex%3D%22-1%22%20role%3D%22region%22%20aria-label%3D%22Newsletter%20Subscription%20success%22%3E%3Cdiv%3EThank%20you!%20Your%20submission%20has%20been%20received!%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22form-error-message%20w-form-fail%22%20tabindex%3D%22-1%22%20role%3D%22region%22%20aria-label%3D%22Newsletter%20Subscription%20failure%22%3E%3Cdiv%3EOops!%20Something%20went%20wrong%20while%20submitting%20the%20form.%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22secondary-footer%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!--%20Google%20Tag%20Manager%20(noscript)%20--%3E%0A%3Cnoscript%3E%3C%2Fnoscript%3E%0A%3C!--%20End%20Google%20Tag%20Manager%20(noscript)%20--%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "4ec5bce2-c2d3-4f88-ba47-c7b9722bfbc8",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.2gether-international.org-contact-contact-light"
+}

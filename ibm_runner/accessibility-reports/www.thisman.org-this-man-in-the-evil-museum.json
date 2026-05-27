@@ -1,0 +1,332 @@
+{
+    "results": [
+        {
+            "ruleId": "img_alt_redundant",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/img[1]",
+                "aria": "/document[1]/banner[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Image 'alt' value within a link is repeated in link text of the link after",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 27,
+                "height": 19,
+                "width": 154
+            },
+            "snippet": "<img decoding=\"async\" alt=\"ever dream this man?\" class=\"custom-logo\" height=\"235\" width=\"200\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_redundant.html#%7B%22message%22%3A%22Image%20'alt'%20value%20within%20a%20link%20is%20repeated%20in%20link%20text%20of%20the%20link%20after%22%2C%22snippet%22%3A%22%3Cimg%20decoding%3D%5C%22async%5C%22%20alt%3D%5C%22ever%20dream%20this%20man%3F%5C%22%20class%3D%5C%22custom-logo%5C%22%20height%3D%5C%22235%5C%22%20width%3D%5C%22200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22img_alt_redundant%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[2]/aside[1]",
+                "aria": "/document[1]/complementary[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8579,
+                "height": 532,
+                "width": 784
+            },
+            "snippet": "<aside itemtype=\"https://schema.org/WPSideBar\" itemscope=\"itemscope\" role=\"complementary\" class=\"sidebar sidebar-primary hgrid-span-3 layout-narrow-right \" id=\"sidebar-primary\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20itemtype%3D%5C%22https%3A%2F%2Fschema.org%2FWPSideBar%5C%22%20itemscope%3D%5C%22itemscope%5C%22%20role%3D%5C%22complementary%5C%22%20class%3D%5C%22sidebar%20sidebar-primary%20hgrid-span-3%20layout-narrow-right%20%5C%22%20id%3D%5C%22sidebar-primary%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[2]/aside[1]/section[6]/div[1]/a[1]",
+                "aria": "/document[1]/complementary[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 9129,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a target=\"_blank\" class=\" social-icons-icon  fa-facebook-block\" href=\"https://www.facebook.com/thisman.org\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22%20social-icons-icon%20%20fa-facebook-block%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Fthisman.org%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[2]/aside[1]/section[6]/div[1]/a[1]",
+                "aria": "/document[1]/complementary[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 9129,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a target=\"_blank\" class=\" social-icons-icon  fa-facebook-block\" href=\"https://www.facebook.com/thisman.org\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22%20social-icons-icon%20%20fa-facebook-block%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Fthisman.org%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[2]/aside[1]/section[6]/div[1]/a[2]",
+                "aria": "/document[1]/complementary[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 9129,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a target=\"_blank\" class=\" social-icons-icon  fa-instagram-block\" href=\"https://www.instagram.com/thisman_org/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22%20social-icons-icon%20%20fa-instagram-block%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.instagram.com%2Fthisman_org%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[2]/aside[1]/section[6]/div[1]/a[2]",
+                "aria": "/document[1]/complementary[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 9129,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a target=\"_blank\" class=\" social-icons-icon  fa-instagram-block\" href=\"https://www.instagram.com/thisman_org/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22%20social-icons-icon%20%20fa-instagram-block%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.instagram.com%2Fthisman_org%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[2]/aside[1]/section[6]/div[1]/a[3]",
+                "aria": "/document[1]/complementary[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 9129,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a target=\"_blank\" class=\" social-icons-icon  fa-twitter-block\" href=\"https://twitter.com/thisman_org\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22%20social-icons-icon%20%20fa-twitter-block%5C%22%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Fthisman_org%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[2]/aside[1]/section[6]/div[1]/a[3]",
+                "aria": "/document[1]/complementary[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 9129,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a target=\"_blank\" class=\" social-icons-icon  fa-twitter-block\" href=\"https://twitter.com/thisman_org\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22%20social-icons-icon%20%20fa-twitter-block%5C%22%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Fthisman_org%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[2]/aside[1]/section[6]/div[1]/a[4]",
+                "aria": "/document[1]/complementary[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 9129,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a target=\"_blank\" class=\" social-icons-icon  fa-youtube-block\" href=\"https://www.youtube.com/@thisman5252/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22%20social-icons-icon%20%20fa-youtube-block%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.youtube.com%2F%40thisman5252%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[2]/aside[1]/section[6]/div[1]/a[4]",
+                "aria": "/document[1]/complementary[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 9129,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a target=\"_blank\" class=\" social-icons-icon  fa-youtube-block\" href=\"https://www.youtube.com/@thisman5252/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22%20social-icons-icon%20%20fa-youtube-block%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.youtube.com%2F%40thisman5252%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1109,
+    "ruleTime": 23,
+    "nls": {
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "img_alt_redundant": {
+            "0": "The text alternative for an image within a link should not repeat the link text or adjacent link text",
+            "Fail_3": "Image 'alt' value within a link is repeated in link text of the link after"
+        },
+        "aria_complementary_labelled": {
+            "0": "Each element with \"complementary\" role must have a label that describes its purpose",
+            "Fail_1": "Element with \"complementary\" role does not have a label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 16,
+            "elementsViolation": 6,
+            "elementsViolationReview": 6,
+            "violation": 6,
+            "potentialviolation": 4,
+            "recommendation": 3,
+            "potentialrecommendation": 11,
+            "manual": 0,
+            "pass": 1085
+        },
+        "scanTime": 70,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778713546735,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en-US%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThis%20Man%20in%20The%20Evil%20Museum%20%E2%80%93%20ever%20dream%20this%20man%3F%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22wordpress%20ltr%20en%20en-us%20parent-theme%20y2026%20m05%20d13%20h22%20wednesday%20logged-out%20wp-custom-logo%20singular%20singular-post%20singular-post-1192%20post-template-default%20creattica%22%20dir%3D%22ltr%22%20itemscope%3D%22itemscope%22%20itemtype%3D%22https%3A%2F%2Fschema.org%2FBlog%22%3E%0A%0A%09%0A%09%3Ca%20href%3D%22%23main%22%20class%3D%22screen-reader-text%22%3ESkip%20to%20content%3C%2Fa%3E%0A%0A%09%3Cdiv%20id%3D%22page-wrapper%22%20class%3D%22%20hgrid%20site-boxed%20content-boxed%20page-wrapper%20sitewrap-narrow-right%20sidebarsN%20sidebars1%20hoot-cf7-style%20hoot-mapp-style%20hoot-jetpack-style%22%3E%0A%0A%09%09%0A%09%09%3Cdiv%20id%3D%22leftbar%22%20class%3D%22%20leftbar%22%3E%0A%09%09%09%3Cdiv%20id%3D%22leftbar-inner%22%20class%3D%22%20leftbar-inner%22%3E%0A%0A%09%09%09%09%0A%09%09%09%09%3Cheader%20id%3D%22header%22%20class%3D%22site-header%22%20role%3D%22banner%22%20itemscope%3D%22itemscope%22%20itemtype%3D%22https%3A%2F%2Fschema.org%2FWPHeader%22%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22header-primary%22%20class%3D%22%20header-part%22%3E%0A%09%09%3Cdiv%20class%3D%22hgrid%22%3E%0A%09%09%09%3Cdiv%20class%3D%22hgrid-span-12%22%3E%0A%0A%09%09%09%09%3Cdiv%20id%3D%22branding%22%20class%3D%22site-branding%20branding%22%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22site-logo%22%20class%3D%22site-logo-mixed%20accent-typo%20with-background%22%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22site-logo-mixed%22%20class%3D%22site-logo-with-image%20site-logo-text-medium%20displayfont%22%3E%3Cdiv%20class%3D%22site-logo-mixed-image%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2F%22%20class%3D%22custom-logo-link%22%20rel%3D%22home%22%3E%3Cimg%20width%3D%22200%22%20height%3D%22235%22%20class%3D%22custom-logo%22%20alt%3D%22ever%20dream%20this%20man%3F%22%20decoding%3D%22async%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22site-logo-mixed-text%22%3E%3Cdiv%20id%3D%22site-title%22%20class%3D%22site-title%22%20itemprop%3D%22headline%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%22%20rel%3D%22home%22%20itemprop%3D%22url%22%3E%3Cspan%20class%3D%22blogname%22%3Eever%20dream%20this%20man%3F%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Ch2%20class%3D%22site-description%22%20id%3D%22site-description%22%20itemprop%3D%22description%22%3EEVERY%20NIGHT%20THROUGHOUT%20THE%20WORLD%20HUNDREDS%20OF%20PEOPLE%20DREAM%20ABOUT%20THIS%20FACE%3C%2Fh2%3E%3C%2Fdiv%3E%3C!--site-logo-mixed-text--%3E%3C%2Fdiv%3E%3C!--logotext--%3E%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%3C!--%20%23branding%20--%3E%0A%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20id%3D%22header-aside%22%20class%3D%22%20header-aside%22%3E%0A%09%09%3Cdiv%20class%3D%22hgrid%22%3E%0A%09%09%09%3Cdiv%20class%3D%22hgrid-span-12%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22screen-reader-text%22%3EPrimary%20Navigation%20Menu%3C%2Fdiv%3E%0A%09%3Cnav%20id%3D%22menu-primary%22%20class%3D%22menu%20menu-primary%20nav-menu%20mobilemenu-fixed%20mobilesubmenu-click%22%20role%3D%22navigation%22%20aria-label%3D%22Primary%20Navigation%20Menu%22%20itemscope%3D%22itemscope%22%20itemtype%3D%22https%3A%2F%2Fschema.org%2FSiteNavigationElement%22%3E%0A%09%09%3Ca%20class%3D%22menu-toggle%22%20href%3D%22%23%22%3E%3Cspan%20class%3D%22menu-toggle-text%22%3EMenu%3C%2Fspan%3E%3Ci%20class%3D%22fas%20fa-bars%22%3E%3C%2Fi%3E%3C%2Fa%3E%0A%09%09%3Cdiv%20class%3D%22menu-expand%22%3E%3Ci%20class%3D%22fas%20fa-bars%22%3E%3C%2Fi%3E%3C%2Fdiv%3E%0A%0A%09%09%3Cul%20id%3D%22menu-primary-items%22%20class%3D%22menu-items%20sf-menu%20menu%22%3E%3Cli%20id%3D%22menu-item-32%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-32%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fnews%2F%22%3ENEWS%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-31%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-31%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fhistory%2F%22%3EHISTORY%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-33%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-33%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Ftheories%2F%22%3ETHEORIES%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-97%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-97%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fdreams%2F%22%3EDREAMS%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-96%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-96%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fportrait%2F%22%3EPORTRAITS%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-95%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-95%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fin-the-world%2F%22%3EIN%20THE%20WORLD%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-94%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-94%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fdownload%2F%22%3EDOWNLOAD%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-93%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-93%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Ffan-art%2F%22%3EFAN%20ART%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-487%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-487%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fguestbook%2F%22%3EGUESTBOOK%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20id%3D%22menu-item-92%22%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-92%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fcontact%2F%22%3ECONTACT%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%0A%09%3C%2Fnav%3E%3C!--%20%23menu-primary%20--%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fheader%3E%3C!--%20%23header%20--%3E%0A%0A%09%09%09%09%0A%09%09%09%3C%2Fdiv%3E%3C!--%20%23leftbar-inner%20--%3E%0A%09%09%3C%2Fdiv%3E%3C!--%20%23leftbar%20--%3E%0A%0A%09%09%3Cdiv%20id%3D%22main%22%20class%3D%22%20main%20hgrid%22%3E%0A%0A%09%09%09%0A%0A%09%09%09%09%3Cdiv%20id%3D%22loop-meta%22%20class%3D%22%20loop-meta-wrap%20pageheader-bg-default%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22hgrid%22%3E%0A%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22%20loop-meta%20%20hgrid-span-12%22%20itemscope%3D%22itemscope%22%20itemtype%3D%22https%3A%2F%2Fschema.org%2FWebPageElement%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22entry-header%22%3E%0A%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Ch1%20class%3D%22%20loop-title%20entry-title%22%20itemprop%3D%22headline%22%3EThis%20Man%20in%20The%20Evil%20Museum%3C%2Fh1%3E%0A%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22%20loop-description%22%20itemprop%3D%22text%22%3E%3C%2Fdiv%3E%3C!--%20.loop-description%20--%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%3C!--%20.entry-header%20--%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%3C!--%20.loop-meta%20--%3E%0A%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%0A%09%09%09%0A%3Cdiv%20class%3D%22hgrid%20main-content-grid%22%3E%0A%0A%09%0A%09%3Cmain%20id%3D%22content%22%20class%3D%22content%20%20hgrid-span-9%20has-sidebar%20layout-narrow-right%20%22%20role%3D%22main%22%3E%0A%0A%09%09%3Cdiv%20itemprop%3D%22image%22%20itemscope%3D%22%22%20itemtype%3D%22https%3A%2F%2Fschema.org%2FImageObject%22%20class%3D%22entry-featured-img-wrap%22%3E%3Cmeta%20itemprop%3D%22url%22%20content%3D%22https%3A%2F%2Fi0.wp.com%2Fwww.thisman.org%2Fwp-content%2Fuploads%2F2025%2F10%2Fevil_museum_thisman_3.png%3Fresize%3D945%252C530%26amp%3Bssl%3D1%22%3E%3Cmeta%20itemprop%3D%22width%22%20content%3D%22945%22%3E%3Cmeta%20itemprop%3D%22height%22%20content%3D%22530%22%3E%3Cimg%20width%3D%22945%22%20height%3D%22530%22%20class%3D%22attachment-hoot-extra-wide%20%20entry-content-featured-img%20wp-post-image%22%20alt%3D%22%22%20itemscope%3D%22%22%20decoding%3D%22async%22%20loading%3D%22lazy%22%20sizes%3D%22auto%2C%20(max-width%3A%20945px)%20100vw%2C%20945px%22%20itemprop%3D%22image%22%3E%3C%2Fdiv%3E%0A%09%09%09%3Cdiv%20id%3D%22content-wrap%22%3E%0A%0A%09%09%09%09%0A%09%3Carticle%20id%3D%22post-1192%22%20class%3D%22entry%20author-wp_1007561%20post-1192%20post%20type-post%20status-publish%20format-standard%20has-post-thumbnail%20category-uncategorized%22%20itemscope%3D%22itemscope%22%20itemtype%3D%22https%3A%2F%2Fschema.org%2FBlogPosting%22%20itemprop%3D%22blogPost%22%3E%0A%0A%09%09%3Cdiv%20class%3D%22entry-content%22%20itemprop%3D%22articleBody%22%3E%0A%0A%09%09%09%3Cdiv%20class%3D%22entry-the-content%22%3E%0A%09%09%09%09%3Cp%3E%3Ca%20href%3D%22https%3A%2F%2Fcomics.inkr.com%2Ftitle%2F588-evil-museum%2Fchapters%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3E%3Cstrong%3E%3Cem%20data-start%3D%220%22%20data-end%3D%2217%22%3EThe%20Evil%20Museum%3C%2Fem%3E%3C%2Fstrong%3E%3C%2Fa%3E%20(%E9%AC%BC%E5%9B%AD)%20is%20a%20Chinese%20horror%20%3Cem%3Emanhua%3C%2Fem%3E%20series%20created%20by%20BING%20and%20published%20by%20KuaiKan%20Comics%20between%202019%20and%202020.%3Cbr%3E%0AEpisodes%2039%E2%80%9343%20focusing%20on%20%E2%80%9CThis%20Man%2C%E2%80%9D%20whose%20face%20and%20story%20appear%20across%20hundreds%20of%20pages%2C%20becoming%20a%20central%20element%20of%20the%20mystery.%3C%2Fp%3E%0A%3Cp%3E%3Ca%20href%3D%22https%3A%2F%2Fcomics.inkr.com%2Ftitle%2F588-evil-museum%2Fchapter%2F24393-chapter-39%3Fprogress%3D0.472%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3Ehttps%3A%2F%2Fcomics.inkr.com%2Ftitle%2F588-evil-museum%2Fchapter%2F24393-chapter-39%3Fprogress%3D0.472%3C%2Fa%3E%3C%2Fp%3E%0A%3Cp%3E%3Cimg%20data-recalc-dims%3D%221%22%20fetchpriority%3D%22high%22%20decoding%3D%22async%22%20class%3D%22size-full%20wp-image-1193%20aligncenter%22%20alt%3D%22%22%20width%3D%22850%22%20height%3D%221275%22%20sizes%3D%22(max-width%3A%20850px)%20100vw%2C%20850px%22%3E%20%3Cimg%20data-recalc-dims%3D%221%22%20decoding%3D%22async%22%20class%3D%22size-large%20wp-image-1199%20aligncenter%22%20alt%3D%22%22%20width%3D%221024%22%20height%3D%22808%22%20sizes%3D%22(max-width%3A%201024px)%20100vw%2C%201024px%22%3E%20%3Cimg%20data-recalc-dims%3D%221%22%20decoding%3D%22async%22%20class%3D%22size-full%20wp-image-1198%20aligncenter%22%20alt%3D%22%22%20width%3D%221080%22%20height%3D%221340%22%20sizes%3D%22(max-width%3A%201080px)%20100vw%2C%201080px%22%3E%20%3Cimg%20data-recalc-dims%3D%221%22%20loading%3D%22lazy%22%20decoding%3D%22async%22%20class%3D%22size-full%20wp-image-1197%20aligncenter%22%20alt%3D%22%22%20width%3D%221230%22%20height%3D%221412%22%20sizes%3D%22auto%2C%20(max-width%3A%201230px)%20100vw%2C%201230px%22%3E%20%3Cimg%20data-recalc-dims%3D%221%22%20loading%3D%22lazy%22%20decoding%3D%22async%22%20class%3D%22size-full%20wp-image-1196%20aligncenter%22%20alt%3D%22%22%20width%3D%221260%22%20height%3D%221172%22%20sizes%3D%22auto%2C%20(max-width%3A%201260px)%20100vw%2C%201260px%22%3E%20%3Cimg%20data-recalc-dims%3D%221%22%20loading%3D%22lazy%22%20decoding%3D%22async%22%20class%3D%22size-full%20wp-image-1194%20aligncenter%22%20alt%3D%22%22%20width%3D%221260%22%20height%3D%221119%22%20sizes%3D%22auto%2C%20(max-width%3A%201260px)%20100vw%2C%201260px%22%3E%3C%2Fp%3E%0A%3Cp%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cdiv%20class%3D%22sharedaddy%20sd-sharing-enabled%22%3E%3Cdiv%20class%3D%22robots-nocontent%20sd-block%20sd-social%20sd-social-icon-text%20sd-sharing%22%3E%3Ch3%20class%3D%22sd-title%22%3EShare%20this%3A%3C%2Fh3%3E%3Cdiv%20class%3D%22sd-content%22%3E%3Cul%20data-sharing-events-added%3D%22true%22%3E%3Cli%20class%3D%22share-twitter%22%3E%3Ca%20rel%3D%22nofollow%20noopener%20noreferrer%22%20data-shared%3D%22sharing-twitter-1192%22%20class%3D%22share-twitter%20sd-button%20share-icon%22%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fthis-man-in-the-evil-museum%2F%3Fshare%3Dtwitter%26amp%3Bnb%3D1%22%20target%3D%22_blank%22%20aria-labelledby%3D%22sharing-twitter-1192%22%3E%0A%09%09%09%09%3Cspan%20id%3D%22sharing-twitter-1192%22%20hidden%3D%22%22%3EShare%20on%20X%20(Opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%3Cspan%3EX%3C%2Fspan%3E%0A%09%09%09%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22share-facebook%22%3E%3Ca%20rel%3D%22nofollow%20noopener%20noreferrer%22%20data-shared%3D%22sharing-facebook-1192%22%20class%3D%22share-facebook%20sd-button%20share-icon%22%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fthis-man-in-the-evil-museum%2F%3Fshare%3Dfacebook%26amp%3Bnb%3D1%22%20target%3D%22_blank%22%20aria-labelledby%3D%22sharing-facebook-1192%22%3E%0A%09%09%09%09%3Cspan%20id%3D%22sharing-facebook-1192%22%20hidden%3D%22%22%3EShare%20on%20Facebook%20(Opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%3Cspan%3EFacebook%3C%2Fspan%3E%0A%09%09%09%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22share-reddit%22%3E%3Ca%20rel%3D%22nofollow%20noopener%20noreferrer%22%20data-shared%3D%22sharing-reddit-1192%22%20class%3D%22share-reddit%20sd-button%20share-icon%22%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fthis-man-in-the-evil-museum%2F%3Fshare%3Dreddit%26amp%3Bnb%3D1%22%20target%3D%22_blank%22%20aria-labelledby%3D%22sharing-reddit-1192%22%3E%0A%09%09%09%09%3Cspan%20id%3D%22sharing-reddit-1192%22%20hidden%3D%22%22%3EShare%20on%20Reddit%20(Opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%3Cspan%3EReddit%3C%2Fspan%3E%0A%09%09%09%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22share-telegram%22%3E%3Ca%20rel%3D%22nofollow%20noopener%20noreferrer%22%20data-shared%3D%22sharing-telegram-1192%22%20class%3D%22share-telegram%20sd-button%20share-icon%22%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fthis-man-in-the-evil-museum%2F%3Fshare%3Dtelegram%26amp%3Bnb%3D1%22%20target%3D%22_blank%22%20aria-labelledby%3D%22sharing-telegram-1192%22%3E%0A%09%09%09%09%3Cspan%20id%3D%22sharing-telegram-1192%22%20hidden%3D%22%22%3EShare%20on%20Telegram%20(Opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%3Cspan%3ETelegram%3C%2Fspan%3E%0A%09%09%09%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22share-jetpack-whatsapp%22%3E%3Ca%20rel%3D%22nofollow%20noopener%20noreferrer%22%20data-shared%3D%22sharing-whatsapp-1192%22%20class%3D%22share-jetpack-whatsapp%20sd-button%20share-icon%22%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fthis-man-in-the-evil-museum%2F%3Fshare%3Djetpack-whatsapp%26amp%3Bnb%3D1%22%20target%3D%22_blank%22%20aria-labelledby%3D%22sharing-whatsapp-1192%22%3E%0A%09%09%09%09%3Cspan%20id%3D%22sharing-whatsapp-1192%22%20hidden%3D%22%22%3EShare%20on%20WhatsApp%20(Opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%3Cspan%3EWhatsApp%3C%2Fspan%3E%0A%09%09%09%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22share-end%22%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%3C!--%20.entry-content%20--%3E%0A%0A%09%09%3Cdiv%20class%3D%22screen-reader-text%22%20itemprop%3D%22datePublished%22%20itemtype%3D%22https%3A%2F%2Fschema.org%2FDate%22%3E2025-10-09%3C%2Fdiv%3E%0A%0A%09%09%0A%09%3C%2Farticle%3E%3C!--%20.entry%20--%3E%0A%0A%0A%09%09%09%3C%2Fdiv%3E%3C!--%20%23content-wrap%20--%3E%0A%0A%09%09%09%0A%09%3Cdiv%20class%3D%22loop-nav%22%3E%0A%09%09%3Cdiv%20class%3D%22prev%22%3EPrevious%20Post%3A%20%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Ftwistywisty-turning-fear-into-art%2F%22%20rel%3D%22prev%22%3EMagpieonline%20turning%20fear%20into%20art%3C%2Fa%3E%3C%2Fdiv%3E%09%09%09%3C%2Fdiv%3E%3C!--%20.loop-nav%20--%3E%0A%0A%0A%09%3C%2Fmain%3E%3C!--%20%23content%20--%3E%0A%0A%09%0A%09%0A%09%3Caside%20id%3D%22sidebar-primary%22%20class%3D%22sidebar%20sidebar-primary%20hgrid-span-3%20layout-narrow-right%20%22%20role%3D%22complementary%22%20itemscope%3D%22itemscope%22%20itemtype%3D%22https%3A%2F%2Fschema.org%2FWPSideBar%22%3E%0A%0A%09%09%3Csection%20id%3D%22nav_menu-3%22%20class%3D%22widget%20widget_nav_menu%22%3E%3Cdiv%20class%3D%22menu-menu-1-container%22%3E%3Cul%20id%3D%22menu-menu-1%22%20class%3D%22menu%22%3E%3Cli%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-32%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fnews%2F%22%3ENEWS%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-31%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fhistory%2F%22%3EHISTORY%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-33%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Ftheories%2F%22%3ETHEORIES%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-97%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fdreams%2F%22%3EDREAMS%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-96%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fportrait%2F%22%3EPORTRAITS%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-95%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fin-the-world%2F%22%3EIN%20THE%20WORLD%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-94%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fdownload%2F%22%3EDOWNLOAD%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-93%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Ffan-art%2F%22%3EFAN%20ART%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-487%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fguestbook%2F%22%3EGUESTBOOK%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20class%3D%22menu-item%20menu-item-type-post_type%20menu-item-object-page%20menu-item-92%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fcontact%2F%22%3ECONTACT%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20id%3D%22block-7%22%20class%3D%22widget%20widget_block%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fnews%2F%22%3E%0A%3Ch3%3ENEWS%3C%2Fh3%3E%3C%2Fa%3E%0A%3Cul%20class%3D%22wp-block-latest-posts__list%20wp-block-latest-posts%22%3E%3Cli%3E%3Ca%20class%3D%22wp-block-latest-posts__post-title%22%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fthis-man-in-the-evil-museum%2F%22%3EThis%20Man%20in%20The%20Evil%20Museum%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%3E%3Ca%20class%3D%22wp-block-latest-posts__post-title%22%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Ftwistywisty-turning-fear-into-art%2F%22%3EMagpieonline%20turning%20fear%20into%20art%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%3E%3Ca%20class%3D%22wp-block-latest-posts__post-title%22%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Feven-more-tattoos%2F%22%3EEven%20More%20Tattoos%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%3E%3Ca%20class%3D%22wp-block-latest-posts__post-title%22%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fthis-man-number-one-fan%2F%22%3EThis%20Man%E2%80%99s%20number%20one%20fan%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%3E%3Ca%20class%3D%22wp-block-latest-posts__post-title%22%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Fthis-man-in-the-smiles-tapes%2F%22%3EThis%20Man%20in%20The%20SMILES%20tapes%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%3C%2Fsection%3E%3Csection%20id%3D%22block-4%22%20class%3D%22widget%20widget_block%22%3E%3Ch3%3ECONTACT%3C%2Fh3%3E%0A%3Ca%20href%3D%22mailto%3Ainfo%40thisman.org%22%3Einfo%40thisman.org%3C%2Fa%3E%3C%2Fsection%3E%3Csection%20id%3D%22block-5%22%20class%3D%22widget%20widget_block%22%3E%3Ch3%3EOLD%20WEBSITE%3C%2Fh3%3E%0A%3Ca%20href%3D%22https%3A%2F%2Fwww.thisman.org%2Foldsite%2F%22%3Ewww.thisman.org%2Foldsite%3C%2Fa%3E%3C%2Fsection%3E%3Csection%20id%3D%22block-8%22%20class%3D%22widget%20widget_block%22%3E%3Ch3%3ESOCIAL%3C%2Fh3%3E%3C%2Fsection%3E%3Csection%20id%3D%22hoot-social-icons-widget-2%22%20class%3D%22widget%20widget_hoot-social-icons-widget%22%3E%0A%3Cdiv%20class%3D%22social-icons-widget%20social-icons-large%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.facebook.com%2Fthisman.org%22%20class%3D%22%20social-icons-icon%20%20fa-facebook-block%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09%3Ci%20class%3D%22fa-facebook-f%20fab%22%3E%3C%2Fi%3E%0A%09%09%09%09%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.instagram.com%2Fthisman_org%2F%22%20class%3D%22%20social-icons-icon%20%20fa-instagram-block%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09%3Ci%20class%3D%22fa-instagram%20fab%22%3E%3C%2Fi%3E%0A%09%09%09%09%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Ftwitter.com%2Fthisman_org%22%20class%3D%22%20social-icons-icon%20%20fa-twitter-block%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09%3Ci%20class%3D%22fa-twitter%20fab%22%3E%3C%2Fi%3E%0A%09%09%09%09%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.youtube.com%2F%40thisman5252%2F%22%20class%3D%22%20social-icons-icon%20%20fa-youtube-block%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09%3Ci%20class%3D%22fa-youtube%20fab%22%3E%3C%2Fi%3E%0A%09%09%09%09%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fsection%3E%0A%09%3C%2Faside%3E%3C!--%20%23sidebar-primary%20--%3E%0A%0A%0A%3C%2Fdiv%3E%3C!--%20.hgrid%20--%3E%0A%0A%09%09%3C%2Fdiv%3E%3C!--%20%23main%20--%3E%0A%0A%09%09%0A%09%09%0A%09%09%09%3Cdiv%20id%3D%22post-footer%22%20class%3D%22post-footer%20%20hgrid-stretch%20enforce-typo%20linkstyle%20inline-nav%22%3E%0A%09%09%3Cdiv%20class%3D%22hgrid%22%3E%0A%09%09%09%3Cdiv%20class%3D%22hgrid-span-12%22%3E%0A%09%09%09%09%3Cp%20class%3D%22credit%20small%22%3E%0A%09%09%09%09%09thisman.org%20%C2%A9%202008-2026%09%09%09%09%3C%2Fp%3E%3C!--%20.credit%20--%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%0A%09%3C%2Fdiv%3E%3C!--%20%23page-wrapper%20--%3E%0A%0A%09%0A%0A%09%0A%09%09%09%09%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cimg%20alt%3D%22%22%20width%3D%226%22%20height%3D%225%22%20id%3D%22wpstats%22%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "2d0e89f5-9f8b-4e37-baa2-fcf28eb39aea",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.thisman.org-this-man-in-the-evil-museum"
+}

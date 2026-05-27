@@ -1,0 +1,664 @@
+{
+    "results": [
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]",
+                "aria": "/document[1]/banner[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 43,
+                "width": 784
+            },
+            "snippet": "<form data-suggester-name=\"autoSearch\" data-search-key=\"1d4fNnbpCtpKCv9Zavwm6QvOay1fTnVJgqMRU5oCKDAzSeBNccLN\" data-index=\"scope-prd-asphead-web_index_site_search\" data-search=\"scope-prd-asphead-srch\" tabindex=\"0\" action=\"/search\" method=\"get\" class=\"TopBar__search js-searchbar\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20data-suggester-name%3D%5C%22autoSearch%5C%22%20data-search-key%3D%5C%221d4fNnbpCtpKCv9Zavwm6QvOay1fTnVJgqMRU5oCKDAzSeBNccLN%5C%22%20data-index%3D%5C%22scope-prd-asphead-web_index_site_search%5C%22%20data-search%3D%5C%22scope-prd-asphead-srch%5C%22%20tabindex%3D%5C%220%5C%22%20action%3D%5C%22%2Fsearch%5C%22%20method%3D%5C%22get%5C%22%20class%3D%5C%22TopBar__search%20js-searchbar%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_keyboard_handler_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_keyboard_access",
+            "message": "Verify the <div> element with \"combobox\" role has keyboard access",
+            "messageArgs": [
+                "div",
+                "combobox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<div aria-haspopup=\"listbox\" aria-owns=\"topBarSuggestions\" aria-expanded=\"false\" role=\"combobox\" class=\"TopBar__search--combobox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_keyboard_handler_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cdiv%3E%20element%20with%20%5C%22combobox%5C%22%20role%20has%20keyboard%20access%22%2C%22snippet%22%3A%22%3Cdiv%20aria-haspopup%3D%5C%22listbox%5C%22%20aria-owns%3D%5C%22topBarSuggestions%5C%22%20aria-expanded%3D%5C%22false%5C%22%20role%3D%5C%22combobox%5C%22%20class%3D%5C%22TopBar__search--combobox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_keyboard_access%22%2C%22ruleId%22%3A%22aria_keyboard_handler_exists%22%2C%22msgArgs%22%3A%5B%22div%22%2C%22combobox%22%5D%7D"
+        },
+        {
+            "ruleId": "combobox_design_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1.1",
+            "message": "The combobox design pattern is detected as ARIA 1.1, which is not allowed by ARIA 1.2",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<div aria-haspopup=\"listbox\" aria-owns=\"topBarSuggestions\" aria-expanded=\"false\" role=\"combobox\" class=\"TopBar__search--combobox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/combobox_design_valid.html#%7B%22message%22%3A%22The%20combobox%20design%20pattern%20is%20detected%20as%20ARIA%201.1%2C%20which%20is%20not%20allowed%20by%20ARIA%201.2%22%2C%22snippet%22%3A%22%3Cdiv%20aria-haspopup%3D%5C%22listbox%5C%22%20aria-owns%3D%5C%22topBarSuggestions%5C%22%20aria-expanded%3D%5C%22false%5C%22%20role%3D%5C%22combobox%5C%22%20class%3D%5C%22TopBar__search--combobox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1.1%22%2C%22ruleId%22%3A%22combobox_design_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "Form control with \"combobox\" role has no associated label",
+            "messageArgs": [
+                "combobox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<div aria-haspopup=\"listbox\" aria-owns=\"topBarSuggestions\" aria-expanded=\"false\" role=\"combobox\" class=\"TopBar__search--combobox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20with%20%5C%22combobox%5C%22%20role%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cdiv%20aria-haspopup%3D%5C%22listbox%5C%22%20aria-owns%3D%5C%22topBarSuggestions%5C%22%20aria-expanded%3D%5C%22false%5C%22%20role%3D%5C%22combobox%5C%22%20class%3D%5C%22TopBar__search--combobox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22combobox%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"combobox\" role does not have a tabbable element",
+            "messageArgs": [
+                "combobox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<div aria-haspopup=\"listbox\" aria-owns=\"topBarSuggestions\" aria-expanded=\"false\" role=\"combobox\" class=\"TopBar__search--combobox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22combobox%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cdiv%20aria-haspopup%3D%5C%22listbox%5C%22%20aria-owns%3D%5C%22topBarSuggestions%5C%22%20aria-expanded%3D%5C%22false%5C%22%20role%3D%5C%22combobox%5C%22%20class%3D%5C%22TopBar__search--combobox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22combobox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_before",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "Label text is located after its associated text input or <select> element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input tabindex=\"-1\" required=\"\" aria-activedescendant=\"\" aria-controls=\"topBarSuggestions\" aria-autocomplete=\"list\" autocomplete=\"off\" name=\"query\" type=\"text\" class=\"TopBar__search--search\" id=\"query\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_before.html#%7B%22message%22%3A%22Label%20text%20is%20located%20after%20its%20associated%20text%20input%20or%20%3Cselect%3E%20element%22%2C%22snippet%22%3A%22%3Cinput%20tabindex%3D%5C%22-1%5C%22%20required%3D%5C%22%5C%22%20aria-activedescendant%3D%5C%22%5C%22%20aria-controls%3D%5C%22topBarSuggestions%5C%22%20aria-autocomplete%3D%5C%22list%5C%22%20autocomplete%3D%5C%22off%5C%22%20name%3D%5C%22query%5C%22%20type%3D%5C%22text%5C%22%20class%3D%5C%22TopBar__search--search%5C%22%20id%3D%5C%22query%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22input_label_before%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_activedescendant_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The 'aria-activedescendant' property is empty",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 279,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input tabindex=\"-1\" required=\"\" aria-activedescendant=\"\" aria-controls=\"topBarSuggestions\" aria-autocomplete=\"list\" autocomplete=\"off\" name=\"query\" type=\"text\" class=\"TopBar__search--search\" id=\"query\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_activedescendant_valid.html#%7B%22message%22%3A%22The%20'aria-activedescendant'%20property%20is%20empty%22%2C%22snippet%22%3A%22%3Cinput%20tabindex%3D%5C%22-1%5C%22%20required%3D%5C%22%5C%22%20aria-activedescendant%3D%5C%22%5C%22%20aria-controls%3D%5C%22topBarSuggestions%5C%22%20aria-autocomplete%3D%5C%22list%5C%22%20autocomplete%3D%5C%22off%5C%22%20name%3D%5C%22query%5C%22%20type%3D%5C%22text%5C%22%20class%3D%5C%22TopBar__search--search%5C%22%20id%3D%5C%22query%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_activedescendant_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/button[1]",
+                "aria": "/document[1]/banner[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 300,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button tabindex=\"-1\" aria-label=\"submit search\" type=\"submit\" class=\"TopBar__search-submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20tabindex%3D%5C%22-1%5C%22%20aria-label%3D%5C%22submit%20search%5C%22%20type%3D%5C%22submit%5C%22%20class%3D%5C%22TopBar__search-submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/div[1]/form[1]/button[1]",
+                "aria": "/document[1]/banner[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"button\" role does not have a tabbable element",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 300,
+                "height": 22,
+                "width": 16
+            },
+            "snippet": "<button tabindex=\"-1\" aria-label=\"submit search\" type=\"submit\" class=\"TopBar__search-submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22button%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cbutton%20tabindex%3D%5C%22-1%5C%22%20aria-label%3D%5C%22submit%20search%5C%22%20type%3D%5C%22submit%5C%22%20class%3D%5C%22TopBar__search-submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/header[1]/div[3]/nav[1]/ul[1]/li[1]/a[1]/img[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]/list[1]/listitem[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 426,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img data-imgs=\"https://assets-eu-01.kc-usercontent.com:443/73ea709e-f9f8-0168-3842-ebd7ad1e23ac/6f0a1386-b78b-4417-a99f-fa71f8ad65cc/home%20icon.svg\" class=\"MainNavigation__prefix-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20data-imgs%3D%5C%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F6f0a1386-b78b-4417-a99f-fa71f8ad65cc%2Fhome%2520icon.svg%5C%22%20class%3D%5C%22MainNavigation__prefix-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[4]/div[1]/p[6]",
+                "aria": "/document[1]/main[1]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'Below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "Below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1492,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'Below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Below%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[4]/div[1]/p[7]",
+                "aria": "/document[1]/main[1]/paragraph[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'extra'",
+            "messageArgs": [
+                "extra"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1561,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'extra'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22extra%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[4]/div[1]/p[18]",
+                "aria": "/document[1]/main[1]/paragraph[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2524,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[6]/div[1]/p[3]",
+                "aria": "/document[1]/main[1]/paragraph[23]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'large'",
+            "messageArgs": [
+                "large"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3039,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'large'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22large%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[6]/div[1]/p[9]/a[1]",
+                "aria": "/document[1]/main[1]/paragraph[29]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 36,
+                "top": 3390,
+                "height": 18,
+                "width": 35
+            },
+            "snippet": "<a href=\"https://www.mind.org.uk/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.mind.org.uk%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/main[1]/div[6]/div[1]/p[9]/a[2]",
+                "aria": "/document[1]/main[1]/paragraph[29]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 116,
+                "top": 3390,
+                "height": 18,
+                "width": 72
+            },
+            "snippet": "<a href=\"https://www.samaritans.org/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.samaritans.org%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/footer[1]/div[1]/div[2]/section[2]/form[1]",
+                "aria": "/document[1]/contentinfo[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4292,
+                "height": 40,
+                "width": 784
+            },
+            "snippet": "<form action=\"https://my.scope.org.uk/email-signup-form/\" method=\"post\" class=\"FNewsletter__form\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20action%3D%5C%22https%3A%2F%2Fmy.scope.org.uk%2Femail-signup-form%2F%5C%22%20method%3D%5C%22post%5C%22%20class%3D%5C%22FNewsletter__form%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[9]/footer[1]/div[1]/div[2]/section[2]/form[1]/div[2]/input[1]",
+                "aria": "/document[1]/contentinfo[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4310,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input aria-label=\"To receive regular email updates about Scope enter your email address here\" placeholder=\"Your email address\" autocomplete=\"on\" name=\"email\" type=\"email\" class=\"FNewsletter__input\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22To%20receive%20regular%20email%20updates%20about%20Scope%20enter%20your%20email%20address%20here%5C%22%20placeholder%3D%5C%22Your%20email%20address%5C%22%20autocomplete%3D%5C%22on%5C%22%20name%3D%5C%22email%5C%22%20type%3D%5C%22email%5C%22%20class%3D%5C%22FNewsletter__input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_keyboard_handler_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/ul[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]/listbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_keyboard_access",
+            "message": "Verify the <ul> element with \"listbox\" role has keyboard access",
+            "messageArgs": [
+                "ul",
+                "listbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4598,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<ul aria-labelledby=\"topbar-search-label\" role=\"listbox\" class=\"TopBar__search--typeahead hidden\" id=\"topBarSuggestions\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_keyboard_handler_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cul%3E%20element%20with%20%5C%22listbox%5C%22%20role%20has%20keyboard%20access%22%2C%22snippet%22%3A%22%3Cul%20aria-labelledby%3D%5C%22topbar-search-label%5C%22%20role%3D%5C%22listbox%5C%22%20class%3D%5C%22TopBar__search--typeahead%20hidden%5C%22%20id%3D%5C%22topBarSuggestions%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_keyboard_access%22%2C%22ruleId%22%3A%22aria_keyboard_handler_exists%22%2C%22msgArgs%22%3A%5B%22ul%22%2C%22listbox%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/ul[1]",
+                "aria": "/document[1]/banner[1]/form[1]/combobox[1]/listbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"listbox\" role does not have a tabbable element",
+            "messageArgs": [
+                "listbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4598,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<ul aria-labelledby=\"topbar-search-label\" role=\"listbox\" class=\"TopBar__search--typeahead hidden\" id=\"topBarSuggestions\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22listbox%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cul%20aria-labelledby%3D%5C%22topbar-search-label%5C%22%20role%3D%5C%22listbox%5C%22%20class%3D%5C%22TopBar__search--typeahead%20hidden%5C%22%20id%3D%5C%22topBarSuggestions%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22listbox%22%5D%7D"
+        }
+    ],
+    "numExecuted": 2569,
+    "ruleTime": 55,
+    "nls": {
+        "element_tabbable_unobscured": {
+            "0": "When an element receives focus, it is not entirely covered by other content",
+            "potential_obscured": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus"
+        },
+        "widget_tabbable_exists": {
+            "0": "Component must have at least one tabbable element",
+            "fail_no_tabbable": "Component with \"{0}\" role does not have a tabbable element"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_2": "Form control with \"{0}\" role has no associated label"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label"
+        },
+        "aria_form_label_unique": {
+            "0": "Each element with \"form\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"form\" role do not have unique labels"
+        },
+        "aria_keyboard_handler_exists": {
+            "0": "Interactive WAI_ARIA UI components must provide keyboard access",
+            "potential_no_keyboard_access": "Verify the <{0}> element with \"{1}\" role has keyboard access"
+        },
+        "combobox_design_valid": {
+            "0": "The combobox design pattern must be valid for ARIA 1.2",
+            "Fail_1.1": "The combobox design pattern is detected as ARIA 1.1, which is not allowed by ARIA 1.2"
+        },
+        "input_label_before": {
+            "0": "Text inputs and <select> elements must have a label before the input control",
+            "Fail_2": "Label text is located after its associated text input or <select> element"
+        },
+        "aria_activedescendant_valid": {
+            "0": "The 'aria-activedescendant' property must reference the 'id' of a non-empty, non-hidden active child element",
+            "Fail_1": "The 'aria-activedescendant' property is empty"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 18,
+            "elementsViolation": 5,
+            "elementsViolationReview": 15,
+            "violation": 7,
+            "potentialviolation": 13,
+            "recommendation": 4,
+            "potentialrecommendation": 1,
+            "manual": 1,
+            "pass": 2543
+        },
+        "scanTime": 124,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778290820559,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en-gb%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20PIP%20review%20wants%20to%20hear%20from%20you%20%7C%20Disability%20charity%20Scope%20UK%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22scope-share-widget%22%20style%3D%22display%3Anone%22%3E%3Cdiv%20id%3D%22floatingOptionsContainer%22%20role%3D%22region%22%20aria-label%3D%22Share%20and%20Print%20options%22%3E%3Cbutton%20class%3D%22foc-tab%22%20id%3D%22focTabBtn%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22optionsContentArea%22%20aria-label%3D%22Open%20Share%20and%20Print%20menu%22%3E%3Cdiv%20class%3D%22foc-text-container%22%3E%3Cspan%20class%3D%22foc-text%22%3EShare%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fbutton%3E%3Cdiv%20id%3D%22optionsContentArea%22%20class%3D%22foc-content%22%20aria-hidden%3D%22true%22%3E%3Cbutton%20class%3D%22pill-btn%22%20id%3D%22scope-share-button%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M18%2016.08c-.76%200-1.44.3-1.96.77L8.91%2012.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5%201.25.81%202.04.81%201.66%200%203-1.34%203-3s-1.34-3-3-3-3%201.34-3%203c0%20.24.04.47.09.7L8.04%209.81C7.5%209.31%206.79%209%206%209c-1.66%200-3%201.34-3%203s1.34%203%203%203c.79%200%201.5-.31%202.04-.81l7.12%204.16c-.05.21-.08.43-.08.65%200%201.61%201.31%202.92%202.92%202.92%201.61%200%202.92-1.31%202.92-2.92s-1.31-2.92-2.92-2.92z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EShare%20Page%3C%2Fbutton%3E%3Cbutton%20class%3D%22pill-btn%22%20id%3D%22scope-print-button%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%208h-1V3H6v5H5c-1.66%200-3%201.34-3%203v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8%205h8v3H8V5zm8%2012v2H8v-2h8zm2-2v-2H6v2H4v-4c0-.55.45-1%201-1h14c.55%200%201%20.45%201%201v4h-2z%22%3E%3C%2Fpath%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%2211.5%22%20r%3D%221%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3EPrint%20Page%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22sharePopup%22%20role%3D%22dialog%22%20aria-modal%3D%22true%22%20aria-labelledby%3D%22sharePopupTitle%22%3E%3Ch3%20id%3D%22sharePopupTitle%22%3EShare%20this%20Page%3C%2Fh3%3E%3Clabel%20for%3D%22pageUrl%22%20style%3D%22position%3Aabsolute%3Bwidth%3A1px%3Bheight%3A1px%3Bmargin%3A-1px%3Boverflow%3Ahidden%3Bclip%3Arect(0%2C0%2C0%2C0)%22%3EPage%20URL%3C%2Flabel%3E%3Cinput%20type%3D%22text%22%20id%3D%22pageUrl%22%20readonly%3D%22%22%3E%3Cbutton%20style%3D%22cursor%3Apointer%3Bpadding%3A8px%2015px%3Bbackground-color%3A%23fff%3Bcolor%3A%23340458%3Bborder%3Anone%3Bborder-radius%3A4px%3Bfont-weight%3Abold%3B%22%3ECopy%20Link%3C%2Fbutton%3E%3Cdiv%20class%3D%22share-list%22%3E%3Ca%20id%3D%22emailShare%22%20href%3D%22%23%22%20target%3D%22_blank%22email')%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M20%204H4c-1.1%200-1.99.9-1.99%202L2%2018c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V6c0-1.1-.9-2-2-2zm0%204l-8%205-8-5V6l8%205%208-5v2z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EEmail%3C%2Fa%3E%3Ca%20id%3D%22whatsappShare%22%20href%3D%22%23%22%20target%3D%22_blank%22whatsapp')%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12.04%202C6.58%202%202.13%206.45%202.13%2011.91C2.13%2013.66%202.59%2015.36%203.45%2016.86L2.05%2022L7.3%2020.62C8.75%2021.41%2010.38%2021.83%2012.04%2021.83C17.5%2021.83%2021.95%2017.38%2021.95%2011.92C21.95%209.27%2020.92%206.78%2019.05%204.91C17.18%203.03%2014.69%202%2012.04%202M12.05%203.66C14.25%203.66%2016.31%204.51%2017.87%206.07C19.42%207.63%2020.28%209.69%2020.28%2011.92C20.28%2016.46%2016.58%2020.15%2012.04%2020.15C10.56%2020.15%209.11%2019.76%207.85%2019L7.55%2018.83L4.43%2019.65L5.26%2016.61L5.06%2016.29C4.24%2014.99%203.81%2013.47%203.81%2011.91C3.81%207.37%207.5%203.66%2012.05%203.66%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EWhatsApp%3C%2Fa%3E%3Ca%20id%3D%22facebookShare%22%20href%3D%22%23%22%20target%3D%22_blank%22facebook')%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%202.04C6.5%202.04%202%206.53%202%2012.06C2%2017.06%205.66%2021.21%2010.44%2021.96V14.96H7.9V12.06H10.44V9.85C10.44%207.34%2011.93%205.96%2014.22%205.96C15.31%205.96%2016.45%206.15%2016.45%206.15V8.62H15.19C13.95%208.62%2013.56%209.39%2013.56%2010.18V12.06H16.34L15.89%2014.96H13.56V21.96A10%2010%200%200%200%2022%2012.06C22%206.53%2017.5%202.04%2012%202.04Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EFacebook%3C%2Fa%3E%3Ca%20id%3D%22xShare%22%20href%3D%22%23%22%20target%3D%22_blank%22twitter')%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M18.244%202.25h3.308l-7.227%208.26%208.502%2011.24H16.17l-5.214-6.817L4.99%2021.75H1.68l7.73-8.835L1.254%202.25H8.08l4.713%206.231zm-1.161%2017.52h1.833L7.084%204.126H5.117z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EX%20(Twitter)%3C%2Fa%3E%3Ca%20id%3D%22linkedinShare%22%20href%3D%22%23%22%20target%3D%22_blank%22linkedin')%22%3E%3Csvg%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%203a2%202%200%200%201%202%202v14a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V5a2%202%200%200%201%202-2h14m-.5%2015.5v-5.3a3.26%203.26%200%200%200-3.26-3.26c-.85%200-1.84.52-2.32%201.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4%201.39-1.4a1.4%201.4%200%200%201%201.4%201.4v4.93h2.79M6.88%208.56a1.68%201.68%200%200%200%201.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69%201.69%200%200%200-1.69%201.69c0%20.93.76%201.68%201.69%201.68m1.39%209.94v-8.37H5.5v8.37h2.77z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3ELinkedIn%3C%2Fa%3E%3C%2Fdiv%3E%3Cbutton%20id%3D%22closePopupButton%22%3EClose%3C%2Fbutton%3E%3C%2Fdiv%3E%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Fix%20tiktok%20footer%20item%20--%3E%3Cmeta%20name%3D%22msvalidate.01%22%20content%3D%22B835E99CB9D4FFC65E79A5612BC249F9%22%3E%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%20%20%20%20%20%20%20%20%20%20%20%20%3Cmeta%20name%3D%22google-site-verification%22%20content%3D%22OIZ_YZEJXhvs-kKtjDhK7QWHhKV8CFhbZMyfSKYo3-0%22%3E%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%0A%20%20%20%20%3Cdiv%20class%3D%22AccessNav%20js-accessnav%22%3E%0A%20%20%20%20%3Cul%20class%3D%22AccessNav__list%22%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22AccessNav__item%22%20href%3D%22%23main%22%3ESkip%20to%20main%20content%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22AccessNav__item%22%20href%3D%22%23query%22%3ESkip%20to%20search%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22AccessNav__item%22%20href%3D%22%23nav%22%3ESkip%20to%20navigation%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3C%2Ful%3E%0A%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3C!--%20HeaderModule%20Start%20--%3E%0A%20%20%20%20%20%20%20%20%3C!--%20HeaderModule%20Start%20--%3E%0A%3Cheader%20class%3D%22HeaderModule%20js-header%22%20data-component-class%3D%22HeaderComponent%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22Navbar%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Navbar__logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22%22%20data-imgs%3D%22%2Fassets%2Fimages%2Flogo-mobile.svg%3Fv%3DCjEZZJgiTieZzt5wveUzkvLHZOXGnjPFXVZoiyWg78o%22%20alt%3D%22Scope%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3Cbutton%20class%3D%22Navbar__handle%20js-nav-handle%22%20type%3D%22button%22%20aria-controls%3D%22main-navigation%22%20id%3D%22main-navigation%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Menu%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-container-long%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22v-center%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fnav-handle-dark.svg%3Fv%3Dzfsia7IcwBnlMTyByrUZO1hkoXjYs1_SM6zRxO-NScI%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22NavigationButtons%22%3E%0A%20%20%20%20%20%20%20%20%0A%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fadvice-and-support%22%20title%3D%22Get%20support%20today%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Get%20support%20today%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcharity-shops%22%20title%3D%22Shop%20with%20us%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Shop%20with%20us%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20turquoise%22%20href%3D%22https%3A%2F%2Fdonate.scope.org.uk%2F%3Fcampaign%3D26SCWB01%22%20title%3D%22Donate%20now%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Donate%20now%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22HeaderModule__mobile-overlay%20js-nav-overlay%22%20id%3D%22main-navigation%22%20tabindex%3D%22-1%22%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22TopBar%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22TopBar__links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Faccessibility%22%20title%3D%22Accessibility%22%3E%0A%20%20%20Accessibility%0A%3C%2Fa%3E%0A%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcontact-us%22%20title%3D%22Contact%20us%22%3E%0A%20%20%20Contact%20us%0A%3C%2Fa%3E%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22TopBar__user-container%20js-dropdown-parent%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3Cbutton%20class%3D%22TopBar__close-handle%20js-nav-close%22%20aria-label%3D%22Close%20menu%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Close%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-container-long%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22v-center%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fclose-dark.svg%3Fv%3Dw3SFBu5INKWNd3fGfwYT3OkZnQvE4OqaWzXoidIkmuI%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22NavigationButtons%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fadvice-and-support%22%20title%3D%22Get%20support%20today%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Get%20support%20today%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcharity-shops%22%20title%3D%22Shop%20with%20us%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Shop%20with%20us%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20turquoise%22%20href%3D%22https%3A%2F%2Fdonate.scope.org.uk%2F%3Fcampaign%3D26SCWB01%22%20title%3D%22Donate%20now%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Donate%20now%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cform%20class%3D%22TopBar__search%20js-searchbar%22%20method%3D%22get%22%20action%3D%22%2Fsearch%22%20tabindex%3D%220%22%20data-search%3D%22scope-prd-asphead-srch%22%20data-index%3D%22scope-prd-asphead-web_index_site_search%22%20data-search-key%3D%221d4fNnbpCtpKCv9Zavwm6QvOay1fTnVJgqMRU5oCKDAzSeBNccLN%22%20data-suggester-name%3D%22autoSearch%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22TopBar__search--combobox%22%20role%3D%22combobox%22%20aria-expanded%3D%22false%22%20aria-owns%3D%22topBarSuggestions%22%20aria-haspopup%3D%22listbox%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22query%22%20class%3D%22TopBar__search--search%22%20type%3D%22text%22%20name%3D%22query%22%20autocomplete%3D%22off%22%20aria-autocomplete%3D%22list%22%20aria-controls%3D%22topBarSuggestions%22%20aria-activedescendant%3D%22%22%20required%3D%22%22%20tabindex%3D%22-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20id%3D%22topbar-search-label%22%20for%3D%22query%22%20class%3D%22TopBar__search-label%20v-center%22%3ESearch%3C%2Flabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22TopBar__search-submit%22%20type%3D%22submit%22%20aria-label%3D%22submit%20search%22%20tabindex%3D%22-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22v-center%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fsearch.svg%3Fv%3DE6CVkeEJ1gB-87h99TSU6eEIjacCAiZDagzS2ugKaJE%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fform%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22BrandBanner%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22corner-decoration%20top-left%20yellow%20vertical%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22corner-decoration%20bottom-right%20yellow%20vertical%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22BrandBanner__logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22%22%20data-imgs%3D%22%2Fassets%2Fimages%2Flogo.svg%3Fv%3DQyvRG8-CpYDkjrxuVa8tqqZxo-JArTfqdXIkiSq0ZWQ%22%20alt%3D%22Scope%20homepage%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22NavigationButtons%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fadvice-and-support%22%20title%3D%22Get%20support%20today%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Get%20support%20today%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20purple%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcharity-shops%22%20title%3D%22Shop%20with%20us%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Shop%20with%20us%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cdiv%20class%3D%22NavigationButtons__btn%22%3E%0A%20%20%20%20%3Ca%20class%3D%22BrandBanner__cta%20btn%20turquoise%22%20href%3D%22https%3A%2F%2Fdonate.scope.org.uk%2F%3Fcampaign%3D26SCWB01%22%20title%3D%22Donate%20now%22%20data-enabled%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20Donate%20now%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cnav%20id%3D%22nav%22%20class%3D%22MainNavigation%22%20tabindex%3D%22-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22MainNavigation__list%22%20role%3D%22list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20%22%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__prefix-icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F6f0a1386-b78b-4417-a99f-fa71f8ad65cc%2Fhome%2520icon.svg%22%3E%20Home%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22MainNavigation__subwrapper%20js-dropdown-parent%22%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22navHandle-5%22%20class%3D%22MainNavigation__handle%20js-dropdown-handle%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22navSublist-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20About%20us%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20MainNavigation__postfix-icon--handle%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow.svg%3Fv%3D5cOe2lu520H9yv0iAAVpdsD5pxgc42if5IcbuavqEHY%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%3Cul%20id%3D%22navSublist-5%22%20class%3D%22MainNavigation__sublist%20js-dropdown%22%20aria-labelledby%3D%22navHandle-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fabout-us%22%3EAbout%20the%20charity%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fabout-us%2Fvision-mission-values%22%3EVision%20mission%20and%20values%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fabout-us%2Fpurplespace%22%3EPurpleSpace%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fabout-us%2Faccessibility-at-scope%22%3EAccessibility%20at%20Scope%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fsocial-model-of-disability%22%3ESocial%20model%20of%20disability%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fcontact-us%22%3EContact%20us%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22MainNavigation__subwrapper%20js-dropdown-parent%22%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22navHandle-5%22%20class%3D%22MainNavigation__handle%20js-dropdown-handle%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22navSublist-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20Advice%20and%20support%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20MainNavigation__postfix-icon--handle%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow.svg%3Fv%3D5cOe2lu520H9yv0iAAVpdsD5pxgc42if5IcbuavqEHY%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%3Cul%20id%3D%22navSublist-5%22%20class%3D%22MainNavigation__sublist%20js-dropdown%22%20aria-labelledby%3D%22navHandle-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22https%3A%2F%2Fforum.scope.org.uk%2F%22%3EOnline%20community%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fadvice-and-support%22%3EOnline%20advice%20and%20support%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fhelpline%22%3ETelephone%20helpline%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fservices%22%3ESupport%20services%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fleeds-community-hub%22%3ELeeds%20Community%20Hub%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20%22%20href%3D%22%2Fcampaigns%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Campaigns%20%20%20%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20link%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow-link.svg%3Fv%3DGfvNN9NmMm_dFdU080AASvm23itNWCI34HBbCLWKP-g%22%20alt%3D%22%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22MainNavigation__subwrapper%20js-dropdown-parent%22%3E%0A%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22navHandle-5%22%20class%3D%22MainNavigation__handle%20js-dropdown-handle%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22navSublist-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Get%20involved%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20MainNavigation__postfix-icon--handle%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow.svg%3Fv%3D5cOe2lu520H9yv0iAAVpdsD5pxgc42if5IcbuavqEHY%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%3Cul%20id%3D%22navSublist-5%22%20class%3D%22MainNavigation__sublist%20js-dropdown%22%20aria-labelledby%3D%22navHandle-5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fgiving%22%3EGive%20to%20Scope%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fmembership%22%3EBecome%20a%20member%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fpartnerships%22%3EPartner%20with%20us%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fvolunteering%22%3EVolunteer%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fresearch-panel%22%3EResearch%20panel%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fevents%22%3EFind%20an%20event%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fjobs-at-scope%22%3EJobs%20at%20Scope%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Fcharity-shops%22%3EShop%20with%20us%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__subitem%22%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20MainNavigation__link--sub%20%22%20href%3D%22%2Ffundraising%22%3EFundraise%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%20%22%20href%3D%22%2Fnews-and-stories%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20News%20and%20stories%20%20%20%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20link%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow-link.svg%3Fv%3DGfvNN9NmMm_dFdU080AASvm23itNWCI34HBbCLWKP-g%22%20alt%3D%22%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22MainNavigation__item%20MainNavigation__item-mobile%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_left%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Ca%20class%3D%22MainNavigation__link%22%20href%3D%22%2Faccessibility%22%3E%0A%20%20%20%20%20%20%20%20Accessibility%20%3Cimg%20class%3D%22MainNavigation__postfix-icon%20link%22%20data-imgs%3D%22%2Fassets%2Fimages%2Farrow-link.svg%3Fv%3DGfvNN9NmMm_dFdU080AASvm23itNWCI34HBbCLWKP-g%22%20alt%3D%22%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cdiv%20class%3D%22null_right%22%3E%3C%2Fdiv%3E%0A%3C%2Fli%3E%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fnav%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fheader%3E%0A%3C!--%20HeaderModule%20End--%3E%0A%20%20%20%20%20%20%20%20%3C!--%20HeaderModule%20End--%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Body%20Start%20--%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%3Cdiv%20class%3D%22Breadcrumb%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22Breadcrumb__list%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22Breadcrumb__item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22Breadcrumb__anchor%22%20href%3D%22%2F%22%3EHome%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22Breadcrumb__item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22Breadcrumb__anchor%22%20href%3D%22%2Fnews-and-stories%22%3ENews%20and%20stories%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22Breadcrumb__item%22%3EThe%20PIP%20review%20wants%20to%20hear%20from%20you%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%3Cmain%20id%3D%22main%22%20tabindex%3D%22-1%22%3E%0A%20%20%20%20%0A%0A%3Cdiv%20data-component-class%3D%22ArticleHeroComponent%22%20data-component-parm%3D%22%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22Hero%20Hero--page%20bottom-margin%20js-slim-hero-wrapper%22%20style%3D%22display%3A%20block%3B%20width%3A%20100vw%3B%20position%3A%20relative%3B%20left%3A%2050%25%3B%20right%3A%2050%25%3B%20margin-left%3A%20-50vw%3B%20margin-right%3A%20-50vw%3B%20overflow%3A%20hidden%3B%20max-width%3A%20100vw%3B%22%3E%3Cdiv%20class%3D%22scope-hero-wrapper%22%3E%3Cdiv%20class%3D%22scope-hero-img-box%22%3E%3Cimg%20class%3D%22scope-hero-img%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%20fetchpriority%3D%22high%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22scope-hero-overlay%22%3E%3Cdiv%20class%3D%22scope-hero-inner-text%22%3E%3Ch1%20id%3D%22dynamic-hero-title%22%20class%3D%22scope-hero-title%22%3EThe%20PIP%20review%20wants%20to%20hear%20from%20you%3C%2Fh1%3E%3Cp%20id%3D%22dynamic-hero-desc%22%20class%3D%22scope-hero-desc%22%3EKnown%26nbsp%3Bas%26nbsp%3BThe%26nbsp%3BTimms%26nbsp%3BReview%2C%26nbsp%3Bthey%20are%20looking%20to%20hear%20views%20and%20evidence%20from%20disabled%20people%20on%20their%20experiences%20of%20the%20PIP%20process.%26nbsp%3B%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22scope-hero-gradient%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22Hero%20Hero--article%20%20bottom-margin%20%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Hero__container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Hero__img-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22Hero__img%22%20data-imgs%3D%22%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22corner-decoration%20top-right%20horizontal%20purple%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Hero__decoration-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22corner-decoration%20bottom-left%20vertical%20yellow%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%0A%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22Hero--article__title%20wrapper%20rte%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22underline%22%3EThe%20PIP%20review%20wants%20to%20hear%20from%20you%3C%2Fh1%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%3Cdiv%20class%3D%22ArticleInfo%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22ArticleInfo__field%20author%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-container-tall%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22%22%20data-imgs%3D%22~%2Fassets%2Fimages%2Fuser-dark.svg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EFrankie%20Bowyer%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22ArticleInfo__field%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-container-tall%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22%22%20data-imgs%3D%22~%2Fassets%2Fimages%2Fclock.svg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E8%20April%202026%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%0A%0A%20%20%20%20%3Cdiv%20class%3D%22wrapper%20rte%20bottom-margin%20%22%3E%0A%20%20%20%20%20%20%20%20%0A%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3ELast%20week%2C%26nbsp%3BStephen%20Timms%2C%26nbsp%3Bthe%26nbsp%3BMinister%20for%26nbsp%3BSocial%26nbsp%3BSecurity%20and%26nbsp%3BDisability%26nbsp%3Band%20his%20steering%26nbsp%3Bgroup%26nbsp%3Blaunched%20a%20call%20for%26nbsp%3Bevidence%20on%20Personal%20Independence%20Payment%20(PIP).%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Cp%3EKnown%26nbsp%3Bas%26nbsp%3BThe%26nbsp%3BTimms%26nbsp%3BReview%2C%26nbsp%3Bthey%20are%20looking%20to%20hear%20views%20and%20evidence%20from%20disabled%20people%20on%20their%20experiences%20of%20the%20PIP%20process.%26nbsp%3B%3C%2Fp%3E%3Cp%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fnews-and-stories%2Fgovernment-launches-a-review-into-personal-independence-payment%22%3EFind%20out%20more%20about%20how%20and%20why%20the%20Timms%20Review%20was%20created.%3C%2Fa%3E%26nbsp%3B%3C%2Fp%3E%3Ch2%3EWhat%20areas%20is%20the%20review%20looking%20into%3F%26nbsp%3B%3C%2Fh2%3E%3Cp%3EThe%20Timms%20Review%20is%20a%20review%20of%20the%26nbsp%3Bwhole%20of%26nbsp%3BPIP.%20It%20will%20look%20at%20how%20to%20make%20sure%20that%20PIP%20properly%20supports%20disabled%20people.%20And%20how%20to%20make%20PIP%20fairer%20and%20fit%20for%20the%20future.%26nbsp%3B%3C%2Fp%3E%3Cp%3EThe%26nbsp%3BReview%26nbsp%3Blooks%20at%26nbsp%3B4%26nbsp%3Bkey%20themes.%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Cp%3EBelow%20is%20some%20information%20you%20may%20want%20to%20consider%20if%20you%20are%20responding%20to%26nbsp%3Bthe%26nbsp%3Bcall%20for%20evidence%3A%26nbsp%3B%3C%2Fp%3E%3Cul%3E%0A%20%20%3Cli%3E%3Cstrong%3E%26nbsp%3BThe%26nbsp%3Brole%20and%20purpose%20of%20PIP%3C%2Fstrong%3E%26nbsp%3B%3C%2Fli%3E%0A%3C%2Ful%3E%3Cp%3EYou%20might%20want%20to%20talk%20about%20how%20PIP%20helps%20your%20independence%26nbsp%3Band%20wellbeing.%20You%20might%20also%20want%20to%20talk%20about%20how%20well%26nbsp%3BPIP%20covers%20the%20extra%20cost%20of%20your%20disability.%26nbsp%3BThis%20might%20also%20include%20how%20important%20PIP%20is%20to%20your%20life%2C%26nbsp%3Bwellbeing%26nbsp%3Band%20income.%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Cul%3E%0A%20%20%3Cli%3E%3Cstrong%3EWhether%26nbsp%3BPIP%26nbsp%3Beligibility%20and%20awards%20are%20fair%26nbsp%3Band%26nbsp%3Bequitable%26nbsp%3B%3C%2Fstrong%3E%26nbsp%3B%3C%2Fli%3E%0A%3C%2Ful%3E%3Cp%3EYou%20might%20want%20to%20talk%20here%20about%20how%20accurately%20or%20not%20you%20feel%20the%20assessment%20and%20eligibility%20criteria%20capture%26nbsp%3Bthe%20impact%20of%20your%20disability.%26nbsp%3BYou%26nbsp%3Bmight%20want%20to%20talk%20about%20what%20assessment%20type%20you%20think%20is%20best%20%E2%80%93%20paper%2C%20telephone%2C%20face-to-face.%26nbsp%3B%3C%2Fp%3E%3Cul%3E%0A%20%20%3Cli%3E%3Cstrong%3EExperience%26nbsp%3Bof%20claiming%20PIP%3C%2Fstrong%3E%26nbsp%3B%3C%2Fli%3E%0A%3C%2Ful%3E%3Cp%3EYou%20might%20want%20to%20talk%20about%26nbsp%3Bif%20you%26nbsp%3Bfelt%26nbsp%3Bthe%20DWP%20and%20your%20assessor%26nbsp%3Btrusted%20your%20experiences.%26nbsp%3BHow%20your%20PIP%20assessment%26nbsp%3Bor%20appeal%26nbsp%3Bmade%20you%20feel.%26nbsp%3BYou%20might%26nbsp%3Balso%20want%20to%26nbsp%3Btalk%20about%20how%26nbsp%3Bwell%26nbsp%3Byou%20felt%20the%26nbsp%3BDWP%26nbsp%3Band%26nbsp%3Byour%26nbsp%3Bassessor%20understood%26nbsp%3Band%20respected%20you.%26nbsp%3B%3C%2Fp%3E%3Cp%3EYou%20might%20want%20to%20share%20your%20experience%20in%20applying%20for%20PIP%26nbsp%3Band%26nbsp%3Bhow%20you%20found%20the%20assessment%20process.%20And%26nbsp%3Bthe%20appeals%20process%20if%20you%20have%20been%20through%20it.%26nbsp%3B%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Cul%3E%0A%20%20%3Cli%3E%3Cstrong%3EChanges%26nbsp%3Bin%20society%26nbsp%3Band%26nbsp%3Btheir%26nbsp%3Bimpact%20on%20PIP%26nbsp%3B%3C%2Fstrong%3E%26nbsp%3B%3C%2Fli%3E%0A%3C%2Ful%3E%3Cp%3EYou%20might%20want%20to%26nbsp%3Btalk%20about%26nbsp%3Bemployment%26nbsp%3Band%20how%26nbsp%3Bthis%26nbsp%3Bimpacts%26nbsp%3Byour%26nbsp%3Bexperience%20with%26nbsp%3BPIP.%26nbsp%3BIf%20you%20have%26nbsp%3Bhad%20a%20Work%26nbsp%3BCapability%26nbsp%3BAssessment%2C%20you%20might%20want%20to%26nbsp%3Btalk%20about%20this.%26nbsp%3B%3C%2Fp%3E%3Ch2%3EWho%20can%20respond%20to%20the%20call%20for%20evidence%3F%26nbsp%3B%3C%2Fh2%3E%3Cp%3EAnyone%20can%20respond%20to%20the%20call%20for%20evidence.%26nbsp%3BThe%20Timms%26nbsp%3BReview%26nbsp%3Bis%20particularly%20interested%20in%26nbsp%3Bhearing%20disabled%20people%20and%26nbsp%3Bcarers'%20experiences%26nbsp%3Bof%26nbsp%3Bapplying%26nbsp%3Bfor%26nbsp%3BPIP%2C%20the%26nbsp%3Bassessment%26nbsp%3Band%26nbsp%3Bthe%26nbsp%3Bappeals%26nbsp%3Bprocess.%26nbsp%3B%3C%2Fp%3E%3Ch2%3E%3Cstrong%3EDo%20I%20have%20to%26nbsp%3Bget%26nbsp%3BPIP%26nbsp%3Bto%20take%20part%3F%3C%2Fstrong%3E%26nbsp%3B%3C%2Fh2%3E%3Cp%3ENo%2C%20the%20call%26nbsp%3Bfor%20evidence%26nbsp%3Bis%20open%20to%26nbsp%3Beveryone.%20The%26nbsp%3BReview%20is%20investigating%20if%20PIP%20is%20fit%20for%20purpose.%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Cp%3EThis%20includes%26nbsp%3Bhearing%20from%3A%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Cul%3E%0A%20%20%3Cli%3Edisabled%20people%20who%26nbsp%3Bhave%20faced%20barriers%20applying%20for%20PIP%26nbsp%3B%3C%2Fli%3E%0A%20%20%3Cli%3Edisabled%20people%26nbsp%3Bwhohave%26nbsp%3Bbeen%20refused%20PIP%26nbsp%3B%26nbsp%3B%3C%2Fli%3E%0A%20%20%3Cli%3Edisabled%20people%20who%26nbsp%3Bhave%20not%20applied%20for%20PIP.%26nbsp%3B%26nbsp%3B%3C%2Fli%3E%0A%3C%2Ful%3E%3Cp%3EYou%20can%20also%20respond%20using%20your%20experiences%20of%20supporting%20people%20applying%20for%20PIP.%20Or%20your%20past%20experiences%20of%20claiming%20PIP%20or%20helping%20someone%20else%20claim%20it.%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Cp%3EWe%20know%26nbsp%3Bthat%26nbsp%3Bnot%20all%20disabled%20people%20are%20able%20to%20claim%26nbsp%3Bor%26nbsp%3Bwant%20to%26nbsp%3Bclaim%26nbsp%3BPIP.%26nbsp%3BBut%26nbsp%3Ball%20disabled%20people%E2%80%99s%26nbsp%3Bexperiences%20are%26nbsp%3Bimportant%26nbsp%3Bto%20the%26nbsp%3BReview.%26nbsp%3B%3C%2Fp%3E%3Ch2%3E%3Cstrong%3EHow%20long%20is%20the%20call%20for%20evidence%20open%3F%3C%2Fstrong%3E%26nbsp%3B%3C%2Fh2%3E%3Cp%3EThe%20public%20call%20for%20evidence%20will%20run%20for%26nbsp%3B10%20weeks.%26nbsp%3BIt%26nbsp%3Bopened%26nbsp%3Bon%26nbsp%3BThursday%26nbsp%3B19%26nbsp%3BMarch%2C%20and%20it%20will%20close%20on%20Thursday%26nbsp%3B28%26nbsp%3BMay%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Ch2%3E%3Cstrong%3EHow%20can%20I%20respond%3F%3C%2Fstrong%3E%26nbsp%3B%3C%2Fh2%3E%3Cp%3EIt%E2%80%99s%26nbsp%3Bvital%20that%20people%20with%20experience%20of%20applying%20for%26nbsp%3BPIP%20share%26nbsp%3Btheir%26nbsp%3B%26nbsp%3Bexperiences.%20So%20that%20those%20in%20charge%20of%20making%20changes%20to%20the%20benefits%20system%20get%20it%20right.%26nbsp%3BYou%20can%20respond%20to%20the%20Timms%26nbsp%3BReview%26nbsp%3Bcall%26nbsp%3Bfor%20evidence%26nbsp%3Bdirectly.%26nbsp%3BOr%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fcampaigns.scope.org.uk%2Fpage%2F189518%2Faction%2F1%3Fea.tracking.id%3Dwebsite%22%3Ethrough%20Scope%3C%2Fa%3E.%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Cp%3EWe%26nbsp%3Bhave%20made%20it%20easy%26nbsp%3Bfor%20you%20to%26nbsp%3Brespond%20to%26nbsp%3Bthe%20most%20important%20parts%20of%20the%26nbsp%3Bcall%20for%20evidence.%26nbsp%3B%3C%2Fp%3E%3Col%3E%0A%20%20%3Cli%3EEnter%20your%20details%26nbsp%3B%3C%2Fli%3E%0A%20%20%3Cli%3EShare%26nbsp%3Byour%20experiences%26nbsp%3B%3C%2Fli%3E%0A%20%20%3Cli%3ESend%20an%20email%20directly%20to%20the%20Timms%20Review%20team%2C%20or%20to%20Scope%20for%20us%20to%20share%26nbsp%3Bwith%20them%20anonymously%26nbsp%3B%26nbsp%3B%3C%2Fli%3E%0A%3C%2Fol%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22CallToAction%20wrapper%20%20top-margin%20bottom-margin%20%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22btn%20purple%20%22%20href%3D%22https%3A%2F%2Fcampaigns.scope.org.uk%2Fpage%2F189518%2Faction%2F1%3Fea.tracking.id%3Dwebsite%22%20target%3D%22_blank%22%3EShare%20your%20experience%20of%20PIP%3C%2Fa%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22wrapper%20rte%20bottom-margin%20%22%3E%0A%20%20%20%20%20%20%20%20%0A%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22c-rich-text%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EYou%20can%26nbsp%3Balso%26nbsp%3Bgive%20evidence%20to%20the%20Timms%20review%20directly%20by%3A%26nbsp%3B%3C%2Fp%3E%3Cul%3E%0A%20%20%3Cli%3ECompleting%20the%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fforms.office.com%2Fpages%2Fresponsepage.aspx%3Fid%3D6fbxllcQF0GsKIDN_ob4w8LRVgA-oNdOkoFuLei_fBFUQ0VEQ1JUOThJRElMWTFFWDQ3WFA5REMwSSQlQCN0PWcu%26amp%3Broute%3Dshorturl%22%3Eonline%20form%3C%2Fa%3E%26nbsp%3B%3C%2Fli%3E%0A%20%20%3Cli%3EEmailing%26nbsp%3Byour%20response%20to%26nbsp%3B%3Ca%20href%3D%22mailto%3Atimmsreview.callforevidence%40dwp.gov.uk%22%3Etimmsreview.callforevidence%40dwp.gov.uk%3C%2Fa%3E%26nbsp%3B%3C%2Fli%3E%0A%20%20%3Cli%3EPosting%26nbsp%3Byour%20response%26nbsp%3Bto%20the%20below%20address%3A%26nbsp%3B%3C%2Fli%3E%0A%3C%2Ful%3E%3Cp%3EThe%20Timms%20Review%26nbsp%3B%3Cbr%3E%0ADisability%20and%20Health%20Strategy%20Directorate%E2%80%AF%26nbsp%3B%3Cbr%3E%0ADepartment%20for%20Work%20and%20Pensions%26nbsp%3B%3Cbr%3E%0AFloor%20Two%E2%80%AF%26nbsp%3B%3Cbr%3E%0ACaxton%20House%E2%80%AF%26nbsp%3B%3Cbr%3E%0ALondon%26nbsp%3B%3Cbr%3E%0ASW1H%209NA%26nbsp%3B%3C%2Fp%3E%3Ch2%3EAre%20accessible%20formats%20available%3F%26nbsp%3B%3C%2Fh2%3E%3Cp%3EThe%20Call%20for%20Evidence%20has%20been%20published%20in%20accessible%26nbsp%3Bformats.%26nbsp%3BIncluding%26nbsp%3BBritish%20Sign%20Language%20(BSL)%2C%20Easy%20Read%2C%20audio%2C%20Braille%2C%20large%26nbsp%3Bprint%26nbsp%3Band%20Welsh%20translation.%26nbsp%3B%3C%2Fp%3E%3Cp%3ETo%20request%20a%20Braille%20version%20or%20physical%20copies%20of%20other%20published%20versions%20of%20this%20Call%20for%20Evidence%2C%20you%20can%20email%26nbsp%3B%3Ca%20href%3D%22mailto%3Atimmsreview.callforevidence%40dwp.gov.uk%22%3Etimmsreview.callforevidence%40dwp.gov.uk%3C%2Fa%3E.%26nbsp%3B%3C%2Fp%3E%3Ch2%3EScope%20is%20here%20to%20help%26nbsp%3B%3C%2Fh2%3E%3Cp%3ETo%20help%20you%20respond%2C%20we%20will%20be%20publishing%20an%20explainer%20video%26nbsp%3Bin%20the%20coming%20weeks%26nbsp%3Band%20a%26nbsp%3Bquestion%20by%20question%26nbsp%3Bguide%20with%26nbsp%3Bsome%26nbsp%3Bexamples%20of%26nbsp%3Bwhat%20you%26nbsp%3Bcould%26nbsp%3Binclude.%26nbsp%3BYou%20can%20also%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fcampaigns.scope.org.uk%2Fpage%2F189518%2Faction%2F1%3Fea.tracking.id%3Dwebsite%22%3Erespond%20to%20the%20call%20for%20evidence%26nbsp%3Bthrough%20Scope%3C%2Fa%3E.%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Cp%3EIf%20you%20are%20concerned%20about%20any%20of%20these%20issues%2C%20you%20can%26nbsp%3Bget%20in%20touch%20with%26nbsp%3BScope's%E2%80%AF%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fhelpline%2F%22%3Ehelpline%3C%2Fa%3E.%20We%20provide%20free%2C%26nbsp%3Bindependent%26nbsp%3Band%20impartial%20advice%20and%20support%20on%20issues%20that%20matter%20to%20disabled%20people%20and%20their%20families.%26nbsp%3B%3C%2Fp%3E%3Cp%3EIf%20you%20currently%26nbsp%3Bneed%26nbsp%3Bhelp%20and%20advice%20with%26nbsp%3Bdisability%26nbsp%3Bbenefits%26nbsp%3Bplease%20do%26nbsp%3Btake%20a%20look%26nbsp%3Bat%26nbsp%3Bour%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fscope.org.uk%2Fadvice-and-support%2Fbenefits%2F%22%3Ebenefits%20webpage%3C%2Fa%3E%26nbsp%3B%26nbsp%3B%3C%2Fp%3E%3Cp%3EYou%20can%20also%20share%20your%20thoughts%20and%20talk%20to%20people%20in%20similar%20situations%20to%20you%20on%26nbsp%3Bour%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fforum.scope.org.uk%2F%22%3Eonline%20community%3C%2Fa%3E.%26nbsp%3B%3C%2Fp%3E%3Cp%3EIf%20these%20changes%20are%20affecting%20your%20mental%20health%2C%20we%20encourage%20you%20to%20speak%20to%20your%20GP%20or%20reach%20out%20to%20support%20services%20like%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fwww.mind.org.uk%2F%22%3EMind%3C%2Fa%3E%26nbsp%3Bor%20the%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fwww.samaritans.org%2F%22%3ESamaritans%3C%2Fa%3E.%20Our%20website%20also%20offers%20practical%20advice%20on%20managing%20your%20mental%20health.%20Visit%26nbsp%3Bour%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fadvice-and-support%2Fmanage-mental-health%22%3Emental%20health%20support%20page%3C%2Fa%3E%26nbsp%3Bfor%20guidance.%26nbsp%3B%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%0A%0A%0A%3Cdiv%20class%3D%22ArticleInfo%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22ArticleInfo__field%20author%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-container-tall%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22%22%20data-imgs%3D%22~%2Fassets%2Fimages%2Fuser-dark.svg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EFrankie%20Bowyer%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22ArticleInfo__field%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-container-tall%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22%22%20data-imgs%3D%22~%2Fassets%2Fimages%2Fclock.svg%22%20alt%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E8%20April%202026%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22ArticleInfo__field%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Share%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22ArticleInfo__share-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22ArticleInfo__share-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22ArticleInfo__share-link%22%20href%3D%22https%3A%2F%2Ftwitter.com%2Fhome%3Fstatus%3Dhttps%3A%2F%2Fwww.scope.org.uk%2Fnews-and-stories%2Fthe-pip-review-wants-to-hear-from-you%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22ArticleInfo__share-icon%20lazy%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2Ff0e26b6b-81a5-4038-8a4b-1a1a4613432c%2Fx-dark.png%22%20alt%3D%22share%20to%20Twitter%20link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22ArticleInfo__share-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22ArticleInfo__share-link%22%20href%3D%22https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%3A%2F%2Fwww.scope.org.uk%2Fnews-and-stories%2Fthe-pip-review-wants-to-hear-from-you%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22ArticleInfo__share-icon%20lazy%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F787c9278-082e-43bb-93bc-c8bfcb599eda%2Ff-dark.png%22%20alt%3D%22share%20to%20Facebook%20link%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%0A%3C%2Fmain%3E%0A%20%20%20%20%20%20%20%20%3C!--%20Body%20End%20--%3E%0A%20%20%20%20%20%20%20%20%3C!--%20FooterModule%20Start%20--%3E%0A%20%20%20%20%20%20%20%20%0A%3C!--%20FooterModule%20Start%20--%3E%0A%3Cfooter%20class%3D%22Footer%20js-footer%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22Footer__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Footer__head%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Footer__title%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22Footer__logo%22%20data-imgs%3D%22%2Fassets%2Fimages%2Flogo-footer.svg%3Fv%3DF2DpDzr0lxOHAbssyg6Q38tYirxFB1XlClyT_SE4O9c%22%20alt%3D%22Scope%20footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csection%20class%3D%22FContacts%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__header%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22FContacts__title%20title%22%3EFree%20disability%20helpline%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22FContacts__sub%22%3EOpen%20Monday%20to%20Saturday%2C%2010am%20to%205pm.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__contact%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22FContacts__list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22FContacts__item%22%20style%3D%22margin-bottom%3A0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FContacts__icon%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fphone.svg%3Fv%3DuqyhsMXoyACUWVSAGPgm9pFH25uNMqMltZUxAfFf6RA%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__ltitle%20title%22%3EHelpline%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__lvalue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22tel%3A08088003333%22%3E0808%20800%203333%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22FContacts__item%22%20style%3D%22margin-bottom%3A0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FContacts__icon%20lazy%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F538e31c6-0ee5-49e3-8eca-a79a7fea2350%2Flive-chat.svg%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__ltitle%20title%22%3ELive%20chat%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__lvalue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fhelpline%23%3A~%3Atext%3DWarning-%2CChat%2520to%2520us%2C-We%2520will%2520be%22%3EChat%20with%20an%20adviser%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22FContacts__item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FContacts__icon%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fmail.svg%3Fv%3DtuZuLBbftV_y8Un2vS-tEx32w2XhZDi0CMpot3eYqZM%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__ltitle%20title%22%3EEmail%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__lvalue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22mailto%3Ahelpline%40scope.org.uk%22%3Ehelpline%40scope.org.uk%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__item%22%20style%3D%22margin-bottom%3A0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FContacts__icon%22%20style%3D%22top%3A30%25%22%20data-imgs%3D%22%2Fassets%2Fimages%2Fphone.svg%3Fv%3DuqyhsMXoyACUWVSAGPgm9pFH25uNMqMltZUxAfFf6RA%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__ltitle%20title%22%3ESupporter%20Care%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__lvalue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESpeak%20with%20Supporter%20Care%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__ltitle%20title%22%20style%3D%22margin-top%3A0.5em%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22tel%3A03002225744%22%3E0300%20222%205744%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FContacts__fundraising%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.fundraisingregulator.org.uk%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20data-imgs%3D%22%2Fassets%2Fimages%2Ffundraising-regulator.svg%3Fv%3DO2ovw1Pfhcexz9u154zO_5hFow9dGh-RJXsS4E1wIhc%22%20alt%3D%22Fundraising%20Regulator%20Home%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsection%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22Footer__links-news%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csection%20class%3D%22FLinks%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22FLinks__title%20title%22%3EScope%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22FLinks__list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcontact-us%22%3EContact%20us%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fjobs-at-scope%22%3EJobs%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fpartnerships%22%3EPartners%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fmedia%22%3EMedia%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fterms-conditions%22%3ETerms%20and%20conditions%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fprivacy%22%3EPrivacy%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcookies%22%3ECookies%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fmodern-slavery%22%3EModern%20slavery%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fcomplaints-and-compliments%22%3EComplaints%20and%20compliments%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.scope.org.uk%2Fsafeguarding-policy%22%3ESafeguarding%20policy%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22FLinks__item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22FLinks__link%20cky-banner-element%22%20href%3D%22%23%22%3EManage%20cookies%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsection%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Csection%20class%3D%22FNewsletter%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch3%20class%3D%22FNewsletter__title%20title%22%3ESign%20up%20for%20our%20email%3C%2Fh3%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cform%20class%3D%22FNewsletter__form%22%20method%3D%22post%22%20action%3D%22https%3A%2F%2Fmy.scope.org.uk%2Femail-signup-form%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22formUrl%22%20value%3D%22https%3A%2F%2Fmy.scope.org.uk%2Femail-signup-form%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22formFieldName%22%20value%3D%22Email%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FNewsletter__label%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Receive%20all%20the%20latest%20news%20and%20information%20about%20Scope%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22FNewsletter__wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20class%3D%22FNewsletter__input%22%20type%3D%22email%22%20name%3D%22email%22%20autocomplete%3D%22on%22%20placeholder%3D%22Your%20email%20address%22%20aria-label%3D%22To%20receive%20regular%20email%20updates%20about%20Scope%20enter%20your%20email%20address%20here%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22FNewsletter__submit%20btn%20turquoise%22%20type%3D%22submit%22%3ESign%20up%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fform%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsection%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Csection%20class%3D%22FSocials%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22FSocials__title%22%3ESocials%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22FSocials__list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.facebook.com%2FScope%2F%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F0fc64c49-39ab-4894-ad39-b5495096f0b3%2FSocialIcon%2520-%2520Facebook.png%22%20alt%3D%22Scope's%20Facebook%20page%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.instagram.com%2Fscopecharity%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F66ca0b2c-7717-4c73-ab3d-05fac53f53dc%2FSocialIcon%2520-%2520In.png%22%20alt%3D%22Scope's%20Instagram%20page%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Ftwitter.com%2Fscope%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2Fdcd2fe70-f3fb-4f0f-a678-70fdfc09421f%2FSocialIcon%2520-%2520sha.png%22%20alt%3D%22Scope's%20X%20page%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fuk.linkedin.com%2Fcompany%2Fscope%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2Fa99f8095-cb3f-4add-a0f4-7bc729ebd29f%2FSocialIcon%2520-%2520LinkedIn.png%22%20alt%3D%22Scope's%20LinkedIn%20page%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.youtube.com%2Fscopecharity%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2F3a19886d-aa5a-4abd-ba8c-72db7b4aba02%2FSocialIcon%2520-%2520YouTube.png%22%20alt%3D%22Scope's%20YouTube%20page%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3Cli%20class%3D%22FSocials__item%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.tiktok.com%2F%40scope_charity%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22FSocials__icon%22%20data-imgs%3D%22https%3A%2F%2Fassets-eu-01.kc-usercontent.com%3A443%2F73ea709e-f9f8-0168-3842-ebd7ad1e23ac%2Fc14fd9e8-9e29-426e-abc9-7bc6840bc1d7%2FScope_RGB_Social%2520media%2520-%2520tiktok%25201.png%22%20alt%3D%22TikTok%20logo%22%3E%0A%20%20%20%20%3C%2Fa%3E%0A%3C%2Fli%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%3Csmall%20class%3D%22FSocials__number%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Scope%20is%20a%20registered%20charity%20in%20England%20and%20Wales%20(208231)%2C%20Scotland%20(SC053490)%20and%20operates%20in%20Northern%20Ireland.%20Scope%20is%20a%20company%20limited%20by%20guarantee%2C%20registered%20in%20England%20and%20Wales%20company%20number%20(00520866).%20Registered%20office%3A%20Here%20East%20Press%20Centre%2C%2014%20East%20Bay%20Lane%2C%20London%2C%20E15%202GW.%20%0A%20%20%20%20%20%20%20%20%3C%2Fsmall%3E%0A%20%20%20%20%3C%2Fsection%3E%0A%0A%3C%2Ffooter%3E%0A%3C!--%20FooterModule%20End%20--%3E%0A%20%20%20%20%20%20%20%20%3C!--%20FooterModule%20End%20--%3E%0A%20%20%20%20%20%20%20%20%0A%3C!--%20Google%20Tag%20Manager%20(noscript)%20--%3E%0A%0A%3Cnoscript%3E%3C%2Fnoscript%3E%0A%0A%3C!--%20End%20Google%20Tag%20Manager%20(noscript)%20--%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%3C%2Fdiv%3E%3Cul%20id%3D%22topBarSuggestions%22%20class%3D%22TopBar__search--typeahead%20hidden%22%20role%3D%22listbox%22%20aria-labelledby%3D%22topbar-search-label%22%3E%3C%2Ful%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "de6bc2ef-8196-4e88-9f53-2044857be9cc",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.scope.org.uk-news-and-stories-the-pip-review-wants-to-hear-from-you"
+}

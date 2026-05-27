@@ -1,0 +1,222 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1858,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_navigation_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/nav[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 27,
+                "height": 149,
+                "width": 784
+            },
+            "snippet": "<nav role=\"navigation\" class=\"navbar navbar-inverse navbar-priyom\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_navigation_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cnav%20role%3D%5C%22navigation%5C%22%20class%3D%5C%22navbar%20navbar-inverse%20navbar-priyom%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_navigation_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_navigation_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/nav[1]",
+                "aria": "/document[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"navigation\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 191,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<nav>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_navigation_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22navigation%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cnav%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_navigation_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/p[2]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Mission statement and ideology Mission statement and ideology' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Mission statement and ideology Mission statement and ideology"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 463,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Mission%20statement%20and%20ideology%20Mission%20statement%20and%20ideology'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Mission%20statement%20and%20ideology%20Mission%20statement%20and%20ideology%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/p[4]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Contact and join Priyom.org Contact and join Priyom.org' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Contact and join Priyom.org Contact and join Priyom.org"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 625,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Contact%20and%20join%20Priyom.org%20Contact%20and%20join%20Priyom.org'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Contact%20and%20join%20Priyom.org%20Contact%20and%20join%20Priyom.org%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/main[1]/article[1]/p[9]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text '-Fabulous Furry Freak Brothers- 1973 -Fabulous Furry Freak Brothers- 1973' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "-Fabulous Furry Freak Brothers- 1973 -Fabulous Furry Freak Brothers- 1973"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1720,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'-Fabulous%20Furry%20Freak%20Brothers-%201973%20-Fabulous%20Furry%20Freak%20Brothers-%201973'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22-Fabulous%20Furry%20Freak%20Brothers-%201973%20-Fabulous%20Furry%20Freak%20Brothers-%201973%22%5D%7D"
+        }
+    ],
+    "numExecuted": 779,
+    "ruleTime": 6,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "aria_navigation_label_unique": {
+            "0": "Each element with \"navigation\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"navigation\" role do not have unique labels"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 6,
+            "elementsViolation": 2,
+            "elementsViolationReview": 6,
+            "violation": 2,
+            "potentialviolation": 4,
+            "recommendation": 0,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 773
+        },
+        "scanTime": 31,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778933563198,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EAbout%20%E2%80%BA%20Priyom.org%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%20%20%20%20%3Cdiv%20class%3D%22wrapper%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cheader%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22text-center%22%3E%3Ca%20href%3D%22%2F%22%3E%3Cimg%20alt%3D%22priyom.org%22%20width%3D%22300%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%0A%20%20%0A%20%20%20%20%20%20%20%20%3Cnav%20class%3D%22navbar%20navbar-inverse%20navbar-priyom%22%20role%3D%22navigation%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Brand%20and%20toggle%20get%20grouped%20for%20better%20mobile%20display%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22navbar-header%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22button%22%20class%3D%22navbar-toggle%20collapsed%22%20data-toggle%3D%22collapse%22%20data-target%3D%22.navbar-collapse%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22sr-only%22%3EToggle%20navigation%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-bar%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-bar%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22icon-bar%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22visible-xs%20navbar-brand%22%20href%3D%22%2F%22%3EPriyom.org%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3C!--%20Collect%20the%20nav%20links%2C%20forms%2C%20and%20other%20content%20for%20toggling%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22collapse%20navbar-collapse%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22nav%20navbar-nav%22%3E%3Cli%20class%3D%22home%22%3E%3Ca%20href%3D%22%2F%22%3EHome%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22%2Fblog%22%3E%3Cspan%3EBlog%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22%2Fnumber-stations%22%3E%3Cspan%3ENumber%20Stations%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22%2Fmilitary-stations%22%3E%3Cspan%3EMilitary%20Stations%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22%2Fdiplomatic-stations%22%3E%3Cspan%3EDiplomatic%20Stations%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22active%22%3E%3Ca%20href%3D%22%2Fabout%22%3E%3Cspan%3EAbout%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3C!--%20%2F.navbar-collapse%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3C!--%20%2F.container%20--%3E%0A%20%20%20%20%20%20%20%20%3C%2Fnav%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%0A%0A%20%20%20%20%20%20%3C%2Fheader%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22main%20container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cnav%3E%3Col%20class%3D%22breadcrumb%22%3E%0A%20%20%20%20%3Cli%20itemscope%3D%22%22%20itemtype%3D%22http%3A%2F%2Fdata-vocabulary.org%2FBreadcrumb%22%3E%3Ca%20href%3D%22%2F%22%20itemprop%3D%22url%22%3E%3Cspan%20itemprop%3D%22title%22%3EPriyom.org%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Cspan%3EAbout%3C%2Fspan%3E%3C%2Fli%3E%0A%20%20%3C%2Fol%3E%3C%2Fnav%3E%0A%20%20%20%20%20%20%20%20%20%20%3C!--%20Page%20last%20updated%3A%201%2F15%2F2024%2010%3A21%3A27%20AM%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%3Cmain%3E%0A%20%20%20%20%3Carticle%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ch2%3EAbout%3C%2Fh2%3E%0A%0A%20%20%20%20%20%20%3Ch3%3EWelcome!%3C%2Fh3%3E%0A%0A%3Cp%3EPriyom.org%20is%20an%20international%20group%20of%20radio%20enthusiasts%20who%0Acame%20together%20during%202010%20when%20activity%20from%20the%20%3Ca%20href%3D%22%2Fmilitary-stations%2Frussia%2Fthe-buzzer%22%3Estation%20known%20as%0A%22UVB-76%22%20increased%3C%2Fa%3E.%20The%20mystery%20of%20this%20station%20inspired%20us%20to%0Aseek%20out%20other%20similarly%20mysterious%20stations%2C%20and%20thus%20into%20the%0Abizarre%20world%20of%20shortwave%20radio's%20infamous%20number%20stations.%0AGreatly%20inspired%20by%20the%20work%20of%20other%20online%20groups%2C%20Priyom%20has%0Abeen%20developed%20to%20easily%20bring%20both%20the%20current%20and%20historical%0Ainformation%20about%20number%20stations%20into%20one%20comprehensive%20site%2C%20and%0Ato%20make%20the%20recording%2C%20listening%20and%20analysis%20of%20shortwave%20radio%2C%0Anumber%20stations%2C%20and%20all%20related%20on-air%20enigmas%20accessible%20to%20all%0Awho%20are%20interested.%3C%2Fp%3E%0A%0A%3Cp%3E%3Cstrong%3EMission%20statement%20and%20ideology%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%3Cp%3EInformation%20wants%20to%20be%20free%2C%20and%20the%20progression%20of%20humanity%20is%0Adetermined%20by%20this%20free%20exchange%20of%20ideas%20and%20information.%20Our%0Amission%20is%20to%20provide%20information%20to%20the%20public%2C%20freely%2C%20without%0Abeing%20tainted%20by%20politics%2C%20ideology%2C%20or%20other%20barriers.%20We%20aim%20to%0Apresent%20the%20ongoing%2C%20clandestine%20world%20to%20you%2C%20without%20distorting%0Athe%20facts%20due%20to%20anyone's%20own%20personal%20beliefs.%20The%20members%20of%20the%0APriyom%20team%20and%20community%20all%20have%20differing%20and%20conflicting%0Apolitical%20views%2C%20and%20our%20aim%20is%20to%20keep%20politics%20off%20the%20site.%20We%0Ahave%20no%20direct%20leadership%20and%20work%20as%20a%20democratic%20group%2C%20with%0Adecisions%20being%20made%20by%20the%20whole%20group%20rather%20than%20any%20leadership%0Astructure.%3C%2Fp%3E%0A%0A%3Cp%3E%3Cstrong%3EContact%20and%20join%20Priyom.org%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%3Cp%3EThe%20Priyom.org%20community%20mostly%20revolves%20around%20the%20IRC%20channel%0A%3Cstrong%3E%23priyom%3C%2Fstrong%3E%20on%20Libera.%3C%2Fp%3E%0A%0A%3Cp%3E%3Cstrong%3EOur%20goals%3A%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%3Cul%3E%0A%3Cli%3ETo%20gather%20historical%20information%20on%20number%20stations%20and%20where%0Apossible%20present%20that%20in%20one%20comprehensive%20site%3C%2Fli%3E%0A%0A%3Cli%3ETo%20respect%20the%20other%20groups%20researching%20number%20stations%20and%20to%0Aencourage%20collaboration%20and%20co-operation%20between%20the%20groups%3C%2Fli%3E%0A%0A%3Cli%3ETo%20gather%20as%20much%20information%20about%20Number%20stations%20as%0Apossible%3C%2Fli%3E%0A%0A%3Cli%3ETo%20present%20all%20the%20information%20in%20a%20clear%20and%20concise%20way%3C%2Fli%3E%0A%0A%3Cli%3ETo%20make%20all%20information%20obtainable%20about%20number%20station%0Atransmissions%20available%20to%20the%20public%3C%2Fli%3E%0A%0A%3Cli%3ETo%20present%20evidence%20of%20Number%20stations%20by%20recording%20and%0Atranscribing%20Number%20station%20activity%3C%2Fli%3E%0A%0A%3Cli%3ETo%20make%20public%20listening%20of%20Number%20stations%20more%20accessible%20by%0Apublishing%20schedules%3C%2Fli%3E%0A%0A%3Cli%3ETo%20understand%20the%20relationships%20between%20stations%3C%2Fli%3E%0A%0A%3Cli%3ETo%20do%20all%20of%20the%20above%20publically%20and%20in%20the%20open%3C%2Fli%3E%0A%0A%3Cli%3ETo%20drag%20the%20radio%20listening%20community%20online%20and%20into%20the%2021st%0Acentury%20(kicking%20and%20screaming%20if%20needed)%3C%2Fli%3E%0A%0A%3Cli%3ETo%20encourage%20standards%20in%20the%20recording%20and%20logging%20of%20stations%0Aallowing%20better%20analysis%20and%20collaboration%3C%2Fli%3E%0A%0A%3Cli%3ETo%20build%20a%20community%20of%20listeners%20around%20the%20globe%20to%20cover%20all%0Afrequencies%20at%20all%20times%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%3C!--%3Cp%3E%3Cspan%3EThe%20people%20involved%20are%20as%20follows%3A%3C%2Fspan%3E%3C%2Fp%3E%0A%3Cul%3E%0A%3Cli%3EArgonn%3C%2Fli%3E%0A%3Cli%3EAvare%3C%2Fli%3E%0A%3Cli%3ECrysisLTU%3C%2Fli%3E%0A%3Cli%3ECzez%3C%2Fli%3E%0A%3Cli%3Edanix111%3C%2Fli%3E%0A%3Cli%3Edude1300%3C%2Fli%3E%0A%3Cli%3EFireSt0rM%3C%2Fli%3E%0A%3Cli%3EGwraspe%3C%2Fli%3E%0A%3Cli%3EHorrorcat%3C%2Fli%3E%0A%3Cli%3EJochen%20Kopf%3C%2Fli%3E%0A%3Cli%3Ekompot%3C%2Fli%3E%0A%3Cli%3ELarsen%3C%2Fli%3E%0A%3Cli%3ELinas%3C%2Fli%3E%0A%3Cli%3Elorenzo%3C%2Fli%3E%0A%3Cli%3EPresentedIn4D%3C%2Fli%3E%0A%3Cli%3EPeterSpb%3C%2Fli%3E%0A%3Cli%3ER6mco%3C%2Fli%3E%0A%3Cli%3Escansweden%3C%2Fli%3E%0A%3Cli%3ESparkyXI%3C%2Fli%3E%0A%3Cli%3EToken%3C%2Fli%3E%0A%3Cli%3EtotoCZ%3C%2Fli%3E%0A%3Cli%3ETROJAN719%3C%2Fli%3E%0A%3Cli%3EWebweasel%3C%2Fli%3E%0A%3Cli%3EXkeeper%3C%2Fli%3E%0A%3Cli%3Eand%20you%3F%3C%2Fli%3E%0A%3C%2Ful%3E--%3E%0A%3Cp%3E%26nbsp%3B%3C%2Fp%3E%0A%0A%3Cp%3E%3Cem%3EGovernment%20spies%20are%20everywhere%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ein%20your%20home%20and%20in%20your%20hair%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Elurking%20in%20their%20secret%20lair.%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3ECounting%20Dollars%3B%3C%2Fem%3E%3Cbr%3E%0A%3Cbr%3E%0A%20%3Cem%3EThey%20know%20everyone%20you%20know%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ethey%20see%20everything%20you%20show%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Eand%20everywhere%20you%20go%20they%20slowly%20follers.%3C%2Fem%3E%3Cbr%3E%0A%3Cbr%3E%0A%20%3Cem%3EGovernment%20spies%20will%20come%20to%20you%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Eand%20there's%20not%20much%20you%20can%20do.%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ecept%20to%20sit%20there%20til%20they're%20through%20with%20their%0Aspying%3B%3C%2Fem%3E%3Cbr%3E%0A%3Cbr%3E%0A%20%3Cem%3EThey%20will%20count%20up%20all%20your%20cash%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ethey%20will%20go%20through%20all%20your%20trash%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ethen%20they'll%20confiscate%20your%20stash%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Eand%20leave%20you%20crying.%3C%2Fem%3E%3Cbr%3E%0A%3Cbr%3E%0A%20%3Cem%3EWell%2C%20their%20leader%20is%20a%20wimp%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ehis%20assistant%20is%20a%20simp%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ewho%20also%20functions%20as%20a%20pimp%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Esometimes%2C%20down%20in%20miami%20beach%3B%3C%2Fem%3E%3Cbr%3E%0A%3Cbr%3E%0A%20%3Cem%3E%22secret%20sources%22%20pay%20the%20tag%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Eand%20they%20pay%20them%20by%20the%20bag%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3EIt's%20enough%20to%20make%20a%20grown%20man%20gag%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Eand%20screech.%3C%2Fem%3E%3Cbr%3E%0A%3Cbr%3E%0A%20%3Cem%3EGovernment%20spies%20are%20everywhere%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ein%20your%20home%20and%20in%20your%20hair%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Elurking%20in%20their%20secret%20lair%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ecounting%20money%3B%3C%2Fem%3E%3Cbr%3E%0A%3Cbr%3E%0A%20%3Cem%3Ethey%20know%20everyone%20you%20know%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ethey%20see%20everything%20you%20show%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Ethey%20go%20everywhere%20you%20go%2C%3C%2Fem%3E%3Cbr%3E%0A%20%3Cem%3Eand%20it%20ain't%20funny.%3C%2Fem%3E%3C%2Fp%3E%0A%0A%3Cp%3E%3Cstrong%3E-Fabulous%20Furry%20Freak%20Brothers-%201973%3C%2Fstrong%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%3C%2Farticle%3E%0A%20%20%3C%2Fmain%3E%0A%0A%0A%20%20%20%20%20%20%3C%2Fdiv%3E%20%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22push%22%3E%3C%2Fdiv%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%0A%20%20%20%20%3Cfooter%20class%3D%22footer%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22row%20text-center%20vertical-align-sm%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20rel%3D%22license%22%20href%3D%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby-nc-sa%2F4.0%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20alt%3D%22Creative%20Commons%20License%22%20width%3D%2288%22%20height%3D%2231%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-10%20text-muted%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EPriyom.org%20is%20licensed%20under%20the%20%3Ca%20rel%3D%22license%22%20href%3D%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby-nc-sa%2F4.0%2F%22%3ECreative%20Commons%20Attribution-NonCommercial-ShareAlike%204.0%20International%20License%3C%2Fa%3E.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22col-md-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Fpriyom%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20alt%3D%22Find%20us%20on%20GitHub%22%20width%3D%2288%22%20height%3D%2231%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Ffooter%3E%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%0A%20%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "9b5e1308-9639-4e58-aa46-1cf7a46274ac",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "priyom.org-about"
+}

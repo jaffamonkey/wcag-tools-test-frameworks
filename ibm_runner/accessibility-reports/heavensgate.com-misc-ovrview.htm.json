@@ -1,0 +1,590 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 3387,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 3387,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 3387,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 3360,
+                "width": 784
+            },
+            "snippet": "<body alink=\"ff0066\" vlink=\"#ff99ff\" link=\"#66ccff\" text=\"#ffccff\" background=\"../img/tile.jpg\" bgcolor=\"#000000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20alink%3D%5C%22ff0066%5C%22%20vlink%3D%5C%22%23ff99ff%5C%22%20link%3D%5C%22%2366ccff%5C%22%20text%3D%5C%22%23ffccff%5C%22%20background%3D%5C%22..%2Fimg%2Ftile.jpg%5C%22%20bgcolor%3D%5C%22%23000000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 87,
+                "top": 17,
+                "height": 64,
+                "width": 628
+            },
+            "snippet": "<table cellpadding=\"0\" width=\"80%\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20width%3D%5C%2280%25%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[2]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 87,
+                "top": 106,
+                "height": 210,
+                "width": 628
+            },
+            "snippet": "<table width=\"80%\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%2280%25%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]",
+                "aria": "/document[1]/table[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 87,
+                "top": 316,
+                "height": 1249,
+                "width": 628
+            },
+            "snippet": "<table width=\"80%\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%2280%25%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[2]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"those who had ears to hear.\"",
+            "messageArgs": [
+                "\"those who had ears to hear.\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 815,
+                "height": 189,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22those%20who%20had%20ears%20to%20hear.%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22those%20who%20had%20ears%20to%20hear.%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[3]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"public at large,\", \"lost sheep\"",
+            "messageArgs": [
+                "\"public at large,\", \"lost sheep\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 1022,
+                "height": 273,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22public%20at%20large%2C%5C%22%2C%20%5C%22lost%20sheep%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22public%20at%20large%2C%5C%22%2C%20%5C%22lost%20sheep%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[3]/tbody[1]/tr[1]/td[1]/font[1]/p[4]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"turn  off\", \"speak in tongues\"",
+            "messageArgs": [
+                "\"turn  off\", \"speak in tongues\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 1313,
+                "height": 231,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22turn%20%20off%5C%22%2C%20%5C%22speak%20in%20tongues%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22turn%20%20off%5C%22%2C%20%5C%22speak%20in%20tongues%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[4]",
+                "aria": "/document[1]/table[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 87,
+                "top": 1565,
+                "height": 1597,
+                "width": 628
+            },
+            "snippet": "<table width=\"80%\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%2280%25%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[4]/tbody[1]/tr[1]/td[1]/font[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Next steps,\", \"need to know\", \"blown\", \"fact\"",
+            "messageArgs": [
+                "\"Next steps,\", \"need to know\", \"blown\", \"fact\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 1569,
+                "height": 1536,
+                "width": 622
+            },
+            "snippet": "<font size=\"4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Next%20steps%2C%5C%22%2C%20%5C%22need%20to%20know%5C%22%2C%20%5C%22blown%5C%22%2C%20%5C%22fact%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%224%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Next%20steps%2C%5C%22%2C%20%5C%22need%20to%20know%5C%22%2C%20%5C%22blown%5C%22%2C%20%5C%22fact%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[4]/tbody[1]/tr[1]/td[1]/font[1]/p[4]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"speaking in tongues,\"",
+            "messageArgs": [
+                "\"speaking in tongues,\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 2669,
+                "height": 252,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22speaking%20in%20tongues%2C%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22speaking%20in%20tongues%2C%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[4]/tbody[1]/tr[1]/td[1]/font[1]/p[5]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[1]/paragraph[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"  At the time of this writing,  ... hology of our materials,begins \"",
+            "messageArgs": [
+                "\"  At the time of this writing,  ... hology of our materials,begins \""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 2939,
+                "height": 105,
+                "width": 622
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22%20%20At%20the%20time%20of%20this%20writing%2C%20%20...%20hology%20of%20our%20materials%2Cbegins%20%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22%20%20At%20the%20time%20of%20this%20writing%2C%20%20...%20hology%20of%20our%20materials%2Cbegins%20%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/table[4]/tbody[1]/tr[1]/td[1]/p[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[1]/paragraph[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'April 1996 April 1996' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "April 1996 April 1996"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 3122,
+                "height": 21,
+                "width": 622
+            },
+            "snippet": "<p align=\"right\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'April%201996%20April%201996'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20align%3D%5C%22right%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22April%201996%20April%201996%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[2]/img[1]",
+                "aria": "/document[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 400,
+                "top": 3227,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[3]/img[1]",
+                "aria": "/document[1]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 400,
+                "top": 3262,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "heading_markup_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/h3[1]",
+                "aria": "/document[1]/heading[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that the heading element is a genuine heading",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3285,
+                "height": 84,
+                "width": 784
+            },
+            "snippet": "<h3>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/heading_markup_misuse.html#%7B%22message%22%3A%22Verify%20that%20the%20heading%20element%20is%20a%20genuine%20heading%22%2C%22snippet%22%3A%22%3Ch3%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22heading_markup_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 442,
+    "ruleTime": 1,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "heading_markup_misuse": {
+            "0": "Heading elements must not be used for presentation",
+            "Potential_1": "Verify that the heading element is a genuine heading"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 18,
+            "elementsViolation": 8,
+            "elementsViolationReview": 16,
+            "violation": 9,
+            "potentialviolation": 9,
+            "recommendation": 6,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 417
+        },
+        "scanTime": 22,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778611178599,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EOverview%20of%20Present%20Mission%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23000000%22%20background%3D%22..%2Fimg%2Ftile.jpg%22%20text%3D%22%23ffccff%22%20link%3D%22%2366ccff%22%20vlink%3D%22%23ff99ff%22%20alink%3D%22ff0066%22%3E%0A%3Ccenter%3E%0A%3Chr%20width%3D%2280%25%22%20size%3D%221%22%3E%0A%3Ctable%20border%3D%220%22%20width%3D%2280%25%22%20cellpadding%3D%220%22%3E%0A%3Ctbody%3E%3Ctr%3E%3Ctd%20align%3D%22center%22%3E%0A%3Cstrong%3E%3Cfont%20color%3D%22ff99ff%22%20size%3D%226%22%3EOverview%20of%20Present%20Mission%0A%3C%2Ffont%3E%3C%2Fstrong%3E%0A%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%20align%3D%22right%22%3E%3Cfont%20size%3D%224%22%20color%3D%22%23ff3366%22%3E%3Cem%3EBy%20%0AJwnody%20-%20a%20student%3C%2Fem%3E%3C%2Ffont%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3Chr%20width%3D%2280%25%22%20size%3D%221%22%3E%3Cp%3E%0A%3Ctable%20border%3D%220%22%20width%3D%2280%25%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%3Ctd%3E%0A%3Cimg%20align%3D%22left%22%20hspace%3D%2220%22%20alt%3D%22M16%2C%20the%20Eagle%20nebula%22%3E%0A%3Cfont%20size%3D%224%22%3E%20%20%20The%20documents%20contained%20in%20our%20book%0Apresent%20a%20running%20account%20of%20materials%20we%20have%20printed%20and%20published%0Ain%20relationship%20to%20our%20mission%20on%20this%20planet%2C%20spanning%20the%20past%20two%0Adecades.%3Cp%3E%0A%0A%20%20%20%20To%20help%20you%20understand%20who%20we%20are%2C%20we%20have%20taken%20the%20liberty%0Ato%20express%20a%20brief%20synopsis%20in%20the%20vernacular%20of%20a%20popular%0A%22science%20fiction%22%20entertainment%20series.%20%20Most%20readers%20in%20the%20late%0A20th%20Century%20will%20certainly%20recognize%20the%20intended%20parallels.%20%20It%0Ais%20really%20quite%20interesting%20to%20see%20how%20the%20context%20of%20fiction%20can%0Aoften%20open%20the%20mind%20to%20advanced%20possibilities%20which%20are%2C%20in%0Areality%2C%20quite%20close%20to%20fact.%3C%2Fp%3E%3C%2Ffont%3E%3Cp%3E%3Cfont%20size%3D%224%22%3E%0A%3C%2Ffont%3E%0A%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3Ctable%20border%3D%220%22%20width%3D%2280%25%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%3Ctd%3E%0A%3Cfont%20size%3D%224%22%3E%20%20%20%20Excerpt%20from%20%3Cstrong%3E%3Cem%3EExtraterrestrials%20Return%20with%20%0AFinal%20Warning%3C%2Fem%3E%3C%2Fstrong%3E%3Cbr%3E%0A(located%20in%20Section%205)%3Cstrong%3E%3A%3C%2Fstrong%3E%3Cp%3E%0A%20%20%20%20%20%0A%3C%2Fp%3E%3Cpre%3E%20%20%20%20%20%22An%20'away%20%20team'%20from%20an%20Evolutionary%20Level%20Above%0A%20%20%20%20%20Human%2C%20an%20'Admiral%2C'%20and%20His%20'Captain'%20and%20crew%2C%20during%0A%20%20%20%20%20the%201920's%20to%201950's%20picked%20and%20prepped%20the%20human%20bodies%0A%20%20%20%20%20which%20they%20would%20wear%20for%20the%20task%20we%20are%20about%20to%0A%20%20%20%20%20describe.%20%20They%20came%20into%20those%20bodies%20in%20the%201970's%20-%0A%20%20%20%20%20the%20Admiral%20and%20Captain%20first.%20%20They%20began%20rounding%20up%0A%20%20%20%20%20their%20crew%20in%20'75%20and%20assisting%20them%20in%20the%20process%20of%0A%20%20%20%20%20entering%20and%20taking%20charge%20of%20their%20own%20assigned%20human%0A%20%20%20%20%20bodies.%20They%20called%20their%20crew%20together%20by%20means%20of%20a%0A%20%20%20%20%20public%20statement%20and%20meetings%20(over%20about%20a%209-month%0A%20%20%20%20%20period).%20%20The%20media%2C%20typically%20hastily%20judging%20them%2C%0A%20%20%20%20%20tagged%20them%20the%20'UFO%20%20Cult%2C'%20because%20of%20their%0A%20%20%20%20%20expectation%20of%20leaving%20aboard%20a%20spacecraft%20(UFO)%20at%20the%0A%20%20%20%20%20completion%20of%20their%20task.%20%20The%20Two%20then%20took%20the%20ones%0A%20%20%20%20%20who%20followed%20them%20into%20seclusion%2C%20completely%20separate%0A%20%20%20%20%20from%20the%20world%20for%20almost%2017%20years%2C%20not%20only%20completing%0A%20%20%20%20%20their%20'awakening'%20or%20adjustment%20to%20their%20human%20bodies%0A%20%20%20%20%20and%20this%20primitive%20civilization%2C%20but%20also%20took%20them%0A%20%20%20%20%20through%20a%20'metamorphic'%20classroom%20experience%20of%0A%20%20%20%20%20changing%20over%20their%20consciousness%20and%20behavior%20to%20match%0A%20%20%20%20%20with%20that%20of%20their%20distant%20culture%20from%20whence%20they%20had%0A%20%20%20%20%20come.%22%3C%2Fpre%3E%3Cp%3E%0A%0A%20%20%20%20Those%2017%20years%20of%20seclusion%20ended%20for%20us%20in%201992.%20%20From%0A1975%2F1976%20until%20we%20went%20public%20again%20in%201992%2C%20we%20were%20very%20much%0A%22lifted%20out%22%20of%20this%20world%20-%20literally.%20%20In%201988%2C%20however%2C%20we%20did%0Awrite%20the%20%3Cstrong%3E%3Cem%3E'88%20%20Update%3C%2Fem%3E%3C%2Fstrong%3E%2C%20including%2C%20quite%20%0Aappropriately%2C%20some%20updated%20thinking.%20%20We%20also%20took%20this%20opportunity%20to%20%0Aset%20the%20record%20straight%20with%20a%20written%20account%20of%20our%20history%2C%20refuting%0Amany%20of%20the%20false%20reports%20and%20outright%20lies%20widely%20circulated%20and%0Apublished%20by%20the%20media%20back%20in%201975.%20%20We%20sent%20it%20out%20far%0Aand%20wide%20for%20%22those%20who%20had%20ears%20to%20hear.%22%20%20But%20it%20was%0Aclearly%20part%20of%20the%20Next%20Level's%20design%20to%20keep%20us%20protected%20and%0Asecluded%20a%20while%20longer%2C%20so%20we%20remained%20hidden%20and%20virtually%0Aunfindable%20for%20several%20more%20years.%3C%2Fp%3E%3Cp%3E%0A%0A%20%20%20%20In%20the%20early%201990's%2C%20we%20began%20to%20get%20clear%20signals%20that%20our%0A%22classroom%20time%22%20%3Cem%3Eper%20se%3C%2Fem%3E%20was%20nearly%20over%2C%20but%20that%20some%0Ainvolvement%20with%20the%20public%20was%20about%20to%20begin.%20%20So%2C%20we%20started%0Athe%20painful%20and%20arduous%20task%20of%20trying%20to%20figure%20out%20how%20to%20%0Are-interface%2C%20communicate%2C%20with%20a%20human%20civilization%20which%20by%20this%0Atime%20had%20become%20quite%20foreign%20to%20where%20our%20thinking%20had%20evolved.%0ANevertheless%2C%20in%20early%201992%2C%20we%20had%20our%20%22coming%20out.%22%20%20We%20did%20a%0Aseries%20of%20satellite%20TV%20broadcasts%2C%20entitled%20%3Cstrong%3E%3Cem%3EBeyond%20Human%20-%20The%20%0ALast%20Call%3C%2Fem%3E%3C%2Fstrong%3E%2C%20and%20for%20the%20first%20time%20in%2017%20years%2C%20we%20%0Acorresponded%20for%20a%20brief%20period%20with%20those%20who%20opted%20to%20write%20to%20us.%20%20And%20%0Aa%20very%20interesting%20phenomenon%20occurred.%20%20Although%20we%20thought%20we%20were%0Apresenting%20our%20information%20to%20the%20%22public%20at%20large%2C%22%0Amuch%20to%20our%20surprise%2C%20those%20who%20watched%20and%20responded%0Awere%20almost%20entirely%20our%20own%20%22lost%20sheep%22%20-%20that%20is%2C%20crew%0Amembers%20who%20had%20previously%20dropped%20away%2C%20having%20been%20overcome%0Ain%20earlier%20years%20by%20the%20temptations%20of%20an%20increasingly%20decadent%0Acivilization.%20%20They%20now%20were%20desperately%20seeking%20a%20way%20to%0Areconnect.%20%20And%20they%20did.%3C%2Fp%3E%3Cp%3E%0A%0A%20%20%20%20After%20these%20returnees%20had%20a%20period%20of%20time%20to%20readapt%20to%20the%0Aways%20of%20the%20classroom%2FNext%20Level%2C%20we%20once%20again%20set%20out%20to%20offer%0Aour%20information%20to%20the%20public.%20%20Our%20dilemma%20was%20multifaceted%3Cstrong%3E%3A%3C%2Fstrong%3E%0AHow%20do%20we%20present%20the%20information%20in%20a%20credible%20fashion%2C%20when%20to%0Amost%2C%20our%20Truth%20is%20definitely%20stranger%20than%20any%20fiction%3F%20%20How%20do%0Awe%20avoid%20being%20seen%20as%20religious%2C%20in%20order%20to%20not%20%20%22turn%20%20off%22%0Athose%20who%20rightfully%20despise%20the%20hypocrisy%20of%20what%20religions%20have%0Abecome%3F%20%20At%20the%20same%20time%2C%20how%20do%20we%20acknowledge%20our%20past%0Aassociations%20with%20this%20civilization%20which%20are%20primarily%20recorded%0Ain%20your%20Bible%2C%20so%20as%20to%20offer%20those%20who%20are%20waiting%20for%20prophecy%0Ato%20be%20fulfilled%2C%20enough%20clues%20to%20put%20it%20together%3F%20%20As%20you%20read%0Aour%20various%20presentations%2C%20you%20will%20see%20our%20many%20attempts%20to%0A%22speak%20in%20tongues%22%20-%20to%20speak%20in%20several%20languages%20and%20to%20several%0Astratas%20simultaneously.%3C%2Fp%3E%3C%2Ffont%3E%3Cp%3E%3Cfont%20size%3D%224%22%3E%0A%3C%2Ffont%3E%0A%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3Ctable%20border%3D%220%22%20width%3D%2280%25%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%3Ctd%3E%0A%3Cfont%20size%3D%224%22%3E%20%20%20%20A%20%20fact%20that%20we%20take%20for%20granted%20but%20which%20may%20take%20some%0Aexplanation%20for%20others%2C%20is%20that%20the%20Next%20Level%20does%20not%20always%0Alet%20us%20in%20on%20the%20overview%20of%20their%20strategy.%20%20%22Next%20steps%2C%22%0Atimetables%2C%20and%20even%20conceptual%20understandings%20are%20given%20to%20us%0Aonly%20on%20a%20%22need%20to%20know%22%20basis.%20%20Without%20a%20doubt%2C%20the%20Next%20Level%0Ahas%20had%20an%20extremely%20detailed%20lesson%20plan%20designed%20for%20our%0Apersonal%20growth.%20%20In%20retrospect%2C%20it%20is%20quite%20evident%20how%20the%0Apremature%20introduction%20of%20more%20advanced%20concepts%20and%0Aunderstandings%20early%20on%20would%20have%20completely%20%22blown%22%20the%0Acircuitry%20of%20the%20comparatively%20primitive%20human%20computers%20(brains)%0Awe%20were%20using.%20%20Consequently%2C%20new%20steps%20and%20understandings%20were%0Apresented%20throughout%20our%20awakening%20in%20a%20carefully%20calculated%0Asequence.%20%20By%20this%20method%2C%20the%20limited%20human%20mechanism%20could%2C%0Awith%20some%20effort%2C%20be%20reprogrammed%20to%20accept%20and%20assimilate%20the%0Aadvanced%2C%20non-human%20perspectives%20we%20were%20receiving.%20%20As%20a%20result%2C%0Ayou%20will%20notice%20that%20throughout%20our%20materials%2C%20our%20understandings%0Aare%20constantly%20being%20updated%20and%20refined%20as%20our%20circuitry%0Aadapted.%20%20One%20%22fact%22%20we%20learned%20early%20on%20is%20that%20what%20is%20truth%0Afor%20us%20today%20may%20be%20just%20a%20stepping%20stone%20to%20a%20higher%0Aunderstanding%20that%20may%20be%20given%20to%20us%20tomorrow.%3Cp%3E%0A%0A%20%20%20%20%20Our%20elementary%20lesson%20plan%20was%2C%20of%20course%2C%20extremely%0Afrustrating%20for%20our%20Teachers%20-%20who%20literally%20were%20not%20permitted%0Ato%20access%20the%20mind%2Fknowledge%20and%20even%20the%20memories%20that%20were%0Apreviously%20their%20own%20(in%20the%20Next%20Level)%2C%20but%20which%20were%20not%20a%0Acompatible%20match%20with%20their%20temporary%20human%20condition%20and%20current%0Atask%20assignment.%20%20Furthermore%2C%20conscious%20remembrance%20of%20too%20much%0Aknowledge%20too%20soon%20could%20potentially%20be%20an%20interference%20and%0Aliability%20to%20their%20plan%20-%20our%20growth%20pattern.%20%20The%20irony%20here%20is%0Athat%20%3Cem%3Ethey%3C%2Fem%3E%20were%20likely%20the%20ones%20who%2C%20before%20coming%20into%20these%0Abodies%2C%20designed%20these%20%22limitations%22%20into%20their%20task%20-%20so%2C%20they%0Ahad%20only%20themselves%20to%20blame.%20%20This%20is%20a%20bit%20of%20what%20we%20would%0Acall%20Next%20Level%20humor.%3C%2Fp%3E%3Cp%3E%0A%0A%20%20%20%20But%20back%20to%20our%20overall%20chronology.%20%20On%20May%2027%2C%201993%2C%20we%20took%0Aa%20much%20more%20overt%20step%20toward%20the%20conclusion%20of%20our%20task.%20%20We%0Apublished%20a%20%201%2F3-page%20ad%2Fstatement%20in%20both%20the%20national%20and%0Ainternational%20editions%20of%20%3Cstrong%3E%3Cem%3EUSA%20TODAY%3C%2Fem%3E%3C%2Fstrong%3E%2C%20entitled%20%0A%3Cstrong%3E%3Cem%3E%22UFO%20Cult%22%20Resurfaces%20with%20Final%20Offer%3C%2Fem%3E%3C%2Fstrong%3E%20(see%20%0A%3Cem%3ESection%205%3C%2Fem%3E).%20%20And%20again%20the%20ball%20was%20rolling.%20%20We%20were%20definitely%20%0Ain%20the%20public%20eye.%20%20This%20ad%2Fstatement%2C%20with%20%20slight%20variations%2C%20entitled%20%0A%3Cstrong%3E%3Cem%3ELast%20Chance%20To%20Advance%20Beyond%20Human%3C%2Fem%3E%3C%2Fstrong%3E%20(see%20%0A%3Cem%3ESection%206)%2C%3C%2Fem%3E%20was%20then%20reprinted%20in%20alternative%20newspapers%2C%20weekly%20%0Anewspapers%2C%20and%20various%20magazines%20around%20the%20country%20as%20well%20as%20overseas%20%0A(listed%20in%20%20%3Cem%3ESection%20%205%3C%2Fem%3E).%20During%20the%20months%20that%20followed%2C%20we%20%0Amaintained%20an%20ongoing%20correspondence%20with%2C%20as%20well%20as%20provided%20video%20%0Atapes%20and%20written%20materials%20to%2C%20those%20who%20wrote%20to%20us%20with%20sincere%20%0Ainterest.%3C%2Fp%3E%3Cp%3E%0A%0AThen%2C%20in%20January%20of%201994%2C%20once%20again%2C%20we%20sold%20all%20of%20our%20worldly%0Apossessions%20except%20for%20a%20few%20cars%20and%20changes%20of%20clothing%2C%20and%0Aset%20out%20cross-country%20holding%20free%20public%20meetings%20from%20coast%20to%0Acoast%20for%209%20months%20(meeting%20locations%20listed%20in%20%3Cem%3ESection%20%206%3C%2Fem%3E).%0AIn%20addition%2C%20we%20did%20countless%20newspaper%2C%20radio%2C%20and%20TV%0Ainterviews.%20%20It%20became%20clear%20to%20us%2C%20during%20the%20course%20of%20these%0Ameetings%2C%20that%20our%20primary%20purpose%20for%20being%20out%20there%20at%20this%0Aparticular%20time%2C%20was%20%3Cem%3Enot%3C%2Fem%3E%20to%20relate%20to%20the%20public%20in%20general%2C%20but%0Ato%20locate%20our%20additional%20crew%20members%2C%20whom%20we%20now%20refer%20to%20as%0Athe%20%22second%20%20wave.%22%20%20Their%20addition%20to%20our%20class%20in%201994%20nearly%0Adoubled%20our%20numbers.%20%20It%20was%20quite%20evident%20to%20them%20and%20to%20us%20that%0Awe%20were%20of%20the%20same%20family%2C%20of%20the%20same%20mind.%20%20And%20once%20again%2C%20we%0Arealized%20that%20this%20was%20all%20part%20of%20a%20%20greater%20plan%20that%20was%0Aunfolding%20according%20to%20the%20design%20of%20those%20in%20the%20Next%20Level%0Aresponsible%20for%20this%20current%20civilization%20%22experiment.%22%20%20What%0Asome%20might%20call%20the%20%22second%20rapture%22%20or%20snatching%20away%2C%20found%20all%0Aof%20us%2C%20both%20the%20first%20and%20the%20second%20wave%2C%20removed%20from%20the%0Aworld%2C%20entering%20into%20what%20we%20would%20describe%20as%20an%20accelerated%0Aversion%20of%20the%20%22metamorphic%20classroom%2C%22%20lasting%20over%20a%20year%0Abefore%20our%20once%20again%20%22coming%20out.%22%3C%2Fp%3E%3Cp%3E%0A%0AThen%20on%20September%2025-26%2C%201995%2C%20from%20a%20secluded%20location%2C%20we%0Aissued%20a%20statement%20that%20went%20out%20-%20%22on%20line%22%20-%20around%20the%20globe%2C%0Afor%20our%20sixth%20public%20interaction.%20%20The%20statement%20entitled%0A%22%3Cstrong%3E%3Cem%3EUndercover%20'Jesus'%20Surfaces%20Before%20Departure%3C%2Fem%3E%3C%2Fstrong%3E%22%20%0Awas%20posted%20to%20the%20%3Cstrong%3EWorld%20Wide%20Web%3C%2Fstrong%3E%20and%20to%2095%20UseNET%20newsgroups%20%0Aon%20the%20%3Cstrong%3EInternet%3C%2Fstrong%3E%2C%20potentially%20reaching%20millions%20%0Asimultaneously.%20%20And%20in%20keeping%20with%20our%20policy%20of%20%22speaking%20in%20tongues%2C%22%20%0Aon%20October%2011%2C%201995%2C%20we%20posted%20a%20higher%2C%20more%20generic%20translation%2C%20%0Aentitled%20%22%3Cstrong%3E%3Cem%3E'95%20Statement%20by%20an%20E.T.%20Presently%20Incarnate%0A%3C%2Fem%3E%3C%2Fstrong%3E.%22%20%20The%20response%20was%20extremely%20animated%20and%20somewhat%20mixed.%20%20%0AHowever%2C%20the%20loudest%20voices%20were%20those%20expressing%20ridicule%2C%20hostility%2C%20or%20%0Aboth%20-%20so%20quick%20to%20judge%20that%20which%20they%20could%20not%20comprehend.%20%20This%20was%20%0Athe%20signal%20to%20us%20to%20begin%20our%20preparations%20to%20return%20%22home.%22%20%20The%20weeds%20%0Ahave%20taken%20over%20the%20garden%20and%20truly%20disturbed%20its%20usefulness%20beyond%20repair%0A-%20it%20is%20time%20for%20the%20civilization%20to%20be%20recycled%20-%20%22spaded%20under.%22%3C%2Fp%3E%3Cp%3E%0A%0A%20%20%20%20And%20so%20this%20brings%20us%20before%20the%20public%20once%20again%2C%20with%20our%0A%22%3Cem%3Efarewell%20legacy%3C%2Fem%3E.%22%20%20At%20the%20time%20of%20this%20writing%2C%20we%20do%20not%20yet%20know%0Athe%20extent%20of%20this%20seventh%2C%20and%20we%20suspect%20final%2C%20public%20involvement.%0AOur%20book%2C%20an%20anthology%20of%20our%20materials%2C%0Abegins%20%22phase%20one.%22%20%20Nothing%20is%20predetermined.%20%20The%20response%20of%20the%20world%0Ato%20the%20Next%20Level%20will%20be%20monitored%20very%20carefully.%20%20What%20happens%20next%0Aremains%20in%20the%20balance.%3C%2Fp%3E%3Cp%3E%0A%0A%20%20%20It%20has%20been%20given%20that%20what%20you%20do%20with%20this%20-%20how%20%3Cem%3Eyou%3C%2Fem%3E%20respond%0Ato%20us%20-%20is%20strictly%20up%20to%20you.%3C%2Fp%3E%3Cp%3E%0A%0A%3C%2Fp%3E%3C%2Ffont%3E%3Cp%20align%3D%22right%22%3E%3Cfont%20size%3D%224%22%3EApril%201996%0A%3C%2Ffont%3E%0A%3C%2Fp%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fp%3E%3C%2Fcenter%3E%0A%3Cp%3E%0A%3Cbr%3E%0A%0A%3C%2Fp%3E%3Ccenter%3E%3Cimg%3E%3C%2Fcenter%3E%3Cp%3E%0A%3C%2Fp%3E%3Ccenter%3E%3Cimg%3E%3C%2Fcenter%3E%3Cp%3E%0A%3C%2Fp%3E%3Ch3%3E%3Ccenter%3E%0AFor%20the%20next%20topic%20on%20our%20list%3A%20%3Ca%20href%3D%22lastchnc.htm%22%3E%3Cstrong%3E%7C%3C%2Fstrong%3E%20%0ALast%20Chance%20To%20Advance%20Beyond%20Human%20%3Cstrong%3E%7C%3C%2Fstrong%3E%3C%2Fa%3E%0A%3Cbr%3E%0AFor%20subsequent%20topics%20return%20to%3A%20%3Ca%20href%3D%22..%2Findex.html%23keys%22%3E%0A%3Cstrong%3E%7C%3C%2Fstrong%3E%20Home%20Page%20Bookmarks%20%3Cstrong%3E%7C%3C%2Fstrong%3E%3C%2Fa%3E%20%0A%3Cp%3E%0ATo%20Send%20Us%20an%20Email%20Use%3Cstrong%3E%3A%3C%2Fstrong%3E%20%26nbsp%3B%0A%3Ca%20href%3D%22mailto%3Arep%40heavensgate.com%22%3E%20%0Arep%40heavensgate.com%3C%2Fa%3E%0A%3C%2Fp%3E%3C%2Fcenter%3E%3C%2Fh3%3E%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "7aaebcbe-ed0b-43b1-bf80-7c437116fae6",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "heavensgate.com-misc-ovrview.htm"
+}

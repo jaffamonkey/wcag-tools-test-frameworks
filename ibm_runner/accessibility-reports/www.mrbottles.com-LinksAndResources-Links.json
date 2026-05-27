@@ -1,0 +1,318 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 2007,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 2007,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 564,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input name=\"search\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20name%3D%5C%22search%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/form[1]/input[2]",
+                "aria": "/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 159,
+                "top": 564,
+                "height": 22,
+                "width": 59
+            },
+            "snippet": "<input value=\"Search\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Search%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[1]/a[1]",
+                "aria": "/document[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 641,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"#top\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%23top%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[1]/a[1]",
+                "aria": "/document[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 641,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"#top\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%23top%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[2]/div[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 824,
+                "height": 289,
+                "width": 784
+            },
+            "snippet": "<table>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[2]/div[1]/table[2]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1180,
+                "height": 308,
+                "width": 784
+            },
+            "snippet": "<table>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[2]/div[1]/table[3]",
+                "aria": "/document[1]/table[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1555,
+                "height": 66,
+                "width": 769
+            },
+            "snippet": "<table style=\"width: 98%;\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20style%3D%5C%22width%3A%2098%25%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1365,
+    "ruleTime": 18,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 41,
+            "elementsViolation": 6,
+            "elementsViolationReview": 8,
+            "violation": 7,
+            "potentialviolation": 2,
+            "recommendation": 33,
+            "potentialrecommendation": 14,
+            "manual": 1,
+            "pass": 1308
+        },
+        "scanTime": 58,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778712330173,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EAntique%20bottle%20collector%20links%20for%20information%20on%20Wisconsin%20antique%20bottles%20%7C%20MrBottles.com%20-%20Wisconsin%20Antique%20Bottle%20Collectors%20Resource%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20id%3D%22Links%22%20class%3D%22Links%22%3E%0A%3Cdiv%20class%3D%22wrap%22%3E%0A%3Cdiv%20id%3D%22header%22%3E%0A%0A%3Cul%20id%3D%22leftNavUL%22%3E%0A%09%3Cli%20id%3D%22galleriesLI%22%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FWisconsinBottleGalleries%22%3EGalleries%3C%2Fa%3E%0A%09%09%3Cul%20id%3D%22galleriesUL%22%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FWisconsinSeltzers%22%3ESeltzer%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FWisconsinMedicines%22%3EMedicine%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FWisconsinBlobBeers%22%3EBlob%20Beer%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FWisconsinMilkBottles%22%3EMilk%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FWisconsinGlass%22%3EWisconsin%20Glass%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FWhiskeyFlasks%22%3EWhiskey%20Bottle%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FWisconsinBlobSoda%22%3ESoda%20Bottle%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FWisconsinHutchinson%22%3EHutchinson%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FBitters%22%3EBitters%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FClayBeers%22%3EClay%20Beer%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FCrownBottleTop%22%3ECrown%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FWisconsinStoneware%22%3EStoneware%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%3C%2Ful%3E%0A%09%3C%2Fli%3E%0A%0A%09%3Cli%20id%3D%22ofInterestLI%22%3E%3Ca%20title%3D%22%22%3EOf%20Interest%3C%2Fa%3E%0A%09%09%3Cul%20id%3D%22ofInterestUL%22%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FCategory%2FHallofFame%22%3EHall%20Of%20Fame%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FOfInterest%2FWishList%22%3EWish%20List%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FOfInterest%2FAppraisals%22%3EAppraisals%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FOfInterest%2FBottleCleaning%22%3EBottle%20Cleaning%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%3C%2Ful%3E%0A%09%3C%2Fli%3E%0A%09%3Cli%20id%3D%22resourcesLI%22%3E%3Ca%20title%3D%22%22%3EResources%3C%2Fa%3E%0A%09%09%3Cul%20id%3D%22resourcesUL%22%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FWisconsinAntiqueFAQs%22%3EFAQ%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FLinksAndResources%2FLinks%22%3ELinks%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FEvents%22%3EEvents%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FTheHunt%22%3EThe%20Hunt%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%3C%2Ful%3E%0A%09%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%09%3Ca%20href%3D%22%2F%22%20title%3D%22Wisconsin%20Antique%20Bottles%20only%20complete%20website%20for%20bottle%20collectors%20everywhere%20to%20learn%20about%20Wisconsin's%20treasures%22%20id%3D%22headerLogo%22%3E%0A%09%09%3Cimg%20alt%3D%22Wisconsin%20Antique%20%26amp%3B%20Advertising%20Club%20mr%20bottles%22%20id%3D%22headerLogoImage%22%20title%3D%22mr%20bottles%20is%20an%20active%20member%20of%20Wisconsin%20Antique%20%26amp%3B%20Advertising%20Club%20%26amp%3B%20The%20Federation%20of%20Historical%20Bottle%20Collectors%20showing%20antiques%20with%20historical%20enrichment%22%3E%3Cimg%20id%3D%22headerLogoImageSpin%22%20alt%3D%22The%20Federation%20of%20Historical%20Bottle%20Collectors%20Found%201969%22%20title%3D%22The%20Federation%20of%20Historical%20Bottle%20Collectors%20(FOHBC)%20non-profit%20organization%20supporting%20collectors%20of%20historical%20bottles%2C%20flasks%2C%20jars%20and%20related%20items%22%3E%0A%09%3C%2Fa%3E%20%0A%09%09%0A%3Cul%20id%3D%22rightNavUL%22%3E%0A%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FWisconsinNews%22%3ENews%3C%2Fa%3E%3C%2Fli%3E%0A%09%3Cli%3E%3Ca%20title%3D%22%22%20href%3D%22%2FContact%22%3EContact%3C%2Fa%3E%3C%2Fli%3E%0A%09%3Cli%20id%3D%22appraisalLI%22%20style%3D%22position%3Arelative%3B%20top%3A-13px%3B%20left%3A10px%3B%22%3E%3Cimg%20style%3D%22position%3Aabsolute%3B%20top%3A0%3B%20left%3A0%3B%22%20alt%3D%22%22%3E%3Ca%20style%3D%22position%3Aabsolute%3B%20top%3A0px%3B%20left%3A46px%3B%22%20title%3D%22%22%20href%3D%22%2FOfInterest%2FAppraisals%22%3ENeed%20An%20Appraisal%3F%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%3Cdiv%20id%3D%22searchContainer%22%3E%0A%09%3Cform%20class%3D%22searchFormCat%22%20name%3D%22SearchForm%22%20action%3D%22%2FSearch%22%20method%3D%22post%22%3E%0A%09%09%3Cinput%20type%3D%22text%22%20name%3D%22search%22%3E%0A%09%09%3Cinput%20type%3D%22submit%22%20value%3D%22Search%22%3E%0A%09%3C%2Fform%3E%0A%3C%2Fdiv%3E%0A%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20id%3D%22mobileMenu%22%3E%3Cspan%20id%3D%22menuBarBox1%22%3E%3Cspan%20class%3D%22menuBar%22%20id%3D%22menuBar1%22%3E%3Cimg%20id%3D%22menuBar1img%22%20alt%3D%22%22%3E%3C%2Fspan%3E%0A%3Cspan%20class%3D%22menuBar%22%20id%3D%22menuBar2%22%3E%3Cimg%20id%3D%22menuBar2img%22%20alt%3D%22%22%3E%3C%2Fspan%3E%0A%3Cspan%20class%3D%22menuBar%22%20id%3D%22menuBar3%22%3E%3Cimg%20id%3D%22menuBar3img%22%20alt%3D%22%22%3E%3C%2Fspan%3E%0A%3C%2Fspan%3E%3C%2Fdiv%3E%0A%3Ca%20href%3D%22%2F%22%20id%3D%22mobileLogo%22%20title%3D%22Wisconsin%20Antique%20Bottles%20only%20complete%20website%20for%20bottle%20collectors%20everywhere%20to%20learn%20about%20Wisconsin's%20treasures%22%3E%3Cimg%20id%3D%22mobileLogoImg%22%20alt%3D%22Wisconsin%20Antique%20%26amp%3B%20Advertising%20Club%20mr%20bottles%22%20title%3D%22mr%20bottles%20is%20an%20active%20member%20of%20Wisconsin%20Antique%20%26amp%3B%20Advertising%20Club%20%26amp%3B%20The%20Federation%20of%20Historical%20Bottle%20Collectors%20showing%20antiques%20with%20historical%20enrichment%22%3E%3C%2Fa%3E%0A%0A%0A%3C%2Fdiv%3E%0A%3Cdiv%20id%3D%22mobileTopImage%22%3E%3Cimg%20title%3D%22%22%20alt%3D%22%22%3E%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22wrap%22%3E%3Cdiv%20id%3D%22scrollDown%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%3Cdiv%20id%3D%22TopBG%22%3E%3Cdiv%20class%3D%22wrap%22%3E%3Cdiv%20id%3D%22subPageBox%22%3E%3Cdiv%20class%3D%22rollIn%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22wrap%22%3E%0A%0A%3Cdiv%20id%3D%22backtoTopBtn%22%3E%3Ca%20href%3D%22%23top%22%3E%3Cimg%20alt%3D%22%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%0A%0A%3Cdiv%20id%3D%22main%22%3E%0A%3Cdiv%20id%3D%22mainContent%22%3E%3Ch1%3ELINKS%20to%20places%20on%20the%20Internet%20Wisconsin%20Antique%20Bottle%20Collectors%20should%20visit%3C%2Fh1%3E%0A%3Ch2%3ENational%20Sites%20With%20Awesome%20Information%3C%2Fh2%3E%0A%3Ctable%3E%0A%3Ctbody%3E%0A%3Ctr%3E%0A%3Ctd%20style%3D%22text-align%3A%20center%3B%22%3E%3Cstrong%3ELink%3C%2Fstrong%3E%3C%2Ftd%3E%0A%3Ctd%20style%3D%22text-align%3A%20center%3B%22%3E%3Cstrong%3EDescription%3C%2Fstrong%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.antique-bottles.net%2Fforum%2F%22%20target%3D%22antique%20glass%22%3EAntique%20Bottles%20Forum%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EA%20stomping%20ground%20for%20many%20of%20the%20most%20knowledgeable%20collectors%20in%20the%20country%20log%20in%20and%20talk%20it%20up!%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.blm.gov%2Fhistoric_bottles%2Findex.htm%22%20target%3D%22antiques%22%3EHistoric%20Glass%20BottleWebsite%20Identification%20%26amp%3B%20InformationWebsites%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EThe%20Fed%20answer%20two%20simple%20%3F's...%201.%20What%20is%20the%20age%20of%20the%20bottle%3F%20(Bottle%20Dating)%202.%20What%20type%20of%20bottle%20is%20it%3F%20(Bottle%20Identification%20or%20Typing)%20Simply%20incredible!%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.hutchbook.com%2F%22%20target%3D%22antiques%22%3EHutchBook.com%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3ETHE%20National%20resource%20for%20Hutchinson%20Soda%20Bottles%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.bottleden.com%2F%22%20target%3D%22antiques%22%3EThe%20Bottle%20Den%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EWil%20Martindale's%20bottle%20site.%20Wil%20is%20working%20on%20a%20catalog%20of%20every%20pontiled%20soda.%20Check%20out%20his%20site%20and%20then%20go%20find%20him%20one%20not%20listed!%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.pre-pro.com%2Fmidacore%2Findex.php%22%20target%3D%22antiques%22%3EThe%20Shot%20Glass%20Database%20%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EA%20great%20site%20with%20includes%20information%20about%20many%20Wisconsin%20whiskey%20companies%2C%20brands%20and%20shot%20glasses.%20Try%20running%20an%20advance%20search%20for%20Wisconsin.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.wisantique.com%2F%22%20target%3D%22antiques%22%3EWisconsin%20Antique%20%26amp%3B%20Advertising%20Club%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EWisconsin%20antique%20bottle%20collectors%2C%20antique%20stoneware%20collectors%20and%20antique%20advertising%20collectors%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%0A%3C%2Ftable%3E%0A%3Ch2%3EOther%20Wisconsin%20Sites%20Worth%20a%20Look%20For%20Antique%20Bottle%20Collectors%3C%2Fh2%3E%0A%3Ctable%3E%0A%3Ctbody%3E%0A%3Ctr%3E%0A%3Ctd%20style%3D%22text-align%3A%20center%3B%22%3E%3Cstrong%3ELink%3C%2Fstrong%3E%3C%2Ftd%3E%0A%3Ctd%20style%3D%22text-align%3A%20center%3B%22%3E%3Cstrong%3EDescription%3C%2Fstrong%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.inet-pc.com%2F%22%20target%3D%22antiques%22%3EiNET%20PC%20Computers%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EGet%20a%20better%20computer%20to%20catalog%20and%20post%20your%20bottle%20collection%20online.%20Superior%20parts%20and%20live%20customer%20service%20from%20real%20people%20in%20Southeastern%20Wisconsin.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.kocanola.com%2F%22%20target%3D%22antiques%22%3EKoca%20Nola%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3ECharles%20David%20hopes%20the%20site%20will%20generate%20additional%20input%20for%20his%20book%20about%20Koca%20Nola%20he%20plans%20to%20publish%20in%202008.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.inet-web.com%2F%22%20target%3D%22antiques%22%3EMilwaukee%20Web%20Development%20Company%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EiNET%20Web%20will%20infuse%20your%20hobby%20website%20with%20creative%20genius.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.racinehistory.com%2F%22%20target%3D%22antiques%22%3ERacine%20History%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EOne%20of%20the%20most%20complete%20web%20based%20historical%20archives%20on%20any%20Wisconsin%20County%20or%20City%20including%20the%20early%20bottlers%20and%20brewers%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.uwconnection.com%2F%22%20target%3D%22antiques%22%3EThe%20Under%20Water%20Connection%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EThe%20place%20mrbottles%2C%20blobbottlebob%2C%20thekid%20and%20many%20others%20got%20scuba%20certified.%20The%20people%20are%20great%20%26amp%3B%20they%20support%20our%20hobby.%20Highly%20recommended%20underwater%20archeologist%20resource%20for%20Wisconsin%20antique%20bottle%20collectors.%20Tell%20em%20mrbottles%20sent%20you!%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.wisconsinpottery.org%2Findex.htm%22%20target%3D%22antiques%22%3EWisconsin%20Pottery%20Association%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EGreat%20information%20about%20Wisconsin%20Pottery%20New%20%26amp%3B%20Old%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%0A%3C%2Ftable%3E%0A%3Ch2%3EWisconsin%20Bottle%20Collectors%3C%2Fh2%3E%0A%3Ctable%20style%3D%22width%3A%2098%25%3B%22%3E%0A%3Ctbody%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Cstrong%3ELink%3C%2Fstrong%3E%3C%2Ftd%3E%0A%3Ctd%3E%3Cstrong%3EDescription%3C%2Fstrong%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.wisantique.com%2F%22%20target%3D%22antiques%22%3ETHE%20Wisconsin%20Antique%20%26amp%3B%20Advertising%20Club%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3EThe%20organization%20bringing%20Milwaukee%2FWisconsin%20antique%20bottle%2C%20stoneware%20and%20advertising%20collectors%20together%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%0A%3C%2Ftable%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%20%20%20%20%0A%0A%3Cdiv%20id%3D%22footer%22%3E%0A%3Cdiv%20class%3D%22wrap%22%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.fohbc.org%22%20target%3D%22Wisconsin%22%20id%3D%22footerLogo%22%20title%3D%22The%20Federation%20of%20Historical%20Bottle%20Collectors%20(FOHBC)%20is%20a%20non-profit%20organization%20supporting%20collectors%20of%20historical%20bottles%2C%20flasks%2C%20jars%20and%20related%20items%22%3E%3Cimg%20alt%3D%22The%20Federation%20of%20Historical%20Bottle%20Collectors%20Found%201969%22%20title%3D%22The%20Federation%20of%20Historical%20Bottle%20Collectors%20virtual%20museum%20glass%20circle%20logo%22%3E%20%3Cimg%20alt%3D%22The%20Federation%20of%20Historical%20Bottle%20Collectors%20Found%201969%22%20title%3D%22The%20Federation%20of%20Historical%20Bottle%20Collectors%20glass%20bottle%20outline%20logo%22%3E%3C%2Fa%3E%0A%3Cul%20id%3D%22footerNav%22%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FCategory%2FWisconsinBottleGalleries%22%20title%3D%22Visit%20Wiscon%20Antique%20Bottle%20Gallerys%20for%20blob%20sodas%2C%20beers%2C%20hutchinsons%2C%20milk%20bottles%2C%20medicine%20bottles%22%3EGALLERIES%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20title%3D%22Wisconsin%20bottle%20collector%20information%22%3EOF%20INTEREST%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FLinksAndResources%22%20title%3D%22Interesting%20and%20useful%20links%20to%20other%20websites%20for%20information%20on%20antique%20bottle%20collecting%20around%20the%20country%22%3ELINKS%20%26amp%3B%20RESOURCES%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWisconsinNews%22%20title%3D%22News%20stories%20on%20Wisconsin%20Antique%20bottles%22%3ENEWS%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FContact%22%20title%3D%22Contact%20MrBottles%20for%20further%20information%20or%20to%20share%20your%20story%20or%20collection%22%3ECONTACT%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cul%20id%3D%22footerNav2%22%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FHallOfFame%22%20title%3D%22See%20superior%20antique%20bottles%20or%20extremely%20rare%20Wisconsin%20Antique%20bottles%22%3EHall%20Of%20Fame%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FOfInterest%2FWishList%22%3EWish%20List%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FOfInterest%2FAppraisals%22%20title%3D%22Request%20an%20appraisal%20of%20a%20Wisconsin%20Antique%20bottle%20you%20own%22%3EAppraisals%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FOfInterest%2FBottleCleaning%22%20title%3D%22Wisconsin%20antique%20bottle%20cleaning%20service%20information%22%3EBottle%20Cleaning%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cul%20id%3D%22footerNav3%22%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWisconsinAntiqueFAQs%22%20title%3D%22FAQ's%20on%20Wisconsin%20Antique%20bottle%20collecting%22%3EFAQ%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FLinksAndResources%2FLinks%22%20title%3D%22Interesting%20and%20useful%20links%20to%20other%20websites%20for%20information%20on%20antique%20bottle%20collecting%20around%20the%20country%22%3ELinks%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FEvents%22%20title%3D%22Calendar%20of%20events%20coming%20up%20of%20interest%20to%20Wisconsin%20Antique%20Bottle%20collectors%22%3EEvents%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FTheHunt%22%20title%3D%22Stories%20about%20Wisconsin%20Antique%20Bottle%20hunts%20with%20fascinating%20bottle%20finds%22%3EThe%20Hunt%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20id%3D%22noJava%22%3EPlease%20Enable%20JAVASCRIPT%20To%20Properly%20View%20This%20Site.%3C%2Fdiv%3E%0A%3Cspan%20class%3D%22noScriptWarning%22%3EJavascript%20is%20required%20for%20this%20website%20to%20fully%20function.%3C%2Fspan%3E%0A%3Cnoscript%3E%0A%0A%3C%2Fnoscript%3E%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "d6dc6a56-bb1b-4430-8e4a-bc8cd5bd9cf9",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.mrbottles.com-LinksAndResources-Links"
+}

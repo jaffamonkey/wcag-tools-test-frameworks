@@ -1,0 +1,50 @@
+{
+  "defaults": {
+    "chromeLaunchConfig": {
+      "args": [
+        "--disable-dev-shm-usage",
+        "--no-sandbox",
+        "--disable-gpu"
+      ],
+      "ignoreHTTPSErrors": true
+    },
+    "includeWarnings": true,
+    "threshold": 1,
+    "timeout": 60000,
+    "wait": 10000,
+    "concurrency": 1,
+    "standard": "WCAG2AA",
+    "runners": [
+      "axe"
+    ],
+    "reporters": [
+      "cli",
+      [
+        "./custom-reporter.js",
+        {
+          "dir": "./accessibility-reports"
+        }
+      ]
+    ]
+  },
+  "urls": [
+    "https://practicetestautomation.com/practice-test-login/",
+    {
+      "url": "https://practicetestautomation.com/practice-test-login/",
+      "actions": [
+        "wait for input[name=username] to be visible",
+        "set field input[name=username] to student",
+        "set field input[name=password] to Password123",
+        "click element #submit",
+        "wait for url to be https://practicetestautomation.com/logged-in-successfully/"
+      ]
+    },
+    "https://practicetestautomation.com",
+    "https://practicetestautomation.com/practice/",
+    "https://practicetestautomation.com/courses/",
+    "https://practicetestautomation.com/blog/",
+    "https://practicetestautomation.com/contact/",
+    "https://practicetestautomation.com/practice-test-exceptions/",
+    "https://practicetestautomation.com/practice-test-table/"
+  ]
+}

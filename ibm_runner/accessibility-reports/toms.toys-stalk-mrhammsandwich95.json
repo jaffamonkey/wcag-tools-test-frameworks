@@ -1,0 +1,100 @@
+{
+    "results": [
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 600,
+                "width": 784
+            },
+            "snippet": "<body class=\"__className_9f6af0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20class%3D%5C%22__className_9f6af0%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 600,
+                "width": 784
+            },
+            "snippet": "<div style=\"font-family: system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"; height: 100vh; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22font-family%3A%20system-ui%2C%20%5C%22Segoe%20UI%5C%22%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%5C%22Apple%20Color%20Emoji%5C%22%2C%20%5C%22Segoe%20UI%20Emoji%5C%22%3B%20height%3A%20100vh%3B%20text-align%3A%20center%3B%20display%3A%20flex%3B%20flex-direction%3A%20column%3B%20align-items%3A%20center%3B%20justify-content%3A%20center%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 69,
+    "ruleTime": 0,
+    "nls": {
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 4,
+            "elementsViolation": 1,
+            "elementsViolationReview": 2,
+            "violation": 1,
+            "potentialviolation": 1,
+            "recommendation": 2,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 64
+        },
+        "scanTime": 5,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778713603712,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3E404%3A%20This%20page%20could%20not%20be%20found.%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22__className_9f6af0%22%3E%3Cdiv%20hidden%3D%22%22%3E%3C%2Fdiv%3E%3Cdiv%20style%3D%22font-family%3A%20system-ui%2C%20%26quot%3BSegoe%20UI%26quot%3B%2C%20Roboto%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20%26quot%3BApple%20Color%20Emoji%26quot%3B%2C%20%26quot%3BSegoe%20UI%20Emoji%26quot%3B%3B%20height%3A%20100vh%3B%20text-align%3A%20center%3B%20display%3A%20flex%3B%20flex-direction%3A%20column%3B%20align-items%3A%20center%3B%20justify-content%3A%20center%3B%22%3E%3Cdiv%3E%3Ch1%20class%3D%22next-error-h1%22%20style%3D%22display%3A%20inline-block%3B%20margin%3A%200px%2020px%200px%200px%3B%20padding%3A%200px%2023px%200px%200px%3B%20font-size%3A%2024px%3B%20font-weight%3A%20500%3B%20vertical-align%3A%20top%3B%20line-height%3A%2049px%3B%22%3E404%3C%2Fh1%3E%3Cdiv%20style%3D%22display%3A%20inline-block%3B%22%3E%3Ch2%20style%3D%22font-size%3A%2014px%3B%20font-weight%3A%20400%3B%20line-height%3A%2049px%3B%20margin%3A%200px%3B%22%3EThis%20page%20could%20not%20be%20found.%3C%2Fh2%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnext-route-announcer%20style%3D%22position%3A%20absolute%3B%22%3E%3C%2Fnext-route-announcer%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "82a7b3ab-5bb8-4ba1-aa81-17ff3f2dd70f",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "toms.toys-stalk-mrhammsandwich95"
+}

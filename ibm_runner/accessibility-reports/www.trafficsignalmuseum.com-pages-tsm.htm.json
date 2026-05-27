@@ -1,0 +1,762 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 810,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 810,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 132,
+                "width": 784
+            },
+            "snippet": "<table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22100%25%5C%22%20cellspacing%3D%5C%220%5C%22%20cellpadding%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/h1[1]/a[1]/i[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/heading[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 217,
+                "top": 30,
+                "height": 36,
+                "width": 60
+            },
+            "snippet": "<font color=\"#0099FF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%230099FF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/h1[1]/a[1]/i[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/heading[1]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 32px and weight of 700",
+            "messageArgs": [
+                "3.00",
+                32,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 217,
+                "top": 30,
+                "height": 36,
+                "width": 60
+            },
+            "snippet": "<font color=\"#0099FF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2032px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%230099FF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.00%22%2C32%2C700%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/h1[1]/a[1]/i[1]/font[3]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/heading[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 32px and weight of 700",
+            "messageArgs": [
+                "1.07",
+                32,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 375,
+                "top": 30,
+                "height": 36,
+                "width": 94
+            },
+            "snippet": "<font color=\"#FFFF00\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2032px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23FFFF00%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.07%22%2C32%2C700%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/h1[1]/a[1]/i[1]/font[4]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/heading[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 32px and weight of 700",
+            "messageArgs": [
+                "1.37",
+                32,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 468,
+                "top": 30,
+                "height": 36,
+                "width": 116
+            },
+            "snippet": "<font color=\"#00FF00\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2032px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%2300FF00%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.37%22%2C32%2C700%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/center[1]/table[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 118,
+                "top": 88,
+                "height": 52,
+                "width": 565
+            },
+            "snippet": "<table width=\"70%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%2270%25%5C%22%20cellspacing%3D%5C%220%5C%22%20cellpadding%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "form_submit_button_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/center[1]/table[1]/tbody[1]/tr[1]/td[1]/form[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify the <form> element has a submit button or an image button",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 118,
+                "top": 104,
+                "height": 20,
+                "width": 331
+            },
+            "snippet": "<form name=\"jump\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/form_submit_button_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cform%3E%20element%20has%20a%20submit%20button%20or%20an%20image%20button%22%2C%22snippet%22%3A%22%3Cform%20name%3D%5C%22jump%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22form_submit_button_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/center[1]/table[1]/tbody[1]/tr[1]/td[1]/form[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 118,
+                "top": 104,
+                "height": 20,
+                "width": 331
+            },
+            "snippet": "<form name=\"jump\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20name%3D%5C%22jump%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/center[1]/table[1]/tbody[1]/tr[1]/td[1]/form[1]/p[1]/select[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/form[1]/paragraph[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <select> has no associated label",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 118,
+                "top": 105,
+                "height": 19,
+                "width": 331
+            },
+            "snippet": "<select size=\"1\" value=\"GO\" name=\"menu\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cselect%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cselect%20size%3D%5C%221%5C%22%20value%3D%5C%22GO%5C%22%20name%3D%5C%22menu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "form_submit_button_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/center[1]/table[1]/tbody[1]/tr[1]/td[2]/form[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[2]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify the <form> element has a submit button or an image button",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 449,
+                "top": 104,
+                "height": 20,
+                "width": 234
+            },
+            "snippet": "<form name=\"jump1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/form_submit_button_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cform%3E%20element%20has%20a%20submit%20button%20or%20an%20image%20button%22%2C%22snippet%22%3A%22%3Cform%20name%3D%5C%22jump1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22form_submit_button_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/center[1]/table[1]/tbody[1]/tr[1]/td[2]/form[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[2]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 449,
+                "top": 104,
+                "height": 20,
+                "width": 234
+            },
+            "snippet": "<form name=\"jump1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20name%3D%5C%22jump1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/center[1]/table[1]/tbody[1]/tr[1]/td[2]/form[1]/p[1]/select[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[2]/form[1]/paragraph[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <select> has no associated label",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 449,
+                "top": 105,
+                "height": 19,
+                "width": 234
+            },
+            "snippet": "<select size=\"1\" value=\"GO\" name=\"menu1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cselect%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cselect%20size%3D%5C%221%5C%22%20value%3D%5C%22GO%5C%22%20name%3D%5C%22menu1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 140,
+                "height": 663,
+                "width": 784
+            },
+            "snippet": "<table width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22100%25%5C%22%20cellspacing%3D%5C%220%5C%22%20cellpadding%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/p[1]/big[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 19.2px and weight of 400",
+            "messageArgs": [
+                "1.80",
+                19.2,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 9,
+                "top": 156,
+                "height": 175,
+                "width": 784
+            },
+            "snippet": "<big>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2019.2px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cbig%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.80%22%2C19.2%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/p[1]/big[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"A room or building which houses historical items\"",
+            "messageArgs": [
+                "\"A room or building which houses historical items\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 9,
+                "top": 156,
+                "height": 175,
+                "width": 784
+            },
+            "snippet": "<big>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22A%20room%20or%20building%20which%20houses%20historical%20items%5C%22%22%2C%22snippet%22%3A%22%3Cbig%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22A%20room%20or%20building%20which%20houses%20historical%20items%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/p[1]/big[1]/a[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 19.2px and weight of 400",
+            "messageArgs": [
+                "1.80",
+                19.2,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 265,
+                "top": 266,
+                "height": 21,
+                "width": 278
+            },
+            "snippet": "<a href=\"/pages/index.html#buysignals\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2019.2px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fpages%2Findex.html%23buysignals%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.80%22%2C19.2%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/center[1]/big[1]/font[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 24px and weight of 400",
+            "messageArgs": [
+                "1.80",
+                24,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 274,
+                "top": 348,
+                "height": 27,
+                "width": 254
+            },
+            "snippet": "<font size=\"+2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2024px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%22%2B2%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.80%22%2C24%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/center[1]/big[1]/p[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 19.2px and weight of 400",
+            "messageArgs": [
+                "1.80",
+                19.2,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 395,
+                "height": 220,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2019.2px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.80%22%2C19.2%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/center[1]/big[1]/p[2]/font[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 24px and weight of 400",
+            "messageArgs": [
+                "1.80",
+                24,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 322,
+                "top": 634,
+                "height": 27,
+                "width": 157
+            },
+            "snippet": "<font size=\"+2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2024px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%22%2B2%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.80%22%2C24%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/center[1]/p[1]/big[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/paragraph[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 19.2px and weight of 400",
+            "messageArgs": [
+                "1.80",
+                19.2,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 11,
+                "top": 681,
+                "height": 65,
+                "width": 779
+            },
+            "snippet": "<big>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2019.2px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cbig%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.80%22%2C19.2%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/center[1]/p[2]/big[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/paragraph[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 19.2px and weight of 400",
+            "messageArgs": [
+                "1.80",
+                19.2,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 66,
+                "top": 763,
+                "height": 21,
+                "width": 670
+            },
+            "snippet": "<big>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2019.2px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cbig%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.80%22%2C19.2%2C400%5D%7D"
+        }
+    ],
+    "numExecuted": 609,
+    "ruleTime": 21,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "potential_graphic_background": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "form_submit_button_exists": {
+            "0": "A <form> element should have a submit button or an image button",
+            "Potential_1": "Verify the <form> element has a submit button or an image button"
+        },
+        "aria_form_label_unique": {
+            "0": "Each element with \"form\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"form\" role do not have unique labels"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 22,
+            "elementsViolation": 8,
+            "elementsViolationReview": 19,
+            "violation": 9,
+            "potentialviolation": 14,
+            "recommendation": 7,
+            "potentialrecommendation": 2,
+            "manual": 1,
+            "pass": 576
+        },
+        "scanTime": 42,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778713413950,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EAbout%20The%20Traffic%20Signal%20Museum%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20link%3D%22%2366CCFF%22%20alink%3D%22%23FF0080%22%20vlink%3D%22%23FFFF00%22%20background%3D%22%2Fpics%2Fssbackground.gif%22%20bgproperties%3D%22fixed%22%20text%3D%22%2366CCFF%22%20%3Cbgcolor%3D%22%23220066%22%3E%3C!--msnavigation--%3E%3Ctable%20border%3D%220%22%20cellpadding%3D%220%22%20cellspacing%3D%220%22%20width%3D%22100%25%22%3E%3Ctbody%3E%3Ctr%3E%3Ctd%3E%0A%0A%3Ch1%20align%3D%22center%22%3E%3Ca%20href%3D%22javascript%3Alocation.reload()%22%20target%3D%22_self%22%3E%3Ci%3E%3Cfont%20color%3D%22%230099FF%22%3EThe%0A%3C%2Ffont%3E%3Cfont%20color%3D%22%23FF0000%22%3ETraffic%20%3C%2Ffont%3E%3Cfont%20color%3D%22%23FFFF00%22%3E%0ASignal%20%3C%2Ffont%3E%20%3Cfont%20color%3D%22%2300FF00%22%3EMuseum%3C%2Ffont%3E%3C%2Fi%3E%3C%2Fa%3E%3C%2Fh1%3E%0A%0A%20%20%20%20%3Cdiv%20align%3D%22center%22%3E%0A%20%20%3Ccenter%3E%0A%20%20%3Ctable%20border%3D%220%22%20cellpadding%3D%220%22%20cellspacing%3D%220%22%20width%3D%2270%25%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%20width%3D%2250%25%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cform%20name%3D%22jump%22%3E%0A%3Cp%20align%3D%22center%22%3E%0A%3Cselect%20name%3D%22menu%22%20value%3D%22GO%22%20size%3D%221%22%3E%0A%3Coption%20value%3D%22%23%22%3EQuick%20Jump%20to%20other%20pages%20in%20this%20site%3C%2Foption%3E%0A%09%09%3Coption%20value%3D%22http%3A%2F%2Fwww.trafficsignalmuseum.com%22%3ETraffic%20Signal%20Museum%0A%20%20%20%20%20%20%20%20Home%20Page%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fboth4ways.htm%22%3E4%20way%20signals%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2F4waybeacons.htm%22%3E4%20way%20beacons%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2F8inchsingle.htm%22%3E8%20inch%20single%20face%20signals%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2F12inchsingle.htm%22%3E12%20inch%20single%20face%20signals%0A%20%20%20%20%20%20%20%20%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fcombo.htm%22%3E12%22%208%22%20combo%20signals%3C%2Foption%3E%0A%09%09%3Coption%20value%3D%22%2Fpages%2Fdoghouse.htm%22%3E5%20light%20doghouse%20signal%0A%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Foe.htm%22%3EOrnamental%20Eaglelux%20%26amp%3B%20other%20solid%20body%20signals%3C%2Foption%3E%0A%09%09%3Coption%20value%3D%22%2Fpages%2F3m.htm%22%3E3M%20programmable%20visibility%20signals%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fwaitwalk.htm%22%3EPedestrian%20signals%20with%20WAIT%20lenses%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fwordped.htm%22%3EPedestrian%20signals%20with%20word%20lenses%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fsymbolped.htm%22%3EPedestrian%20signals%20with%20symbolic%0A%20%20%20%20%20%20%20%20lenses%0A%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fneonpedsignals.htm%22%3ENEON%20pedestrian%20signals%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Finventory.htm%22%3EInventory%20of%20all%20the%20signals%20in%20this%0Acollection%3C%2Foption%3E%0A%09%09%0A%09%09%3Coption%20value%3D%22%2Fpages%2Fef15.html%22%3EEagle%20signal%20EF-15%20electro%20mechanical%0A%20%20%20%20%20%20%20%20controller%0A%20%20%20%20%20%20%20%20%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fef70.html%22%3EEagle%20signal%20EF-70%20electro%20mechanical%0A%20%20%20%20%20%20%20%20controller%0A%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fm20.htm%22%3EMarbelite%20M20%20electro%20mechanical%20controller%3C%2Foption%3E%0A%20%20%20%20%20%20%20%20%3Coption%20value%3D%22%2Fpages%2FKS.htm%22%3ECrouse%20Hinds%20KS%20electro%20mechanical%0A%20%20%20%20%20%20%20%20controller%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2FPCN100.html%22%3ECrouse%20Hinds%20PCN100%20electro%20mechanical%0Acontroller%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2FTeeco500.html%22%3ETeeco%20500%20controller%3C%2Foption%3E%0A%09%09%3Coption%20value%3D%22%2Fpages%2Fnema.html%22%3ENEMA%20controllers%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Frarelenses.htm%22%3ERare%20lens%0A%20%20%20%20%20%20%20%20%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fvideo.htm%22%3ETraffic%20Signal%20Museum%20video%20clips%3C%2Foption%3E%0A%09%09%3Coption%20value%3D%22%2Fpages%2Flocalsignals.htm%22%3ESome%20old%20signals%20in%20the%20Detroit%0A%20%20%20%20%20%20%20%20Metro%20area%0A%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fdetroit.html%22%3ESignals%20inside%20Detroit%20city%20limits%3C%2Foption%3E%0A%09%09%3Coption%20value%3D%22%2Fpages%2FMI4ways.htm%22%3E4%20way%20signals%20in%20Michigan%0A%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2FOH4ways.htm%22%3E4%20way%20signals%20in%20Ohio%3C%2Foption%3E%0A%09%09%3Coption%20value%3D%22%2Fpages%2Ftips.html%22%3ETips%20for%20working%20on%20your%20signals%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fstory.htm%22%3EMy%20fascination%20with%20traffic%20signals%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Faboutme.htm%22%3ESome%20information%20about%20me%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fchristian.html%22%3EMy%20beliefs%20about%20Christianity%0A%09%09%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Foddsends.html%22%3EA%20few%20odd%20traffic%20related%20items%20of%0A%20%20%20%20%20%20%20%20mine%0A%20%20%20%20%20%20%20%20%3C%2Foption%3E%3Coption%20value%3D%22%2Fpages%2Fblackout.htm%22%3EBlackout%20-%202003%3C%2Foption%3E%0A%20%20%20%20%20%20%20%20%3Coption%20value%3D%22%2Fpages%2Fcarshow.htm%22%3EA%20couple%20of%20my%20signals%20at%20a%20local%20car%0A%20%20%20%20%20%20%20%20show%3C%2Foption%3E%0A%09%09%3Coption%20value%3D%22%2Fpages%2Fweather.htm%22%3EDetroit%20area%20weather%20radar%3C%2Foption%3E%20%20%0A%09%09%0A%3Coption%20value%3D%22%2Fpages%2FUSweather.htm%22%3EUS%20weather%20map%3C%2Foption%3E%0A%09%09%0A%09%09%20%3C%2Fselect%3E%0A%09%09%20%3C%2Fp%3E%3C%2Fform%3E%0A%09%09%20%3C%2Ftd%3E%0A%09%09%20%3Ctd%20width%3D%2250%25%22%3E%0A%09%09%20%3Cform%20name%3D%22jump1%22%3E%0A%20%20%20%20%20%20%20%20%20%3Cp%20align%3D%22center%22%3E%0A%09%09%20%3Cselect%20name%3D%22menu1%22%20value%3D%22GO%22%20size%3D%221%22%3E%0A%3Coption%20value%3D%22%23%22%3EBrowse%20the%20signals%20by%20manufacturer%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2F3m.htm%22%3E3M%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-alusigdurasig.htm%22%3EAlusig-Durasig%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-aga.htm%22%3EAmerican%20Gas%20Accumulator%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-checker.htm%22%3EChecker%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-crousehinds.htm%22%3ECrouse%20Hinds%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-eaglesignal.htm%22%3EEagle%20Signal%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-econolite.htm%22%3EEconolite%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-ge.htm%22%3EGeneral%20Electric%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-HS.htm%22%3EHarrington%20Seaberg%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-icc.htm%22%3EIndicator%20Controls%20Corp.%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-lfeautomatic.htm%22%3ELFE%2FAutomatic%20Signal%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-marbelite.htm%22%3EMarbelite%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-master.htm%22%3EMaster%20Signal%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-mccain.htm%22%3EMcCain%20Traffic%20Supply%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-milwaukee.htm%22%3EMilwaukee%20%22Home%20Brew%22%0Asignal%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2FPlessey.htm%22%3EPlessey%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fpotts.htm%22%3EPotts%20replica%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-singer.htm%22%3ESinger%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-autoflow.htm%22%3ESouthern%20Autoflow%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-tct.htm%22%3ETraffic%20Control%20Technologies%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-tsi.htm%22%3ETraffic%20Signals%20Inc.%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-winkomatic.htm%22%3EWinko-matic%3C%2Foption%3E%0A%3Coption%20value%3D%22%2Fpages%2Fmaker-darley.htm%22%3EW.S.%20Darley%3C%2Foption%3E%0A%3C%2Fselect%3E%0A%20%20%20%20%3C%2Fp%3E%3C%2Fform%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%20%3C%2Fcenter%3E%0A%3C%2Fdiv%3E%0A%0A%20%20%20%20%0A%0A%20%20%20%20%0A%3C%2Ftd%3E%3C%2Ftr%3E%3C!--msnavigation--%3E%3C%2Ftbody%3E%3C%2Ftable%3E%3C!--msnavigation--%3E%3Ctable%20border%3D%220%22%20cellpadding%3D%220%22%20cellspacing%3D%220%22%20width%3D%22100%25%22%3E%3Ctbody%3E%3Ctr%3E%3C!--msnavigation--%3E%3Ctd%20valign%3D%22top%22%3E%0A%3Cp%20align%3D%22center%22%3E%0A%0A%3Cbig%3EThe%20Traffic%20Signal%20Museum%20is%20not%20an%20official%20museum.%20Although%20it%20could%20be%20considered%20a%20museum%20by%20the%20definition%20in%20the%20dictionary%3A%20%22A%20room%20or%20building%20which%20houses%20historical%20items%22%2C%20it%20is%20strictly%20a%20private%20collection%20owned%20by%20the%20web%20master%20of%20this%20web%20site.%20It%20is%20not%20open%20to%20the%20public.%20All%20of%20the%20signals%20in%20the%20collection%20were%20obtained%20legally.%0ASome%20of%20the%20signals%20pictured%20have%20been%20sold%20off.%20I%20keep%20the%20pictures%20and%0Ainformation%20about%20the%20sold%20signals%20on%20the%20site%20for%20information%20purposes.%20If%20you%20are%20looking%20to%20buy%20a%20traffic%20signal%2C%0A%3Ca%20href%3D%22%2Fpages%2Findex.html%23buysignals%22%3E%20near%20the%20bottom%20of%20the%20opening%20page%3C%2Fa%3E%2C%20just%0Abelow%20the%20forum%20banner%2C%20there%20is%20a%20drop%20down%20menu%20with%20links%20to%20other%20traffic%20signal%20related%20sites.%20There%20are%0Atwo%20entries%20that%20say%20%22Used%20traffic%20signals%20and%20parts%22%20One%20of%20those%20would%20be%20a%20good%20place%20to%20start%20looking!%3C%2Fbig%3E%3C%2Fp%3E%3Cp%3E%3Cbig%3E%0A%0A%3C%2Fbig%3E%3C%2Fp%3E%3Ccenter%3E%3Cbig%3E%3Cfont%20size%3D%22%2B2%22%3EHow%20this%20web%20site%20began...%3C%2Ffont%3E%3Cp%3E%0AIn%20the%20fall%20of%201999%2C%20I%20set%20out%20on%20the%20Internet%20to%20see%20if%20I%20could%20find%20any%20info%20on%20obtaining%20used%20traffic%20signals.%20I%20wanted%20to%20add%20a%20signal%20or%20two%20to%20the%20first%20one%20I%20had%20owned%20since%20around%201985.%20It%20didn't%20take%20much%20searching%20and%20I%20found%20www.signalfan.com.%20After%20a%20couple%20of%20emails%20with%20%22Signalfan%22%20he%20directed%20me%20to%20ebay%20and%0Athe%20collection%20soon%20started%20to%20grow.%20In%20the%20summer%20of%202000%20a%20web%20page%20was%20published%20containing%20animated%20pictures%20of%20the%20collection.%20Eventually%2C%20as%20the%20collection%20grew%2C%20there%20were%20too%20many%20pictures%20on%20one%20page%20for%20a%20standard%20modem%20internet%20connection%2C%20so%20the%20signals%20were%20categorized%20on%20different%20pages%20and%20the%20web%20site%20was%20born.%20At%20first%20the%20site%20address%20was%20a%20hard%20to%20remember%20members.home.com%2Fjab8356%2Fblah%20blah%20blah%2C%20so%20after%20much%20consideration%20the%20name%20of%20The%20Traffic%20Signal%20Museum%20was%20chosen%20for%20the%20site%20and%20trafficsignalmuseum.com%20domain%20was%20purchased%20in%20the%20Spring%20of%202002.%20%3C%2Fp%3E%3Cp%3E%0A%0A%3Cfont%20size%3D%22%2B2%22%3EThe%20Fine%20Print...%3C%2Ffont%3E%3C%2Fp%3E%3C%2Fbig%3E%3Cp%3E%3Cbig%3E%0A%0AAll%20of%20the%20content%20of%20trafficsignalmuseum.com%20is%20copyrighted%20by%20the%20webmaster%20of%20the%20site.%20Some%20material%20on%20the%20site%2C%20which%20is%20not%20originally%20authored%20by%20this%20webmaster%2C%20is%20the%20property%20of%20the%20website%20or%20person%20noted.%3C%2Fbig%3E%0A%0A%3C%2Fp%3E%3Cp%3E%0A%0A%3Cbig%3E%20%3Cinput%20type%3D%22button%22%20value%3D%22Go%20Back%22%3E%20%20or%20use%20the%20drop%20down%20menu%20at%20the%0Atop%20to%20return%20to%20The%20Traffic%20Signal%20Museum.%3C%2Fbig%3E%0A%0A%0A%0A%3C!--msnavigation--%3E%3C%2Fp%3E%3C%2Fcenter%3E%3C%2Ftd%3E%3C%2Ftr%3E%3C!--msnavigation--%3E%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "55d084e7-2305-4382-9e50-43594e05d67d",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.trafficsignalmuseum.com-pages-tsm.htm"
+}

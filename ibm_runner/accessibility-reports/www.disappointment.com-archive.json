@@ -1,0 +1,728 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1478,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1478,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1478,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 1454,
+                "width": 784
+            },
+            "snippet": "<body vlink=\"#CCCCCC\" link=\"#666666\" text=\"#000000\" bgcolor=\"#FFFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20vlink%3D%5C%22%23CCCCCC%5C%22%20link%3D%5C%22%23666666%5C%22%20text%3D%5C%22%23000000%5C%22%20bgcolor%3D%5C%22%23FFFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 108,
+                "width": 784
+            },
+            "snippet": "<table bordercolor=\"#000000\" bgcolor=\"#FFFFFF\" cellpadding=\"0\" cellspacing=\"0\" border=\"1\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20bordercolor%3D%5C%22%23000000%5C%22%20bgcolor%3D%5C%22%23FFFFFF%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%221%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 409,
+                "top": 10,
+                "height": 100,
+                "width": 381
+            },
+            "snippet": "<img height=\"100\" width=\"381\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%22100%5C%22%20width%3D%5C%22381%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/table[1]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 167,
+                "height": 146,
+                "width": 549
+            },
+            "snippet": "<table cellpadding=\"10\" cellspacing=\"0\" border=\"1\" width=\"70%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%2210%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%221%5C%22%20width%3D%5C%2270%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/font[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 138,
+                "top": 197,
+                "height": 34,
+                "width": 481
+            },
+            "snippet": "<font size=\"2\" color=\"#000000\" face=\"Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%222%5C%22%20color%3D%5C%22%23000000%5C%22%20face%3D%5C%22Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/table[1]",
+                "aria": "/document[1]/table[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 420,
+                "height": 56,
+                "width": 667
+            },
+            "snippet": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"85%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%2285%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[2]/br[1]",
+                "aria": "/document[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'celebrity fun [including the stalking pages]' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "celebrity fun [including the stalking pages]"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 491,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'celebrity%20fun%20%5Bincluding%20the%20stalking%20pages%5D'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22celebrity%20fun%20%5Bincluding%20the%20stalking%20pages%5D%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]",
+                "aria": "/document[1]/table[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 548,
+                "height": 56,
+                "width": 667
+            },
+            "snippet": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"85%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%2285%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[1]/td[1]/font[1]",
+                "aria": "/document[1]/table[4]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Fry Your Own Cock With Trent Re ... ight as well put         it up.\"",
+            "messageArgs": [
+                "\"Fry Your Own Cock With Trent Re ... ight as well put         it up.\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 550,
+                "height": 52,
+                "width": 657
+            },
+            "snippet": "<font face=\"Arial, Helvetica, sans-serif\" size=\"2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Fry%20Your%20Own%20Cock%20With%20Trent%20Re%20...%20ight%20as%20well%20put%20%20%20%20%20%20%20%20%20it%20up.%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20face%3D%5C%22Arial%2C%20Helvetica%2C%20sans-serif%5C%22%20size%3D%5C%222%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Fry%20Your%20Own%20Cock%20With%20Trent%20Re%20...%20ight%20as%20well%20put%20%20%20%20%20%20%20%20%20it%20up.%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[4]",
+                "aria": "/document[1]/paragraph[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'the m'lud life the m'lud life' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "the m'lud life the m'lud life"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 654,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'the%20m'lud%20life%20the%20m'lud%20life'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22the%20m'lud%20life%20the%20m'lud%20life%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/table[1]",
+                "aria": "/document[1]/table[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 692,
+                "height": 43,
+                "width": 667
+            },
+            "snippet": "<table border=\"0\" width=\"85%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20border%3D%5C%220%5C%22%20width%3D%5C%2285%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/table[1]",
+                "aria": "/document[1]/table[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 823,
+                "height": 19,
+                "width": 667
+            },
+            "snippet": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"85%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%2285%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/table[1]",
+                "aria": "/document[1]/table[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 914,
+                "height": 56,
+                "width": 667
+            },
+            "snippet": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"85%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%2285%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[8]/b[1]/br[1]",
+                "aria": "/document[1]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'random captions create joy' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "random captions create joy"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 986,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'random%20captions%20create%20joy'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22random%20captions%20create%20joy%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[7]/table[1]",
+                "aria": "/document[1]/table[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 1042,
+                "height": 37,
+                "width": 667
+            },
+            "snippet": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"85%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%2285%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[8]/table[1]",
+                "aria": "/document[1]/table[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 1168,
+                "height": 19,
+                "width": 667
+            },
+            "snippet": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"85%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%2285%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[11]",
+                "aria": "/document[1]/paragraph[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text '\nthe international wall of nipples \nthe international wall of nipples' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "\nthe international wall of nipples \nthe international wall of nipples"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1202,
+                "height": 44,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'%5Cnthe%20international%20wall%20of%20nipples%20%5Cnthe%20international%20wall%20of%20nipples'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22%5Cnthe%20international%20wall%20of%20nipples%20%5Cnthe%20international%20wall%20of%20nipples%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[10]/table[1]",
+                "aria": "/document[1]/table[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 1262,
+                "height": 56,
+                "width": 667
+            },
+            "snippet": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"85%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%2285%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[12]/br[1]",
+                "aria": "/document[1]/paragraph[14]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'the meta-archive' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "the meta-archive"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1334,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'the%20meta-archive'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22the%20meta-archive%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[11]/table[1]",
+                "aria": "/document[1]/table[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 126,
+                "top": 1390,
+                "height": 37,
+                "width": 667
+            },
+            "snippet": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"85%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%2285%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 633,
+    "ruleTime": 5,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 31,
+            "elementsViolation": 14,
+            "elementsViolationReview": 21,
+            "violation": 15,
+            "potentialviolation": 8,
+            "recommendation": 20,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 590
+        },
+        "scanTime": 25,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779239874247,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EArchive%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23FFFFFF%22%20text%3D%22%23000000%22%20link%3D%22%23666666%22%20vlink%3D%22%23CCCCCC%22%3E%0A%3Ctable%20width%3D%22100%25%22%20border%3D%221%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20bgcolor%3D%22%23FFFFFF%22%20bordercolor%3D%22%23000000%22%3E%0A%20%20%3Ctbody%3E%3Ctr%3E%0A%20%20%20%20%3Ctd%3E%20%0A%20%20%20%20%20%20%3Cdiv%20align%3D%22right%22%3E%3Cimg%20width%3D%22381%22%20height%3D%22100%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3Cdiv%20align%3D%22center%22%3E%0A%20%20%3Cp%3E%26nbsp%3B%3C%2Fp%3E%0A%20%20%3Ctable%20width%3D%2270%25%22%20border%3D%221%22%20cellspacing%3D%220%22%20cellpadding%3D%2210%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%3Ctd%3E%20%0A%20%20%20%20%20%20%20%20%3Cp%3E%3Cfont%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20color%3D%22%23000000%22%20size%3D%222%22%3EBelow%20%0A%20%20%20%20%20%20%20%20%20%20is%20a%20collection%20of%20baby%20photographs%3B%20endearing%20and%20cute%2C%20perhaps%2C%20but%20%0A%20%20%20%20%20%20%20%20%20%20always%20fundamentally%20embarassing.%20Click%20around%20for%20a%20while%20of%20entertainment.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3Cp%3E%3Cfont%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20color%3D%22%23000000%22%20size%3D%222%22%3EBefore%20%0A%20%20%20%20%20%20%20%20%20%20you%20play%20hunt%20the%20lipstick%2C%20however%2C%20I%20should%20warn%20you%20that%20the%20Fire%20%0A%20%20%20%20%20%20%20%20%20%20Lipstick%20became%20detached%2C%20and%20whirled%20off%20into%20a%20splintered%20nebula.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3Cp%3E%26nbsp%3B%3C%2Fp%3E%3C%2Fdiv%3E%0A%3Cp%3E%3Ca%20href%3D%22giraffe%2Findex.htm%22%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%224%22%3E%3Cb%3Eripped%20%0A%20%20papers%3C%2Fb%3E%3Cbr%3E%0A%20%20%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3E%3Cb%3E%5B%3Ca%20href%3D%22giraffe%2Finfo_drizzle_1.htm%22%3Ethe%20%0A%20%20giraffe%3C%2Fa%3E%2C%20%3Ca%20href%3D%22giraffe%2Fbigissue%2Fmad_world.htm%22%3Ethe%20big%20issue%3C%2Fa%3E%2C%20%3Ca%20href%3D%22giraffe%2Ft3%2Fletters.htm%22%3Et3%3C%2Fa%3E%2C%20%0A%20%20%3Ca%20href%3D%22..%2Fmagazine%2Fgossip.htm%22%3Edisappointment%3C%2Fa%3E%5D%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cdiv%20align%3D%22right%22%3E%20%0A%20%20%3Ctable%20width%3D%2285%25%22%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%3Ctd%3E%3Cfont%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EA%20big%20old%20section.%20%0A%20%20%20%20%20%20%20%20The%20Giraffe%20is%20just%20an%20idle%20attempt%20to%20do%20something%20Onion-esque%20with%20no%20%0A%20%20%20%20%20%20%20%20design%20skills.%20The%20Big%20Issue%20and%20T3%20-%20a%20pair%20of%20sorta%20parodies.%20And%20disappointment%3B%20%0A%20%20%20%20%20%20%20%20something%20that%20remains%20an%20inexplicable%20anomaly.%20Fun%20to%20be%20had%20%3A%207%2F10%3C%2Ffont%3E%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%3Cp%3E%3Cbr%3E%0A%20%20%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%224%22%3E%3Ca%20href%3D%22celebrity%2Fintro.htm%22%3E%3Cb%3Ecelebrity%20%0A%20%20fun%3C%2Fb%3E%3C%2Fa%3E%20%3Cfont%20size%3D%222%22%3E%5B%3Ca%20href%3D%22celebrity%2Fstalker.htm%22%3Eincluding%20the%20stalking%20%0A%20%20pages%3C%2Fa%3E%5D%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cdiv%20align%3D%22right%22%3E%0A%20%20%3Ctable%20width%3D%2285%25%22%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%3Ctd%3E%3Cfont%20size%3D%222%22%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3EA%20whole%20heap%20of%20crap.%20%0A%20%20%20%20%20%20%20%20I%20still%20like%20the%20stalking%20pages%2C%20however.%20And%20despite%20universal%20ragging%2C%20%0A%20%20%20%20%20%20%20%20I%20still%20quite%20like%20the%20%22Fry%20Your%20Own%20Cock%20With%20Trent%20Reznor%22%20%0A%20%20%20%20%20%20%20%20page.%20Stuff%20like%20the%20Tina%20Turner%20musical%20and%20Snake%20Mountain%20Nights%2C%20though%2C%20%0A%20%20%20%20%20%20%20%20was%20a%20case%20of%20%22Oh%2C%20fuck%20-%20I've%20written%20it%20now%2C%20I%20might%20as%20well%20put%20%0A%20%20%20%20%20%20%20%20it%20up.%22%3C%2Ffont%3E%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%3Cp%3E%3Cbr%3E%0A%3C%2Fp%3E%0A%3Cp%3E%3Cfont%20size%3D%224%22%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%3E%3Cb%3E%3Ca%20href%3D%22..%2Fmysitcom%2Findex.htm%22%3Ethe%20%0A%20%20m'lud%20life%3C%2Fa%3E%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cdiv%20align%3D%22right%22%3E%20%0A%20%20%3Ctable%20width%3D%2285%25%22%20border%3D%220%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%3Ctd%3E%20%0A%20%20%20%20%20%20%20%20%3Cdiv%20align%3D%22left%22%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3ESix%20%0A%20%20%20%20%20%20%20%20%20%20whole%20episodes%20of%20a%20Sitcom%20that%20might%20be%20described%20by%20a%20generous%20observer%20%0A%20%20%20%20%20%20%20%20%20%20as%20%22patchy%22.%20Including%20a%20substantial%20rewrite%20of%20episode%20one%20%0A%20%20%20%20%20%20%20%20%20%20as%20a%20radio%20script.%3C%2Ffont%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%3Cp%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%3E%3Ca%20href%3D%22..%2Falienfingers%2Falienfinger.htm%22%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%224%22%3E%3Cb%3Ethe%20%0A%20%20alien%20fingers%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%0A%3C%2Fp%3E%0A%3Cdiv%20align%3D%22right%22%3E%0A%20%20%3Ctable%20width%3D%2285%25%22%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%3Ctd%3E%3Cfont%20size%3D%222%22%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3EI%20found%20a%20picture%20%0A%20%20%20%20%20%20%20%20on%20the%20internet%20of%20two%20space%20fingers.%20Then%20I%20did%20this.%3C%2Ffont%3E%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%3Cp%3E%3Cbr%3E%0A%20%20%3Ca%20href%3D%22basilbrush%2Fevilnick.htm%22%3E%3Cfont%20size%3D%224%22%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%3E%3Cb%3Ethe%20%0A%20%20basil%20brush%20showboat%20of%20chaos%20%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fp%3E%0A%3Cdiv%20align%3D%22right%22%3E%0A%20%20%3Ctable%20width%3D%2285%25%22%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%3Ctd%3E%3Cfont%20size%3D%222%22%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3EWhen%20I%20thought%20I'd%20%0A%20%20%20%20%20%20%20%20try%20and%20write%20a%20few%20pages%20of%20amusing%20things%20on%20the%20internet%2C%20I%20was%20blissfully%20%0A%20%20%20%20%20%20%20%20unaware%20of%20a%20grand%20tradition%20of%20assigning%20evil%20characteristics%20to%20the%20%0A%20%20%20%20%20%20%20%20traditionally%20cute.%20These%20pages%20were%20the%20basis%20of%20my%20first%20ever%20hate%20mail%2C%20%0A%20%20%20%20%20%20%20%20from%20a%20lady%20who%20told%20me%20I%20was%20wasting%20my%20time.%20Like%2C%20dur..%3C%2Ffont%3E%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%3Cp%3E%3Cb%3E%3Cbr%3E%0A%20%20%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%224%22%3E%3Ca%20href%3D%22randomcaption%2Frandomjoy.shtml%22%3Erandom%20%0A%20%20captions%20create%20joy%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%0A%3Cdiv%20align%3D%22right%22%3E%0A%20%20%3Ctable%20width%3D%2285%25%22%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%3Ctd%3E%3Cfont%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EA%20picture%2C%20chosen%20%0A%20%20%20%20%20%20%20%20from%20random.%20A%20caption%2C%20chosen%20from%20random.%3Cbr%3E%0A%20%20%20%20%20%20%20%20Will%20the%20result%20be%20funny%3F%3C%2Ffont%3E%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%3Cp%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%3E%3Cb%3E%3Ca%20href%3D%22beertalking%2Fintro.htm%22%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%224%22%3Eit's%20%0A%20%20just%20the%20beer%20talking%3C%2Ffont%3E%3C%2Fa%3E%3C%2Fb%3E%3C%2Fp%3E%0A%3Cdiv%20align%3D%22right%22%3E%20%0A%20%20%3Ctable%20width%3D%2285%25%22%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%3Ctd%3E%3Cfont%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EThis%20makes%20me%20wince%20%0A%20%20%20%20%20%20%20%20a%20lot%20-%20but%20you%20might%20like%20it%2C%20if%20you're%20thick%20or%20something.%20So%20here%20it%20%0A%20%20%20%20%20%20%20%20is.%20%3C%2Ffont%3E%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20align%3D%22right%22%3E%3C%2Fdiv%3E%0A%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%224%22%3E%3Cbr%3E%0A%20%20%3Ca%20href%3D%22..%2Fnipples%2Fsnakes.htm%22%3Ethe%20international%20wall%20of%20nipples%3C%2Fa%3E%20%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%0A%3Cdiv%20align%3D%22right%22%3E%0A%20%20%3Ctable%20width%3D%2285%25%22%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%3Ctd%3E%3Cfont%20size%3D%222%22%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3ELook%2C%20there's%20only%20%0A%20%20%20%20%20%20%20%20so%20much%20apologetic%20self-deprecation%20one%20man%20can%20sustain%20before%20he%20starts%20%0A%20%20%20%20%20%20%20%20coming%20across%20as%20pathetic.%20So%20this%20page%2C%20yeah%3F%20This%20page%20is%20fucking%20ace.%20%0A%20%20%20%20%20%20%20%20My%20most%20theoretically%20sound%20and%20superbly%20executed%20work%20to%20date.%20Yes...%20%0A%20%20%20%20%20%20%20%20I%20called%20it%20a%20work!%3C%2Ffont%3E%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%3Cp%3E%3Cbr%3E%0A%20%20%3Cfont%20size%3D%224%22%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%3E%3Ca%20href%3D%22..%2F1997%2F1997intro.htm%22%3E%3Cb%3Ethe%20%0A%20%20meta-archive%3C%2Fb%3E%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cdiv%20align%3D%22right%22%3E%0A%20%20%3Ctable%20width%3D%2285%25%22%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%3E%0A%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%3Ctd%3E%3Cfont%20size%3D%222%22%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%3EThe%20first%20attempt%20%0A%20%20%20%20%20%20%20%20at%20an%20archive%20is%20now%20here%20-%20enter%20this%20ole%20house%20entirely%20at%20your%20own%20%0A%20%20%20%20%20%20%20%20risk.%20I%20was%2023%2C%20I'd%20just%20been%20dumped%2C%20and%20I%20was%20working%20with%20databases.%20%0A%20%20%20%20%20%20%20%20This%20is%20what%20came%20of%20it.%3C%2Ffont%3E%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%3Cp%3E%26nbsp%3B%3C%2Fp%3E%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "71f4b748-13f7-4fd1-a0bf-76cbafe48d10",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.disappointment.com-archive"
+}

@@ -1,0 +1,100 @@
+{
+    "results": [
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 965,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://github.com/tourdedave/the-internet\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fgithub.com%2Ftourdedave%2Fthe-internet%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 810,
+    "ruleTime": 16,
+    "nls": {
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 49,
+            "elementsViolation": 1,
+            "elementsViolationReview": 3,
+            "violation": 1,
+            "potentialviolation": 1,
+            "recommendation": 47,
+            "potentialrecommendation": 1,
+            "manual": 1,
+            "pass": 759
+        },
+        "scanTime": 37,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778246789391,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20Internet%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22flash-messages%22%20class%3D%22large-12%20columns%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Ftourdedave%2Fthe-internet%22%3E%3Cimg%20style%3D%22position%3A%20absolute%3B%20top%3A%200%3B%20right%3A%200%3B%20border%3A%200%3B%22%20alt%3D%22Fork%20me%20on%20GitHub%22%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22content%22%20class%3D%22large-12%20columns%22%3E%0A%20%20%20%20%20%20%20%20%0A%3Ch1%20class%3D%22heading%22%3EWelcome%20to%20the-internet%3C%2Fh1%3E%0A%3Ch2%3EAvailable%20Examples%3C%2Fh2%3E%0A%3Cul%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fabtest%22%3EA%2FB%20Testing%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fadd_remove_elements%2F%22%3EAdd%2FRemove%20Elements%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fbasic_auth%22%3EBasic%20Auth%3C%2Fa%3E%20(user%20and%20pass%3A%20admin)%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fbroken_images%22%3EBroken%20Images%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fchallenging_dom%22%3EChallenging%20DOM%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fcheckboxes%22%3ECheckboxes%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fcontext_menu%22%3EContext%20Menu%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fdigest_auth%22%3EDigest%20Authentication%3C%2Fa%3E%20(user%20and%20pass%3A%20admin)%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fdisappearing_elements%22%3EDisappearing%20Elements%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fdrag_and_drop%22%3EDrag%20and%20Drop%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fdropdown%22%3EDropdown%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fdynamic_content%22%3EDynamic%20Content%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fdynamic_controls%22%3EDynamic%20Controls%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fdynamic_loading%22%3EDynamic%20Loading%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fentry_ad%22%3EEntry%20Ad%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fexit_intent%22%3EExit%20Intent%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fdownload%22%3EFile%20Download%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fupload%22%3EFile%20Upload%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Ffloating_menu%22%3EFloating%20Menu%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fforgot_password%22%3EForgot%20Password%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Flogin%22%3EForm%20Authentication%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fframes%22%3EFrames%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fgeolocation%22%3EGeolocation%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fhorizontal_slider%22%3EHorizontal%20Slider%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fhovers%22%3EHovers%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Finfinite_scroll%22%3EInfinite%20Scroll%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Finputs%22%3EInputs%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fjqueryui%2Fmenu%22%3EJQuery%20UI%20Menus%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fjavascript_alerts%22%3EJavaScript%20Alerts%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fjavascript_error%22%3EJavaScript%20onload%20event%20error%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fkey_presses%22%3EKey%20Presses%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Flarge%22%3ELarge%20%26amp%3B%20Deep%20DOM%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fwindows%22%3EMultiple%20Windows%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fnested_frames%22%3ENested%20Frames%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fnotification_message%22%3ENotification%20Messages%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fredirector%22%3ERedirect%20Link%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fdownload_secure%22%3ESecure%20File%20Download%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fshadowdom%22%3EShadow%20DOM%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fshifting_content%22%3EShifting%20Content%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fslow%22%3ESlow%20Resources%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Ftables%22%3ESortable%20Data%20Tables%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Fstatus_codes%22%3EStatus%20Codes%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Ftypos%22%3ETypos%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%2Ftinymce%22%3EWYSIWYG%20Editor%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20id%3D%22page-footer%22%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22large-4%20large-centered%20columns%22%3E%0A%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22text-align%3A%20center%3B%22%3EPowered%20by%20%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Felementalselenium.com%2F%22%3EElemental%20Selenium%3C%2Fa%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "de922ddd-7c97-44e8-b08e-21b9f4362df2",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "the-internet.herokuapp.com"
+}

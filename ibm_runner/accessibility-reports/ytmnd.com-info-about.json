@@ -1,0 +1,500 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1707,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/form[1]",
+                "aria": "/document[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 43,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<form id=\"ub_login_form\" action=\"/login\" method=\"post\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20id%3D%5C%22ub_login_form%5C%22%20action%3D%5C%22%2Flogin%5C%22%20method%3D%5C%22post%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/form[1]/p[1]/input[4]",
+                "aria": "/document[1]/form[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 159,
+                "top": 43,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input id=\"ub_password\" value=\"password\" name=\"password\" type=\"password\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20id%3D%5C%22ub_password%5C%22%20value%3D%5C%22password%5C%22%20name%3D%5C%22password%5C%22%20type%3D%5C%22password%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/form[1]/p[1]/input[5]",
+                "aria": "/document[1]/form[1]/paragraph[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 310,
+                "top": 43,
+                "height": 22,
+                "width": 55
+            },
+            "snippet": "<input id=\"lb_submit\" value=\"sign in\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20id%3D%5C%22lb_submit%5C%22%20value%3D%5C%22sign%20in%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/form[1]",
+                "aria": "/document[1]/form[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 117,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<form action=\"/search\" method=\"get\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20action%3D%5C%22%2Fsearch%5C%22%20method%3D%5C%22get%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/form[1]/div[1]/input[1]",
+                "aria": "/document[1]/form[2]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 117,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input value=\"\" name=\"q\" type=\"text\" id=\"nav_search_text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22%5C%22%20name%3D%5C%22q%5C%22%20type%3D%5C%22text%5C%22%20id%3D%5C%22nav_search_text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/form[1]/div[1]/input[2]",
+                "aria": "/document[1]/form[2]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 159,
+                "top": 117,
+                "height": 22,
+                "width": 31
+            },
+            "snippet": "<input class=\"hidden\" id=\"nav_search_submit\" value=\"go\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20class%3D%5C%22hidden%5C%22%20id%3D%5C%22nav_search_submit%5C%22%20value%3D%5C%22go%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/p[1]/span[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"YTMND, an acronym for Youre The ... used to describe any such site.\"",
+            "messageArgs": [
+                "\"YTMND, an acronym for Youre The ... used to describe any such site.\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 206,
+                "height": 55,
+                "width": 748
+            },
+            "snippet": "<span class=\"italic\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22YTMND%2C%20an%20acronym%20for%20Youre%20The%20...%20used%20to%20describe%20any%20such%20site.%5C%22%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22italic%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22YTMND%2C%20an%20acronym%20for%20Youre%20The%20...%20used%20to%20describe%20any%20such%20site.%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/p[1]/span[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'large'",
+            "messageArgs": [
+                "large"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 206,
+                "height": 55,
+                "width": 748
+            },
+            "snippet": "<span class=\"italic\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'large'%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22italic%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22large%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/p[2]",
+                "aria": "/document[1]/paragraph[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"youre the man now, dog!\"",
+            "messageArgs": [
+                "\"youre the man now, dog!\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 369,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22youre%20the%20man%20now%2C%20dog!%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22youre%20the%20man%20now%2C%20dog!%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/p[4]",
+                "aria": "/document[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Youre the man now, dog!\"",
+            "messageArgs": [
+                "\"Youre the man now, dog!\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 518,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Youre%20the%20man%20now%2C%20dog!%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Youre%20the%20man%20now%2C%20dog!%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/p[4]",
+                "aria": "/document[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'large'",
+            "messageArgs": [
+                "large"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 518,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'large'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22large%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/p[7]",
+                "aria": "/document[1]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'large'",
+            "messageArgs": [
+                "large"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 776,
+                "height": 111,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'large'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22large%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/p[11]",
+                "aria": "/document[1]/paragraph[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'small'",
+            "messageArgs": [
+                "small"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1185,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'small'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22small%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/h3[6]",
+                "aria": "/document[1]/heading[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"The site that spawned 1,000 memes\"",
+            "messageArgs": [
+                "\"The site that spawned 1,000 memes\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1367,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<h3>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22The%20site%20that%20spawned%201%2C000%20memes%5C%22%22%2C%22snippet%22%3A%22%3Ch3%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22The%20site%20that%20spawned%201%2C000%20memes%5C%22%22%5D%7D"
+        }
+    ],
+    "numExecuted": 662,
+    "ruleTime": 14,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "aria_form_label_unique": {
+            "0": "Each element with \"form\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"form\" role do not have unique labels"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 28,
+            "elementsViolation": 4,
+            "elementsViolationReview": 14,
+            "violation": 4,
+            "potentialviolation": 11,
+            "recommendation": 15,
+            "potentialrecommendation": 2,
+            "manual": 1,
+            "pass": 629
+        },
+        "scanTime": 34,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778633039406,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3Eytmnd%20-%20you're%20the%20man%20now%20dog!%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22ABOUT%22%3E%0A%20%20%20%20%3Cdiv%20id%3D%22container%22%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22header%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22logo%22%20title%3D%22you're%20the%20man%20now%20dog%22%20style%3D%22cursor%3A%20pointer%3B%22%3E%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22login_box%22%20class%3D%22logged_out%22%3E%0A%20%20%3Clabel%20for%3D%22ub_user_name%22%3Elogin%3A%3C%2Flabel%3E%0A%20%20%3Cform%20method%3D%22post%22%20action%3D%22%2Flogin%22%20id%3D%22ub_login_form%22%3E%0A%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22authentication_salt%22%20id%3D%22ub_auth_salt%22%3E%0A%20%20%20%20%20%20%3Cinput%20type%3D%22hidden%22%20name%3D%22password_hash%22%20id%3D%22ub_pw_hash%22%3E%0A%20%20%20%20%20%20%3Cinput%20type%3D%22text%22%20name%3D%22user_name%22%20value%3D%22user%20name%22%20id%3D%22ub_user_name%22%3E%0A%20%20%20%20%20%20%3Cinput%20type%3D%22password%22%20name%3D%22password%22%20value%3D%22password%22%20id%3D%22ub_password%22%3E%0A%20%20%20%20%20%20%3Cinput%20type%3D%22submit%22%20value%3D%22sign%20in%22%20id%3D%22lb_submit%22%3E%0A%20%20%20%20%3C%2Fp%3E%0A%20%20%3C%2Fform%3E%0A%20%20%3Ca%20href%3D%22%2Flogin%2Fforgot_password%22%3Eforgot%20password%3F%3C%2Fa%3E%0A%20%20%3Ca%20href%3D%22%2Fregister%22%20id%3D%22register_link%22%3Ecreate%20an%20account%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22navigation%22%3E%20%3C!--%20START%20NAVIGATION%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22nav_home%22%20href%3D%22%2F%22%3Ehome%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22nav_create%22%20href%3D%22%2Fsites%2Fmanage%2Fcreate%22%3Ecreate%20a%20ytmnd%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22nav_sites%22%20href%3D%22%2Fsites%2F%22%3Esites%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22nav_users%22%20href%3D%22%2Fusers%2F%22%3Eusers%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22nav_news%22%20href%3D%22%2Fnews%2F%22%3Enews%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22nav_contests%22%20href%3D%22%2Fcontests%2F%22%3Econtest%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22nav_search%22%20href%3D%22%2Fsearch%22%3Esearch%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22nav_patreon%22%20href%3D%22https%3A%2F%2Fpatreon.com%2Fytmnd%2F%22%3Epatreon%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22nav_discord%22%20href%3D%22https%3A%2F%2Fdiscord.gg%2Fs4Y6fUy%22%3Ediscord%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22nav_wiki%22%20href%3D%22http%3A%2F%2Fwiki.ytmnd.com%22%3Ewiki%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cform%20method%3D%22get%22%20action%3D%22%2Fsearch%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22nav_search_wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22nav_search_text%22%20type%3D%22text%22%20name%3D%22q%22%20value%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22submit%22%20value%3D%22go%22%20id%3D%22nav_search_submit%22%20class%3D%22hidden%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fform%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%20%3C!--%20END%20NAVIGATION%20--%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%20%3C!--%20END%20HEADER%20--%3E%0A%0A%20%20%20%20%20%20%3Cnoscript%3E%3Ch2%20id%3D%22noscript%22%3E-%20This%20site%20will%20be%20severely%20broken%20without%20Javascript%20turned%20on.%20-%3C%2Fh2%3E%3C%2Fnoscript%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22main%22%3E%0A%0A%3Cdiv%20id%3D%22about_page%22%3E%0A%20%3Ch2%3EWhat%20is%20YTMND%3F%3C%2Fh2%3E%0A%20%3Cp%3E%0A%20%20%20%3Cspan%20class%3D%22italic%22%3E%22YTMND%2C%20an%20acronym%20for%20You're%20The%20Man%20Now%2C%20Dog!'%2C%20is%20a%20website%20community%20that%20centers%20around%20the%20creation%20of%20YTMNDs%2C%20which%20are%20pages%20featuring%20a%20juxtaposition%20of%20a%20single%20image%2C%20optionally%20animated%20or%20tiled%2C%20along%20with%20large%20zooming%20text%20and%20a%20looping%20sound%20file.%20YTMND%20is%20also%20the%20general%20term%20used%20to%20describe%20any%20such%20site.%22%3C%2Fspan%3E%20-%20%3Ca%20href%3D%22http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FYTMND%22%20title%3D%22Wikipedia%22%3EWikipedia%3C%2Fa%3E%0A%20%3C%2Fp%3E%0A%0A%0A%20%3Ch2%3EThe%20history%20of%20YTMND%3C%2Fh2%3E%0A%20%3Ch3%3EHow%20it%20began%3C%2Fh3%3E%0A%20%20%3Cp%3E%0A%20%20%20The%20world%20was%20different%20in%202001%3B%20it%20was%20a%20simpler%20time%20and%20the%20Internet%20was%20a%20humbler%20place.%20The%20airwaves%20were%20filled%20with%20trailers%20for%0A%20%20%20%3Cspan%20class%3D%22italic%22%3EFinding%20Forrester%3C%2Fspan%3E%2C%20in%20which%20Sean%20Connery%20absurdly%20declares%20%22you're%20the%20man%20now%2C%20dog!%22%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cp%3E%0A%20%20%20Max%20Goldberg%20immediately%20recognized%20the%20power%20of%20the%20catchphrase%2C%20and%20as%20part%20of%20a%20domain-buying%20rampage%20purchased%0A%20%20%20%3Ca%20href%3D%22http%3A%2F%2Fyourethemannowdog.com%22%3Eyourethemannowdog.com%3C%2Fa%3E.%20He%20also%20registered%0A%20%20%20%3Ca%20href%3D%22http%3A%2F%2Fwww.dustindiamond.com%22%3Edustindiamond.com%3C%2Fa%3E%20at%20the%20same%20time%0A%20%20%3C%2Fp%3E%0A%0A%20%3Ch3%3EYou're%20the%20man%20now%2C%20dog!%3C%2Fh3%3E%0A%20%20%3Cp%3E%0A%20%20%20%3Ca%20href%3D%22http%3A%2F%2Fwww.yourethemannowdog.com%22%3EYourethemannowdog.com%3C%2Fa%3E%20was%20originally%20created%20without%20sound%2C%20but%20after%20a%20few%20revisions%2C%0A%20%20%20soon%20became%20a%20legendary%20site%3A%20a%20tiled%20picture%20of%20Sean%20Connery%2C%20large%2C%20zooming%20text%20and%20a%20sound%20file%20playing%20the%20immortal%20line%20%22You're%20the%20man%20now%2C%20dog!%22%20in%20Connery's%20rolling%20Scottish%20brogue.%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cp%3E%0A%20%20%20%20At%20the%20same%20time%2C%20Goldberg%20created%20dustindiamond.com%20with%20design%20help%20from%20Stile%2C%20from%20the%20infamous%20%3Ca%20href%3D%22http%3A%2F%2Fwww.stileproject.com%22%3EStileProject%3C%2Fa%3E.%0A%20%20%3C%2Fp%3E%0A%0A%20%3Ch3%3ELegal%20battles%3C%2Fh3%3E%0A%20%20%3Cp%3E%0A%20%20%20%20In%202003%2C%20Dustin%20Diamond%2C%20who%20played%20%22Screech%22%20on%20the%20television%20show%20%3Cspan%20class%3D%22italic%22%3ESaved%20by%20the%20Bell%3C%2Fspan%3E%2C%0A%20%20%20%20sent%20a%20team%20of%20lawyers%20after%20Goldberg%2C%20trying%20to%20garner%20control%20of%20the%20dustindiamond.com%20domain.%20Goldberg%20was%20repeatedly%20threatened%2C%0A%20%20%20%20and%20it%20became%20clear%20that%20the%20dispute%20was%20almost%20certain%20to%20end%20up%20before%20the%20courts.%20This%20period%20was%20one%20of%20unparalleled%20creativity%0A%20%20%20%20for%20Goldberg.%20It%20has%20been%20suggested%20that%20perhaps%20the%20stress%20of%20facing%20such%20an%20acclaimed%20child%20star%20in%20Internet%20court%20mobilized%0A%20%20%20%20Goldberg%20into%20one%20of%20the%20most%20productive%20and%20meaningful%20phases%20of%20his%20career.%0A%20%20%3C%2Fp%3E%0A%20%20%3Cp%3E%0A%20%20%20%20At%20the%20same%20time%20that%20Diamond's%20lawyers%20filed%20a%20UDRP%20complaint%20against%20Goldberg%20in%20order%20to%20try%20and%20seize%20the%20domain%2C%0A%20%20%20%20Goldberg%20also%20began%20to%20find%20evidence%20that%20yourethemannowdog.com%20was%20resonating%20with%20Internet%20users%20around%20the%20globe.%0A%20%20%20%20Spoofs%20of%20the%20site%20were%20being%20created%20on%20dozens%20of%20other%20domains.%20Seeking%20to%20harness%20and%20encourage%20the%20meme%2C%0A%20%20%20%20Goldberg%20began%20to%20create%20a%20directory%20and%20mirrors%20of%20these%20spin-off%20sites.%20However%2C%20the%20site's%20popularity%20was%20such%0A%20%20%20%20that%20the%20list%20soon%20became%20too%20large%20and%20difficult%20to%20maintain%2C%20and%20Goldberg%20decided%20to%20build%20a%20site%20that%20would%20allow%0A%20%20%20%20users%20to%20easily%20create%20their%20own%20hosted%20yourethemannowdog.com%20spinoffs.%0A%20%20%3C%2Fp%3E%0A%0A%20%3Ch3%3EThe%20dawning%20of%20an%20era%3C%2Fh3%3E%0A%20%3Cp%3E%0A%20%20%20On%20April%201st%2C%202004%20Goldberg%20purchased%20ytmnd.com.%20At%20the%20same%20time%2C%20the%20legal%20battle%20with%20Dustin%20Diamond%20was%20drawing%20to%20a%20close.%0A%20%20%20%3Ca%20href%3D%22http%3A%2F%2Fwww.linagoldberg.com%22%20title%3D%22Lina%20Goldberg%22%3ELina%20Goldberg%3C%2Fa%3E%2C%20the%20head%20of%20the%20YTMND%20legal%20team%2C%20had%20submitted%0A%20%20%20Goldberg's%20response%20to%20the%20UDRP%20complaint%20a%20few%20weeks%20earlier%20and%20an%20answer%20was%20expected%20at%20any%20time.%20Just%20a%20few%20days%20after%20ytmnd.com%0A%20%20%20was%20purchased%2C%20the%20courts%20issued%20the%20landmark%20decision%20in%20Goldberg's%20favor%2C%20allowing%20him%20to%20keep%20dustindiamond.com.%0A%20%3C%2Fp%3E%0A%0A%20%3Cp%3E%0A%20%20%20Due%20to%20the%20precedent-setting%20nature%20of%20the%20case%2C%20Lina%20Goldberg%20lobbied%20to%20publish%20a%20press%20release%20about%20the%20groundbreaking%20decision.%0A%20%20%20Goldberg%20acquiesced%2C%20and%20%3Ca%20href%3D%22http%3A%2F%2Fwww.prweb.com%2Freleases%2F2004%2F04%2Fprweb118385.htm%22%3Ethis%20press%20release%3C%2Fa%3E%0A%20%20%20contains%20the%20first%20mention%20of%20YTMND%20on%20the%20Internet.%0A%20%3C%2Fp%3E%0A%0A%3Ch3%3EThe%20dark%20ages%20of%20YTMND%3C%2Fh3%3E%0A%0A%20%3Cp%3E%0A%20%20Despite%20the%20press%20release%20being%20sent%20to%20the%20nationwide%20media%2C%20Goldberg%20had%20not%20yet%20actually%20finished%20YTMND.%0A%20%20He%20spent%20six%20days%20feverishly%20coding%20and%20designing%20the%20site%2C%20and%20on%20the%20seventh%20day%2C%20he%20rested.%0A%20%3C%2Fp%3E%0A%0A%20%3Cp%3E%0A%20%20%20In%20early%20April%20of%202004%20Goldberg%20soft%20launched%20YTMND%20to%20a%20small%20group%20of%20friends%20and%20family.%20The%20site%20was%20riddled%20with%20bugs%2C%0A%20%20%20and%20the%20hosting%20was%20erratic%20at%20best.%20Within%20two%20weeks%20of%20the%20initial%20launch%2C%20the%20first%20YTMND%20star%20was%20born%20with%20%3Ca%20href%3D%22http%3A%2F%2Fpicard.ytmnd.com%22%3Epicard.ytmnd.com%3C%2Fa%3E.%0A%20%20%20Its%20popularity%20only%20exacerbated%20the%20bandwidth%20issues%20that%20were%20causing%20instability%20and%20downtime.%20During%20this%20period%20it%20was%20not%20uncommon%20for%20YTMNDs%20to%20%22go%20dark.%22%0A%20%3C%2Fp%3E%0A%0A%20%3Cp%3E%0A%20%20Late%20in%202004%20Goldberg%20took%20YTMND%20down%20due%20to%20an%20inability%20to%20cover%20the%20expense%20of%20hosting%20such%20a%20media-rich%20site.%0A%20%20In%20April%2C%202005%2C%20when%20most%20of%20the%20site%20users%20and%20even%20Goldberg%20himself%20believed%20that%20there%20was%20nothing%20that%20could%20be%20done%20to%20resurrect%20the%0A%20%20site%2C%20the%20owners%20of%20%3Ca%20href%3D%22http%3A%2F%2Freflected.net%2F%22%3EReflected.net%3C%2Fa%3E--%20longtime%20fans%20of%20YTMND--approached%20Goldberg%0A%20%20with%20a%20offer%20to%20take%20care%20of%20the%20hosting%20until%20he%20was%20able%20to%20host%20the%20site%20himself.%20The%20rest%20is%20history.%0A%20%3C%2Fp%3E%0A%0A%20%3Ch3%3E%22The%20site%20that%20spawned%201%2C000%20memes%22%3C%2Fh3%3E%0A%0A%20%3Cp%3E%0A%20%20Six%20years%20after%20YTMND%20was%20first%20created%20there%20have%20been%20over%20950%2C000%20YTMNDs%20made%20and%20over%20320%2C000%20users%20have%20registered.%20YTMND%20now%20generates%20enough%20income%20to%20cover%0A%20%20its%20massive%20hosting%20costs%20and%20new%20servers%20are%20paid%20for%20through%20site%20sponsorships%20and%20donations.%3C%2Fp%3E%0A%0A%20%3Cp%3E%0A%20%20Goldberg%20has%20used%20YTMND's%20popularity%20to%20explore%20and%20promote%20issues%20relating%20to%20free%20speech.%20He%20and%20the%20YTMND%20community%20have%0A%20%20successfully%20engaged%20in%20numerous%20skirmishes%20with%20organizations%20such%20as%20the%20Church%20of%20Scientology%2C%20Gary%20Larson's%20%3Cspan%20class%3D%22italic%22%3EThe%20Far%20Side%3C%2Fspan%3E%2C%0A%20%20Sega%2C%20Scholastic%20and%20%3Cspan%20class%3D%22italic%22%3EHarry%20Potter%3C%2Fspan%3E%20and%20Pez.%0A%20%3C%2Fp%3E%0A%0A%20%3Cp%3E%0A%20%20%20%20YTMND%20has%20been%20featured%20in%20the%20%3Cspan%20class%3D%22italic%22%3EWall%20Street%20Journal%3C%2Fspan%3E%2C%20%3Cspan%20class%3D%22italic%22%3EAttack%20of%20the%20Show%3C%2Fspan%3E%2C%0A%20%20%20%20%3Cspan%20class%3D%22italic%22%3EWIRED%3C%2Fspan%3E%2C%20%3Cspan%20class%3D%22italic%22%3Ethe%20Washington%20Post%3C%2Fspan%3E%20and%20%3Cspan%20class%3D%22italic%22%3EReuters%3C%2Fspan%3E.%0A%20%3C%2Fp%3E%0A%0A%20%3Cp%3E%0A%20%20%20YTMND%20sites%20range%20from%20the%20political%20to%20the%20nonsensical.%20Using%20sound%2C%20image%20and%20text%2C%20users%20of%20the%20site%20display%20an%20unending%20reserve%20of%20creativity%20and%20occasionally%2C%20humor.%0A%20%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20id%3D%22debug_box%22%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%20%3C!--%20END%20MAIN%20--%3E%0A%3Cdiv%20id%3D%22footer%22%3E%0A%20%20%3Ca%20id%3D%22about%22%20href%3D%22%2Finfo%2Fabout%22%20title%3D%22about%20ytmnd%22%3Eabout%3C%2Fa%3E%0A%20%20%3Ca%20id%3D%22contact_us%22%20href%3D%22%2Finfo%2Fcontact%22%20title%3D%22contact%20us%22%3Econtact%20us%3C%2Fa%3E%0A%20%20%3Ca%20id%3D%22page_removal%22%20href%3D%22%2Finfo%2Fremoval%22%20title%3D%22page%20removal%22%3Epage%20removal%3C%2Fa%3E%0A%20%20%3Ca%20id%3D%22advertise_here%22%20href%3D%22%2Finfo%2Fadvertising%22%20title%3D%22advertising%22%3Eadvertising%3C%2Fa%3E%0A%20%20%3Ca%20id%3D%22staff%22%20href%3D%22%2Finfo%2Fstaff%22%20title%3D%22about%20the%20staff%22%3Estaff%3C%2Fa%3E%0A%20%20%3Ca%20id%3D%22report_a_bug%22%20href%3D%22http%3A%2F%2Fbugs.ytmnd.net%2Fprojects%2Fytmnd%22%20title%3D%22report%20bugs%20and%20make%20feature%20requests%22%3Ereport%20a%20bug%3C%2Fa%3E%0A%20%20%3Ca%20id%3D%22big_spaceship%22%20href%3D%22http%3A%2F%2Fwww.bigspaceship.com%2F%22%20title%3D%22design%20by%20big%20spaceship%22%3Ebig%20spaceship%3C%2Fa%3E%0A%20%20%3Cp%20id%3D%22copyright%22%3E%0A%20%20%20%20Copyright%20%C2%A9%202000-2026%20YTMND%20INC.%20All%20Rights%20Reserved.%0A%0A%20%20%20%20%3Cspan%20id%3D%22facebook_junk%22%3E%3C%2Fspan%3E%0A%20%20%20%20%3Ca%20id%3D%22privacy_policy%22%20href%3D%22%2Finfo%2Fprivacy_policy%22%20title%3D%22privacy%20policy%22%3EPrivacy%20Policy%3C%2Fa%3E%0A%20%20%20%20%3Ca%20id%3D%22terms_of_use%22%20href%3D%22%2Finfo%2Fterms_of_use%22%20title%3D%22terms%20of%20use%22%3ETerms%20of%20Use%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%20%3C!--%20END%20CONTAINER%20--%3E%0A%20%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "49217993-7bfa-4e73-9f4b-555cf85fe22e",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "ytmnd.com-info-about"
+}

@@ -1,0 +1,704 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 911,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 911,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 911,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 16,
+                "height": 879,
+                "width": 784
+            },
+            "snippet": "<body alink=\"#FF0000\" vlink=\"#551A8B\" link=\"#FF0000\" bgcolor=\"#FFFFCC\" text=\"#000000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20alink%3D%5C%22%23FF0000%5C%22%20vlink%3D%5C%22%23551A8B%5C%22%20link%3D%5C%22%23FF0000%5C%22%20bgcolor%3D%5C%22%23FFFFCC%5C%22%20text%3D%5C%22%23000000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/a[1]",
+                "aria": "/document[1]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 79,
+                "top": 16,
+                "height": 18,
+                "width": 31
+            },
+            "snippet": "<a href=\"joeyback.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22joeyback.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/a[2]",
+                "aria": "/document[1]/paragraph[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 121,
+                "top": 16,
+                "height": 18,
+                "width": 32
+            },
+            "snippet": "<a href=\"deaconchat.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22deaconchat.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/a[3]",
+                "aria": "/document[1]/paragraph[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 164,
+                "top": 16,
+                "height": 18,
+                "width": 73
+            },
+            "snippet": "<a href=\"joeypics.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22joeypics.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/a[4]",
+                "aria": "/document[1]/paragraph[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 248,
+                "top": 16,
+                "height": 18,
+                "width": 56
+            },
+            "snippet": "<a href=\"joeybook.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22joeybook.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/a[5]",
+                "aria": "/document[1]/paragraph[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 315,
+                "top": 16,
+                "height": 18,
+                "width": 109
+            },
+            "snippet": "<a href=\"joeyinfo.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22joeyinfo.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/a[6]",
+                "aria": "/document[1]/paragraph[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 435,
+                "top": 16,
+                "height": 18,
+                "width": 62
+            },
+            "snippet": "<a href=\"joeytalk.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22joeytalk.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/a[7]",
+                "aria": "/document[1]/paragraph[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 508,
+                "top": 16,
+                "height": 18,
+                "width": 42
+            },
+            "snippet": "<a href=\"joeythnk.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22joeythnk.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/a[8]",
+                "aria": "/document[1]/paragraph[1]/link[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 565,
+                "top": 16,
+                "height": 18,
+                "width": 36
+            },
+            "snippet": "<a href=\"mailto:log@disappointment.com?subject=Your%20Sitcom%27s%20Shit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22mailto%3Alog%40disappointment.com%3Fsubject%3DYour%2520Sitcom%2527s%2520Shit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/a[9]",
+                "aria": "/document[1]/paragraph[1]/link[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 135,
+                "top": 35,
+                "height": 18,
+                "width": 94
+            },
+            "snippet": "<a href=\"johnsnotmad/index.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22johnsnotmad%2Findex.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/a[10]",
+                "aria": "/document[1]/paragraph[1]/link[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 241,
+                "top": 35,
+                "height": 18,
+                "width": 101
+            },
+            "snippet": "<a href=\"johnsnotmad/yourletters.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22johnsnotmad%2Fyourletters.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/br[2]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'ground floor : disappointment.com' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "ground floor : disappointment.com"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 341,
+                "top": 35,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'ground%20floor%20%3A%20disappointment.com'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22ground%20floor%20%3A%20disappointment.com%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/b[2]/a[1]",
+                "aria": "/document[1]/paragraph[1]/link[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.89",
+                16,
+                700,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 108,
+                "top": 53,
+                "height": 18,
+                "width": 140
+            },
+            "snippet": "<a href=\"../index.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22..%2Findex.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[5]/a[1]",
+                "aria": "/document[1]/paragraph[5]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 486,
+                "top": 411,
+                "height": 18,
+                "width": 97
+            },
+            "snippet": "<a href=\"http://www.distortedview.com/show/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22http%3A%2F%2Fwww.distortedview.com%2Fshow%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[9]",
+                "aria": "/document[1]/paragraph[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 734,
+                "height": 93,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[9]/a[1]",
+                "aria": "/document[1]/paragraph[9]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.89",
+                16,
+                400,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 752,
+                "height": 37,
+                "width": 779
+            },
+            "snippet": "<a href=\"http://www.specialeffect.org.uk/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22http%3A%2F%2Fwww.specialeffect.org.uk%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        }
+    ],
+    "numExecuted": 233,
+    "ruleTime": 0,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 18,
+            "elementsViolation": 15,
+            "elementsViolationReview": 17,
+            "violation": 16,
+            "potentialviolation": 3,
+            "recommendation": 3,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 211
+        },
+        "scanTime": 10,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779239862896,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EJoey%20Deacon%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20text%3D%22%23000000%22%20bgcolor%3D%22%23FFFFCC%22%20link%3D%22%23FF0000%22%20vlink%3D%22%23551A8B%22%20alink%3D%22%23FF0000%22%3E%0A%3Cp%20class%3D%22header-text%22%3Ethis%20%0A%20%20floor%20%3A%20%3Ca%20href%3D%22joeyback.htm%22%3Eintro%3C%2Fa%3E%20%0A%20%20%7C%20%3Ca%20href%3D%22deaconchat.htm%22%3Echat!%3C%2Fa%3E%20%7C%20%3Ca%20href%3D%22joeypics.htm%22%3Emultimedia%3C%2Fa%3E%20%0A%20%20%7C%20%3Ca%20href%3D%22joeybook.htm%22%3Ethe%20book%3C%2Fa%3E%20%7C%20%3Ca%20href%3D%22joeyinfo.htm%22%3Einformation%20%0A%20%20%20%20%20%20desk%3C%2Fa%3E%20%7C%20%3Ca%20href%3D%22joeytalk.htm%22%3Ejoey%20talks%3C%2Fa%3E%20%7C%20%3Ca%20href%3D%22joeythnk.htm%22%3Ethanks%3C%2Fa%3E%20%0A%20%20%7C%26nbsp%3B%20%3Ca%20href%3D%22mailto%3Alog%40disappointment.com%3Fsubject%3DYour%2520Sitcom%2527s%2520Shit%22%3Eemail%3C%2Fa%3E%0A%20%20%3Cbr%3E%0A%20%20%3Cb%3Ealso%20on%20this%20floor%20%3A%3C%2Fb%3E%20%3Ca%20href%3D%22johnsnotmad%2Findex.htm%22%3Ejohn's%20%0A%20%20%20%20not%20mad%3C%2Fa%3E%20%3A%20%3Ca%20href%3D%22johnsnotmad%2Fyourletters.htm%22%3Ecorrespondance%3C%2Fa%3E%3Cbr%3E%0A%20%20%3Cb%3Eground%20floor%20%3A%20%3Ca%20href%3D%22..%2Findex.htm%22%3Edisappointment.com%3C%2Fa%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%20%20%3Ccenter%3E%0A%20%20%20%20%3Cimg%20alt%3D%22Joey%20Deacon%22%20width%3D%22600%22%20height%3D%22212%22%3E%0A%20%20%3C%2Fcenter%3E%0A%3Cp%3EWell.%20Here%20we%20are.%20There%20you%20are.%20It's%202015%2C%20as%20I%20write%20this.%20This%20page%20was%20first%20written%20in%201998.%20What%20a%20difference%20seventeen%20years%20makes!%20You%20look%20great%2C%20by%20the%20way.%20The%20wrinkles%20add%20a%20meaty%20texture%20to%20your%20face%2C%20and%20you've%20really%20grown%20into%20that%20cardigan.%20It%20doesn't%20look%20like%20an%20affectation%2C%20these%20days.%20You%20just%20look%20comfy%20in%20that%20chunky%20knit.%20%3C%2Fp%3E%0A%3Cp%3EWhy%20are%20you%20here%2C%20by%20the%20way%3F%20Are%20you%20nostalgic%20for%20the%20time%20when%20children%20responded%20to%20a%20children's%20TV%20show%20about%20cerebral%20palsy%2C%20in%20a%20way%20that%20wasn't%20as%20sympathetic%20as%20the%20BBC%20had%20hoped%3F%20Perhaps%20you're%20younger%20than%20that%2C%20and%20are%20simply%20nostalgic%20for%20the%20time%20when%20a%20grown%20adult%20(me%2C%20hello!)%20responded%20to%20that%20nostalgia%20by%20being%20even%20crueller%2C%20on%20the%20internet.%3C%2Fp%3E%20%0A%3Cp%3ECruelty!%20It's%20funny%2C%20isn't%20it%3F%20Seeing%20someone%20else%20act%20out%20your%20most%20savage%20and%20repressed%20thoughts%20-%20it's%20really%20exciting.%20So%20exciting%2C%20that%20it%20makes%20you%20want%20to%20rail%20against%20political%20correctness.%20Why%20shouldn't%20you%20say%20what%20you%20want%3F%20Who%20are%20these%20idiots%20taking%20offence%2C%20because%20of%20the%20meaning%20of%20the%20words%20coming%20out%20of%20your%20mouth%3F%20YOU%20know%20you're%20not%20evil.%20So%20you%20set%20up%20an%20anonymous%20message%20board%20where%20you%20can%20say%20what%20you%20damn%20well%20like%2C%20and%20hound%20people%20you%20disagree%20with%20out%20of%20their%20homes%2C%20because%20FUCK%20THEM%20for%20telling%20you%20you%20can't%20call%20people%20faggots.%20Faggots%20is%20a%20word%20thats%20constantly%20on%20the%20tip%20of%20your%20tongue.%20Not%20saying%20it%20would%20require%20you%20to%20actively%20CENSOR%20yourself.%20And%20that's%20what%20BITCHES%20do.%3C%2Fp%3E%0A%3Cp%3EI%20get%20that%2C%20I%20really%20do.%20It's%20despicable%2C%20but%20it's%20human.%20It's%20why%20I%20listen%20to%20the%20%3Ca%20href%3D%22http%3A%2F%2Fwww.distortedview.com%2Fshow%2F%22%3EDistorted%20View%3C%2Fa%3E%20podcast.%20Listen%20to%20that%20podcast%2C%20by%20the%20way.%20It's%20a%20great%20way%20to%20condense%20your%20evil%20into%20a%20disgusting%20half-hour%20of%20the%20day%2C%20before%20resuming%20treating%20the%20people%20around%20you%20with%20a%20subtle%20parody%20of%20respect.%3C%2Fp%3E%0A%3Cp%3EAnyway%2C%20this%20page%20began%20when%20there%20was%20no%20other%20information%20on%20the%20web%20about%20Joey.%20When%20Yahoo%20was%20the%20Argos%20%20of%20the%20internet%2C%20and%20we%20weren't%20shouting%20OK%20GOOGLE%20FUCKING%20NO%20WAIT%20OK%20GOOGLE%20at%20our%20wristwatches.%20The%20cruelty%20was%20intended%20to%20be%20the%20deliciously%20tangy%20sauce%2C%20slathered%20on%20a%20slim%20banana%20of%20information%20-%20having%20not%20experience%20the%20reaction%20to%20Joey%20the%20first%20time%20around%2C%20I%20was%20discovering%20the%20joy%20of%20responding%20inappropriately%20myself.%20Was%20it%20OK%3F%20No.%20Did%20it%20give%20a%20lot%20of%20otherwise%20decent%20people%20pleasure%3F%20Inexplicably%2C%20yes.%3C%2Fp%3E%0A%3Cp%3ENow%2C%20there's%20information%20everywhere.%20Joey%20has%20a%20Wikipedia%20page.%20My%20website%2C%20The%20Law%20of%20the%20Playground%2C%20was%20turned%20into%20a%20book%20and%20a%20TV%20show%2C%20in%20which%20actual%20celebrities%20pretended%20to%20remember%20him.%20%20My%20banana%20is%20redundant%2C%20and%20the%20sauce%20is%20sickly%20and%20nauseating%20without%20it.%20%3C%2Fp%3E%0A%3Cp%3EI%20can't%20bring%20myself%20to%20wish%20I'd%20never%20created%20this%20page%20-%20although%20I'm%20open%20to%20the%20idea%20that%20I'd%20be%20a%20better%20person%20if%20I%20could.%20But%20this%20gleefully%20savage%20voice%2C%20punching%20down%20with%20such%20pleasure%2C%20is%20alien%20to%20me%20today.%20Maybe%20it'll%20become%20more%20alien%20to%20you.%20Maybe%20not.%20Perhaps%20you're%20a%20complete%20bastard%2C%20in%20which%20case%20I'd%20probably%20have%20casual%20sex%20with%20you.%3C%2Fp%3E%0A%3Cp%3EI'm%20slow%20to%20take%20this%20page%20down%2C%20because%20I%20want%20to%20hold%20my%20own%20repulsive%20feet%20into%20the%20fire%2C%20and%20don't%20want%20to%20come%20across%20like%20a%20preachy%20dick%20who's%20erasing%20his%20past%20to%20look%20more%20decent%20than%20he%20is.%20However%2C%20maybe%20you'd%20like%20to%20%3Ca%20href%3D%22http%3A%2F%2Fwww.specialeffect.org.uk%2F%22%3Evisit%20the%20excellent%20charity%2C%20Special%20Effect.%3C%2Fa%3E%20They%20help%20people%20with%20physical%20disability%20enjoy%20video%20games%20-%20something%20that's%20nowhere%20near%20as%20trivial%20as%20it%20sounds.%20It's%20genuinely%20life-improving%20stuff.%20So%20if%20you're%20going%20to%20be%20the%20bad%20guy%20with%20me%20and%20laugh%20at%20this%2C%20at%20least%20balance%20it%20out%20with%20a%20donation%20to%20some%20good%20fuckers%20who%20spend%20their%20entire%20days%20doing%20the%20right%20thing.%3C%2Fp%3E%0A%3Cp%3EGood%20day%20to%20you.%3C%2Fp%3E%0A%3Cp%3EI%20SAID%20GOOD%20DAY%3C%2Fp%3E%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "71f4b748-13f7-4fd1-a0bf-76cbafe48d10",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.disappointment.com-joeydeacon-joeyback.htm"
+}

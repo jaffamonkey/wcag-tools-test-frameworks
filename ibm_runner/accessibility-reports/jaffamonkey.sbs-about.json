@@ -1,0 +1,193 @@
+{
+    "results": [
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[1]/div[1]/div[1]/button[2]",
+                "aria": "/document[1]/navigation[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 42,
+                "top": 40,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"Toggle navigation\" class=\"sm:hidden flex flex-col justify-center gap-1.5 w-9 h-9 px-1.5 rounded-md border border-frappe-surface1 transition-colors duration-300\" type=\"button\" id=\"burger\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Toggle%20navigation%5C%22%20class%3D%5C%22sm%3Ahidden%20flex%20flex-col%20justify-center%20gap-1.5%20w-9%20h-9%20px-1.5%20rounded-md%20border%20border-frappe-surface1%20transition-colors%20duration-300%5C%22%20type%3D%5C%22button%5C%22%20id%3D%5C%22burger%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[2]/div[1]/div[1]/p[2]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'big'",
+            "messageArgs": [
+                "big"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 295,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'big'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22big%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[2]/div[1]/div[6]/p[2]",
+                "aria": "/document[1]/paragraph[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1603,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[3]/div[1]/div[1]/div[1]/p[1]/svg[1]",
+                "aria": "/document[1]/paragraph[16]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1742,
+                "height": 784,
+                "width": 784
+            },
+            "snippet": "<svg fill=\"currentColor\" viewBox=\"0 0 24 24\" class=\"w-6 h-6 text-macchiato-blue dark:text-frappe-blue\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20fill%3D%5C%22currentColor%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%20class%3D%5C%22w-6%20h-6%20text-macchiato-blue%20dark%3Atext-frappe-blue%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[3]/div[1]/div[1]/div[1]/p[2]/svg[1]",
+                "aria": "/document[1]/paragraph[17]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2565,
+                "height": 784,
+                "width": 784
+            },
+            "snippet": "<svg stroke-width=\"2\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" fill=\"none\" class=\"w-6 h-6 text-macchiato-green dark:text-frappe-green\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%20fill%3D%5C%22none%5C%22%20class%3D%5C%22w-6%20h-6%20text-macchiato-green%20dark%3Atext-frappe-green%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 613,
+    "ruleTime": 8,
+    "nls": {
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 16,
+            "elementsViolation": 2,
+            "elementsViolationReview": 5,
+            "violation": 2,
+            "potentialviolation": 3,
+            "recommendation": 11,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 597
+        },
+        "scanTime": 36,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778441588645,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EAbout%20Me%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22overflow-x-hidden%20min-h-screen%20bg-latte-base%20text-latte-text%20dark%3Abg-frappe-base%20dark%3Atext-frappe-text%20transition-colors%20duration-300%20font-sans%22%3E%0A%0A%20%20%20%20%3C!--%20Navigation%20--%3E%0A%20%20%20%20%3Cnav%20class%3D%22fixed%20top-0%20left-0%20w-full%20bg-macchiato-mantle%2F80%20dark%3Abg-frappe-mantle%2F80%20backdrop-blur-sm%20border-b%20border-macchiato-surface1%20dark%3Aborder-frappe-surface1%20z-50%20transition-colors%20duration-300%22%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22max-w-5xl%20mx-auto%20px-4%20py-3%20flex%20justify-between%20items-center%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Logo%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22flex%20items-center%20gap-3%20text-macchiato-lavender%20dark%3Atext-frappe-lavender%20font-semibold%20text-lg%22%20href%3D%22%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20alt%3D%22Logo%22%20class%3D%22w-8%20h-8%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EHuman-Centred%20Testing%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22flex%20items-center%20gap-3%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Theme%20toggle%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22theme-toggle%22%20type%3D%22button%22%20class%3D%22flex%20items-center%20justify-center%20w-9%20h-9%20rounded-full%20border%20border-macchiato-surface1%20dark%3Aborder-frappe-surface1%20text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20hover%3Abg-macchiato-surface0%20dark%3Ahover%3Abg-frappe-surface0%20transition-colors%20duration-300%22%20aria-label%3D%22Toggle%20color%20theme%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22theme-toggle-icon%22%3E%F0%9F%8C%99%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Mobile%20burger%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20id%3D%22burger%22%20type%3D%22button%22%20class%3D%22sm%3Ahidden%20flex%20flex-col%20justify-center%20gap-1.5%20w-9%20h-9%20px-1.5%20rounded-md%20border%20border-frappe-surface1%20transition-colors%20duration-300%22%20aria-label%3D%22Toggle%20navigation%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22burger-line%20h-0.5%20w-full%20rounded%20bg-frappe-text%20shadow-%5B0_0_2px_rgba(0%2C0%2C0%2C0.25)%5D%20transition-all%20duration-300%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22burger-line%20h-0.5%20w-full%20rounded%20bg-frappe-text%20shadow-%5B0_0_2px_rgba(0%2C0%2C0%2C0.25)%5D%20transition-all%20duration-300%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22burger-line%20h-0.5%20w-full%20rounded%20bg-frappe-text%20shadow-%5B0_0_2px_rgba(0%2C0%2C0%2C0.25)%5D%20transition-all%20duration-300%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Desktop%20menu%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22hidden%20sm%3Aflex%20items-center%20gap-6%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20hover%3Atext-macchiato-lavender%20dark%3Ahover%3Atext-frappe-lavender%22%20href%3D%22%2Fabout%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20About%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20hover%3Atext-macchiato-lavender%20dark%3Ahover%3Atext-frappe-lavender%22%20href%3D%22%2Ftesting%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Testing%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20hover%3Atext-macchiato-lavender%20dark%3Ahover%3Atext-frappe-lavender%22%20href%3D%22%2Faccessibility%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Accessibility%20Audit%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20hover%3Atext-macchiato-lavender%20dark%3Ahover%3Atext-frappe-lavender%22%20href%3D%22%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Conversational%20AI%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23contact%22%20class%3D%22text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20hover%3Atext-macchiato-lavender%20dark%3Ahover%3Atext-frappe-lavender%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Contact%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3C!--%20Mobile%20dropdown%20menu%20--%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22mobile-menu%22%20class%3D%22hidden%20flex%20flex-col%20space-y-2%20bg-macchiato-mantle%20dark%3Abg-frappe-mantle%20%0A%20%20%20%20%20%20%20%20%20%20%20%20border-t%20border-macchiato-surface1%20dark%3Aborder-frappe-surface1%20%0A%20%20%20%20%20%20%20%20%20%20%20%20sm%3Ahidden%20transition-all%20duration-300%20origin-top%20px-4%20py-3%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22block%20py-2%20text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20hover%3Atext-macchiato-lavender%20dark%3Ahover%3Atext-frappe-lavender%22%20href%3D%22%2Fabout%22%3EAbout%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22block%20py-2%20text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20hover%3Atext-macchiato-lavender%20dark%3Ahover%3Atext-frappe-lavender%22%20href%3D%22%2Ftesting%22%3ETesting%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22block%20py-2%20text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20hover%3Atext-macchiato-lavender%20dark%3Ahover%3Atext-frappe-lavender%22%20href%3D%22%2Faccessibility%22%3EAccessibility%20Audit%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22block%20py-2%20text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20hover%3Atext-macchiato-lavender%20dark%3Ahover%3Atext-frappe-lavender%22%20href%3D%22%2F%22%3EConversational%20AI%3C%2Fa%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23contact%22%20class%3D%22block%20py-2%20text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20hover%3Atext-macchiato-lavender%20dark%3Ahover%3Atext-frappe-lavender%22%3EContact%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fnav%3E%0A%0A%20%20%20%20%3C!--%20HERO%20--%3E%0A%20%20%20%20%3Csection%20class%3D%22pt-40%20pb-20%20text-center%20bg-gradient-to-br%20from-macchiato-mantle%20to-macchiato-crust%20dark%3Afrom-frappe-mantle%20dark%3Ato-frappe-crust%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22max-w-3xl%20mx-auto%20px-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22text-4xl%20sm%3Atext-5xl%20font-extrabold%20text-macchiato-lavender%20dark%3Atext-frappe-lavender%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20About%20Me%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fh1%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22mt-4%20text-lg%20text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Engineering%20better%20software%20through%20smarter%20testing%2C%20stronger%20automation%2C%20and%20a%20human-first%20approach%20to%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20quality.%20I%20work%20with%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20transparency%20and%20a%20supportive%20approach%2C%20applying%20pragmatism%20to%20every%20testing%20decision.%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20alt%3D%22Clients%20list%22%20class%3D%22mx-auto%20mt-10%20rounded-xl2%20shadow-lg%20max-w-full%20h-auto%20overflow-hidden%20block%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fsection%3E%0A%0A%20%20%20%20%3C!--%20MAIN%20CONTENT%20--%3E%0A%20%20%20%20%3Csection%20class%3D%22py-20%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22max-w-3xl%20mx-auto%20px-4%20space-y-12%20leading-relaxed%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Intro%20%2F%20About%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bg-macchiato-surface0%20dark%3Abg-frappe-surface0%20p-8%20rounded-xl2%20shadow-md%20space-y-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20I%E2%80%99m%20%3Cstrong%3EPaul%20Littlebury%3C%2Fstrong%3E%20%E2%80%94%20Quality%20Engineer%20and%20Tester%2C%20who%20has%20spent%20the%20last%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2025%2B%20years%20helping%20teams%20ship%20better%20software%20through%20smarter%20testing%2C%20stronger%20automation%2C%20and%20a%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20more%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20human%20approach%20to%20quality.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20I%E2%80%99m%20a%20big%20believer%20that%20quality%20isn%E2%80%99t%20something%20you%20%E2%80%9Cadd%20on%E2%80%9D%20at%20the%20end%20%E2%80%94%20it%E2%80%99s%20a%20mindset%2C%20a%20culture%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20and%20a%20way%20of%20working%20that%20improves%20everything%20from%20delivery%20speed%20to%20user%20satisfaction.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20What%20I%20Do%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bg-macchiato-surface0%20dark%3Abg-frappe-surface0%20p-8%20rounded-xl2%20shadow-md%20space-y-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22text-2xl%20font-bold%20text-macchiato-lavender%20dark%3Atext-frappe-lavender%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20What%20I%20Do%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EI%20work%20at%20the%20intersection%20of%3A%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22list-disc%20ml-6%20space-y-2%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ETest%20Engineering%20(web%2C%20mobile%2C%20API%2C%20performance)%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EDevOps%20%26amp%3B%20CI%2FCD%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EAccessibility%20%26amp%3B%20Inclusive%20UX%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EQuality%20Strategy%20%26amp%3B%20Coaching%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EConversational%20AI%20Testing%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20I%20build%20automation%20frameworks%2C%20embed%20tests%20into%20pipelines%2C%20improve%20reliability%2C%20coach%20teams%2C%20and%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20explore%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20systems%20deeply%20to%20uncover%20issues%20before%20users%20ever%20see%20them.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Current%20Role%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bg-macchiato-surface0%20dark%3Abg-frappe-surface0%20p-8%20rounded-xl2%20shadow-md%20space-y-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22text-2xl%20font-bold%20text-macchiato-lavender%20dark%3Atext-frappe-lavender%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Current%20work%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20I%E2%80%99m%20currently%20working%20as%20a%20%3Cstrong%3EConversational%20AI%20Quality%20Engineer%20for%20Acorn%20Compliance%3C%2Fstrong%3E%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20where%20I%20ensure%20a%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20compliance-focused%20chatbot%20is%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22list-disc%20ml-6%20space-y-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3Ereliable%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3Econtext-aware%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3Eaccurate%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3Eaccessible%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3Eand%20enjoyable%20to%20interact%20with%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20I%20design%20and%20run%20automation%20suites%20(Playwright%2C%20Mocha%2FChai)%2C%20monitor%20API%20health%20in%20real%20time%2C%20assess%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20NLP%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20behaviour%2C%20and%20evaluate%20tone%2C%20inclusiveness%2C%20and%20multi-turn%20logic.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20A%20particular%20passion%20of%20mine%20is%20%3Cstrong%3Eneurodivergent%20accessibility%3C%2Fstrong%3E%20%E2%80%94%20ensuring%20the%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20experience%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20is%20clear%2C%20calm%2C%20and%20supportive%20for%20all%20users.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20How%20I%20Work%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bg-macchiato-surface0%20dark%3Abg-frappe-surface0%20p-8%20rounded-xl2%20shadow-md%20space-y-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22text-2xl%20font-bold%20text-macchiato-lavender%20dark%3Atext-frappe-lavender%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20How%20I%20Work%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EMy%20approach%20blends%20hands-on%20engineering%20with%20collaborative%20problem-solving%3A%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22list-disc%20ml-6%20space-y-2%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EBuilding%20robust%2C%20scalable%20test%20frameworks%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EIntegrating%20testing%20seamlessly%20into%20CI%2FCD%20pipelines%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ECoaching%20teams%20to%20take%20shared%20ownership%20of%20quality%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EEncouraging%20user-centric%20thinking%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EUsing%20exploratory%20testing%20to%20find%20high-value%20issues%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EChampioning%20accessibility%20as%20a%20first-class%20quality%20dimension%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20I%20enjoy%20bringing%20order%20to%20complex%20systems%20and%20helping%20teams%20feel%20more%20confident%20in%20their%20releases.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Where%20I've%20Worked%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bg-macchiato-surface0%20dark%3Abg-frappe-surface0%20p-8%20rounded-xl2%20shadow-md%20space-y-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22text-2xl%20font-bold%20text-macchiato-lavender%20dark%3Atext-frappe-lavender%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Where%20I%E2%80%99ve%20Worked%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20I%E2%80%99ve%20worked%20across%20healthcare%2C%20fintech%2C%20telecoms%2C%20public%20services%2C%20and%20high-traffic%20consumer%20apps.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Highlights%20include%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22list-disc%20ml-6%20space-y-2%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EAcorn%20Compliance%20%E2%80%93%20Conversational%20AI%20quality%20and%20automation%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3Ebet365%20%E2%80%93%20rebuilt%20mobile%20UI%2FAPI%20test%20frameworks%20for%20Android%20and%20iOS%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ECGI%20%E2%80%93%20SDET%20Lead%20across%20four%20Scrum%20teams%20on%20a%20major%20Flutter%20banking%20app%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ECeta%20Insurance%20%E2%80%93%20test%20strategies%2C%20UI%2FAPI%20automation%2C%20load%20testing%2C%20CI%20pipelines%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3ETele2%20%E2%80%93%20quality%20engineering%20for%20a%20custom%20AI%20chatbot%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3EDocComs%2C%20KPMG%2C%20Wowcher%2C%20TNT%20and%20many%20more%20across%20web%2C%20mobile%2C%20and%20enterprise%20systems%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Every%20project%20strengthened%20my%20belief%20that%20quality%20engineering%20works%20best%20when%20it%E2%80%99s%20collaborative%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20proactive%2C%20and%20built%20into%20every%20part%20of%20delivery.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20What%20Drives%20Me%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bg-macchiato-surface0%20dark%3Abg-frappe-surface0%20p-8%20rounded-xl2%20shadow-md%20space-y-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22text-2xl%20font-bold%20text-macchiato-lavender%20dark%3Atext-frappe-lavender%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20What%20Drives%20Me%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EUltimately%2C%20I%E2%80%99m%20motivated%20by%20making%20things%20better%20%E2%80%94%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22list-disc%20ml-6%20space-y-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3Ebetter%20user%20experience%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3Ebetter%20engineering%20practices%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3Ebetter%20communication%20between%20teams%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3Ebetter%20confidence%20in%20every%20release%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Whether%20it%E2%80%99s%20building%20frameworks%2C%20shaping%20strategy%2C%20or%20simply%20asking%20the%20right%20questions%2C%20I%20love%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20helping%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20teams%20deliver%20software%20that%20feels%20reliable%2C%20accessible%2C%20and%20genuinely%20helpful.%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fsection%3E%0A%0A%0A%0A%20%20%20%20%3C!--%20Contact%20--%3E%0A%20%20%20%20%3Csection%20id%3D%22contact%22%20class%3D%22py-20%20bg-macchiato-mantle%2F40%20dark%3Abg-frappe-mantle%2F40%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22max-w-4xl%20mx-auto%20px-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bg-macchiato-surface0%20dark%3Abg-frappe-surface0%20p-8%20rounded-xl2%20shadow-md%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22text-2xl%20font-bold%20text-macchiato-lavender%20dark%3Atext-frappe-lavender%20mb-4%22%3EContact%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3EIf%20you'd%20like%20to%20talk%20about%20improving%20quality%2C%20testing%2C%20or%20accessibility%2C%20feel%20free%20to%20reach%20out.%3C%2Fp%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22mt-6%20space-y-4%20text-lg%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22flex%20items-center%20gap-3%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22w-6%20h-6%20text-macchiato-blue%20dark%3Atext-frappe-blue%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22currentColor%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M19%200h-14c-2.761%200-5%202.239-5%205v14c0%202.761%202.239%205%205%205h14c2.762%200%205-2.239%205-5v-14c0-2.761-2.238-5-5-5zm-11%2019h-3v-10h3v10zm-1.5-11.268c-.966%200-1.75-.79-1.75-1.764s.784-1.764%201.75-1.764%201.75.79%201.75%201.764-.783%201.764-1.75%201.764zm13.5%2011.268h-3v-5.604c0-3.368-4-3.113-4%200v5.604h-3v-10h3v1.569c1.396-2.586%207-2.777%207%202.476v5.955z%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjaffamonkey%2F%22%20class%3D%22underline%20hover%3Aopacity-80%22%3ELinkedIn%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Profile%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22flex%20items-center%20gap-3%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22w-6%20h-6%20text-macchiato-green%20dark%3Atext-frappe-green%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20d%3D%22M8%207V3m8%204V3m-9%208h10M5%2021h14a2%202%200%20002-2V7a2%202%200%2000-2-2H5a2%202%200%2000-2%202v12a2%202%200%20002%202z%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fcalendly.com%2Fjaffamonkeyltd%2Fintro-call%22%20class%3D%22underline%20hover%3Aopacity-80%22%3EBook%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20a%20call%20on%20Calendly%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fsection%3E%0A%0A%20%20%20%20%3Cfooter%20class%3D%22text-center%20py-8%20text-macchiato-subtext1%20dark%3Atext-frappe-subtext1%20border-t%20border-macchiato-surface1%20dark%3Aborder-frappe-surface1%22%3E%0A%20%20%20%20%20%20%20%20%C2%A9%202025%20jaffamonkey%20Ltd%0A%20%20%20%20%3C%2Ffooter%3E%0A%0A%0A%20%20%20%20%3C!--%20JS%20--%3E%0A%20%20%20%20%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "2703627c-c43d-40c2-9426-bb5486b64bd3",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "jaffamonkey.sbs-about"
+}

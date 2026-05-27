@@ -1,0 +1,70 @@
+{
+    "results": [
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/p[3]",
+                "aria": "/document[1]/main[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'bar-top' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "bar-top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 149,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p class=\"page_byline__o_XjR\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'bar-top'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22page_byline__o_XjR%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22bar-top%22%5D%7D"
+        }
+    ],
+    "numExecuted": 61,
+    "ruleTime": 3,
+    "nls": {
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 2,
+            "elementsViolation": 0,
+            "elementsViolationReview": 2,
+            "violation": 0,
+            "potentialviolation": 1,
+            "recommendation": 0,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 59
+        },
+        "scanTime": 10,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778601477829,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EQuiz%20Toys%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cdiv%20hidden%3D%22%22%3E%3C!--%24--%3E%3C!--%2F%24--%3E%3C%2Fdiv%3E%3Cmain%20class%3D%22page_container__jZF7q%22%3E%3Ch1%3Equiz.toys%3C%2Fh1%3E%3Cp%20class%3D%22page_tagline__FsEDs%22%3EUnder%20construction.%3C%2Fp%3E%3Cp%3E%3Ca%20class%3D%22page_archiveLink__2M47k%22%20href%3D%22%2Farchive%22%3E%E2%86%92%20The%20Arcade%20Trivia%20Archive%3C%2Fa%3E%3C%2Fp%3E%3Cp%20class%3D%22page_byline__o_XjR%22%3E110%2C000%2B%20questions%20rescued%20from%201980s%20bar-top%20trivia%20cabinets.%3C%2Fp%3E%3C%2Fmain%3E%3C!--%24--%3E%3C!--%2F%24--%3E%3Cnext-route-announcer%20style%3D%22position%3A%20absolute%3B%22%3E%3C%2Fnext-route-announcer%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "047a9b6d-7145-4de7-9817-1605a8341818",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "quiz.toys"
+}

@@ -1,0 +1,472 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 497,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 481,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[1]",
+                "aria": "/document[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 64,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<a style=\"background-color: white; color: rgb(51, 51, 51);\" href=\"/apple\" class=\"link-box\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Ca%20style%3D%5C%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%5C%22%20href%3D%5C%22%2Fapple%5C%22%20class%3D%5C%22link-box%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[1]/img[1]",
+                "aria": "/document[1]/link[3]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 60,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[2]/img[1]",
+                "aria": "/document[1]/link[4]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 97,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[3]/img[1]",
+                "aria": "/document[1]/link[5]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 134,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[4]/img[1]",
+                "aria": "/document[1]/link[6]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 171,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[5]/img[1]",
+                "aria": "/document[1]/link[7]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 208,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[6]/img[1]",
+                "aria": "/document[1]/link[8]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 245,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[7]/img[1]",
+                "aria": "/document[1]/link[9]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 282,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[8]/img[1]",
+                "aria": "/document[1]/link[10]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 319,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[9]/img[1]",
+                "aria": "/document[1]/link[11]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 356,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[10]/img[1]",
+                "aria": "/document[1]/link[12]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 393,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[11]/img[1]",
+                "aria": "/document[1]/link[13]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 430,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/a[12]/img[1]",
+                "aria": "/document[1]/link[14]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 467,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 367,
+    "ruleTime": 7,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 17,
+            "elementsViolation": 13,
+            "elementsViolationReview": 15,
+            "violation": 13,
+            "potentialviolation": 2,
+            "recommendation": 3,
+            "potentialrecommendation": 1,
+            "manual": 1,
+            "pass": 347
+        },
+        "scanTime": 27,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778631485648,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EEvery%20Second%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cnoscript%3EYou%20need%20to%20enable%20JavaScript%20to%20run%20this%20site%3C%2Fnoscript%3E%3Cdiv%20id%3D%22root%22%3E%3Cdiv%20class%3D%22header%22%3E%3Cdiv%20class%3D%22header-title%22%3E%3Ca%20href%3D%22%2F%22%3EEvery%20Second%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22home-about%22%3EVisualize%20all%20the%20amazing%20things%20happening%20every%20second%20around%20the%20world.%20Made%20by%20%3Ca%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Ftwitter.com%2Fnealagarwal%22%3ENeal%20Agarwal%3C%2Fa%3E.%3C%2Fdiv%3E%3Cdiv%20class%3D%22home-links%22%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fapple%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EApple%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fthe-internet%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EThe%20Internet%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fmcdonalds%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EMcDonalds%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fmessenger%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EMessenger%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fuber%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EUber%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fdisney-world%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EDisney%20World%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fanimal-heartbeats%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EAnimal%20Heartbeats%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Finstagram%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EInstagram%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fframes-per-second%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EFrames%20Per%20Second%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fspotify-charts%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3ESpotify%20Charts%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fyour-body%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EYour%20Body%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fearth%22%20style%3D%22background-color%3A%20white%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EEarth%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "74a2711e-98be-41a2-b465-c1753d6fcb91",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "everysecond.io"
+}

@@ -1,0 +1,522 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 430,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 430,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 430,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 414,
+                "width": 784
+            },
+            "snippet": "<body bgcolor=\"#D79A8D\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20bgcolor%3D%5C%22%23D79A8D%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 414,
+                "width": 580
+            },
+            "snippet": "<table cellpadding=\"2\" cellspacing=\"2\" border=\"1\" height=\"370\" width=\"580\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%222%5C%22%20cellspacing%3D%5C%222%5C%22%20border%3D%5C%221%5C%22%20height%3D%5C%22370%5C%22%20width%3D%5C%22580%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Links to HyperPhysics Links to HyperPhysics' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Links to HyperPhysics Links to HyperPhysics"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 49,
+                "height": 28,
+                "width": 496
+            },
+            "snippet": "<p align=\"CENTER\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Links%20to%20HyperPhysics%20Links%20to%20HyperPhysics'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20align%3D%5C%22CENTER%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Links%20to%20HyperPhysics%20Links%20to%20HyperPhysics%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/p[3]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[3]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.98 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.98",
+                16,
+                400,
+                "#0000ee",
+                "#d79a8d",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 164,
+                "height": 18,
+                "width": 47
+            },
+            "snippet": "<a href=\"http://www.psigate.ac.uk\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.98%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22http%3A%2F%2Fwww.psigate.ac.uk%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.98%22%2C16%2C400%2C%22%230000ee%22%2C%22%23d79a8d%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/p[4]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[4]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.98 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.98",
+                16,
+                400,
+                "#0000ee",
+                "#d79a8d",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 217,
+                "height": 18,
+                "width": 143
+            },
+            "snippet": "<a href=\"http://www.bibl.liu.se/kvartersbibl/kb/subjects/kbfysiklarande.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.98%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22http%3A%2F%2Fwww.bibl.liu.se%2Fkvartersbibl%2Fkb%2Fsubjects%2Fkbfysiklarande.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.98%22%2C16%2C400%2C%22%230000ee%22%2C%22%23d79a8d%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/p[5]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[5]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.98 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.98",
+                16,
+                400,
+                "#0000ee",
+                "#d79a8d",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 251,
+                "height": 18,
+                "width": 151
+            },
+            "snippet": "<a href=\"http://www.umanitoba.ca/libraries/units/engineering/newjune01.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.98%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22http%3A%2F%2Fwww.umanitoba.ca%2Flibraries%2Funits%2Fengineering%2Fnewjune01.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.98%22%2C16%2C400%2C%22%230000ee%22%2C%22%23d79a8d%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/p[6]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[6]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.98 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.98",
+                16,
+                400,
+                "#0000ee",
+                "#d79a8d",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 286,
+                "height": 18,
+                "width": 208
+            },
+            "snippet": "<a href=\"http://www.enviroliteracy.org/article.php/71.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.98%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22http%3A%2F%2Fwww.enviroliteracy.org%2Farticle.php%2F71.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.98%22%2C16%2C400%2C%22%230000ee%22%2C%22%23d79a8d%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/p[8]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[8]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.98 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.98",
+                16,
+                400,
+                "#0000ee",
+                "#d79a8d",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 355,
+                "height": 18,
+                "width": 78
+            },
+            "snippet": "<a href=\"http://physicsweb.org/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.98%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22http%3A%2F%2Fphysicsweb.org%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.98%22%2C16%2C400%2C%22%230000ee%22%2C%22%23d79a8d%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.98 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.98",
+                16,
+                400,
+                "#0000ee",
+                "#d79a8d",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 518,
+                "top": 193,
+                "height": 18,
+                "width": 37
+            },
+            "snippet": "<a href=\"hframe.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.98%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22hframe.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.98%22%2C16%2C400%2C%22%230000ee%22%2C%22%23d79a8d%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.98 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.98",
+                16,
+                400,
+                "#0000ee",
+                "#d79a8d",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 18,
+                "top": 397,
+                "height": 18,
+                "width": 89
+            },
+            "snippet": "<a href=\"hph.html#hph\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.98%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22hph.html%23hph%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.98%22%2C16%2C400%2C%22%230000ee%22%2C%22%23d79a8d%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.98 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.98",
+                16,
+                400,
+                "#0000ee",
+                "#d79a8d",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 518,
+                "top": 397,
+                "height": 18,
+                "width": 57
+            },
+            "snippet": "<a href=\"Javascript:history.go(-1)\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.98%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22Javascript%3Ahistory.go(-1)%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.98%22%2C16%2C400%2C%22%230000ee%22%2C%22%23d79a8d%22%2Cfalse%2Cfalse%5D%7D"
+        }
+    ],
+    "numExecuted": 175,
+    "ruleTime": 3,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 12,
+            "elementsViolation": 11,
+            "elementsViolationReview": 12,
+            "violation": 12,
+            "potentialviolation": 2,
+            "recommendation": 1,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 160
+        },
+        "scanTime": 10,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778945587806,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EHyperPhysics%20Links%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23D79A8D%22%3E%0A%3C!--%20Copyright%202002%20by%20Carl%20Rod%20Nave%2C%20RodNave%40gsu.edu--%3E%0A%0A%3Ctable%20width%3D%22580%22%20height%3D%22370%22%20border%3D%221%22%20cellspacing%3D%222%22%20cellpadding%3D%222%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%3Ctd%20width%3D%22514%22%20height%3D%22309%22%3E%0A%0A%0A%3Cbr%3E%0A%3Ca%20name%3D%22c1%22%3E%3C%2Fa%3E%0A%3Cp%20align%3D%22CENTER%22%3E%3Cb%3E%3Cfont%20size%3D%22%2B2%22%3ELinks%20to%20HyperPhysics%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%0A%3Cp%3EIt%20is%20possible%20that%20sites%20which%20link%20to%20HyperPhysics%20might%20be%20an%20additional%20resource%2C%20since%20many%20of%20them%20are%20summaries%20of%20physics%20and%20other%20science%20web%20sites.%20%3C%2Fp%3E%0A%0A%0A%3Cp%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.psigate.ac.uk%22%3EPsigate%3C%2Fa%3E%2C%20a%20physical%20sciences%20information%20gateway%20of%20the%20UK's%20Resource%20Discovery%20Network%20(RDN)%3C%2Fp%3E%0A%0A%3Cp%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.bibl.liu.se%2Fkvartersbibl%2Fkb%2Fsubjects%2Fkbfysiklarande.htm%22%3ELink%C5%A1pings%20universitet%3C%2Fa%3E%3C%2Fp%3E%0A%0A%3Cp%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.umanitoba.ca%2Flibraries%2Funits%2Fengineering%2Fnewjune01.html%22%3EUniversity%20of%20Manitoba%3C%2Fa%3E%0A%0A%20%20%20%20%20%3C%2Fp%3E%3Cp%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.enviroliteracy.org%2Farticle.php%2F71.html%22%3EEnvironmental%20Literacy%20Council%3C%2Fa%3E%3C%2Fp%3E%0A%0A%0A%3Cp%3EOther%20physics%20links%3A%3C%2Fp%3E%0A%3Cp%3E%3Ca%20href%3D%22http%3A%2F%2Fphysicsweb.org%2F%22%3EPhysicsWeb%3C%2Fa%3E%3C%2Fp%3E%0A%0A%3C%2Ftd%3E%3Ctd%20width%3D%2266%22%3E%0A%3Ca%20href%3D%22hframe.html%22%3EIndex%3C%2Fa%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%20height%3D%2217%22%3E%26nbsp%3B%3Ca%20href%3D%22hph.html%23hph%22%3EHyperPhysics%3C%2Fa%3E%3C%2Ftd%3E%0A%3Ctd%3E%3Ca%20href%3D%22Javascript%3Ahistory.go(-1)%22%3EGo%20Back%3C%2Fa%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "8449bcb8-032a-4058-9332-23d3be161d79",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "hyperphysics.phy-astr.gsu.edu-hbase-hphlinks.html"
+}

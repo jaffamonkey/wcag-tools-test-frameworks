@@ -1,0 +1,432 @@
+{
+    "results": [
+        {
+            "ruleId": "style_background_decorative",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]",
+                "aria": "/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify the CSS background image does not convey important information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 151,
+                "height": 125,
+                "width": 784
+            },
+            "snippet": "<div style=\"background: url('/assets/images/backgrounds/assistive-technology-bg.png')\" class=\"billboard\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_background_decorative.html#%7B%22message%22%3A%22Verify%20the%20CSS%20background%20image%20does%20not%20convey%20important%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background%3A%20url('%2Fassets%2Fimages%2Fbackgrounds%2Fassistive-technology-bg.png')%5C%22%20class%3D%5C%22billboard%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_background_decorative%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]",
+                "aria": "/document[1]/main[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 151,
+                "height": 125,
+                "width": 784
+            },
+            "snippet": "<div style=\"background: url('/assets/images/backgrounds/assistive-technology-bg.png')\" class=\"billboard\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background%3A%20url('%2Fassets%2Fimages%2Fbackgrounds%2Fassistive-technology-bg.png')%5C%22%20class%3D%5C%22billboard%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[2]/a[1]",
+                "aria": "/document[1]/main[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"link\" role does not have a tabbable element",
+            "messageArgs": [
+                "link"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 257,
+                "height": 18,
+                "width": 67
+            },
+            "snippet": "<a class=\"button\" href=\"#favorites\" tabindex=\"-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22link%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22button%5C%22%20href%3D%5C%22%23favorites%5C%22%20tabindex%3D%5C%22-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22link%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_role_allowed",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[3]/div[1]",
+                "aria": "/document[1]/main[1]/generic[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "The role 'card' defined on the element is not valid per ARIA specification",
+            "messageArgs": [
+                "card"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 294,
+                "height": 53,
+                "width": 784
+            },
+            "snippet": "<div aria-label=\"Motor\" role=\"card\" class=\"display-list\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_role_allowed.html#%7B%22message%22%3A%22The%20role%20'card'%20defined%20on%20the%20element%20is%20not%20valid%20per%20ARIA%20specification%22%2C%22snippet%22%3A%22%3Cdiv%20aria-label%3D%5C%22Motor%5C%22%20role%3D%5C%22card%5C%22%20class%3D%5C%22display-list%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22aria_role_allowed%22%2C%22msgArgs%22%3A%5B%22card%22%5D%7D"
+        },
+        {
+            "ruleId": "application_content_accessible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[4]/div[2]/div[1]",
+                "aria": "/document[1]/main[1]/application[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that the non-decorative static text and image content within an element with \"application\" role are accessible",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 589,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div role=\"application\" aria-expanded=\"false\" class=\"button expander-toggle\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/application_content_accessible.html#%7B%22message%22%3A%22Verify%20that%20the%20non-decorative%20static%20text%20and%20image%20content%20within%20an%20element%20with%20%5C%22application%5C%22%20role%20are%20accessible%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22application%5C%22%20aria-expanded%3D%5C%22false%5C%22%20class%3D%5C%22button%20expander-toggle%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22application_content_accessible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_application_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[4]/div[2]/div[1]",
+                "aria": "/document[1]/main[1]/application[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_label",
+            "message": "Element with \"application\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 589,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div role=\"application\" aria-expanded=\"false\" class=\"button expander-toggle\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_application_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22application%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22application%5C%22%20aria-expanded%3D%5C%22false%5C%22%20class%3D%5C%22button%20expander-toggle%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_label%22%2C%22ruleId%22%3A%22aria_application_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "application_content_accessible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[4]/div[3]/div[1]",
+                "aria": "/document[1]/main[1]/application[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that the non-decorative static text and image content within an element with \"application\" role are accessible",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 644,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div role=\"application\" aria-expanded=\"false\" class=\"button expander-toggle\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/application_content_accessible.html#%7B%22message%22%3A%22Verify%20that%20the%20non-decorative%20static%20text%20and%20image%20content%20within%20an%20element%20with%20%5C%22application%5C%22%20role%20are%20accessible%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22application%5C%22%20aria-expanded%3D%5C%22false%5C%22%20class%3D%5C%22button%20expander-toggle%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22application_content_accessible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_application_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[4]/div[3]/div[1]",
+                "aria": "/document[1]/main[1]/application[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_label",
+            "message": "Element with \"application\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 644,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div role=\"application\" aria-expanded=\"false\" class=\"button expander-toggle\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_application_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22application%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22application%5C%22%20aria-expanded%3D%5C%22false%5C%22%20class%3D%5C%22button%20expander-toggle%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_label%22%2C%22ruleId%22%3A%22aria_application_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "application_content_accessible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[4]/div[4]/div[1]",
+                "aria": "/document[1]/main[1]/application[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that the non-decorative static text and image content within an element with \"application\" role are accessible",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 681,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div role=\"application\" aria-expanded=\"false\" class=\"button expander-toggle\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/application_content_accessible.html#%7B%22message%22%3A%22Verify%20that%20the%20non-decorative%20static%20text%20and%20image%20content%20within%20an%20element%20with%20%5C%22application%5C%22%20role%20are%20accessible%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22application%5C%22%20aria-expanded%3D%5C%22false%5C%22%20class%3D%5C%22button%20expander-toggle%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22application_content_accessible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_application_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[4]/div[4]/div[1]",
+                "aria": "/document[1]/main[1]/application[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_label",
+            "message": "Element with \"application\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 681,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div role=\"application\" aria-expanded=\"false\" class=\"button expander-toggle\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_application_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22application%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22application%5C%22%20aria-expanded%3D%5C%22false%5C%22%20class%3D%5C%22button%20expander-toggle%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_label%22%2C%22ruleId%22%3A%22aria_application_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "application_content_accessible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[4]/div[5]/div[1]",
+                "aria": "/document[1]/main[1]/application[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that the non-decorative static text and image content within an element with \"application\" role are accessible",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 787,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div role=\"application\" aria-expanded=\"false\" class=\"button expander-toggle\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/application_content_accessible.html#%7B%22message%22%3A%22Verify%20that%20the%20non-decorative%20static%20text%20and%20image%20content%20within%20an%20element%20with%20%5C%22application%5C%22%20role%20are%20accessible%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22application%5C%22%20aria-expanded%3D%5C%22false%5C%22%20class%3D%5C%22button%20expander-toggle%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22application_content_accessible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_application_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[4]/div[5]/div[1]",
+                "aria": "/document[1]/main[1]/application[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_label",
+            "message": "Element with \"application\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 787,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div role=\"application\" aria-expanded=\"false\" class=\"button expander-toggle\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_application_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22application%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Cdiv%20role%3D%5C%22application%5C%22%20aria-expanded%3D%5C%22false%5C%22%20class%3D%5C%22button%20expander-toggle%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_label%22%2C%22ruleId%22%3A%22aria_application_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "form_submit_button_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[5]/form[1]",
+                "aria": "/document[1]/main[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify the <form> element has a submit button or an image button",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 843,
+                "height": 130,
+                "width": 784
+            },
+            "snippet": "<form>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/form_submit_button_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cform%3E%20element%20has%20a%20submit%20button%20or%20an%20image%20button%22%2C%22snippet%22%3A%22%3Cform%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22form_submit_button_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 654,
+    "ruleTime": 12,
+    "nls": {
+        "widget_tabbable_exists": {
+            "0": "Component must have at least one tabbable element",
+            "fail_no_tabbable": "Component with \"{0}\" role does not have a tabbable element"
+        },
+        "style_background_decorative": {
+            "0": "Images included by using CSS alone must not convey important information",
+            "Potential_1": "Verify the CSS background image does not convey important information"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "aria_role_allowed": {
+            "0": "Elements must have a valid 'role' per ARIA specification",
+            "Fail_2": "The role '{0}' defined on the element is not valid per ARIA specification"
+        },
+        "application_content_accessible": {
+            "0": "Non-decorative static text and image content within an element with \"application\" role must be accessible",
+            "Potential_1": "Verify that the non-decorative static text and image content within an element with \"application\" role are accessible"
+        },
+        "aria_application_labelled": {
+            "0": "Each element with \"application\" role must have a label that describes its purpose",
+            "fail_no_label": "Element with \"application\" role does not have a label"
+        },
+        "form_submit_button_exists": {
+            "0": "A <form> element should have a submit button or an image button",
+            "Potential_1": "Verify the <form> element has a submit button or an image button"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 9,
+            "elementsViolation": 5,
+            "elementsViolationReview": 8,
+            "violation": 5,
+            "potentialviolation": 8,
+            "recommendation": 1,
+            "potentialrecommendation": 0,
+            "manual": 2,
+            "pass": 638
+        },
+        "scanTime": 38,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778707098876,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EInaccessible%20web%20page%20demo%20-%20%5BUpdated%202026%5D%20Atomic%20Accessibility%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22page-wrapper%22%3E%3Cdiv%20class%3D%22skip-links%20container%22%3E%0A%20%20%3Ca%20href%3D%22%23content%22%3ESkip%20to%20main%20content%3C%2Fa%3E%0A%20%20%3Ca%20href%3D%22%23footer%22%3ESkip%20to%20site%20Map%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%3Cheader%3E%0A%20%20%3Cdiv%20class%3D%22container%22%3E%3Cnav%20id%3D%22nav%22%20class%3D%22menu%22%20aria-label%3D%22Site%22%3E%0A%20%20%3Cul%3E%0A%20%20%20%20%3Cli%20class%3D%22home%22%3E%0A%20%20%20%20%20%20%3Ca%20aria-label%3D%22Atomic%20Accessibility%22%20href%3D%22%2F%22%3E%3Cspan%3EAtomic%20Accessibility%3C%2Fspan%3E%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3Cli%20class%3D%22design%20alpha%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%2Faccessible-design%2F%22%3EDesign%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3Cli%20class%3D%22web%20alpha%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%2Faccessible-web%2F%22%3EHTML%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3Cli%20class%3D%22native%20alpha%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%2Faccessible-ios%2F%22%3EiOS%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3Cli%20class%3D%22native%20alpha%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%2Faccessible-android%2F%22%3EAndroid%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fli%3E%0A%20%20%3C%2Ful%3E%0A%3C%2Fnav%3E%3C%2Fdiv%3E%0A%3C%2Fheader%3E%0A%3Cmain%20id%3D%22content%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22billboard%22%20style%3D%22background%3A%20url('%2Fassets%2Fimages%2Fbackgrounds%2Fassistive-technology-bg.png')%22%3E%0A%20%20%3Cdiv%20class%3D%22container%20group-2-1%22%3E%0A%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22h-alpha%22%3EInaccessible%20web%20page%20demo%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22h-bravo%20subhead%22%3E%0A%20%20%20%20%20%20%20%20This%20inaccessible%20web%20page%20demonstrates%20how%20a%20page%20can%20work%20perfectly%20for%20someone%20using%20a%20mouse%2C%20but%20still%20be%20completely%20inaccessible.%0A%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22lowlight%20center-text%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22h-delta%22%3E%0A%20%20%20%20%20%20%20%20We%20want%20to%20know%20your%20favorite%20screen%20reader.%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Ca%20tabindex%3D%22-1%22%20href%3D%22%23favorites%22%20class%3D%22button%22%3E%0A%20%20%20%20%20%20%20%20Click%20here%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22container%22%3E%0A%20%20%3Cdiv%20class%3D%22h-bravo%20center-text%22%3E%0A%20%20%20%20Broad%20categories%20of%20disabilities%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22container%20section%20group-4%22%3E%0A%20%20%3Cdiv%20class%3D%22display-list%22%20role%3D%22card%22%20aria-label%3D%22Motor%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22h-charlie%20center-text%22%3E%0A%20%20%20%20%20%20%3Cimg%20role%3D%22img%22%20alt%3D%22%2Fassets%2Fimages%2Ficons%2Ficon-pointer.svg%22%20class%3D%22icon%20icon-large%22%3E%0A%20%20%20%20%20%20Motor%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20Not%20everyone%20uses%20a%20mouse%20or%20taps%20their%20screen.%0A%20%20%20%20%20%20Some%20people%20exclusively%20use%20a%20keyboard%20or%20custom%20switch%20input%20devices.%0A%20%20%20%20%3C%2Fp%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22display-list%22%20role%3D%22article%22%20aria-label%3D%22Vision%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22h-charlie%20center-text%22%3E%0A%20%20%20%20%20%20%3Cimg%20role%3D%22img%22%20alt%3D%22%2Fassets%2Fimages%2Ficons%2Ficon-vision.svg%22%20class%3D%22icon%20icon-large%22%3E%0A%20%20%20%20%20%20Vision%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20People%20who%20are%20blind%20or%20low%20vision%20use%20the%20internet%20using%20a%20screen%20reader%20or%20extreme%20zoom%20tools.%0A%20%20%20%20%3C%2Fp%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22display-list%22%20role%3D%22article%22%20aria-label%3D%22Hearing%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22h-charlie%20center-text%22%3E%0A%20%20%20%20%20%20%3Cimg%20role%3D%22img%22%20alt%3D%22%2Fassets%2Fimages%2Ficons%2Ficon-hearing.svg%22%20class%3D%22icon%20icon-large%22%3E%0A%20%20%20%20%20%20Hearing%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20Some%20people%20rely%20on%20captions%20or%20transcripts%20to%20consume%20audio%20or%20video.%0A%20%20%20%20%3C%2Fp%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22display-list%22%20role%3D%22article%22%20aria-label%3D%22Cognitive%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22h-charlie%20center-text%22%3E%0A%20%20%20%20%20%20%3Cimg%20role%3D%22img%22%20alt%3D%22%2Fassets%2Fimages%2Ficons%2Ficon-brain.svg%22%20class%3D%22icon%20icon-large%22%3E%0A%20%20%20%20%20%20Cognitive%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20There%20is%20a%20wide%20range%20of%20cognitive%20differences%20that%20can%20be%20accommodated%20by%20design%20and%20code.%0A%20%20%20%20%3C%2Fp%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22container%20section%20narrow%22%3E%0A%20%20%3Cdiv%20class%3D%22h-bravo%22%3E%0A%20%20%20%20Common%20questions%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22expander-group%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22button%20expander-toggle%22%20aria-expanded%3D%22false%22%20role%3D%22application%22%3E%0A%20%20%20%20%20%20Are%20all%20projects%20in%20scope%3F%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22expander-content%22%3E%0A%20%20%20%20%20%20Any%20digital%20space%20falls%20under%20the%20requirements%20of%20the%20Americans%20with%20Disabilities%20Act%20(ADA)%20and%20must%20be%20accessible.%0A%20%20%20%20%20%20This%20includes%20customer%20and%20employee%20facing%20applications.%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22expander-group%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22button%20expander-toggle%22%20aria-expanded%3D%22false%22%20role%3D%22application%22%3E%0A%20%20%20%20%20%20%20%20Who%20does%20this%20really%20affect%3F%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22expander-content%22%3E%0A%20%20%20%20%20%20Over%201%2F4%20of%20the%20US%20population%20has%20a%20disability%20that%20requires%20assistive%20technology%20or%20accommodation.%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22expander-group%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22button%20expander-toggle%22%20aria-expanded%3D%22false%22%20role%3D%22application%22%3E%0A%20%20%20%20%20%20How%20do%20we%20test%20our%20products%3F%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22expander-content%22%3E%0A%20%20%20%20%20%20%3Col%3E%0A%20%20%20%20%20%20%20%20%3Cli%3ETest%20with%20the%20keyboard%20only%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20Test%20with%20the%20mobile%20screenreader%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20Test%20with%20the%20desktop%20screenreader%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3C%2Fol%3E%0A%20%20%20%20%3C%2Fdiv%3E%20%20%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22expander-group%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22button%20expander-toggle%22%20aria-expanded%3D%22false%22%20role%3D%22application%22%3E%0A%20%20%20%20%20%20What%20screen%20reader%20should%20I%20use%20to%20test%3F%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22expander-content%22%3E%0A%20%20%20%20%20%20%3Cimg%20alt%3D%22image%20of%20screenreader%20browser%20pairings%22%3E%0A%20%20%20%20%3C%2Fdiv%3E%20%20%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22container%20narrow%22%3E%0A%20%20%3Cdiv%20id%3D%22favorites%22%20class%3D%22h-bravo%22%3E%0A%20%20%20%20Survey%3A%20Which%20is%20your%20favorite%20screen%20reader%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cform%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fieldset%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22legend%20h-charlie%22%3E%0A%20%20%20%20%20%20%20%20Choose%20your%20favorite%20screen%20reader%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22label%20fake-radio%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22radio%22%20id%3D%22alphaRadio%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20VoiceOver%20for%20iOS%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22label%20fake-radio%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22radio%22%20id%3D%22bravoRadio%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20Talkback%20for%20Android%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22label%20fake-radio%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22radio%22%20id%3D%22charlieRadio%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20NVDA%20for%20Windows%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22label%20fake-radio%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22radio%22%20id%3D%22deltaRadio%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20JAWS%20for%20Windows%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22label%20fake-radio%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22radio%22%20id%3D%22echoRadio%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20VoiceOver%20for%20MacOS%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22alert%20inert%22%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22response-message%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20type%3D%22button%22%20class%3D%22button%22%20id%3D%22submit-response%22%3E%0A%20%20%20%20%20%20Submit%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fform%3E%0A%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fmain%3E%0A%3Cfooter%20id%3D%22footer%22%3E%0A%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%3Cp%20class%3D%22hire-me%22%3E%0A%20%20%20%20%20%20Looking%20for%20more%20enterprise%20insights%3F%20%3Ca%20href%3D%22https%3A%2F%2Fwww.thebookonaccessibility.com%22%3EThe%20Book%20on%20Accessibility%3C%2Fa%3E%20turns%20practical%20insights%20into%20action.%20Learn%20how%20to%20lead%20accessibility%20programs%20that%20work%E2%80%94for%20people%20with%20disabilities%20and%20your%20business.%0A%20%20%20%20%3C%2Fp%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%0A%20%20%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%3Cnav%20aria-label%3D%22Site%20map%22%3E%0A%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Faccessible-design%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Accessible%20Design%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Faccessibility-training%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Accessibility%20Training%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Faccessible-web%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Accessible%20HTML%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Faccessible-ios%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Accessible%20iOS%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Faccessible-android%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Accessible%20Android%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fabout%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20About%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fnav%3E%0A%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%C2%A9%202026%20Charlie%20Triplett%20LLC.%20All%20rights%20reserved.%0A%20%20%20%20%20%20UX%2FUI%20design%2C%20Web%2C%20iOS%2C%20and%20Android%20accessibility%20acceptance%20criteria%20%0A%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%3C!--%20%3Cp%20class%3D%22last-modified%22%20id%3D'last-modified'%3E%3C%2Fp%3E%20--%3E%20%20%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%3C%2Fdiv%3E%0A%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "6dbc3db8-2a81-43d2-8931-d4f692c3e3a0",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.atomica11y.com-demos-basic-inaccessible-webpage"
+}

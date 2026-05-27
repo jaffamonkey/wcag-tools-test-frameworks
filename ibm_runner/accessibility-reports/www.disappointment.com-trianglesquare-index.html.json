@@ -1,0 +1,510 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 381,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 381,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 381,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 381,
+                "width": 800
+            },
+            "snippet": "<body alink=\"#CCCCCC\" vlink=\"#CCCCCC\" link=\"#FFFFFF\" text=\"#FFFFFF\" marginheight=\"0\" marginwidth=\"0\" leftmargin=\"0\" topmargin=\"0\" bgcolor=\"#333333\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20alink%3D%5C%22%23CCCCCC%5C%22%20vlink%3D%5C%22%23CCCCCC%5C%22%20link%3D%5C%22%23FFFFFF%5C%22%20text%3D%5C%22%23FFFFFF%5C%22%20marginheight%3D%5C%220%5C%22%20marginwidth%3D%5C%220%5C%22%20leftmargin%3D%5C%220%5C%22%20topmargin%3D%5C%220%5C%22%20bgcolor%3D%5C%22%23333333%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 381,
+                "width": 608
+            },
+            "snippet": "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "object_text_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/object[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_text_alternative",
+            "message": "An <object> element does not have a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 336,
+                "height": 18,
+                "width": 400
+            },
+            "snippet": "<object height=\"350\" width=\"400\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0\" classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/object_text_exists.html#%7B%22message%22%3A%22An%20%3Cobject%3E%20element%20does%20not%20have%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Cobject%20height%3D%5C%22350%5C%22%20width%3D%5C%22400%5C%22%20codebase%3D%5C%22http%3A%2F%2Fdownload.macromedia.com%2Fpub%2Fshockwave%2Fcabs%2Fflash%2Fswflash.cab%23version%3D4%2C0%2C2%2C0%5C%22%20classid%3D%5C%22clsid%3AD27CDB6E-AE6D-11cf-96B8-444553540000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_text_alternative%22%2C%22ruleId%22%3A%22object_text_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 400,
+                "top": 0,
+                "height": 354,
+                "width": 208
+            },
+            "snippet": "<td bgcolor=\"#000000\" valign=\"top\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%20bgcolor%3D%5C%22%23000000%5C%22%20valign%3D%5C%22top%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 400,
+                "top": 0,
+                "height": 217,
+                "width": 208
+            },
+            "snippet": "<table cellpadding=\"4\" cellspacing=\"0\" border=\"0\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%224%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/p[1]/b[1]/font[1]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"a rum deal\"",
+            "messageArgs": [
+                "\"a rum deal\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 435,
+                "top": 72,
+                "height": 12,
+                "width": 138
+            },
+            "snippet": "<a href=\"trianglesquare1.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22a%20rum%20deal%5C%22%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22trianglesquare1.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22a%20rum%20deal%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/p[1]/font[1]/a[2]/b[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"rap-sody in                 blue\"",
+            "messageArgs": [
+                "\"rap-sody in                 blue\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 420,
+                "top": 183,
+                "height": 12,
+                "width": 169
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22rap-sody%20in%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20blue%5C%22%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22rap-sody%20in%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20blue%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 608,
+                "top": 354,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"../../disclaimer.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22..%2F..%2Fdisclaimer.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 608,
+                "top": 354,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"../../disclaimer.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22..%2F..%2Fdisclaimer.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/table[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 354,
+                "height": 27,
+                "width": 608
+            },
+            "snippet": "<table cellpadding=\"2\" border=\"0\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%222%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'With Mediapill With Mediapill' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "With Mediapill With Mediapill"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 439,
+                "top": 358,
+                "height": 19,
+                "width": 165
+            },
+            "snippet": "<div align=\"right\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'With%20Mediapill%20With%20Mediapill'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cdiv%20align%3D%5C%22right%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22With%20Mediapill%20With%20Mediapill%22%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/font[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 541,
+                "top": 364,
+                "height": 11,
+                "width": 63
+            },
+            "snippet": "<font face=\"Arial, Geneva, Helvetica, sans-serif\" color=\"#FFFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20face%3D%5C%22Arial%2C%20Geneva%2C%20Helvetica%2C%20sans-serif%5C%22%20color%3D%5C%22%23FFFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 290,
+    "ruleTime": 7,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "object_text_exists": {
+            "0": "<object> element must have a text alternative for the content rendered by the object",
+            "fail_no_text_alternative": "An <object> element does not have a text alternative"
+        },
+        "table_headers_related": {
+            "0": "For a complex data table, all <th> and <td> elements must be related via 'header' or 'scope' attributes",
+            "Fail_1": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 15,
+            "elementsViolation": 8,
+            "elementsViolationReview": 13,
+            "violation": 9,
+            "potentialviolation": 6,
+            "recommendation": 1,
+            "potentialrecommendation": 3,
+            "manual": 4,
+            "pass": 267
+        },
+        "scanTime": 30,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779211932398,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3Etriangle%20%26%20square%20%2F%20episode%20two%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23333333%22%20topmargin%3D%220%22%20leftmargin%3D%220%22%20marginwidth%3D%220%22%20marginheight%3D%220%22%20text%3D%22%23FFFFFF%22%20link%3D%22%23FFFFFF%22%20vlink%3D%22%23CCCCCC%22%20alink%3D%22%23CCCCCC%22%3E%0A%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%3E%0A%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%3Ctd%3E%3Cobject%20classid%3D%22clsid%3AD27CDB6E-AE6D-11cf-96B8-444553540000%22%20codebase%3D%22http%3A%2F%2Fdownload.macromedia.com%2Fpub%2Fshockwave%2Fcabs%2Fflash%2Fswflash.cab%23version%3D4%2C0%2C2%2C0%22%20width%3D%22400%22%20height%3D%22350%22%3E%0A%20%20%20%20%20%20%20%20%3Cparam%20name%3D%22movie%22%20value%3D%22trianglesquare2.swf%22%3E%0A%20%20%20%20%20%20%20%20%3Cparam%20name%3D%22quality%22%20value%3D%22high%22%3E%0A%20%20%20%20%20%20%20%20%3Cparam%20name%3D%22menu%22%20value%3D%22false%22%3E%0A%20%20%20%20%20%20%20%20%3Cembed%20quality%3D%22high%22%20menu%3D%22false%22%20pluginspage%3D%22http%3A%2F%2Fwww.macromedia.com%2Fshockwave%2Fdownload%2Findex.cgi%3FP1_Prod_Version%3DShockwaveFlash%22%20type%3D%22application%2Fx-shockwave-flash%22%20width%3D%22400%22%20height%3D%22350%22%3E%0A%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C%2Fobject%3E%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%20%0A%20%20%20%20%20%20%3Ctable%20width%3D%22100%25%22%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%224%22%3E%0A%20%20%20%20%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%20%20%20%20%3Ctd%3E%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20align%3D%22center%22%3E%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%3Cimg%20width%3D%22150%22%20height%3D%2284%22%20alt%3D%22the%20triangle%20and%20square%20show%22%20vspace%3D%225%22%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%221%22%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22trianglesquare1.html%22%3Eepisode%201%20-%20%22a%20rum%20deal%22%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%3Ca%20href%3D%22trianglesquare2.html%22%3Eepisode%202%20-%20%22tying%20times%22%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%221%22%3E%3Ca%20href%3D%22trianglesquare3.html%22%3E%3Cb%3Eepisode%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%203%20-%20%22hexagoin'%20on!%22%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fb%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22trianglesquare4.html%22%3E%3Cb%3Eepisode%204%20-%20%22rap-sody%20in%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20blue%22%3C%2Fb%3E%3C%2Fa%3E%3C%2Ffont%3E%3Cfont%20size%3D%221%22%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffont%3E%20%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%20%20%3Ctr%20valign%3D%22middle%22%3E%20%0A%20%20%20%20%3Ctd%20bgcolor%3D%22%23000000%22%20colspan%3D%222%22%3E%20%0A%20%20%20%20%20%20%3Cdiv%20align%3D%22right%22%3E%20%3Ca%20href%3D%22..%2F..%2Fdisclaimer.html%22%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%221%22%3E%3Cb%3E%20%0A%20%20%20%20%20%20%20%20%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%20%0A%20%20%20%20%20%20%20%20%3Ctable%20width%3D%22100%25%22%20border%3D%220%22%20cellpadding%3D%222%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctbody%3E%3Ctr%3E%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctd%20width%3D%2272%25%22%20height%3D%2216%22%3E%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20align%3D%22left%22%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.macromedia.com%2Fshockwave%2Fdownload%2Findex.cgi%3FP1_Prod_Version%3DShockwaveFlash%22%20target%3D%22_blank%22%3E%3Cfont%20size%3D%221%22%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%3EThis%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20page%20will%20want%20Macromedia%20Flash.%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%221%22%3E%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctd%20width%3D%2228%25%22%20height%3D%2216%22%3E%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20align%3D%22right%22%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%221%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20face%3D%22Arial%2C%20Geneva%2C%20Helvetica%2C%20sans-serif%22%3EWith%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22http%3A%2F%2Fwww.disappointment.com%22%20target%3D%22_blank%22%3EMediapill%3C%2Fa%3E%3C%2Ffont%3E%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "31bbe124-6e3d-42ce-b33e-79fe75dd535c",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.disappointment.com-trianglesquare-index.html"
+}

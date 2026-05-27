@@ -1,0 +1,502 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[2]",
+                "aria": "/document[1]/banner[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 157,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div style=\"background-color: #000;color:#FFF;\" class=\"cs_menu_font_family d-none d-sm-block\" id=\"superHeader\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background-color%3A%20%23000%3Bcolor%3A%23FFF%3B%5C%22%20class%3D%5C%22cs_menu_font_family%20d-none%20d-sm-block%5C%22%20id%3D%5C%22superHeader%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.23 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.23",
+                16,
+                400,
+                "#0000ee",
+                "#000000",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 157,
+                "height": 18,
+                "width": 39
+            },
+            "snippet": "<a href=\"/core/portal/login\" class=\"text-white font-s\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.23%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fcore%2Fportal%2Flogin%5C%22%20class%3D%5C%22text-white%20font-s%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.23%22%2C16%2C400%2C%22%230000ee%22%2C%22%23000000%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[3]/div[1]/nav[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]/search[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 282,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input aria-label=\"Search\" placeholder=\"Search\" name=\"q\" class=\"form-control py-2 border-right-0 d-inline cs_menu_border_colour\" id=\"full_header_search\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22Search%5C%22%20placeholder%3D%5C%22Search%5C%22%20name%3D%5C%22q%5C%22%20class%3D%5C%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%5C%22%20id%3D%5C%22full_header_search%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[3]/div[1]/nav[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]/search[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 315,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"Search\" type=\"submit\" class=\"btn btn-primary border-left-0 cs_menu_border_colour\" id=\"input_search_icon_header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Search%5C%22%20type%3D%5C%22submit%5C%22%20class%3D%5C%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%5C%22%20id%3D%5C%22input_search_icon_header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[5]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/generic[2]/search[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 480,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input aria-label=\"Search\" placeholder=\"Search\" name=\"q\" class=\"form-control py-2 border-right-0 d-inline cs_menu_border_colour\" id=\"expand_header_search\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22Search%5C%22%20placeholder%3D%5C%22Search%5C%22%20name%3D%5C%22q%5C%22%20class%3D%5C%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%5C%22%20id%3D%5C%22expand_header_search%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[5]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/banner[1]/generic[2]/search[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 513,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"Search\" type=\"submit\" class=\"btn btn-primary border-left-0 cs_menu_border_colour\" id=\"input_search_icon_header_expand\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Search%5C%22%20type%3D%5C%22submit%5C%22%20class%3D%5C%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%5C%22%20id%3D%5C%22input_search_icon_header_expand%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[1]",
+                "aria": "/document[1]/main[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'small'",
+            "messageArgs": [
+                "small"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 648,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'small'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22small%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[9]",
+                "aria": "/document[1]/main[1]/paragraph[9]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'small'",
+            "messageArgs": [
+                "small"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1770,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'small'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22small%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[10]",
+                "aria": "/document[1]/main[1]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1842,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/p[12]",
+                "aria": "/document[1]/main[1]/paragraph[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2248,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[1]/button[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2695,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button data-dismiss=\"modal\" aria-label=\"Close\" class=\"close\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20data-dismiss%3D%5C%22modal%5C%22%20aria-label%3D%5C%22Close%5C%22%20class%3D%5C%22close%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[2]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 2918,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" checked=\"\" value=\"true\" name=\"necessary_cookies\" class=\"custom-control-input\" id=\"necessary_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22necessary_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22necessary_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[3]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 3016,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" value=\"true\" name=\"preferences_cookies\" class=\"custom-control-input\" id=\"preferences_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22preferences_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22preferences_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[4]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 3132,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" value=\"true\" name=\"statistics_cookies\" class=\"custom-control-input\" id=\"statistics_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22statistics_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22statistics_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[5]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 3248,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" value=\"true\" name=\"third_party_cookies\" class=\"custom-control-input\" id=\"third_party_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22third_party_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22third_party_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        }
+    ],
+    "numExecuted": 1848,
+    "ruleTime": 41,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "input_checkboxes_grouped": {
+            "0": "Related sets of radio buttons or checkboxes should be programmatically grouped",
+            "potential_lonecheckbox": "Verify that this ungrouped checkbox input is not related to other checkboxes"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 16,
+            "elementsViolation": 1,
+            "elementsViolationReview": 16,
+            "violation": 1,
+            "potentialviolation": 14,
+            "recommendation": 0,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 1832
+        },
+        "scanTime": 80,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778707542956,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ECookies%20-%20Tower%20Hamlets%20Council%20webcasts%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22pi_sunshine_page%20controller_portal%20method_cookie_law%20combined_portal_cookie_law%20page_id_0%20is_using_a_layout%20layout_id_0%20%20logged_out%20cs_body_font_family%22%3E%0A%09%3Cdiv%20id%3D%22cookie_overlay%22%20class%3D%22py-3%22%20role%3D%22alert%22%20aria-live%3D%22assertive%22%3E%0A%09%3Cdiv%20class%3D%22container%20d-flex%20flex-column%20flex-sm-row%22%20style%3D%22gap%3A%201rem%3B%22%3E%0A%09%09%3Cdiv%20class%3D%22mr-auto%22%3E%0A%09%09%09%3Cstrong%3E%0A%09%09%09%09We%20use%20cookies%20to%20remember%20your%20preferences%2C%20collect%20information%20about%20how%20you%20use%20the%20site%2C%20and%20connect%20to%20third-party%20services.%3Cbr%3E%0A%09%09%09%3C%2Fstrong%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Fcookie_law%22%3E%0A%09%09%09%09Read%20our%26nbsp%3BCookie%20policy%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22align-self-center%22%3E%0A%09%09%09%3Cbutton%20class%3D%22btn%20btn-outline-light%20text-nowrap%22%20type%3D%22button%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23cookie-modal%22%3E%0A%09%09%09%09Customise%20Preferences%09%09%09%3C%2Fbutton%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22align-self-center%22%3E%0A%09%09%09%3Cform%20method%3D%22POST%22%20action%3D%22%2Fcore%2Fportal%2Faccept_cookie%2Fall%22%3E%0A%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%2297d46e7d19daf6daac0b1b76d19ffdb7%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%3Cbutton%20class%3D%22btn%20btn-light%20text-nowrap%22%20type%3D%22submit%22%3E%0A%09%09%09%09%09Accept%20All%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%3C%2Fform%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%3Cheader%20id%3D%22navHeader%22%20class%3D%22cs_menu_font_family%20mb-3%22%3E%0A%09%09%0A%09%3Cdiv%20id%3D%22skip_nav%22%20role%3D%22navigation%22%20aria-label%3D%22Skip%20navigation%20links%22%3E%0A%09%09%3Cul%20class%3D%22list-unstyled%22%3E%0A%09%09%09%3Cli%3E%3Ca%20href%3D%22%23mainContent%22%20title%3D%22Use%20this%20link%20to%20skip%20to%20the%20main%20content%20of%20the%20website%22%20class%3D%22cs_background_flat%20cs_menu_font_colour%22%3ESkip%20to%20Main%20Content%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%3C%2Ful%3E%0A%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22superHeader%22%20class%3D%22cs_menu_font_family%20d-none%20d-sm-block%22%20style%3D%22background-color%3A%20%23000%3Bcolor%3A%23FFF%3B%22%3E%0A%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%3C!--%20login%2Fuser%20link%2Fdropdown%20--%3E%0A%09%09%09%09%3Cdiv%20class%3D%22py-2%20dropdown%20ml-auto%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22text-white%20font-s%22%20href%3D%22%2Fcore%2Fportal%2Flogin%22%3E%0A%09%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-user%20mr-1%22%3E%3C%2Fi%3ELogin%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%0A%0A%0A%3Cdiv%20id%3D%22navbar_2019%22%20class%3D%22cs_background_grad%22%3E%0A%09%3Cdiv%20id%3D%22nav_elements_container%22%20class%3D%22container%20justify-content-between%22%3E%0A%09%09%3Cnav%20class%3D%22navbar%20navbar-expand-md%20p-0%20flex-nowrap%22%20id%3D%22navbar_main%22%3E%0A%09%09%09%09%3C!--%20logo%20--%3E%0A%09%09%09%09%3Cspan%20id%3D%22brand_container%22%20class%3D%22navbar-brand%20p-0%20mr-1%20flex-shrink-1%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22http%3A%2F%2Fwww.towerhamlets.gov.uk%2F%22%20class%3D%22navbar-left%20px-0%22%20style%3D%22outline-offset%3A%20-1px%3B%22%3E%3Cimg%20id%3D%22brand_logo%22%20alt%3D%22Tower%20Hamlets%20Council%20Homepage%20logo%22%3E%3C%2Fa%3E%09%09%09%09%3C%2Fspan%3E%0A%09%09%09%09%3C!--%20nav%20menu%20items%20--%3E%0A%09%09%09%09%3Cdiv%20class%3D%22nav_divider_bar%20ml-md-4%20pl-md-4%20ml-lg-5%20pl-lg-5%20mr-md-4%20mr-lg-5%20flex-fill%20d-md-block%20d-none%20position-relative%22%20id%3D%22navbarNavContent%22%20style%3D%22%22%3E%0A%09%09%09%09%09%3Cul%20id%3D%22menu_ul%22%20class%3D%22navbar-nav%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20id%3D%22more%22%20class%3D%22d-none%20text-decoration-none%22%20style%3D%22display%3A%20none%3B%22%3E%0A%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20nav-link%20dropdown-toggle%20pb-1%22%20id%3D%22more_dropdown_anchor%22%20href%3D%22%23%22%20data-toggle%3D%22dropdown%22%20role%3D%22button%22%20aria-expanded%3D%22false%22%3EMore%3Cspan%20class%3D%22sr-only%22%3E%20pages%3Cspan%3E%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fa%3E%0A%09%09%09%09%09%09%09%3Cul%20id%3D%22nav_dropdown_overflow%22%20class%3D%22dropdown-menu%20dropdown-menu-right%20flat-dropdown%22%20aria-labelledby%3D%22more_dropdown_anchor%22%20aria-live%3D%22polite%22%3E%3C%2Ful%3E%0A%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%3Cli%20class%3D%22moving_nav_li%20mr-4%20text-nowrap%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20pb-1%20nav-link%22%20href%3D%22%2Fcore%2Fportal%2Fhome%22%20title%3D%22Go%20to%20the%20page%3A%20Home%22%3EHome%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%3Cli%20class%3D%22moving_nav_li%20mr-4%20text-nowrap%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20pb-1%20nav-link%22%20href%3D%22%2Fcore%2Fportal%2Fwebcasts%22%20title%3D%22Go%20to%20the%20page%3A%20Webcast%20library%22%3EWebcast%20library%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%3Cli%20class%3D%22moving_nav_li%20mr-4%20text-nowrap%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20pb-1%20nav-link%22%20href%3D%22%2Fcore%2Fportal%2Ffaq%22%20title%3D%22Go%20to%20the%20page%3A%20Help%22%3EHelp%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%3C%2Ful%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C!--%20search%20forms%20and%20input%20navbar%20--%3E%0A%09%09%09%09%09%09%09%09%09%3C!--%20flex-shrink-0%20removed%20from%20commented%20version%20below%20(above%20the%20new%20version)%2C%20for%20accessibility%20reasons%20(nav%20break%20at%20200%25%20text%20only%20zoom%20(resolution%20%3C%201080p)).%20Original%20inclusion%20for%20this%20bootstrap%20class%20is%20tbc%20--%3E%0A%09%09%09%09%09%3C!--%20%3Cdiv%20class%3D%22d-none%20d-lg-block%20flex-shrink-0%22%20id%3D%22header_search_forms_nav%22%3E%20--%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22d-none%20d-lg-block%22%20id%3D%22header_search_forms_nav%22%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22search%22%3E%0A%09%09%09%09%09%09%09%3Cform%20action%3D%22%2Fcore%2Fportal%2Fsearch_results%22%20method%3D%22post%22%20role%3D%22search%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%2297d46e7d19daf6daac0b1b76d19ffdb7%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22search_text_container%20d-none%20d-lg-block%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22text%22%20id%3D%22full_header_search%22%20class%3D%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%22%20name%3D%22q%22%20placeholder%3D%22Search%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group-append%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cbutton%20id%3D%22input_search_icon_header%22%20class%3D%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%22%20type%3D%22submit%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Ci%20id%3D%22header_search_icon%22%20class%3D%22icon%20tnetennba-fas-search%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22search_request_uri%22%20value%3D%22%2Fcore%2Fportal%2Fcookie_law%22%3E%0A%09%09%09%09%09%09%09%3C%2Fform%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%20%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C!--%20inline-flex%20added%20here%20to%20stop%20icon-container%20being%20pushed%20above%20and%20below%20on%20page%20load%20--%3E%0A%09%09%09%09%3Cdiv%20id%3D%22icon-container%22%20class%3D%22d-inline-flex%22%3E%0A%09%09%09%09%09%3C!--%20burger%20menu%20main%20nav%20link%20collapse%20--%3E%0A%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20nav_link_toggle%20px-0%20d-md-none%20mr-3%22%20id%3D%22nav_link_expand_button%22%20href%3D%22%23%22%20role%3D%22button%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22nav_expand_outer_links%22%20data-toggle_element%3D%22nav_expand_outer_links%22nav_expand_outer_links')%3B%20return%20false%22%3E%0A%09%09%09%09%09%09%3Ci%20id%3D%22nav_link_expand%22%20class%3D%22icon%20tnetennba-fas-bars%22%3E%3C%2Fi%3E%3Cspan%20class%3D%22sr-only%22%3E%20Open%20navigation%3C%2Fspan%3E%0A%09%09%09%09%09%3C%2Fa%3E%20%0A%09%09%09%09%09%3C!--%20search%20expand%20button%20--%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20nav_search%20px-0%20d-lg-none%20ml-1%22%20id%3D%22search_toggle%22%20href%3D%22%23%22%20role%3D%22button%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22nav_expand_outer_search%22%20data-toggle_element%3D%22nav_expand_outer_search%22nav_expand_outer_search')%3B%20return%20false%22%3E%0A%09%09%09%09%09%09%09%3Ci%20id%3D%22nav_search_icon%22%20class%3D%22icon%20tnetennba-fas-search%22%3E%3C%2Fi%3E%3Cspan%20class%3D%22sr-only%22%3E%20Search%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fnav%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3C!--%20Moved%20this%20expandable%20and%20%23nav_expand_outer_search%20into%20a%20seperate%20div%20and%20container%2C%20so%20top%20border%20would%20be%20hidden%20on%20resize%20--%3E%0A%3Cdiv%20id%3D%22nav_expand_outer_links%22%20class%3D%22cs_background_grad_top%20nav_expandable%20d-none%20d-md-none%20position-absolute%20w-100%22%20style%3D%22z-index%3A5%22%20aria-live%3D%22polite%22%3E%0A%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%3Cdiv%20class%3D%22nav-divider-left%20ml-lg-2%20pl-lg-3%20d-md-none%22%20id%3D%22navbarNavContentExpand%22%3E%0A%09%09%09%3Cul%20class%3D%22navbar-nav%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20text-decoration-none%22%20href%3D%22%2Fcore%2Fportal%2Fhome%22%20title%3D%22Go%20to%20the%20page%3A%20Home%22%3EHome%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20text-decoration-none%22%20href%3D%22%2Fcore%2Fportal%2Fwebcasts%22%20title%3D%22Go%20to%20the%20page%3A%20Webcast%20library%22%3EWebcast%20library%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20text-decoration-none%22%20href%3D%22%2Fcore%2Fportal%2Ffaq%22%20title%3D%22Go%20to%20the%20page%3A%20Help%22%3EHelp%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%3C%2Ful%3E%0A%0A%09%09%09%3C!--%20language%2Flogin%20bar%20items%20in%20nav%20bar%20--%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22d-block%20d-sm-none%22%3E%0A%09%09%09%09%09%3Chr%20class%3D%22cs_menu_font_colour%22%3E%0A%09%09%09%09%09%3Cul%20class%3D%22navbar-nav%20cs_menu_font_colour%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ci%20class%3D%22icon%20icon-small%20tnetennba-fas-user%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%22%20href%3D%22%2Fcore%2Fportal%2Flogin%22%3ELogin%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Ful%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%09%3Cdiv%20id%3D%22nav_expand_outer_search%22%20class%3D%22cs_background_grad_top%20nav_expandable%20d-none%20d-lg-none%20position-absolute%20w-100%22%20style%3D%22z-index%3A2%22%20aria-live%3D%22polite%22%3E%0A%09%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%09%3C!--%20search%20forms%20and%20input%20expand%20--%3E%0A%09%09%09%3Cdiv%20id%3D%22header_search_forms_expand%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22search%22%3E%0A%09%09%09%09%09%3Cform%20action%3D%22%2Fcore%2Fportal%2Fsearch_results%22%20method%3D%22post%22%20role%3D%22search%22%3E%0A%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%2297d46e7d19daf6daac0b1b76d19ffdb7%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%09%09%3Cdiv%20class%3D%22search_text_container%20mx-3%20mb-3%20mt-3%20d-lg-none%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22text%22%20id%3D%22expand_header_search%22%20class%3D%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%22%20name%3D%22q%22%20placeholder%3D%22Search%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group-append%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cbutton%20id%3D%22input_search_icon_header_expand%22%20class%3D%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%22%20type%3D%22submit%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Ci%20id%3D%22nav_search_expand_icon%22%20class%3D%22icon%20tnetennba-fas-search%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22search_request_uri%22%20value%3D%22%2Fcore%2Fportal%2Fcookie_law%22%3E%0A%09%09%09%09%09%3C%2Fform%3E%0A%09%09%09%09%3C%2Fdiv%3E%20%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fheader%3E%0A%09%09%09%09%09%3Cmain%20id%3D%22mainContent%22%20style%3D%22min-height%3A%20456px%3B%22%3E%0A%09%09%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%09%09%3C!--%5Bif%20lte%20IE%209%20%5D%3E%20%3Cdiv%20id%3D%22alert6a04ec54f1e10%22%20class%3D%22clearfix%20fade%20show%20alert%20alert-warning%20alert-dismissible%20text-center%22%20role%3D%22alert%22%3E%0A%09%3Cbutton%20type%3D%22button%22%20class%3D%22close%22%20data-dismiss%3D%22alert%22%20aria-label%3D%22Close%22%3E%3Ci%20class%3D%22icon%20tnetennba-far-times%22%3E%3C%2Fi%3E%3C%2Fbutton%3E%0A%09You%20are%20using%20an%20older%20version%20of%20Internet%20Explorer.%20Some%20features%20of%20this%20site%20and%20video%20player%20may%20not%20function%20correctly.%0A%3C%2Fdiv%3E%0A%3Cbr%3E%3C!%5Bendif%5D--%3E%0A%09%09%3Cdiv%20class%3D%22row%20justify-content-center%22%3E%0A%09%3Cdiv%20class%3D%22col-xl-7%20col-lg-8%20col-md-12%20col-12%22%3E%0A%09%09%3Ch1%20class%3D%22sr-only%22%3ECookies%20-%20Tower%20Hamlets%20Council%20webcasts%3C%2Fh1%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22row%20justify-content-center%22%3E%0A%09%3Cdiv%20id%3D%22col_1%22%20class%3D%22col-xl-7%20col-lg-8%20col-md-12%20col-12%22%3E%0A%09%09%0A%3Cdiv%20id%3D%22cookie_law%22%20class%3D%22pi_widget%22%3E%0A%09%09%3Ca%20id%3D%22picookie_law%22%3E%3C%2Fa%3E%0A%09%09%09%3Cdiv%20id%3D%22pi_widget_title_cookie_law%22%20class%3D%22pi_widget_title%20cs_heading_font_family%22%3E%0A%09%09%09%3Ch2%20id%3D%22pi_widget_title_text_cookie_law%22%20class%3D%22cs_heading_font_family%22%3ECookies%3C%2Fh2%3E%0A%09%09%3C%2Fdiv%3E%0A%09%0A%09%3Cdiv%20class%3D%22pi_widget_content%20inner%22%20id%3D%22pi_widget_content_cookie_law%22%3E%0A%09%09%3Cdiv%20class%3D%22pi_widget_body%22%3E%0A%09%09%09%0A%3Cp%3E%0A%09This%20website%20puts%20small%20files%2C%20known%20as%20%E2%80%98cookies%E2%80%99%2C%20on%20to%20your%20computer.%20These%20files%20are%20used%3A%3C%2Fp%3E%0A%3Cul%3E%0A%09%3Cli%3ETo%20make%20the%20website%20function%20quickly%20and%20efficiently%3C%2Fli%3E%0A%09%3Cli%3ETo%20remember%20your%20preferences%20and%20permissions%3C%2Fli%3E%0A%09%3Cli%3ETo%20collect%20information%20about%20how%20you%20browse%20the%20site%3C%2Fli%3E%0A%09%3Cli%3ETo%20enable%20features%20from%20third-party%20services%20such%20as%20Facebook%20and%20Twitter%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%0A%09You%20can%20control%20these%20cookies%20at%20any%20time%20by%20changing%20your%20web%20browser%20settings.%3C%2Fp%3E%0A%0A%3Cbutton%20class%3D%22btn%20btn-primary%22%20type%3D%22button%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23cookie-modal%22%3EEdit%20Preferences%3C%2Fbutton%3E%0A%0A%3Ch3%20class%3D%22cs_heading_font_family%22%3ECookies%20used%20on%20this%20site%3C%2Fh3%3E%0A%0A%3Ch4%20class%3D%22cs_heading_font_family%22%3EFunctional%20cookies%3C%2Fh4%3E%0A%3Cp%3E%0A%09These%20cookies%20are%20required%20to%20make%20the%20website%20work%20smoothly%20on%20your%20computer.%3C%2Fp%3E%0A%3Ctable%20class%3D%22basic_table%22%3E%0A%09%3Cthead%3E%0A%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22col%22%3ECookie%20name%3C%2Fth%3E%0A%09%09%09%3Cth%20scope%3D%22col%22%3EPurpose%3C%2Fth%3E%0A%09%09%09%3Cth%20scope%3D%22col%22%3EExpires%20after%3C%2Fth%3E%0A%09%09%3C%2Ftr%3E%0A%09%3C%2Fthead%3E%0A%09%3Ctbody%3E%0A%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22row%22%3E__Secure-ci_session%3C%2Fth%3E%0A%09%09%09%3Ctd%3EIdentifies%20you%20as%20a%20unique%20visitor%20each%20time%20you%20visit%20the%20site%2C%20so%20that%20we%20can%20load%20your%20content%20quickly%20and%20remember%20your%20login%20settings%3C%2Ftd%3E%0A%09%09%09%3Ctd%3E30%20minutes%3C%2Ftd%3E%0A%09%09%3C%2Ftr%3E%0A%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22row%22%20class%3D%22breakword%22%3E__Secure-user_cookie_options%3C%2Fth%3E%0A%09%09%09%3Ctd%3E%20Remembers%20which%20cookies%20you%20have%20accepted%20%3C%2Ftd%3E%0A%09%09%09%3Ctd%3E1%20year%3C%2Ftd%3E%0A%09%09%3C%2Ftr%3E%0A%09%3C%2Ftbody%3E%0A%3C%2Ftable%3E%0A%0A%3Ch4%20class%3D%22cs_heading_font_family%22%3ECookies%20for%20preferences%20and%20permissions%3C%2Fh4%3E%0A%3Cp%3E%0A%09These%20cookies%20remember%20preferences%20and%20permissions%20that%20you%E2%80%99ve%20set%20on%20previous%20visits.%3C%2Fp%3E%0A%3Ctable%20class%3D%22basic_table%22%3E%0A%09%3Cthead%3E%0A%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22col%22%3ECookie%20name%3C%2Fth%3E%0A%09%09%09%3Cth%20scope%3D%22col%22%3EPurpose%3C%2Fth%3E%0A%09%09%09%3Cth%20scope%3D%22col%22%3EExpires%20after%3C%2Fth%3E%0A%09%09%3C%2Ftr%3E%0A%09%3C%2Fthead%3E%0A%09%3Ctbody%3E%0A%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22row%22%20class%3D%22breakword%22%3E__Secure-video_definition%3C%2Fth%3E%0A%09%09%09%3Ctd%3E%0A%09%09%09Remembers%20your%20video%20quality%20setting%3A%20High%20Definition%20(HD)%20or%20Standard%20Definition%20(SD)%09%09%09%3C%2Ftd%3E%0A%09%09%09%3Ctd%3E1%20year%3C%2Ftd%3E%0A%09%09%3C%2Ftr%3E%0A%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22row%22%20class%3D%22breakword%22%3E__Secure-video_display_subtitles%3C%2Fth%3E%0A%09%09%09%3Ctd%3E%0A%09%09%09Remembers%20your%20setting%20to%20display%20or%20not%20display%20video%20subtitles%09%09%09%3C%2Ftd%3E%0A%09%09%09%3Ctd%3E1%20year%3C%2Ftd%3E%0A%09%09%3C%2Ftr%3E%0A%09%3C%2Ftbody%3E%0A%3C%2Ftable%3E%0A%0A%0A%09%3Ch4%20class%3D%22cs_heading_font_family%22%3ECookies%20that%20measure%20website%20usage%3C%2Fh4%3E%0A%09%3Cp%3E%0A%09%09We%20use%20Google%20Analytics%20to%20collect%20information%20about%20how%20you%20use%20this%20website.%20Google%20Analytics%20information%20includes%3A%09%3C%2Fp%3E%0A%09%3Cul%3E%0A%09%09%3Cli%3EHow%20you%20came%20to%20the%20site%3C%2Fli%3E%0A%09%09%3Cli%3EWhich%20pages%20you%20visited%3C%2Fli%3E%0A%09%09%3Cli%3EHow%20long%20you%20spent%20on%20each%20page%3C%2Fli%3E%0A%09%09%3Cli%3EWhat%20links%20you%20clicked%20on%3C%2Fli%3E%0A%09%3C%2Ful%3E%0A%09%3Cp%3E%0A%09%09We%20use%20this%20information%20to%20check%20that%20the%20site%20is%20meeting%20your%20needs%20and%20to%20help%20us%20make%20improvements.%09%3C%2Fp%3E%0A%09%3Cp%3E%0A%09%09%3Cstrong%3EWe%20do%20not%20use%20Google%20Analytics%20to%20collect%20or%20store%20personal%20information%2C%20such%20as%20your%20name%20or%20email%20address.%20Google%20Analytics%20data%20cannot%20be%20used%20to%20identify%20you.%3C%2Fstrong%3E%0A%09%3C%2Fp%3E%0A%09%3Cp%3E%0A%09%09Google%20Analytics%20places%20the%20following%20cookies%20on%20your%20computer%3A%09%3C%2Fp%3E%0A%09%3Ctable%20class%3D%22basic_table%22%3E%0A%09%09%3Cthead%3E%0A%09%09%09%3Ctr%3E%0A%09%09%09%09%3Cth%20scope%3D%22col%22%3ECookie%20name%3C%2Fth%3E%0A%09%09%09%09%3Cth%20scope%3D%22col%22%3EPurpose%3C%2Fth%3E%0A%09%09%09%09%3Cth%20scope%3D%22col%22%3EExpires%20after%3C%2Fth%3E%0A%09%09%09%3C%2Ftr%3E%0A%09%09%3C%2Fthead%3E%0A%09%09%3Ctbody%3E%0A%09%09%09%3Ctr%3E%0A%09%09%09%09%3Cth%20scope%3D%22row%22%3E_gid%3C%2Fth%3E%0A%09%09%09%09%3Ctd%3EHelps%20us%20count%20how%20many%20people%20visit%20by%20tracking%20if%20you%E2%80%99ve%20visited%20before%3C%2Ftd%3E%0A%09%09%09%09%3Ctd%3E24%20hours%3C%2Ftd%3E%0A%09%09%09%3C%2Ftr%3E%0A%09%09%09%3Ctr%3E%0A%09%09%09%09%3Cth%20scope%3D%22row%22%3E_ga%3C%2Fth%3E%0A%09%09%09%09%3Ctd%3EHelps%20us%20count%20how%20many%20people%20visit%20by%20tracking%20if%20you%E2%80%99ve%20visited%20before%3C%2Ftd%3E%0A%09%09%09%09%3Ctd%3E2%20years%3C%2Ftd%3E%0A%09%09%09%3C%2Ftr%3E%0A%09%09%09%3Ctr%3E%0A%09%09%09%09%3Cth%20scope%3D%22row%22%3E_gat%3C%2Fth%3E%0A%09%09%09%09%3Ctd%3EManages%20the%20rate%20at%20which%20page%20view%20requests%20are%20made%3C%2Ftd%3E%0A%09%09%09%09%3Ctd%3E1%20minute%3C%2Ftd%3E%0A%09%09%09%3C%2Ftr%3E%0A%09%09%3C%2Ftbody%3E%0A%09%3C%2Ftable%3E%0A%0A%3Ch4%20class%3D%22cs_heading_font_family%22%3EThird-party%20cookies%3C%2Fh4%3E%0A%3Cp%3E%0A%09This%20website%20includes%20a%20number%20of%20%E2%80%98widgets%E2%80%99%20from%20external%20services%2C%20such%20as%20Facebook%2C%20Twitter%2C%20YouTube%2C%20Disqus%20and%20CoveritLIve.%20These%20small%20pieces%20of%20code%20connect%20to%20the%20external%20service%20and%20add%20a%20feature%20to%20the%20site%2C%20such%20as%20a%20button%20to%20share%20a%20webcast%20on%20Facebook%20or%20tweet%20about%20it%20on%20Twitter.%3C%2Fp%3E%0A%3Cp%3E%0A%09These%20external%20services%20place%20their%20own%20cookies%20on%20your%20computer.%20For%20more%20information%20about%20these%20third-party%20cookies%2C%20click%20on%20the%20links%20below%3A%3C%2Fp%3E%0A%3Ctable%20class%3D%22basic_table%22%3E%0A%09%3Cthead%3E%0A%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22col%22%3EService%3C%2Fth%3E%0A%09%09%09%3Cth%20scope%3D%22col%22%3EUsage%20on%20this%20website%3C%2Fth%3E%0A%09%09%09%3Cth%20scope%3D%22col%22%3ELink%20to%20find%20out%20more%3C%2Fth%3E%0A%09%09%3C%2Ftr%3E%0A%09%3C%2Fthead%3E%0A%09%3Ctbody%3E%0A%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22row%22%3EFacebook%3C%2Fth%3E%0A%09%09%09%3Ctd%3EEmbedded%20Facebook%20pages%3C%2Ftd%3E%0A%09%09%09%3Ctd%3E%0A%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fwww.facebook.com%2Fpolicies%2Fcookies%2F%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09Facebook%20%E2%80%93%20cookies%20and%20other%20storage%20technologies%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Ftd%3E%0A%09%09%3C%2Ftr%3E%0A%09%09%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22row%22%3EYouTube%20(Google)%3C%2Fth%3E%0A%09%09%09%3Ctd%3EEmbedded%20YouTube%20videos%3C%2Ftd%3E%0A%09%09%09%3Ctd%3E%0A%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fpolicies.google.com%2Ftechnologies%2Fcookies%3Fhl%3Den-GB%26amp%3Bgl%3Duk%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09How%20Google%20uses%20cookies%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Ftd%3E%0A%09%09%3C%2Ftr%3E%0A%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22row%22%3EDisqus%3C%2Fth%3E%0A%09%09%09%3Ctd%3ELive%20commenting%3C%2Ftd%3E%0A%09%09%09%3Ctd%3E%0A%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fhelp.disqus.com%2Fuser-profile%2Fuse-of-cookies%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09Disqus%20%E2%80%93%20use%20of%20cookies%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Ftd%3E%0A%09%09%3C%2Ftr%3E%0A%09%09%3Ctr%3E%0A%09%09%09%3Cth%20scope%3D%22row%22%3ESlideShare%3C%2Fth%3E%0A%09%09%09%3Ctd%3EEmbedded%20presentations%3C%2Ftd%3E%0A%09%09%09%3Ctd%3E%0A%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fsupport.scribd.com%2Fhc%2Fen%2Farticles%2F210129366-Privacy-policy%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09SlideShare%20%2F%20Scribd%20-%20Privacy%20policy%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Ftd%3E%0A%09%09%3C%2Ftr%3E%0A%09%3C%2Ftbody%3E%0A%3C%2Ftable%3E%0A%0A%0A%3Ch3%20class%3D%22cs_heading_font_family%22%3EHow%20you%20can%20control%20cookies%3C%2Fh3%3E%0A%3Cp%3E%0A%09You%20can%20control%20the%20cookies%20placed%20on%20your%20computer%20by%20changing%20settings%20in%20your%20web%20browser.%20You%20can%20use%20these%20settings%20to%3A%3C%2Fp%3E%0A%3Cul%3E%0A%09%3Cli%3EBlock%20all%20cookies%20or%20third-party%20cookies%20only%3C%2Fli%3E%0A%09%3Cli%3EClear%20all%20cookies%20when%20you%20close%20the%20browser%3C%2Fli%3E%0A%09%3Cli%3EDelete%20all%20cookies%3C%2Fli%3E%0A%09%3Cli%3EOpen%20a%20'private%20browsing'%20or%20'incognito'%20session%20that%20stores%20no%20local%20data%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%0A%09Instructions%20on%20how%20to%20do%20this%20for%20the%20most%20popular%20browsers%20are%20available%20below%3A%3C%2Fp%3E%0A%3Cul%3E%0A%09%3Cli%3E%0A%09%09%3Ca%20href%3D%22https%3A%2F%2Fsupport.google.com%2Fchrome%2Fanswer%2F95647%3Fhl%3Den-GB%22%20target%3D%22_blank%22%3E%0A%09%09%09Google%20Chrome%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%3C%2Fli%3E%0A%09%3Cli%3E%0A%09%09%3Ca%20href%3D%22https%3A%2F%2Fprivacy.microsoft.com%2Fen-us%2Fwindows-10-microsoft-edge-and-privacy%22%20target%3D%22_blank%22%3E%0A%09%09%09Microsoft%20Edge%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%3C%2Fli%3E%0A%09%3Cli%3E%0A%09%09%3Ca%20href%3D%22https%3A%2F%2Fsupport.mozilla.org%2Fen-US%2Fkb%2Fcookies-information-websites-store-on-your-computer%22%20target%3D%22_blank%22%3E%0A%09%09%09Mozilla%20Firefox%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%3C%2Fli%3E%0A%09%3Cli%3E%0A%09%09%3Ca%20href%3D%22https%3A%2F%2Fsupport.microsoft.com%2Fen-gb%2Fhelp%2F278835%2Fhow-to-delete-cookie-files-in-internet-explorer%22%20target%3D%22_blank%22%3E%0A%09%09%09Microsoft%20Internet%20Explorer%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%3C%2Fli%3E%0A%09%3Cli%3E%0A%09%09%3Ca%20href%3D%22https%3A%2F%2Fwww.opera.com%2Fhelp%2Ftutorials%2Fsecurity%2Fprivacy%2F%22%20target%3D%22_blank%22%3E%0A%09%09%09Opera%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%3C%2Fli%3E%0A%09%3Cli%3E%0A%09%09%3Ca%20href%3D%22https%3A%2F%2Fsupport.apple.com%2Fen-gb%2Fguide%2Fsafari%2Fsfri11471%2Fmac%22%20target%3D%22_blank%22%3E%0A%09%09%09Apple%20Safari%20(Mac)%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%3C%2Fli%3E%0A%09%3Cli%3E%0A%09%09%3Ca%20href%3D%22https%3A%2F%2Fsupport.apple.com%2Fen-gb%2FHT201265%22%20target%3D%22_blank%22%3E%0A%09%09%09Apple%20Safari%20(iPhone%2C%20iPad)%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%3Ch4%20class%3D%22cs_heading_font_family%22%3EContact%20us%20about%20cookies%3C%2Fh4%3E%0A%3Cp%3E%0A%09If%20you%20have%20any%20concerns%20about%20how%20cookies%20are%20used%20on%20this%20site%2C%20you%20can%20contact%20the%20Public-i%20Data%20Protection%20Officer%20at%20%3Ca%20href%3D%22mailto%3Aprivacy%40public-i.info%22%3Eprivacy%40public-i.info%3C%2Fa%3E.%3C%2Fp%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fmain%3E%0A%09%09%09%09%09%09%3Cfooter%20id%3D%22footer%22%20class%3D%22mt-5%20pi_g7_bg%20pi_g4_bd%22%3E%0A%09%09%09%3Cdiv%20class%3D%22container%20h-100%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22row%20align-items-center%20h-100%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22col-8%22%3E%0A%09%09%09%09%09%09%09%3Cul%20id%3D%22footnav%22%20class%3D%22list-unstyled%20mb-0%22%20title%3D%22Footer%20navigation%22%3E%0A%09%09%3Cli%20class%3D%22pr-md-5%20float-md-left%20d-block%22%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Fprivacy%22%20title%3D%22Go%20to%20page%3A%20Privacy%20policy%22%3E%0A%09%09%09%09Privacy%20policy%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%09%3Cli%20class%3D%22pr-md-5%20float-md-left%20d-block%22%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Fcookie_law%22%20title%3D%22Go%20to%20page%3A%20Cookies%22%3E%0A%09%09%09%09Cookies%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%09%3Cli%20class%3D%22float-md-left%20d-block%22%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Faccessibility_statement%22%20title%3D%22Go%20to%20page%3A%20Accessibility%20statement%22%3E%0A%09%09%09%09Accessibility%20statement%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%3C%2Ful%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22col-4%20text-right%22%3E%0A%09%09%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fwww.public-i.tv%2F%22%20title%3D%22Go%20to%20the%20Public-i%20website%22%20rel%3D%22nofollow%22%3E%3Cimg%20class%3D%22pi_logo%22%20alt%3D%22Public-i%20logo%22%3E%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Ffooter%3E%0A%09%09%0A%0A%3C!--%20Cookie%20modal%20--%3E%0A%3Cdiv%20id%3D%22cookie-modal%22%20class%3D%22modal%22%20tabindex%3D%22-1%22%20role%3D%22dialog%22%20aria-labelledby%3D%22cookie-modal-label%22%20data-backdrop%3D%22static%22%20data-keyboard%3D%22false%22%3E%0A%09%3Cdiv%20class%3D%22modal-dialog%20modal-lg%22%20role%3D%22document%22%3E%0A%09%09%3Cdiv%20class%3D%22modal-content%22%3E%0A%09%09%09%3Cform%20method%3D%22POST%22%20action%3D%22%2Fcore%2Fportal%2Faccept_cookie%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22modal-header%22%3E%0A%09%09%09%09%09%3Ch2%20class%3D%22modal-title%22%20id%3D%22cookie-modal-label%22%3ECookie%20preferences%3C%2Fh2%3E%0A%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22close%22%20aria-label%3D%22Close%22%20data-dismiss%3D%22modal%22%3E%3Ci%20class%3D%22icon%20tnetennba-far-times%22%3E%3C%2Fi%3E%3C%2Fbutton%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22modal-body%22%3E%0A%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%2297d46e7d19daf6daac0b1b76d19ffdb7%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%3Ch3%3EThis%20website%20uses%20cookies%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%3EWe%20use%20cookies%20to%20remember%20your%20preferences%2C%20collect%20information%20about%20how%20you%20use%20the%20site%2C%20and%20connect%20to%20third-party%20services.%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22text-right%22%3E%3Cbutton%20type%3D%22button%22%20class%3D%22btn%20btn-link%20btn-lg%22%23cookie-modal%20input%5Btype%3Dcheckbox%5D%3Anot(%23necessary_cookies)').prop('checked'%2Cfalse)%3B%22%3EReject%20Non-Essential%3C%2Fbutton%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%0A%09%09%09%09%09%3Cdiv%20id%3D%22necessary_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3ENecessary%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09These%20cookies%20helpers%20make%20a%20website%20usable%2C%20enabling%20basic%20functions%20like%20page%20navigation%20and%20access%20to%20secure%20areas%20of%20the%20website.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22necessary_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22necessary_cookies%22%20value%3D%22true%22%20checked%3D%22%22%20disabled%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22necessary_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3ENecessary%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22necessary_cookies%22%20value%3D%22true%22%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22preferences_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3EPreferences%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09These%20cookies%20enable%20the%20website%20to%20remember%20settings%20like%20your%20preferred%20video%20quality%20and%20subtitles.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22preferences_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22preferences_cookies%22%20value%3D%22true%22%20checked%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22preferences_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3EPreferences%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22statistics_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3EStatistics%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09This%20site%20uses%20Google%20Analytics%20to%20gather%20anonymous%20statistics%20on%20how%20users%20interact%20with%20the%20website%20to%20improve%20usability%20and%20performance.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22statistics_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22statistics_cookies%22%20value%3D%22true%22%20checked%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22statistics_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3EStatistics%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22third_party_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3EThird-Party%20Services%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09Includes%20cookies%20from%20social%20media%20platforms%20like%20Twitter%2C%20Facebook%2C%20Disqus%2C%20and%20YouTube%20to%20display%20widgets%20and%20content%20on%20the%20site.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22third_party_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22third_party_cookies%22%20value%3D%22true%22%20checked%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22third_party_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3EThird-Party%20Services%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22modal-footer%22%3E%09%0A%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22btn%20btn-link%22%20data-dismiss%3D%22modal%22%3ECancel%3C%2Fbutton%3E%0A%09%09%09%09%09%3Cbutton%20type%3D%22submit%22%20class%3D%22btn%20btn-primary%20text-nowrap%22%3ESave%3C%2Fbutton%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fform%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%09%0A%0A%09%09%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "38afde16-6791-417f-95c4-a8f5139e12d4",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "towerhamlets.public-i.tv-core-portal-cookie_law"
+}

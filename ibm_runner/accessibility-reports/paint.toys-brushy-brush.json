@@ -1,0 +1,801 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 2293,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 2277,
+                "width": 784
+            },
+            "snippet": "<body class=\"paint-app\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20class%3D%5C%22paint-app%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1409,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<div class=\"tip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22tip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button[1]/svg[1]",
+                "aria": "/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 16,
+                "top": 1600,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-linecap=\"round\" stroke-width=\"1.3\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%221.3%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button[2]/svg[1]",
+                "aria": "/document[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 54,
+                "top": 1600,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-linecap=\"round\" stroke-width=\"1.2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%221.2%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button[3]/svg[1]",
+                "aria": "/document[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 92,
+                "top": 1600,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-linecap=\"round\" stroke-width=\"1.2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%221.2%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button[4]/svg[1]",
+                "aria": "/document[1]/button[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 130,
+                "top": 1600,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-width=\"1.3\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-width%3D%5C%221.3%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button[5]/svg[1]",
+                "aria": "/document[1]/button[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 168,
+                "top": 1600,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-linecap=\"round\" stroke-width=\"1.2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%221.2%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button[6]/svg[1]",
+                "aria": "/document[1]/button[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 206,
+                "top": 1600,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-width=\"1.2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-width%3D%5C%221.2%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button[7]/svg[1]",
+                "aria": "/document[1]/button[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 244,
+                "top": 1600,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-linecap=\"round\" stroke-width=\"1.3\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%221.3%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button[8]/svg[1]",
+                "aria": "/document[1]/button[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 282,
+                "top": 1600,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-width=\"1.2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-width%3D%5C%221.2%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[1]/div[3]/button[9]/svg[1]",
+                "aria": "/document[1]/button[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 320,
+                "top": 1600,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-linecap=\"round\" stroke-width=\"1.2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%221.2%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/slider[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 1626,
+                "height": 16,
+                "width": 129
+            },
+            "snippet": "<input step=\"0.1\" value=\"10\" max=\"14\" min=\"7\" type=\"range\" class=\"size-slider density-slider\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20step%3D%5C%220.1%5C%22%20value%3D%5C%2210%5C%22%20max%3D%5C%2214%5C%22%20min%3D%5C%227%5C%22%20type%3D%5C%22range%5C%22%20class%3D%5C%22size-slider%20density-slider%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[2]/div[2]/input[1]",
+                "aria": "/document[1]/slider[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 1648,
+                "height": 16,
+                "width": 129
+            },
+            "snippet": "<input step=\"1\" value=\"20\" max=\"80\" min=\"3\" type=\"range\" class=\"size-slider scale-slider\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20step%3D%5C%221%5C%22%20value%3D%5C%2220%5C%22%20max%3D%5C%2280%5C%22%20min%3D%5C%223%5C%22%20type%3D%5C%22range%5C%22%20class%3D%5C%22size-slider%20scale-slider%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[2]/div[2]/span[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'Size'",
+            "messageArgs": [
+                "Size"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 145,
+                "top": 1650,
+                "height": 18,
+                "width": 28
+            },
+            "snippet": "<span class=\"size-label\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'Size'%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22size-label%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Size%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[2]/div[3]/input[1]",
+                "aria": "/document[1]/slider[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 1670,
+                "height": 16,
+                "width": 129
+            },
+            "snippet": "<input step=\"1\" value=\"50\" max=\"100\" min=\"0\" type=\"range\" class=\"size-slider swing-slider\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20step%3D%5C%221%5C%22%20value%3D%5C%2250%5C%22%20max%3D%5C%22100%5C%22%20min%3D%5C%220%5C%22%20type%3D%5C%22range%5C%22%20class%3D%5C%22size-slider%20swing-slider%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/div[2]/div[5]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1712,
+                "height": 27,
+                "width": 784
+            },
+            "snippet": "<div style=\"background-color: #ffffff\" class=\"bg-picker-wrap\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background-color%3A%20%23ffffff%5C%22%20class%3D%5C%22bg-picker-wrap%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/button[1]/svg[1]",
+                "aria": "/document[1]/button[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 16,
+                "top": 2061,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/button[2]/svg[1]",
+                "aria": "/document[1]/button[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 54,
+                "top": 2061,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/button[3]/svg[1]",
+                "aria": "/document[1]/button[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 92,
+                "top": 2061,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linejoin%3D%5C%22round%5C%22%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/button[1]/svg[1]",
+                "aria": "/document[1]/button[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 16,
+                "top": 2089,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/button[2]/svg[1]",
+                "aria": "/document[1]/button[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 54,
+                "top": 2089,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/button[3]/svg[1]",
+                "aria": "/document[1]/button[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 92,
+                "top": 2089,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" height=\"18\" width=\"18\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2218%5C%22%20width%3D%5C%2218%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[3]/input[1]",
+                "aria": "/document[1]/slider[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 2115,
+                "height": 16,
+                "width": 129
+            },
+            "snippet": "<input step=\"1\" value=\"4\" max=\"40\" min=\"1\" type=\"range\" class=\"editor-slider editor-width-slider\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20step%3D%5C%221%5C%22%20value%3D%5C%224%5C%22%20max%3D%5C%2240%5C%22%20min%3D%5C%221%5C%22%20type%3D%5C%22range%5C%22%20class%3D%5C%22editor-slider%20editor-width-slider%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[3]/button[1]/svg[1]",
+                "aria": "/document[1]/button[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 16,
+                "top": 2165,
+                "height": 14,
+                "width": 14
+            },
+            "snippet": "<svg stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" height=\"14\" width=\"14\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linejoin%3D%5C%22round%5C%22%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2214%5C%22%20width%3D%5C%2214%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[3]/button[3]/svg[1]",
+                "aria": "/document[1]/button[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 138,
+                "top": 2165,
+                "height": 14,
+                "width": 14
+            },
+            "snippet": "<svg stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" height=\"14\" width=\"14\" viewBox=\"0 0 24 24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20stroke-linejoin%3D%5C%22round%5C%22%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20height%3D%5C%2214%5C%22%20width%3D%5C%2214%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1175,
+    "ruleTime": 8,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 42,
+            "elementsViolation": 22,
+            "elementsViolationReview": 29,
+            "violation": 22,
+            "potentialviolation": 4,
+            "recommendation": 17,
+            "potentialrecommendation": 0,
+            "manual": 4,
+            "pass": 1128
+        },
+        "scanTime": 40,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778414747852,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EBrushy%20Brush%20-%20Draw%20Your%20Own%20Brush%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22paint-app%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22painting%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22ui%20top-left%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22icon%22%20href%3D%22%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20alt%3D%22Paint%20Toys%20home%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22ui%20top-right%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22icon%22%20href%3D%22about%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20alt%3D%22About%20this%20toy%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22icon%20save%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22smaller%22%20alt%3D%22Save%20artwork%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22icon%20trash%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22smaller%22%20alt%3D%22Clear%20canvas%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22canvas-wrapper%22%3E%0A%20%20%20%20%20%20%20%20%3Ccanvas%20id%3D%22canvas%22%20class%3D%22primary%22%20width%3D%222080%22%20height%3D%221360%22%3E%3C%2Fcanvas%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22tip%22%3EPick%20a%20brush%20below%20or%20draw%20your%20own%2C%20then%20paint%20here!%3Cbr%3E%3Cbr%3EYour%20drawing%20becomes%20your%20brush.%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22brushy-controls%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22controls-row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22brush-thumb-wrap%22%20title%3D%22Edit%20brush%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccanvas%20id%3D%22brush-thumb%22%20width%3D%22128%22%20height%3D%22128%22%3E%3C%2Fcanvas%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22controls-divider%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22presets%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22preset-btn%22%20data-preset%3D%22skull%22%20title%3D%22Skull%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M6%2013%20C4%209%2C%205%203%2C%2012%203%20C19%203%2C%2020%209%2C%2018%2013%20C18%2016%2C%2016%2018%2C%2012%2018%20C8%2018%2C%206%2016%2C%206%2013Z%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%229%22%20cy%3D%2210%22%20rx%3D%222.5%22%20ry%3D%223%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2215%22%20cy%3D%2210%22%20rx%3D%222.5%22%20ry%3D%223%22%3E%3C%2Fellipse%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M11%2013%20L12%2015%20L13%2013%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cline%20x1%3D%2210%22%20y1%3D%2218%22%20x2%3D%2210%22%20y2%3D%2221%22%3E%3C%2Fline%3E%3Cline%20x1%3D%2212%22%20y1%3D%2218%22%20x2%3D%2212%22%20y2%3D%2221%22%3E%3C%2Fline%3E%3Cline%20x1%3D%2214%22%20y1%3D%2218%22%20x2%3D%2214%22%20y2%3D%2221%22%3E%3C%2Fline%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22preset-btn%22%20data-preset%3D%22moth%22%20title%3D%22Moth%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%2212%22%20cy%3D%2213%22%20rx%3D%221.5%22%20ry%3D%225%22%3E%3C%2Fellipse%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M10.5%2010%20C6%204%2C%202%205%2C%203%2010%20C4%2013%2C%208%2014%2C%2010.5%2012%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M13.5%2010%20C18%204%2C%2022%205%2C%2021%2010%20C20%2013%2C%2016%2014%2C%2013.5%2012%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M10.5%2012%20C7%2014%2C%205%2018%2C%207%2020%20C9%2020%2C%2010.5%2016%2C%2010.5%2014%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M13.5%2012%20C17%2014%2C%2019%2018%2C%2017%2020%20C15%2020%2C%2013.5%2016%2C%2013.5%2014%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%226%22%20cy%3D%229%22%20r%3D%221.2%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2218%22%20cy%3D%229%22%20r%3D%221.2%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M11%208%20C9%204%2C%207%202%2C%206%201%22%20stroke-width%3D%220.8%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M13%208%20C15%204%2C%2017%202%2C%2018%201%22%20stroke-width%3D%220.8%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22preset-btn%22%20data-preset%3D%22octopus%22%20title%3D%22Octopus%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M7%2012%20C5%207%2C%207%203%2C%2012%203%20C17%203%2C%2019%207%2C%2017%2012%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2210%22%20cy%3D%228%22%20r%3D%221.2%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2214%22%20cy%3D%228%22%20r%3D%221.2%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M5%2013%20C3%2017%2C%204%2020%2C%205%2021%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M7%2013%20C6%2016%2C%208%2019%2C%209%2021%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M10%2013%20C10%2017%2C%2011%2019%2C%2012%2021%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M14%2013%20C14%2017%2C%2013%2019%2C%2012%2021%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M17%2013%20C18%2016%2C%2016%2019%2C%2015%2021%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M19%2013%20C21%2017%2C%2020%2020%2C%2019%2021%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22preset-btn%22%20data-preset%3D%22eye%22%20title%3D%22Eye%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.3%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%2212%2C2%203%2C20%2021%2C20%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpolygon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M6%2012%20C8%209%2C%2010%208%2C%2012%208%20C14%208%2C%2016%209%2C%2018%2012%20C16%2015%2C%2014%2016%2C%2012%2016%20C10%2016%2C%208%2015%2C%206%2012Z%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%222%22%20fill%3D%22currentColor%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22preset-btn%22%20data-preset%3D%22rose%22%20title%3D%22Rose%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%229%22%20r%3D%223%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M9%209%20C6%205%2C%204%207%2C%206%2010%20C7%2012%2C%209%2012%2C%209%2010%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M15%209%20C18%205%2C%2020%207%2C%2018%2010%20C17%2012%2C%2015%2012%2C%2015%2010%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M10%2012%20C8%2014%2C%207%2011%2C%209%209%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M14%2012%20C16%2014%2C%2017%2011%2C%2015%209%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cline%20x1%3D%2212%22%20y1%3D%2213%22%20x2%3D%2212%22%20y2%3D%2222%22%3E%3C%2Fline%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M12%2017%20C14%2015%2C%2016%2016%2C%2015%2018%22%20stroke-width%3D%220.9%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M12%2019%20C10%2017%2C%208%2018%2C%209%2020%22%20stroke-width%3D%220.9%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22preset-btn%22%20data-preset%3D%22mandala%22%20title%3D%22Mandala%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.2%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%222%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%225%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%229%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%2212%22%20cy%3D%226%22%20rx%3D%221.5%22%20ry%3D%223%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2212%22%20cy%3D%2218%22%20rx%3D%221.5%22%20ry%3D%223%22%3E%3C%2Fellipse%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%226%22%20cy%3D%2212%22%20rx%3D%223%22%20ry%3D%221.5%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2218%22%20cy%3D%2212%22%20rx%3D%223%22%20ry%3D%221.5%22%3E%3C%2Fellipse%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22preset-btn%22%20data-preset%3D%22dragon%22%20title%3D%22Dragon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M8%206%20C5%204%2C%204%207%2C%206%209%20C3%208%2C%202%2011%2C%205%2012%20C3%2013%2C%204%2016%2C%207%2015%20C6%2018%2C%209%2019%2C%2010%2017%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M10%2017%20C12%2020%2C%2015%2021%2C%2017%2019%20C19%2017%2C%2018%2014%2C%2016%2013%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M6%209%20C8%208%2C%2012%206%2C%2016%207%20C19%208%2C%2020%2010%2C%2019%2012%20C18%2014%2C%2016%2013%2C%2016%2013%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2216%22%20cy%3D%229%22%20r%3D%221%22%20fill%3D%22currentColor%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M19%207%20L21%205%22%20stroke-width%3D%221%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M20%209%20L22%207%22%20stroke-width%3D%221%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22preset-btn%22%20data-preset%3D%22compass%22%20title%3D%22Compass%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.2%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%229%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%224%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%2212%2C2%2014%2C10%2012%2C12%2010%2C10%22%20fill%3D%22currentColor%22%3E%3C%2Fpolygon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%2212%2C22%2010%2C14%2012%2C12%2014%2C14%22%3E%3C%2Fpolygon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%2222%2C12%2014%2C14%2012%2C12%2014%2C10%22%20fill%3D%22currentColor%22%20opacity%3D%220.3%22%3E%3C%2Fpolygon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolygon%20points%3D%222%2C12%2010%2C10%2012%2C12%2010%2C14%22%20opacity%3D%220.3%22%3E%3C%2Fpolygon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22preset-btn%22%20data-preset%3D%22jellyfish%22%20title%3D%22Jellyfish%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M5%2013%20C5%206%2C%208%203%2C%2012%203%20C16%203%2C%2019%206%2C%2019%2013%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M5%2013%20C7%2014%2C%209%2014%2C%2012%2014%20C15%2014%2C%2017%2014%2C%2019%2013%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M7%2014%20C6%2017%2C%207%2020%2C%208%2022%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M10%2014%20C10%2018%2C%209%2020%2C%2010%2022%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M14%2014%20C14%2018%2C%2015%2020%2C%2014%2022%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M17%2014%20C18%2017%2C%2017%2020%2C%2016%2022%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22presets%20toolbar-saved-wrap%22%20id%3D%22toolbar-saved%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22controls-row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22slider-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20class%3D%22size-slider%20density-slider%22%20type%3D%22range%22%20min%3D%227%22%20max%3D%2214%22%20value%3D%2210%22%20step%3D%220.1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22size-label%22%3EDensity%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22slider-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20class%3D%22size-slider%20scale-slider%22%20type%3D%22range%22%20min%3D%223%22%20max%3D%2280%22%20value%3D%2220%22%20step%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22size-label%22%3ESize%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22slider-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20class%3D%22size-slider%20swing-slider%22%20type%3D%22range%22%20min%3D%220%22%20max%3D%22100%22%20value%3D%2250%22%20step%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22size-label%22%3ESwing%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22controls-divider%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22rotate-btn%22%20title%3D%22Rotate%20stamps%20with%20stroke%20direction%22%3E%E2%86%BB%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22bg-picker-wrap%22%20style%3D%22background-color%3A%20%23ffffff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20class%3D%22bg-input%22%20type%3D%22color%22%20value%3D%22%23ffffff%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22bg-label%22%3EBG%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3C!--%20Brush%20Editor%20Modal%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22brush-modal-overlay%22%20id%3D%22brush-modal%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22brush-modal%22%3E%0A%20%20%20%20%20%20%20%20%3Ch3%3EDesign%20Your%20Brush%3C%2Fh3%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-canvas-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccanvas%20id%3D%22editor-canvas%22%20width%3D%22256%22%20height%3D%22256%22%3E%3C%2Fcanvas%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3C!--%20Drawing%20tools%20row%20--%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-toolbar%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-toolbar-row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-tool-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-tool-btn%20active%22%20data-tool%3D%22draw%22%20title%3D%22Draw%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M3%2021%20L12%2012%20M12%2012%20C14%2010%2C%2018%206%2C%2020%204%20C21%203%2C%2021%202%2C%2020%202%20C19%202%2C%2018%203%2C%2016%205%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-tool-btn%22%20data-tool%3D%22line%22%20title%3D%22Line%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cline%20x1%3D%224%22%20y1%3D%2220%22%20x2%3D%2220%22%20y2%3D%224%22%3E%3C%2Fline%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-tool-btn%22%20data-tool%3D%22fill%22%20title%3D%22Fill%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M6%2018%20L14%206%20L18%2010%20L10%2022Z%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M19%2014%20C20%2016%2C%2022%2018%2C%2020%2020%20C18%2022%2C%2017%2019%2C%2019%2014%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-tool-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-tool-btn%22%20data-tool%3D%22circle%22%20title%3D%22Circle%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%229%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-tool-btn%22%20data-tool%3D%22rect%22%20title%3D%22Rectangle%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%223%22%20y%3D%225%22%20width%3D%2218%22%20height%3D%2214%22%20rx%3D%221%22%3E%3C%2Frect%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-tool-btn%22%20data-tool%3D%22oval%22%20title%3D%22Oval%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%2212%22%20cy%3D%2212%22%20rx%3D%2210%22%20ry%3D%227%22%3E%3C%2Fellipse%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22slider-wrap%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20class%3D%22editor-slider%20editor-width-slider%22%20type%3D%22range%22%20min%3D%221%22%20max%3D%2240%22%20value%3D%224%22%20step%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22size-label%22%3EWidth%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3C!--%20Colors%20row%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-toolbar-row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-swatches%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-swatch%20active%22%20data-color%3D%22%23333333%22%20style%3D%22background-color%3A%20%23333333%22%20title%3D%22Black%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-swatch%22%20data-color%3D%22%23ffffff%22%20style%3D%22background-color%3A%20%23ffffff%3B%20border-color%3A%20%23ddd%22%20title%3D%22White%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-swatch%22%20data-color%3D%22%23e55050%22%20style%3D%22background-color%3A%20%23e55050%22%20title%3D%22Red%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-swatch%22%20data-color%3D%22%235090e5%22%20style%3D%22background-color%3A%20%235090e5%22%20title%3D%22Blue%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-swatch%22%20data-color%3D%22%2350b860%22%20style%3D%22background-color%3A%20%2350b860%22%20title%3D%22Green%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-swatch%22%20data-color%3D%22%23e5a030%22%20style%3D%22background-color%3A%20%23e5a030%22%20title%3D%22Orange%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-swatch%22%20data-color%3D%22%239b59b6%22%20style%3D%22background-color%3A%20%239b59b6%22%20title%3D%22Purple%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-swatch%22%20data-color%3D%22%23e88db4%22%20style%3D%22background-color%3A%20%23e88db4%22%20title%3D%22Pink%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-custom-color-wrap%22%20title%3D%22Custom%20color%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20class%3D%22editor-custom-color%22%20type%3D%22color%22%20value%3D%22%23999999%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3C!--%20Actions%20row%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-toolbar-row%20editor-actions-row%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-action-btn%20editor-undo-btn%22%20title%3D%22Undo%20(Ctrl%2BZ)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%2010%20L8%205%20M3%2010%20L8%2015%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M3%2010%20H15%20C18.3%2010%2021%2012.7%2021%2016%20C21%2019.3%2018.3%2022%2015%2022%20H12%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20Undo%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-action-btn%20editor-clear-btn%22%20title%3D%22Clear%20canvas%22%3EClear%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-action-btn%20editor-import-btn%22%20title%3D%22Import%20an%20image%20as%20brush%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2218%22%20height%3D%2218%22%20rx%3D%222%22%3E%3C%2Frect%3E%3Ccircle%20cx%3D%228.5%22%20cy%3D%228.5%22%20r%3D%221.5%22%3E%3C%2Fcircle%3E%3Cpath%20d%3D%22M21%2015%20L16%2010%20L5%2021%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20Add%20Image%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22file%22%20accept%3D%22image%2F*%22%20class%3D%22editor-import-input%22%20style%3D%22display%3A%20none%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3C!--%20Saved%20brushes%20--%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22saved-brushes-section%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22saved-brushes-label%22%3ESaved%20Brushes%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22saved-brushes-grid%22%20id%3D%22saved-brushes%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3C!--%20Bottom%20actions%20--%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22editor-bottom-actions%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-action-btn%20editor-save-btn%22%20title%3D%22Save%20brush%20to%20collection%22%3E%E2%98%85%20Save%20Brush%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22editor-done-btn%22%3EUse%20This%20Brush%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22mon%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22mon-inner%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22sidebar-head%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2F%22%3EPaint%20%3Cimg%20alt%3D%22Paint%20Toys%20home%22%3E%20Toys%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2F%22%20class%3D%22more%22%3Efor%20more%20toys%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22mon-ad%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20data-pw-desk%3D%22sky_atf%22%20id%3D%22pwDeskSkyAtf%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22sidebar-footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Ftoybox.toms.toys%3Fref%3Dpaint.toys%22%3E%C2%A9%20toms.toys%20%E2%8D%9F%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22mobile-mon%22%3E%0A%20%20%20%20%20%20%3Cdiv%20data-pw-mobi%3D%22leaderboard_atf%22%20id%3D%22pwMobiLbAtf%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22drop-overlay%22%20id%3D%22drop-overlay%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22drop-overlay-text%22%3EDrop%20image%20to%20use%20as%20brush%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%3C!--%20Google%20tag%20(gtag.js)%20--%3E%0A%0A%0A%0A%3Cdiv%20id%3D%22adBanner%22%20class%3D%22adLeaderboard%20adBanner%20leaderboard_ad%22%20style%3D%22background-color%3A%20transparent%3B%20height%3A%2010px%3B%20width%3A%2010px%3B%20position%3A%20fixed%3B%20bottom%3A%20-100px%3B%20left%3A%20-100px%3B%22%3E%26nbsp%3B%3C%2Fdiv%3E%3Cdiv%20class%3D%22ad_row%20adbannertop%20ad-mobile%20ad_sidebar%20adpopup%20boxad%20contentAd%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20m5c2t8q%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20v8n6y4p%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20w3p9m6d%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20k2y8f7x%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20q7d5z1l%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20x9a7b3k%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "c416eda0-a5de-46c9-8d15-58ba388d22eb",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "paint.toys-brushy-brush"
+}

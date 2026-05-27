@@ -1,0 +1,164 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1078,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1078,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 1048,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1045,
+                "height": 25,
+                "width": 571
+            },
+            "snippet": "<table class=\"footer\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22footer%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 204,
+    "ruleTime": 3,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 7,
+            "elementsViolation": 3,
+            "elementsViolationReview": 3,
+            "violation": 4,
+            "potentialviolation": 0,
+            "recommendation": 4,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 196
+        },
+        "scanTime": 11,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778709875477,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EHourly%20Kitten%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%3Ch1%20align%3D%22center%22%3EHourly%20Kitten%3C%2Fh1%3E%0A%0A%3Cdiv%20align%3D%22center%22%20id%3D%22embed%22%3E%3C%2Fdiv%3E%0A%0A%3Cul%3E%0A%3Cli%3EFediverse%3A%20%3Ca%20href%3D%22https%3A%2F%2Fbotsin.space%2F%40hourlykitten%22%20rel%3D%22me%22%3E%40hourlykitten%40botsin.space%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%3Cp%3EThe%20Hourly%20Kitten%20service%20aims%20to%20provide%20you%20with%20one%20properly%20attributed%2C%0ACreative%20Commons%20licensed%2C%20and%20mind-numbingly%20adorable%20kitten%20image%2C%20once%20an%0Ahour%2C%20on%20the%20hour.%3C%2Fp%3E%0A%0A%3Cp%3EHourly%20Kitten%20was%20originally%20created%0Aby%20Dan%20and%20Jeremy%20Bornstein%20%E2%80%94%20Dan's%20idea%2C%20Jeremy's%20code%2C%20Dan's%20kitten%0Acuration%20%E2%80%94%20over%20the%20course%20of%20a%20few%20days%20in%20May%20and%20June%20of%202014.%20It%0Astarted%20as%20a%20Twitter%20bot.%20It%20was%20ported%20to%20the%20Fediverse%20in%20November%20of%202022.%0AAs%20of%20mid-2023%2C%20the%20Twitter%20bot%20stopped%20working%20due%20to%20adverse%20actions%20by%20the%0Afolks%20that%20run%20Twitter.%3C%2Fp%3E%0A%0A%3Cp%3EThe%20impetus%20for%20the%20account%20was%20that%0ADan's%20previous%20favorite%20Twitter%20source%20of%20kittens%20started%20posting%0Away%20too%20many%20commercial%20links.%20Dan%20likes%20kittens%2C%20and%20particularly%0Afound%20that%20he%20likes%20using%20pictures%20of%20kittens%20as%20a%20way%20to%20punctuate%0Ahis%20social%20feed%20(helping%20him%20not%20lose%20his%20place%20when%20trying%20to%0Aconsume%20his%20feed%20in%20toto).%20So%2C%20he%20wanted%20to%20have%20a%20better%20source%0Aof%20kittens%2C%20with%20a%20reasonably%20memorable%20(and%20stately)%20pace.%20And%20he%0Adidn't%20want%20to%20rely%20on%20anyone%20else%20anymore.%20Thus%2C%20the%20project%20was%20born.%3C%2Fp%3E%0A%0A%3Cp%3EKitten%20curation%20is%20an%20ongoing%20activity.%20It%20takes%20approximately%20one%0Aminute%20(amortized)%20to%20pick%2C%20acquire%2C%20and%20properly%20document%20each%20image.%0ASo%2C%20in%20order%20to%20have%20a%20full%20year's%20worth%20of%20un-repeated%20images%0A(24%20*%20365%20%3D%208%2C760%20images)%2C%20it%20would%20take%20about%20146%20hours.%20That's%20equivalent%0Ato%20a%20full-time%20job%20(of%2040%20hours%20per%20week)%20for%20about%20a%20month.%20Suffice%20it%0Ato%20say%20that%20there%20are%20many%20fewer%20images%20in%20the%20kittenbase%20than%20that%3B%0Ahowever%2C%20we%20aspire%20to%20keep%20up%20with%20the%20curation%20such%20that%20you%20won't%20get%0Atired%20of%20the%20selection%2C%20and%20that%20you%20will%20always%20have%20at%20least%20a%20few%0Anew%20images%20to%20look%20forward%20to%20seeing%20every%20day.%3C%2Fp%3E%0A%0A%3Cp%3E%3Cb%3EPLEASE%20NOTE%3A%3C%2Fb%3E%20Kitten%20curation%20has%20been%20on%20hiatus%20since%20around%20the%0Astart%20of%202020%2C%20because%20%5Bgestures%20around%5D.%20We%20hope%20to%20get%20back%20to%20it%20soon%20but%20can%0Amake%20no%20promises.%20But%20FWIW%2C%20here%20is%20the%20official%20submission%20procedure%2C%20should%0Acuration%20ramp%20up%20again.%3C%2Fp%3E%0A%0A%3Ch2%3ESubmissions%3C%2Fh2%3E%0A%0A%3Cp%3EDo%20you%20have%20(access%20to)%20a%20cute%20kitten%20who%20needs%20more%20exposure%20on%20social%0Amedia%3F%20If%20so%2C%20here%20are%20the%20steps%20to%20follow%3A%3C%2Fp%3E%0A%0A%3Col%3E%0A%3Cli%3ETake%20pictures%20of%20the%20little%20scamp.%3C%2Fli%3E%0A%3Cli%3EUpload%20them%20to%20any%20well-known%20image%20hosting%20site%20which%20provides%20clear%0A%20%20authorship%20attribution%20of%20images.%20For%20example%2C%20Flickr%20is%20a%20good%20choice.%0A%20%20As%20a%20counterexample%2C%20Imgur%20is%20a%20%3Ci%3Ebad%3C%2Fi%3E%20choice%20because%20they%20don't%20provide%0A%20%20solid%20authorship%20attribution.%3C%2Fli%3E%0A%3Cli%3EMark%20the%20pictures%20as%20being%20licensed%20under%20a%20Creative%20Commons%20license%20that%0A%20%20allows%20sharing%20and%20commercial%20use.%20(Why%20commercial%3F%20Because%20we're%20being%0A%20%20conservative%20in%20what%20we%20accept.%20We%20do%20not%20intend%20to%20%22monetize%22%0A%20%20Hourly%20Kitten.)%20The%0A%20%20%3Ca%20href%3D%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F4.0%2F%22%3ECC%20BY%204.0%0A%20%20license%3C%2Fa%3E%20works%2C%20for%20example.%0A%3C%2Fli%3E%3Cli%3ESend%20mail%20to%20hourlykitten%40murtbo.com%2C%20with%20the%20subject%20line%20%22Submission%2C%22%0A%20%20and%20include%20a%20link%20to%20your%20pictures.%0A%3C%2Fli%3E%3C%2Fol%3E%0A%0A%3Cp%3EHourly%20Kitten%20is%20strictly%20an%20off-hours%20project%2C%20so%20it%20may%20take%20a%20while%20for%0Ayour%20pictures%20to%20get%20included.%20Dan%20looks%20at%20each%20picture%2C%20and%20he%20may%0Anot%20accept%20yours.%20(Sorry.)%3C%2Fp%3E%0A%0A%3Cp%3EBeyond%20licensing%2C%20here%20are%20the%20basic%20criteria%3A%3C%2Fp%3E%0A%0A%3Cul%3E%0A%3Cli%3EThe%20picture%20is%20primarily%20of%20one%20or%20more%20kittens%2C%20yearling%20or%20younger.%3C%2Fli%3E%0A%3Cli%3EIt%20is%20an%20unadulterated%2C%20or%20only%20mildly%20manipulated%2C%20photograph.%3C%2Fli%3E%0A%3Cli%3EIt's%20an%20aesthetically%20pleasing%20composition.%3C%2Fli%3E%0A%3Cli%3EIt's%20cute%20%2F%20twee%20%2F%20squee-worthy.%3C%2Fli%3E%0A%3Cli%3EThere%20aren't%20many%20(or%20any)%20non-kitten%20creatures%20in%20the%20picture.%3C%2Fli%3E%0A%3Cli%3EThere's%20no%20%22meme%20text.%22%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%3Cp%3EThanks%20in%20advance%20for%20your%20submissions!%3C%2Fp%3E%0A%0A%3Ctable%20class%3D%22footer%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%20%20%3Ctd%3ESite%20copyright%20%C2%A9%201994%E2%80%932024%20Dan%20Bornstein.%20All%20rights%20reserved.%3C%2Ftd%3E%0A%20%20%3Ctd%3E%3Ca%20href%3D%22%2F%22%3Emilk.com%3C%2Fa%3E%20%2F%20hourlykitten%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "49054a4f-58a3-46d0-9af3-e19696f83c30",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "milk.com-hourlykitten"
+}

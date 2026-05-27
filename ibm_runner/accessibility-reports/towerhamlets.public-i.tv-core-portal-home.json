@@ -1,0 +1,991 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[2]",
+                "aria": "/document[1]/banner[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 157,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div style=\"background-color: #000;color:#FFF;\" class=\"cs_menu_font_family d-none d-sm-block\" id=\"superHeader\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background-color%3A%20%23000%3Bcolor%3A%23FFF%3B%5C%22%20class%3D%5C%22cs_menu_font_family%20d-none%20d-sm-block%5C%22%20id%3D%5C%22superHeader%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.23 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.23",
+                16,
+                400,
+                "#0000ee",
+                "#000000",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 157,
+                "height": 18,
+                "width": 39
+            },
+            "snippet": "<a href=\"/core/portal/login\" class=\"text-white font-s\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.23%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fcore%2Fportal%2Flogin%5C%22%20class%3D%5C%22text-white%20font-s%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.23%22%2C16%2C400%2C%22%230000ee%22%2C%22%23000000%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[3]/div[1]/nav[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]/search[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 282,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input aria-label=\"Search\" placeholder=\"Search\" name=\"q\" class=\"form-control py-2 border-right-0 d-inline cs_menu_border_colour\" id=\"full_header_search\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22Search%5C%22%20placeholder%3D%5C%22Search%5C%22%20name%3D%5C%22q%5C%22%20class%3D%5C%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%5C%22%20id%3D%5C%22full_header_search%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[3]/div[1]/nav[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]/search[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 315,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"Search\" type=\"submit\" class=\"btn btn-primary border-left-0 cs_menu_border_colour\" id=\"input_search_icon_header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Search%5C%22%20type%3D%5C%22submit%5C%22%20class%3D%5C%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%5C%22%20id%3D%5C%22input_search_icon_header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[5]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/generic[2]/search[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 480,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input aria-label=\"Search\" placeholder=\"Search\" name=\"q\" class=\"form-control py-2 border-right-0 d-inline cs_menu_border_colour\" id=\"expand_header_search\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22Search%5C%22%20placeholder%3D%5C%22Search%5C%22%20name%3D%5C%22q%5C%22%20class%3D%5C%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%5C%22%20id%3D%5C%22expand_header_search%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[5]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/banner[1]/generic[2]/search[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 513,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"Search\" type=\"submit\" class=\"btn btn-primary border-left-0 cs_menu_border_colour\" id=\"input_search_icon_header_expand\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Search%5C%22%20type%3D%5C%22submit%5C%22%20class%3D%5C%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%5C%22%20id%3D%5C%22input_search_icon_header_expand%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 600,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"//towerhamlets.public-i.tv/core/portal/magic_rss\" aria-label=\"RSS feed\" title=\"RSS feed\" class=\"btn btn-primary btn-xs\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fmagic_rss%5C%22%20aria-label%3D%5C%22RSS%20feed%5C%22%20title%3D%5C%22RSS%20feed%5C%22%20class%3D%5C%22btn%20btn-primary%20btn-xs%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_article_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/article[1]",
+                "aria": "/document[1]/main[1]/article[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"article\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 691,
+                "height": 117,
+                "width": 784
+            },
+            "snippet": "<article class=\"item d-flex\" aria-labelledby=\"item_heading_1086617\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_article_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22article%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Carticle%20class%3D%5C%22item%20d-flex%5C%22%20aria-labelledby%3D%5C%22item_heading_1086617%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_article_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/article[1]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 691,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a title=\"View webcast : Human Resources Committee\" href=\"//towerhamlets.public-i.tv/core/portal/webcast_interactive/1086617\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20title%3D%5C%22View%20webcast%20%3A%20Human%20Resources%20Committee%5C%22%20href%3D%5C%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1086617%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_article_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/article[2]",
+                "aria": "/document[1]/main[1]/article[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"article\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 829,
+                "height": 117,
+                "width": 784
+            },
+            "snippet": "<article class=\"item d-flex\" aria-labelledby=\"item_heading_1086616\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_article_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22article%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Carticle%20class%3D%5C%22item%20d-flex%5C%22%20aria-labelledby%3D%5C%22item_heading_1086616%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_article_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/article[2]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 829,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a title=\"View webcast : Strategic Development Committee\" href=\"//towerhamlets.public-i.tv/core/portal/webcast_interactive/1086616\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20title%3D%5C%22View%20webcast%20%3A%20Strategic%20Development%20Committee%5C%22%20href%3D%5C%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1086616%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_article_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/article[3]",
+                "aria": "/document[1]/main[1]/article[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"article\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 967,
+                "height": 117,
+                "width": 784
+            },
+            "snippet": "<article class=\"item d-flex\" aria-labelledby=\"item_heading_1091670\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_article_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22article%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Carticle%20class%3D%5C%22item%20d-flex%5C%22%20aria-labelledby%3D%5C%22item_heading_1091670%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_article_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/article[3]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[3]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 967,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a title=\"View webcast : Human Resources Committee\" href=\"//towerhamlets.public-i.tv/core/portal/webcast_interactive/1091670\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20title%3D%5C%22View%20webcast%20%3A%20Human%20Resources%20Committee%5C%22%20href%3D%5C%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1091670%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[2]/div[1]/article[4]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[4]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1105,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a title=\"View webcast : Council\" href=\"//towerhamlets.public-i.tv/core/portal/webcast_interactive/1083816\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20title%3D%5C%22View%20webcast%20%3A%20Council%5C%22%20href%3D%5C%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1083816%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[4]/div[1]/article[1]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[5]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1283,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a title=\"View webcast : Development Committee\" href=\"//towerhamlets.public-i.tv/core/portal/webcast_interactive/1072042\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20title%3D%5C%22View%20webcast%20%3A%20Development%20Committee%5C%22%20href%3D%5C%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1072042%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_article_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[4]/div[1]/article[2]",
+                "aria": "/document[1]/main[1]/article[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"article\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1421,
+                "height": 117,
+                "width": 784
+            },
+            "snippet": "<article class=\"item d-flex\" aria-labelledby=\"item_heading_1063926\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_article_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22article%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Carticle%20class%3D%5C%22item%20d-flex%5C%22%20aria-labelledby%3D%5C%22item_heading_1063926%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_article_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[4]/div[1]/article[2]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[6]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1421,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a title=\"View webcast : Strategic Development Committee\" href=\"//towerhamlets.public-i.tv/core/portal/webcast_interactive/1063926\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20title%3D%5C%22View%20webcast%20%3A%20Strategic%20Development%20Committee%5C%22%20href%3D%5C%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1063926%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[4]/div[1]/article[3]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[7]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1559,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a title=\"View webcast : Housing Management (Cabinet) Sub-Committee\" href=\"//towerhamlets.public-i.tv/core/portal/webcast_interactive/1054629\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20title%3D%5C%22View%20webcast%20%3A%20Housing%20Management%20(Cabinet)%20Sub-Committee%5C%22%20href%3D%5C%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1054629%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[4]/div[1]/article[4]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[8]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1697,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a title=\"View webcast : Cabinet\" href=\"//towerhamlets.public-i.tv/core/portal/webcast_interactive/1083101\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20title%3D%5C%22View%20webcast%20%3A%20Cabinet%5C%22%20href%3D%5C%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1083101%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[1]/button[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2594,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button data-dismiss=\"modal\" aria-label=\"Close\" class=\"close\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20data-dismiss%3D%5C%22modal%5C%22%20aria-label%3D%5C%22Close%5C%22%20class%3D%5C%22close%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[2]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 2818,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" checked=\"\" value=\"true\" name=\"necessary_cookies\" class=\"custom-control-input\" id=\"necessary_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22necessary_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22necessary_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[3]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 2915,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" value=\"true\" name=\"preferences_cookies\" class=\"custom-control-input\" id=\"preferences_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22preferences_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22preferences_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[4]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 3031,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" value=\"true\" name=\"statistics_cookies\" class=\"custom-control-input\" id=\"statistics_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22statistics_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22statistics_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[5]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 3147,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" value=\"true\" name=\"third_party_cookies\" class=\"custom-control-input\" id=\"third_party_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22third_party_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22third_party_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/dialog[2]/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3264,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"Close\" data-dismiss=\"modal\" class=\"close\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Close%5C%22%20data-dismiss%3D%5C%22modal%5C%22%20class%3D%5C%22close%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/dialog[2]/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3264,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"Close\" data-dismiss=\"modal\" class=\"close\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Close%5C%22%20data-dismiss%3D%5C%22modal%5C%22%20class%3D%5C%22close%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]",
+                "aria": "/document[1]/dialog[2]/document[1]/list[1]/listitem[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "a"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3287,
+                "height": 18,
+                "width": 41
+            },
+            "snippet": "<a href=\"mailto:?body=https%3A%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fhome%3Fforce_language_code%3Den_GB%0A&subject=Home%20-%20Tower%20Hamlets%20Council%20webcasts\" &quot;);;\"=\"\" 1050\\=\"\" page\\=\"\" email'+&quot;\\=\"\" id=\"email_share\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22a%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22mailto%3A%3Fbody%3Dhttps%253A%252F%252Ftowerhamlets.public-i.tv%252Fcore%252Fportal%252Fhome%253Fforce_language_code%253Den_GB%250A%26subject%3DHome%2520-%2520Tower%2520Hamlets%2520Council%2520webcasts%5C%22%20%26quot%3B)%3B%3B%5C%22%3D%5C%22%5C%22%201050%5C%5C%3D%5C%22%5C%22%20page%5C%5C%3D%5C%22%5C%22%20email'%2B%26quot%3B%5C%5C%3D%5C%22%5C%22%20id%3D%5C%22email_share%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22a%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+                "aria": "/document[1]/dialog[2]/document[1]/list[1]/listitem[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "a"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3306,
+                "height": 18,
+                "width": 219
+            },
+            "snippet": "<a target=\"_blank\" href=\"https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fhome%3Fforce_language_code%3Den_GB&summary=Home%20-%20Tower%20Hamlets%20Council%20webcasts&title=Home%20-%20Tower%20Hamlets%20Council%20webcasts\" &quot;);\"=\"\" 1050\\=\"\" page\\=\"\" linkedin'+&quot;\\=\"\" id=\"linkedin_share\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22a%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%253A%252F%252Ftowerhamlets.public-i.tv%252Fcore%252Fportal%252Fhome%253Fforce_language_code%253Den_GB%26summary%3DHome%2520-%2520Tower%2520Hamlets%2520Council%2520webcasts%26title%3DHome%2520-%2520Tower%2520Hamlets%2520Council%2520webcasts%5C%22%20%26quot%3B)%3B%5C%22%3D%5C%22%5C%22%201050%5C%5C%3D%5C%22%5C%22%20page%5C%5C%3D%5C%22%5C%22%20linkedin'%2B%26quot%3B%5C%5C%3D%5C%22%5C%22%20id%3D%5C%22linkedin_share%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22a%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[3]/a[1]",
+                "aria": "/document[1]/dialog[2]/document[1]/list[1]/listitem[3]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "a"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3324,
+                "height": 18,
+                "width": 205
+            },
+            "snippet": "<a target=\"_blank\" href=\"https://twitter.com/intent/tweet?text=https%3A%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fhome%3Fforce_language_code%3Den_GB\" &quot;);\"=\"\" 1050\\=\"\" page\\=\"\" twitter'+&quot;\\=\"\" id=\"twitter_share\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22a%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3Dhttps%253A%252F%252Ftowerhamlets.public-i.tv%252Fcore%252Fportal%252Fhome%253Fforce_language_code%253Den_GB%5C%22%20%26quot%3B)%3B%5C%22%3D%5C%22%5C%22%201050%5C%5C%3D%5C%22%5C%22%20page%5C%5C%3D%5C%22%5C%22%20twitter'%2B%26quot%3B%5C%5C%3D%5C%22%5C%22%20id%3D%5C%22twitter_share%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22a%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/ul[1]/li[4]/a[1]",
+                "aria": "/document[1]/dialog[2]/document[1]/list[1]/listitem[4]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"a\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "a"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 3343,
+                "height": 18,
+                "width": 221
+            },
+            "snippet": "<a target=\"_blank\" href=\"https://www.facebook.com/sharer.php?u=https%3A%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fhome%3Fforce_language_code%3Den_GB\" &quot;);\"=\"\" 1050\\=\"\" page\\=\"\" facebook'+&quot;\\=\"\" id=\"facebook_share\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22a%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Ca%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Ftowerhamlets.public-i.tv%252Fcore%252Fportal%252Fhome%253Fforce_language_code%253Den_GB%5C%22%20%26quot%3B)%3B%5C%22%3D%5C%22%5C%22%201050%5C%5C%3D%5C%22%5C%22%20page%5C%5C%3D%5C%22%5C%22%20facebook'%2B%26quot%3B%5C%5C%3D%5C%22%5C%22%20id%3D%5C%22facebook_share%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22a%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/dialog[2]/document[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"input\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 78,
+                "top": 3377,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input value=\"https://towerhamlets.public-i.tv/core/portal/home?force_language_code=en_GB\" type=\"text\" class=\"form-control\" id=\"share_link_input\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22input%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22https%3A%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fhome%3Fforce_language_code%3Den_GB%5C%22%20type%3D%5C%22text%5C%22%20class%3D%5C%22form-control%5C%22%20id%3D%5C%22share_link_input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[3]/button[1]",
+                "aria": "/document[1]/dialog[2]/document[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3399,
+                "height": 22,
+                "width": 51
+            },
+            "snippet": "<button data-dismiss=\"modal\" class=\"btn btn-primary\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20data-dismiss%3D%5C%22modal%5C%22%20class%3D%5C%22btn%20btn-primary%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        }
+    ],
+    "numExecuted": 2225,
+    "ruleTime": 42,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "aria_hidden_nontabbable": {
+            "0": "A hidden element should not contain any tabbable elements",
+            "Fail_1": "Element \"{0}\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'"
+        },
+        "aria_article_label_unique": {
+            "0": "Each element with \"article\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"article\" role do not have unique labels"
+        },
+        "input_checkboxes_grouped": {
+            "0": "Related sets of radio buttons or checkboxes should be programmatically grouped",
+            "potential_lonecheckbox": "Verify that this ungrouped checkbox input is not related to other checkboxes"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 32,
+            "elementsViolation": 12,
+            "elementsViolationReview": 32,
+            "violation": 12,
+            "potentialviolation": 20,
+            "recommendation": 0,
+            "potentialrecommendation": 1,
+            "manual": 1,
+            "pass": 2191
+        },
+        "scanTime": 108,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778707422217,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EHome%20-%20Tower%20Hamlets%20Council%20webcasts%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22pi_sunshine_page%20controller_portal%20method_home%20combined_portal_home%20page_id_1050%20is_using_a_layout%20layout_id_1%20%20logged_out%20cs_body_font_family%22%3E%0A%09%3Cdiv%20id%3D%22cookie_overlay%22%20class%3D%22py-3%22%20role%3D%22alert%22%20aria-live%3D%22assertive%22%3E%0A%09%3Cdiv%20class%3D%22container%20d-flex%20flex-column%20flex-sm-row%22%20style%3D%22gap%3A%201rem%3B%22%3E%0A%09%09%3Cdiv%20class%3D%22mr-auto%22%3E%0A%09%09%09%3Cstrong%3E%0A%09%09%09%09We%20use%20cookies%20to%20remember%20your%20preferences%2C%20collect%20information%20about%20how%20you%20use%20the%20site%2C%20and%20connect%20to%20third-party%20services.%3Cbr%3E%0A%09%09%09%3C%2Fstrong%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Fcookie_law%22%3E%0A%09%09%09%09Read%20our%26nbsp%3BCookie%20policy%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22align-self-center%22%3E%0A%09%09%09%3Cbutton%20class%3D%22btn%20btn-outline-light%20text-nowrap%22%20type%3D%22button%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23cookie-modal%22%3E%0A%09%09%09%09Customise%20Preferences%09%09%09%3C%2Fbutton%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22align-self-center%22%3E%0A%09%09%09%3Cform%20method%3D%22POST%22%20action%3D%22%2Fcore%2Fportal%2Faccept_cookie%2Fall%22%3E%0A%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%2200da306c85c3faa74e55526fa0924cbe%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%3Cbutton%20class%3D%22btn%20btn-light%20text-nowrap%22%20type%3D%22submit%22%3E%0A%09%09%09%09%09Accept%20All%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%3C%2Fform%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%3Cheader%20id%3D%22navHeader%22%20class%3D%22cs_menu_font_family%20mb-3%22%3E%0A%09%09%0A%09%3Cdiv%20id%3D%22skip_nav%22%20role%3D%22navigation%22%20aria-label%3D%22Skip%20navigation%20links%22%3E%0A%09%09%3Cul%20class%3D%22list-unstyled%22%3E%0A%09%09%09%3Cli%3E%3Ca%20href%3D%22%23mainContent%22%20title%3D%22Use%20this%20link%20to%20skip%20to%20the%20main%20content%20of%20the%20website%22%20class%3D%22cs_background_flat%20cs_menu_font_colour%22%3ESkip%20to%20Main%20Content%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%3C%2Ful%3E%0A%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22superHeader%22%20class%3D%22cs_menu_font_family%20d-none%20d-sm-block%22%20style%3D%22background-color%3A%20%23000%3Bcolor%3A%23FFF%3B%22%3E%0A%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%3C!--%20login%2Fuser%20link%2Fdropdown%20--%3E%0A%09%09%09%09%3Cdiv%20class%3D%22py-2%20dropdown%20ml-auto%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22text-white%20font-s%22%20href%3D%22%2Fcore%2Fportal%2Flogin%22%3E%0A%09%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-user%20mr-1%22%3E%3C%2Fi%3ELogin%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%0A%0A%0A%3Cdiv%20id%3D%22navbar_2019%22%20class%3D%22cs_background_grad%22%3E%0A%09%3Cdiv%20id%3D%22nav_elements_container%22%20class%3D%22container%20justify-content-between%22%3E%0A%09%09%3Cnav%20class%3D%22navbar%20navbar-expand-md%20p-0%20flex-nowrap%22%20id%3D%22navbar_main%22%3E%0A%09%09%09%09%3C!--%20logo%20--%3E%0A%09%09%09%09%3Cspan%20id%3D%22brand_container%22%20class%3D%22navbar-brand%20p-0%20mr-1%20flex-shrink-1%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22http%3A%2F%2Fwww.towerhamlets.gov.uk%2F%22%20class%3D%22navbar-left%20px-0%22%20style%3D%22outline-offset%3A%20-1px%3B%22%3E%3Cimg%20id%3D%22brand_logo%22%20alt%3D%22Tower%20Hamlets%20Council%20Homepage%20logo%22%3E%3C%2Fa%3E%09%09%09%09%3C%2Fspan%3E%0A%09%09%09%09%3C!--%20nav%20menu%20items%20--%3E%0A%09%09%09%09%3Cdiv%20class%3D%22nav_divider_bar%20ml-md-4%20pl-md-4%20ml-lg-5%20pl-lg-5%20mr-md-4%20mr-lg-5%20flex-fill%20d-md-block%20d-none%20position-relative%22%20id%3D%22navbarNavContent%22%20style%3D%22%22%3E%0A%09%09%09%09%09%3Cul%20id%3D%22menu_ul%22%20class%3D%22navbar-nav%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20id%3D%22more%22%20class%3D%22d-none%20text-decoration-none%22%20style%3D%22display%3A%20none%3B%22%3E%0A%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20nav-link%20dropdown-toggle%20pb-1%22%20id%3D%22more_dropdown_anchor%22%20href%3D%22%23%22%20data-toggle%3D%22dropdown%22%20role%3D%22button%22%20aria-expanded%3D%22false%22%3EMore%3Cspan%20class%3D%22sr-only%22%3E%20pages%3Cspan%3E%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fa%3E%0A%09%09%09%09%09%09%09%3Cul%20id%3D%22nav_dropdown_overflow%22%20class%3D%22dropdown-menu%20dropdown-menu-right%20flat-dropdown%22%20aria-labelledby%3D%22more_dropdown_anchor%22%20aria-live%3D%22polite%22%3E%3C%2Ful%3E%0A%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%3Cli%20class%3D%22moving_nav_li%20mr-4%20text-nowrap%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20pb-1%20nav-link%20active%22%20href%3D%22%2Fcore%2Fportal%2Fhome%22%20title%3D%22Go%20to%20the%20page%3A%20Home%22%3EHome%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%3Cli%20class%3D%22moving_nav_li%20mr-4%20text-nowrap%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20pb-1%20nav-link%22%20href%3D%22%2Fcore%2Fportal%2Fwebcasts%22%20title%3D%22Go%20to%20the%20page%3A%20Webcast%20library%22%3EWebcast%20library%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%3Cli%20class%3D%22moving_nav_li%20mr-4%20text-nowrap%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20pb-1%20nav-link%22%20href%3D%22%2Fcore%2Fportal%2Ffaq%22%20title%3D%22Go%20to%20the%20page%3A%20Help%22%3EHelp%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%3C%2Ful%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C!--%20search%20forms%20and%20input%20navbar%20--%3E%0A%09%09%09%09%09%09%09%09%09%3C!--%20flex-shrink-0%20removed%20from%20commented%20version%20below%20(above%20the%20new%20version)%2C%20for%20accessibility%20reasons%20(nav%20break%20at%20200%25%20text%20only%20zoom%20(resolution%20%3C%201080p)).%20Original%20inclusion%20for%20this%20bootstrap%20class%20is%20tbc%20--%3E%0A%09%09%09%09%09%3C!--%20%3Cdiv%20class%3D%22d-none%20d-lg-block%20flex-shrink-0%22%20id%3D%22header_search_forms_nav%22%3E%20--%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22d-none%20d-lg-block%22%20id%3D%22header_search_forms_nav%22%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22search%22%3E%0A%09%09%09%09%09%09%09%3Cform%20action%3D%22%2Fcore%2Fportal%2Fsearch_results%22%20method%3D%22post%22%20role%3D%22search%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%2200da306c85c3faa74e55526fa0924cbe%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22search_text_container%20d-none%20d-lg-block%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22text%22%20id%3D%22full_header_search%22%20class%3D%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%22%20name%3D%22q%22%20placeholder%3D%22Search%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group-append%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cbutton%20id%3D%22input_search_icon_header%22%20class%3D%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%22%20type%3D%22submit%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Ci%20id%3D%22header_search_icon%22%20class%3D%22icon%20tnetennba-fas-search%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22search_request_uri%22%20value%3D%22%2Fcore%2Fportal%2Fhome%22%3E%0A%09%09%09%09%09%09%09%3C%2Fform%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%20%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C!--%20inline-flex%20added%20here%20to%20stop%20icon-container%20being%20pushed%20above%20and%20below%20on%20page%20load%20--%3E%0A%09%09%09%09%3Cdiv%20id%3D%22icon-container%22%20class%3D%22d-inline-flex%22%3E%0A%09%09%09%09%09%3C!--%20burger%20menu%20main%20nav%20link%20collapse%20--%3E%0A%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20nav_link_toggle%20px-0%20d-md-none%20mr-3%22%20id%3D%22nav_link_expand_button%22%20href%3D%22%23%22%20role%3D%22button%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22nav_expand_outer_links%22%20data-toggle_element%3D%22nav_expand_outer_links%22nav_expand_outer_links')%3B%20return%20false%22%3E%0A%09%09%09%09%09%09%3Ci%20id%3D%22nav_link_expand%22%20class%3D%22icon%20tnetennba-fas-bars%22%3E%3C%2Fi%3E%3Cspan%20class%3D%22sr-only%22%3E%20Open%20navigation%3C%2Fspan%3E%0A%09%09%09%09%09%3C%2Fa%3E%20%0A%09%09%09%09%09%3C!--%20search%20expand%20button%20--%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20nav_search%20px-0%20d-lg-none%20ml-1%22%20id%3D%22search_toggle%22%20href%3D%22%23%22%20role%3D%22button%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22nav_expand_outer_search%22%20data-toggle_element%3D%22nav_expand_outer_search%22nav_expand_outer_search')%3B%20return%20false%22%3E%0A%09%09%09%09%09%09%09%3Ci%20id%3D%22nav_search_icon%22%20class%3D%22icon%20tnetennba-fas-search%22%3E%3C%2Fi%3E%3Cspan%20class%3D%22sr-only%22%3E%20Search%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%09%09%3C!--%20share%20expand%20button%20--%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20px-0%20d-inline-flex%20text-decoration-none%20ml-3%22%20role%3D%22button%22%20href%3D%22%23%22%20tabindex%3D%220%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23share_modal%22%20id%3D%22share_toggle%22%20aria-label%3D%22Share%20Page%22%3E%0A%09%09%09%09%09%09%09%3Cspan%20class%3D%22d-none%20d-lg-block%22%3EShare%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%3Ci%20id%3D%22nav_share_icon%22%20class%3D%22icon%20tnetennba-fas-share-alt%20order-first%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fnav%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3C!--%20Moved%20this%20expandable%20and%20%23nav_expand_outer_search%20into%20a%20seperate%20div%20and%20container%2C%20so%20top%20border%20would%20be%20hidden%20on%20resize%20--%3E%0A%3Cdiv%20id%3D%22nav_expand_outer_links%22%20class%3D%22cs_background_grad_top%20nav_expandable%20d-none%20d-md-none%20position-absolute%20w-100%22%20style%3D%22z-index%3A5%22%20aria-live%3D%22polite%22%3E%0A%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%3Cdiv%20class%3D%22nav-divider-left%20ml-lg-2%20pl-lg-3%20d-md-none%22%20id%3D%22navbarNavContentExpand%22%3E%0A%09%09%09%3Cul%20class%3D%22navbar-nav%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20text-decoration-none%20active%22%20href%3D%22%2Fcore%2Fportal%2Fhome%22%20title%3D%22Go%20to%20the%20page%3A%20Home%22%3EHome%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20text-decoration-none%22%20href%3D%22%2Fcore%2Fportal%2Fwebcasts%22%20title%3D%22Go%20to%20the%20page%3A%20Webcast%20library%22%3EWebcast%20library%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20text-decoration-none%22%20href%3D%22%2Fcore%2Fportal%2Ffaq%22%20title%3D%22Go%20to%20the%20page%3A%20Help%22%3EHelp%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%3C%2Ful%3E%0A%0A%09%09%09%3C!--%20language%2Flogin%20bar%20items%20in%20nav%20bar%20--%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22d-block%20d-sm-none%22%3E%0A%09%09%09%09%09%3Chr%20class%3D%22cs_menu_font_colour%22%3E%0A%09%09%09%09%09%3Cul%20class%3D%22navbar-nav%20cs_menu_font_colour%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ci%20class%3D%22icon%20icon-small%20tnetennba-fas-user%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%22%20href%3D%22%2Fcore%2Fportal%2Flogin%22%3ELogin%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Ful%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%09%3Cdiv%20id%3D%22nav_expand_outer_search%22%20class%3D%22cs_background_grad_top%20nav_expandable%20d-none%20d-lg-none%20position-absolute%20w-100%22%20style%3D%22z-index%3A2%22%20aria-live%3D%22polite%22%3E%0A%09%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%09%3C!--%20search%20forms%20and%20input%20expand%20--%3E%0A%09%09%09%3Cdiv%20id%3D%22header_search_forms_expand%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22search%22%3E%0A%09%09%09%09%09%3Cform%20action%3D%22%2Fcore%2Fportal%2Fsearch_results%22%20method%3D%22post%22%20role%3D%22search%22%3E%0A%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%2200da306c85c3faa74e55526fa0924cbe%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%09%09%3Cdiv%20class%3D%22search_text_container%20mx-3%20mb-3%20mt-3%20d-lg-none%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22text%22%20id%3D%22expand_header_search%22%20class%3D%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%22%20name%3D%22q%22%20placeholder%3D%22Search%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group-append%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cbutton%20id%3D%22input_search_icon_header_expand%22%20class%3D%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%22%20type%3D%22submit%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Ci%20id%3D%22nav_search_expand_icon%22%20class%3D%22icon%20tnetennba-fas-search%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22search_request_uri%22%20value%3D%22%2Fcore%2Fportal%2Fhome%22%3E%0A%09%09%09%09%09%3C%2Fform%3E%0A%09%09%09%09%3C%2Fdiv%3E%20%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fheader%3E%0A%09%09%09%09%09%3Cmain%20id%3D%22mainContent%22%20style%3D%22min-height%3A%20456px%3B%22%3E%0A%09%09%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%09%09%3C!--%5Bif%20lte%20IE%209%20%5D%3E%20%3Cdiv%20id%3D%22alert6a04ebdbe0dcf%22%20class%3D%22clearfix%20fade%20show%20alert%20alert-warning%20alert-dismissible%20text-center%22%20role%3D%22alert%22%3E%0A%09%3Cbutton%20type%3D%22button%22%20class%3D%22close%22%20data-dismiss%3D%22alert%22%20aria-label%3D%22Close%22%3E%3Ci%20class%3D%22icon%20tnetennba-far-times%22%3E%3C%2Fi%3E%3C%2Fbutton%3E%0A%09You%20are%20using%20an%20older%20version%20of%20Internet%20Explorer.%20Some%20features%20of%20this%20site%20and%20video%20player%20may%20not%20function%20correctly.%0A%3C%2Fdiv%3E%0A%3Cbr%3E%3C!%5Bendif%5D--%3E%0A%09%09%3Cdiv%20class%3D%22row%20justify-content-center%22%3E%0A%09%3Cdiv%20class%3D%22col-xl-12%20col-lg-12%20col-md-12%20col-12%22%3E%0A%09%09%3Ch1%20class%3D%22sr-only%22%3EHome%20-%20Tower%20Hamlets%20Council%20webcasts%3C%2Fh1%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22row%20justify-content-center%22%3E%0A%09%3Cdiv%20class%3D%22col-xl-12%20col-lg-12%20col-md-12%20col-12%22%3E%0A%09%09%09%3Cdiv%20id%3D%22tag_filter%22%20class%3D%22filter%20clearfix%22%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22row%20justify-content-center%22%3E%0A%09%3Cdiv%20id%3D%22col_1%22%20class%3D%22col-xl-7%20col-lg-7%20col-md-12%20col-12%20template-001%22%3E%0A%09%09%3Cdiv%20id%3D%22pi_widget_7320%22%20class%3D%22pi_widget%20gizmo%20pi_widget_type_3%20pi_widget_type_view_54%22%3E%0A%09%3Cdiv%20class%3D%22pi_widget_title%22%3E%0A%09%09%3Cdiv%20class%3D%22widget_title_rss%20float-right%22%3E%0A%3Ca%20class%3D%22btn%20btn-primary%20btn-xs%22%20title%3D%22RSS%20feed%22%20aria-label%3D%22RSS%20feed%22%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fmagic_rss%22%3E%3Ci%20class%3D%22icon%20icon-large%20tnetennba-fas-rss%22%20aria-hidden%3D%22true%22%3E%3C%2Fi%3E%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%09%09%3Ch2%20class%3D%22cs_heading_font_family%22%3E%0A%09%09%09Webcast%20overview%26nbsp%3B%0A%09%09%3C%2Fh2%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22pi_widget_content%20inner%22%3E%0A%09%09%3Cdiv%20class%3D%22pi_widget_sectionheading%22%3E%3Ch3%20class%3D%22pi_g1_fg%20pi_g4_bd%22%3EComing%20soon%3C%2Fh3%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22pi_widget_body%22%3E%0A%3Cdiv%20class%3D%22inner_body%22%3E%0A%20%3Carticle%20aria-labelledby%3D%22item_heading_1086617%22%20class%3D%22item%20d-flex%22%3E%0A%09%3Cdiv%20class%3D%22listing_screen_holder%20flex-shrink-0%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1086617%22%20title%3D%22View%20webcast%20%3A%20Human%20Resources%20Committee%22%3E%0A%09%09%09%09%0A%09%09%09%09%09%3Cdiv%20class%3D%22default_image%20cs_background_flat%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%0A%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_information%20flex-fill%20pl-3%22%3E%0A%09%09%3Ch4%20id%3D%22item_heading_1086617%22%20class%3D%22mt-0%20mb-1%22%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1086617%22%20title%3D%22View%20webcast%20%3A%20Human%20Resources%20Committee%22%3E%0A%09%09%09%09%09%09Human%20Resources%20Committee%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fh4%3E%0A%09%09%0A%09%09%3Cdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22mb-1%22%3E%0A%09%09%09%09Monday%2C%208th%20June%202026%20at%206%3A30pm%09%09%09%09%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22ml-2%20btn%20btn-dark%20btn-xs%22%20title%3D%22More%20information%20-%20Human%20Resources%20Committee%22%20data-target%3D%22%23description_1086617%22%20data-toggle%3D%22collapse%22%20aria-expanded%3D%22false%22%3E%0A%09%09%09%09%09%09%3Cspan%20class%3D%22sr-only%22%3EMore%20information%20-%20Human%20Resources%20Committee%3C%2Fspan%3E%0A%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-info%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22description_1086617%22%20class%3D%22item_content%20collapse%20mb-1%22%20aria-live%3D%22polite%22%3E%0A%09%09%09%09%09Human%20Resources%20Committee%3Cbr%3E%0A08%2F06%2F2026%206.30%20p.m.%3Cbr%3E%0ACommittee%20Room%20-%20Tower%20Hamlets%20Town%20Hall%2C%20160%20Whitechapel%20Road%2C%20London%20E1%201BJ%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%0A%09%09%0A%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_lock_status%20pl-3%22%3E%0A%09%09%09%3C%2Fdiv%3E%0A%20%3C%2Farticle%3E%0A%20%3Carticle%20aria-labelledby%3D%22item_heading_1086616%22%20class%3D%22item%20d-flex%22%3E%0A%09%3Cdiv%20class%3D%22listing_screen_holder%20flex-shrink-0%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1086616%22%20title%3D%22View%20webcast%20%3A%20Strategic%20Development%20Committee%22%3E%0A%09%09%09%09%0A%09%09%09%09%09%3Cdiv%20class%3D%22default_image%20cs_background_flat%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%0A%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_information%20flex-fill%20pl-3%22%3E%0A%09%09%3Ch4%20id%3D%22item_heading_1086616%22%20class%3D%22mt-0%20mb-1%22%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1086616%22%20title%3D%22View%20webcast%20%3A%20Strategic%20Development%20Committee%22%3E%0A%09%09%09%09%09%09Strategic%20Development%20Committee%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fh4%3E%0A%09%09%0A%09%09%3Cdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22mb-1%22%3E%0A%09%09%09%09Tuesday%2C%2026th%20May%202026%20at%206%3A30pm%09%09%09%09%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22ml-2%20btn%20btn-dark%20btn-xs%22%20title%3D%22More%20information%20-%20Strategic%20Development%20Committee%22%20data-target%3D%22%23description_1086616%22%20data-toggle%3D%22collapse%22%20aria-expanded%3D%22false%22%3E%0A%09%09%09%09%09%09%3Cspan%20class%3D%22sr-only%22%3EMore%20information%20-%20Strategic%20Development%20Committee%3C%2Fspan%3E%0A%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-info%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22description_1086616%22%20class%3D%22item_content%20collapse%20mb-1%22%20aria-live%3D%22polite%22%3E%0A%09%09%09%09%09Strategic%20Development%20Committee%3Cbr%3E%0A26%2F05%2F2026%206.30%20p.m.%3Cbr%3E%0ACouncil%20Chamber%20-%20Town%20Hall%2C%20Whitechapel%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%0A%09%09%0A%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_lock_status%20pl-3%22%3E%0A%09%09%09%3C%2Fdiv%3E%0A%20%3C%2Farticle%3E%0A%20%3Carticle%20aria-labelledby%3D%22item_heading_1091670%22%20class%3D%22item%20d-flex%22%3E%0A%09%3Cdiv%20class%3D%22listing_screen_holder%20flex-shrink-0%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1091670%22%20title%3D%22View%20webcast%20%3A%20Human%20Resources%20Committee%22%3E%0A%09%09%09%09%0A%09%09%09%09%09%3Cdiv%20class%3D%22default_image%20cs_background_flat%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%0A%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_information%20flex-fill%20pl-3%22%3E%0A%09%09%3Ch4%20id%3D%22item_heading_1091670%22%20class%3D%22mt-0%20mb-1%22%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1091670%22%20title%3D%22View%20webcast%20%3A%20Human%20Resources%20Committee%22%3E%0A%09%09%09%09%09%09Human%20Resources%20Committee%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fh4%3E%0A%09%09%0A%09%09%3Cdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22mb-1%22%3E%0A%09%09%09%09Wednesday%2C%2020th%20May%202026%20at%208%3A00pm%09%09%09%09%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22ml-2%20btn%20btn-dark%20btn-xs%22%20title%3D%22More%20information%20-%20Human%20Resources%20Committee%22%20data-target%3D%22%23description_1091670%22%20data-toggle%3D%22collapse%22%20aria-expanded%3D%22false%22%3E%0A%09%09%09%09%09%09%3Cspan%20class%3D%22sr-only%22%3EMore%20information%20-%20Human%20Resources%20Committee%3C%2Fspan%3E%0A%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-info%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22description_1091670%22%20class%3D%22item_content%20collapse%20mb-1%22%20aria-live%3D%22polite%22%3E%0A%09%09%09%09%09Human%20Resources%20Committee%3Cbr%3E%0A20%2F05%2F2026%208.00%20p.m.%3Cbr%3E%0ACouncil%20Chamber%20-%20Tower%20Hamlets%20Town%20Hall%2C%20160%20Whitechapel%20Road%2C%20London%20E1%201BJ%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%0A%09%09%0A%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_lock_status%20pl-3%22%3E%0A%09%09%09%3C%2Fdiv%3E%0A%20%3C%2Farticle%3E%0A%20%3Carticle%20aria-labelledby%3D%22item_heading_1083816%22%20class%3D%22item%20d-flex%22%3E%0A%09%3Cdiv%20class%3D%22listing_screen_holder%20flex-shrink-0%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1083816%22%20title%3D%22View%20webcast%20%3A%20Council%22%3E%0A%09%09%09%09%0A%09%09%09%09%09%3Cdiv%20class%3D%22default_image%20cs_background_flat%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%0A%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_information%20flex-fill%20pl-3%22%3E%0A%09%09%3Ch4%20id%3D%22item_heading_1083816%22%20class%3D%22mt-0%20mb-1%22%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1083816%22%20title%3D%22View%20webcast%20%3A%20Council%22%3E%0A%09%09%09%09%09%09Council%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fh4%3E%0A%09%09%0A%09%09%3Cdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22mb-1%22%3E%0A%09%09%09%09Wednesday%2C%2020th%20May%202026%20at%207%3A00pm%09%09%09%09%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22ml-2%20btn%20btn-dark%20btn-xs%22%20title%3D%22More%20information%20-%20Council%22%20data-target%3D%22%23description_1083816%22%20data-toggle%3D%22collapse%22%20aria-expanded%3D%22false%22%3E%0A%09%09%09%09%09%09%3Cspan%20class%3D%22sr-only%22%3EMore%20information%20-%20Council%3C%2Fspan%3E%0A%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-info%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22description_1083816%22%20class%3D%22item_content%20collapse%20mb-1%22%20aria-live%3D%22polite%22%3E%0A%09%09%09%09%09Council%3Cbr%3E%0A20%2F05%2F2026%207.00%20p.m.%3Cbr%3E%0ACouncil%20Chamber%20-%20Town%20Hall%2C%20Whitechapel%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%0A%09%09%0A%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_lock_status%20pl-3%22%3E%0A%09%09%09%3C%2Fdiv%3E%0A%20%3C%2Farticle%3E%0A%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22pi_widget_sectionheading%22%3E%3Ch3%20class%3D%22pi_g1_fg%20pi_g4_bd%22%3ERecent%20Webcasts%3C%2Fh3%3E%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22pi_widget_body%22%3E%0A%3Cdiv%20class%3D%22inner_body%22%3E%0A%20%3Carticle%20aria-labelledby%3D%22item_heading_1072042%22%20class%3D%22item%20d-flex%22%3E%0A%09%3Cdiv%20class%3D%22listing_screen_holder%20flex-shrink-0%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1072042%22%20title%3D%22View%20webcast%20%3A%20Development%20Committee%22%3E%0A%09%09%09%09%0A%09%09%09%09%09%3Cdiv%20class%3D%22default_image%20cs_background_flat%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%0A%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_information%20flex-fill%20pl-3%22%3E%0A%09%09%3Ch4%20id%3D%22item_heading_1072042%22%20class%3D%22mt-0%20mb-1%22%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1072042%22%20title%3D%22View%20webcast%20%3A%20Development%20Committee%22%3E%0A%09%09%09%09%09%09Development%20Committee%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fh4%3E%0A%09%09%0A%09%09%3Cdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22mb-1%22%3E%0A%09%09%09%09Thursday%2C%2023rd%20April%202026%20at%206%3A30pm%09%09%09%09%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22ml-2%20btn%20btn-dark%20btn-xs%22%20title%3D%22More%20information%20-%20Development%20Committee%22%20data-target%3D%22%23description_1072042%22%20data-toggle%3D%22collapse%22%20aria-expanded%3D%22false%22%3E%0A%09%09%09%09%09%09%3Cspan%20class%3D%22sr-only%22%3EMore%20information%20-%20Development%20Committee%3C%2Fspan%3E%0A%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-info%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22description_1072042%22%20class%3D%22item_content%20collapse%20mb-1%22%20aria-live%3D%22polite%22%3E%0A%09%09%09%09%09Development%20Committee%3Cbr%3E%0A23%2F04%2F2026%206.30%20p.m.%3Cbr%3E%0ACouncil%20Chamber%20-%20Town%20Hall%2C%20Whitechapel%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%0A%09%09%0A%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_lock_status%20pl-3%22%3E%0A%09%09%09%3C%2Fdiv%3E%0A%20%3C%2Farticle%3E%0A%20%3Carticle%20aria-labelledby%3D%22item_heading_1063926%22%20class%3D%22item%20d-flex%22%3E%0A%09%3Cdiv%20class%3D%22listing_screen_holder%20flex-shrink-0%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1063926%22%20title%3D%22View%20webcast%20%3A%20Strategic%20Development%20Committee%22%3E%0A%09%09%09%09%0A%09%09%09%09%09%3Cdiv%20class%3D%22default_image%20cs_background_flat%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%0A%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_information%20flex-fill%20pl-3%22%3E%0A%09%09%3Ch4%20id%3D%22item_heading_1063926%22%20class%3D%22mt-0%20mb-1%22%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1063926%22%20title%3D%22View%20webcast%20%3A%20Strategic%20Development%20Committee%22%3E%0A%09%09%09%09%09%09Strategic%20Development%20Committee%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fh4%3E%0A%09%09%0A%09%09%3Cdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22mb-1%22%3E%0A%09%09%09%09Wednesday%2C%201st%20April%202026%20at%206%3A30pm%09%09%09%09%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22ml-2%20btn%20btn-dark%20btn-xs%22%20title%3D%22More%20information%20-%20Strategic%20Development%20Committee%22%20data-target%3D%22%23description_1063926%22%20data-toggle%3D%22collapse%22%20aria-expanded%3D%22false%22%3E%0A%09%09%09%09%09%09%3Cspan%20class%3D%22sr-only%22%3EMore%20information%20-%20Strategic%20Development%20Committee%3C%2Fspan%3E%0A%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-info%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22description_1063926%22%20class%3D%22item_content%20collapse%20mb-1%22%20aria-live%3D%22polite%22%3E%0A%09%09%09%09%09Strategic%20Development%20Committee%3Cbr%3E%0A01%2F04%2F2026%206.30%20p.m.%3Cbr%3E%0ACouncil%20Chamber%20-%20Town%20Hall%2C%20Whitechapel%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%0A%09%09%0A%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_lock_status%20pl-3%22%3E%0A%09%09%09%3C%2Fdiv%3E%0A%20%3C%2Farticle%3E%0A%20%3Carticle%20aria-labelledby%3D%22item_heading_1054629%22%20class%3D%22item%20d-flex%22%3E%0A%09%3Cdiv%20class%3D%22listing_screen_holder%20flex-shrink-0%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1054629%22%20title%3D%22View%20webcast%20%3A%20Housing%20Management%20(Cabinet)%20Sub-Committee%22%3E%0A%09%09%09%09%0A%09%09%09%09%09%3Cdiv%20class%3D%22default_image%20cs_background_flat%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%0A%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_information%20flex-fill%20pl-3%22%3E%0A%09%09%3Ch4%20id%3D%22item_heading_1054629%22%20class%3D%22mt-0%20mb-1%22%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1054629%22%20title%3D%22View%20webcast%20%3A%20Housing%20Management%20(Cabinet)%20Sub-Committee%22%3E%0A%09%09%09%09%09%09Housing%20Management%20(Cabinet)%20Sub-Committee%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fh4%3E%0A%09%09%0A%09%09%3Cdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22mb-1%22%3E%0A%09%09%09%09Friday%2C%2027th%20March%202026%20at%203%3A15pm%09%09%09%09%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22ml-2%20btn%20btn-dark%20btn-xs%22%20title%3D%22More%20information%20-%20Housing%20Management%20(Cabinet)%20Sub-Committee%22%20data-target%3D%22%23description_1054629%22%20data-toggle%3D%22collapse%22%20aria-expanded%3D%22false%22%3E%0A%09%09%09%09%09%09%3Cspan%20class%3D%22sr-only%22%3EMore%20information%20-%20Housing%20Management%20(Cabinet)%20Sub-Committee%3C%2Fspan%3E%0A%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-info%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22description_1054629%22%20class%3D%22item_content%20collapse%20mb-1%22%20aria-live%3D%22polite%22%3E%0A%09%09%09%09%09Housing%20Management%20(Cabinet)%20Sub-Committee%3Cbr%3E%0A27%2F03%2F2026%203.15%20p.m.%3Cbr%3E%0ACouncil%20Chamber%20-%20Town%20Hall%2C%20Whitechapel%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%0A%09%09%0A%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_lock_status%20pl-3%22%3E%0A%09%09%09%3C%2Fdiv%3E%0A%20%3C%2Farticle%3E%0A%20%3Carticle%20aria-labelledby%3D%22item_heading_1083101%22%20class%3D%22item%20d-flex%22%3E%0A%09%3Cdiv%20class%3D%22listing_screen_holder%20flex-shrink-0%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1083101%22%20title%3D%22View%20webcast%20%3A%20Cabinet%22%3E%0A%09%09%09%09%0A%09%09%09%09%09%3Cdiv%20class%3D%22default_image%20cs_background_flat%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%0A%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_information%20flex-fill%20pl-3%22%3E%0A%09%09%3Ch4%20id%3D%22item_heading_1083101%22%20class%3D%22mt-0%20mb-1%22%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fwebcast_interactive%2F1083101%22%20title%3D%22View%20webcast%20%3A%20Cabinet%22%3E%0A%09%09%09%09%09%09Cabinet%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fh4%3E%0A%09%09%0A%09%09%3Cdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22mb-1%22%3E%0A%09%09%09%09Friday%2C%2027th%20March%202026%20at%203%3A00pm%09%09%09%09%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22ml-2%20btn%20btn-dark%20btn-xs%22%20title%3D%22More%20information%20-%20Cabinet%22%20data-target%3D%22%23description_1083101%22%20data-toggle%3D%22collapse%22%20aria-expanded%3D%22false%22%3E%0A%09%09%09%09%09%09%3Cspan%20class%3D%22sr-only%22%3EMore%20information%20-%20Cabinet%3C%2Fspan%3E%0A%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-info%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22description_1083101%22%20class%3D%22item_content%20collapse%20mb-1%22%20aria-live%3D%22polite%22%3E%0A%09%09%09%09%09Cabinet%3Cbr%3E%0A27%2F03%2F2026%203.00%20p.m.%3Cbr%3E%0ACouncil%20Chamber%20-%20Town%20Hall%2C%20Whitechapel%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%0A%09%09%0A%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22listing_lock_status%20pl-3%22%3E%0A%09%09%09%3C%2Fdiv%3E%0A%20%3C%2Farticle%3E%0A%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22pi_widget_footer%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22pi_calltoaction%20d-flex%20flex-column%20flex-md-row%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22align-self-md-center%20mr-md-3%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22align-self-md-center%22%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Fwebcasts%22%20title%3D%22View%20the%20webcast%20library%22%20class%3D%22btn%20btn-primary%20text-nowrap%22%3EView%20the%20webcast%20library%3C%2Fa%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%09%3Cdiv%20id%3D%22col_2%22%20class%3D%22col-xl-5%20col-lg-5%20col-md-12%20col-12%20template-001%22%3E%0A%09%09%3Cdiv%20id%3D%22pi_widget_7321%22%20class%3D%22pi_widget%20gizmo%22%3E%0A%09%3Cdiv%20class%3D%22pi_widget_title%22%3E%0A%09%09%09%09%3Ch2%20class%3D%22cs_heading_font_family%22%3E%0A%09%09%09Welcome%26nbsp%3B%0A%09%09%3C%2Fh2%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22pi_widget_content%20inner%22%3E%0A%09%09%0A%3Cdiv%20class%3D%22pi_widget_body%22%3E%0A%09%09%09%3Cdiv%20class%3D%22inner_body%22%3E%0A%09%09%09%3Cp%3EThis%20site%20contains%20recent%20webcasts%20of%20Tower%20Hamlets%20Council%E2%80%99s%20Cabinet%2C%26nbsp%3BCouncil%20and%20Overview%20%26amp%3B%20Scrutiny%20Committee%20meetings.%3C%2Fp%3E%0A%3Cp%3EWebcast%20cameras%20are%20not%20operated%20by%20camerapersons%3B%20they%20are%20automated%20and%20linked%20to%20speaker%20microphone%20units.%20The%20aim%20is%20to%20provide%20viewers%20with%20a%20reasonable%20visual%20and%20audio%20record%20of%20proceedings%20of%20meetings%20held%20in%20public.%3C%2Fp%3E%0A%3Cp%3EFeedback%20from%20viewers%20is%20very%20welcome.%20Please%20send%20any%20comments%20or%20suggestions%20to%20%3Ca%20href%3D%22mailto%3Acommittee.services%40towerhamlets.gov.uk%22%3Ecommittee.services%40towerhamlets.gov.uk%3C%2Fa%3E.%3C%2Fp%3E%0A%3Cp%3EInformation%20will%20be%20provided%20about%20any%20future%20webcasting%2Ffilming%20of%20Tower%20Hamlets%20Council%20meetings%20at%20%3Ca%20href%3D%22http%3A%2F%2Fwww.towerhamlets.gov.uk%2Fcommittee%22%3Ewww.towerhamlets.gov.uk%2Fcommittee%3C%2Fa%3E.%3C%2Fp%3E%0A%3Cp%3E%3Cstrong%3EThe%20ownership%2C%20copyright%20and%20all%20other%20rights%20in%20and%20to%20this%20recording%20of%20the%20Council%E2%80%99s%20Cabinet%20Meeting%20are%20the%20property%20of%20the%20London%20Borough%20of%20Tower%20Hamlets.%3C%2Fstrong%3E%3C%2Fp%3E%0A%3Cp%3E%3Cstrong%3EAny%20opinion%20expressed%20in%20the%20recording%20are%20those%20only%20of%20the%20person%20who%20expresses%20such%20an%20opinion%20and%20not%20the%20opinion%20of%20the%20body%20corporate%20of%20the%20Council.%3C%2Fstrong%3E%3C%2Fp%3E%0A%3Cp%3E%3Cstrong%3EThe%20Council%20is%20not%20in%20any%20way%20liable%20in%20the%20event%20that%20any%20third%20party%20makes%20any%20authorised%20or%20unauthorised%20use%20of%20this%20recording.%3C%2Fstrong%3E%3C%2Fp%3E%0A%3Cp%3E%3Cstrong%3E%C2%A9%20Mayor%20and%20Burgesses%20of%20the%20London%20Borough%20of%20Tower%20Hamlets%202022.%3C%2Fstrong%3E%3C%2Fp%3E%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20id%3D%22pi_widget_10314%22%20class%3D%22pi_widget%20gizmo%20pi_widget_type_3%20pi_widget_type_view_89%22%3E%0A%09%3Cdiv%20class%3D%22pi_widget_title%22%3E%0A%09%09%09%09%3Ch2%20class%3D%22cs_heading_font_family%22%3E%0A%09%09%09Subscribe%26nbsp%3B%0A%09%09%3C%2Fh2%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3Cdiv%20class%3D%22pi_widget_content%20inner%22%3E%0A%09%09%3Cdiv%20class%3D%22pi_widget_body%22%3E%0A%09%3Cdiv%20class%3D%22inner_body%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%20justify-content-between%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22pr-3%20flex-fill%22%3E%0A%09%09%09%09%09%3Cp%3ESubscribe%20to%20be%20notified%20by%20email%20about%20upcoming%20webcasts%20that%20matter%20to%20you.%3C%2Fp%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%3Ca%20href%3D%22%2Fcore%2Fsubscription%2Fsubscribe_tag_modal_content%22body').append('%26lt%3Bdiv%20id%3Dtag_subscribe_modal_container%26gt%3B%26lt%3B%2Fdiv%26gt%3B')%3B%24jqcspi('%23tag_subscribe_modal_container').load('%2Fcore%2Fsubscription%2Fasync_subscribe_tag_modal_content_html'%2C%20%7B%7D%2C%20function()%7Bbegin_focus_trap('tag_subscribe_modal_container'%2C%20btn)%7D)%3Breturn%20false%3B%22%20class%3D%22subscribe_btn%20btn%20btn-primary%20text-nowrap%22%3E%0A%09%09%09%09%09%09Subscribe%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fmain%3E%0A%09%09%09%09%09%09%3Cfooter%20id%3D%22footer%22%20class%3D%22mt-5%20pi_g7_bg%20pi_g4_bd%22%3E%0A%09%09%09%3Cdiv%20class%3D%22container%20h-100%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22row%20align-items-center%20h-100%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22col-8%22%3E%0A%09%09%09%09%09%09%09%3Cul%20id%3D%22footnav%22%20class%3D%22list-unstyled%20mb-0%22%20title%3D%22Footer%20navigation%22%3E%0A%09%09%3Cli%20class%3D%22pr-md-5%20float-md-left%20d-block%22%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Fprivacy%22%20title%3D%22Go%20to%20page%3A%20Privacy%20policy%22%3E%0A%09%09%09%09Privacy%20policy%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%09%3Cli%20class%3D%22pr-md-5%20float-md-left%20d-block%22%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Fcookie_law%22%20title%3D%22Go%20to%20page%3A%20Cookies%22%3E%0A%09%09%09%09Cookies%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%09%3Cli%20class%3D%22float-md-left%20d-block%22%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Faccessibility_statement%22%20title%3D%22Go%20to%20page%3A%20Accessibility%20statement%22%3E%0A%09%09%09%09Accessibility%20statement%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%3C%2Ful%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22col-4%20text-right%22%3E%0A%09%09%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fwww.public-i.tv%2F%22%20title%3D%22Go%20to%20the%20Public-i%20website%22%20rel%3D%22nofollow%22%3E%3Cimg%20class%3D%22pi_logo%22%20alt%3D%22Public-i%20logo%22%3E%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Ffooter%3E%0A%09%09%0A%0A%3C!--%20Cookie%20modal%20--%3E%0A%3Cdiv%20id%3D%22cookie-modal%22%20class%3D%22modal%22%20tabindex%3D%22-1%22%20role%3D%22dialog%22%20aria-labelledby%3D%22cookie-modal-label%22%20data-backdrop%3D%22static%22%20data-keyboard%3D%22false%22%3E%0A%09%3Cdiv%20class%3D%22modal-dialog%20modal-lg%22%20role%3D%22document%22%3E%0A%09%09%3Cdiv%20class%3D%22modal-content%22%3E%0A%09%09%09%3Cform%20method%3D%22POST%22%20action%3D%22%2Fcore%2Fportal%2Faccept_cookie%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22modal-header%22%3E%0A%09%09%09%09%09%3Ch2%20class%3D%22modal-title%22%20id%3D%22cookie-modal-label%22%3ECookie%20preferences%3C%2Fh2%3E%0A%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22close%22%20aria-label%3D%22Close%22%20data-dismiss%3D%22modal%22%3E%3Ci%20class%3D%22icon%20tnetennba-far-times%22%3E%3C%2Fi%3E%3C%2Fbutton%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22modal-body%22%3E%0A%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%2200da306c85c3faa74e55526fa0924cbe%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%3Ch3%3EThis%20website%20uses%20cookies%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%3EWe%20use%20cookies%20to%20remember%20your%20preferences%2C%20collect%20information%20about%20how%20you%20use%20the%20site%2C%20and%20connect%20to%20third-party%20services.%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22text-right%22%3E%3Cbutton%20type%3D%22button%22%20class%3D%22btn%20btn-link%20btn-lg%22%23cookie-modal%20input%5Btype%3Dcheckbox%5D%3Anot(%23necessary_cookies)').prop('checked'%2Cfalse)%3B%22%3EReject%20Non-Essential%3C%2Fbutton%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%0A%09%09%09%09%09%3Cdiv%20id%3D%22necessary_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3ENecessary%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09These%20cookies%20helpers%20make%20a%20website%20usable%2C%20enabling%20basic%20functions%20like%20page%20navigation%20and%20access%20to%20secure%20areas%20of%20the%20website.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22necessary_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22necessary_cookies%22%20value%3D%22true%22%20checked%3D%22%22%20disabled%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22necessary_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3ENecessary%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22necessary_cookies%22%20value%3D%22true%22%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22preferences_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3EPreferences%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09These%20cookies%20enable%20the%20website%20to%20remember%20settings%20like%20your%20preferred%20video%20quality%20and%20subtitles.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22preferences_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22preferences_cookies%22%20value%3D%22true%22%20checked%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22preferences_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3EPreferences%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22statistics_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3EStatistics%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09This%20site%20uses%20Google%20Analytics%20to%20gather%20anonymous%20statistics%20on%20how%20users%20interact%20with%20the%20website%20to%20improve%20usability%20and%20performance.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22statistics_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22statistics_cookies%22%20value%3D%22true%22%20checked%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22statistics_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3EStatistics%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22third_party_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3EThird-Party%20Services%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09Includes%20cookies%20from%20social%20media%20platforms%20like%20Twitter%2C%20Facebook%2C%20Disqus%2C%20and%20YouTube%20to%20display%20widgets%20and%20content%20on%20the%20site.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22third_party_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22third_party_cookies%22%20value%3D%22true%22%20checked%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22third_party_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3EThird-Party%20Services%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22modal-footer%22%3E%09%0A%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22btn%20btn-link%22%20data-dismiss%3D%22modal%22%3ECancel%3C%2Fbutton%3E%0A%09%09%09%09%09%3Cbutton%20type%3D%22submit%22%20class%3D%22btn%20btn-primary%20text-nowrap%22%3ESave%3C%2Fbutton%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fform%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%09%3Cdiv%20class%3D%22modal%20fade%22%20id%3D%22share_modal%22%20tabindex%3D%22-1%22%20role%3D%22dialog%22%20aria-labelledby%3D%22share_modalLabel%22%20aria-hidden%3D%22true%22%20data-backdrop%3D%22static%22%20data-keyboard%3D%22false%22%3E%0A%09%3Cdiv%20class%3D%22modal-dialog%22%20role%3D%22document%22%3E%0A%09%09%3Cdiv%20class%3D%22modal-content%22%3E%0A%09%09%09%3Cdiv%20class%3D%22modal-header%22%3E%0A%09%09%09%09%3Ch2%20class%3D%22modal-title%20cs_heading_font_family%22%20id%3D%22share_modalLabel%22%3EShare%3C%2Fh2%3E%0A%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22close%22%20data-dismiss%3D%22modal%22%20aria-label%3D%22Close%22%3E%3Ci%20class%3D%22icon%20tnetennba-far-times%22%3E%3C%2Fi%3E%3C%2Fbutton%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22modal-body%22%3E%0A%09%09%09%09%3Cul%20class%3D%22list-unstyled%22%3E%0A%09%09%09%09%09%3Cli%3E%0A%09%09%09%09%09%09%3Ca%20id%3D%22email_share%22Email'%2B%26quot%3B%5C%2Fpage%5C%2F1050%5C%2F%26quot%3B)%3B%3B%22%20href%3D%22mailto%3A%3Fbody%3Dhttps%253A%252F%252Ftowerhamlets.public-i.tv%252Fcore%252Fportal%252Fhome%253Fforce_language_code%253Den_GB%250A%26amp%3Bsubject%3DHome%2520-%2520Tower%2520Hamlets%2520Council%2520webcasts%22%3E%0A%09%09%09%09%09%09%09%3Cstrong%3E%3Ci%20class%3D%22icon%20tnetennba-fas-envelope%20mr-2%22%3E%3C%2Fi%3EEmail%3C%2Fstrong%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%3Cli%3E%0A%09%09%09%09%09%09%3Ca%20id%3D%22linkedin_share%22LinkedIn'%2B%26quot%3B%5C%2Fpage%5C%2F1050%5C%2F%26quot%3B)%3B%22%20href%3D%22https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26amp%3Burl%3Dhttps%253A%252F%252Ftowerhamlets.public-i.tv%252Fcore%252Fportal%252Fhome%253Fforce_language_code%253Den_GB%26amp%3Bsummary%3DHome%2520-%2520Tower%2520Hamlets%2520Council%2520webcasts%26amp%3Btitle%3DHome%2520-%2520Tower%2520Hamlets%2520Council%2520webcasts%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09%09%09%3Cstrong%3E%3Ci%20class%3D%22icon%20tnetennba-fab-linkedin%20mr-2%22%3E%3C%2Fi%3ELinkedIn%3C%2Fstrong%3E%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%20%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%3Cli%3E%0A%09%09%09%09%09%09%3Ca%20id%3D%22twitter_share%22Twitter'%2B%26quot%3B%5C%2Fpage%5C%2F1050%5C%2F%26quot%3B)%3B%22%20href%3D%22https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3Dhttps%253A%252F%252Ftowerhamlets.public-i.tv%252Fcore%252Fportal%252Fhome%253Fforce_language_code%253Den_GB%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09%09%09%3Cstrong%3E%3Ci%20class%3D%22icon%20tnetennba-fab-twitter-square%20mr-2%22%3E%3C%2Fi%3ETwitter%3C%2Fstrong%3E%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%3Cli%3E%0A%09%09%09%09%09%09%3Ca%20id%3D%22facebook_share%22Facebook'%2B%26quot%3B%5C%2Fpage%5C%2F1050%5C%2F%26quot%3B)%3B%22%20href%3D%22https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Ftowerhamlets.public-i.tv%252Fcore%252Fportal%252Fhome%253Fforce_language_code%253Den_GB%22%20target%3D%22_blank%22%3E%0A%09%09%09%09%09%09%09%3Cstrong%3E%3Ci%20class%3D%22icon%20tnetennba-fab-facebook-square%20mr-2%22%3E%3C%2Fi%3EFacebook%3C%2Fstrong%3E%3Cspan%20class%3D%22sr-only%22%3E%20(opens%20in%20new%20window)%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%3C%2Ful%3E%0A%0A%09%09%09%09%3Cdiv%20id%3D%22share_link%22%20class%3D%22mb-3%22%3E%0A%09%09%09%09%09%3Clabel%20class%3D%22h5%22%20for%3D%22share_link_input%22%3EShare%20link%3C%2Flabel%3E%0A%09%09%09%09%09%3Cinput%20id%3D%22share_link_input%22%20class%3D%22form-control%22%20type%3D%22text%22%20value%3D%22https%3A%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Fhome%3Fforce_language_code%3Den_GB%22%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22modal-footer%20bg-light%22%3E%0A%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22btn%20btn-primary%22%20data-dismiss%3D%22modal%22%3EClose%3C%2Fbutton%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%09%09%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "38afde16-6791-417f-95c4-a8f5139e12d4",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "towerhamlets.public-i.tv-core-portal-home"
+}

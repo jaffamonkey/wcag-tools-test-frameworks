@@ -1,0 +1,100 @@
+{
+    "results": [
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/footer[1]/div[1]/p[2]/strong[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/paragraph[2]/strong[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 334,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://sethna.lassp.cornell.edu/StatMech/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fsethna.lassp.cornell.edu%2FStatMech%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/footer[1]/div[1]/p[2]/strong[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/paragraph[2]/strong[1]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 334,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://sethna.lassp.cornell.edu/StatMech/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fsethna.lassp.cornell.edu%2FStatMech%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 300,
+    "ruleTime": 5,
+    "nls": {
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 6,
+            "elementsViolation": 1,
+            "elementsViolationReview": 2,
+            "violation": 1,
+            "potentialviolation": 1,
+            "recommendation": 4,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 293
+        },
+        "scanTime": 14,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778689403431,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EPage%20not%20found%20%7C%20James%20Sethna%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22html%20not-front%20not-logged-in%20no-sidebars%20page-hysteresis%20page-hysteresis-referenceshtm%20section-hysteresis%22%3E%0A%20%20%20%20%20%20%3Cp%20id%3D%22skip-link%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%23main-menu%22%20class%3D%22element-invisible%20element-focusable%22%3EJump%20to%20navigation%3C%2Fa%3E%0A%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%20%20%0A%3Cdiv%20id%3D%22page%22%3E%0A%0A%20%20%3Cheader%20class%3D%22header%22%20id%3D%22header%22%20role%3D%22banner%22%3E%0A%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22header__name-and-slogan%22%20id%3D%22name-and-slogan%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22header__site-name%22%20id%3D%22site-name%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2F%22%20title%3D%22Home%22%20class%3D%22header__site-link%22%20rel%3D%22home%22%3E%3Cspan%3EJames%20Sethna%3C%2Fspan%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fh1%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22header__site-slogan%22%20id%3D%22site-slogan%22%3EJames%20Gilbert%20White%20Professor%20of%20Physical%20Sciences%20at%20Cornell%20University%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22header__region%20region%20region-header%22%3E%0A%20%20%20%20%3Cdiv%20id%3D%22block-block-6%22%20class%3D%22block%20block-block%20first%20last%20odd%22%3E%0A%0A%20%20%20%20%20%20%0A%20%20%3Cdiv%20class%3D%22bg%22%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3C%2Fheader%3E%0A%0A%20%20%3Cdiv%20id%3D%22main%22%3E%0A%0A%20%20%20%20%3Cdiv%20id%3D%22content%22%20class%3D%22column%22%20role%3D%22main%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22main-content%22%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22page__title%20title%22%20id%3D%22page-title%22%3EPage%20not%20found%3C%2Fh1%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0A%0AThe%20requested%20page%20%22%2Fhysteresis%2Freferences.htm%22%20could%20not%20be%20found.%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20id%3D%22navigation%22%3E%0A%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cfooter%20id%3D%22footer%22%20class%3D%22region%20region-footer%22%3E%0A%20%20%20%20%3Cdiv%20id%3D%22block-block-5%22%20class%3D%22block%20block-block%20first%20last%20odd%22%3E%0A%0A%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22block__title%20block-title%22%3EImportant%20Publications%3C%2Fh2%3E%0A%20%20%20%20%0A%20%20%3Cp%3E%3Cstrong%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2FStatMech%2F%22%3EStatistical%20Mechanics%3A%20Entropy%2C%20Order%20Parameters%20and%20Complexity%3C%2Fa%3E%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%3Cp%3E%3Cstrong%3E%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2FStatMech%2F%22%3E%3Cimg%20alt%3D%22%22%3E%3C%2Fa%3E%3C%2Fstrong%3E%3C%2Fp%3E%0A%0A%3Cp%3E%26nbsp%3B%3C%2Fp%3E%0A%0A%3Cp%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.lassp.cornell.edu%2Fsethna%2FStatMech%2FEntropyOrderParametersComplexity20.pdf%22%3ESecond%20edition%20January%202021%3C%2Fa%3E%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%20%20%3C%2Ffooter%3E%0A%0A%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22region%20region-bottom%22%3E%0A%20%20%20%20%3Cdiv%20id%3D%22block-block-2%22%20class%3D%22block%20block-block%20first%20last%20odd%22%3E%0A%0A%20%20%20%20%20%20%0A%20%20%3Cdiv%3E%3Ca%20href%3D%22%2Fgallery%22%3Egallery%3C%2Fa%3E%0A%3Ca%20href%3D%22%2Ffunding-sources%22%3Efunding%20sources%3C%2Fa%3E%0A%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fadmin%2Fabout%22%3Eadmin%3C%2Fa%3E%3C%2Fdiv%3E%0A%0A%3Cp%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.cornell.edu%22%3ECornell%20University%20%3Cimg%20alt%3D%22Cornell%20Logo%22%3E%3C%2Fa%3E%20%7C%20%3Ca%20href%3D%22http%3A%2F%2Fwww.physics.cornell.edu%22%3EPhysics%20Department%3C%2Fa%3E%20%7C%20%3Ca%20href%3D%22http%3A%2F%2Fwww.lassp.cornell.edu%22%3ELab%20of%20Atomic%20%26amp%3B%20Solid%20State%20Physics%3C%2Fa%3E%3C%2Fp%3E%0A%3Cdiv%3E%3Ca%20href%3D%22mailto%3Aweb-accessibility%40cornell.edu%22%3EWeb%20Accessibility%20Help%3C%2Fa%3E%3C%2Fdiv%3E%0A%3Cp%3E%C2%A9%202015%20James%20Sethna%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "c9a60bc0-c50f-43b9-af78-44e44e67969a",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "sethna.lassp.cornell.edu-hysteresis-references.htm"
+}

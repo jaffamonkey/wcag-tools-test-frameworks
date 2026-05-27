@@ -1,0 +1,132 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 632,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 632,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 594,
+                "width": 784
+            },
+            "snippet": "<body background=\"gbi.gif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20background%3D%5C%22gbi.gif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 285,
+    "ruleTime": 4,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 9,
+            "elementsViolation": 2,
+            "elementsViolationReview": 2,
+            "violation": 3,
+            "potentialviolation": 0,
+            "recommendation": 7,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 274
+        },
+        "scanTime": 19,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778709845035,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EDan%20Bornstein%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20background%3D%22gbi.gif%22%3E%0A%3Cimg%20hspace%3D%2220%22%20vspace%3D%225%22%20align%3D%22left%22%20alt%3D%22fuzzicon%22%3E%0A%3Ch1%3E%3Ca%20href%3D%22danfuzz-1.jpg%22%3EDan%3C%2Fa%3E%0A%3Ca%20href%3D%22danfuzz-2.jpg%22%3EBornstein%3C%2Fa%3E%3C%2Fh1%3E%0A%3Cp%3E(a.k.a.%20%3Ci%3EDanfuzz%3C%2Fi%3E%2C%0Afor%20%3Ca%20href%3D%22mysterious.html%22%3Emysterious%3C%2Fa%3E%20reasons)%3C%2Fp%3E%0A%3Cp%3E%3Cbr%20clear%3D%22all%22%3E%3C%2Fp%3E%0A%0A%3Cul%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22..%2F..%2F%22%3EA%20bunch%20of%20fun%20stuff%20cleverly%20disguised%20as%20a%0A%20%20web%20service%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22contact.html%22%3EContact%20me%3C%2Fa%3E%0A%20%20%20%20%2F%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Fdanfuzz%22%3EGitHub%3C%2Fa%3E%0A%20%20%20%20%2F%20%3Ca%20rel%3D%22me%22%20href%3D%22https%3A%2F%2Fmastodon.social%2F%40danfuzz%22%3EMastodon%3C%2Fa%3E%0A%20%20%20%20%2F%20%3Ca%20href%3D%22https%3A%2F%2Fstackoverflow.com%2Fusers%2F387103%2Fdanfuzz%22%3EStackOverflow%3C%2Fa%3E%0A%20%20%3C%2Fli%3E%0A%20%20%3Cli%3ERandom%20bits%20of%20prose%20%2F%20slice%20o'%20my%20life%0A%20%20%3Cul%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22artsy%2F%22%3EWords%20And%20Pictures%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22pics%2F%22%3EThe%20Good%2C%20The%20Bad%2C%20and%20The%20Danfuzz.%3C%2Fa%3E%20Am%20I%20a%0A%20%20%20%20narcissist%3F%20Perhaps.%20But%20if%20you%20follow%20the%20link%2C%20then%20you'll%20only%20be%0A%20%20%20%20encouraging%20me.%3C%2Fli%3E%0A%20%20%3C%2Ful%3E%0A%20%20%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%3Chr%3E%0A%0A%3Ch2%20align%3D%22center%22%3EMy%20Book%20About%20Me%3C%2Fh2%3E%0A%0A%3Cp%20align%3D%22center%22%3E%3Ci%3E(Remember%2C%20it's%20not%20a%20home%20page%20unless%20you%20have%0Asomething%20extremely%20self-centered%20on%20it!)%3C%2Fi%3E%3C%2Fp%3E%0A%0A%3Cp%3EI%20started%20my%20career%20as%20one%20of%20the%20original%20employees%20at%20Kaleida%20Labs%0A(may%20she%20R.I.P.)%2C%20makers%20of%20ScriptX%20(a%0Apretty%20cool%20multimedia%20programming%20system%2C%20which%20later%20morphed%20into%20a%0Anet-centric%20Java%20thingy%20before%20finally%20dying).%20More%20recently%2C%20I%20was%20at%0AElectric%20Communities%20(aka%20Communities.com%2C%20may%20she%20R.I.P.)%20for%20about%20two%0Ayears%2C%20working%20on%20their%20Java%20extensions%20known%20as%20%3Ca%20href%3D%22https%3A%2F%2Fwww.erights.org%2F%22%3E%3Ci%3EE%3C%2Fi%3E%3C%2Fa%3E.%20In%201998%2C%20I%20cofounded%0AXigo%20with%20my%20brother%20Jeremy%20and%20my%20good%20friend%20Lenny.%20It%20was%20pretty%20fun%20and%20the%0Abusiness%20was%20a%20novel%20net-available%20service%20and%20web-hosted%20application.%0AUnfortunately%2C%20despite%20very%20promising%20business%20opportunities%2C%20the%20company%0Awas%20unable%20to%20become%20self-sustaining%20(may%20she%20R.I.P.).%20I%20eventually%0Alanded%20at%20Danger%20(later%20acquired%20by%20Microsoft%2C%20who%20shut%20the%20company%0Adown%2C%20may%20she%20R.I.P.)%2C%20where%20I%20worked%20on%20the%20Danger%20smartphone%20OS.%20From%0A2005%20to%202011%20I%20was%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.google.com%2F%22%3EGoogle%3C%2Fa%3E%2C%20working%0Aon%20the%20%3Ca%20href%3D%22https%3A%2F%2Fsource.android.com%2F%22%3EAndroid%3C%2Fa%3E%20project%2C%20where%0AI%20did%20some%20of%20the%20most%20personally%20compelling%20work%20of%20my%20career%20to%20date.%0AFor%20my%20more%20recent%20doings%2C%20see%20my%0A%3Ca%20href%3D%22resume%2F%22%3Er%C3%A9sum%C3%A9%3C%2Fa%3E.%3C%2Fp%3E%0A%0A%3Cp%3E-dan%3C%2Fp%3E%0A%0A%3Cp%3E%3Cfont%20size%3D%22-1%22%3EP.S.%3A%20I%20have%20no%20actual%20ties%20to%20the%20dairy%20industry.%0A%3Ca%20href%3D%22%2Fexperiments%2F%22%3EReally.%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "49054a4f-58a3-46d0-9af3-e19696f83c30",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "milk.com-home-danfuzz"
+}

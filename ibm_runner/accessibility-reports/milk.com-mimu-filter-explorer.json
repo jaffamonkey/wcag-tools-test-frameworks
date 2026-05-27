@@ -1,0 +1,433 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1333,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1333,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 1303,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'shape'",
+            "messageArgs": [
+                "shape"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 128,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p class=\"header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'shape'%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22shape%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 200,
+                "height": 6,
+                "width": 6
+            },
+            "snippet": "<table class=\"oscilloscope\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22oscilloscope%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 206,
+                "height": 6,
+                "width": 6
+            },
+            "snippet": "<table class=\"harmonics\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22harmonics%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[3]",
+                "aria": "/document[1]/table[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 212,
+                "height": 120,
+                "width": 551
+            },
+            "snippet": "<table class=\"control\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22control%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'top, bottom' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "top, bottom"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 390,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'top%2C%20bottom'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22top%2C%20bottom%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[6]",
+                "aria": "/document[1]/paragraph[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'small'",
+            "messageArgs": [
+                "small"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 852,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'small'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22small%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[7]",
+                "aria": "/document[1]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'upper' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "upper"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 905,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'upper'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22upper%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[10]",
+                "aria": "/document[1]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'lower' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "lower"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1049,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'lower'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22lower%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[10]",
+                "aria": "/document[1]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'extra'",
+            "messageArgs": [
+                "extra"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1049,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'extra'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22extra%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[4]",
+                "aria": "/document[1]/table[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1282,
+                "height": 43,
+                "width": 535
+            },
+            "snippet": "<table class=\"footer\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22footer%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 787,
+    "ruleTime": 6,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 33,
+            "elementsViolation": 6,
+            "elementsViolationReview": 24,
+            "violation": 7,
+            "potentialviolation": 6,
+            "recommendation": 9,
+            "potentialrecommendation": 0,
+            "manual": 13,
+            "pass": 752
+        },
+        "scanTime": 31,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778709886255,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EFilter%20Explorer%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%0A%3Ch1%3EFilter%20Explorer%3C%2Fh1%3E%0A%3Ch2%3Ea%20JavaScript%20music%20demo%3C%2Fh2%3E%0A%0A%3Cp%20class%3D%22header%22%3E%0A%20%20Press%20the%20button%20to%20play%20the%20waveform%2C%20and%20adjust%20the%0A%20%20controls%20to%20alter%20its%20shape.%0A%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22header%22%3E%0A%20%20%3Cbutton%20class%3D%22playPause%22%3EPlay%20%2F%20Pause%3C%2Fbutton%3E%0A%3C%2Fp%3E%0A%0A%3Ctable%20class%3D%22oscilloscope%22%3E%0A%20%20%3Ctbody%3E%3Ctr%3E%3Ctd%3E%3Cdiv%20style%3D%22position%3A%20relative%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%22%3E%3Cspan%20class%3D%22soundDisplay%22%3E%3C%2Fspan%3E%3Ccanvas%20width%3D%221007%22%20height%3D%22512%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%201%3B%22%3E%3C%2Fcanvas%3E%3Ccanvas%20width%3D%221007%22%20height%3D%22512%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%202%3B%20opacity%3A%200.9%3B%22%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3Ctable%20class%3D%22harmonics%22%3E%0A%20%20%3Ctbody%3E%3Ctr%3E%3Ctd%3E%3Cdiv%20style%3D%22position%3A%20relative%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%22%3E%3Cspan%20class%3D%22soundDisplay%22%3E%3C%2Fspan%3E%3Ccanvas%20width%3D%221007%22%20height%3D%22256%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%201%3B%22%3E%3C%2Fcanvas%3E%3Ccanvas%20width%3D%221007%22%20height%3D%22256%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%202%3B%20opacity%3A%200.9%3B%22%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3Ctable%20class%3D%22control%22%3E%0A%20%20%3Ctbody%3E%3Ctr%3E%0A%20%20%20%20%3Ctd%3EFilter%20Type%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%3E%0A%20%20%20%20%20%20%3Cnobr%3E%0A%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22radio%22%20name%3D%22filterType%22%20value%3D%22low-pass%22%3E%0A%20%20%20%20%20%20%20%20%20%20low-pass%0A%20%20%20%20%20%20%20%20%3C%2Flabel%3E%0A%20%20%20%20%20%20%3C%2Fnobr%3E%0A%20%20%20%20%20%20%3Cnobr%3E%0A%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22radio%22%20name%3D%22filterType%22%20value%3D%22high-pass%22%3E%0A%20%20%20%20%20%20%20%20%20%20high-pass%0A%20%20%20%20%20%20%20%20%3C%2Flabel%3E%0A%20%20%20%20%20%20%3C%2Fnobr%3E%0A%20%20%20%20%20%20%3Cnobr%3E%0A%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22radio%22%20name%3D%22filterType%22%20value%3D%22band-pass%22%3E%0A%20%20%20%20%20%20%20%20%20%20band-pass%0A%20%20%20%20%20%20%20%20%3C%2Flabel%3E%0A%20%20%20%20%20%20%3C%2Fnobr%3E%0A%20%20%20%20%20%20%3Cnobr%3E%0A%20%20%20%20%20%20%20%20%3Clabel%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22radio%22%20name%3D%22filterType%22%20value%3D%22notch%22%3E%0A%20%20%20%20%20%20%20%20%20%20notch%0A%20%20%20%20%20%20%20%20%3C%2Flabel%3E%0A%20%20%20%20%20%20%3C%2Fnobr%3E%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%20%20%3Ctr%3E%0A%20%20%20%20%3Ctd%3ELow%20Input%20Amp%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%20id%3D%22inAmp%22%20class%3D%22sliderCell%22%3E%3Cdiv%20style%3D%22position%3A%20relative%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%22%3E%3Cspan%20class%3D%22slider%22%3E%3C%2Fspan%3E%3Ccanvas%20width%3D%22619%22%20height%3D%2237%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%201%3B%22%3E%3C%2Fcanvas%3E%3Ccanvas%20width%3D%22619%22%20height%3D%2237%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%202%3B%22%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%3EHigh%20Input%20Amp%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%20%20%3Ctr%3E%0A%20%20%20%20%3Ctd%3ELow%20Center%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%20id%3D%22f0%22%20class%3D%22sliderCell%22%3E%3Cdiv%20style%3D%22position%3A%20relative%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%22%3E%3Cspan%20class%3D%22slider%22%3E%3C%2Fspan%3E%3Ccanvas%20width%3D%22619%22%20height%3D%2237%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%201%3B%22%3E%3C%2Fcanvas%3E%3Ccanvas%20width%3D%22619%22%20height%3D%2237%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%202%3B%22%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%3EHigh%20Center%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%20%20%3Ctr%3E%0A%20%20%20%20%3Ctd%3ELow%20%3Ci%3EQ%3C%2Fi%3E%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%20id%3D%22q%22%20class%3D%22sliderCell%22%3E%3Cdiv%20style%3D%22position%3A%20relative%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%22%3E%3Cspan%20class%3D%22slider%22%3E%3C%2Fspan%3E%3Ccanvas%20width%3D%22619%22%20height%3D%2237%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%201%3B%22%3E%3C%2Fcanvas%3E%3Ccanvas%20width%3D%22619%22%20height%3D%2237%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%202%3B%22%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%3EHigh%20%3Ci%3EQ%3C%2Fi%3E%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%20%20%3Ctr%3E%0A%20%20%20%20%3Ctd%3ELow%20Amplitude%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%20id%3D%22amp%22%20class%3D%22sliderCell%22%3E%3Cdiv%20style%3D%22position%3A%20relative%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%22%3E%3Cspan%20class%3D%22slider%22%3E%3C%2Fspan%3E%3Ccanvas%20width%3D%22619%22%20height%3D%2237%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%201%3B%22%3E%3C%2Fcanvas%3E%3Ccanvas%20width%3D%22619%22%20height%3D%2237%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20z-index%3A%202%3B%22%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%3EHigh%20Amplitude%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3Ch3%3EWhat%20is%20this%3F%3C%2Fh3%3E%0A%0A%3Cp%3E%0A%20%20This%20is%20an%20audio%20generator%20tool%20to%20explore%20the%20timbral%20quality%20imparted%0A%20%20by%20applying%20one%20of%20several%20filters%20to%20an%20incoming%20signal.%20The%20top%20box%0A%20%20is%20an%20oscilloscope%20view%20which%20visualizes%20the%20waveform%2C%20and%20the%20bottom%0A%20%20box%20is%20a%20harmonic%20spectrum%20view.%0A%3C%2Fp%3E%0A%0A%3Cp%3E%0A%20%20This%20tool%20generates%20white%20noise%20at%20an%20adjustable%20amplitude%2C%20and%20allows%0A%20%20you%20to%20adjust%20the%20type%20and%20parameters%20of%20the%20filter%2C%20as%20well%20the%0A%20%20overall%20output%20amplitude%20(volume).%20The%20filter%20parameters%20are%3A%0A%3C%2Fp%3E%0A%0A%3Cul%3E%0A%20%20%3Cli%3E%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E%20(center%20frequency)%20%E2%80%94%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E%0A%20%20%20%20is%20the%20frequency%20at%20which%20the%20filter%20is%20most%20active%20and%20at%20which%0A%20%20%20%20the%20frequency%20response%20of%20the%20filter%20%22pivots.%22%0A%20%20%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ci%3EQ%3C%2Fi%3E%20(quality)%20%E2%80%94%20%3Ci%3EQ%3C%2Fi%3E%20is%20a%20measure%20of%20how%20steep%20the%0A%20%20%20%20dropoff%20is%20of%20the%20frequency%20response%20curve%20around%0A%20%20%20%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E.%20A%20low%20%3Ci%3EQ%3C%2Fi%3E%20means%20that%20the%0A%20%20%20%20frequency%20curve%20ramps%20gently%20down%2C%20such%20that%20the%20filter%20encompasses%0A%20%20%20%20a%20relatively%20wider%20portion%20of%20the%20spectrum.%20A%20high%20%3Ci%3EQ%3C%2Fi%3E%20means%0A%20%20%20%20that%20the%20frequency%20curve%20ramps%20steeply%20down%2C%20such%20that%20the%0A%20%20%20%20filter%20encompasses%20a%20relatively%20narrower%20portion%20of%20the%0A%20%20%20%20spectrum.%20%3Ci%3EQ%3C%2Fi%3E%20must%20be%20a%20positive%20(non-zero)%20value.%0A%20%20%3C%2Fli%3E%0A%20%20%3Cli%3Etype%20%E2%80%94%20There%20are%20four%20basic%20types%20of%20filter.%20In%20each%0A%20%20%20%20case%2C%20the%20filter%20performs%20a%20transformation%20from%20its%20input%20harmonic%0A%20%20%20%20spectrum%2C%20with%20a%20%22pivot%22%20at%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E.%20The%20filter%0A%20%20%20%20type%20indicates%20the%20general%20shape%20of%20the%20transformation%3A%0A%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%3Cli%3Elow-pass%20%E2%80%94%20The%20filter%20passes%20(allows)%20frequencies%0A%20%20%20%20%20%20%20%20lower%20than%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E%20and%20rejects%20(squelches)%0A%20%20%20%20%20%20%20%20frequencies%20above%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E.%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3Ehigh-pass%20%E2%80%94%20The%20filter%20passes%20frequencies%0A%20%20%20%20%20%20%20%20higher%20than%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E%20and%20rejects%0A%20%20%20%20%20%20%20%20frequencies%20below%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E.%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3Eband-pass%20%E2%80%94%20The%20filter%20passes%20frequencies%0A%20%20%20%20%20%20%20%20near%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E%20and%20rejects%20frequencies%0A%20%20%20%20%20%20%20%20away%20from%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E.%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3Enotch%20(band-reject)%20%E2%80%94%20The%20filter%20passes%0A%20%20%20%20%20%20%20%20frequencies%20away%20from%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E%20and%20rejects%0A%20%20%20%20%20%20%20%20frequencies%20near%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E.%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3C%2Ful%3E%0A%20%20%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%3Cp%3E%0A%20%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Fdanfuzz%2Fmimu%2Ftree%2Fmain%2Ffilter-explorer%22%3E%0A%20%20See%20the%20source%3C%2Fa%3E.%0A%3C%2Fp%3E%0A%0A%3Ch3%3EItems%20of%20note%3C%2Fh3%3E%0A%0A%3Cp%3E%0A%20%20Because%20%3Ci%3EQ%3C%2Fi%3E%20is%20not%20allowed%20to%20be%20zero%2C%20when%20you%20adjust%20its%0A%20%20slider%20all%20the%20way%20down%2C%20you%20instead%20get%20a%20small%20but%20positive%20value.%0A%3C%2Fp%3E%0A%0A%3Cp%3E%0A%20%20There%20is%20no%20upper%20limit%20to%20%3Ci%3EQ%3C%2Fi%3E%2C%20but%20this%20demo%20limits%20it%20to%0A%20%20500.%20This%20more%20or%20less%20covers%20the%20useful%20range%20for%20sound%20synthesis.%0A%3C%2Fp%3E%0A%0A%3Cp%3E%0A%20%20At%20higher%20%3Ci%3EQ%3C%2Fi%3E%20the%20filter%20becomes%20significantly%20%22resonant.%22%20That%20is%2C%0A%20%20even%20if%20you%20cut%20off%20the%20input%20(by%20setting%20the%20amplitude%20to%20zero)%2C%20you%0A%20%20will%20still%20see%20output%20with%20energy%20at%20%3Ci%3Ef%3Csub%3E0%3C%2Fsub%3E%3C%2Fi%3E.%20It%20will%0A%20%20eventually%20decay.%0A%3C%2Fp%3E%0A%0A%3Cp%3E%0A%20%20It%20can%20be%20hard%20to%20tell%20what%20a%20notch%20filter%20is%20doing%20at%20higher%20%3Ci%3EQ%3C%2Fi%3E%2C%0A%20%20both%20audibly%20and%20in%20terms%20of%20the%20spectrum.%20When%20using%20a%20notch%20filter%2C%0A%20%20you'll%20probably%20have%20better%20results%20with%20%3Ci%3EQ%3C%2Fi%3E%20under%205.%0A%3C%2Fp%3E%0A%0A%3Cp%3E%0A%20%20It's%20easy%20to%20pick%20filter%20parameters%20which%20will%20%22blow%20out%22%20the%20output%0A%20%20out%20of%20the%20valid-for-audio%20range%20of%20-1%20to%201.%20The%20straightforward%20way%0A%20%20to%20correct%20for%20this%20is%20simply%20to%20lower%20either%20the%20input%20or%20output%0A%20%20amplitude.%20If%20you%20don't%2C%20the%20main%20thing%20you%20will%20notice%20is%20that%20you%0A%20%20end%20up%20with%20extra%20peaks%20in%20the%20output%20harmonics%2C%20which%20correspond%20to%0A%20%20the%20%22shelves%22%20caused%20by%20the%20cutoff%20of%20the%20waveform%20at%20either%20extreme%20of%0A%20%20instantaneous%20amplitude.%0A%3C%2Fp%3E%0A%0A%3Cp%3E%0A%20%20The%20filters%20implemented%20in%20this%20demo%20are%20two-pole%20infinite%20impulse%0A%20%20response%20(IIR)%20filter.%20The%20%22infinite%22%20in%20the%20name%20means%20that%20filter%0A%20%20output%20at%20any%20given%20point%20in%20time%20depends%20on%20%3Ci%3Eall%3C%2Fi%3E%20of%20the%0A%20%20input%20that%20the%20filter%20has%20ever%20received.%20This%20is%20in%20contrast%20to%20a%0A%20%20finite%20impulse%20response%20(FIR)%20filter%2C%20which%20only%20depends%20on%20a%0A%20%20limited%20rolling%20window%20of%20previous%20input%20to%20the%20filter.%20(In%20digital%0A%20%20filters%2C%20this%20window%20is%20generally%20one%20sample%20per%20pole.)%0A%3C%2Fp%3E%0A%0A%3Cp%3E%0A%20%20The%20four%20basic%20types%20of%20filter%20demonstrated%20here%20aren't%20the%20only%20kinds%20of%0A%20%20filter.%20There%20are%20many%20others.%20Roughly%20speaking%2C%20though%2C%20one%20can%20think%0A%20%20of%20any%20filter%20as%20a%20combination%20of%20the%20types%20described%20here.%0A%3C%2Fp%3E%0A%0A%3Ctable%20class%3D%22footer%22%3E%0A%20%20%3Ctbody%3E%3Ctr%3E%0A%20%20%20%20%3Ctd%3E%0A%20%20%20%20%20%20Copyright%202015-2025%20the%20Mimu%20Authors%20(Dan%20Bornstein%20et%20alia).%3Cbr%3E%0A%20%20%20%20%20%20SPDX-License-Identifier%3A%20Apache-2.0%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fmilk.com%2F%22%3Emilk.com%3C%2Fa%3E%20%2F%20%3Ca%20href%3D%22..%2F%22%3Emimu%3C%2Fa%3E%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "49054a4f-58a3-46d0-9af3-e19696f83c30",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "milk.com-mimu-filter-explorer"
+}

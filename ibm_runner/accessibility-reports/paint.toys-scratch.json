@@ -1,0 +1,168 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1550,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 1534,
+                "width": 784
+            },
+            "snippet": "<body class=\"paint-app\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20class%3D%5C%22paint-app%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1409,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<div style=\"color: white; text-shadow: 0 1px 3px rgba(0,0,0,0.5);\" class=\"tip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22color%3A%20white%3B%20text-shadow%3A%200%201px%203px%20rgba(0%2C0%2C0%2C0.5)%3B%5C%22%20class%3D%5C%22tip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_text_shadow",
+            "message": "Verify the contrast ratio of the text with shadow meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "1.00",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1409,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<div style=\"color: white; text-shadow: 0 1px 3px rgba(0,0,0,0.5);\" class=\"tip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20with%20shadow%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22color%3A%20white%3B%20text-shadow%3A%200%201px%203px%20rgba(0%2C0%2C0%2C0.5)%3B%5C%22%20class%3D%5C%22tip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_text_shadow%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%5D%7D"
+        }
+    ],
+    "numExecuted": 380,
+    "ruleTime": 3,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "potential_text_shadow": "Verify the contrast ratio of the text with shadow meets the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 10,
+            "elementsViolation": 1,
+            "elementsViolationReview": 4,
+            "violation": 1,
+            "potentialviolation": 3,
+            "recommendation": 6,
+            "potentialrecommendation": 0,
+            "manual": 2,
+            "pass": 368
+        },
+        "scanTime": 14,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778414742047,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EScratch%20Art%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22paint-app%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22painting%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22ui%20top-left%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22icon%22%20href%3D%22%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20alt%3D%22Paint%20Toys%20home%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22ui%20top-right%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22icon%22%20href%3D%22about%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20alt%3D%22About%20this%20toy%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22icon%20save%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22smaller%22%20alt%3D%22Save%20artwork%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22icon%20trash%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22smaller%22%20alt%3D%22Clear%20canvas%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22canvas-wrapper%22%3E%0A%20%20%20%20%20%20%20%20%3Ccanvas%20id%3D%22canvas%22%20class%3D%22primary%22%20width%3D%222080%22%20height%3D%221360%22%3E%3C%2Fcanvas%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22tip%22%20style%3D%22color%3A%20white%3B%20text-shadow%3A%200%201px%203px%20rgba(0%2C0%2C0%2C0.5)%3B%22%3EScratch%20to%20Reveal%3Cbr%3E%3Cbr%3EDrag%20to%20scratch%20and%20discover%20the%20hidden%20pattern!%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22scratch-controls%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22tool-section%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22tool-btn%22%20data-tool%3D%22needle%22%20title%3D%22Needle%20-%20Ultra%20fine%20(1)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%C2%B7%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22tool-btn%20active%22%20data-tool%3D%22stylus%22%20title%3D%22Stylus%20-%20Fine%20(2)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%2F%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22tool-btn%22%20data-tool%3D%22pen%22%20title%3D%22Pen%20-%20Medium%20(3)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%E2%97%8B%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22divider%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22pattern-section%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22pattern-btn%20active%22%20data-pattern%3D%22rainbow%22%20title%3D%22Rainbow%22%3E%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22pattern-btn%22%20data-pattern%3D%22sunset%22%20title%3D%22Sunset%22%3E%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22pattern-btn%22%20data-pattern%3D%22ocean%22%20title%3D%22Ocean%22%3E%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22pattern-btn%22%20data-pattern%3D%22aurora%22%20title%3D%22Aurora%22%3E%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22pattern-btn%22%20data-pattern%3D%22candy%22%20title%3D%22Candy%22%3E%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22mon%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22mon-inner%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22sidebar-head%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2F%22%3EPaint%20%3Cimg%20alt%3D%22Paint%20Toys%20home%22%3E%20Toys%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2F%22%20class%3D%22more%22%3Efor%20more%20toys%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22mon-ad%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20data-pw-desk%3D%22sky_atf%22%20id%3D%22pwDeskSkyAtf%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22sidebar-footer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Ftoybox.toms.toys%3Fref%3Dpaint.toys%22%3E%C2%A9%20toms.toys%20%E2%8D%9F%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22mobile-mon%22%3E%0A%20%20%20%20%20%20%3Cdiv%20data-pw-mobi%3D%22leaderboard_atf%22%20id%3D%22pwMobiLbAtf%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%3C!--%20Google%20tag%20(gtag.js)%20--%3E%0A%0A%0A%0A%3Cdiv%20id%3D%22adBanner%22%20class%3D%22adLeaderboard%20adBanner%20leaderboard_ad%22%20style%3D%22background-color%3A%20transparent%3B%20height%3A%2010px%3B%20width%3A%2010px%3B%20position%3A%20fixed%3B%20bottom%3A%20-100px%3B%20left%3A%20-100px%3B%22%3E%26nbsp%3B%3C%2Fdiv%3E%3Cdiv%20class%3D%22ad_row%20adbannertop%20ad-mobile%20ad_sidebar%20adpopup%20boxad%20contentAd%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20m5c2t8q%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20v8n6y4p%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20w3p9m6d%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20k2y8f7x%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20q7d5z1l%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22content-showcase-itru-sufficient-2d%20x9a7b3k%22%20style%3D%22display%3A%20block%20!important%3B%20width%3A%201px%20!important%3B%20height%3A%201px%20!important%3B%20position%3A%20absolute%20!important%3B%20left%3A%20-5000px%20!important%3B%20top%3A%20-5000px%20!important%3B%22%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "c416eda0-a5de-46c9-8d15-58ba388d22eb",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "paint.toys-scratch"
+}

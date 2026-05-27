@@ -1,0 +1,160 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 546,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/button[1]/img[1]",
+                "aria": "/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 16,
+                "top": 371,
+                "height": 16,
+                "width": 72
+            },
+            "snippet": "<img style=\"color:transparent\" data-nimg=\"1\" decoding=\"async\" height=\"20\" width=\"20\" loading=\"lazy\" alt=\"Try Again\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cimg%20style%3D%5C%22color%3Atransparent%5C%22%20data-nimg%3D%5C%221%5C%22%20decoding%3D%5C%22async%5C%22%20height%3D%5C%2220%5C%22%20width%3D%5C%2220%5C%22%20loading%3D%5C%22lazy%5C%22%20alt%3D%5C%22Try%20Again%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/form[1]",
+                "aria": "/document[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 494,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<form action=\"javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20action%3D%5C%22javascript%3Athrow%20new%20Error('A%20React%20form%20was%20unexpectedly%20submitted.%20If%20you%20called%20form.submit()%20manually%2C%20consider%20using%20form.requestSubmit()%20instead.%20If%20you%5C%5C're%20trying%20to%20use%20event.stopPropagation()%20in%20a%20submit%20event%20handler%2C%20consider%20also%20calling%20event.preventDefault().')%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[3]/div[1]/form[2]",
+                "aria": "/document[1]/form[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 516,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<form action=\"javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20action%3D%5C%22javascript%3Athrow%20new%20Error('A%20React%20form%20was%20unexpectedly%20submitted.%20If%20you%20called%20form.submit()%20manually%2C%20consider%20using%20form.requestSubmit()%20instead.%20If%20you%5C%5C're%20trying%20to%20use%20event.stopPropagation()%20in%20a%20submit%20event%20handler%2C%20consider%20also%20calling%20event.preventDefault().')%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 817,
+    "ruleTime": 4,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "aria_form_label_unique": {
+            "0": "Each element with \"form\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"form\" role do not have unique labels"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 8,
+            "elementsViolation": 2,
+            "elementsViolationReview": 5,
+            "violation": 2,
+            "potentialviolation": 2,
+            "recommendation": 5,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 807
+        },
+        "scanTime": 24,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778713593763,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ELeapfrog%20%7C%20Toms%20Toys%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22__className_9f6af0%22%3E%3Cdiv%20hidden%3D%22%22%3E%3C!--%24--%3E%3C!--%2F%24--%3E%3C%2Fdiv%3E%3Cheader%20class%3D%22style_header__zGlFh%22%3E%3Ca%20class%3D%22style_headerBox__F8dKC%20style_logo__OFa7_%22%20href%3D%22%2F%22%3ETOMS%20TOYS%3C%2Fa%3E%3Cdiv%20class%3D%22style_headerBox__F8dKC%20style_fill__bwu6A%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_dateBox__tPsqM%20style_slim__ampjt%22%3EIt's%20May%2014!%3C%2Fdiv%3E%3C%2Fheader%3E%3Cdiv%20class%3D%22style_gameArea__EecyR%22%3E%3Cdiv%20class%3D%22style_gameBox__JOwEe%22%3E%3Cdiv%20class%3D%22style_gameHeader__47yyz%22%3E%3Cspan%3ELeapfrog%20%23%3C!--%20--%3E521%3C%2Fspan%3E%3Cspan%20class%3D%22style_howToPlayButton__0c3Pr%22%3EHow%20to%20play%3F%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_gameContent__Al10Y%22%3E%3Cdiv%20class%3D%22style_outerWrapper__lHx_f%22%3E%3Cdiv%20class%3D%22style_gameWrapper__0WDij%22%20style%3D%22--size%3A7%3B--tileSize%3A40px%3B--gapSize%3A4px%3B--gamePx%3A430px%22%3E%3Cdiv%20class%3D%22style_boardContainer__kH9ro%22%3E%3Cdiv%20class%3D%22style_gameBoard__AtFbc%22%20style%3D%22width%3A304px%3Bheight%3A304px%22%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A0%3Btop%3A0%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A44px%3Btop%3A0%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A88px%3Btop%3A0%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A132px%3Btop%3A0%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A176px%3Btop%3A0%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A220px%3Btop%3A0%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A264px%3Btop%3A0%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A0%3Btop%3A44px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A44px%3Btop%3A44px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A88px%3Btop%3A44px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A132px%3Btop%3A44px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A176px%3Btop%3A44px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A220px%3Btop%3A44px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A264px%3Btop%3A44px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A0%3Btop%3A88px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A44px%3Btop%3A88px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A88px%3Btop%3A88px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A132px%3Btop%3A88px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A176px%3Btop%3A88px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A220px%3Btop%3A88px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A264px%3Btop%3A88px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A0%3Btop%3A132px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A44px%3Btop%3A132px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A88px%3Btop%3A132px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A132px%3Btop%3A132px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A176px%3Btop%3A132px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A220px%3Btop%3A132px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A264px%3Btop%3A132px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A0%3Btop%3A176px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A44px%3Btop%3A176px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A88px%3Btop%3A176px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A132px%3Btop%3A176px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A176px%3Btop%3A176px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A220px%3Btop%3A176px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A264px%3Btop%3A176px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A0%3Btop%3A220px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A44px%3Btop%3A220px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A88px%3Btop%3A220px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A132px%3Btop%3A220px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A176px%3Btop%3A220px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%22%20style%3D%22position%3Aabsolute%3Bleft%3A220px%3Btop%3A220px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A264px%3Btop%3A220px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A0%3Btop%3A264px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A44px%3Btop%3A264px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A88px%3Btop%3A264px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A132px%3Btop%3A264px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_hole___Zxjr%22%20style%3D%22position%3Aabsolute%3Bleft%3A176px%3Btop%3A264px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A220px%3Btop%3A264px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_tile__v_C_S%20style_empty__d0PIL%22%20style%3D%22position%3Aabsolute%3Bleft%3A264px%3Btop%3A264px%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A1%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(88px)%20translateY(44px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(176px)%20translateY(44px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(44px)%20translateY(88px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(88px)%20translateY(88px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(132px)%20translateY(88px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(132px)%20translateY(132px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(44px)%20translateY(176px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(88px)%20translateY(176px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(44px)%20translateY(220px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(88px)%20translateY(220px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(176px)%20translateY(220px)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_peg__jDLXS%22%20style%3D%22position%3Aabsolute%3Bwidth%3A40px%3Bheight%3A40px%3Bz-index%3A2%3Btransform%3AtranslateX(220px)%20translateY(220px)%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_resetWrapper__ZpQ6E%22%20style%3D%22opacity%3A1%3Btransform%3Anone%22%3E%3Cdiv%20tabindex%3D%220%22%3E%3Cbutton%20class%3D%22style_button__ERTNj%20style_icon__o2E4f%22%3E%3Cimg%20alt%3D%22Try%20Again%22%20loading%3D%22lazy%22%20width%3D%2220%22%20height%3D%2220%22%20decoding%3D%22async%22%20data-nimg%3D%221%22%20style%3D%22color%3Atransparent%22%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_sideBox__Zsk_p%22%3E%3Cdiv%20class%3D%22style_metricBoxes__8rDkx%22%3E%3Cdiv%20class%3D%22style_box__TjBje%20style_metricBox__APM_L%22%3E%3Cspan%20class%3D%22style_boxLabel__5zNyf%22%3E%3Cimg%20alt%3D%22Clock%22%20loading%3D%22lazy%22%20width%3D%2232%22%20height%3D%2232%22%20decoding%3D%22async%22%20data-nimg%3D%221%22%20style%3D%22color%3Atransparent%22%3E%3C%2Fspan%3E00%3A01%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_box__TjBje%20style_metricBox__APM_L%22%3E%3Cspan%20class%3D%22style_boxLabel__s_hR4%22%3E%3Cimg%20alt%3D%22Moves%22%20loading%3D%22lazy%22%20width%3D%2232%22%20height%3D%2232%22%20decoding%3D%22async%22%20data-nimg%3D%221%22%20style%3D%22color%3Atransparent%22%3E%3C%2Fspan%3E0%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_box__TjBje%20style_extendedBox__sEnUV%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22style_box__TjBje%20style_loginBox__YUx2_%20style_desktopOnly__2a5dX%22%3E%3Ch2%3ESign%20in%20to%20save%20your%20score%3C%2Fh2%3E%3Cdiv%20class%3D%22style_signupForm___VvWU%20style_vertical__RsGlh%22%3E%3Cform%20action%3D%22javascript%3Athrow%20new%20Error('A%20React%20form%20was%20unexpectedly%20submitted.%20If%20you%20called%20form.submit()%20manually%2C%20consider%20using%20form.requestSubmit()%20instead.%20If%20you%5C're%20trying%20to%20use%20event.stopPropagation()%20in%20a%20submit%20event%20handler%2C%20consider%20also%20calling%20event.preventDefault().')%22%3E%3Cbutton%20class%3D%22style_button__ERTNj%20style_loginButton__RVE41%22%20type%3D%22submit%22%3E%3Cimg%20alt%3D%22Login%20with%20google%22%20loading%3D%22lazy%22%20width%3D%2220%22%20height%3D%2220%22%20decoding%3D%22async%22%20data-nimg%3D%221%22%20style%3D%22color%3Atransparent%22%3Egoogle%3C%2Fbutton%3E%3C%2Fform%3E%3Cform%20action%3D%22javascript%3Athrow%20new%20Error('A%20React%20form%20was%20unexpectedly%20submitted.%20If%20you%20called%20form.submit()%20manually%2C%20consider%20using%20form.requestSubmit()%20instead.%20If%20you%5C're%20trying%20to%20use%20event.stopPropagation()%20in%20a%20submit%20event%20handler%2C%20consider%20also%20calling%20event.preventDefault().')%22%3E%3Cbutton%20class%3D%22style_button__ERTNj%20style_loginButton__RVE41%22%20type%3D%22submit%22%3E%3Cimg%20alt%3D%22Login%20with%20apple%22%20loading%3D%22lazy%22%20width%3D%2220%22%20height%3D%2220%22%20decoding%3D%22async%22%20data-nimg%3D%221%22%20style%3D%22color%3Atransparent%22%3Eapple%3C%2Fbutton%3E%3C%2Fform%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!--%24--%3E%3C!--%2F%24--%3E%0A%3Cnext-route-announcer%20style%3D%22position%3A%20absolute%3B%22%3E%3C%2Fnext-route-announcer%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "82a7b3ab-5bb8-4ba1-aa81-17ff3f2dd70f",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "toms.toys-toy-leapfrog"
+}

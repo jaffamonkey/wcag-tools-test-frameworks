@@ -1,0 +1,386 @@
+# Accessibility Tool Runners
+
+A standalone collection of accessibility tool runners for scanning a list of URLs and collecting each tool's JSON output into a single `reports/` folder.
+
+This repo is intended to be the runner layer only: it runs the tools, captures their raw reports, screenshots, tab-order maps, and contrast data, then organises everything ready for later analysis.
+
+## What it runs
+
+The top-level `run_all_tools.sh` script can run and collate output from:
+
+| Tool | Output folder |
+| --- | --- |
+| axe-core via Playwright | `reports/axe-core/` |
+| HTML_CodeSniffer | `reports/html-sniffer/` |
+| IBM Accessibility Checker | `reports/ibm/` |
+| Lighthouse | `reports/lighthouse/` |
+| Oobee | `reports/oobee/` |
+| Pa11y | `reports/pa11y/` |
+| Pa11y with axe runner | `reports/pa11y-axe/` |
+| Pa11y with HTMLCS runner | `reports/pa11y-htmlcs/` |
+| UUV | `reports/uuv/` |
+| Virtual Screen Reader | `reports/virtual-screenreader/` |
+| Tab map | `reports/tab-map/` |
+| Screenshots | `reports/screenshots/` |
+| Contrast checker | `reports/contrast-checker/` |
+| axe-scan CLI, optional | `reports/axe-scan/` |
+
+Each tool also gets a log file in:
+
+```text
+reports/_logs/
+```
+
+A run summary is written to:
+
+```text
+reports/_run-summary.json
+```
+
+## Requirements
+
+You will need:
+
+- macOS, Linux, or another Unix-like shell environment
+- Bash
+- Node.js and npm
+- Python 3
+- Playwright browser dependencies for the runners that use Playwright
+- Optional: the global `axe-scan` CLI if you want to run the `axe-scan` folder
+
+The script can install each runner's npm dependencies for you by setting `INSTALL_DEPS=1`.
+
+## URL input
+
+Create a plain text file containing one URL per line:
+
+```text
+https://example.com/
+https://example.com/about
+https://example.com/contact
+```
+
+You can either pass this file to the script:
+
+```bash
+./run_all_tools.sh urls.txt
+```
+
+Or place it at:
+
+```text
+input/urls.txt
+```
+
+and run:
+
+```bash
+./run_all_tools.sh
+```
+
+The script normalises the chosen URL file into `input/urls.txt`, because the individual runners expect that shared location.
+
+## Quick start
+
+From the repo root:
+
+```bash
+chmod +x run_all_tools.sh
+INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
+```
+
+That will:
+
+1. copy `urls.txt` into `input/urls.txt`
+2. install npm dependencies in each runner folder that has a `package.json`
+3. run each configured tool
+4. collect reports into `reports/<tool-name>/`
+5. write logs into `reports/_logs/`
+6. write a machine-readable summary to `reports/_run-summary.json`
+
+## Common commands
+
+Run everything using an existing `input/urls.txt`:
+
+```bash
+./run_all_tools.sh
+```
+
+Run everything using a specific URL file:
+
+```bash
+./run_all_tools.sh path/to/urls.txt
+```
+
+Install dependencies before running:
+
+```bash
+INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
+```
+
+Clean old reports before running:
+
+```bash
+CLEAN_REPORTS=1 ./run_all_tools.sh urls.txt
+```
+
+Stop as soon as one tool fails:
+
+```bash
+STOP_ON_FAIL=1 ./run_all_tools.sh urls.txt
+```
+
+Run only selected tools:
+
+```bash
+TOOLS="axe-core html-sniffer tab-map screenshots contrast-checker" ./run_all_tools.sh urls.txt
+```
+
+Run just screenshots and tab maps:
+
+```bash
+TOOLS="screenshots tab-map" ./run_all_tools.sh urls.txt
+```
+
+## Tool names for `TOOLS`
+
+Use these names when limiting a run:
+
+```text
+axe-core
+html-sniffer
+ibm
+lighthouse
+oobee
+pa11y
+pa11y-axe
+pa11y-htmlcs
+uuv
+virtual-screenreader
+tab-map
+screenshots
+contrast-checker
+axe-scan
+```
+
+Example:
+
+```bash
+TOOLS="pa11y pa11y-axe pa11y-htmlcs" ./run_all_tools.sh urls.txt
+```
+
+## Output structure
+
+After a run, the repo should look broadly like this:
+
+```text
+.
+├── input/
+│   └── urls.txt
+├── reports/
+│   ├── axe-core/
+│   ├── html-sniffer/
+│   ├── ibm/
+│   ├── lighthouse/
+│   ├── oobee/
+│   ├── pa11y/
+│   ├── pa11y-axe/
+│   ├── pa11y-htmlcs/
+│   ├── uuv/
+│   ├── virtual-screenreader/
+│   ├── tab-map/
+│   ├── screenshots/
+│   ├── contrast-checker/
+│   ├── axe-scan/
+│   ├── _logs/
+│   └── _run-summary.json
+└── run_all_tools.sh
+```
+
+The intention is that `reports/` can be consumed by a separate analyser later.
+
+## Run summary
+
+The script writes `reports/_run-summary.json` after every run.
+
+It includes:
+
+- which tools ran
+- start and end timestamps
+- exit codes
+- report folder paths
+- log file paths
+- number of JSON reports found per tool
+- failed or skipped tools
+
+This is useful for CI, debugging, and checking whether a run produced the expected report files.
+
+## Logs
+
+Each tool writes stdout and stderr to its own log file:
+
+```text
+reports/_logs/<tool-name>.log
+```
+
+For example:
+
+```text
+reports/_logs/axe-core.log
+reports/_logs/html-sniffer.log
+reports/_logs/screenshots.log
+```
+
+If a tool fails, check its log first.
+
+## Authentication / logged-in pages
+
+Some runners use Playwright and support a shared storage state file:
+
+```text
+auth/storage_state.json
+```
+
+If present, the orchestration script exposes it to compatible runners as:
+
+```text
+STORAGE_STATE_PATH=./auth/storage_state.json
+```
+
+This is useful when scanning pages that need an authenticated browser session.
+
+## Optional axe-scan support
+
+The `axe-scan` runner is optional because it expects a global `axe-scan` command.
+
+If it is not installed, `run_all_tools.sh` will skip it and record the skip in `reports/_run-summary.json`.
+
+Install it globally if required:
+
+```bash
+npm install -g axe-scan
+```
+
+Then run:
+
+```bash
+TOOLS="axe-scan" ./run_all_tools.sh urls.txt
+```
+
+## Notes on dependency installation
+
+Most runner folders have their own `package.json` and `package-lock.json`.
+
+When you run with:
+
+```bash
+INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
+```
+
+The script will run:
+
+```bash
+npm ci
+```
+
+where a `package-lock.json` exists, otherwise:
+
+```bash
+npm install
+```
+
+Some packages may trigger Playwright browser installation through `postinstall` scripts.
+
+## Troubleshooting
+
+### `Permission denied: ./run_all_tools.sh`
+
+Make the script executable:
+
+```bash
+chmod +x run_all_tools.sh
+```
+
+### A tool failed but the script continued
+
+By default, the script keeps going so you can still get reports from the other tools.
+
+Check:
+
+```text
+reports/_run-summary.json
+reports/_logs/<tool-name>.log
+```
+
+To stop on the first failure:
+
+```bash
+STOP_ON_FAIL=1 ./run_all_tools.sh urls.txt
+```
+
+### `axe-scan command not found`
+
+This only affects the optional `axe-scan` runner.
+
+Install it globally:
+
+```bash
+npm install -g axe-scan
+```
+
+or exclude it:
+
+```bash
+TOOLS="axe-core html-sniffer ibm lighthouse oobee pa11y pa11y-axe pa11y-htmlcs uuv virtual-screenreader tab-map screenshots contrast-checker" ./run_all_tools.sh urls.txt
+```
+
+### Browser or Playwright errors
+
+Install dependencies using:
+
+```bash
+INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
+```
+
+If needed, install Playwright browsers manually inside the affected runner folder:
+
+```bash
+npx playwright install chromium
+```
+
+### Old reports are still present
+
+Run with:
+
+```bash
+CLEAN_REPORTS=1 ./run_all_tools.sh urls.txt
+```
+
+This removes previous tool report folders before the new run.
+
+## Suggested `.gitignore`
+
+For a public GitHub repo, you probably want to commit the runners and scripts, but not generated reports or installed dependencies.
+
+```gitignore
+node_modules/
+reports/
+screenshots/
+input/urls.txt
+auth/storage_state.json
+.DS_Store
+```
+
+If you want to include example input, add something like:
+
+```text
+input/example-urls.txt
+```
+
+rather than committing your working `input/urls.txt`.
+
+## Current scope
+
+This repo runs tools and collects raw output.
+
+It does not yet attempt to deduplicate findings, rank issues, merge duplicate selectors, or provide cross-tool analysis. That analysis layer can be built separately on top of the `reports/` folder produced here.

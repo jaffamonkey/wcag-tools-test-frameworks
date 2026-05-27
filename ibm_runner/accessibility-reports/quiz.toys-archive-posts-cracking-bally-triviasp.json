@@ -1,0 +1,132 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/nav[1]/span[1]",
+                "aria": "/document[1]/navigation[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 95,
+                "top": 12,
+                "height": 13,
+                "width": 4
+            },
+            "snippet": "<span style=\"color:var(--muted);font-size:12px;margin:0 8px\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22color%3Avar(--muted)%3Bfont-size%3A12px%3Bmargin%3A0%208px%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[19]",
+                "aria": "/document[1]/paragraph[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'More cracks More cracks' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "More cracks More cracks"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2109,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'More%20cracks%20More%20cracks'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22More%20cracks%20More%20cracks%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[20]",
+                "aria": "/document[1]/paragraph[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Cross-archive analyses Cross-archive analyses' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Cross-archive analyses Cross-archive analyses"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2197,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Cross-archive%20analyses%20Cross-archive%20analyses'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Cross-archive%20analyses%20Cross-archive%20analyses%22%5D%7D"
+        }
+    ],
+    "numExecuted": 666,
+    "ruleTime": 12,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 23,
+            "elementsViolation": 0,
+            "elementsViolationReview": 4,
+            "violation": 0,
+            "potentialviolation": 3,
+            "recommendation": 17,
+            "potentialrecommendation": 10,
+            "manual": 1,
+            "pass": 635
+        },
+        "scanTime": 31,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778601485519,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ECracking%20Trivial%20Pursuit%20All%20Star%20Sports%20(1985)%2C%20Arcade%20Trivia%20Archive%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cdiv%20class%3D%22post%22%3E%3Cnav%20style%3D%22margin-bottom%3A20px%22%3E%3Ca%20href%3D%22%2Farchive%22%20style%3D%22font-size%3A12px%3Btext-transform%3Auppercase%3Bletter-spacing%3A.06em%22%3E%E2%86%90%20Archive%3C%2Fa%3E%0A%3Cspan%20style%3D%22color%3Avar(--muted)%3Bfont-size%3A12px%3Bmargin%3A0%208px%22%3E%2F%3C%2Fspan%3E%0A%3Ca%20href%3D%22%2Farchive%2Fposts%2F%22%20style%3D%22font-size%3A12px%3Btext-transform%3Auppercase%3Bletter-spacing%3A.06em%22%3EWrite-ups%3C%2Fa%3E%3C%2Fnav%3E%3Ch1%20style%3D%22font-family%3Avar(--font-serif)%3Bfont-size%3A32px%3Bmargin%3A0%200%204px%22%3ECracking%20Trivial%20Pursuit%20All%20Star%20Sports%20(1985)%3C%2Fh1%3E%3Cp%20style%3D%22color%3Avar(--muted)%3Bfont-size%3A13px%3Bmargin%3A0%200%204px%22%3ERearranged%20ROM%20chips%2C%20a%20different%20pointer%20table%2C%20and%20897%20sports%20questions%20from%20a%20Bally%20Sente%20variant%3C%2Fp%3E%3Cp%20style%3D%22color%3Avar(--muted)%3Bfont-size%3A11px%3Bmargin%3A0%200%2020px%22%3EApril%2010%2C%202026%20%C2%B7%20crack%2C%20bally-sente%2C%20trivial-pursuit%2C%206809%3C%2Fp%3E%3Chr%20class%3D%22thick%22%3E%3Cp%3E%3Ca%20href%3D%22https%3A%2F%2Fquiz.toys%2Farchive%2F%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3E%E2%86%90%20Archive%3C%2Fa%3E%3C%2Fp%3E%3Ch1%20id%3D%22trivial-pursuit-all-star-sports%22%3ETrivial%20Pursuit%20All%20Star%20Sports%3C%2Fh1%3E%3Cp%3EBally%20Sente%20%C2%B7%201985%20%C2%B7%20SAC-1%20board%20%C2%B7%20Motorola%206809%20%C2%B7%20897%20sports%20records%3C%2Fp%3E%3Chr%3E%3Ch2%20id%3D%22the-game%22%3EThe%20Game%3C%2Fh2%3E%3Cp%3EBy%20March%201985%2C%20Bally%20Sente%20had%20already%20shipped%20four%20Trivial%20Pursuit%0Aeditions%20on%20the%20SAC-1%20board%20(Genus%20I%2C%20Genus%20II%2C%20Baby%20Boomer%2C%20Young%0APlayers)%20and%20the%20format%20was%20a%20hit%2C%20the%20cocktail-cabinet%20with%20four%0Acolored%20category%20buttons%20was%20in%20bars%20across%20America.%20The%20%3Cem%3EAll%20Star%0ASports%3C%2Fem%3E%20edition%20was%20the%20last%20one%20out%20the%20door%20that%20spring%20and%20the%0Aonly%20one%20targeted%20at%20a%20specific%20demographic%3A%20every%20category%2C%20every%0Aquestion%2C%20every%20answer%20was%20about%20sports.%3C%2Fp%3E%3Cp%3EThis%20was%20the%20era%20when%20sports%20bar%20culture%20had%20just%20fused%20with%0Acoin-op%2C%20you%E2%80%99d%20sit%20down%20at%20the%20Trivial%20Pursuit%20table%20between%0Ainnings%20of%20the%20Sox%20game%2C%20while%20the%20jukebox%20played%20Springsteen%E2%80%99s%0A%3Cem%3EBorn%20in%20the%20U.S.A.%3C%2Fem%3E%2C%20and%20try%20to%20remember%20who%20won%20the%201962%20World%0ASeries.%20All%20Star%20Sports%20was%20designed%20to%20be%20%3Cem%3Ethe%3C%2Fem%3E%20machine%20for%20that%0Abar%3A%20if%20you%20walked%20up%20and%20saw%20its%20category%20wheel%2C%20it%20wasn%E2%80%99t%20going%0Ato%20ask%20you%20about%20Shakespeare.%20Bally%20Sente%20partnered%20with%20Horn%20Abbot%0Aon%20a%20sports-only%20question%20pack%2C%20900-ish%20questions%20covering%0Abaseball%2C%20football%2C%20basketball%2C%20hockey%2C%20golf%2C%20Olympics%2C%20and%0A%E2%80%9Cgeneral%20sports%E2%80%9D%2C%20and%20shipped%20it%20in%20a%20new%20cabinet%20variant%20aimed%0Asquarely%20at%20the%20tavern%20circuit.%3C%2Fp%3E%3Ch2%20id%3D%22the-data%22%3EThe%20Data%3C%2Fh2%3E%3Cp%3EAll%20897%20sports%20records%20browse%20at%0A%3Cstrong%3E%3Ca%20href%3D%22https%3A%2F%2Fquiz.toys%2Farchive%2Fbrowse%3Fsource%3Dbally_triviasp%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3E%2Fbrowse%3Fsource%3Dbally_triviasp%3C%2Fa%3E%0A%3C%2Fstrong%3E.%0Aheavy%20on%20boxing%2C%20horse%20racing%2C%20hockey%2C%20and%20Olympic%20trivia.%20West%0AGermany%20still%20exists.%20The%20Soviet%20Union%20competes.%20Muhammad%20Ali%20is%0Astill%20boxing.%3C%2Fp%3E%3Chr%3E%3Ch2%20id%3D%22how-we-cracked-it%22%3EHow%20We%20Cracked%20It%3C%2Fh2%3E%3Ch3%20id%3D%22the-question%22%3EThe%20Question%3C%2Fh3%3E%3Cp%3EEvery%20other%20Trivial%20Pursuit%20edition%20we%E2%80%99d%20cracked%2C%20Genus%20I%2C%20Genus%0AII%2C%20Baby%20Boomer%2C%20Young%20Players%2C%20%3Ca%20href%3D%22https%3A%2F%2Fquiz.toys%2Farchive%2Fposts%2Fcracking-bally-sente%2F%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3Eshared%20a%20clean%20ROM%20layout%3C%2Fa%3E%0A%3A%0AAB%20chips%20hold%20base-40%20encoded%20text%2C%20CD%20chips%20hold%20pointer%20tables%2C%0Aand%20one%20extractor%20runs%20the%20lot.%20Same%20base-40%20alphabet.%20Same%206809%20CPU.%0ASame%20hardware%20as%20the%20SAC-1%20board.%3C%2Fp%3E%3Cp%3EThe%20All%20Star%20Sports%20edition%20breaks%20the%20pattern.%3C%2Fp%3E%3Ch3%20id%3D%22what-changed%22%3EWhat%20Changed%3C%2Fh3%3E%3Cp%3ESame%20base-40%20encoding.%20Same%206809%20CPU.%20Same%20hardware.%20But%20the%20ROM%20chips%20are%0Areorganized%3A%3C%2Fp%3E%3Cul%3E%3Cli%3E%3Cp%3E%3Cstrong%3EText%20data%3C%2Fstrong%3E%3A%20%3Ccode%3Eallsport.8a%3C%2Fcode%3E%20through%20%3Ccode%3Eallsport.5a%3C%2Fcode%3E%2C%20four%2016KB%20chips%20mapped%0Aat%20%3Ccode%3E%240000%3C%2Fcode%3E%2C%20%3Ccode%3E%244000%3C%2Fcode%3E%2C%20%3Ccode%3E%248000%3C%2Fcode%3E%2C%20%3Ccode%3E%24C000%3C%2Fcode%3E.%20The%20other%20editions%20use%20%3Ccode%3Eab01.bin%3C%2Fcode%3E%0Athrough%20%3Ccode%3Eab67.bin%3C%2Fcode%3E.%3C%2Fp%3E%3C%2Fli%3E%3Cli%3E%3Cp%3E%3Cstrong%3EPointer%20table%3C%2Fstrong%3E%3A%20%3Ccode%3Eallsport.3a%3C%2Fcode%3E%2C%20a%20single%2016KB%20chip%20holding%20both%20the%0Aquestion%20table%20(at%20offset%20%3Ccode%3E%240000%3C%2Fcode%3E)%20and%20the%20answer%20table%20(at%20offset%20%3Ccode%3E%242000%3C%2Fcode%3E).%0AThe%20other%20editions%20use%20a%20separate%20CD%20ROM%20pair.%3C%2Fp%3E%3C%2Fli%3E%3Cli%3E%3Cp%3E%3Cstrong%3EPrefix%20phrases%3C%2Fstrong%3E%3A%20Stored%20at%20%3Ccode%3E%24C000%2B%3C%2Fcode%3E%20in%20the%20text%20data%20(in%20%3Ccode%3Eallsport.5a%3C%2Fcode%3E)%2C%0Anot%20at%20the%20start.%20Fifteen%20phrases%3A%20%E2%80%9CWhat%E2%80%9D%2C%20%E2%80%9CWhat%20is%20the%E2%80%9D%2C%20%E2%80%9CWhat%20are%E2%80%9D%2C%0A%E2%80%9CWhere%E2%80%9D%2C%20%E2%80%9CWho%E2%80%9D%2C%20%E2%80%9CWho%20is%20the%E2%80%9D%2C%20%E2%80%9CHow%20many%E2%80%9D%2C%20%E2%80%9CWhen%E2%80%9D%2C%20%E2%80%9CWhich%E2%80%9D%2C%20etc.%3C%2Fp%3E%3C%2Fli%3E%3C%2Ful%3E%3Ch3%20id%3D%22the-pointer-table%22%3EThe%20Pointer%20Table%3C%2Fh3%3E%3Cp%3EQuestion%20entries%20are%203%20bytes%20each%2C%20starting%20at%20%3Ccode%3Eallsport.3a%5B0x0000%5D%3C%2Fcode%3E%3A%3C%2Fp%3E%3Cpre%20tabindex%3D%220%22%3E%3Ccode%3E%20%20%5Bprefix_byte%5D%20%5Bptr_hi%5D%20%5Bptr_lo%5D%0A%3C%2Fcode%3E%3C%2Fpre%3E%3Cp%3EThe%20%3Ccode%3Eprefix_byte%3C%2Fcode%3E%20is%20a%20direct%20offset%20into%20the%20text%20data%20where%20the%20prefix%0Aphrase%20lives.%20The%20pointer%20is%20big-endian%2C%20pointing%20to%20the%20question%20fragment%0Ain%20the%20text%20data.%20Concatenate%20prefix%20%2B%20fragment%20%2B%20%E2%80%9C%3F%E2%80%9D%20for%20the%20full%20question.%3C%2Fp%3E%3Cp%3E897%20entries%2C%20then%20zeros%20until%20%3Ccode%3E0x2000%3C%2Fcode%3E%20where%20the%20answer%20table%20begins%3A%3C%2Fp%3E%3Cpre%20tabindex%3D%220%22%3E%3Ccode%3E%20%20%5Bcorrect_hi%5D%20%5Bcorrect_lo%5D%20%5Bwrong1_hi%5D%20%5Bwrong1_lo%5D%20%5Bwrong2_hi%5D%20%5Bwrong2_lo%5D%20%5Bwrong3_hi%5D%20%5Bwrong3_lo%5D%0A%3C%2Fcode%3E%3C%2Fpre%3E%3Cp%3EFour%20big-endian%20pointers%20per%20question%2C%208%20bytes%20each%2C%20897%20entries.%20Same%0Astructure%20as%20the%20other%20editions%2C%20just%20in%20a%20different%20chip.%3C%2Fp%3E%3Ch3%20id%3D%22the-heuristic-trap%22%3EThe%20Heuristic%20Trap%3C%2Fh3%3E%3Cp%3EOur%20first%20extraction%20attempt%20used%20a%20generic%20heuristic%20extractor%2C%20scan%20for%0Aprintable%20ASCII%20runs%2C%20group%20them%20into%20question%2Fanswer%20clusters.%20It%20produced%0A680%20%E2%80%9Cquestions%E2%80%9D%20that%20were%20almost%20entirely%20garbage%3A%20truncated%20text%2C%20answers%0Afrom%20the%20wrong%20questions%2C%20hex%20noise%20from%20misinterpreted%20base-40%20data.%0AThe%20heuristic%20approach%20fails%20when%20questions%20and%20answers%20aren%E2%80%99t%20stored%0Asequentially.%3C%2Fp%3E%3Cp%3EThe%20fix%20was%20straightforward%20once%20we%20mapped%20the%20correct%20chip%20ordering%20from%0Athe%20MAME%20driver%20XML%20(%3Ccode%3Eu8a%3D%240000%3C%2Fcode%3E%2C%20%3Ccode%3Eu7a%3D%244000%3C%2Fcode%3E%2C%20%3Ccode%3Eu6a%3D%248000%3C%2Fcode%3E%2C%20%3Ccode%3Eu5a%3D%24C000%3C%2Fcode%3E)%0Aand%20found%20the%20answer%20table%20at%20the%20expected%20offset%20in%20the%20pointer%20chip.%3C%2Fp%3E%3Ch3%20id%3D%22results%22%3EResults%3C%2Fh3%3E%3Cp%3E%3Cstrong%3E897%20questions%3C%2Fstrong%3E%2C%20all%20sports%2C%20from%20the%20mid-1980s%20knowledge%20base%3A%3C%2Fp%3E%3Cpre%20tabindex%3D%220%22%3E%3Ccode%3E%20%20What%20sport%20did%20Major%20Walter%20Clopton%20Wingfield%20invent%3F%0A%20%20%20%20%E2%9C%93%20Tennis%20%20%E2%9C%97%20Golf%20%2F%20Handball%20%2F%20Skiing%0A%0A%20%20What%20country%20was%20ski%20ace%20Rosi%20Mittermaier%20from%3F%0A%20%20%20%20%E2%9C%93%20West%20Germany%20%20%E2%9C%97%20East%20Germany%20%2F%20Liechtenstein%20%2F%20Luxembourg%0A%0A%20%20Who%20is%20the%20all%20time%20leader%20in%20NASCAR%20victories%3F%0A%20%20%20%20%E2%9C%93%20Richard%20Petty%20%20%E2%9C%97%20Richard%20Getty%20%2F%20Jackie%20Stewart%20%2F%20Bobby%20Allison%0A%0A%20%20What%20'66%20to%20'67%20NBA%20team%20was%20voted%20history's%20greatest%3F%0A%20%20%20%20%E2%9C%93%20The%20Philadelphia%2076ers%20%20%E2%9C%97%20The%20Denver%20Nuggets%20%2F%20The%20N.Y.%20Knicks%20%2F%20The%20Portland%20Trailblazers%0A%0A%20%20Who%20was%20the%20first%20National%20Leaguer%20to%20hit%20500%20home%20runs%3F%0A%20%20%20%20%E2%9C%93%20Mel%20Ott%20%20%E2%9C%97%20Bill%20Melton%20%2F%20Dick%20Allen%20%2F%20Hank%20Aaron%0A%3C%2Fcode%3E%3C%2Fpre%3E%3Chr%3E%3Cp%3EArcade%20Trivia%20Archive%2C%20data%20extracted%20from%20MAME%20ROM%20dumps%20using%20a%20custom%20Python%20decoder.%0AExtractor%3A%20%3Ccode%3Escripts%2Fbally_sente%2Fextract.py%3C%2Fcode%3E%3C%2Fp%3E%3Chr%3E%3Ch2%20id%3D%22references%22%3EReferences%3C%2Fh2%3E%3Chr%3E%3Ch2%20id%3D%22related%22%3ERelated%3C%2Fh2%3E%3Cp%3E%3Cstrong%3EMore%20cracks%3C%2Fstrong%3E%3C%2Fp%3E%3Cul%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fquiz.toys%2Farchive%2Fposts%2Fcracking-bally-nametune%2F%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3EName%20That%20Tune%20(Bally%20Sente%201986)%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fquiz.toys%2Farchive%2Fposts%2Fcracking-bally-sente%2F%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3ETrivial%20Pursuit%20Genus%20(Bally%20Sente%201984)%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cp%3E%3Cstrong%3ECross-archive%20analyses%3C%2Fstrong%3E%3C%2Fp%3E%3Cul%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fquiz.toys%2Farchive%2Fposts%2Fwho-stole-from-whom%2F%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3EWho%20Stole%20From%20Whom%3A%201%2C349%20plagiarism%20hits%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fquiz.toys%2Farchive%2Fposts%2Fwhen-cabinets-disagreed%2F%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3EWhen%20Cabinets%20Disagreed%3A%20same%20Q%2C%20different%20A%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fquiz.toys%2Farchive%2Fposts%2Fthe-funny-bits%2F%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3EThe%20Funny%20Bits%3A%20AI%20reads%20115K%20trivia%20questions%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cdiv%20class%3D%22footnotes%22%20role%3D%22doc-endnotes%22%3E%3Chr%3E%3Col%3E%3Cli%20id%3D%22fn%3A1%22%3E%3Cp%3E%3Cstrong%3ETrivial%20Pursuit%20(All%20Star%20Sports)%3C%2Fstrong%3E%3Csup%20id%3D%22fnref%3A1%22%3E%3Ca%20href%3D%22%23fn%3A1%22%20class%3D%22footnote-ref%22%20role%3D%22doc-noteref%22%3E1%3C%2Fa%3E%3C%2Fsup%3E%20(1984%2C%20Bally%20Sente%20%2F%20Horn%20Abbot%20Ltd.)%20%C2%B7%20%3Ca%20href%3D%22https%3A%2F%2Fwww.arcade-museum.com%2FVideogame%2Ftrivial-pursuit-all-star-sports-edition%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3EArcade-Museum%3C%2Fa%3E%0A%C2%B7%20%3Ca%20href%3D%22https%3A%2F%2Fflyers.arcade-museum.com%2Fvideogames%2Fshow%2F1997%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3EFlyer%3C%2Fa%3E%0A%C2%B7%20MAME%20romset%3A%20%3Ccode%3Etriviasp%3C%2Fcode%3E%26nbsp%3B%3Ca%20href%3D%22%23fnref%3A1%22%20class%3D%22footnote-backref%22%20role%3D%22doc-backlink%22%3E%E2%86%A9%EF%B8%8E%3C%2Fa%3E%3C%2Fp%3E%3C%2Fli%3E%3C%2Fol%3E%3C%2Fdiv%3E%3Cfooter%20class%3D%22site-footer%22%3EEach%20crack%20is%20a%20story.%20Data%20extracted%20from%20MAME%20ROM%20dumps%20using%20custom%20Python%20decoders.%3C%2Ffooter%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "047a9b6d-7145-4de7-9817-1605a8341818",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "quiz.toys-archive-posts-cracking-bally-triviasp"
+}

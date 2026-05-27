@@ -1,0 +1,1073 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 9457,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 9457,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.palmbeachpost.com/\" class=\"logo-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.palmbeachpost.com%2F%5C%22%20class%3D%5C%22logo-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.palmbeachpost.com/\" class=\"logo-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.palmbeachpost.com%2F%5C%22%20class%3D%5C%22logo-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/a[1]/img[1]",
+                "aria": "/document[1]/banner[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 23,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"logo-image\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22logo-image%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/span[2]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 118,
+                "top": 466,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<span tabindex=\"0\" id=\"otnotice-collapse-expand-icon\" class=\"otnotice-menu-display otnotice-menu-display__expand\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cspan%20tabindex%3D%5C%220%5C%22%20id%3D%5C%22otnotice-collapse-expand-icon%5C%22%20class%3D%5C%22otnotice-menu-display%20otnotice-menu-display__expand%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[1]/div[1]/p[3]/strong[3]",
+                "aria": "/document[1]/paragraph[3]/strong[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'BELOW' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "BELOW"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 301,
+                "top": 639,
+                "height": 18,
+                "width": 61
+            },
+            "snippet": "<strong>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'BELOW'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cstrong%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22BELOW%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[2]/h2[1]",
+                "aria": "/document[1]/heading[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 731,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[2]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'largest'",
+            "messageArgs": [
+                "largest"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 778,
+                "height": 95,
+                "width": 784
+            },
+            "snippet": "<p id=\"isPasted\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'largest'%22%2C%22snippet%22%3A%22%3Cp%20id%3D%5C%22isPasted%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22largest%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[2]/div[1]/p[5]",
+                "aria": "/document[1]/paragraph[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1230,
+                "height": 148,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[2]/div[1]/p[6]",
+                "aria": "/document[1]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1394,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[3]/h2[1]",
+                "aria": "/document[1]/heading[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1470,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[4]/h2[1]",
+                "aria": "/document[1]/heading[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2407,
+                "height": 55,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[5]/h2[1]",
+                "aria": "/document[1]/heading[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3369,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[6]/h2[1]",
+                "aria": "/document[1]/heading[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3954,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[7]/h2[1]",
+                "aria": "/document[1]/heading[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4077,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[8]/h2[1]",
+                "aria": "/document[1]/heading[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4708,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[9]/h2[1]",
+                "aria": "/document[1]/heading[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4849,
+                "height": 55,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[9]/div[1]/ol[1]/li[4]",
+                "aria": "/document[1]/list[7]/listitem[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"any preference, limitation, or  ...  limitation, or discrimination.\"",
+            "messageArgs": [
+                "\"any preference, limitation, or  ...  limitation, or discrimination.\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 5442,
+                "height": 130,
+                "width": 744
+            },
+            "snippet": "<li>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22any%20preference%2C%20limitation%2C%20or%20%20...%20%20limitation%2C%20or%20discrimination.%5C%22%22%2C%22snippet%22%3A%22%3Cli%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22any%20preference%2C%20limitation%2C%20or%20%20...%20%20limitation%2C%20or%20discrimination.%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[10]/h2[1]",
+                "aria": "/document[1]/heading[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5758,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[12]/h2[1]",
+                "aria": "/document[1]/heading[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6130,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[13]/h2[1]",
+                "aria": "/document[1]/heading[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6272,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[13]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[23]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6319,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[14]/h2[1]",
+                "aria": "/document[1]/heading[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6395,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[15]/h2[1]",
+                "aria": "/document[1]/heading[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7294,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[15]/div[1]/p[1]/strong[1]",
+                "aria": "/document[1]/paragraph[24]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'ABOVE' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "ABOVE"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7342,
+                "height": 296,
+                "width": 783
+            },
+            "snippet": "<strong id=\"isPasted\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'ABOVE'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cstrong%20id%3D%5C%22isPasted%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22ABOVE%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[16]/h2[1]",
+                "aria": "/document[1]/heading[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7658,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[16]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[25]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7705,
+                "height": 130,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[17]/h2[1]",
+                "aria": "/document[1]/heading[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7855,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[18]/h2[1]",
+                "aria": "/document[1]/heading[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8070,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[19]/h2[1]",
+                "aria": "/document[1]/heading[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8481,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[20]/h2[1]",
+                "aria": "/document[1]/heading[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8659,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"otnotice-section-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22otnotice-section-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[20]/div[1]/p[1]/strong[1]",
+                "aria": "/document[1]/paragraph[31]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8707,
+                "height": 18,
+                "width": 574
+            },
+            "snippet": "<strong>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cstrong%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/section[20]/div[1]/p[2]",
+                "aria": "/document[1]/paragraph[32]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8741,
+                "height": 111,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/footer[1]/ul[1]/li[5]/a[1]/svg[1]",
+                "aria": "/document[1]/contentinfo[1]/list[1]/listitem[5]/link[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 9372,
+                "height": 14,
+                "width": 30
+            },
+            "snippet": "<svg style=\"height:14px;width:auto;top:2px;position:relative;margin-right:4px;\" viewBox=\"0 0 25 12\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20style%3D%5C%22height%3A14px%3Bwidth%3Aauto%3Btop%3A2px%3Bposition%3Arelative%3Bmargin-right%3A4px%3B%5C%22%20viewBox%3D%5C%220%200%2025%2012%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1791,
+    "ruleTime": 37,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'"
+        },
+        "list_markup_review": {
+            "0": "Proper HTML elements should be used to create a list",
+            "potential_list": "Verify this is a list and if so, modify to use proper HTML elements for the list"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 65,
+            "elementsViolation": 4,
+            "elementsViolationReview": 34,
+            "violation": 5,
+            "potentialviolation": 30,
+            "recommendation": 52,
+            "potentialrecommendation": 2,
+            "manual": 1,
+            "pass": 1701
+        },
+        "scanTime": 89,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778709824432,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20Palm%20Beach%20Post%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%0A%3Cdiv%20class%3D%22container%22%3E%0A%20%20%20%20%0A%20%20%20%20%3Cheader%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22cobrand-header%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22header-wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22logo-button%22%20href%3D%22https%3A%2F%2Fwww.palmbeachpost.com%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22logo-image%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22login-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22loggedOut%22%20cm-unauthenticated%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22subscribe%22%20data-client-action-header-subscribe%3D%22%22header-subscribe')%22%3E%3Cspan%3ESubscribe%3C%2Fspan%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22login%22%20data-client-action-header-signin%3D%22%22header-signin')%22%3ESign%20In%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22loggedIn%22%20hidden%3D%22%22%20cm-authenticated%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22subscribe%22%20cm-no-market-access%3D%22%22%20data-client-action-header-subscribe%3D%22%22%20hidden%3D%22%22header-subscribe')%22%3E%3Cspan%3ESubscribe%3C%2Fspan%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22userSalutation%22%20data-client-action-header-usersalutation%3D%22%22header-userSalutation')%22%3E%3Cspan%3EHi%2C%20%3Cspan%20class%3D%22userName%22%3E%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20id%3D%22signOut%22%20data-client-action-header-signout%3D%22%22header-signOut')%22%3ESign%20Out%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fheader%3E%0A%20%20%20%20%0A%0A%20%20%20%20%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%3Csection%20class%3D%22cm-flatpage-card%22%3E%3Cdiv%20id%3D%22otnotice-18b47393-f5dd-40e7-a44f-87a077a44b2e%22%20class%3D%22otnotice%22%3E%3Cdiv%20class%3D%22otnotice-content%22%3E%3Cul%20class%3D%22otnotice-menu%22%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-de6e2dfd-6fc9-40d7-b43f-8bd1b0973e14%22%3ETerms%20of%20Service%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-3b32911b-2bf9-4800-a9db-867996435ba2%22%3E1.%20Introduction%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-0410fcde-b4e5-4225-8af4-2066e97e3d37%22%3E2.%20Rights%20and%20Restrictions%20Relating%20to%20Site%20Content%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-928c558f-e13e-43a1-ae24-44e8f7d40da1%22%3E3.%20Rights%20and%20Responsibility%20Regarding%20User-Provided%20Content%20and%20Use%20of%20User%20Content%20Features%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-f0410150-efd4-4ff8-a5c8-c200cf982129%22%3E4.%20Access%3B%20Registration%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-a4cbceb5-b1b9-4a52-934f-a78b65b6696d%22%3E5.%20Privacy%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-5198e0fa-86b2-4338-9639-ae071d317b3f%22%3E6.%20Online%20Commerce%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-2e924f93-d5f4-4a98-a45f-fdbec18e9c37%22%3E7.%20Fees%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-7c8aced5-2309-47cd-82ab-12df892e7fbf%22%3E8.%20Advertisements%3B%20Self-Service%20Portals%3B%20Classifieds%3B%20Real%20Estate%3B%20Job%20Postings%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-a50e9f09-ef47-4b51-9d90-3b73e3781fd3%22%3E9.%20Text%20Communications%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-38800729-6ace-4c6a-8dce-6ea5ae15165e%22%3E10.%20Chat%20Features%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-67515dcf-5239-49d0-aab7-24777c0dd380%22%3E11.%20Limitation%20on%20Use%20of%20Company%20Directories%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-a4fcf614-57e5-416d-a5a0-8522aa8fb3ba%22%3E12.%20Modifications%20to%2C%20or%20Discontinuation%20of%2C%20the%20Site%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-3c4c06e1-1f00-409f-9e7e-d5262e75295a%22%3E13.%20Disclaimers%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-0b430bf4-1664-46e0-8572-5d9df5d77663%22%3E14.%20Limitation%20of%20Liability%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-51f84602-46cb-4b73-b8d1-952bcad1e038%22%3E15.%20Indemnification%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-72bb7c49-a568-444f-b4b4-078fe8af663d%22%3E16.%20Suspension%20and%20Termination%20of%20Access%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-7ed4f29c-1fe8-4434-8e7c-ff9d2643f9be%22%3E17.%20Notice%20of%20Copyright%20Infringement%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-bf309ea0-f966-4760-b1da-25a4b13d81a2%22%3E18.%20Restrictions%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-e860e50d-2ac6-4481-b568-60ab8eebb2f8%22%3E19.%20Waiver%20of%20Class%20Actions%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section%22%3E%3Ca%20href%3D%22%23otnotice-section-39fb57aa-8226-4728-9176-79ad3abd687f%22%3E20.%20Additional%20Legal%20Terms%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cdiv%20class%3D%22otnotice-menu-mobile%22%3E%3Cdiv%20class%3D%22otnotice-menu-selected-container%22%3E%3Cspan%20class%3D%22otnotice-menu-selected%22%20id%3D%22otnotice-menu-selected%22%3ETerms%20of%20Service%3C%2Fspan%3E%3Cspan%20class%3D%22otnotice-menu-display%20otnotice-menu-display__expand%22%20id%3D%22otnotice-collapse-expand-icon%22%20tabindex%3D%220%22%3E%3C%2Fspan%3E%3C%2Fdiv%3E%3Cul%20class%3D%22otnotice-menu-mobile-container%22%20style%3D%22display%3A%20none%3B%22%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-de6e2dfd-6fc9-40d7-b43f-8bd1b0973e14%22%3ETerms%20of%20Service%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-3b32911b-2bf9-4800-a9db-867996435ba2%22%3E1.%20Introduction%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-0410fcde-b4e5-4225-8af4-2066e97e3d37%22%3E2.%20Rights%20and%20Restrictions%20Relating%20to%20Site%20Content%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-928c558f-e13e-43a1-ae24-44e8f7d40da1%22%3E3.%20Rights%20and%20Responsibility%20Regarding%20User-Provided%20Content%20and%20Use%20of%20User%20Content%20Features%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-f0410150-efd4-4ff8-a5c8-c200cf982129%22%3E4.%20Access%3B%20Registration%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-a4cbceb5-b1b9-4a52-934f-a78b65b6696d%22%3E5.%20Privacy%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-5198e0fa-86b2-4338-9639-ae071d317b3f%22%3E6.%20Online%20Commerce%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-2e924f93-d5f4-4a98-a45f-fdbec18e9c37%22%3E7.%20Fees%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-7c8aced5-2309-47cd-82ab-12df892e7fbf%22%3E8.%20Advertisements%3B%20Self-Service%20Portals%3B%20Classifieds%3B%20Real%20Estate%3B%20Job%20Postings%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-a50e9f09-ef47-4b51-9d90-3b73e3781fd3%22%3E9.%20Text%20Communications%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-38800729-6ace-4c6a-8dce-6ea5ae15165e%22%3E10.%20Chat%20Features%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-67515dcf-5239-49d0-aab7-24777c0dd380%22%3E11.%20Limitation%20on%20Use%20of%20Company%20Directories%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-a4fcf614-57e5-416d-a5a0-8522aa8fb3ba%22%3E12.%20Modifications%20to%2C%20or%20Discontinuation%20of%2C%20the%20Site%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-3c4c06e1-1f00-409f-9e7e-d5262e75295a%22%3E13.%20Disclaimers%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-0b430bf4-1664-46e0-8572-5d9df5d77663%22%3E14.%20Limitation%20of%20Liability%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-51f84602-46cb-4b73-b8d1-952bcad1e038%22%3E15.%20Indemnification%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-72bb7c49-a568-444f-b4b4-078fe8af663d%22%3E16.%20Suspension%20and%20Termination%20of%20Access%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-7ed4f29c-1fe8-4434-8e7c-ff9d2643f9be%22%3E17.%20Notice%20of%20Copyright%20Infringement%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-bf309ea0-f966-4760-b1da-25a4b13d81a2%22%3E18.%20Restrictions%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-e860e50d-2ac6-4481-b568-60ab8eebb2f8%22%3E19.%20Waiver%20of%20Class%20Actions%3C%2Fa%3E%3C%2Fli%3E%3Cli%20class%3D%22otnotice-menu-section-mobile%22%3E%3Ca%20href%3D%22%23otnotice-section-39fb57aa-8226-4728-9176-79ad3abd687f%22%3E20.%20Additional%20Legal%20Terms%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22otnotice-sections%22%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-de6e2dfd-6fc9-40d7-b43f-8bd1b0973e14%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3ETerms%20of%20Service%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%3E%3Cem%20id%3D%22isPasted%22%3EUpdated%20November%2018%2C%202025%3C%2Fem%3E%3C%2Fp%3E%3Cp%3E%3Cbr%3E%3C%2Fp%3E%3Cp%20id%3D%22isPasted%22%3E%3Cstrong%3ETHESE%20TERMS%20OF%20SERVICE%20ARE%20SUBJECT%20TO%20A%20WAIVER%20OF%20CLASS%20ACTION%20RIGHTS%20AS%20DETAILED%20IN%20THE%26nbsp%3B%3C%2Fstrong%3E%3Ca%20href%3D%22%2Fterms%2F%23otnotice-section-e860e50d-2ac6-4481-b568-60ab8eebb2f8%22%20rel%3D%22nofollow%22%3ECLASS%20ACTION%20WAIVER%20SECTION%3C%2Fa%3E%3Cstrong%3E%26nbsp%3B%3C%2Fstrong%3E%3Cstrong%3EBELOW%3C%2Fstrong%3E%3C%2Fp%3E%3Cp%3E%3Cstrong%3EREAD%20THESE%20TERMS%20OF%20SERVICE%20CAREFULLY.%20THEY%20ARE%20A%20LEGAL%20CONTRACT%20GOVERNING%20YOUR%20USE%20OF%20THE%20SITES%20PROVIDED%20BY%20USA%20TODAY%20CO.%2C%20INC.%20AND%20ITS%20AFFILIATES.%3C%2Fstrong%3E%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-3b32911b-2bf9-4800-a9db-867996435ba2%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E1.%20Introduction%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%20id%3D%22isPasted%22%3E%3Cspan%20style%3D%22margin%3A%200px%3Bpadding%3A%200px%3Bfont-size%3A16px%3Bline-height%3A%2020.85px%3Bfont-family%3A%20Aptos%2C%20Aptos_EmbeddedFont%2C%20Aptos_MSCustomFont%2C%20Aptos_MSFontService%2C%20sans-serif%3B%22%20id%3D%22isPasted%22%3E%3Cspan%20style%3D%22margin%3A%200px%3Bpadding%3A%200px%3B%22%3EUSA%20TODAY%20Co.%2C%20Inc.%26nbsp%3B%3C%2Fspan%3E%3C%2Fspan%3Eand%20our%20affiliates%20(collectively%2C%20%E2%80%9C%3Cstrong%3EUSA%20TODAY%20Co.%3C%2Fstrong%3E%E2%80%9D%20%E2%80%9C%3Cstrong%3Ewe%3C%2Fstrong%3E%E2%80%9D%2C%20%E2%80%9C%3Cstrong%3Eour%3C%2Fstrong%3E%E2%80%9D%20%E2%80%9C%3Cstrong%3Eus%3C%2Fstrong%3E%E2%80%9D)%20publish%20USA%20TODAY%20along%20with%20hundreds%20of%20local%20media%20brands.%20%26nbsp%3BThe%20USA%20TODAY%20Network%20is%20the%20largest%20local-to-national%20publishing%20and%20digital%20media%20organization%20in%20the%20country.%20USA%20TODAY%2C%20our%20national%20flagship%20property%2C%20sits%20at%20the%20center%20of%20the%20network%2C%20surrounded%20by%20hundreds%20of%20local%20media%20brands%2C%20through%20which%20we%20empower%20communities%20to%20thrive.%20We%20connect%20people%20to%20content%20that%20matters%20through%20award-winning%20storytelling%20and%20multiplatform%20consumer%20experiences.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EBy%20using%20any%20of%20our%20websites%2C%20mobile%20sites%2C%20social%20media%20pages%2C%20apps%20or%20other%20services%20(collectively%2C%20the%20%22Site%22)%2C%20or%20by%20clicking%20an%20%E2%80%9CAccept%E2%80%9D%2C%20%E2%80%9CRegister%E2%80%9D%20or%20similar%20button%20or%20icon%2C%20connecting%20to%20the%20Site%20through%20a%20third-party%20such%20as%20Facebook%20or%20by%20accessing%2C%20browsing%2C%20or%20using%20the%20Site%20in%20any%20manner%2C%20you%20agree%20to%20be%20bound%20by%2C%20and%20to%20use%20the%20Site%20in%20accordance%20with%2C%20these%20Terms%20of%20Service.%20%26nbsp%3BYou%20also%20agree%20to%20additional%20terms%20and%20conditions%20that%20are%20referenced%20herein%20or%20that%20otherwise%20apply%20to%20specific%20sections%20of%20the%20Site%2C%20or%20to%20products%20and%20services%20that%20we%20make%20available%20to%20you%20through%20the%20Site%20or%20affiliated%20sites%2C%20including%20(without%20limitation)%20our%3A%26nbsp%3B%3C%2Fstrong%3E%3C%2Fp%3E%3Cul%3E%3Cli%3E%3Ca%20href%3D%22%2Fprivacy%2F%22%20rel%3D%22nofollow%22%3EPrivacy%20Policy%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22%2Fabout-your-subscription%22%20rel%3D%22nofollow%22%3ESubscription%20Terms%20and%20Conditions%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22%2Fadvertising-acceptance-policy%2F%22%20rel%3D%22nofollow%22%3EAdvertising%20Acceptance%20Policy%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22%2Fcommunity%2F%22%20rel%3D%22nofollow%22%3ECommunity%20Rules%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fcm.usatoday.com%2Fgannett-digital-products%22%20rel%3D%22noopener%20noreferrer%22%20target%3D%22_blank%22%3EUSA%20TODAY%20Co.%20Digital%20Products%20Terms%20of%20Use%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EEach%20of%20the%20foregoing%20(and%20any%20other%20terms%20on%20one%20of%20our%20sites)%20is%20incorporated%20into%20and%20made%20part%20of%20these%20Terms%20of%20Service%20and%20serve%20as%20%E2%80%9C%3Cstrong%3EAdditional%20Terms%3C%2Fstrong%3E%E2%80%9D%20that%20pertain%20to%20you%20as%20applicable%20based%20on%20your%20interaction%20with%20our%20Site.%3C%2Fp%3E%3Cp%3EAccessing%20the%20Site%20for%20the%20limited%20and%20exclusive%20purpose%20of%20reviewing%20these%20Terms%20of%20Service%20does%20not%20constitute%20your%20%22use%22%20of%20the%20Site%20or%20agreement%20to%20be%20bound%20by%20these%20Terms%20of%20Service%20unless%20you%20further%20access%20or%20use%20the%20Site.%3C%2Fp%3E%3Cp%3EWe%20reserve%20the%20right%20to%20change%20these%20Terms%20of%20Service%20or%20to%20impose%20new%20conditions%20on%20use%20of%20the%20Site%2C%20from%20time%20to%20time%2C%20in%20which%20case%20we%20will%20post%20the%20revised%20Terms%20of%20Service%20on%20this%20website%20and%20update%20the%20%22Last%20Updated%22%20date%20to%20reflect%20the%20date%20of%20the%20changes.%20If%20we%20make%20a%20material%20change%20to%20the%20Terms%20of%20Service%2C%20we%20will%20not%20typically%20enforce%20the%20material%20change%20to%20any%20use%20of%20the%20Site%20occurring%20before%20the%20change.%20%26nbsp%3BHowever%2C%20if%20we%20do%20intend%20to%20enforce%20a%20material%20change%20retroactively%2C%20we%20will%20notify%20you%20by%20posting%20a%20prominent%20notice%20of%20the%20change%20on%20the%20home%20or%20landing%20page%20of%20the%20Site%20or%20otherwise%20notify%20you%20of%20the%20changes%20so%20you%20may%20elect%20whether%20to%20accept%20the%20changes%20by%20continuing%20to%20use%20the%20Site%20or%20terminate%20your%20account.%20By%20continuing%20to%20use%20the%20Site%20after%20we%20post%20any%20such%20changes%20or%20notify%20you%20of%20any%20material%20changes%2C%20you%20accept%20the%20Terms%20of%20Service%2C%20as%20modified.%3C%2Fp%3E%3Cp%3EWe%20also%20reserve%20the%20right%20to%20deny%20access%20to%20the%20Site%20or%20any%20features%20of%20the%20Site%20to%20anyone%20who%20violates%20these%20Terms%20of%20Service%20or%20who%2C%20in%20our%20sole%20judgment%2C%20interferes%20with%20the%20ability%20of%20others%20to%20enjoy%20our%20website%2C%20infringes%20the%20rights%20of%20others%20or%20impedes%2C%20or%20poses%20a%20threat%20to%2C%20the%20operation%20of%20the%20Site.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-0410fcde-b4e5-4225-8af4-2066e97e3d37%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E2.%20Rights%20and%20Restrictions%20Relating%20to%20Site%20Content%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Col%20id%3D%22isPasted%22%3E%3Cli%3E%3Cem%3EYour%20Limited%20Right%20to%20Use%20Site%20Content%3C%2Fem%3E.%26nbsp%3BThis%20Site%20and%20all%20the%20text%2C%20photos%2C%20images%2C%20videos%2C%20fonts%2C%20information%20and%20other%20materials%20available%20on%20or%20through%20the%20Site%20(%E2%80%9C%3Cstrong%3EContent%3C%2Fstrong%3E%E2%80%9D)%20are%20the%20property%20of%20USA%20TODAY%20Co.%20and%2For%20our%20affiliates%20or%20licensors%2C%20and%20are%20protected%20by%20copyright%2C%20trademark%2C%20and%20other%20intellectual%20property%20laws.%20The%20Site%20and%20all%20its%20Content%20is%20provided%20solely%20for%20your%20personal%20non-commercial%20use.%3C%2Fli%3E%3Cli%3E%3Cem%3ERestrictions%20on%20Use.%3C%2Fem%3E%26nbsp%3B%20You%20may%20not%20use%20the%20Site%20or%20the%20Content%20in%20a%20manner%20that%20constitutes%20an%20infringement%20of%20our%20rights%20or%20that%20has%20not%20been%20authorized%20by%20us.%20More%20specifically%2C%20unless%20explicitly%20authorized%20in%20these%20Terms%20of%20Service%2C%20in%20a%20signed%2C%20written%20agreement%20you%20have%20with%20us%20or%20in%20writing%20signed%20by%20the%20owner%20of%20any%20Content%2C%20you%20may%20not%3A%3Col%20style%3D%22list-style-type%3Alower-roman%3B%22%3E%3Cli%3Emodify%2C%20copy%2C%20reproduce%2C%20republish%2C%20upload%2C%20post%2C%20display%2C%20transmit%2C%20translate%2C%20perform%2C%20sell%2C%20create%20derivative%20works%2C%20exploit%2C%20or%20distribute%20in%20any%20manner%20or%20medium%20(including%20by%20email%20or%20other%20electronic%20means)%20any%20Content%20from%20the%20Site%3B%3C%2Fli%3E%3Cli%3Ecache%20or%20archive%20any%20portion%20of%20the%20Content%20(except%20for%20public%20search%20engines%20who%20create%20search%20indices%20solely%20for%20the%20inclusion%20of%20links%20and%20brief%20excerpts%20of%20the%20Content%20attributed%20to%20us%20in%20search%20results%2C%20but%20not%20for%20AI-generated%20summaries%20that%20operate%20as%20a%20substitute%20for%20the%20Content%20itself)%3B%3C%2Fli%3E%3Cli%3Euse%20robots%2C%20spiders%2C%20scripts%2C%20code%20or%20any%20other%20automatic%20or%20manual%20device%2C%20tool%20or%20process%20to%20%E2%80%9Ccrawl%E2%80%9D%2C%20%E2%80%9Cscrape%E2%80%9D%2C%20search%20or%20monitor%20this%20Site%20and%2For%20access%2C%20retrieve%20or%20copy%20Content%20or%20related%20information%20(except%20as%20permitted%20under%20subclause%20(ii)%20above)%3B%3C%2Fli%3E%3Cli%3Ebypass%20or%20work%20around%20any%20controls%2C%20paywalls%2C%20gating%20mechanisms%20or%20other%20measures%20we%20use%20to%20prevent%20or%20limit%20access%20to%20this%20Site%20or%20its%20Content%2C%20including%20without%20limitation%20by%20bypassing%20any%20exclusionary%20protocols%20such%20as%20the%20Robots%20Exclusion%20Protocol%20or%20the%20Automated%20Content%20Access%20protocol.%20%26nbsp%3BPlease%20be%20advised%20that%20our%20robots.txt%20notice%20on%20our%20Site%20is%20intended%20for%20designated%20contractual%20partners%2C%20and%20it%20does%20not%20constitute%20our%20authorization%20or%20consent%20under%20these%20Terms%20of%20Service.%20You%20may%2C%20however%2C%20from%20time%20to%20time%2C%20download%20and%2For%20print%20one%20copy%20of%20individual%20pages%20of%20the%20Site%20for%20your%20personal%2C%20non-commercial%20use%2C%20provided%20that%20you%20keep%20intact%20all%20copyright%20and%20other%20proprietary%20notices.%20For%20information%20about%20requesting%20permission%20to%20reproduce%20or%20distribute%20Content%20from%20the%20Site%2C%20please%20%3Ca%20href%3D%22https%3A%2F%2Fhelp.palmbeachpost.com%2Fcontact-us%2F%22%20class%3D%22ot-rdr-link%20ot-rdr-link-updated%22%20target%3D%22_blank%22%20rel%3D%22nofollow%20noopener%20noreferrer%22%3Econtact%20us%3C%2Fa%3E.%3C%2Fli%3E%3Cli%3Euse%20our%20Site%20or%20any%20Content%20to%20develop%20or%20improve%20any%20software%20program%2C%20model%2C%20algorithm%2C%20machine%20learning%20or%20artificial%20intelligence%20(AI)%20system%20or%20tool%20(including%20generative%20AI)%2C%20including%20without%20limitation%20for%20training%2C%20re-training%2C%20fine%20tuning%2C%20grounding%2C%20retrieval%20augmented%20generation%20or%20otherwise%20in%20connection%20with%20operating%20any%20such%20system%20or%20tool%3B%20or%3C%2Fli%3E%3Cli%3Ereproduce%2C%20extract%20or%20otherwise%20perform%20text%20and%2For%20data%20mining%20activities%20with%20respect%20to%20the%20Content%20as%20provided%20for%20Article%204%20of%20the%20EU%20Directive%20on%20Copyright%20in%20the%20Digital%20Single%20Market%20(all%20Content%20is%20explicitly%20restricted%20from%20such%20use).%3Cem%3E%3Cbr%3E%3C%2Fem%3E%3C%2Fli%3E%3C%2Fol%3E%3C%2Fli%3E%3Cli%3E%3Cem%3E%3Cem%20id%3D%22isPasted%22%3ELimitations%20on%20Linking%20and%20Framing%3C%2Fem%3E.%20%26nbsp%3B%3C%2Fem%3EYou%20are%20free%20to%20establish%20a%20hypertext%20link%20to%20our%20Site%20so%20long%20as%20the%20link%20(a)%20does%20not%20state%20or%20imply%20any%20sponsorship%20or%20endorsement%20of%20your%20website%20or%20service%20by%20us%20or%20by%20our%20Site%2C%20(b)%20is%20not%20used%20to%20spoof%20our%20Site%20or%20for%20any%20other%20deceptive%2C%20fraudulent%20or%20unlawful%20purpose.%20%26nbsp%3BHowever%2C%20you%20may%20not%2C%20without%20our%20prior%20written%20permission%2C%20frame%20or%20inline%20link%20any%20of%20the%20Content%2C%20or%20incorporate%20into%20another%20website%20or%20other%20service%20any%20of%20our%20Content%20or%20intellectual%20property.%20%26nbsp%3BYou%20must%20remove%20any%20links%20to%20our%20Site%20upon%20request%20from%20us.%3C%2Fli%3E%3Cli%3E%3Cem%3ELimitations%20on%20Use%20of%20Content%20From%20Third-Party%20Providers%3C%2Fem%3E.%26nbsp%3BSome%20Content%20is%20provided%20by%20the%20Associated%20Press%2C%20Reuters%2C%20Getty%20Images%20and%20other%20third-parties%20(%E2%80%9C%3Cstrong%3EThird-Party%20Providers%3C%2Fstrong%3E%E2%80%9D).%20%26nbsp%3BBy%20using%20this%20Site%2C%20you%20agree%20and%20acknowledge%20that%20(1)%20you%20will%20not%20publish%2C%20display%2C%20broadcast%2C%20or%20rewrite%20for%20broadcast%20or%20publication%2C%20or%20redistribute%2C%20directly%20or%20indirectly%20in%20any%20medium%2C%20any%20Third-Party%20Provider%20Content%3B%20and%20(2)%20no%20Third-Party%20Provider%20Content%20nor%20any%20portion%20thereof%20may%20be%20stored%20in%20a%20computer%20except%20for%20personal%20and%20non-commercial%20use.%20The%20Third-Party%20Provider%20will%20not%20be%20held%20liable%20for%20any%20delays%2C%20inaccuracies%2C%20errors%20or%20omissions%20in%20the%20Content%20provided%20by%20it%20or%20in%20the%20transmission%20or%20delivery%20of%20all%20or%20any%20part%20of%20the%20Content%20provided%20by%20it%2C%20or%20for%20any%20damages%20arising%20from%20any%20of%20the%20foregoing.%20%26nbsp%3BIn%20addition%20to%20the%20terms%20set%20forth%20in%20this%20paragraph%2C%20the%20Third-Party%20Provider%20may%20impose%20other%20terms%20and%20conditions%20on%20the%20use%20of%20any%20Content%20it%20produces.%20Please%20check%20with%20the%20applicable%20Third-Party%20Provider%20for%20more%20information%20about%20their%20terms%20and%20conditions.%3C%2Fli%3E%3C%2Fol%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-928c558f-e13e-43a1-ae24-44e8f7d40da1%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E3.%20Rights%20and%20Responsibility%20Regarding%20User-Provided%20Content%20and%20Use%20of%20User%20Content%20Features%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%20id%3D%22isPasted%22%3EThis%20Site%20may%20include%20a%20variety%20of%20features%2C%20such%20as%20discussion%20forums%2C%20blogs%2C%20photo-%20and%20video-sharing%20pages%2C%20email%20or%20text%20services%20and%20social%20networking%20features%20that%20allow%20feedback%20to%20us%20and%20allow%20users%20to%20interact%20with%20us%20and%20each%20other%20on%20the%20Site%20and%20post%20content%20and%20materials%20for%20display%20on%20the%20Site.%20This%20Site%20also%20may%20include%20other%20features%2C%20such%20as%20personalized%20home%20pages%20and%20email%20services%2C%20that%20allow%20users%20to%20communicate%20with%20third%20parties.%20All%20such%20features%20that%20enable%20user%20engagement%20or%20sharing%20of%20content%20or%20communications%20are%20referred%20to%20as%20%E2%80%9C%3Cstrong%3EUser%20Content%20Features%3C%2Fstrong%3E%E2%80%9D.%20%26nbsp%3B%3C%2Fp%3E%3Col%3E%3Cli%3E%3Cem%3EOur%20Right%20to%20Use%20Materials%20You%20Submit%20or%20Post%3C%2Fem%3E.%20When%20you%20submit%20or%20post%20any%20material%20via%20the%20Site%20or%20through%20contact%20methods%20listed%20on%20the%20Site%2C%20you%3A%3Col%20style%3D%22list-style-type%3Alower-roman%22%3E%3Cli%3Egrant%20us%2C%20and%20anyone%20authorized%20by%20us%2C%20a%20royalty-free%2C%20perpetual%2C%20irrevocable%2C%20non-exclusive%2C%20unrestricted%2C%20worldwide%20license%20to%20use%2C%20copy%2C%20modify%2C%20reproduce%2C%20republish%2C%20upload%2C%20post%2C%20transmit%2C%20translate%2C%20sell%2C%20exploit%2C%20create%20derivative%20works%20from%2C%20distribute%2C%20and%2For%20publicly%20perform%20or%20display%20such%20material%2C%20in%20whole%20or%20in%20part%2C%20in%20any%20manner%20or%20medium%20(whether%20now%20known%20or%20hereafter%20developed)%2C%20for%20any%20purpose%20that%20we%20choose%3B%3C%2Fli%3E%3Cli%3Ewaive%20any%20moral%20rights%20in%20any%20of%20the%20materials%20you%20submit%20or%20post%3B%3C%2Fli%3E%3Cli%3Eagree%20that%20the%20grant%20in%20Section%203.1(i)%20includes%20the%20right%20to%20exploit%20any%20proprietary%20rights%20in%20such%20posting%20or%20submission%2C%20including%2C%20but%20not%20limited%20to%2C%20rights%20under%20copyright%2C%20trademark%20or%20patent%20laws%20that%20exist%20in%20any%20relevant%20jurisdiction%3B%3C%2Fli%3E%3Cli%3Egrant%20us%2C%20and%20anyone%20authorized%20by%20us%2C%20the%20right%20to%20identify%20you%20as%20the%20author%20of%20any%20of%20your%20postings%20or%20submissions%20by%20name%2C%20email%20address%20and%2For%20screen%20name%2C%20as%20we%20deem%20appropriate%3B%3C%2Fli%3E%3Cli%3Eunderstand%20that%20the%20technical%20processing%20and%20transmission%20of%20the%20Site%2C%20including%20content%20submitted%20by%20you%2C%20may%20involve%20transmissions%20over%20various%20networks%2C%20and%20may%20involve%20changes%20to%20the%20content%20to%20conform%20and%20adapt%20it%20to%20technical%20requirements%20of%20connecting%20networks%20or%20devices%3B%3C%2Fli%3E%3Cli%3Ewill%20not%20receive%20any%20compensation%20of%20any%20kind%20for%20the%20use%20of%20any%20materials%20submitted%20by%20you%3B%3C%2Fli%3E%3Cli%3Eacknowledge%20and%20agree%20that%20any%20content%20or%20material%20you%20provide%20is%2C%20or%20may%20be%20considered%2C%20public%20information%3B%20but%20where%20it%20is%20not%20(or%20is%20not%20considered)%20public%20information%2C%20you%20acknowledge%20and%20agree%20that%20we%20may%20also%20disclose%20such%20content%20and%20materials%20if%20required%20to%20do%20so%20by%20law%20or%20if%2C%20in%20our%20business%20judgment%2C%20such%20disclosure%20is%20reasonably%20necessary%20to%3A%20(a)%20comply%20with%20legal%20process%3B%20(b)%20enforce%20these%20Terms%20of%20Service%20and%20any%20Additional%20Terms%3B%20(c)%20respond%20to%20claims%20that%20any%20content%20or%20materials%20submitted%20by%20you%20violate%20the%20rights%20of%20third%20parties%3B%20or%20(d)%20protect%20the%20rights%2C%20property%2C%20or%20personal%20safety%20of%20our%20Site%2C%20us%2C%20our%20affiliates%2C%20our%20officers%2C%20directors%2C%20employees%2C%20representatives%2C%20our%20licensors%2C%20other%20users%2C%20and%2For%20the%20public.%3C%2Fli%3E%3C%2Fol%3E%3C%2Fli%3E%3Cli%3E%3Cem%3EYour%20Representations%20About%20Your%20Use%20of%20User%20Content%20Features%20and%20Your%20Content%3C%2Fem%3E.%20%26nbsp%3BBy%20accessing%20and%20using%20any%20User%20Content%20Features%2C%20you%20represent%20and%20agree%3A%20(i)%20that%20you%20have%20read%20and%20agree%20to%20abide%20by%20our%20Terms%20of%20Service%20and%20any%20Additional%20Terms%3B%20(ii)%20that%20you%20are%20the%20owner%20of%20any%20material%20you%20post%20or%20submit%2C%20or%20are%20making%20your%20posting%20or%20submission%20with%20the%20express%20consent%20of%20the%20owner%20of%20the%20material%3B%20(iii)%20that%20you%20are%20making%20your%20posting%20or%20submission%20with%20the%20express%20consent%20of%20anyone%20pictured%2C%20or%20otherwise%20identified%2C%20in%20any%20material%20you%20post%20or%20submit%3B%20(iv)%20that%20you%20are%2018%20years%20of%20age%20or%20older%2C%20except%20in%20for%20certain%20of%20our%20services%20intended%20for%20use%20by%20children%20under%20the%20age%20of%2018%20(such%20as%20our%20local%20High%20School%20Sports%20Awards%20programs)%20in%20which%20case%20that%20your%20parent%20or%20legal%20guardian%20has%20read%20these%20Terms%20of%20Service%20and%20agreed%20to%20them%20and%20to%20your%20use%20of%2C%20subscription%20to%2C%20or%20registration%20for%20the%20applicable%20Service%3B%20%26nbsp%3Band%20(v)%20that%20the%20materials%20will%20not%20violate%20the%20rights%20of%2C%20or%20cause%20injury%20to%2C%20any%20person%20or%20entity.%3C%2Fli%3E%3Cli%3E%3Cem%3EResponsibility%20for%20What%20You%20Submit%3C%2Fem%3E.%20%26nbsp%3BYou%20are%20solely%20responsible%20for%20what%20you%20post%20on%20User%20Content%20Features.%20We%20are%20not%20responsible%20for%20the%20speech%2C%20content%2C%20messages%2C%20information%20or%20files%20that%20you%20or%20others%20may%20transmit%2C%20post%20or%20otherwise%20provide%20on%20or%20through%20the%20Site.%3C%2Fli%3E%3Cli%3E%3Cem%3EOur%20Rights%2C%20But%20Not%20Obligations%2C%20Regarding%20User%20Content%20Features%3C%2Fem%3E.%20You%20understand%20that%20we%20have%20no%20obligation%20to%20monitor%20any%20User%20Content%20Features.%20However%2C%20we%20reserve%20the%20right%20at%20all%20times%2C%20in%20our%20sole%20discretion%2C%20to%20screen%20content%20submitted%20by%20users%20and%20to%20edit%2C%20move%2C%20delete%2C%20and%2For%20refuse%20to%20accept%20any%20content%20that%20in%20our%20judgment%20violates%20these%20Terms%20of%20Service%20or%20any%20Additional%20Terms%2C%20or%20is%20otherwise%20unacceptable%20or%20inappropriate%2C%20whether%20for%20legal%20or%20any%20other%20reasons.%3C%2Fli%3E%3C%2Fol%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-f0410150-efd4-4ff8-a5c8-c200cf982129%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E4.%20Access%3B%20Registration%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Col%20id%3D%22isPasted%22%3E%3Cli%3E%3Cem%3ELogin%20Credentials%3C%2Fem%3E.%20%26nbsp%3BAny%20registration%20or%20account%20creation%20to%20use%20the%20Site%20or%20User%20Content%20Features%20requires%20you%20to%20create%20login%20credentials.%20%26nbsp%3BYour%20login%20credentials%20can%20be%20created%20by%20(i)%20selecting%20a%20password%20and%20providing%20an%20e-mail%20address%20or%20(ii)%20by%20linking%20another%20account%2C%20such%20as%20your%20Apple%2C%20Facebook%20or%20Google%20accounts.%20We%20reserve%20the%20right%20to%20reject%20or%20terminate%20the%20use%20of%20any%20username%20that%20we%20deem%20offensive%20or%20inappropriate.%3C%2Fli%3E%3Cli%3E%3Cem%3EAdditional%20Registration%20Information%3C%2Fem%3E.%20%26nbsp%3BTo%20access%20or%20participate%20in%20certain%20User%20Content%20Features%2C%20we%20may%20ask%20you%20to%20provide%20certain%20demographic%20information%20including%20your%20gender%2C%20year%20of%20birth%2C%20zip%20code%20and%20country%20in%20addition%20to%20the%20information%20requested%20in%20Section%204.1%20of%20these%20Terms%20of%20Service.%3C%2Fli%3E%3Cli%3E%3Cem%3EComplete%20and%20Accurate%20Information%3C%2Fem%3E.%20%26nbsp%3BYou%20agree%20to%20provide%20true%2C%20accurate%2C%20current%20and%20complete%20information%20about%20yourself%20as%20prompted%20by%20the%20Site's%20registration%20form.%20%26nbsp%3BWe%20may%20also%20request%20that%20you%20verify%20and%20update%20your%20account%20or%20contact%20information.%20If%20we%20have%20reasonable%20grounds%20to%20suspect%20that%20such%20information%20is%20untrue%2C%20inaccurate%2C%20incomplete%20or%20not%20current%2C%20we%20have%20the%20right%20to%20suspend%20or%20terminate%20your%20account%20and%20refuse%20any%20and%20all%20current%20or%20future%20use%20of%20the%20Site%20(or%20any%20portion%20thereof).%3C%2Fli%3E%3Cli%3E%3Cem%3ECredentials%20Are%20Only%20for%20You%3C%2Fem%3E.%20%26nbsp%3BOnly%20you%20may%20use%20your%20registration%20or%20login%20credentials%2C%20and%20you%20may%20not%20share%20your%20registration%20login%20credentials%20with%20anyone%20else.%20%26nbsp%3BWe%20may%20cancel%20or%20suspend%20your%20access%20to%20the%20services%20if%20you%20share%20your%20login%20credentials.%20You%20are%20responsible%20for%20maintaining%20the%20confidentiality%20of%20the%20password%20and%20account%2C%20as%20well%20as%20all%20activities%20(whether%20by%20you%20or%20by%20others)%20that%20occur%20under%20your%20password%20or%20account.%20You%20agree%20to%20notify%20us%20immediately%20of%20any%20unauthorized%20use%20of%20your%20password%20or%20account%20or%20any%20other%20breach%20of%20security%2C%20and%20to%20ensure%20that%20you%20exit%20from%20your%20account%20at%20the%20end%20of%20each%20session.%20%26nbsp%3BWe%20cannot%20and%20will%20not%20be%20liable%20for%20any%20loss%20or%20damage%20arising%20from%20your%20failure%20to%20protect%20your%20password%20or%20account%20information.%3C%2Fli%3E%3Cli%3E%3Cem%3EConsent%20to%20Notify%20You%3C%2Fem%3E.%20%26nbsp%3BYou%20consent%20to%20receive%20notifications%20from%20us%20electronically%20at%20the%20e-mail%20address%20you%20provide%20to%20us.%20You%20agree%20that%20all%20notices%2C%20disclosures%2C%20and%20other%20communications%20that%20we%20provide%20to%20you%20electronically%20satisfy%20any%20legal%20requirement%20that%20such%20communications%20be%20in%20writing.%20You%20agree%20that%20you%20have%20the%20ability%20to%20store%20such%20electronic%20communications%20such%20that%20they%20remain%20accessible%20to%20you%20in%20an%20unchanged%20form.%3C%2Fli%3E%3Cli%3E%3Cem%3ELogin%20Credentials%20for%20Group%20Subscriptions%3C%2Fem%3E.%20%26nbsp%3BIf%20your%20access%20to%20the%20Site%20has%20been%20provided%20by%20or%20through%20a%20third%20party%20group%20subscription%20(for%20example%2C%20your%20employer%20or%20an%20educational%20institution%20at%20which%20you%20are%20a%20student)%2C%20the%20group%20subscriber%20may%20have%20provided%20us%20with%20information%20about%20you%20so%20that%20we%20can%20provide%20you%20with%20access%20to%20the%20services%20and%20identify%20you%20as%20an%20authorized%20user%20under%20the%20applicable%20group%20subscription%20(such%20as%20your%20IP%20address%2C%20email%20address%20or%20name).%26nbsp%3B%3C%2Fli%3E%3C%2Fol%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-a4cbceb5-b1b9-4a52-934f-a78b65b6696d%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E5.%20Privacy%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%20id%3D%22isPasted%22%3EOur%20use%20of%20any%20information%20you%20provide%20to%20us%20in%20connection%20with%20the%20use%20of%20the%20Site%2C%20or%20as%20part%20of%20any%20registration%20process%2C%20is%20governed%20by%20our%3Ca%20href%3D%22%2Fprivacy%22%20rel%3D%22nofollow%22%3E%20Privacy%20Policy%3C%2Fa%3E%2C%20which%20is%20included%20and%20fully%20incorporated%20into%20these%20Terms%20of%20Service%20and%20any%20Additional%20Terms.%26nbsp%3B%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-5198e0fa-86b2-4338-9639-ae071d317b3f%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E6.%20Online%20Commerce%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%20id%3D%22isPasted%22%3ECertain%20sections%20of%20the%20Site%20may%20allow%20you%20to%20purchase%20different%20types%20of%20products%20and%20services%20online%20that%20are%20provided%20either%20by%20us%20or%20by%20third%20parties.%3C%2Fp%3E%3Cp%3EFor%20products%20and%20services%20provided%20by%20us%2C%20we%20may%20engage%20%26nbsp%3Bthird-party%20partners%20and%20service%20providers%20to%20support%20the%20e-commerce%20functionality%2C%20such%20as%20ordering%20functionality%2C%20payment%20and%20fulfillment.%20The%20terms%20of%20use%20and%20privacy%20policy%20applicable%20to%20such%20e-commerce%20activities%20will%20be%20designated%20on%20the%20relevant%20e-commerce%20page%2C%20and%20may%20be%20the%20terms%20of%20use%20or%20privacy%20policy%20of%20the%20third-party%20partner%20or%20provider%2C%20even%20if%20the%20e-commerce%20page%20is%20branded%20USA%20TODAY%20or%20one%20of%20other%20brands.%3C%2Fp%3E%3Cp%3EFor%20third-party%20products%20and%20services%2C%20we%20are%20not%20responsible%20for%20the%20quality%2C%20accuracy%2C%20timeliness%2C%20reliability%2C%20fulfillment%20or%20any%20other%20aspect%20of%20these%20third-party%20products%20and%20services.%20If%20you%20make%20a%20purchase%20from%20a%20merchant%20on%20our%20Site%2C%20or%20on%20a%20third-party%20website%20that%20you%20have%20accessed%20via%20a%20link%20on%20our%20Site%2C%20the%20information%20obtained%20during%20your%20visit%20to%20that%20merchant's%20online%20store%20or%20site%2C%20and%20the%20information%20that%20you%20give%20as%20part%20of%20the%20transaction%2C%20such%20as%20your%20credit%20card%20number%20and%20contact%20information%2C%20may%20be%20collected%20by%20both%20the%20merchant%20and%20us.%20A%20merchant%20may%20have%20privacy%20and%20data%20collection%20practices%20that%20are%20different%20from%20ours.%20We%20have%20no%20responsibility%20or%20liability%20for%20a%20merchant%E2%80%99s%20policies%2C%20and%20you%20should%20take%20care%20to%20read%20such%20policies.%3C%2Fp%3E%3Cp%3EIn%20addition%2C%20when%20you%20purchase%20products%20or%20services%20on%20or%20through%20the%20Site%2C%20you%20may%20be%20subject%20to%20additional%20terms%20and%20conditions%20that%20specifically%20apply%20to%20your%20purchase%20or%20use%20of%20such%20products%20or%20services.%20For%20more%20information%20regarding%20a%20merchant%2C%20its%20online%20store%2C%20its%20privacy%20policies%2C%20and%2For%20any%20additional%20terms%20and%20conditions%20that%20may%20apply%2C%20visit%20that%20merchant's%20website%20and%20click%20on%20its%20information%20links%20or%20contact%20the%20merchant%20directly.%20You%20release%20us%20and%20our%20affiliates%20from%20any%20damages%20that%20you%20incur%2C%20and%20agree%20not%20to%20assert%20any%20claims%20against%20us%20or%20any%20of%20our%20affiliates%2C%20arising%20from%20your%20purchase%20or%20use%20of%20any%20products%20or%20services%20made%20available%20by%20third%20parties%20through%20the%20Site.%3C%2Fp%3E%3Cp%3EYou%20agree%20to%20pay%20any%20prices%2C%20fees%20and%20taxes%20for%20all%20purchases%20made%20by%20you%20or%20someone%20acting%20on%20your%20behalf%20through%20the%20Site.%20You%20agree%20to%20use%20the%20Site%2C%20and%20to%20purchase%20services%20or%20products%20through%20the%20Site%2C%20for%20legitimate%2C%20non-commercial%20purposes%20only.%20You%20also%20agree%20not%20to%20make%20any%20purchases%20for%20speculative%2C%20false%20or%20fraudulent%20purposes%20or%20for%20the%20purpose%20of%20anticipating%20demand%20for%20a%20particular%20product%20or%20service.%20You%20agree%20to%20only%20purchase%20goods%20or%20services%20for%20yourself%20or%20for%20another%20person%20for%20whom%20you%20are%20legally%20permitted%20to%20do%20so.%20When%20making%20a%20purchase%20for%20a%20third-party%20that%20requires%20you%20to%20submit%20the%20third-party's%20personal%20information%20to%20us%20or%20a%20merchant%2C%20you%20represent%20that%20you%20have%20obtained%20the%20express%20consent%20of%20such%20third-party%20to%20provide%20such%20third-party's%20personal%20information.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-2e924f93-d5f4-4a98-a45f-fdbec18e9c37%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E7.%20Fees%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%3EWe%20will%20obtain%20your%20prior%20agreement%20to%20pay%20fees%20for%20services%20before%20you%20are%20charged.%20%26nbsp%3BYou%20must%20pay%20any%20such%20fees%20and%20charges%20incurred%2C%20as%20well%20as%20any%20applicable%20taxes%2C%20through%20your%20account%20at%20the%20rates%20in%20effect%20for%20the%20billing%20period%20in%20which%20such%20fees%20and%20charges%20are%20incurred%20You%20may%20cancel%20your%20account%20in%20accordance%20with%20the%20cancellation%20terms%20for%20the%20specific%20services%20purchased.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-7c8aced5-2309-47cd-82ab-12df892e7fbf%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E8.%20Advertisements%3B%20Self-Service%20Portals%3B%20Classifieds%3B%20Real%20Estate%3B%20Job%20Postings%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Col%20id%3D%22isPasted%22%3E%3Cli%3E%3Cem%3EGeneral%3C%2Fem%3E.%3Col%20style%3D%22list-style-type%3Alower-roman%3B%22%3E%3Cli%3EWe%20shall%20not%20be%20liable%20for%20any%20loss%20or%20expense%20that%20results%20from%20an%20error%20in%20or%20omission%20of%20an%20advertisement.%20No%20refunds%20for%20early%20cancellation%20of%20order.%3C%2Fli%3E%3Cli%3EWe%20reserve%20the%20right%20to%20edit%2C%20refuse%2C%20reject%2C%20classify%20or%20cancel%20any%20ad%20at%20any%20time.%20Errors%20must%20be%20reported%20on%20the%20first%20day%20of%20publication.%3C%2Fli%3E%3Cli%3ERates%20and%20specifications%20for%20any%20advertisement%20are%20subject%20to%20change.%3C%2Fli%3E%3C%2Fol%3E%3C%2Fli%3E%3Cli%3E%3Cem%3EUsing%20Our%20Self-Service%20Ad%20Portals%3C%2Fem%3E.%3Col%20style%3D%22list-style-type%3Alower-roman%3B%22%3E%3Cli%3ESubmission%20and%20Definitions.%3Cbr%3EWhen%20you%20submit%20an%20ad%20through%20any%20of%20our%20self-service%20ad%20portals%20(each%2C%20an%20%E2%80%9C%3Cstrong%3EAd%20Portal%E2%80%9D)%2C%3C%2Fstrong%3E%20whether%20by%20uploading%20a%20completed%20ad%20or%20creating%20one%20using%20our%20image%20library%2C%20the%20materials%20you%20provide%20are%20referred%20to%20as%20%E2%80%9C%3Cstrong%3EAdvertiser%20Content%3C%2Fstrong%3E%E2%80%9D.%20Any%20additional%20elements%20used%20in%20the%20creation%20of%20the%20ad%2C%20such%20as%20images%20from%20our%20image%20library%2C%20design%20elements%2C%20creative%20work%2C%20graphics%2C%20fonts%2C%20and%20other%20materials%20provided%20by%20us%2C%20are%20referred%20to%20as%20%E2%80%9C%3Cstrong%3EPublisher%20Content%3C%2Fstrong%3E.%E2%80%9D%20Together%2C%20the%20Advertiser%20Content%20and%20Publisher%20Content%20are%20the%20%E2%80%9C%3Cstrong%3EGenerated%20Ad%3C%2Fstrong%3E.%E2%80%9D%3C%2Fli%3E%3Cli%3E%3Cem%3EOwnership%20and%20Rights.%26nbsp%3B%3C%2Fem%3E%3Cbr%3EYou%20agree%20that%20the%20Generated%20Ad%2C%20as%20it%20appears%20on%20the%20Site%2C%20becomes%20our%20property.%20You%20assign%20to%20us%20all%20ownership%20rights%20in%20the%20Generated%20Ad%20including%20any%20copyright%20interest%2C%20except%20for%20any%20trademarks%20owned%20by%20you%20or%20third%20parties.%3C%2Fli%3E%3Cli%3E%3Cem%3EPublication%20Terms.%26nbsp%3B%3C%2Fem%3E%3Cbr%3ESubmitting%20an%20advertisement%20does%20not%20guarantee%20publication.%20Likewise%2C%20publication%20does%20not%20imply%20a%20commitment%20to%20continued%20publication.%20We%20accept%20only%20standard%20abbreviations%20and%20require%20proper%20punctuation.%20We%20reserve%20the%20right%20to%20edit%2C%20reclassify%2C%20revise%2C%20remove%2C%20reject%2C%20or%20cancel%20any%20advertisement%20at%20our%20sole%20discretion.%3C%2Fli%3E%3C%2Fol%3E%3C%2Fli%3E%3Cli%3EAdvertising%20Rates%20and%20Classified%20Standard%20Rates.%20Your%20purchase%20of%20classified%20ads%20will%20be%20billed%20at%20USA%20TODAY%20Co.'s%20standard%20rates%2C%20copies%20of%20which%20are%20available%20from%20our%20advertising%20department.%20USA%20TODAY%20Co.%20reserves%20the%20right%20to%20modify%20its%20rates%20and%20fees%2C%20including%20increasing%20its%20standard%20rates%2C%20at%20any%20time%20and%20from%20time%20to%20time.%20USA%20TODAY%20Co.%20will%20provide%20you%20with%20at%20least%2030%20days'%20prior%20written%20notice%20of%20any%20rate%20or%20fee%20increase.%20Other%20Advertising.%20Your%20purchase%20of%20other%20advertising%20will%20be%20quoted%20prior%20to%20purchase.%3C%2Fli%3E%3Cli%3E%3Cem%3EReal%20Estate%20Advertisements%3B%20Equal%20Housing%20Opportunity%3C%2Fem%3E.%20%26nbsp%3BThe%20Federal%20Fair%20Housing%20Act%20makes%20it%20illegal%20to%20advertise%20%22any%20preference%2C%20limitation%2C%20or%20discrimination%20because%20of%20race%2C%20color%2C%20religion%2C%20sex%2C%20handicap%2C%20familial%20status%2C%20or%20national%20origin%2C%20or%20intention%20to%20make%20any%20such%20preference%2C%20limitation%2C%20or%20discrimination.%22%20%26nbsp%3BState%20law%20may%20also%20forbid%20discrimination%20based%20on%20these%20factors%20and%20others.%20We%20will%20not%20knowingly%20accept%20any%20advertising%20for%20real%20estate%20which%20is%20in%20violation%20of%20the%20law.%20All%20persons%20are%20hereby%20informed%20that%20all%20dwellings%20advertised%20are%20available%20on%20an%20equal%20opportunity%20basis.%20To%20report%20discrimination%2C%20call%20the%20U.S.%20Department%20of%20Housing%20and%20Urban%20Development%20at%20800-669-9777.%3C%2Fli%3E%3Cli%3E%3Cem%3EJob%20Listings%3C%2Fem%3E.%3Cstrong%3E%26nbsp%3B%26nbsp%3B%3C%2Fstrong%3E%20Our%20Site%20may%20permit%20users%20to%20post%2C%20and%20search%20for%2C%20job%20openings.%20We%20do%20not%20knowingly%20accept%20listings%20regarding%20employment%20that%20are%20not%20for%20bona%20fide%20job%20opportunities.%20%26nbsp%3BWe%20also%20do%20not%20knowingly%20accept%20listings%20that%20discriminate%20or%20intend%20to%20discriminate%20on%20any%20illegal%20basis%2C%20or%20that%20are%20otherwise%20illegal.%20If%20you%20think%20that%20a%20listing%20posted%20on%20our%20Site%20discriminates%20on%20any%20illegal%20basis%2C%20or%20is%20otherwise%20illegal%2C%20please%20%3Ca%20href%3D%22https%3A%2F%2Fhelp.palmbeachpost.com%2Fcontact-us%2F%22%20class%3D%22ot-rdr-link%20ot-rdr-link-updated%22%20rel%3D%22nofollow%22%3Econtact%20us%3C%2Fa%3E.%20We%20encourage%20you%20to%20investigate%20fully%20and%20understand%20all%20aspects%20of%20any%20job%20you%20are%20considering.%3C%2Fli%3E%3Cli%3E%3Cem%3EErrors%3C%2Fem%3E.%20%26nbsp%3B%20Descriptions%2C%20pricing%20and%20other%20information%20about%20a%20product%20or%20service%20may%20not%20be%20correct%20at%20the%20time%20it%20appears%20in%20an%20advertisement%20or%20other%20material%20in%20the%20Site.%20%26nbsp%3BThis%20may%20be%20due%20to%20issues%2C%20including%20typographical%20errors%2C%20technology%20errors%2C%20errors%20in%20pricing%20or%20information%20about%20the%20products%20or%20services%20received%20from%20the%20advertiser.%20%26nbsp%3BYou%20agree%20we%20are%20not%20responsible%20for%20such%20errors%2C%20incorrect%20information%20or%20discrepancies.%3C%2Fli%3E%3C%2Fol%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-a50e9f09-ef47-4b51-9d90-3b73e3781fd3%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E9.%20Text%20Communications%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%20id%3D%22isPasted%22%3EWhen%20you%20sign%20up%20to%20receive%20text%20messages%20from%20our%20Site%20(such%20as%20relating%20to%20your%20account%2C%20promotional%20offers%20from%20us%20and%20our%20partners%2C%20weather%20information%2C%20and%20event%20updates)%2C%20we%20will%20collect%20your%20name%20and%20mobile%20phone%20number%20and%20the%20other%20information%20identified%20in%20the%20form%2C%20as%20well%20as%20any%20information%20you%20provide%20to%20us%20via%20texts%20that%20you%20send%20to%20us.%20%26nbsp%3BWe%20will%20only%20send%20you%20texts%20if%20you%20have%20first%20opted%20in%20to%20receiving%20them%20or%20as%20permitted%20by%20law%20for%20transactional%20communications%20where%20you%20have%20provided%20us%20with%20your%20mobile%20number.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EYou%20may%20reply%20STOP%20to%20any%20text%20message%20at%20any%20time%20to%20opt%20out%20from%20receiving%20further%20texts.%3C%2Fstrong%3E%20%26nbsp%3B%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-38800729-6ace-4c6a-8dce-6ea5ae15165e%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E10.%20Chat%20Features%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%3EYou%20may%20engage%20with%20us%20via%20chat%20functions%20on%20our%20websites%2C%20including%20automated%20chat%20bots.%20We%20collect%20information%20that%20you%20submit%20through%20the%20chat%2C%20such%20as%20your%20name%2C%20account%20number%20(if%20you%20have%20one)%20and%20contact%20information.%20%26nbsp%3BBy%20using%20any%20of%20our%20chat%20features%2C%20you%20agree%20that%20(a)%20chat%20sessions%20may%20be%20recorded%20and%2For%20transcribed%20to%20facilitate%20follow%20up%20on%20your%20questions%20or%20comments%2C%20for%20training%20and%20quality%20control%20purposes%2C%20to%20improve%20our%20services%20and%20for%20any%20other%20lawful%20purpose%20and%20(b)%20the%20chat%20information%2C%20recording%20and%20transcription%20may%20be%20shared%20with%20third%20parties%20via%20technologies%20that%20track%20your%20interaction%20with%20the%20chat%20and%20via%20other%20means%20such%20as%20direct%20sharing%20of%20files.%20%26nbsp%3B%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-67515dcf-5239-49d0-aab7-24777c0dd380%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E11.%20Limitation%20on%20Use%20of%20Company%20Directories%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%3EThe%20information%20contained%20in%20any%20company%20directories%20that%20may%20be%20provided%20on%20the%20Site%20is%20provided%20for%20business%20lookup%20purposes%20and%20is%20not%20to%20be%20used%20for%20marketing%20or%20telemarketing%20applications.%20This%20information%20may%20not%20be%20copied%20or%20redistributed%20and%20is%20provided%20%22AS%20IS%22%20without%20warranty%20of%20any%20kind.%20In%20no%20event%20will%20we%20or%20our%20suppliers%20be%20liable%20in%20any%20way%20with%20regard%20to%20such%20information.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-a4fcf614-57e5-416d-a5a0-8522aa8fb3ba%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E12.%20Modifications%20to%2C%20or%20Discontinuation%20of%2C%20the%20Site%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%3EWe%20reserve%20the%20right%20at%20any%20time%20and%20from%20time%20to%20time%20to%20modify%20or%20discontinue%2C%20temporarily%20or%20permanently%2C%20the%20Site%2C%20or%20any%20portion%20thereof%2C%20with%20or%20without%20notice.%20You%20agree%20that%20we%20will%20not%20be%20liable%20to%20you%20or%20to%20any%20third-party%20for%20any%20modification%2C%20suspension%20or%20discontinuance%20of%20the%20Site%20or%20any%20portion%20thereof.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-3c4c06e1-1f00-409f-9e7e-d5262e75295a%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E13.%20Disclaimers%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Col%20id%3D%22isPasted%22%3E%3Cli%3E%3Cem%3EThird-Party%20Links.%3C%2Fem%3E%20The%20Site%20may%20contain%20third-party%20owned%20content%20and%20links%20to%20other%20websites%20(%E2%80%9C%3Cstrong%3EThird-Party%20Platforms%3C%2Fstrong%3E%E2%80%9D)%2C%20such%20as%20Facebook%2C%20LinkedIn%2C%20YouTube%20and%20other%20platforms.%20%26nbsp%3BAlthough%20we%20may%20receive%20fees%20for%20such%20links%2C%20our%20linking%20to%20such%20third-party%20sites%20does%20not%20imply%20an%20endorsement%20or%20sponsorship%20of%20such%20sites%2C%20or%20the%20information%2C%20products%20or%20services%20offered%20on%20or%20through%20the%20sites.%20In%20addition%2C%20neither%20we%20nor%20our%20parent%20or%20subsidiary%20companies%20nor%20any%20of%20our%20respective%20affiliates%20operate%20or%20control%20in%20any%20respect%20any%20information%2C%20products%20or%20services%20that%20third%20parties%20may%20provide%20on%20or%20through%20the%20Site%20or%20on%20websites%20linked%20to%20by%20us%20on%20the%20Site.%3C%2Fli%3E%3Cli%3E%3Cstrong%3E%3Cem%3ENO%20WARRANTIES.%3C%2Fem%3E%26nbsp%3B%20THE%20INFORMATION%2C%20PRODUCTS%20AND%20SERVICES%20OFFERED%20ON%20OR%20THROUGH%20THE%20SITE%20AND%20ANY%20THIRD-PARTY%20SITES%20ARE%20PROVIDED%20%22AS%20IS%22%20AND%20WITHOUT%20WARRANTIES%20OF%20ANY%20KIND%20EITHER%20EXPRESS%20OR%20IMPLIED.%20TO%20THE%20FULLEST%20EXTENT%20PERMISSIBLE%20PURSUANT%20TO%20APPLICABLE%20LAW%2C%20WE%20DISCLAIM%20ALL%20WARRANTIES%2C%20EXPRESS%20OR%20IMPLIED%2C%20INCLUDING%2C%20BUT%20NOT%20LIMITED%20TO%2C%20IMPLIED%20WARRANTIES%20OF%20MERCHANTABILITY%20AND%20FITNESS%20FOR%20A%20PARTICULAR%20PURPOSE.%20WE%20DO%20NOT%20WARRANT%20THAT%20THE%20SITE%20OR%20ANY%20OF%20ITS%20FUNCTIONS%20WILL%20BE%20UNINTERRUPTED%20OR%20ERROR-FREE%2C%20THAT%20DEFECTS%20WILL%20BE%20CORRECTED%2C%20OR%20THAT%20ANY%20PART%20OF%20THIS%20SITE%2C%20INCLUDING%20WITHOUT%20LIMITATION%2C%20USER%20CONTENT%20FEATURES%2C%20OR%20THE%20SERVERS%20THAT%20MAKE%20IT%20AVAILABLE%2C%20ARE%20FREE%20OF%20VIRUSES%20OR%20OTHER%20HARMFUL%20COMPONENTS.%26nbsp%3B%3C%2Fstrong%3E%3Cstrong%3E%3Cbr%3EWE%20DO%20NOT%20WARRANT%20OR%20MAKE%20ANY%20REPRESENTATIONS%20REGARDING%20THE%20USE%20OR%20THE%20RESULTS%20OF%20THE%20USE%20OF%20THE%20SITE%20OR%20MATERIALS%20ON%20THIS%20SITE%20OR%20ON%20THIRD-PARTY%20SITES%20IN%20TERMS%20OF%20THEIR%20CORRECTNESS%2C%20ACCURACY%2C%20TIMELINESS%2C%20RELIABILITY%20OR%20OTHERWISE.%26nbsp%3B%3C%2Fstrong%3E%3Cstrong%3E%3Cbr%3EYOU%20ACKNOWLEDGE%20THAT%20THE%20PROVISIONS%20OF%20THIS%20SECTION%20ARE%20A%20MATERIAL%20INDUCEMENT%20AND%20CONSIDERATION%20TO%20US%20TO%20GRANT%20THE%20LICENSE%20CONTAINED%20IN%20THIS%20TERMS%20OF%20SERVICE%20AND%20TO%20PROVIDE%20YOU%20WITH%20ACCESS%20TO%20THE%20SITE%20AND%20SERVICES.%3C%2Fstrong%3E%3C%2Fli%3E%3Cli%3E%3Cem%3E%26nbsp%3BHardware%3B%20Software%3B%20Connections.%26nbsp%3B%3C%2Fem%3EYou%20must%20provide%20and%20are%20solely%20responsible%20for%20all%20hardware%20and%2For%20software%20necessary%20to%20access%20the%20Site.%20You%20assume%20the%20entire%20cost%20of%20and%20responsibility%20for%20any%20damage%20to%2C%20and%20all%20necessary%20maintenance%2C%20repair%20or%20correction%20of%2C%20that%20hardware%20and%2For%20software.%20%26nbsp%3BYou%20acknowledge%20that%20by%20using%20the%20Site%2C%20you%20may%20incur%20charges%20from%20your%20wireless%20carrier%2C%20internet%20service%20provider%20or%20other%20method%20of%20internet%20or%20data%20access%2C%20and%20that%20payment%20of%20any%20such%20charges%20will%20be%20your%20sole%20responsibility.%20%26nbsp%3BYou%20agree%20that%20your%20use%20of%20the%20Site%20will%20be%20in%20accordance%20with%20all%20requirements%20of%20your%20wireless%20carrier%2C%20internet%20service%20provider%20and%20other%20method%20of%20internet%20or%20data%20access.%20%26nbsp%3BWe%20do%20not%20control%20network%20access.%20Your%20use%20of%20these%20networks%20may%20not%20be%20secure%20and%20may%20expose%20your%20personal%20information%20sent%20over%20such%20networks.%3C%2Fli%3E%3Cli%3E%3Cstrong%3E%26nbsp%3B%3C%2Fstrong%3E%3Cem%3EThe%20Site%20Is%20Not%20for%20Commercial%20Use%20or%20Investing.%3C%2Fem%3E%26nbsp%3B%20The%20Site%20is%20provided%20for%20informational%20purposes%20only%2C%20and%20is%20not%20intended%20for%20trading%20or%20investing%20purposes%2C%20or%20for%20commercial%20use.%20Stock%20and%20mutual%20fund%20quotes%2C%20and%20related%20financial%20news%20stories%20may%20be%20delayed%20at%20least%2020%20minutes%2C%20as%20may%20be%20required%20by%20the%20stock%20exchanges%20and%2For%20the%20financial%20information%20services.%20The%20Site%20should%20not%20be%20used%20in%20any%20high%20risk%20activities%20where%20damage%20or%20injury%20to%20persons%2C%20property%2C%20environment%2C%20finances%20or%20business%20may%20result%20if%20an%20error%20occurs.%20You%20expressly%20assume%20all%20risk%20for%20such%20use.%3C%2Fli%3E%3Cli%3E%3Cstrong%3E%26nbsp%3B%3C%2Fstrong%3E%3Cem%3EWe%20Are%20Not%20Responsible%20for%20Your%20Interactions%20With%20Others.%3C%2Fem%3E%26nbsp%3B%20Your%20interactions%20with%20companies%2C%20organizations%20and%2For%20individuals%20found%20on%20or%20through%20our%20Site%2C%20including%20any%20purchases%2C%20transactions%2C%20or%20other%20dealings%2C%20and%20any%20terms%2C%20conditions%2C%20warranties%20or%20representations%20associated%20with%20such%20dealings%2C%20are%20solely%20between%20you%20and%20such%20companies%2C%20organizations%20and%2For%20individuals.%20You%20agree%20that%20we%20will%20not%20be%20responsible%20or%20liable%20for%20any%20loss%20or%20damage%20of%20any%20sort%20incurred%20as%20the%20result%20of%20any%20such%20dealings.%20You%20also%20agree%20that%2C%20if%20there%20is%20a%20dispute%20between%20users%20of%20this%20Site%2C%20or%20between%20a%20user%20and%20any%20third-party%2C%20we%20are%20under%20no%20obligation%20to%20become%20involved%2C%20and%20you%20agree%20to%20release%20us%20and%20our%20affiliates%20from%20any%20claims%2C%20demands%20and%20damages%20of%20every%20kind%20or%20nature%2C%20known%20or%20unknown%2C%20suspected%20and%20unsuspected%2C%20disclosed%20and%20undisclosed%2C%20arising%20out%20of%20or%20in%20any%20way%20related%20to%20such%20dispute%20and%2For%20our%20Site.%3C%2Fli%3E%3C%2Fol%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-0b430bf4-1664-46e0-8572-5d9df5d77663%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E14.%20Limitation%20of%20Liability%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%3E%3Cstrong%20id%3D%22isPasted%22%3EUNDER%20NO%20CIRCUMSTANCES%2C%20INCLUDING%2C%20BUT%20NOT%20LIMITED%20TO%2C%20NEGLIGENCE%2C%20WILL%20WE%20OR%20OUR%20SUBSIDIARIES%2C%20PARENT%20COMPANIES%20OR%20AFFILIATES%20BE%20LIABLE%20FOR%20ANY%20DIRECT%2C%20INDIRECT%2C%20INCIDENTAL%2C%20SPECIAL%20OR%20CONSEQUENTIAL%20DAMAGES%20THAT%20RESULT%20FROM%20THE%20USE%20OF%2C%20OR%20THE%20INABILITY%20TO%20USE%2C%20THIS%20SITE%2C%20INCLUDING%20ITS%20MATERIALS%2C%20PRODUCTS%2C%20OR%20SERVICES%2C%20OR%20THIRD-PARTY%20MATERIALS%2C%20PRODUCTS%2C%20OR%20SERVICES%20MADE%20AVAILABLE%20THROUGH%20THIS%20SITE%2C%20EVEN%20IF%20WE%20ARE%20ADVISED%20BEFOREHAND%20OF%20THE%20POSSIBILITY%20OF%20SUCH%20DAMAGES%2C%20AND%20OUR%20MAXIMUM%20LIABILITY%20UNDER%20THIS%20AGREEMENT%20WILL%20BE%20THE%20GREATER%20OF%20(A)%20THE%20FEES%20YOU%20PAID%20FOR%20ANY%20SERVICES%20OR%20PRODUCT%20RELATED%20TO%20THIS%20AGREEMENT%20IN%20CONNECTION%20WITH%20OUR%20SERVICE%2C%20AND%20(B)%20%24100.%20(BECAUSE%20SOME%20STATES%20DO%20NOT%20ALLOW%20THE%20EXCLUSION%20OR%20LIMITATION%20OF%20CERTAIN%20CATEGORIES%20OF%20DAMAGES%2C%20THE%20ABOVE%20LIMITATION%20MAY%20NOT%20APPLY%20TO%20YOU.%20IN%20SUCH%20STATES%2C%20OUR%20LIABILITY%20AND%20THE%20LIABILITY%20OF%20OUR%20SUBSIDIARIES%2C%20PARENT%20COMPANIES%20AND%20AFFILIATES%2C%20IS%20LIMITED%20TO%20THE%20FULLEST%20EXTENT%20PERMITTED%20BY%20SUCH%20STATE%20LAW.)%20YOU%20SPECIFICALLY%20ACKNOWLEDGE%20AND%20AGREE%20THAT%20WE%20ARE%20NOT%20LIABLE%20FOR%20ANY%20DEFAMATORY%2C%20OFFENSIVE%20OR%20ILLEGAL%20CONDUCT%20OF%20ANY%20USER.%20IF%20YOU%20ARE%20DISSATISFIED%20WITH%20THE%20SITE%2C%20OR%20ANY%20MATERIALS%2C%20PRODUCTS%2C%20OR%20SERVICES%20ON%20THE%20SITE%2C%20OR%20WITH%20ANY%20OF%20THE%20SITE'S%20TERMS%20AND%20CONDITIONS%2C%20YOUR%20SOLE%20AND%20EXCLUSIVE%20REMEDY%20IS%20TO%20DISCONTINUE%20USING%20THE%20SITE.%3C%2Fstrong%3E%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-51f84602-46cb-4b73-b8d1-952bcad1e038%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E15.%20Indemnification%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%3EYou%20agree%20to%20indemnify%20and%20hold%20harmless%20us%2C%20our%20affiliates%2C%20and%20each%20of%20our%20and%20their%20respective%20directors%2C%20officers%2C%20managers%2C%20employees%2C%20shareholders%2C%20agents%2C%20representatives%20and%20licensors%2C%20from%20and%20against%20any%20and%20all%20losses%2C%20expenses%2C%20damages%20and%20costs%2C%20including%20reasonable%20attorneys'%20fees%2C%20that%20arise%20out%20of%20your%20use%20of%20the%20Site%2C%20uploading%20content%20through%20use%20User%20Content%20Features%2C%20providing%20Advertising%20Content%2C%20violation%20of%20these%20Terms%20of%20Service%20by%20you%20or%20any%20other%20person%20using%20your%20account%2C%20or%20your%20violation%20of%20any%20rights%20of%20another.%20%26nbsp%3BWe%20reserve%20the%20right%20to%20take%20over%20the%20exclusive%20defense%20of%20any%20claim%20for%20which%20we%20are%20entitled%20to%20indemnification%20under%20this%20section.%20In%20such%20event%2C%20you%20agree%20to%20provide%20us%20with%20such%20cooperation%20as%20is%20reasonably%20requested%20by%20us.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-72bb7c49-a568-444f-b4b4-078fe8af663d%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E16.%20Suspension%20and%20Termination%20of%20Access%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%3EIn%20addition%20to%20our%20ability%20to%20terminate%20for%20other%20reasons%20(such%20terminating%20your%20subscription%20under%20the%20Subscription%20Terms%20and%20Conditions)%2C%20you%20agree%20that%2C%20in%20our%20sole%20discretion%2C%20we%20may%20suspend%20or%20terminate%20your%20password%2C%20account%20(or%20any%20part%20thereof)%20or%20use%20of%20the%20Site%2C%20or%20any%20part%20of%20the%20Site%2C%20and%20remove%20and%20discard%20any%20materials%20that%20you%20submit%20to%20the%20Site%2C%20at%20any%20time%2C%20for%20any%20reason%2C%20without%20notice.%20You%20agree%20that%20we%20will%20not%20be%20liable%20to%20you%20or%20any%20third-party%20for%20any%20suspension%20or%20termination%20of%20your%20password%2C%20account%20(or%20any%20part%20thereof)%20or%20use%20of%20the%20Site%2C%20or%20any%20removal%20of%20any%20materials%20that%20you%20have%20submitted%20to%20the%20Site.%20If%20we%20suspend%20or%20terminate%20your%20access%20to%20and%2For%20use%20of%20the%20Site%2C%20you%20will%20continue%20to%20be%20bound%20by%20the%20Terms%20of%20Service%20that%20were%20in%20effect%20as%20of%20the%20date%20of%20your%20suspension%20or%20termination%3B%20provided%20that%20if%20during%20suspension%20any%20updates%20to%20the%20Terms%20of%20Service%20were%20made%2C%20such%20updates%20will%20apply%20upon%20reinstation.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-7ed4f29c-1fe8-4434-8e7c-ff9d2643f9be%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E17.%20Notice%20of%20Copyright%20Infringement%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%20id%3D%22isPasted%22%3EIf%20you%20are%20a%20copyright%20owner%20who%20believes%20your%20copyrighted%20material%20has%20been%20reproduced%2C%20posted%20or%20distributed%20via%20the%20Site%20in%20a%20manner%20that%20constitutes%20copyright%20infringement%2C%20please%20inform%20our%20designated%20copyright%20agent%20by%20sending%20written%20notice%20by%20U.S.%20Mail%20to%20USA%20TODAY%20Co.%2C%20Inc.%2C%20175%20Sully%E2%80%99s%20Trail%2C%20Pittsford%2C%20NY%2014534%2C%20Attn%3A%20M.%20Faris%2C%20or%20by%20email%20to%20%3Ca%20href%3D%22mailto%3Amfaris%40gannett.com%22%20rel%3D%22nofollow%22%3Elegalnotices%40gannett.com%3C%2Fa%3E.%3C%2Fp%3E%3Cp%3EPlease%20note%20that%20you%20must%20include%20all%20of%20the%20following%20information%20in%20your%20written%20notice%3A%3C%2Fp%3E%3Col%20style%3D%22list-style-type%3Alower-roman%3B%22%3E%3Cli%3Edetailed%20description%20of%20the%20copyrighted%20work%20that%20is%20allegedly%20infringed%20upon%3B%3C%2Fli%3E%3Cli%3Ea%20description%20of%20the%20location%20of%20the%20allegedly%20infringing%20material%20on%20the%20Site%3B%3C%2Fli%3E%3Cli%3Eyour%20contact%20information%2C%20including%20your%20address%2C%20telephone%20number%2C%20and%2C%20if%20available%2C%20email%20address%3B%3C%2Fli%3E%3Cli%3Ea%20statement%20by%20you%20indicating%20that%20you%20have%20a%20good-faith%20belief%20that%20the%20allegedly%20infringing%20use%20is%20not%20authorized%20by%20the%20copyright%20owner%2C%20its%20agent%2C%20or%20the%20law%3B%3C%2Fli%3E%3Cli%3Ea%20statement%20by%20you%2C%20made%20under%20penalty%20of%20perjury%2C%20affirming%20that%20the%20information%20in%20your%20notice%20is%20accurate%20and%20that%20you%20are%20authorized%20to%20act%20on%20the%20copyright%20owner's%20behalf%3B%20and%3C%2Fli%3E%3Cli%3Ean%20electronic%20or%20physical%20signature%20of%20the%20copyright%20owner%20or%20someone%20authorized%20on%20the%20owner's%20behalf%20to%20assert%20infringement%20of%20copyright%20and%20to%20submit%20the%20statement.%3C%2Fli%3E%3C%2Fol%3E%3Cp%3EPlease%20note%20that%20the%20contact%20information%20provided%20in%20this%20paragraph%20is%20for%20suspected%20copyright%20infringement%20only.%20Contact%20information%20for%20other%20matters%20is%20provided%20elsewhere%20in%20these%20Terms%20of%20Service%20or%20on%20the%20Site.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-bf309ea0-f966-4760-b1da-25a4b13d81a2%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E18.%20Restrictions%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%20id%3D%22isPasted%22%3EThe%20Site%20is%20intended%20for%20use%20for%20those%20over%20the%20age%20as%20described%20in%20Section%203.2%20of%20these%20Terms%20of%20Service%20(or%20for%20other%20applicable%20services%2C%20with%20parent%2Flegal%20guardian%20approval%20as%20described%20in%20Section%203.2%20of%20these%20Terms%20of%20Service).%20%26nbsp%3B%20%26nbsp%3B%20The%20Site%20may%20not%20comply%20with%20legal%20requirements%20of%20foreign%20countries.%20Other%20countries%20may%20have%20laws%20and%20regulatory%20requirements%20that%20differ%20from%20those%20in%20the%20U.S.%20By%20using%20this%20Site%2C%20you%20agree%20to%20the%20transfer%20and%20processing%20of%20any%20personal%20information%20you%20provide%20to%20the%20U.S.%20as%20set%20forth%20in%20the%20%3Ca%20href%3D%22%2Fprivacy%22%20rel%3D%22nofollow%22%3EPrivacy%20Policy%3C%2Fa%3E%20under%20the%20laws%20of%20the%20United%20States%20and%20the%20State%20of%20New%20York%2C%20rather%20than%20under%20the%20law%20of%20your%20home%20country.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-e860e50d-2ac6-4481-b568-60ab8eebb2f8%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E19.%20Waiver%20of%20Class%20Actions%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%20id%3D%22isPasted%22%3E%3Cstrong%3EThis%20is%20an%20important%20section%20that%20limits%20your%20right%20to%20bring%20a%20class%20action%20against%20us.%20%26nbsp%3B%3C%2Fstrong%3E%3C%2Fp%3E%3Cp%3EYou%20and%20USA%20TODAY%20Co.%20agree%20that%20each%20party%20may%20bring%20disputes%20against%20the%20other%20party%20only%20in%20an%20individual%20capacity%2C%20and%20not%20as%20a%20plaintiff%20or%20class%20member%20in%20any%20purported%20class%20or%20representative%20proceeding%2C%20including%2C%20without%20limitation%2C%20a%20federal%20or%20state%20class%20action%20lawsuit.%20However%2C%20nothing%20in%20this%20section%20limits%20your%20right%20or%20USA%20TODAY%20Co.%E2%80%99s%20right%20to%20bring%20a%20lawsuit%20against%20each%20other%20as%20an%20individual%20plaintiff.%20This%20provision%20applies%20to%20the%20maximum%20extent%20permitted%20by%20applicable%20law%20to%20all%20claims%20that%20arise%20under%2C%20in%20connection%20with%2C%20or%20relate%20to%20this%20these%20Terms%20of%20Service%2C%20or%20your%20use%20of%20Service%20or%20products.%20%26nbsp%3B%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22otnotice-section%22%20id%3D%22otnotice-section-39fb57aa-8226-4728-9176-79ad3abd687f%22%3E%3Ch2%20class%3D%22otnotice-section-header%22%3E20.%20Additional%20Legal%20Terms%3C%2Fh2%3E%3Cdiv%20class%3D%22otnotice-section-content%22%3E%3Cp%20id%3D%22isPasted%22%3EThese%20Terms%20of%20Service%2C%20with%20the%20Additional%20Terms%20referred%20to%2C%20constitute%20the%20entire%20agreement%20between%20us%20and%20you%20with%20respect%20to%20the%20subject%20matter%20contained%20in%20these%20Terms%20of%20Service%20and%20Additional%20Terms%20and%20supersede%20all%20previous%20and%20contemporaneous%20agreements%2C%20proposals%20and%20communications%2C%20written%20oral.%3C%2Fp%3E%3Cp%3EYou%20also%20may%20be%20subject%20to%20additional%20terms%20and%20conditions%20that%20may%20apply%20when%20you%20use%20the%20products%20or%20services%20of%20a%20third-party%20that%20are%20provided%20through%20the%20Site.%20In%20the%20event%20of%20any%20conflict%20between%20any%20such%20third-party%20terms%20and%20conditions%20and%20these%20Terms%20of%20Service%2C%20these%20Terms%20of%20Service%20will%20govern.%3C%2Fp%3E%3Cp%3EThese%20Terms%20of%20Service%20will%20be%20governed%20by%20and%20construed%20in%20accordance%20with%20the%20laws%20of%20the%20State%20of%20New%20York%2C%20without%20giving%20effect%20to%20any%20principles%20of%20conflicts%20of%20law.%3C%2Fp%3E%3Cp%3EThese%20Terms%20of%20Service%20are%20personal%20to%20you%2C%20and%20you%20may%20not%20assign%20it%20to%20anyone.%20If%20any%20provision%20of%20these%20Terms%20of%20Service%20are%20found%20to%20be%20unlawful%2C%20void%2C%20or%20for%20any%20reason%20unenforceable%2C%20then%20that%20provision%20will%20be%20deemed%20severable%20from%20these%20Terms%20of%20Service%20and%20will%20not%20affect%20the%20validity%20and%20enforceability%20of%20any%20remaining%20provisions.%20These%20Terms%20of%20Service%20are%20not%20intended%20to%20benefit%20any%20third-party%2C%20and%20do%20not%20create%20any%20third-party%20beneficiaries.%20Accordingly%2C%20these%20Terms%20of%20Service%20may%20only%20be%20invoked%20or%20enforced%20by%20you%20or%20us.%3C%2Fp%3E%3Cp%3EYou%20agree%20that%20regardless%20of%20any%20statute%20or%20law%20to%20the%20contrary%2C%20any%20claim%20or%20cause%20of%20action%20that%20you%20may%20have%20arising%20out%20of%20or%20related%20to%20use%20of%20the%20Site%20or%20these%20Terms%20of%20Service%20must%20be%20filed%20by%20you%20within%20one%20year%20after%20such%20claim%20or%20cause%20of%20action%20arose%20or%20be%20forever%20barred.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22otnotice-version%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fsection%3E%20%20%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%0A%20%20%20%20%3Cfooter%20class%3D%22bg-lightest-gray%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22footer-links%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22http%3A%2F%2Fhelp.palmbeachpost.com%2F%22%3EHelp%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fcm.palmbeachpost.com%2Fterms%2F%22%3ETerms%20of%20Service%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fcm.palmbeachpost.com%2Fprivacy%2F%22%3EPrivacy%20Policy%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fcm.palmbeachpost.com%2Fcalifornia-collection-notice%2F%22%3ECalifornia%20Notice%20at%20Collection%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22https%3A%2F%2Fcm.palmbeachpost.com%2Fyour-privacy-choices%2F%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2025%2012%22%20style%3D%22height%3A14px%3Bwidth%3Aauto%3Btop%3A2px%3Bposition%3Arelative%3Bmargin-right%3A4px%3B%22%3E%3Cpath%20fill%3D%22%231366FF%22%20d%3D%22M19.07%200H5.93A5.93%205.93%200%200%200%200%205.93v.115a5.93%205.93%200%200%200%205.93%205.93h13.14A5.93%205.93%200%200%200%2025%206.044v-.116A5.93%205.93%200%200%200%2019.07%200Z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M6.061%201.022a4.89%204.89%200%200%200-4.875%204.876v.14a4.89%204.89%200%200%200%204.875%204.876h5.298c.03%200%20.056-.02.063-.05l2.67-9.758a.065.065%200%200%200-.062-.083H6.062Zm14.947%206.906-1.924-1.96%201.862-1.896a.527.527%200%201%200-.751-.739l-1.849%201.883-1.849-1.883a.527.527%200%201%200-.751.739l1.862%201.896-1.924%201.96a.527.527%200%201%200%20.752.738l1.91-1.946%201.911%201.946a.525.525%200%200%200%20.745.007.527.527%200%200%200%20.007-.745h-.001Z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%231366FF%22%20d%3D%22M6.694%208.673a.527.527%200%200%201-.37-.151L4.358%206.584a.527.527%200%201%201%20.74-.75l1.56%201.537%203.25-3.846a.527.527%200%200%201%20.805.68L7.096%208.486a.528.528%200%200%201-.38.187h-.023Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3EYour%20Privacy%20Choices%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%09%09%09%09%09%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.palmbeachpost.com%2Fsubscriberguide%2F%23apps%22%3EMobile%20Apps%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%0A%09%09%09%09%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%3E%C2%A9%26nbsp%3BUSA%20TODAY%20Co.%2C%20Inc.%202026.%20All%20Rights%20Reserved.%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%3C%2Ffooter%3E%0A%20%20%20%20%0A%3C%2Fdiv%3E%0A%0A%20%20%20%20%0A%0A%0A%0A%0A%0A%0A%3Cdiv%20id%3D%22onetrust-consent-sdk%22%20data-nosnippet%3D%22true%22%3E%3Cdiv%20class%3D%22onetrust-pc-dark-filter%20ot-hide%20ot-fade-in%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "86eefde6-82d2-4bb4-ab20-c6332306fd18",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "cm.palmbeachpost.com-terms"
+}

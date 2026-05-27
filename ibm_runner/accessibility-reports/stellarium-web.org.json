@@ -1,0 +1,487 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1340,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/nav[1]/div[1]/div[1]/div[3]/a[2]",
+                "aria": "/document[1]/navigation[1]/link[2]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 88,
+                "top": -18,
+                "height": 19,
+                "width": 136
+            },
+            "snippet": "<a style=\"position: absolute; left: 80px; bottom: 81px;\" target=\"_blank\" href=\"https://itunes.apple.com/us/app/stellarium-mobile-plus-sky-map/id1458716890\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20style%3D%5C%22position%3A%20absolute%3B%20left%3A%2080px%3B%20bottom%3A%2081px%3B%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fstellarium-mobile-plus-sky-map%2Fid1458716890%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/header[1]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 308,
+                "top": 1296,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"v-app-bar__nav-icon v-btn v-btn--icon v-btn--round theme--dark v-size--default\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22v-app-bar__nav-icon%20v-btn%20v-btn--icon%20v-btn--round%20theme--dark%20v-size--default%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/header[1]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 308,
+                "top": 1296,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"v-app-bar__nav-icon v-btn v-btn--icon v-btn--round theme--dark v-size--default\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22v-app-bar__nav-icon%20v-btn%20v-btn--icon%20v-btn--round%20theme--dark%20v-size--default%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]",
+                "aria": "/document[1]/main[1]/link[2]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 455,
+                "top": 1295,
+                "height": 18,
+                "width": 58
+            },
+            "snippet": "<a class=\"tab-bt v-btn v-btn--is-elevated v-btn--has-bg v-btn--router theme--dark v-size--small\" href=\"/p/calendar\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22tab-bt%20v-btn%20v-btn--is-elevated%20v-btn--has-bg%20v-btn--router%20theme--dark%20v-size--small%5C%22%20href%3D%5C%22%2Fp%2Fcalendar%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a[2]",
+                "aria": "/document[1]/main[1]/link[3]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 455,
+                "top": 1295,
+                "height": 37,
+                "width": 85
+            },
+            "snippet": "<a class=\"tab-bt v-btn v-btn--is-elevated v-btn--has-bg v-btn--router theme--dark v-size--small\" href=\"/p/observations\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22tab-bt%20v-btn%20v-btn--is-elevated%20v-btn--has-bg%20v-btn--router%20theme--dark%20v-size--small%5C%22%20href%3D%5C%22%2Fp%2Fobservations%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/main[1]/status[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 540,
+                "top": 1311,
+                "height": 22,
+                "width": 59
+            },
+            "snippet": "<button class=\"blue--text darken-1 v-btn v-btn--text theme--dark v-size--default\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22blue--text%20darken-1%20v-btn%20v-btn--text%20theme--dark%20v-size--default%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[1]/div[1]/div[1]",
+                "aria": "/document[1]/main[1]/progressbar[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "Form control with \"progressbar\" role has no associated label",
+            "messageArgs": [
+                "progressbar"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 712,
+                "top": 1151,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<div style=\"height: 18px; width: 18px;\" class=\"v-progress-circular\" aria-valuenow=\"50\" aria-valuemax=\"100\" aria-valuemin=\"0\" role=\"progressbar\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20with%20%5C%22progressbar%5C%22%20role%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22height%3A%2018px%3B%20width%3A%2018px%3B%5C%22%20class%3D%5C%22v-progress-circular%5C%22%20aria-valuenow%3D%5C%2250%5C%22%20aria-valuemax%3D%5C%22100%5C%22%20aria-valuemin%3D%5C%220%5C%22%20role%3D%5C%22progressbar%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22progressbar%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[1]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/main[1]/progressbar[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 712,
+                "top": 1151,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg style=\"transform: rotate(-90deg);\" viewBox=\"25.714285714285715 25.714285714285715 51.42857142857143 51.42857142857143\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20style%3D%5C%22transform%3A%20rotate(-90deg)%3B%5C%22%20viewBox%3D%5C%2225.714285714285715%2025.714285714285715%2051.42857142857143%2051.42857142857143%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/div[1]",
+                "aria": "/document[1]/main[1]/progressbar[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "Form control with \"progressbar\" role has no associated label",
+            "messageArgs": [
+                "progressbar"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 712,
+                "top": 1187,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<div style=\"height: 18px; width: 18px;\" class=\"v-progress-circular\" aria-valuenow=\"55.55555555555556\" aria-valuemax=\"100\" aria-valuemin=\"0\" role=\"progressbar\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20with%20%5C%22progressbar%5C%22%20role%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22height%3A%2018px%3B%20width%3A%2018px%3B%5C%22%20class%3D%5C%22v-progress-circular%5C%22%20aria-valuenow%3D%5C%2255.55555555555556%5C%22%20aria-valuemax%3D%5C%22100%5C%22%20aria-valuemin%3D%5C%220%5C%22%20role%3D%5C%22progressbar%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22progressbar%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/main[1]/progressbar[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 712,
+                "top": 1187,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg style=\"transform: rotate(-90deg);\" viewBox=\"25.714285714285715 25.714285714285715 51.42857142857143 51.42857142857143\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20style%3D%5C%22transform%3A%20rotate(-90deg)%3B%5C%22%20viewBox%3D%5C%2225.714285714285715%2025.714285714285715%2051.42857142857143%2051.42857142857143%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[3]/div[1]/div[1]",
+                "aria": "/document[1]/main[1]/progressbar[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "Form control with \"progressbar\" role has no associated label",
+            "messageArgs": [
+                "progressbar"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 712,
+                "top": 1224,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<div style=\"height: 18px; width: 18px;\" class=\"v-progress-circular\" aria-valuenow=\"0\" aria-valuemax=\"100\" aria-valuemin=\"0\" role=\"progressbar\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20with%20%5C%22progressbar%5C%22%20role%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22height%3A%2018px%3B%20width%3A%2018px%3B%5C%22%20class%3D%5C%22v-progress-circular%5C%22%20aria-valuenow%3D%5C%220%5C%22%20aria-valuemax%3D%5C%22100%5C%22%20aria-valuemin%3D%5C%220%5C%22%20role%3D%5C%22progressbar%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22progressbar%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[3]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/main[1]/progressbar[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 712,
+                "top": 1224,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg style=\"transform: rotate(-90deg);\" viewBox=\"25.714285714285715 25.714285714285715 51.42857142857143 51.42857142857143\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20style%3D%5C%22transform%3A%20rotate(-90deg)%3B%5C%22%20viewBox%3D%5C%2225.714285714285715%2025.714285714285715%2051.42857142857143%2051.42857142857143%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[4]/div[1]/div[1]",
+                "aria": "/document[1]/main[1]/progressbar[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "Form control with \"progressbar\" role has no associated label",
+            "messageArgs": [
+                "progressbar"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 712,
+                "top": 1260,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<div style=\"height: 18px; width: 18px;\" class=\"v-progress-circular\" aria-valuenow=\"77.77777777777779\" aria-valuemax=\"100\" aria-valuemin=\"0\" role=\"progressbar\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20with%20%5C%22progressbar%5C%22%20role%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22height%3A%2018px%3B%20width%3A%2018px%3B%5C%22%20class%3D%5C%22v-progress-circular%5C%22%20aria-valuenow%3D%5C%2277.77777777777779%5C%22%20aria-valuemax%3D%5C%22100%5C%22%20aria-valuemin%3D%5C%220%5C%22%20role%3D%5C%22progressbar%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22progressbar%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[10]/div[4]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/main[1]/progressbar[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 712,
+                "top": 1260,
+                "height": 18,
+                "width": 18
+            },
+            "snippet": "<svg style=\"transform: rotate(-90deg);\" viewBox=\"25.714285714285715 25.714285714285715 51.42857142857143 51.42857142857143\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20style%3D%5C%22transform%3A%20rotate(-90deg)%3B%5C%22%20viewBox%3D%5C%2225.714285714285715%2025.714285714285715%2051.42857142857143%2051.42857142857143%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1111,
+    "ruleTime": 22,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "element_tabbable_unobscured": {
+            "0": "When an element receives focus, it is not entirely covered by other content",
+            "potential_obscured": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label",
+            "Fail_2": "Form control with \"{0}\" role has no associated label"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 23,
+            "elementsViolation": 9,
+            "elementsViolationReview": 16,
+            "violation": 9,
+            "potentialviolation": 6,
+            "recommendation": 5,
+            "potentialrecommendation": 3,
+            "manual": 2,
+            "pass": 1086
+        },
+        "scanTime": 112,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778630190619,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EStellarium%20Web%20Online%20Star%20Map%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cdiv%20id%3D%22nightmode%22%3E%3C%2Fdiv%3E%3Cnoscript%3E%3Cstrong%3EWe're%20sorry%20but%20stellarium-web%20doesn't%20work%20properly%20without%20JavaScript%20enabled.%20Please%20enable%20it%20to%20continue.%3C%2Fstrong%3E%3C%2Fnoscript%3E%3Cdiv%20id%3D%22app%22%3E%3Cdiv%20data-app%3D%22true%22%20class%3D%22v-application%20v-application--is-ltr%20theme--dark%22%20id%3D%22app%22%3E%3Cdiv%20class%3D%22v-application--wrap%22%3E%3Cnav%20class%3D%22v-navigation-drawer%20v-navigation-drawer--fixed%20v-navigation-drawer--open%20theme--dark%22%20data-booted%3D%22true%22%20style%3D%22height%3A%20100vh%3B%20top%3A%200px%3B%20max-height%3A%20calc(100%25%20%2B%200px)%3B%20transform%3A%20translateX(0%25)%3B%20width%3A%20300px%3B%22%3E%3Cdiv%20class%3D%22v-navigation-drawer__content%22%3E%3Cdiv%20class%3D%22layout%20column%20fill-height%22%3E%3Cdiv%20class%3D%22v-list%20v-sheet%20theme--dark%20v-list--dense%22%3E%3Cdiv%20tabindex%3D%220%22%20class%3D%22v-list-item%20v-list-item--link%20theme--dark%22%3E%3Cdiv%20class%3D%22v-list-item__icon%22%3E%3Ci%20aria-hidden%3D%22true%22%20class%3D%22v-icon%20notranslate%20mdi%20mdi-settings%20theme--dark%22%3E%3C%2Fi%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-list-item__title%22%3EView%20Settings%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20tabindex%3D%220%22%20class%3D%22v-list-item%20v-list-item--link%20theme--dark%22%3E%3Cdiv%20class%3D%22v-list-item__icon%22%3E%3Ci%20aria-hidden%3D%22true%22%20class%3D%22v-icon%20notranslate%20mdi%20mdi-panorama-fisheye%20theme--dark%22%3E%3C%2Fi%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-list-item__title%22%3EPlanets%20Tonight%3C%2Fdiv%3E%3C%2Fdiv%3E%3Chr%20role%3D%22separator%22%20aria-orientation%3D%22horizontal%22%20class%3D%22divider_menu%20v-divider%20theme--dark%22%3E%3C!----%3E%3C!----%3E%3C!----%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22spacer%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22container%20pa-0%22%20style%3D%22position%3A%20relative%3B%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.stellarium-labs.com%2Fstellarium-mobile-plus%2F%22%20target%3D%22_blank%22%3E%3Cimg%20id%3D%22stellarium-mobile-plus-img%22%20alt%3D%22Stellarium%20Mobile%22%20style%3D%22width%3A%20274px%3B%20margin-left%3A%2013px%3B%22%3E%3Ca%20href%3D%22https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fstellarium-mobile-plus-sky-map%2Fid1458716890%22%20target%3D%22_blank%22%20style%3D%22position%3A%20absolute%3B%20left%3A%2080px%3B%20bottom%3A%2081px%3B%22%3E%3Cimg%20width%3D%22128%22%20height%3D%2240%22%20alt%3D%22Apple%20Store%20badge%22%3E%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.noctuasoftware.stellarium_free%26amp%3Breferrer%3Dutm_source%253Dstellariumweb%2526utm_medium%253Dleftbanner%22%20target%3D%22_blank%22%20style%3D%22position%3A%20absolute%3B%20left%3A%2080px%3B%20bottom%3A%2023px%3B%22%3E%3Cimg%20width%3D%22128%22%20height%3D%2240%22%20alt%3D%22Google%20Play%20badge%22%3E%3C%2Fa%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22spacer%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-list%20v-sheet%20theme--dark%20v-list--dense%22%3E%3Chr%20role%3D%22separator%22%20aria-orientation%3D%22horizontal%22%20class%3D%22divider_menu%20v-divider%20theme--dark%22%3E%3C!----%3E%3C!----%3E%3C!----%3E%3Cdiv%20tabindex%3D%220%22%20class%3D%22v-list-item%20v-list-item--link%20theme--dark%22%3E%3Cdiv%20class%3D%22v-list-item__icon%22%3E%3Ci%20aria-hidden%3D%22true%22%20class%3D%22v-icon%20notranslate%20mdi%20mdi-information%20theme--dark%22%3E%3C%2Fi%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-list-item__title%22%3EAbout%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20tabindex%3D%220%22%20class%3D%22v-list-item%20v-list-item--link%20theme--dark%22%3E%3Cdiv%20class%3D%22v-list-item__icon%22%3E%3Ci%20aria-hidden%3D%22true%22%20class%3D%22v-icon%20notranslate%20mdi%20mdi-lock%20theme--dark%22%3E%3C%2Fi%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-list-item__title%22%3EPrivacy%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20tabindex%3D%220%22%20class%3D%22v-list-item%20v-list-item--link%20theme--dark%22%3E%3Cdiv%20class%3D%22v-list-item__icon%22%3E%3Ci%20aria-hidden%3D%22true%22%20class%3D%22v-icon%20notranslate%20mdi%20mdi-copyright%20theme--dark%22%3E%3C%2Fi%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-list-item__title%22%3EData%20Credits%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-navigation-drawer__border%22%3E%3C%2Fdiv%3E%3C%2Fnav%3E%3Cmain%20class%3D%22v-main%22%20data-booted%3D%22true%22%20style%3D%22padding%3A%200px%200px%200px%20300px%3B%22%3E%3Cdiv%20class%3D%22v-main__wrap%22%3E%3Cdiv%20class%3D%22container%20fill-height%20container--fluid%22%20style%3D%22padding%3A%200px%3B%22%3E%3Cdiv%20id%3D%22stel%22%20class%3D%22%22%3E%3Cdiv%20style%3D%22position%3A%20relative%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%22%3E%3Cdiv%20class%3D%22click-through%22%20style%3D%22position%3A%20absolute%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20display%3A%20flex%3B%20align-items%3A%20flex-end%3B%22%3E%3Cdiv%20id%3D%22toolbar-image%22%20class%3D%22get-click%22%3E%3Cheader%20class%3D%22transparent%20v-sheet%20theme--dark%20v-toolbar%20v-toolbar--dense%22%20style%3D%22height%3A%2048px%3B%22%3E%3Cdiv%20class%3D%22v-toolbar__content%22%20style%3D%22height%3A%2048px%3B%22%3E%3Cbutton%20type%3D%22button%22%20class%3D%22v-app-bar__nav-icon%20v-btn%20v-btn--icon%20v-btn--round%20theme--dark%20v-size--default%22%3E%3Cspan%20class%3D%22v-btn__content%22%3E%3Ci%20aria-hidden%3D%22true%22%20class%3D%22v-icon%20notranslate%20mdi%20mdi-menu%20theme--dark%22%3E%3C%2Fi%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3Cimg%20id%3D%22stellarium-web-toolbar-logo%22%20width%3D%2230%22%20height%3D%2230%22%20alt%3D%22Stellarium%20Web%20Logo%22%20class%3D%22tbtitle%20hidden-xs-only%22%3E%3Cspan%20class%3D%22tbtitle%20hidden-sm-and-down%22%3EStellarium%3Csup%3EWeb%3C%2Fsup%3E%3C%2Fspan%3E%3Cdiv%20class%3D%22spacer%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tsearch%22%3E%3Cdiv%20style%3D%22position%3A%20relative%3B%22%3E%3Cdiv%20class%3D%22v-input%20v-input--hide-details%20theme--dark%20v-text-field%20v-text-field--single-line%20v-text-field--is-booted%22%3E%3Cdiv%20class%3D%22v-input__prepend-outer%22%3E%3Cdiv%20class%3D%22v-input__icon%20v-input__icon--prepend%22%3E%3Ci%20aria-hidden%3D%22true%22%20class%3D%22v-icon%20notranslate%20mdi%20mdi-magnify%20theme--dark%22%3E%3C%2Fi%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-input__control%22%3E%3Cdiv%20class%3D%22v-input__slot%22%3E%3Cdiv%20class%3D%22v-text-field__slot%22%3E%3Clabel%20for%3D%22input-33%22%20class%3D%22v-label%20theme--dark%22%20style%3D%22left%3A%200px%3B%20right%3A%20auto%3B%20position%3A%20absolute%3B%22%3ESearch...%3C%2Flabel%3E%3Cinput%20id%3D%22input-33%22%20type%3D%22text%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!----%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22spacer%22%3E%3C%2Fdiv%3E%3C!----%3E%3Cdiv%20class%3D%22subheader%20grey--text%20hidden-sm-and-down%22%20style%3D%22user-select%3A%20none%3B%22%3EFOV%20120%C2%B0%3C%2Fdiv%3E%3Ca%20href%3D%22%2Fp%22%20class%3D%22transparent%20v-btn%20v-btn--is-elevated%20v-btn--has-bg%20v-btn--router%20theme--dark%20v-size--default%22%3E%3Cspan%20class%3D%22v-btn__content%22%3EObserve%3Ci%20aria-hidden%3D%22true%22%20class%3D%22v-icon%20notranslate%20mdi%20mdi-chevron-down%20theme--dark%22%3E%3C%2Fi%3E%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fheader%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22observing-panel-container%22%20class%3D%22get-click%20observingpanelhidden%22%3E%3Cdiv%20class%3D%22observing-panel-tabsbtn%22%3E%3Ca%20href%3D%22%2Fp%2Fcalendar%22%20class%3D%22tab-bt%20v-btn%20v-btn--is-elevated%20v-btn--has-bg%20v-btn--router%20theme--dark%20v-size--small%22%3E%3Cspan%20class%3D%22v-btn__content%22%3ECalendar%3C%2Fspan%3E%3C%2Fa%3E%3Ca%20href%3D%22%2Fp%2Fobservations%22%20class%3D%22tab-bt%20v-btn%20v-btn--is-elevated%20v-btn--has-bg%20v-btn--router%20theme--dark%20v-size--small%22%3E%3Cspan%20class%3D%22v-btn__content%22%3EMy%20Observations%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22observing-panel%22%3E%3C!----%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-snack%20v-snack--active%20v-snack--bottom%20v-snack--has-background%20v-snack--left%20v-snack--multi-line%22%20style%3D%22padding-bottom%3A%200px%3B%20padding-top%3A%200px%3B%22%3E%3Cdiv%20class%3D%22v-snack__wrapper%20v-sheet%20theme--dark%20secondary%22%3E%3Cdiv%20role%3D%22status%22%20aria-live%3D%22polite%22%20class%3D%22v-snack__content%22%3E%3Cp%3EThis%20site%20uses%20cookies.%20By%20continuing%20to%20browse%20the%20site%20you%20are%20agreeing%20to%20our%20use%20of%20cookies.%20Check%20our%20%3Ca%3EPrivacy%20Policy%3C%2Fa%3E.%3C%2Fp%3E%3Cbutton%20type%3D%22button%22%20class%3D%22blue--text%20darken-1%20v-btn%20v-btn--text%20theme--dark%20v-size--default%22%3E%3Cspan%20class%3D%22v-btn__content%22%3EI%20Agree%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-snack__action%20%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22dialog%22%20class%3D%22v-dialog__container%22%3E%3C!----%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22dialog%22%20class%3D%22v-dialog__container%22%3E%3C!----%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22dialog%22%20class%3D%22v-dialog__container%22%3E%3C!----%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22dialog%22%20class%3D%22v-dialog__container%22%3E%3C!----%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22dialog%22%20class%3D%22v-dialog__container%22%3E%3C!----%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22dialog%22%20class%3D%22v-dialog__container%22%3E%3C!----%3E%3C%2Fdiv%3E%3C!----%3E%3Cdiv%20style%3D%22position%3A%20absolute%3B%20bottom%3A%2054px%3B%20right%3A%2012px%3B%22%3E%3Cdiv%20class%3D%22tfaders%22%3E%3Cdiv%20class%3D%22tfader%20fade-leave-active%20fade-leave-to%22%3E%3Cspan%20class%3D%22text-caption%22%20style%3D%22right%3A%204px%3B%20position%3A%20relative%3B%22%3EDSO%3C%2Fspan%3E%3Cdiv%20role%3D%22progressbar%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22100%22%20aria-valuenow%3D%2250%22%20class%3D%22v-progress-circular%22%20style%3D%22height%3A%2018px%3B%20width%3A%2018px%3B%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%2225.714285714285715%2025.714285714285715%2051.42857142857143%2051.42857142857143%22%20style%3D%22transform%3A%20rotate(-90deg)%3B%22%3E%3Ccircle%20fill%3D%22transparent%22%20cx%3D%2251.42857142857143%22%20cy%3D%2251.42857142857143%22%20r%3D%2220%22%20stroke-width%3D%2211.428571428571429%22%20stroke-dasharray%3D%22125.664%22%20stroke-dashoffset%3D%220%22%20class%3D%22v-progress-circular__underlay%22%3E%3C%2Fcircle%3E%3Ccircle%20fill%3D%22transparent%22%20cx%3D%2251.42857142857143%22%20cy%3D%2251.42857142857143%22%20r%3D%2220%22%20stroke-width%3D%2211.428571428571429%22%20stroke-dasharray%3D%22125.664%22%20stroke-dashoffset%3D%2262.83185307179586px%22%20class%3D%22v-progress-circular__overlay%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22v-progress-circular__info%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!----%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tfaders%22%3E%3Cdiv%20class%3D%22tfader%20fade-leave-active%20fade-leave-to%22%3E%3Cspan%20class%3D%22text-caption%22%20style%3D%22right%3A%204px%3B%20position%3A%20relative%3B%22%3EStars%3C%2Fspan%3E%3Cdiv%20role%3D%22progressbar%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22100%22%20aria-valuenow%3D%2255.55555555555556%22%20class%3D%22v-progress-circular%22%20style%3D%22height%3A%2018px%3B%20width%3A%2018px%3B%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%2225.714285714285715%2025.714285714285715%2051.42857142857143%2051.42857142857143%22%20style%3D%22transform%3A%20rotate(-90deg)%3B%22%3E%3Ccircle%20fill%3D%22transparent%22%20cx%3D%2251.42857142857143%22%20cy%3D%2251.42857142857143%22%20r%3D%2220%22%20stroke-width%3D%2211.428571428571429%22%20stroke-dasharray%3D%22125.664%22%20stroke-dashoffset%3D%220%22%20class%3D%22v-progress-circular__underlay%22%3E%3C%2Fcircle%3E%3Ccircle%20fill%3D%22transparent%22%20cx%3D%2251.42857142857143%22%20cy%3D%2251.42857142857143%22%20r%3D%2220%22%20stroke-width%3D%2211.428571428571429%22%20stroke-dasharray%3D%22125.664%22%20stroke-dashoffset%3D%2255.85053606381854px%22%20class%3D%22v-progress-circular__overlay%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22v-progress-circular__info%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!----%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tfaders%22%3E%3Cdiv%20class%3D%22tfader%20fade-leave-active%20fade-leave-to%22%3E%3Cspan%20class%3D%22text-caption%22%20style%3D%22right%3A%204px%3B%20position%3A%20relative%3B%22%3ESun%3C%2Fspan%3E%3Cdiv%20role%3D%22progressbar%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22100%22%20aria-valuenow%3D%220%22%20class%3D%22v-progress-circular%22%20style%3D%22height%3A%2018px%3B%20width%3A%2018px%3B%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%2225.714285714285715%2025.714285714285715%2051.42857142857143%2051.42857142857143%22%20style%3D%22transform%3A%20rotate(-90deg)%3B%22%3E%3Ccircle%20fill%3D%22transparent%22%20cx%3D%2251.42857142857143%22%20cy%3D%2251.42857142857143%22%20r%3D%2220%22%20stroke-width%3D%2211.428571428571429%22%20stroke-dasharray%3D%22125.664%22%20stroke-dashoffset%3D%220%22%20class%3D%22v-progress-circular__underlay%22%3E%3C%2Fcircle%3E%3Ccircle%20fill%3D%22transparent%22%20cx%3D%2251.42857142857143%22%20cy%3D%2251.42857142857143%22%20r%3D%2220%22%20stroke-width%3D%2211.428571428571429%22%20stroke-dasharray%3D%22125.664%22%20stroke-dashoffset%3D%22125.66370614359172px%22%20class%3D%22v-progress-circular__overlay%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22v-progress-circular__info%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!----%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22tfaders%22%3E%3Cdiv%20class%3D%22tfader%22%3E%3Cspan%20class%3D%22text-caption%22%20style%3D%22right%3A%204px%3B%20position%3A%20relative%3B%22%3ELandscape%3C%2Fspan%3E%3Cdiv%20role%3D%22progressbar%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22100%22%20aria-valuenow%3D%2277.77777777777779%22%20class%3D%22v-progress-circular%22%20style%3D%22height%3A%2018px%3B%20width%3A%2018px%3B%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%2225.714285714285715%2025.714285714285715%2051.42857142857143%2051.42857142857143%22%20style%3D%22transform%3A%20rotate(-90deg)%3B%22%3E%3Ccircle%20fill%3D%22transparent%22%20cx%3D%2251.42857142857143%22%20cy%3D%2251.42857142857143%22%20r%3D%2220%22%20stroke-width%3D%2211.428571428571429%22%20stroke-dasharray%3D%22125.664%22%20stroke-dashoffset%3D%220%22%20class%3D%22v-progress-circular__underlay%22%3E%3C%2Fcircle%3E%3Ccircle%20fill%3D%22transparent%22%20cx%3D%2251.42857142857143%22%20cy%3D%2251.42857142857143%22%20r%3D%2220%22%20stroke-width%3D%2211.428571428571429%22%20stroke-dasharray%3D%22125.664%22%20stroke-dashoffset%3D%2227.925268031909262px%22%20class%3D%22v-progress-circular__overlay%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E%3Cdiv%20class%3D%22v-progress-circular__info%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22get-click%22%20style%3D%22position%3A%20absolute%3B%20display%3A%20flex%3B%20align-items%3A%20flex-end%3B%20width%3A%20100%25%3B%20justify-content%3A%20center%3B%20bottom%3A%200px%3B%20margin-bottom%3A%200px%3B%22%3E%3Cdiv%20class%3D%22tbtcontainer%22%20style%3D%22max-width%3A%20300px%3B%20display%3A%20flex%3B%20align-items%3A%20flex-end%3B%22%3E%3Cbutton%20type%3D%22button%22%20class%3D%22tmenubt%20v-btn%20v-btn--is-elevated%20v-btn--has-bg%20theme--dark%20v-size--default%20secondary%22%3E%3Cspan%20class%3D%22v-btn__content%22%3E%3Ci%20aria-hidden%3D%22true%22%20class%3D%22v-icon%20notranslate%20hidden-sm-and-up%20mdi%20mdi-map-marker%20theme--dark%22%3E%3C%2Fi%3E%3Cspan%20class%3D%22hidden-xs-only%22%3EUnknown%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22spacer%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22bottom-button%22%3E%3Ca%3E%3Cimg%20alt%3D%22Constellations%20Button%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22hint%22%3EConstellations%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22bottom-button%22%3E%3Ca%3E%3Cimg%20alt%3D%22Constellations%20Art%20Button%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22hint%22%3EConstellations%20Art%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22bottom-button%20on%22%3E%3Ca%3E%3Cimg%20alt%3D%22Atmosphere%20Button%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22hint%22%3EAtmosphere%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22bottom-button%20on%22%3E%3Ca%3E%3Cimg%20alt%3D%22Landscape%20Button%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22hint%22%3ELandscape%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22bottom-button%22%3E%3Ca%3E%3Cimg%20alt%3D%22Azimuthal%20Button%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22hint%22%3EAzimuthal%20Grid%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22bottom-button%22%3E%3Ca%3E%3Cimg%20alt%3D%22Equatorial%20Grid%20Button%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22hint%22%3EEquatorial%20Grid%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!----%3E%3Cdiv%20class%3D%22bottom-button%20mr-auto%20on%22%3E%3Ca%3E%3Cimg%20alt%3D%22Deep%20Sky%20Objects%20Button%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22hint%22%3EDeep%20Sky%20Objects%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22bottom-button%20mr-auto%22%3E%3Ca%3E%3Cimg%20alt%3D%22Night%20Mode%20Button%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22hint%22%3ENight%20Mode%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22bottom-button%20mr-auto%20hidden-xs-only%22%3E%3Ca%3E%3Cimg%20alt%3D%22Fullscreen%20Button%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22hint%22%3EFullscreen%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22spacer%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22v-menu%22%3E%3C!----%3E%3C%2Fdiv%3E%3Cbutton%20type%3D%22button%22%20class%3D%22tmenubt%20v-btn%20v-btn--is-elevated%20v-btn--has-bg%20theme--dark%20v-size--large%20secondary%22%3E%3Cspan%20class%3D%22v-btn__content%22%3E%3Ci%20aria-hidden%3D%22true%22%20class%3D%22v-icon%20notranslate%20hidden-sm-and-up%20mdi%20mdi-clock-outline%20theme--dark%22%3E%3C%2Fi%3E%3Cspan%20class%3D%22hidden-xs-only%22%3E%3Cdiv%20class%3D%22text-subtitle-2%22%3E00%3A56%3A29%3C%2Fdiv%3E%3Cdiv%20class%3D%22text-caption%22%3E2026-05-13%3C%2Fdiv%3E%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ccanvas%20id%3D%22stel-canvas%22%20width%3D%22980%22%20height%3D%22720%22%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fmain%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "32b8223a-72f0-46d3-8555-91ee4a1cb9c6",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "stellarium-web.org"
+}

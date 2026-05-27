@@ -1,0 +1,262 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1183,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1183,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 1146,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Terms\", \"Terms and Conditions\", \"Service\", \"us\", \"we\", \"our\"",
+            "messageArgs": [
+                "\"Terms\", \"Terms and Conditions\", \"Service\", \"us\", \"we\", \"our\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 119,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Terms%5C%22%2C%20%5C%22Terms%20and%20Conditions%5C%22%2C%20%5C%22Service%5C%22%2C%20%5C%22us%5C%22%2C%20%5C%22we%5C%22%2C%20%5C%22our%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Terms%5C%22%2C%20%5C%22Terms%20and%20Conditions%5C%22%2C%20%5C%22Service%5C%22%2C%20%5C%22us%5C%22%2C%20%5C%22we%5C%22%2C%20%5C%22our%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[4]/p[2]",
+                "aria": "/document[1]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 754,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[5]/p[1]",
+                "aria": "/document[1]/paragraph[11]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 890,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[7]/div[1]/p[1]/img[1]",
+                "aria": "/document[1]/paragraph[14]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1110,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 251,
+    "ruleTime": 6,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 15,
+            "elementsViolation": 3,
+            "elementsViolationReview": 6,
+            "violation": 4,
+            "potentialviolation": 3,
+            "recommendation": 9,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 235
+        },
+        "scanTime": 12,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778611114596,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ETerms%20and%20Conditions%20-%20Poopy%20McButt%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%3Cdiv%20id%3D%22wrapper%22%3E%0A%09%3Cdiv%20id%3D%22flex-container%22%3E%0A%09%09%3Cdiv%20class%3D%22hero%22%3E%0A%09%09%09%3Ch1%20class%3D%22tc%22%3ETerms%20%26amp%3B%20Conditions%3C%2Fh1%3E%0A%09%09%09%3Ch5%3ELast%20updated%20August%2030%2C%202020%3C%2Fh5%3E%0A%09%09%09%3Cp%3EPlease%20read%20these%20Terms%20and%20Conditions%20(%22Terms%22%2C%20%22Terms%20and%20Conditions%22)%20carefully%20before%20using%20the%20www.poopymcbutt.com%20website%20(the%20%22Service%22)%20operated%20by%20Bored%20Button%20LLC%20(%22us%22%2C%20%22we%22%2C%20or%20%22our%22).%3C%2Fp%3E%0A%09%09%09%3Cp%3EYour%20access%20to%20and%20use%20of%20the%20Service%20is%20conditioned%20on%20your%20acceptance%20of%20and%20compliance%20with%20these%20Terms.%20These%20Terms%20apply%20to%20all%20visitors%2C%20users%20and%20others%20who%20access%20or%20use%20the%20Service.%3C%2Fp%3E%0A%09%09%09%3Cp%3EBy%20accessing%20or%20using%20the%20Service%20you%20agree%20to%20be%20bound%20by%20these%20Terms.%20If%20you%20disagree%20with%20any%20part%20of%20the%20terms%20then%20you%20may%20not%20access%20the%20Service.%20This%20Terms%20and%20Conditions%20agreement%20for%20Bored%20Button%20LLC%20is%20%3Ca%20href%3D%22https%3A%2F%2Ftermsfeed.com%2Fterms-conditions%2Fgenerator%2F%22%3Egenerated%20by%20TermsFeed%3C%2Fa%3E.%3C%2Fp%3E%0A%09%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%3E%0A%09%09%09%3Ch6%3ELinks%20To%20Other%20Web%20Sites%3C%2Fh6%3E%0A%09%09%09%3Cp%3EOur%20Service%20may%20contain%20links%20to%20third-party%20web%20sites%20or%20services%20that%20are%20not%20owned%20or%20controlled%20by%20Bored%20Button%20LLC.%3C%2Fp%3E%0A%09%09%09%3Cp%3EBored%20Button%20LLC%20has%20no%20control%20over%2C%20and%20assumes%20no%20responsibility%20for%2C%20the%20content%2C%20privacy%20policies%2C%20or%20practices%20of%20any%20third%20party%20web%20sites%20or%20services.%20You%20further%20acknowledge%20and%20agree%20that%20Bored%20Button%20LLC%20shall%20not%20be%20responsible%20or%20liable%2C%20directly%20or%20indirectly%2C%20for%20any%20damage%20or%20loss%20caused%20or%20alleged%20to%20be%20caused%20by%20or%20in%20connection%20with%20use%20of%20or%20reliance%20on%20any%20such%20content%2C%20goods%20or%20services%20available%20on%20or%20through%20any%20such%20web%20sites%20or%20services.%3C%2Fp%3E%0A%09%09%09%3Cp%3EWe%20strongly%20advise%20you%20to%20read%20the%20terms%20and%20conditions%20and%20privacy%20policies%20of%20any%20third-party%20web%20sites%20or%20services%20that%20you%20visit.%3C%2Fp%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%3E%0A%09%09%09%3Ch6%3ETermination%3C%2Fh6%3E%0A%09%09%09%3Cp%3EWe%20may%20terminate%20or%20suspend%20access%20to%20our%20Service%20immediately%2C%20without%20prior%20notice%20or%20liability%2C%20for%20any%20reason%20whatsoever%2C%20including%20without%20limitation%20if%20you%20breach%20the%20Terms.%3C%2Fp%3E%0A%09%09%09%3Cp%3EAll%20provisions%20of%20the%20Terms%20which%20by%20their%20nature%20should%20survive%20termination%20shall%20survive%20termination%2C%20including%2C%20without%20limitation%2C%20ownership%20provisions%2C%20warranty%20disclaimers%2C%20indemnity%20and%20limitations%20of%20liability.%3C%2Fp%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%3E%0A%09%09%09%3Ch6%3EGoverning%20Law%3C%2Fh6%3E%0A%09%09%09%3Cp%3EThese%20Terms%20shall%20be%20governed%20and%20construed%20in%20accordance%20with%20the%20laws%20of%20New%20York%2C%20United%20States%2C%20without%20regard%20to%20its%20conflict%20of%20law%20provisions.%3C%2Fp%3E%0A%09%09%09%3Cp%3EOur%20failure%20to%20enforce%20any%20right%20or%20provision%20of%20these%20Terms%20will%20not%20be%20considered%20a%20waiver%20of%20those%20rights.%20If%20any%20provision%20of%20these%20Terms%20is%20held%20to%20be%20invalid%20or%20unenforceable%20by%20a%20court%2C%20the%20remaining%20provisions%20of%20these%20Terms%20will%20remain%20in%20effect.%20These%20Terms%20constitute%20the%20entire%20agreement%20between%20us%20regarding%20our%20Service%2C%20and%20supersede%20and%20replace%20any%20prior%20agreements%20we%20might%20have%20between%20us%20regarding%20the%20Service.%3C%2Fp%3E%0A%09%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%3E%0A%09%09%09%3Ch6%3EChanges%3C%2Fh6%3E%0A%09%09%09%3Cp%3EWe%20reserve%20the%20right%2C%20at%20our%20sole%20discretion%2C%20to%20modify%20or%20replace%20these%20Terms%20at%20any%20time.%20If%20a%20revision%20is%20material%20we%20will%20try%20to%20provide%20at%20least%2030%20days%20notice%20prior%20to%20any%20new%20terms%20taking%20effect.%20What%20constitutes%20a%20material%20change%20will%20be%20determined%20at%20our%20sole%20discretion.%3C%2Fp%3E%0A%09%09%09%3Cp%3EBy%20continuing%20to%20access%20or%20use%20our%20Service%20after%20those%20revisions%20become%20effective%2C%20you%20agree%20to%20be%20bound%20by%20the%20revised%20terms.%20If%20you%20do%20not%20agree%20to%20the%20new%20terms%2C%20please%20stop%20using%20the%20Service.%3C%2Fp%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%3E%0A%09%09%09%3Ch6%3EContact%20Us%3C%2Fh6%3E%0A%09%09%09%3Cp%3EIf%20you%20have%20any%20questions%20about%20these%20Terms%2C%20please%20%3Ca%20href%3D%22https%3A%2F%2Fwww.boredbutton.com%2Fcontact%22%3Econtact%20us%3C%2Fa%3E%20via%20Bored%20Button%20LLC.%3C%2Fp%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22antihero%22%3E%0A%09%09%09%3Cdiv%20id%3D%22footer%22%3E%0A%09%09%09%09%3Cp%20class%3D%22footer-image%22%3E%3Cimg%3E%3C%2Fp%3E%0A%09%09%09%09%3Cp%20class%3D%22footer%22%3E%3Ca%20href%3D%22%2F%22%3EHome%3C%2Fa%3E%26nbsp%3B%26nbsp%3B%7C%26nbsp%3B%26nbsp%3B%3Ca%20href%3D%22%2Fterms%22%20rel%3D%22nofollow%22%3ETerms%3C%2Fa%3E%26nbsp%3B%26nbsp%3B%7C%26nbsp%3B%26nbsp%3B%3Ca%20href%3D%22%2Fprivacy%22%20rel%3D%22nofollow%22%3EPrivacy%3C%2Fa%3E%26nbsp%3B%26nbsp%3B%7C%26nbsp%3B%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fwww.totallyuselesswebsites.com%22%3EUseless%20Websites%3C%2Fa%3E%3Cbr%3E%C2%A92020%20%3Ca%20href%3D%22https%3A%2F%2Fwww.boredbutton.com%22%3EBored%20Button%20LLC%3C%2Fa%3E%3C%2Fp%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "fcdb0cd5-4de3-48af-abe1-103794ce3fe1",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.poopymcbutt.com-terms"
+}

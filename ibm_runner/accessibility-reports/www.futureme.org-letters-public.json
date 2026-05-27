@@ -1,0 +1,1907 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 148,
+                "width": 784
+            },
+            "snippet": "<div style=\"background-color: #1c3dc2;\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background-color%3A%20%231c3dc2%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[1]/div[1]/a[1]",
+                "aria": "/document[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 156,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-navbar-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-navbar-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[1]/div[1]/a[1]",
+                "aria": "/document[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 156,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-navbar-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-navbar-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[1]/div[1]/a[1]/span[1]/img[1]",
+                "aria": "/document[1]/navigation[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 171,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[1]/h1[1]/img[1]",
+                "aria": "/document[1]/heading[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 354,
+                "height": 36,
+                "width": 36
+            },
+            "snippet": "<img height=\"36\" width=\"36\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%2236%5C%22%20width%3D%5C%2236%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[1]/footer[1]/a[1]/div[1]/span[1]",
+                "aria": "/document[1]/article[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 654,
+                "height": 18,
+                "width": 90
+            },
+            "snippet": "<span class=\"fm-comment \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-comment%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[1]/footer[1]/a[1]/div[1]/span[1]/span[1]",
+                "aria": "/document[1]/article[1]/link[2]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 654,
+                "height": 18,
+                "width": 16
+            },
+            "snippet": "<span class=\"fm-badge is-tight size-tiny \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-badge%20is-tight%20size-tiny%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[1]/footer[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/article[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 703,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-dropdown-trigger fm-icon is-1 is-size-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[2]/footer[1]/a[1]/div[1]/span[1]",
+                "aria": "/document[1]/article[2]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 946,
+                "height": 18,
+                "width": 90
+            },
+            "snippet": "<span class=\"fm-comment \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-comment%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[2]/footer[1]/a[1]/div[1]/span[1]/span[1]",
+                "aria": "/document[1]/article[2]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 946,
+                "height": 18,
+                "width": 16
+            },
+            "snippet": "<span class=\"fm-badge is-tight size-tiny \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-badge%20is-tight%20size-tiny%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[2]/footer[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/article[2]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 995,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-dropdown-trigger fm-icon is-1 is-size-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[3]/footer[1]/a[1]/div[1]/span[1]",
+                "aria": "/document[1]/article[3]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1201,
+                "height": 18,
+                "width": 90
+            },
+            "snippet": "<span class=\"fm-comment \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-comment%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[3]/footer[1]/a[1]/div[1]/span[1]/span[1]",
+                "aria": "/document[1]/article[3]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 1201,
+                "height": 18,
+                "width": 16
+            },
+            "snippet": "<span class=\"fm-badge is-tight size-tiny \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-badge%20is-tight%20size-tiny%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[3]/footer[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/article[3]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1250,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-dropdown-trigger fm-icon is-1 is-size-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[4]/footer[1]/a[1]/div[1]/span[1]",
+                "aria": "/document[1]/article[4]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1493,
+                "height": 18,
+                "width": 90
+            },
+            "snippet": "<span class=\"fm-comment \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-comment%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[4]/footer[1]/a[1]/div[1]/span[1]/span[1]",
+                "aria": "/document[1]/article[4]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 1493,
+                "height": 18,
+                "width": 16
+            },
+            "snippet": "<span class=\"fm-badge is-tight size-tiny \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-badge%20is-tight%20size-tiny%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[4]/footer[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/article[4]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1542,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-dropdown-trigger fm-icon is-1 is-size-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[5]/footer[1]/a[1]/div[1]/span[1]",
+                "aria": "/document[1]/article[5]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1801,
+                "height": 18,
+                "width": 90
+            },
+            "snippet": "<span class=\"fm-comment \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-comment%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[5]/footer[1]/a[1]/div[1]/span[1]/span[1]",
+                "aria": "/document[1]/article[5]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 1801,
+                "height": 18,
+                "width": 16
+            },
+            "snippet": "<span class=\"fm-badge is-tight size-tiny \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-badge%20is-tight%20size-tiny%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[5]/footer[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/article[5]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1850,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-dropdown-trigger fm-icon is-1 is-size-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[6]/footer[1]/a[1]/div[1]/span[1]",
+                "aria": "/document[1]/article[6]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2093,
+                "height": 18,
+                "width": 90
+            },
+            "snippet": "<span class=\"fm-comment \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-comment%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[6]/footer[1]/a[1]/div[1]/span[1]/span[1]",
+                "aria": "/document[1]/article[6]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 2093,
+                "height": 18,
+                "width": 16
+            },
+            "snippet": "<span class=\"fm-badge is-tight size-tiny \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-badge%20is-tight%20size-tiny%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[6]/footer[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/article[6]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2141,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-dropdown-trigger fm-icon is-1 is-size-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[7]/footer[1]/a[1]/div[1]/span[1]",
+                "aria": "/document[1]/article[7]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2385,
+                "height": 18,
+                "width": 90
+            },
+            "snippet": "<span class=\"fm-comment \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-comment%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[7]/footer[1]/a[1]/div[1]/span[1]/span[1]",
+                "aria": "/document[1]/article[7]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 2385,
+                "height": 18,
+                "width": 16
+            },
+            "snippet": "<span class=\"fm-badge is-tight size-tiny \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-badge%20is-tight%20size-tiny%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[7]/footer[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/article[7]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2433,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-dropdown-trigger fm-icon is-1 is-size-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[8]/footer[1]/a[1]/div[1]/span[1]",
+                "aria": "/document[1]/article[8]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2677,
+                "height": 18,
+                "width": 90
+            },
+            "snippet": "<span class=\"fm-comment \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-comment%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[8]/footer[1]/a[1]/div[1]/span[1]/span[1]",
+                "aria": "/document[1]/article[8]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 2677,
+                "height": 18,
+                "width": 16
+            },
+            "snippet": "<span class=\"fm-badge is-tight size-tiny \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-badge%20is-tight%20size-tiny%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[8]/footer[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/article[8]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2725,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-dropdown-trigger fm-icon is-1 is-size-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[9]/footer[1]/a[1]/div[1]/span[1]",
+                "aria": "/document[1]/article[9]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2948,
+                "height": 18,
+                "width": 90
+            },
+            "snippet": "<span class=\"fm-comment \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-comment%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[9]/footer[1]/a[1]/div[1]/span[1]/span[1]",
+                "aria": "/document[1]/article[9]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 2948,
+                "height": 18,
+                "width": 16
+            },
+            "snippet": "<span class=\"fm-badge is-tight size-tiny \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-badge%20is-tight%20size-tiny%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[9]/footer[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/article[9]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2996,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-dropdown-trigger fm-icon is-1 is-size-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[10]/footer[1]/a[1]/div[1]/span[1]",
+                "aria": "/document[1]/article[10]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3240,
+                "height": 18,
+                "width": 90
+            },
+            "snippet": "<span class=\"fm-comment \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-comment%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[10]/footer[1]/a[1]/div[1]/span[1]/span[1]",
+                "aria": "/document[1]/article[10]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.54 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.54",
+                16,
+                400,
+                "#9ca3af",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 3240,
+                "height": 18,
+                "width": 16
+            },
+            "snippet": "<span class=\"fm-badge is-tight size-tiny \">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.54%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20class%3D%5C%22fm-badge%20is-tight%20size-tiny%20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.54%22%2C16%2C400%2C%22%239ca3af%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/article[10]/footer[1]/div[2]/div[1]/button[1]",
+                "aria": "/document[1]/article[10]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3288,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-dropdown-trigger fm-icon is-1 is-size-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5833,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5833,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/img[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5848,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[2]/form[1]",
+                "aria": "/document[1]/contentinfo[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5870,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<form data-remote=\"true\" action=\"/referrals/invite\" method=\"get\" class=\"button_to\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20data-remote%3D%5C%22true%5C%22%20action%3D%5C%22%2Freferrals%2Finvite%5C%22%20method%3D%5C%22get%5C%22%20class%3D%5C%22button_to%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_descendant_valid",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[2]/form[1]/button[1]",
+                "aria": "/document[1]/contentinfo[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_child_implicit_role",
+            "message": "The element with role \"button\" contains descendants with implicit roles \"strong\" which are ignored by browsers",
+            "messageArgs": [
+                "button",
+                "strong"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5870,
+                "height": 22,
+                "width": 103
+            },
+            "snippet": "<button type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_descendant_valid.html#%7B%22message%22%3A%22The%20element%20with%20role%20%5C%22button%5C%22%20contains%20descendants%20with%20implicit%20roles%20%5C%22strong%5C%22%20which%20are%20ignored%20by%20browsers%22%2C%22snippet%22%3A%22%3Cbutton%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_child_implicit_role%22%2C%22ruleId%22%3A%22aria_descendant_valid%22%2C%22msgArgs%22%3A%5B%22button%22%2C%22strong%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://twitter.com/futureme\" class=\"fm-icon is-twitter is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-twitter%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://twitter.com/futureme\" class=\"fm-icon is-twitter is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-twitter%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.facebook.com/futureme\" class=\"fm-icon is-facebook is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-facebook%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.facebook.com/futureme\" class=\"fm-icon is-facebook is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-facebook%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[3]",
+                "aria": "/document[1]/contentinfo[1]/link[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.youtube.com/channel/UC6RKoiEdLnf2Fz91NImhUgg\" class=\"fm-icon is-youtube is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC6RKoiEdLnf2Fz91NImhUgg%5C%22%20class%3D%5C%22fm-icon%20is-youtube%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[3]",
+                "aria": "/document[1]/contentinfo[1]/link[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.youtube.com/channel/UC6RKoiEdLnf2Fz91NImhUgg\" class=\"fm-icon is-youtube is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC6RKoiEdLnf2Fz91NImhUgg%5C%22%20class%3D%5C%22fm-icon%20is-youtube%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[4]",
+                "aria": "/document[1]/contentinfo[1]/link[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.linkedin.com/company/futureme-labs/?viewAsMember=true\" class=\"fm-icon is-linked is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ffutureme-labs%2F%3FviewAsMember%3Dtrue%5C%22%20class%3D%5C%22fm-icon%20is-linked%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[4]",
+                "aria": "/document[1]/contentinfo[1]/link[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.linkedin.com/company/futureme-labs/?viewAsMember=true\" class=\"fm-icon is-linked is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ffutureme-labs%2F%3FviewAsMember%3Dtrue%5C%22%20class%3D%5C%22fm-icon%20is-linked%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[5]",
+                "aria": "/document[1]/contentinfo[1]/link[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.instagram.com/futureme_official/?hl=en\" class=\"fm-icon is-instagram is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.instagram.com%2Ffutureme_official%2F%3Fhl%3Den%5C%22%20class%3D%5C%22fm-icon%20is-instagram%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[5]",
+                "aria": "/document[1]/contentinfo[1]/link[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.instagram.com/futureme_official/?hl=en\" class=\"fm-icon is-instagram is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.instagram.com%2Ffutureme_official%2F%3Fhl%3Den%5C%22%20class%3D%5C%22fm-icon%20is-instagram%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://apple.co/3PlaxUc\" target=\"_blank\" class=\"fm-image is-app-store\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fapple.co%2F3PlaxUc%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-app-store%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6035,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://apple.co/3PlaxUc\" target=\"_blank\" class=\"fm-image is-app-store\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fapple.co%2F3PlaxUc%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-app-store%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[1]/img[1]",
+                "aria": "/document[1]/contentinfo[1]/link[11]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6049,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 6035,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://bit.ly/38qZ30P\" target=\"_blank\" class=\"fm-image is-google-play\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fbit.ly%2F38qZ30P%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-google-play%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 6035,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://bit.ly/38qZ30P\" target=\"_blank\" class=\"fm-image is-google-play\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fbit.ly%2F38qZ30P%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-google-play%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[2]/img[1]",
+                "aria": "/document[1]/contentinfo[1]/link[12]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 6049,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[1]/div[1]/header[1]/button[1]",
+                "aria": "/document[1]/banner[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6298,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button class=\"fm-icon is-primary js-modal-close\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22fm-icon%20is-primary%20js-modal-close%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[1]/div[1]/form[1]",
+                "aria": "/document[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6305,
+                "height": 63,
+                "width": 784
+            },
+            "snippet": "<form novalidate=\"\" method=\"post\" data-remote=\"true\" accept-charset=\"UTF-8\" action=\"/flags\" data-parsley-validate=\"true\" id=\"new_flag\" class=\"fm-form\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20novalidate%3D%5C%22%5C%22%20method%3D%5C%22post%5C%22%20data-remote%3D%5C%22true%5C%22%20accept-charset%3D%5C%22UTF-8%5C%22%20action%3D%5C%22%2Fflags%5C%22%20data-parsley-validate%3D%5C%22true%5C%22%20id%3D%5C%22new_flag%5C%22%20class%3D%5C%22fm-form%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[1]/div[1]/form[1]/div[1]/div[1]/textarea[1]",
+                "aria": "/document[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <textarea> has no associated label",
+            "messageArgs": [
+                "textarea"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6305,
+                "height": 37,
+                "width": 183
+            },
+            "snippet": "<textarea id=\"flag_reason\" name=\"flag[reason]\" class=\"fm-input parsley\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Ctextarea%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Ctextarea%20id%3D%5C%22flag_reason%5C%22%20name%3D%5C%22flag%5Breason%5D%5C%22%20class%3D%5C%22fm-input%20parsley%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22textarea%22%5D%7D"
+        }
+    ],
+    "numExecuted": 2717,
+    "ruleTime": 75,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "aria_descendant_valid": {
+            "0": "Browsers ignore the explicit and implicit ARIA roles of the descendants of certain elements",
+            "potential_child_implicit_role": "The element with role \"{0}\" contains descendants with implicit roles \"{1}\" which are ignored by browsers"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "aria_form_label_unique": {
+            "0": "Each element with \"form\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"form\" role do not have unique labels"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 116,
+            "elementsViolation": 48,
+            "elementsViolationReview": 50,
+            "violation": 48,
+            "potentialviolation": 11,
+            "recommendation": 74,
+            "potentialrecommendation": 4,
+            "manual": 1,
+            "pass": 2579
+        },
+        "scanTime": 148,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779045424842,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EFutureMe%20-%20Featured%20Letters%3A%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22bg-white%22%20data-controller%3D%22tealium-events%22%3E%0A%20%20%0A%0A%0A%20%20%3Cdiv%20style%3D%22background-color%3A%20%231c3dc2%3B%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-ad-above-navbar%20p2%20is-hidden-desktop%22%3E%0A%20%20%20%20%0A%3C!--%20Landscape%20Top%20Fixed%20Mobile%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%22%20style%3D%22display%3Ainline-block%3Bwidth%3A320px%3Bheight%3A50px%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%222381674570%22%3E%3C%2Fins%3E%0A%0A%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22fm-ad-above-navbar%20p2%20is-hidden-mobile%22%3E%0A%20%20%20%20%0A%3C!--%20Landscape%20Top%20Fixed%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-landscape-top%22%20style%3D%22display%3Ainline-block%3Bwidth%3A728px%3Bheight%3A90px%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%229631369396%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%3C%2Fdiv%3E%0A%0A%3C%2Fdiv%3E%0A%0A%3Cnav%20class%3D%22fm-navbar%20is-primary%22%20data-controller%3D%22burger-menu%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-navbar-brand%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-navbar-logo%22%20href%3D%22%2F%22%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22fm-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22fm-navbar-start%22%3E%0A%20%20%20%20%20%20%3Cul%20class%3D%22fm-navbar-links%22%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fletters%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-pencil%20fa-xs%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EWrite%20a%20Letter%20to%20the%20Future%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-burger%20fm-navbar-burger%20burger%22%20data-action%3D%22click-%26gt%3Bburger-menu%23toggle%22%3E%0A%20%20%20%20%3Cdiv%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%3E%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20id%3D%22nav-menu%22%20class%3D%22fm-navbar-menu%22%20data-burger-menu-target%3D%22menu%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-end%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-navbar-links%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%22%20class%3D%22is-active%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20Public%20Letters%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fblog%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EBlog%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fprops%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EPress%20%26amp%3B%20Props%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-dropdown%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-dropdown-main%20is-duo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Mobile%20version%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-desktop%20fm-btn%20is-outlined%20is-tight%22%20href%3D%22%2Fsessions%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20In%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-desktop%20fm-btn%20is-bold%20is-tight%20is-primary%22%20data-action%3D%22tealium-events%23trackTealiumEvent%3Acapture%22%20data-tealium-events-event-name-param%3D%22sign_up_clicked%22%20href%3D%22%2Fusers%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20Up%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Desktop%20version%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-mobile%20fm-btn%20is-outlined%20is-tight%20is-invert%22%20href%3D%22%2Fsessions%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20In%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-mobile%20fm-btn%20is-bold%20is-tight%20%22%20data-action%3D%22tealium-events%23trackTealiumEvent%3Acapture%22%20data-tealium-events-event-name-param%3D%22sign_up_clicked%22%20href%3D%22%2Fusers%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20Up%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-dropdown-body%20is-hidden-navbar-desktop%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%20is-hidden-navbar-start-desktop%22%20href%3D%22%2Fletters%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-pencil%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EWrite%20a%20Letter%20to%20the%20Future%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%20is-hidden-navbar-start-desktop%20is-active%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-book-open-reader%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20Public%20Letters%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%22%20href%3D%22%2Fblog%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-rss%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EBlog%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%22%20href%3D%22%2Fprops%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-newspaper%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EPress%20%26amp%3B%20Props%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fnav%3E%0A%0A%0A%20%20%20%20%3Csection%20class%3D%22pl4%20pr4%20pl6-xl%20pr5-xl%22%3E%0A%20%20%20%20%20%20%3Ch1%20class%3D%22fm-title%20color-primary%20level-3%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20width%3D%2236%22%20height%3D%2236%22%3E%20%20%3Cspan%20class%3D%22has-text-danger%22%3EFeatured%20Letters%3C%2Fspan%3E%20from%20the%20past%0A%20%20%20%20%20%20%3C%2Fh1%3E%0A%20%20%3C%2Fsection%3E%0A%0A%0A%20%20%20%20%0A%20%20%20%20%3Cdiv%20class%3D%22columns%22%20style%3D%22width%3A%20100%25%3B%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22column%20is-flex%20flex-column%20pl4%20pl6-xl%20pr5-xl%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-tabs%20is-light%20is-size-4%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22is-featured%20is-active%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%20%20Featured%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22is-epilogues%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fepilogues%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EEpilogues%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%0A%3Cdiv%20class%3D%22fm-letter-previews%22%3E%0A%20%20%20%20%0A%3Carticle%20class%3D%22fm-letter-preview%22%3E%0A%20%20%3Cp%20class%3D%22fm-letter-preview-info%20color-text-60%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fa-solid%20even-smaller%20fa-clock%22%3E%3C%2Fi%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20Time%20Travelled%20%E2%80%94%20almost%2020%20years%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%0A%0A%20%20%3Ch3%20class%3D%22fm-title%20fm-letter-preview-title%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-letter-preview-link%22%20title%3D%22Read%20the%20full%20letter%22%20id%3D%22232882%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F232882-hello-me%3Foffset%3D0%22%3EHello%20me%3C%2Fa%3E%0A%20%20%3C%2Fh3%3E%0A%0A%20%20%3Cp%20class%3D%22fm-letter-preview-body%22%3E%0A%20%20%20%20%3Ca%20title%3D%22Read%20the%20full%20letter%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F232882-hello-me%3Foffset%3D0%22%3EDear%20FutureMe%2C%20%0A%0AI%20understand%20that%20you're%20either%20a%20robot%20or%20dead%20by%20now.%20%20I%20hope%20you're%20a%20robot.%0A%0AHow's%20life%3F%20%20I%20probably%20didn't%20set%20you%20up%20to%20be%20very%20successful%20but%20I%20trust%20in%20your%20resourcefulness.%20%20If%20you%20didn't%20do%20anything%20particularly%20interesting%20or%20rewarding%20in%20the%20last%2020%20years%20I'm%20not%20mad.%20%20You%20are%20a%20robot%20after%20all...%20I%20imagine%20your%20days%20consist%20of%20conforming%20to%20your%20alien%20masters%20e...%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cfooter%20class%3D%22fm-letter-preview-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-likes%22%3E%0A%20%20%20%20%0A%3Cspan%20class%3D%22fm-like%20like-status%20%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20Like%0A%3C%2Fa%3E%0A%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20JQLikes%20%22%3E302%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22color%3A%239CA3AF%3B%22%20href%3D%22%2Fletters%2F232882-hello-me%22%3E%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-letter-preview-comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-comment%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-comment%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Comments%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20%22%3E53%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fa%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-meta%22%3E%0A%20%20%20%20Feb%2014%2C%202006%0A%20%20%20%20%E2%86%92%0A%20%20%20%20Feb%2014%2C%202026%0A%20%20%20%20%E2%80%A2%0A%20%20%20%2097%26nbsp%3Bwords%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown%20is-right%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-ellipsis-h%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-dropdown-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3EReport%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%3C%2Farticle%3E%0A%0A%20%20%20%20%0A%20%20%20%20%0A%3Carticle%20class%3D%22fm-letter-preview%22%3E%0A%20%20%3Cp%20class%3D%22fm-letter-preview-info%20color-text-60%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fa-solid%20even-smaller%20fa-clock%22%3E%3C%2Fi%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20Time%20Travelled%20%E2%80%94%20almost%205%20years%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%0A%0A%20%20%3Ch3%20class%3D%22fm-title%20fm-letter-preview-title%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-letter-preview-link%22%20title%3D%22Read%20the%20full%20letter%22%20id%3D%2216448870%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F16448870-a-letter-from-january-18th-2021%3Foffset%3D1%22%3EA%20letter%20from%20January%2018th%2C%202021%3C%2Fa%3E%0A%20%20%3C%2Fh3%3E%0A%0A%20%20%3Cp%20class%3D%22fm-letter-preview-body%22%3E%0A%20%20%20%20%3Ca%20title%3D%22Read%20the%20full%20letter%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F16448870-a-letter-from-january-18th-2021%3Foffset%3D1%22%3EDear%20FutureMe%2C%20%0ASince%20now%20I%20can%20write%20and%20read%20in%20English%2C%20I'll%20take%20the%20liberty%20to%20do%20it%20here.%0AIt%20was%205%20years%20ago%2C%20from%20now%2C%2010%20for%20you%2C%20when%20we%20wrote%20this%3A%20%0A%0AEn%20Ushuahia%2C%20a%20una%20semana%20de%20haber%20empezado%20las%20clases%20(%201%20a%C3%B1o%20de%20mecanica%20en%20la%20ex%20enet%201%20)%20%0AA%20unos%20dias%20del%20cumplea%C3%B1os%20de%20mi%20mama%2C%20muy%20feliz%20y%20disfrutando%20de%20todo%2C%20me%20gustaria%20saber%20que%20en%20el%20momento%20que%20te%20llegue%20esta%20carta%20habra...%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cfooter%20class%3D%22fm-letter-preview-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-likes%22%3E%0A%20%20%20%20%0A%3Cspan%20class%3D%22fm-like%20like-status%20%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20Like%0A%3C%2Fa%3E%0A%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20JQLikes%20%22%3E55%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22color%3A%239CA3AF%3B%22%20href%3D%22%2Fletters%2F16448870-a-letter-from-january-18th-2021%22%3E%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-letter-preview-comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-comment%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-comment%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Comments%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20%22%3E13%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fa%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-meta%22%3E%0A%20%20%20%20Jan%2018%2C%202021%0A%20%20%20%20%E2%86%92%0A%20%20%20%20Jan%2018%2C%202026%0A%20%20%20%20%E2%80%A2%0A%20%20%20%201722%26nbsp%3Bwords%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown%20is-right%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-ellipsis-h%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-dropdown-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3EReport%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%3C%2Farticle%3E%0A%0A%20%20%20%20%0A%20%20%20%20%0A%3Carticle%20class%3D%22fm-letter-preview%22%3E%0A%20%20%3Cp%20class%3D%22fm-letter-preview-info%20color-text-60%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fa-solid%20even-smaller%20fa-clock%22%3E%3C%2Fi%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20Time%20Travelled%20%E2%80%94%20almost%205%20years%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%0A%0A%20%20%3Ch3%20class%3D%22fm-title%20fm-letter-preview-title%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-letter-preview-link%22%20title%3D%22Read%20the%20full%20letter%22%20id%3D%2216438792%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F16438792-a-letter-from-january-17th-2021%3Foffset%3D2%22%3EA%20letter%20from%20January%2017th%2C%202021%3C%2Fa%3E%0A%20%20%3C%2Fh3%3E%0A%0A%20%20%3Cp%20class%3D%22fm-letter-preview-body%22%3E%0A%20%20%20%20%3Ca%20title%3D%22Read%20the%20full%20letter%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F16438792-a-letter-from-january-17th-2021%3Foffset%3D2%22%3EDear%20FutureMe%2C%0AIn%20the%20future%2C%20I%20hope%20that%20I%20will%20be%20a%20better%20person%20than%20in%20previous%20years%20%20and%20I%20hope%20that%20I%20will%20be%20a%20successful%20person.%20I%20really%20want%20to%20make%20my%20parents%20happy.%20Because%20I%20am%20their%20only%20child.%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cfooter%20class%3D%22fm-letter-preview-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-likes%22%3E%0A%20%20%20%20%0A%3Cspan%20class%3D%22fm-like%20like-status%20%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20Like%0A%3C%2Fa%3E%0A%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20JQLikes%20%22%3E154%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22color%3A%239CA3AF%3B%22%20href%3D%22%2Fletters%2F16438792-a-letter-from-january-17th-2021%22%3E%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-letter-preview-comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-comment%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-comment%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Comments%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20%22%3E16%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fa%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-meta%22%3E%0A%20%20%20%20Jan%2017%2C%202021%0A%20%20%20%20%E2%86%92%0A%20%20%20%20Jan%2017%2C%202026%0A%20%20%20%20%E2%80%A2%0A%20%20%20%2042%26nbsp%3Bwords%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown%20is-right%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-ellipsis-h%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-dropdown-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3EReport%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%3C%2Farticle%3E%0A%0A%20%20%20%20%0A%20%20%20%20%0A%3Carticle%20class%3D%22fm-letter-preview%22%3E%0A%20%20%3Cp%20class%3D%22fm-letter-preview-info%20color-text-60%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fa-solid%20even-smaller%20fa-clock%22%3E%3C%2Fi%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20Time%20Travelled%20%E2%80%94%20almost%2020%20years%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%0A%0A%20%20%3Ch3%20class%3D%22fm-title%20fm-letter-preview-title%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-letter-preview-link%22%20title%3D%22Read%20the%20full%20letter%22%20id%3D%22201949%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F201949-douglas-short-in-the-future%3Foffset%3D3%22%3EDouglas%20Short%20in%20the%20future%3C%2Fa%3E%0A%20%20%3C%2Fh3%3E%0A%0A%20%20%3Cp%20class%3D%22fm-letter-preview-body%22%3E%0A%20%20%20%20%3Ca%20title%3D%22Read%20the%20full%20letter%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F201949-douglas-short-in-the-future%3Foffset%3D3%22%3EDear%20FutureMe%2C%20%0A%0AWell%20I%20will%20be%2044%20when%20I%20am%20reading%20this%20message%20and%20hopefully%20I%20will%20be%20doing%20a%20job%20where%20I%20have%20less%20time%20to%20mess%20around%20on%20the%20internet.%0A%0AWorking%20at%20seen%20and%20heard%2C%20learning%20the%20ropes.%20It%20is%20quite%20frustrating%20at%20times%2C%20but%20made%20all%20the%20better%20by%20the%20fact%20I%20have%20just%20moved%20into%20mine%20and%20fionas%20first%20home%20at%202%20wolseley%20gardens.%0A%0AWe%20are%20very%20happy%20and%20I%20am%20shortly%20going%20s...%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cfooter%20class%3D%22fm-letter-preview-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-likes%22%3E%0A%20%20%20%20%0A%3Cspan%20class%3D%22fm-like%20like-status%20%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20Like%0A%3C%2Fa%3E%0A%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20JQLikes%20%22%3E211%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22color%3A%239CA3AF%3B%22%20href%3D%22%2Fletters%2F201949-douglas-short-in-the-future%22%3E%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-letter-preview-comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-comment%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-comment%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Comments%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20%22%3E26%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fa%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-meta%22%3E%0A%20%20%20%20Jan%2006%2C%202006%0A%20%20%20%20%E2%86%92%0A%20%20%20%20Jan%2006%2C%202026%0A%20%20%20%20%E2%80%A2%0A%20%20%20%20164%26nbsp%3Bwords%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown%20is-right%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-ellipsis-h%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-dropdown-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3EReport%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%3C%2Farticle%3E%0A%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22is-hidden-desktop%22%20style%3D%22margin%3A%202rem%200%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%0A%3C!--%20Mobile%20Responsive%20In%20Between%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%22%20style%3D%22display%3Ablock%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%221357934184%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%3E%3C%2Fins%3E%0A%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%0A%3Carticle%20class%3D%22fm-letter-preview%22%3E%0A%20%20%3Cp%20class%3D%22fm-letter-preview-info%20color-text-60%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fa-solid%20even-smaller%20fa-clock%22%3E%3C%2Fi%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20Time%20Travelled%20%E2%80%94%20almost%2020%20years%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%0A%0A%20%20%3Ch3%20class%3D%22fm-title%20fm-letter-preview-title%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-letter-preview-link%22%20title%3D%22Read%20the%20full%20letter%22%20id%3D%22194509%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F194509-subject%3Foffset%3D4%22%3ESubject%3C%2Fa%3E%0A%20%20%3C%2Fh3%3E%0A%0A%20%20%3Cp%20class%3D%22fm-letter-preview-body%22%3E%0A%20%20%20%20%3Ca%20title%3D%22Read%20the%20full%20letter%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F194509-subject%3Foffset%3D4%22%3EDear%20FutureMe%2C%20%0A%0AIf%20Jesus%20Christ%20has%20not%20returned%20by%20now%2C%20this%20world%20has%20gotten%2020%20years%20WORSE%20and%20you%20need%20encouragement.%20For%20you%20have%20endured%2020%20more%20years%20of%20living%20in%20a%20world%20of%20selfishness%20and%20increasing%20evil.%20%20One%20can%20only%20imagine%20what%20now%20entertains%20the%20masses.%20I%20hope%20your%20faith%20has%20increased%20and%20you've%20done%20everything%20that%20was%20set%20before%20you%20to%20do.%20If%20you%20haven't%2C%20you%20are%20now%20living%20i...%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cfooter%20class%3D%22fm-letter-preview-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-likes%22%3E%0A%20%20%20%20%0A%3Cspan%20class%3D%22fm-like%20like-status%20%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20Like%0A%3C%2Fa%3E%0A%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20JQLikes%20%22%3E236%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22color%3A%239CA3AF%3B%22%20href%3D%22%2Fletters%2F194509-subject%22%3E%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-letter-preview-comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-comment%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-comment%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Comments%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20%22%3E23%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fa%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-meta%22%3E%0A%20%20%20%20Jan%2002%2C%202006%0A%20%20%20%20%E2%86%92%0A%20%20%20%20Jan%2002%2C%202026%0A%20%20%20%20%E2%80%A2%0A%20%20%20%20107%26nbsp%3Bwords%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown%20is-right%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-ellipsis-h%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-dropdown-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3EReport%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%3C%2Farticle%3E%0A%0A%20%20%20%20%0A%20%20%20%20%0A%3Carticle%20class%3D%22fm-letter-preview%22%3E%0A%20%20%3Cp%20class%3D%22fm-letter-preview-info%20color-text-60%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fa-solid%20even-smaller%20fa-clock%22%3E%3C%2Fi%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20Time%20Travelled%20%E2%80%94%20almost%2020%20years%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%0A%0A%20%20%3Ch3%20class%3D%22fm-title%20fm-letter-preview-title%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-letter-preview-link%22%20title%3D%22Read%20the%20full%20letter%22%20id%3D%22140980%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F140980-subject-diary-of-my-future%3Foffset%3D5%22%3ESubject%3A%20Diary%20of%20my%20future%3C%2Fa%3E%0A%20%20%3C%2Fh3%3E%0A%0A%20%20%3Cp%20class%3D%22fm-letter-preview-body%22%3E%0A%20%20%20%20%3Ca%20title%3D%22Read%20the%20full%20letter%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F140980-subject-diary-of-my-future%3Foffset%3D5%22%3EDear%20FutureMe%2C%20%0AAs%20yo%20know%2C%20I%20have%20been%20wring%20a%20diary%20regularly%20since%201964.%20Thats%20%2031%20years.%20A%20lots%20of%20years%2C%20considering%2C%20that%20it%20is%20the%20expected%20lifespan%20of%20an%20Indian%20born%20in%201932.%0ASo%20I%20have%20already%20lived%20two%20lifespans%20-%20statistically%20speaking.%0AMy%20third%20life%20life%20span%2C%2093%20years%20will%20be%20completing%20%20in%202025.%20So%20this%20email%20to%20the%20future%20is%20aimed%20at%20me%20in%202025%2C%20%0A%0AAre%20yoy%20Celeberating%20the%20thi...%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cfooter%20class%3D%22fm-letter-preview-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-likes%22%3E%0A%20%20%20%20%0A%3Cspan%20class%3D%22fm-like%20like-status%20%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20Like%0A%3C%2Fa%3E%0A%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20JQLikes%20%22%3E256%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22color%3A%239CA3AF%3B%22%20href%3D%22%2Fletters%2F140980-subject-diary-of-my-future%22%3E%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-letter-preview-comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-comment%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-comment%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Comments%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20%22%3E35%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fa%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-meta%22%3E%0A%20%20%20%20Dec%2020%2C%202005%0A%20%20%20%20%E2%86%92%0A%20%20%20%20Dec%2019%2C%202025%0A%20%20%20%20%E2%80%A2%0A%20%20%20%20452%26nbsp%3Bwords%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown%20is-right%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-ellipsis-h%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-dropdown-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3EReport%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%3C%2Farticle%3E%0A%0A%20%20%20%20%0A%20%20%20%20%0A%3Carticle%20class%3D%22fm-letter-preview%22%3E%0A%20%20%3Cp%20class%3D%22fm-letter-preview-info%20color-text-60%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fa-solid%20even-smaller%20fa-clock%22%3E%3C%2Fi%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20Time%20Travelled%20%E2%80%94%20almost%2020%20years%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%0A%0A%20%20%3Ch3%20class%3D%22fm-title%20fm-letter-preview-title%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-letter-preview-link%22%20title%3D%22Read%20the%20full%20letter%22%20id%3D%22117809%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F117809-subject-are-you-still-alive%3Foffset%3D6%22%3ESubject%20are%20you%20still%20alive%3C%2Fa%3E%0A%20%20%3C%2Fh3%3E%0A%0A%20%20%3Cp%20class%3D%22fm-letter-preview-body%22%3E%0A%20%20%20%20%3Ca%20title%3D%22Read%20the%20full%20letter%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F117809-subject-are-you-still-alive%3Foffset%3D6%22%3EDear%20FutureMe%2C%20%0AYou%20are%20watching%20%20about%20%20sharones%20stroke%2C%20its%20%20near%20%20christmas%20%2C%20if%20you%20are%20alive%20you%20have%20probably%20%20%20had%20several%20heart%20attacks%2C%20perhaps%20a%20stroke%20you%20have%20%20horrible%20eating%20habits%20%2C%20and%20%20I%20hope%20you%20have%20changed%20by%20then%20%2C%20if%20someone%20else%20is%20recieving%20this%20i%20wonder%20if%20you%20are%20a%20better%20%20father%20%20than%20%20you%20used%20to%20be%20%2C%20its%202005%20now%20you%20are%20always%20poor%2C%20hopefully%20%20you%20are%20out%20of%20the%20m...%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cfooter%20class%3D%22fm-letter-preview-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-likes%22%3E%0A%20%20%20%20%0A%3Cspan%20class%3D%22fm-like%20like-status%20%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20Like%0A%3C%2Fa%3E%0A%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20JQLikes%20%22%3E98%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22color%3A%239CA3AF%3B%22%20href%3D%22%2Fletters%2F117809-subject-are-you-still-alive%22%3E%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-letter-preview-comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-comment%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-comment%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Comments%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20%22%3E22%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fa%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-meta%22%3E%0A%20%20%20%20Dec%2018%2C%202005%0A%20%20%20%20%E2%86%92%0A%20%20%20%20Dec%2018%2C%202025%0A%20%20%20%20%E2%80%A2%0A%20%20%20%20231%26nbsp%3Bwords%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown%20is-right%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-ellipsis-h%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-dropdown-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3EReport%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%3C%2Farticle%3E%0A%0A%20%20%20%20%0A%20%20%20%20%0A%3Carticle%20class%3D%22fm-letter-preview%22%3E%0A%20%20%3Cp%20class%3D%22fm-letter-preview-info%20color-text-60%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fa-solid%20even-smaller%20fa-clock%22%3E%3C%2Fi%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20Time%20Travelled%20%E2%80%94%20almost%2020%20years%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%0A%0A%20%20%3Ch3%20class%3D%22fm-title%20fm-letter-preview-title%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-letter-preview-link%22%20title%3D%22Read%20the%20full%20letter%22%20id%3D%22112549%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F112549-well-i-ll-give-it-a-shot%3Foffset%3D7%22%3EWell%2C%20I'll%20give%20it%20a%20shot%3C%2Fa%3E%0A%20%20%3C%2Fh3%3E%0A%0A%20%20%3Cp%20class%3D%22fm-letter-preview-body%22%3E%0A%20%20%20%20%3Ca%20title%3D%22Read%20the%20full%20letter%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F112549-well-i-ll-give-it-a-shot%3Foffset%3D7%22%3EDear%20FutureMe%2C%20%0AI'm%20in%20rehab%20right%20now%20and%20I%20think%20it'll%20be%20interesting%20to%20see%20if%20this%20gets%20through%20to%20be%2020%20years%20from%20now...%0A...Will%20I%20still%20be%20alive.%0A%0ARemember%20the%20foloowing%3A%0ADanielle%20Chillemi%0AJackie%2C%20Chris%2C%20and%20Matt%20aka%20Klymax%20Crew%0AYou%20father%20loves%20you%0ASo%20do%20mom%20and%20Eric%0AAnd%20you%20love%20them%0ARehab%20sucks%20***%20and%20the%20only%20drug%20worth%20doing%20is%20mushrooms.%0A****%20the%20rest%20of%20the%20********.%0A...%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cfooter%20class%3D%22fm-letter-preview-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-likes%22%3E%0A%20%20%20%20%0A%3Cspan%20class%3D%22fm-like%20like-status%20%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20Like%0A%3C%2Fa%3E%0A%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20JQLikes%20%22%3E144%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22color%3A%239CA3AF%3B%22%20href%3D%22%2Fletters%2F112549-well-i-ll-give-it-a-shot%22%3E%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-letter-preview-comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-comment%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-comment%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Comments%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20%22%3E14%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fa%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-meta%22%3E%0A%20%20%20%20Dec%2016%2C%202005%0A%20%20%20%20%E2%86%92%0A%20%20%20%20Dec%2016%2C%202025%0A%20%20%20%20%E2%80%A2%0A%20%20%20%2090%26nbsp%3Bwords%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown%20is-right%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-ellipsis-h%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-dropdown-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3EReport%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%3C%2Farticle%3E%0A%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22is-hidden-desktop%22%20style%3D%22margin%3A%202rem%200%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%0A%3C!--%20Mobile%20Responsive%20In%20Between%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%22%20style%3D%22display%3Ablock%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%221357934184%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%3E%3C%2Fins%3E%0A%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%0A%3Carticle%20class%3D%22fm-letter-preview%22%3E%0A%20%20%3Cp%20class%3D%22fm-letter-preview-info%20color-text-60%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fa-solid%20even-smaller%20fa-clock%22%3E%3C%2Fi%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20Time%20Travelled%20%E2%80%94%20over%2019%20years%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%0A%0A%20%20%3Ch3%20class%3D%22fm-title%20fm-letter-preview-title%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-letter-preview-link%22%20title%3D%22Read%20the%20full%20letter%22%20id%3D%22281798%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F281798-happy-60th-birthday-old-dear%3Foffset%3D8%22%3EHappy%2060th%20Birthday%20old%20dear.%3C%2Fa%3E%0A%20%20%3C%2Fh3%3E%0A%0A%20%20%3Cp%20class%3D%22fm-letter-preview-body%22%3E%0A%20%20%20%20%3Ca%20title%3D%22Read%20the%20full%20letter%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F281798-happy-60th-birthday-old-dear%3Foffset%3D8%22%3EDear%20FutureMe%2C%20%0A%0A%20If%20you're%20not%20a%20Granny%20yet%2C%20badger%20your%20kids.%20If%20you%20are%2C%20remember%20-%20it's%20not%20YOU%20who%20has%20to%20deal%20with%20over-tired%2C%20over-sugared%20and%20over%20excited%20kids.%20Revenge%20is%20sweet%2C%20so%20make%20the%20most%20of%20it!%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cfooter%20class%3D%22fm-letter-preview-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-likes%22%3E%0A%20%20%20%20%0A%3Cspan%20class%3D%22fm-like%20like-status%20%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20Like%0A%3C%2Fa%3E%0A%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20JQLikes%20%22%3E426%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22color%3A%239CA3AF%3B%22%20href%3D%22%2Fletters%2F281798-happy-60th-birthday-old-dear%22%3E%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-letter-preview-comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-comment%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-comment%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Comments%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20%22%3E26%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fa%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-meta%22%3E%0A%20%20%20%20Jun%2018%2C%202006%0A%20%20%20%20%E2%86%92%0A%20%20%20%20Oct%2018%2C%202025%0A%20%20%20%20%E2%80%A2%0A%20%20%20%2039%26nbsp%3Bwords%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown%20is-right%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-ellipsis-h%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-dropdown-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3EReport%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%3C%2Farticle%3E%0A%0A%20%20%20%20%0A%20%20%20%20%0A%3Carticle%20class%3D%22fm-letter-preview%22%3E%0A%20%20%3Cp%20class%3D%22fm-letter-preview-info%20color-text-60%22%3E%0A%20%20%20%20%3Ci%20class%3D%22fa-solid%20even-smaller%20fa-clock%22%3E%3C%2Fi%3E%0A%20%20%20%20%3Cspan%3E%0A%20%20%20%20%20%20Time%20Travelled%20%E2%80%94%20over%2021%20years%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%0A%0A%20%20%3Ch3%20class%3D%22fm-title%20fm-letter-preview-title%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-letter-preview-link%22%20title%3D%22Read%20the%20full%20letter%22%20id%3D%2223401%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F23401-flying-cars-and-orbital-hotels%3Foffset%3D9%22%3EFlying%20cars%20and%20orbital%20hotels%3C%2Fa%3E%0A%20%20%3C%2Fh3%3E%0A%0A%20%20%3Cp%20class%3D%22fm-letter-preview-body%22%3E%0A%20%20%20%20%3Ca%20title%3D%22Read%20the%20full%20letter%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%2F23401-flying-cars-and-orbital-hotels%3Foffset%3D9%22%3EDear%20FutureMe%2C%20%0A%0ASo%2C%20we%20never%20thought%20we'd%20make%20it%20this%20far%20even%20and%20the%20future%20up%20to%20now%20has%20not%20been%20what%20we%20expected%20it%20to%20be.%20I%20hope%20that%20by%20the%20time%20you%20get%20this%2C%20we%20will%20have%20gotten%20off%20this%20ball%20of%20rock%20and%20started%20living%20in%20the%20solar%20system%20at%20large.%20I%20hope%20that%20you%20have%20the%20opportunity%20to%20fly%20across%20the%20planet%20in%20a%20sub-orbital%20balistic%20rocket.%20If%20you%20still%20have%20to%20go%20to%20work%20every%20da...%3C%2Fa%3E%0A%20%20%3C%2Fp%3E%0A%0A%20%20%3Cfooter%20class%3D%22fm-letter-preview-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-likes%22%3E%0A%20%20%20%20%0A%3Cspan%20class%3D%22fm-like%20like-status%20%22%3E%0A%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-heart%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20Like%0A%3C%2Fa%3E%0A%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20JQLikes%20%22%3E740%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20style%3D%22color%3A%239CA3AF%3B%22%20href%3D%22%2Fletters%2F23401-flying-cars-and-orbital-hotels%22%3E%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-letter-preview-comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-comment%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22even-smaller%20fa-solid%20fa-comment%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Comments%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-badge%20is-tight%20size-tiny%20%22%3E77%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%3C%2Fa%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-letter-preview-meta%22%3E%0A%20%20%20%20Mar%2019%2C%202004%0A%20%20%20%20%E2%86%92%0A%20%20%20%20Jul%2024%2C%202025%0A%20%20%20%20%E2%80%A2%0A%20%20%20%20239%26nbsp%3Bwords%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown%20is-right%22%3E%0A%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-dropdown-trigger%20fm-icon%20is-1%20is-size-1%22%3E%0A%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-ellipsis-h%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%3C%2Fbutton%3E%0A%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-dropdown-body%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-dropdown-list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%3Fintended_url%3D%252Fletters%252Fpublic%22%3EReport%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%3C%2Farticle%3E%0A%0A%20%20%20%20%0A%3C%2Fdiv%3E%0A%0A%20%20%0A%0A%3Cnav%20class%3D%22fm-block%20fm-btns%20justify-between%20mt4%22%20role%3D%22navigation%22%20aria-label%3D%22pagination%22%3E%0A%20%20%0A%20%20%20%20%3Ca%20class%3D%22fm-btn%22%20disabled%3D%22%22%3E%3Cspan%3E%3Cspan%3EPrevious%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fa%3E%0A%0A%20%20%3Cdiv%20class%3D%22flex%20items-center%20size-tiny%22%3E%0A%20%20%20%20%3Cspan%20class%3D%22fm-icon%20size-tiny%20is-key%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-left%22%3E%3C%2Fi%3E%0A%20%20%20%20%3C%2Fspan%3E%0A%0A%20%20%20%20%3Cp%20class%3D%22color-text-60%20mh3%20is-hidden-touchscreen%22%3EKeyboard%20shortcuts%3C%2Fp%3E%0A%0A%20%20%20%20%3Cspan%20class%3D%22fm-icon%20size-tiny%20is-key%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-arrow-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Ca%20class%3D%22fm-btn%20js-pagination-next%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%3Fpage%3D2%22%3E%3Cspan%3E%3Cspan%3ENext%20page%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fnav%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22column%20is-2-desktop%20is-hidden-touch%20is-flex%22%20style%3D%22align-items%3A%20center%3B%20flex-direction%3A%20column%3B%20min-width%3A%20160px%3B%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%0A%0A%0A%20%20%0A%0A%3Cdiv%20class%3D%22is-hidden-touch%20flex%20justify-center%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22ad%20center%20tc%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Landscape%20Fixed%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-landscape%22%20style%3D%22display%3Ablock%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%226832765911%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%3C%2Fdiv%3E%0A%0A%0A%3Cfooter%20class%3D%22fm-footer%20is-default%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-footer-main%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-footer-logo%20fm-block%22%3E%0A%20%20%20%20%20%20%3Ca%20class%3D%22fm-logo%22%20href%3D%22%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-footer-links%20fm-block%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%2Fletters%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-pencil%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3Cstrong%3EWrite%20a%20letter%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%3Ca%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-book-open-reader%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3Cstrong%3ERead%20Public%20Letters%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-right-to-bracket%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%3ESign%20In%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fusers%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-user%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%3ESign%20Up%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Cform%20class%3D%22button_to%22%20method%3D%22get%22%20action%3D%22%2Freferrals%2Finvite%22%20data-remote%3D%22true%22%3E%3Cbutton%20type%3D%22submit%22%3E%0A%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%3Ci%20class%3D%22fa-solid%20fa-paper-plane%20fa-sm%22%3E%3C%2Fi%3E%3C%2Fspan%3E%0A%20%20%20%20%3Cstrong%3EInvite%20a%20friend%3C%2Fstrong%3E%0A%3C%2Fbutton%3E%3C%2Fform%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cul%20class%3D%22fm-footer-list%20fm-block%22%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2F%22%3EHome%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fprops%22%3EPress%20%26amp%3B%20Props%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fpages%2Fjobs%22%3EJobs%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22mailto%3Aadvertising%40futureme.org%3FSubject%3DFutureMe%2520Advertising%2520Inquiry%22%3EAdvertise%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fsupport.memories.net%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3ESupport%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fblog%22%3EBlog%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3C%2Ful%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-block%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-icons%20is-start%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-twitter%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Ftwitter.com%2Ffutureme%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-twitter%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-facebook%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.facebook.com%2Ffutureme%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-facebook-f%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-youtube%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC6RKoiEdLnf2Fz91NImhUgg%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-youtube%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-linked%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ffutureme-labs%2F%3FviewAsMember%3Dtrue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-linkedin%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-instagram%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.instagram.com%2Ffutureme_official%2F%3Fhl%3Den%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-instagram%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-block%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-images%22%3E%0A%20%20%3Ca%20class%3D%22fm-image%20is-app-store%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fapple.co%2F3PlaxUc%22%3E%3Cimg%3E%3C%2Fa%3E%0A%20%20%3Ca%20class%3D%22fm-image%20is-google-play%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fbit.ly%2F38qZ30P%22%3E%3Cimg%3E%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-footer-tsp%22%3E%0A%20%20%20%20%20%20%3Cul%20class%3D%22fm-footer-list%22%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fpages%2Ftos%22%3ETerms%20of%20use%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fpages%2Fprivacy-policy%22%3EPrivacy%20Policy%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%0A%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20FutureMe%E2%84%A2%20brought%20to%20you%20by%20Memories%20Group%20Limited%20%C2%A9%202002%20-%202026.%0A%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20Yup%20-%20we've%20been%20sending%20letters%20to%20the%20future%20for%20over%2024%20years%20now%0A%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%0A%20%20%20%20%3Cdiv%20data-controller%3D%22gdpr%22%20id%3D%22gdpr_consent_notification%22%20class%3D%22notification%20bg-mid-gray%20sticky%20is-flex%22%20style%3D%22margin-bottom%3A%200px%3B%20align-items%3A%20center%3B%22%3E%0A%20%20%20%20%3Cp%20class%3D%22mr2%22%3EFutureMe%20uses%20cookies%2C%20%26nbsp%3B%3Ca%20href%3D%22%2Fpages%2Ftos%22%20target%3D%22_blank%22%3Eread%20how%3C%2Fa%3E%20%3C%2Fp%3E%0A%20%20%20%20%3Cbutton%20id%3D%22gdpr_consent_button%22%20class%3D%22button%20is-success%20is-outlined%22%20style%3D%22margin-top%3A%205px%3B%22%3EGot%20it!%3C%2Fbutton%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%3Cdiv%20id%3D%22js-modal-inappropriate%22%20class%3D%22fm-modal%20js-modal-closable%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-modal-content%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-modal-box%22%3E%0A%20%20%20%20%20%20%20%20%3Cheader%20class%3D%22fm-block%20flex%20items-center%20justify-between%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22fm-title%20size-large%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20Why%20is%20this%20inappropriate%3F%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22fm-icon%20is-primary%20js-modal-close%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fa-solid%20fa-xmark%20f4%22%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%3C%2Fheader%3E%0A%0A%20%20%20%20%20%20%20%20%3Cform%20class%3D%22fm-form%22%20id%3D%22new_flag%22%20data-parsley-validate%3D%22true%22%20action%3D%22%2Fflags%22%20accept-charset%3D%22UTF-8%22%20data-remote%3D%22true%22%20method%3D%22post%22%20novalidate%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-field%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-control%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ctextarea%20class%3D%22fm-input%20parsley%22%20name%3D%22flag%5Breason%5D%22%20id%3D%22flag_reason%22%3E%3C%2Ftextarea%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20name%3D%22button%22%20type%3D%22submit%22%20class%3D%22fm-btn%20is-primary%20is-bold%20larger%22%20id%3D%22mark-inappropriate%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EMark%20as%20inappropriate%3C%2Fspan%3E%0A%3C%2Fbutton%3E%3C%2Fform%3E%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3Cdiv%20id%3D%22invite-friend-container%22%3E%3C%2Fdiv%3E%0A%0A%20%20%0A%20%20%0A%20%20%20%20%0A%0A%20%20%0A%0A%0A%0A%3Cimg%20height%3D%221%22%20width%3D%221%22%20fetchpriority%3D%22high%22%20style%3D%22display%3A%20none%3B%22%3E%3Cimg%20height%3D%221%22%20width%3D%221%22%20fetchpriority%3D%22high%22%20style%3D%22display%3A%20none%3B%22%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "65882db0-7d5b-4b84-b32a-378df627b40c",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.futureme.org-letters-public"
+}

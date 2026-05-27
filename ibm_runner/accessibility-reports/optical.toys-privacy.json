@@ -1,0 +1,174 @@
+{
+    "results": [
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 1814,
+                "width": 784
+            },
+            "snippet": "<body class=\"legal\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20class%3D%5C%22legal%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/p[7]/span[1]",
+                "aria": "/document[1]/article[1]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 186,
+                "top": 807,
+                "height": 18,
+                "width": 63
+            },
+            "snippet": "<span style=\"color:red;cursor:pointer\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22color%3Ared%3Bcursor%3Apointer%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/p[7]/span[1]",
+                "aria": "/document[1]/article[1]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "4.00",
+                16,
+                400,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 186,
+                "top": 807,
+                "height": 18,
+                "width": 63
+            },
+            "snippet": "<span style=\"color:red;cursor:pointer\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22color%3Ared%3Bcursor%3Apointer%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/p[8]",
+                "aria": "/document[1]/article[1]/paragraph[8]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 893,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        }
+    ],
+    "numExecuted": 301,
+    "ruleTime": 7,
+    "nls": {
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 12,
+            "elementsViolation": 2,
+            "elementsViolationReview": 3,
+            "violation": 2,
+            "potentialviolation": 2,
+            "recommendation": 9,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 287
+        },
+        "scanTime": 22,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778712186550,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EOptical%20Toys%20Terms%20%26%20Privacy%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22legal%22%3E%3Carticle%3E%3Cheader%3E%3Ca%20href%3D%22%2F%22%3EOptical%20Toys%3C%2Fa%3E%3C%2Fheader%3E%3Ch1%20id%3D%22privacy-policy-for-optical-toys%22%3EPrivacy%20Policy%20for%20Optical%20Toys%3C%2Fh1%3E%3Cp%3EAt%20optical%20toys%2C%20accessible%20from%20%3Ca%20href%3D%22https%3A%2F%2Foptical.toys%22%3Ehttps%3A%2F%2Foptical.toys%3C%2Fa%3E%2C%20one%20of%20our%20main%20priorities%20is%20the%20privacy%20of%20our%20visitors.%20This%20Privacy%20Policy%20document%20contains%20types%20of%20information%20that%20is%20collected%20and%20recorded%20by%20optical%20toys%20and%20how%20we%20use%20it.%3C%2Fp%3E%3Cp%3EIf%20you%20have%20additional%20questions%20or%20require%20more%20information%20about%20our%20Privacy%20Policy%2C%20do%20not%20hesitate%20to%20contact%20us.%20Our%20Privacy%20Policy%20was%20created%20with%20the%20help%20of%20the%20%3Ca%20href%3D%22https%3A%2F%2Fwww.generateprivacypolicy.com%2F%22%3EPrivacy%20Policy%20Generator%3C%2Fa%3E.%3C%2Fp%3E%3Ch2%20id%3D%22log-files%22%3ELog%20Files%3C%2Fh2%3E%3Cp%3Eoptical%20toys%20follows%20a%20standard%20procedure%20of%20using%20log%20files.%20These%20files%20log%20visitors%20when%20they%20visit%20websites.%20All%20hosting%20companies%20do%20this%20and%20a%20part%20of%20hosting%20services%E2%80%99%20analytics.%20The%20information%20collected%20by%20log%20files%20include%20internet%20protocol%20(IP)%20addresses%2C%20browser%20type%2C%20Internet%20Service%20Provider%20(ISP)%2C%20date%20and%20time%20stamp%2C%20referring%2Fexit%20pages%2C%20and%20possibly%20the%20number%20of%20clicks.%20These%20are%20not%20linked%20to%20any%20information%20that%20is%20personally%20identifiable.%20The%20purpose%20of%20the%20information%20is%20for%20analyzing%20trends%2C%20administering%20the%20site%2C%20tracking%20users%E2%80%99%20movement%20on%20the%20website%2C%20and%20gathering%20demographic%20information.%3C%2Fp%3E%3Ch2%20id%3D%22cookies-and-web-beacons%22%3ECookies%20and%20Web%20Beacons%3C%2Fh2%3E%3Cp%3ELike%20any%20other%20website%2C%20optical%20toys%20uses%20%E2%80%98cookies%E2%80%99.%20These%20cookies%20are%20used%20to%20store%20information%20including%20visitors%E2%80%99%20preferences%2C%20and%20the%20pages%20on%20the%20website%20that%20the%20visitor%20accessed%20or%20visited.%20The%20information%20is%20used%20to%20optimize%20the%20users%E2%80%99%20experience%20by%20customizing%20our%20web%20page%20content%20based%20on%20visitors%E2%80%99%20browser%20type%20and%2For%20other%20information.%3C%2Fp%3E%3Ch2%20id%3D%22google-doubleclick-dart-cookie%22%3EGoogle%20DoubleClick%20DART%20Cookie%3C%2Fh2%3E%3Cp%3EGoogle%20is%20one%20of%20a%20third-party%20vendor%20on%20our%20site.%20It%20also%20uses%20cookies%2C%20known%20as%20DART%20cookies%2C%20to%20serve%20ads%20to%20our%20site%20visitors%20based%20upon%20their%20visit%20to%20%3Ca%20href%3D%22https%3A%2F%2Fwww.website.com%22%3Ewww.website.com%3C%2Fa%3E%20and%20other%20sites%20on%20the%20internet.%20However%2C%20visitors%20may%20choose%20to%20decline%20the%20use%20of%20DART%20cookies%20by%20visiting%20the%20Google%20ad%20and%20content%20network%20Privacy%20Policy%20at%20the%20following%20URL%20%E2%80%93%20%3Ca%20href%3D%22https%3A%2F%2Fpolicies.google.com%2Ftechnologies%2Fads%22%3Ehttps%3A%2F%2Fpolicies.google.com%2Ftechnologies%2Fads%3C%2Fa%3E%3C%2Fp%3E%3Cp%3EAll%20or%20partial%20advertising%20on%20this%20Website%20or%20App%20is%20managed%20by%20Playwire%20LLC.%20If%20Playwire%20publisher%20advertising%20services%20are%20used%2C%20Playwire%20LLC%20may%20collect%20and%20use%20certain%20aggregated%20and%20anonymized%20data%20for%20advertising%20purposes.%20To%20learn%20more%20about%20the%20types%20of%20data%20collected%2C%20how%20data%20is%20used%20and%20your%20choices%20as%20a%20user%2C%20please%20visit%20%3Ca%20href%3D%22https%3A%2F%2Fwww.playwire.com%2Fprivacy-policy%22%3Ehttps%3A%2F%2Fwww.playwire.com%2Fprivacy-policy%3C%2Fa%3E.%3C%2Fp%3E%3Cp%3E%3Cstrong%3EFor%20EU%20Users%20only%3A%3C%2Fstrong%3E%20If%20you%20are%20located%20in%20countries%20that%20are%20part%20of%20the%20European%20Economic%20Area%2C%20in%20the%20United%20Kingdom%20or%20Switzerland%2C%20and%20publisher%20advertising%20services%20are%20being%20provided%20by%20Playwire%20LLC%2C%20you%20were%20presented%20with%20messaging%20from%20our%20Consent%20Management%20Platform%20(CMP)%20around%20your%20privacy%20choices%20as%20a%20user%20in%20regards%20to%20digital%20advertising%2C%20applicable%20vendors%2C%20cookie%20usage%20and%20more.%20If%20you%E2%80%99d%20like%20to%20revisit%20the%20choices%20you%20have%20made%20previously%20on%20this%20Website%20or%20App%2C%20please%20%3Cspan%20style%3D%22color%3Ared%3Bcursor%3Apointer%22%3Eclick%20here%3C%2Fspan%3E.%3C%2Fp%3E%3Ch2%20id%3D%22our-advertising-partners%22%3EOur%20Advertising%20Partners%3C%2Fh2%3E%3Cp%3ESome%20of%20advertisers%20on%20our%20site%20may%20use%20cookies%20and%20web%20beacons.%20Our%20advertising%20partners%20are%20listed%20below.%20Each%20of%20our%20advertising%20partners%20has%20their%20own%20Privacy%20Policy%20for%20their%20policies%20on%20user%20data.%20For%20easier%20access%2C%20we%20hyperlinked%20to%20their%20Privacy%20Policies%20below.%3C%2Fp%3E%3Cul%3E%3Cli%3E%3Cp%3EGoogle%3C%2Fp%3E%3Cp%3E%3Ca%20href%3D%22https%3A%2F%2Fpolicies.google.com%2Ftechnologies%2Fads%22%3Ehttps%3A%2F%2Fpolicies.google.com%2Ftechnologies%2Fads%3C%2Fa%3E%3C%2Fp%3E%3C%2Fli%3E%3C%2Ful%3E%3Ch2%20id%3D%22privacy-policies%22%3EPrivacy%20Policies%3C%2Fh2%3E%3Cp%3EYou%20may%20consult%20this%20list%20to%20find%20the%20Privacy%20Policy%20for%20each%20of%20the%20advertising%20partners%20of%20optical%20toys.%3C%2Fp%3E%3Cp%3EThird-party%20ad%20servers%20or%20ad%20networks%20uses%20technologies%20like%20cookies%2C%20JavaScript%2C%20or%20Web%20Beacons%20that%20are%20used%20in%20their%20respective%20advertisements%20and%20links%20that%20appear%20on%20optical%20toys%2C%20which%20are%20sent%20directly%20to%20users%E2%80%99%20browser.%20They%20automatically%20receive%20your%20IP%20address%20when%20this%20occurs.%20These%20technologies%20are%20used%20to%20measure%20the%20effectiveness%20of%20their%20advertising%20campaigns%20and%2For%20to%20personalize%20the%20advertising%20content%20that%20you%20see%20on%20websites%20that%20you%20visit.%3C%2Fp%3E%3Cp%3ENote%20that%20optical%20toys%20has%20no%20access%20to%20or%20control%20over%20these%20cookies%20that%20are%20used%20by%20third-party%20advertisers.%3C%2Fp%3E%3Ch2%20id%3D%22third-party-privacy-policies%22%3EThird%20Party%20Privacy%20Policies%3C%2Fh2%3E%3Cp%3Eoptical%20toys%20Privacy%20Policy%20does%20not%20apply%20to%20other%20advertisers%20or%20websites.%20Thus%2C%20we%20are%20advising%20you%20to%20consult%20the%20respective%20Privacy%20Policies%20of%20these%20third-party%20ad%20servers%20for%20more%20detailed%20information.%20It%20may%20include%20their%20practices%20and%20instructions%20about%20how%20to%20opt-out%20of%20certain%20options.%3C%2Fp%3E%3Cp%3EYou%20can%20choose%20to%20disable%20cookies%20through%20your%20individual%20browser%20options.%20To%20know%20more%20detailed%20information%20about%20cookie%20management%20with%20specific%20web%20browsers%2C%20it%20can%20be%20found%20at%20the%20browsers%E2%80%99%20respective%20websites.%20What%20Are%20Cookies%3F%3C%2Fp%3E%3Ch2%20id%3D%22childrens-information%22%3EChildren%E2%80%99s%20Information%3C%2Fh2%3E%3Cp%3EAnother%20part%20of%20our%20priority%20is%20adding%20protection%20for%20children%20while%20using%20the%20internet.%20We%20encourage%20parents%20and%20guardians%20to%20observe%2C%20participate%20in%2C%20and%2For%20monitor%20and%20guide%20their%20online%20activity.%3C%2Fp%3E%3Cp%3Eoptical%20toys%20does%20not%20knowingly%20collect%20any%20Personal%20Identifiable%20Information%20from%20children%20under%20the%20age%20of%2013.%20If%20you%20think%20that%20your%20child%20provided%20this%20kind%20of%20information%20on%20our%20website%2C%20we%20strongly%20encourage%20you%20to%20contact%20us%20immediately%20and%20we%20will%20do%20our%20best%20efforts%20to%20promptly%20remove%20such%20information%20from%20our%20records.%3C%2Fp%3E%3Ch2%20id%3D%22online-privacy-policy-only%22%3EOnline%20Privacy%20Policy%20Only%3C%2Fh2%3E%3Cp%3EThis%20Privacy%20Policy%20applies%20only%20to%20our%20online%20activities%20and%20is%20valid%20for%20visitors%20to%20our%20website%20with%20regards%20to%20the%20information%20that%20they%20shared%20and%2For%20collect%20in%20optical%20toys.%20This%20policy%20is%20not%20applicable%20to%20any%20information%20collected%20offline%20or%20via%20channels%20other%20than%20this%20website.%3C%2Fp%3E%3Ch2%20id%3D%22consent%22%3EConsent%3C%2Fh2%3E%3Cp%3EBy%20using%20our%20website%2C%20you%20hereby%20consent%20to%20our%20Privacy%20Policy%20and%20agree%20to%20its%20Terms%20and%20Conditions.%3C%2Fp%3E%3Cfooter%3E%3Ca%20href%3D%22https%3A%2F%2Foptical.toys%22%3Eoptical.toys%3C%2Fa%3E%20%3Cspan%20class%3D%22nofont%22%3E%C2%A9%3C%2Fspan%3E%20%3Ca%20href%3D%22https%3A%2F%2Ftoybox.toms.toys%22%3Etoms.toys%3C%2Fa%3E%3C%2Ffooter%3E%3C%2Farticle%3E%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "18287eae-ec24-4f98-baf7-879dcd01fa79",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "optical.toys-privacy"
+}

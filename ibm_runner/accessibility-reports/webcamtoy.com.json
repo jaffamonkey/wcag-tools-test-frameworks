@@ -1,0 +1,496 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[1]/div[2]/a[1]",
+                "aria": "/document[1]/article[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 305,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a style=\"background-image: url(\"/assets/photos/BRaQL-MCMAA61ny.jpg\");\" id=\"photo3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Ca%20style%3D%5C%22background-image%3A%20url(%5C%22%2Fassets%2Fphotos%2FBRaQL-MCMAA61ny.jpg%5C%22)%3B%5C%22%20id%3D%5C%22photo3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[1]/div[1]/p[4]",
+                "aria": "/document[1]/article[1]/paragraph[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'above' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "above"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 607,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p class=\"prompt access-above\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'above'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22prompt%20access-above%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22above%22%5D%7D"
+        },
+        {
+            "ruleId": "form_submit_button_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[3]/div[1]/form[1]",
+                "aria": "/document[1]/article[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify the <form> element has a submit button or an image button",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2636,
+                "height": 120,
+                "width": 784
+            },
+            "snippet": "<form>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/form_submit_button_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cform%3E%20element%20has%20a%20submit%20button%20or%20an%20image%20button%22%2C%22snippet%22%3A%22%3Cform%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22form_submit_button_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[3]/div[1]/form[1]",
+                "aria": "/document[1]/article[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2636,
+                "height": 120,
+                "width": 784
+            },
+            "snippet": "<form>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "fieldset_label_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[3]/div[1]/form[1]/div[1]/fieldset[1]",
+                "aria": "/document[1]/article[1]/form[1]/group[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Group/Fieldset does not have an accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 2636,
+                "height": 120,
+                "width": 780
+            },
+            "snippet": "<fieldset>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/fieldset_label_valid.html#%7B%22message%22%3A%22Group%2FFieldset%20does%20not%20have%20an%20accessible%20name%22%2C%22snippet%22%3A%22%3Cfieldset%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22fieldset_label_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[3]/div[3]/p[39]",
+                "aria": "/document[1]/article[1]/paragraph[61]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'Bottom' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "Bottom"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4083,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p class=\"effect effect-mirrorbottom\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'Bottom'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22effect%20effect-mirrorbottom%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Bottom%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[3]/div[3]/p[40]",
+                "aria": "/document[1]/article[1]/paragraph[62]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'Left' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "Left"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4118,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p class=\"effect effect-mirrorleft\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'Left'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22effect%20effect-mirrorleft%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Left%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[3]/div[3]/p[42]",
+                "aria": "/document[1]/article[1]/paragraph[64]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'Right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "Right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4187,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p class=\"effect effect-mirrorright\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'Right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22effect%20effect-mirrorright%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Right%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[3]/div[3]/p[43]",
+                "aria": "/document[1]/article[1]/paragraph[65]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'Top' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4221,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p class=\"effect effect-mirrortop\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'Top'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22effect%20effect-mirrortop%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Top%22%5D%7D"
+        },
+        {
+            "ruleId": "form_submit_button_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[4]/form[1]",
+                "aria": "/document[1]/article[1]/form[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify the <form> element has a submit button or an image button",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6309,
+                "height": 92,
+                "width": 784
+            },
+            "snippet": "<form>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/form_submit_button_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cform%3E%20element%20has%20a%20submit%20button%20or%20an%20image%20button%22%2C%22snippet%22%3A%22%3Cform%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22form_submit_button_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[4]/form[1]",
+                "aria": "/document[1]/article[1]/form[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6309,
+                "height": 92,
+                "width": 784
+            },
+            "snippet": "<form>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "fieldset_label_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[4]/form[1]/fieldset[1]",
+                "aria": "/document[1]/article[1]/form[2]/group[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Group/Fieldset does not have an accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 6309,
+                "height": 92,
+                "width": 780
+            },
+            "snippet": "<fieldset>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/fieldset_label_valid.html#%7B%22message%22%3A%22Group%2FFieldset%20does%20not%20have%20an%20accessible%20name%22%2C%22snippet%22%3A%22%3Cfieldset%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22fieldset_label_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[4]/form[1]/fieldset[1]/input[1]",
+                "aria": "/document[1]/article[1]/form[2]/group[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 24,
+                "top": 6316,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input class=\"photo-shadow\" maxlength=\"245\" data-alt=\"Playing with Webcam Toy|Taking photos with Webcam Toy|Just took this photo with Webcam Toy\" placeholder=\"\" value=\"\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20class%3D%5C%22photo-shadow%5C%22%20maxlength%3D%5C%22245%5C%22%20data-alt%3D%5C%22Playing%20with%20Webcam%20Toy%7CTaking%20photos%20with%20Webcam%20Toy%7CJust%20took%20this%20photo%20with%20Webcam%20Toy%5C%22%20placeholder%3D%5C%22%5C%22%20value%3D%5C%22%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[5]/p[1]/span[3]",
+                "aria": "/document[1]/article[1]/paragraph[123]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 517,
+                "top": 7003,
+                "height": 18,
+                "width": 264
+            },
+            "snippet": "<span>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cspan%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/article[1]/section[2]/div[1]/div[2]/div[5]/p[1]/span[4]",
+                "aria": "/document[1]/article[1]/paragraph[123]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7021,
+                "height": 18,
+                "width": 230
+            },
+            "snippet": "<span>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cspan%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        }
+    ],
+    "numExecuted": 1540,
+    "ruleTime": 30,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "form_submit_button_exists": {
+            "0": "A <form> element should have a submit button or an image button",
+            "Potential_1": "Verify the <form> element has a submit button or an image button"
+        },
+        "aria_form_label_unique": {
+            "0": "Each element with \"form\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"form\" role do not have unique labels"
+        },
+        "fieldset_label_valid": {
+            "0": "Groups with nested inputs must have unique accessible name",
+            "Fail_1": "Group/Fieldset does not have an accessible name"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 51,
+            "elementsViolation": 5,
+            "elementsViolationReview": 27,
+            "violation": 5,
+            "potentialviolation": 10,
+            "recommendation": 23,
+            "potentialrecommendation": 7,
+            "manual": 16,
+            "pass": 1479
+        },
+        "scanTime": 90,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778500572533,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EWebcam%20Toy%20-%20Take%20photos%20online%20with%20over%2080%20fun%20effects%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22home%22%3E%0A%09%09%3Ccanvas%20id%3D%22toy-bg%22%3E%3C%2Fcanvas%3E%0A%09%09%3Cheader%3E%0A%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fwebcamtoy.com%2F%22%20target%3D%22_top%22%20id%3D%22head-home%22%20class%3D%22notranslate%22%3E%3Cspan%3E%3C%2Fspan%3E%3Ch1%3EWebcam%20Toy%3Csup%3E%C2%AE%3C%2Fsup%3E%3C%2Fh1%3E%3C%2Fa%3E%0A%09%09%09%3Cp%20class%3D%22hidden%22%3ETake%20pictures%20online%20with%20your%20webcam%20using%20over%2080%20free%20fun%20effects.%20Save%20photos%20to%20your%20computer%2C%20or%20share%20with%20friends!%3C%2Fp%3E%0A%09%09%3C%2Fheader%3E%0A%09%09%3Carticle%20id%3D%22content%22%3E%0A%09%09%09%3Csection%20id%3D%22home%22%3E%0A%09%09%09%09%3Cdiv%20id%3D%22home-bg%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20id%3D%22home-photos%22%20data-json%3D%22photos%22%3E%0A%09%09%09%09%09%3Ca%20id%3D%22photo3%22%20style%3D%22background-image%3A%20url(%26quot%3B%2Fassets%2Fphotos%2FBRaQL-MCMAA61ny.jpg%26quot%3B)%3B%22%3E%3Cdiv%20class%3D%22photo-fade%22%20style%3D%22opacity%3A%200%3B%22%3E%3C%2Fdiv%3E%3C%2Fa%3E%0A%09%09%09%09%09%3Ca%20id%3D%22photo4%22%20style%3D%22background-image%3A%20url(%26quot%3B%2Fassets%2Fphotos%2FBp9zmFzCcAA5wkx.jpg%26quot%3B)%3B%22%3E%3Cdiv%20class%3D%22photo-fade%22%20style%3D%22opacity%3A%200%3B%22%3E%3C%2Fdiv%3E%3C%2Fa%3E%0A%09%09%09%09%09%3Ca%20id%3D%22photo1%22%20style%3D%22background-image%3A%20url(%26quot%3B%2Fassets%2Fphotos%2FBOcTLxpCQAQ5FIT.jpg%26quot%3B)%3B%22%3E%3Cdiv%20class%3D%22photo-fade%22%20style%3D%22opacity%3A%200%3B%22%3E%3C%2Fdiv%3E%3C%2Fa%3E%0A%09%09%09%09%09%3Ca%20id%3D%22photo2%22%20style%3D%22background-image%3A%20url(%26quot%3B%2Fassets%2Fphotos%2FBVcKTTXIYAAcOig.jpg%26quot%3B)%3B%22%3E%3Cdiv%20class%3D%22photo-fade%22%20style%3D%22opacity%3A%200%3B%22%3E%3C%2Fdiv%3E%3C%2Fa%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20id%3D%22home-body%22%3E%0A%09%09%09%09%09%3Ch1%3E%3Cspan%3EWebcam%20Toy%3C%2Fspan%3E%3C%2Fh1%3E%0A%09%09%09%09%09%3Cp%20id%3D%22home-main%22%3E%0A%09%09%09%09%09%09%3Cspan%20class%3D%22large%22%3EOver%2080%20fun%20%3Cspan%3Efree%20digital%20%3C%2Fspan%3Eeffects%20and%20filters%20to%20use%20with%20your%20%3Cspan%3Eweb%20%3C%2Fspan%3Ecamera.%20Take%26nbsp%3Bphotos%20online%2C%20download%3Cspan%3E%20and%20save%20selfies%20to%20your%20computer%3C%2Fspan%3E%2C%20and%26nbsp%3Bshare!%3C%2Fspan%3E%0A%09%09%09%09%09%09%3Cspan%20class%3D%22small%22%3ETake%20selfies%20with%20over%2080%20fun%26nbsp%3Beffects!%3C%2Fspan%3E%0A%09%09%09%09%09%3C%2Fp%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22button-init%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22arrow%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cp%3EReady%3F%20Smile!%3C%2Fp%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cnoscript%3E%3Cdiv%20id%3D%22home-no-js%22%20class%3D%22warning%22%3EPlease%20%3Ca%20href%3D%22https%3A%2F%2Fenable-javascript.com%2F%22%20target%3D%22_blank%22%3Eenable%20JavaScript%3C%2Fa%3E%20to%20use%20Webcam%20Toy.%3C%2Fdiv%3E%3C%2Fnoscript%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cfooter%3E%0A%09%09%09%09%09%3Cul%3E%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22%2Flegal%2Fterms%2F%22%20rel%3D%22nofollow%22%20target%3D%22_blank%22%3ETerms%20of%20Service%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22%2Flegal%2Fprivacy%2F%22%20rel%3D%22nofollow%22%20target%3D%22_blank%22%3EPrivacy%20Policy%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%09%3Cli%3E%3Ca%20href%3D%22%2Flang%2F%22%20target%3D%22_top%22%3ELanguage%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%3C%2Ful%3E%0A%09%09%09%09%3C%2Ffooter%3E%0A%09%09%09%3C%2Fsection%3E%0A%09%09%09%3Cdiv%20id%3D%22infobar-stripe%22%20class%3D%22hot-pink%22%3E%3Cdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%09%09%09%3Csection%20id%3D%22app%22%3E%0A%09%09%09%09%3Cdiv%20id%3D%22toy%22%20data-version%3D%22329%22%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22toy-intro%22%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22toy-intro-prompt%22%3E%0A%09%09%09%09%09%09%09%3Cp%20class%3D%22prompt%20request%22%3EPress%20the%20button%20to%20access%20your%26nbsp%3Bcamera%3A%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20class%3D%22prompt%20request-error%22%3EPlease%20try%20again!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20class%3D%22prompt%20access%22%3EPlease%20allow%20access!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20class%3D%22prompt%20access-above%22%3E%3Cspan%20class%3D%22arrow%20rotate-270%22%3E%3C%2Fspan%3EAllow%20access%20from%20the%20menu%26nbsp%3Babove%3Cspan%20class%3D%22arrow%20rotate-270%22%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20class%3D%22prompt%20loading%22%3ELoading%E2%80%A6%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20class%3D%22prompt%20error%22%3ESorry%2C%20there%20was%20a%20problem.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22prompt%20incapable%20warning%22%3ESorry%2C%20Webcam%20Toy%20does%20not%20work%20in%20this%20web%26nbsp%3Bbrowser.%3Cbr%3EPlease%20try%20using%20%3Ca%20href%3D%22https%3A%2F%2Fwww.mozilla.org%2Ffirefox%2F%22%20target%3D%22_blank%22%3EFirefox%3C%2Fa%3E%20or%26nbsp%3B%3Ca%20href%3D%22https%3A%2F%2Fwww.apple.com%2Fsafari%2F%22%20target%3D%22_blank%22%3ESafari%3C%2Fa%3E.%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22toy-start%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22button-start%22%20class%3D%22button%20hot-pink%20hidden%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22icon%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cp%3EUse%20my%20camera%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22.%2F%22%20rel%3D%22nofollow%22%20id%3D%22button-reload%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22arrow%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cp%3EPlease%20try%20again!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cnoscript%3E%3Cdiv%20id%3D%22app-no-js%22%20class%3D%22warning%22%3EPlease%20%3Ca%20href%3D%22https%3A%2F%2Fenable-javascript.com%2F%22%20target%3D%22_blank%22%3Eenable%20JavaScript%3C%2Fa%3E%20to%20use%20Webcam%20Toy.%3C%2Fdiv%3E%3C%2Fnoscript%3E%0A%09%09%09%09%09%09%3Cfooter%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22footer-denied%22%3EPlease%20enable%20camera%20access%20in%20your%20web%20browser%E2%80%99s%26nbsp%3Bsettings.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22footer-unavailable%22%3EClose%20all%20other%20websites%20and%20programs%20that%20may%20be%20using%20your%20camera%20(Skype%2C%20chat%26nbsp%3Betc.)%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22footer-message%22%3EPhotos%20are%20%3Cstrong%3Enot%3C%2Fstrong%3E%20stored%20online%20unless%20you%20choose%20to%20share%26nbsp%3Bthem.%3C%2Fp%3E%0A%09%09%09%09%09%09%3C%2Ffooter%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22toy-main%22%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22toy-grid%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22grid-view%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%3Cdiv%20class%3D%22grid-shadow%22%3E%3Ccanvas%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cp%3E%3C%2Fp%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%3Cdiv%20class%3D%22grid-shadow%22%3E%3Ccanvas%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cp%3E%3C%2Fp%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%3Cdiv%20class%3D%22grid-shadow%22%3E%3Ccanvas%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cp%3E%3C%2Fp%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%3Cdiv%20class%3D%22grid-shadow%22%3E%3Ccanvas%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cp%3E%3C%2Fp%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%3Cdiv%20class%3D%22grid-shadow%22%3E%3Ccanvas%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cp%3E%3C%2Fp%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%3Cdiv%20class%3D%22grid-shadow%22%3E%3Ccanvas%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cp%3E%3C%2Fp%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%3Cdiv%20class%3D%22grid-shadow%22%3E%3Ccanvas%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cp%3E%3C%2Fp%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%3Cdiv%20class%3D%22grid-shadow%22%3E%3Ccanvas%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cp%3E%3C%2Fp%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%3Cdiv%20class%3D%22grid-shadow%22%3E%3Ccanvas%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cp%3E%3C%2Fp%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22grid-ui%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20id%3D%22button-up%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22arrow%20rotate-270%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20id%3D%22button-down%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22arrow%20rotate-90%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22toy-view%22%3E%0A%09%09%09%09%09%09%09%3Ccanvas%3E%3C%2Fcanvas%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22toy-countdown%22%20class%3D%22countdown-center%22%3E%3C%2Fp%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22toy-ui%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22settings%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20id%3D%22button-settings%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22icon%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cform%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22popup%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cfieldset%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22checkbox%20hot-pink%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22setting-mirror%22%20value%3D%22mirror%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Clabel%20for%3D%22setting-mirror%22%3EMirror%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22checkbox%20hot-pink%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22setting-square%22%20value%3D%22square%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Clabel%20for%3D%22setting-square%22%3ESquare%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22checkbox%20hot-pink%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22setting-countdown%22%20value%3D%22countdown%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Clabel%20for%3D%22setting-countdown%22%3ECountdown%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22checkbox%20hot-pink%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22setting-flash%22%20value%3D%22flash%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Clabel%20for%3D%22setting-flash%22%3EFlash%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22checkbox%20hot-pink%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22setting-full-screen%22%20value%3D%22full-screen%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Clabel%20for%3D%22setting-full-screen%22%3EFull%20Screen%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Ffieldset%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22anchor%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C%2Fform%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22button-previous%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22arrow%20rotate-180%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22button-effects%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22more%22%3EMore%20effects%E2%80%A6%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22loading%22%3E%3Cspan%20class%3D%22text%22%3ELoading%E2%80%A6%20%3C%2Fspan%3E%3Cspan%20class%3D%22pc%22%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-normal%22%3ENormal%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-alien%22%3EAlien%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-berry%22%3EBerry%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-blackwhite%22%3EBlack%20%26amp%3B%20White%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-bloom%22%3EBloom%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-bokeh%22%3EBokeh%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-bulge%22%3EBulge%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-cartoon%22%3ECartoon%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-citrus%22%3ECitrus%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-cocktail%22%3ECocktail%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-cocoa%22%3ECocoa%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-colorghost%22%3EColor%20Ghost%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-comicbook%22%3EComic%20Book%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-comicstrip%22%3EComic%20Strip%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-crosshatch%22%3ECrosshatch%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-danger%22%3EDanger%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-dent%22%3EDent%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-disco%22%3EDisco%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-envy%22%3EEnvy%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-filmstrip%22%3EFilmstrip%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-fire%22%3EFire%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-fisheye%22%3EFisheye%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-flare%22%3EFlare%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-fragment%22%3EFragment%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-ghost%22%3EGhost%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-glaze%22%3EGlaze%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-glitch%22%3EGlitch%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-halo%22%3EHalo%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-hazydays%22%3EHazy%20Days%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-hotpink%22%3EHot%20Pink%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-kaleidoscope%22%3EKaleidoscope%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-lomo%22%3ELomo%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-lomoquad%22%3ELomo%20Quad%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-lsd%22%3ELSD%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-magazine%22%3EMagazine%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-mint%22%3EMint%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-mirrorbottom%22%3EBottom%20Mirror%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-mirrorleft%22%3ELeft%20Mirror%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-mirrorquad%22%3EQuad%20Mirror%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-mirrorright%22%3ERight%20Mirror%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-mirrortop%22%3ETop%20Mirror%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-mono%22%3EMono%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-monoquad%22%3EMono%20Quad%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-neon%22%3ENeon%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-nightvision%22%3ENight%20Vision%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-oldmovie%22%3EOld%20Movie%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-outline%22%3EOutline%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-pinch%22%3EPinch%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-popart%22%3EPop%20Art%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-popbooth%22%3EPop%20Booth%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-quadcam%22%3EQuad%20Cam%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-rainbow%22%3ERainbow%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-retro%22%3ERetro%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-ripple%22%3ERipple%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-rose%22%3ERose%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-shuffle%22%3EShuffle%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-silk%22%3ESilk%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-sketch%22%3ESketch%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-smoke%22%3ESmoke%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-snow%22%3ESnow%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-softfocus%22%3ESoft%20Focus%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-sparkle%22%3ESparkle%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-spectrum%22%3ESpectrum%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-spiral%22%3ESpiral%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-splitscreen%22%3ESplit%20Screen%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-spycam%22%3ESpy%20Cam%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-stretch%22%3EStretch%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-switch%22%3ESwitch%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-thermal%22%3EThermal%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-trail%22%3ETrail%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-trueblue%22%3ETrue%20Blue%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-tunnel%22%3ETunnel%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-twist%22%3ETwist%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-underwater%22%3EUnderwater%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-upsidedown%22%3EUpside-Down%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-vintage%22%3EVintage%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-watercolor%22%3EWatercolor%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-wedge%22%3EWedge%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-xpro%22%3EX-Pro%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-xray%22%3EX-Ray%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20effect-zinc%22%3EZinc%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22effect%20plus%22%3E%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22button-next%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22arrow%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22capture%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20id%3D%22button-capture%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22icon%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22capture-text%22%3ETake%20a%20photo%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22capture-quad-text%22%3ETake%204%20photos%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22photo%22%3E%0A%09%09%09%09%09%09%09%3Cimg%20width%3D%22800%22%20height%3D%22600%22%20alt%3D%22%22%3E%0A%09%09%09%09%09%09%09%3Cform%3E%0A%09%09%09%09%09%09%09%09%3Cfieldset%3E%0A%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22text%22%20value%3D%22%22%20placeholder%3D%22%22%20data-alt%3D%22Playing%20with%20Webcam%20Toy%7CTaking%20photos%20with%20Webcam%20Toy%7CJust%20took%20this%20photo%20with%20Webcam%20Toy%22%20maxlength%3D%22245%22%20class%3D%22photo-shadow%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%22Playing%20with%20the%20%25s%20effect%20on%20Webcam%20Toy%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%22Just%20took%20this%20%25s%20pic%20on%20Webcam%20Toy%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%22I%20%26lt%3B3%20this%20%25s%20effect%20on%20Webcam%20Toy%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%22My%20%25s%20photo%20from%20Webcam%20Toy%20%3A)%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cp%3E%26nbsp%3B%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3C%2Ffieldset%3E%0A%09%09%09%09%09%09%09%3C%2Fform%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22toy-share-ui%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20id%3D%22button-back%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22arrow%20rotate-180%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cp%3EBack%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22button%20twitter%20share%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22icon%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-login%22%3ETwitter%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-post%22%3EPost%20to%20Twitter%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-posting%22%3ETweeting%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-error%22%3EPlease%20try%20again!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Ftwitter.com%2F%22%20rel%3D%22nofollow%22%20target%3D%22_blank%22%20class%3D%22button%20twitter%20share-center%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22icon%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cp%3EPhoto%20tweeted!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22button%20google%20share%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22icon%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-login%22%3EGoogle%20Photos%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-post%22%3ESave%20to%20Google%20Photos%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-posting%22%3ESaving%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-error%22%3EPlease%20try%20again!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fphotos.google.com%2F%22%20rel%3D%22nofollow%22%20target%3D%22_blank%22%20class%3D%22button%20google%20share-center%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22icon%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cp%3EPhoto%20saved!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22button%20tumblr%20share%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22icon%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-login%22%3ETumblr%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-post%22%3EPost%20to%20Tumblr%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-posting%22%3EPosting%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20class%3D%22share-error%22%3EPlease%20try%20again!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fwww.tumblr.com%2F%22%20rel%3D%22nofollow%22%20target%3D%22_blank%22%20class%3D%22button%20tumblr%20share-center%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22icon%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cp%3EPhoto%20posted!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22button%20logout%20active%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22power%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Ca%20data-save%3D%22webcam-toy-photo.jpg%22%20id%3D%22button-save%22%20class%3D%22button%20hot-pink%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22arrow%20rotate-90%22%3E%3C%2Fdiv%3E%3Cp%3ESave%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-login%22%3E%0A%09%09%09%09%09%09%09%09%3Cspan%3EGreat%20pic!%20Sign%20in%20and%20save%20this%20photo%E2%80%A6%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%09%3Cspan%3ELookin%E2%80%99%20good!%20Now%20save%20this%20photo%E2%80%A6%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%09%3Cspan%3ENice%20shot!%20Click%20below%20to%20save%20this%20pic%E2%80%A6%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%09%3Cspan%3ECool%20pic.%20Sign%20in%20below%20to%20save%20it%E2%80%A6%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-twitter-logout%22%3ELog%20out%20%40%20from%20Twitter.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-google-logout%22%3ELog%20out%20from%20Google%20Photos.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-tumblr-logout%22%3ELog%20out%20from%20Tumblr.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-back%22%3EGo%20back%20and%20take%20another%20photo.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-discard%22%3EDiscard%20this%20photo%20and%20try%20again.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-save%22%3ESave%20this%20photo%20to%20your%20computer.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3Cfooter%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-disclaimer%22%3EWebcam%20Toy%20does%20%3Cstrong%3Enot%3C%2Fstrong%3E%20store%20any%20of%20your%20personal%20information.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-twitter-post%22%3EThis%20photo%20and%20tweet%20will%20be%20posted%20to%20your%20%40%20Twitter%20account.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-twitter-posted%22%3EView%20your%20photo%20on%20Twitter.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-twitter-error%22%3ESorry%2C%20Twitter%20is%20having%20problems.%20Please%20try%20again%20later!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-google-post%22%3EThis%20photo%20will%20be%20saved%20to%20your%20Google%20Photos%20library.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-google-posted%22%3EView%20your%20photo%20on%20Google%20Photos.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-google-error%22%3ESorry%2C%20Google%20Photos%20is%20having%20problems.%20Please%20try%20again%20later!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-tumblr-post%22%3EThis%20photo%20will%20be%20posted%20on%20your%20Tumblr.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-tumblr-posted%22%3EView%20your%20photo%20on%20Tumblr.%3C%2Fp%3E%0A%09%09%09%09%09%09%09%09%3Cp%20id%3D%22prompt-tumblr-error%22%3ESorry%2C%20Tumblr%20is%20having%20problems.%20Please%20try%20again%20later!%3C%2Fp%3E%0A%09%09%09%09%09%09%09%3C%2Ffooter%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cdiv%20id%3D%22camera-flash%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fsection%3E%0A%09%09%3C%2Farticle%3E%0A%09%09%0A%09%09%0A%09%09%3Cdiv%20id%3D%22head-links%22%20class%3D%22notranslate%22%3E%0A%09%09%09%3Cdiv%3E%0A%3Cins%20class%3D%22adsbygoogle%22%20style%3D%22display%3Ainline-block%3Bwidth%3A728px%3Bheight%3A50px%3B%22%20data-ad-client%3D%22ca-pub-9316345695176880%22%20data-ad-slot%3D%222225692602%22%20data-page-url%3D%22https%3A%2F%2Fwebcamtoy.com%2F%22%3E%3C%2Fins%3E%0A%0A%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20id%3D%22home-ad%22%3E%0A%09%09%09%3Cdiv%3E%0A%3Cins%20class%3D%22adsbygoogle%22%20style%3D%22display%3Ablock%3Bwidth%3A680px%3Bheight%3A280px%3B%22%20data-ad-client%3D%22ca-pub-9316345695176880%22%20data-ad-slot%3D%223108170069%22%20data-ad-format%3D%22auto%22%20data-page-url%3D%22https%3A%2F%2Fwebcamtoy.com%2F%22%3E%3C%2Fins%3E%0A%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20id%3D%22photo-ad%22%3E%0A%09%09%09%3Cdiv%3E%0A%3Cins%20class%3D%22adsbygoogle%22%20style%3D%22display%3Ainline-block%3Bwidth%3A300px%3Bheight%3A300px%3B%22%20data-ad-client%3D%22ca-pub-9316345695176880%22%20data-ad-slot%3D%221991074342%22%20data-page-url%3D%22https%3A%2F%2Fwebcamtoy.com%2F%22%3E%3C%2Fins%3E%0A%0A%09%09%09%3Cdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%0A%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "62b0d378-2fa0-4dba-9825-b87c5e27f224",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "webcamtoy.com"
+}

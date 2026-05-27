@@ -1,0 +1,2484 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 666,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 666,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 666,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 650,
+                "width": 784
+            },
+            "snippet": "<body bgcolor=\"#FFE4C8\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20bgcolor%3D%5C%22%23FFE4C8%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 372,
+                "width": 680
+            },
+            "snippet": "<table cellpadding=\"2\" cellspacing=\"2\" border=\"1\" height=\"370\" width=\"680\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%222%5C%22%20cellspacing%3D%5C%222%5C%22%20border%3D%5C%221%5C%22%20height%3D%5C%22370%5C%22%20width%3D%5C%22680%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "imagemap_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/center[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Image map or child <area> has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 311,
+                "top": 174,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img usemap=\"#ccon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/imagemap_alt_exists.html#%7B%22message%22%3A%22Image%20map%20or%20child%20%3Carea%3E%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Cimg%20usemap%3D%5C%22%23ccon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22imagemap_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/center[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 311,
+                "top": 174,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img usemap=\"#ccon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20usemap%3D%5C%22%23ccon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"245,15,345,50\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22245%2C15%2C345%2C50%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"245,15,345,50\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22245%2C15%2C345%2C50%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"245,15,345,50\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22245%2C15%2C345%2C50%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[2]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"chemeas.html#c1\" coords=\"95,35,215,75\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22chemeas.html%23c1%5C%22%20coords%3D%5C%2295%2C35%2C215%2C75%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[2]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"chemeas.html#c1\" coords=\"95,35,215,75\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22chemeas.html%23c1%5C%22%20coords%3D%5C%2295%2C35%2C215%2C75%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[2]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"chemeas.html#c1\" coords=\"95,35,215,75\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22chemeas.html%23c1%5C%22%20coords%3D%5C%2295%2C35%2C215%2C75%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[3]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"atom.html#c1\" coords=\"45,100,160,145\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22atom.html%23c1%5C%22%20coords%3D%5C%2245%2C100%2C160%2C145%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[3]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"atom.html#c1\" coords=\"45,100,160,145\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22atom.html%23c1%5C%22%20coords%3D%5C%2245%2C100%2C160%2C145%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[3]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"atom.html#c1\" coords=\"45,100,160,145\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22atom.html%23c1%5C%22%20coords%3D%5C%2245%2C100%2C160%2C145%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[4]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../quantum/atomstructcon.html#c1\" coords=\"100,150,200,190\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fquantum%2Fatomstructcon.html%23c1%5C%22%20coords%3D%5C%22100%2C150%2C200%2C190%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[4]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../quantum/atomstructcon.html#c1\" coords=\"100,150,200,190\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fquantum%2Fatomstructcon.html%23c1%5C%22%20coords%3D%5C%22100%2C150%2C200%2C190%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[4]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../quantum/atomstructcon.html#c1\" coords=\"100,150,200,190\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fquantum%2Fatomstructcon.html%23c1%5C%22%20coords%3D%5C%22100%2C150%2C200%2C190%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[5]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../pertab/pertab.html#c1\" coords=\"10,150,75,195\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fpertab%2Fpertab.html%23c1%5C%22%20coords%3D%5C%2210%2C150%2C75%2C195%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[5]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../pertab/pertab.html#c1\" coords=\"10,150,75,195\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fpertab%2Fpertab.html%23c1%5C%22%20coords%3D%5C%2210%2C150%2C75%2C195%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[5]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../pertab/pertab.html#c1\" coords=\"10,150,75,195\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fpertab%2Fpertab.html%23c1%5C%22%20coords%3D%5C%2210%2C150%2C75%2C195%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[6]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"compound.html#c1\" coords=\"25,200,155,250\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22compound.html%23c1%5C%22%20coords%3D%5C%2225%2C200%2C155%2C250%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[6]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"compound.html#c1\" coords=\"25,200,155,250\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22compound.html%23c1%5C%22%20coords%3D%5C%2225%2C200%2C155%2C250%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[6]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"compound.html#c1\" coords=\"25,200,155,250\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22compound.html%23c1%5C%22%20coords%3D%5C%2225%2C200%2C155%2C250%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[7]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"bondcon.html#c1\" coords=\"100,255,195,300\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22bondcon.html%23c1%5C%22%20coords%3D%5C%22100%2C255%2C195%2C300%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[7]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"bondcon.html#c1\" coords=\"100,255,195,300\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22bondcon.html%23c1%5C%22%20coords%3D%5C%22100%2C255%2C195%2C300%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[7]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"bondcon.html#c1\" coords=\"100,255,195,300\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22bondcon.html%23c1%5C%22%20coords%3D%5C%22100%2C255%2C195%2C300%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[8]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../pertab/chemel.html#c1\" coords=\"40,305,155,360\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fpertab%2Fchemel.html%23c1%5C%22%20coords%3D%5C%2240%2C305%2C155%2C360%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[8]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../pertab/chemel.html#c1\" coords=\"40,305,155,360\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fpertab%2Fchemel.html%23c1%5C%22%20coords%3D%5C%2240%2C305%2C155%2C360%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[8]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../pertab/chemel.html#c1\" coords=\"40,305,155,360\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fpertab%2Fchemel.html%23c1%5C%22%20coords%3D%5C%2240%2C305%2C155%2C360%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[9]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"reactcon.html#c1\" coords=\"250,70,355,120\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22reactcon.html%23c1%5C%22%20coords%3D%5C%22250%2C70%2C355%2C120%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[9]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"reactcon.html#c1\" coords=\"250,70,355,120\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22reactcon.html%23c1%5C%22%20coords%3D%5C%22250%2C70%2C355%2C120%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[9]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"reactcon.html#c1\" coords=\"250,70,355,120\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22reactcon.html%23c1%5C%22%20coords%3D%5C%22250%2C70%2C355%2C120%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[10]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"190,125,295,170\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22190%2C125%2C295%2C170%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[10]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"190,125,295,170\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22190%2C125%2C295%2C170%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[10]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"190,125,295,170\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22190%2C125%2C295%2C170%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[11]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"chemequi.html#c1\" coords=\"175,195,280,235\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22chemequi.html%23c1%5C%22%20coords%3D%5C%22175%2C195%2C280%2C235%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[11]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"chemequi.html#c1\" coords=\"175,195,280,235\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22chemequi.html%23c1%5C%22%20coords%3D%5C%22175%2C195%2C280%2C235%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[11]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"chemequi.html#c1\" coords=\"175,195,280,235\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22chemequi.html%23c1%5C%22%20coords%3D%5C%22175%2C195%2C280%2C235%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[12]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"240,250,355,295\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22240%2C250%2C355%2C295%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[12]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"240,250,355,295\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22240%2C250%2C355%2C295%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[12]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"240,250,355,295\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22240%2C250%2C355%2C295%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[13]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"200,315,290,355\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22200%2C315%2C290%2C355%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[13]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"200,315,290,355\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22200%2C315%2C290%2C355%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[13]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"#c1\" coords=\"200,315,290,355\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22%23c1%5C%22%20coords%3D%5C%22200%2C315%2C290%2C355%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[14]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"echemcon.html#c1\" coords=\"315,310,410,355\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22echemcon.html%23c1%5C%22%20coords%3D%5C%22315%2C310%2C410%2C355%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[14]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"echemcon.html#c1\" coords=\"315,310,410,355\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22echemcon.html%23c1%5C%22%20coords%3D%5C%22315%2C310%2C410%2C355%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[14]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"echemcon.html#c1\" coords=\"315,310,410,355\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22echemcon.html%23c1%5C%22%20coords%3D%5C%22315%2C310%2C410%2C355%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[15]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"acidbase.html#c1\" coords=\"330,145,400,190\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22acidbase.html%23c1%5C%22%20coords%3D%5C%22330%2C145%2C400%2C190%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[15]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"acidbase.html#c1\" coords=\"330,145,400,190\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22acidbase.html%23c1%5C%22%20coords%3D%5C%22330%2C145%2C400%2C190%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[15]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"acidbase.html#c1\" coords=\"330,145,400,190\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22acidbase.html%23c1%5C%22%20coords%3D%5C%22330%2C145%2C400%2C190%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[16]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"ph.html#c1\" coords=\"305,185,345,215\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22ph.html%23c1%5C%22%20coords%3D%5C%22305%2C185%2C345%2C215%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[16]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"ph.html#c1\" coords=\"305,185,345,215\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22ph.html%23c1%5C%22%20coords%3D%5C%22305%2C185%2C345%2C215%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[16]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"ph.html#c1\" coords=\"305,185,345,215\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22ph.html%23c1%5C%22%20coords%3D%5C%22305%2C185%2C345%2C215%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[17]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"precip.html#c1\" coords=\"335,210,460,250\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22precip.html%23c1%5C%22%20coords%3D%5C%22335%2C210%2C460%2C250%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[17]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"precip.html#c1\" coords=\"335,210,460,250\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22precip.html%23c1%5C%22%20coords%3D%5C%22335%2C210%2C460%2C250%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[17]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"precip.html#c1\" coords=\"335,210,460,250\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22precip.html%23c1%5C%22%20coords%3D%5C%22335%2C210%2C460%2C250%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[18]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"redoxcon.html#c1\" coords=\"385,270,500,315\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22redoxcon.html%23c1%5C%22%20coords%3D%5C%22385%2C270%2C500%2C315%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[18]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"redoxcon.html#c1\" coords=\"385,270,500,315\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22redoxcon.html%23c1%5C%22%20coords%3D%5C%22385%2C270%2C500%2C315%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[18]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"redoxcon.html#c1\" coords=\"385,270,500,315\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22redoxcon.html%23c1%5C%22%20coords%3D%5C%22385%2C270%2C500%2C315%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[19]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"chemeas.html#c4\" coords=\"360,80,445,130\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22chemeas.html%23c4%5C%22%20coords%3D%5C%22360%2C80%2C445%2C130%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[19]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"chemeas.html#c4\" coords=\"360,80,445,130\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22chemeas.html%23c4%5C%22%20coords%3D%5C%22360%2C80%2C445%2C130%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[19]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"chemeas.html#c4\" coords=\"360,80,445,130\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22chemeas.html%23c4%5C%22%20coords%3D%5C%22360%2C80%2C445%2C130%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[20]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../kinetic/idegas.html#c1\" coords=\"410,140,475,160\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fkinetic%2Fidegas.html%23c1%5C%22%20coords%3D%5C%22410%2C140%2C475%2C160%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[20]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../kinetic/idegas.html#c1\" coords=\"410,140,475,160\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fkinetic%2Fidegas.html%23c1%5C%22%20coords%3D%5C%22410%2C140%2C475%2C160%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[20]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../kinetic/idegas.html#c1\" coords=\"410,140,475,160\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fkinetic%2Fidegas.html%23c1%5C%22%20coords%3D%5C%22410%2C140%2C475%2C160%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[21]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[21]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../fluid.html#flucon\" coords=\"445,185,510,210\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Ffluid.html%23flucon%5C%22%20coords%3D%5C%22445%2C185%2C510%2C210%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[21]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[21]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../fluid.html#flucon\" coords=\"445,185,510,210\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Ffluid.html%23flucon%5C%22%20coords%3D%5C%22445%2C185%2C510%2C210%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[21]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[21]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../fluid.html#flucon\" coords=\"445,185,510,210\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Ffluid.html%23flucon%5C%22%20coords%3D%5C%22445%2C185%2C510%2C210%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[22]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[22]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../solcon.html#solcon\" coords=\"475,220,540,245\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fsolcon.html%23solcon%5C%22%20coords%3D%5C%22475%2C220%2C540%2C245%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[22]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[22]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../solcon.html#solcon\" coords=\"475,220,540,245\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fsolcon.html%23solcon%5C%22%20coords%3D%5C%22475%2C220%2C540%2C245%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[22]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[22]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../solcon.html#solcon\" coords=\"475,220,540,245\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fsolcon.html%23solcon%5C%22%20coords%3D%5C%22475%2C220%2C540%2C245%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[23]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[23]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"solution.html#c1\" coords=\"490,250,575,275\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22solution.html%23c1%5C%22%20coords%3D%5C%22490%2C250%2C575%2C275%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[23]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[23]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"solution.html#c1\" coords=\"490,250,575,275\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22solution.html%23c1%5C%22%20coords%3D%5C%22490%2C250%2C575%2C275%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[23]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[23]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"solution.html#c1\" coords=\"490,250,575,275\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22solution.html%23c1%5C%22%20coords%3D%5C%22490%2C250%2C575%2C275%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[24]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[24]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../nuccon.html#c1\" coords=\"400,30,505,75\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fnuccon.html%23c1%5C%22%20coords%3D%5C%22400%2C30%2C505%2C75%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[24]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[24]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../nuccon.html#c1\" coords=\"400,30,505,75\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fnuccon.html%23c1%5C%22%20coords%3D%5C%22400%2C30%2C505%2C75%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[24]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[24]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../nuccon.html#c1\" coords=\"400,30,505,75\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Fnuccon.html%23c1%5C%22%20coords%3D%5C%22400%2C30%2C505%2C75%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[25]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[25]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../organic/organicon.html#c1\" coords=\"455,90,560,130\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Forganic%2Forganicon.html%23c1%5C%22%20coords%3D%5C%22455%2C90%2C560%2C130%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[25]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[25]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../organic/organicon.html#c1\" coords=\"455,90,560,130\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Forganic%2Forganicon.html%23c1%5C%22%20coords%3D%5C%22455%2C90%2C560%2C130%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[25]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[25]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../organic/organicon.html#c1\" coords=\"455,90,560,130\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Forganic%2Forganicon.html%23c1%5C%22%20coords%3D%5C%22455%2C90%2C560%2C130%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "area_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[26]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[26]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "<area> element in an image map has no text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../organic/biochemcon.html#c1\" coords=\"470,150,590,185\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/area_alt_exists.html#%7B%22message%22%3A%22%3Carea%3E%20element%20in%20an%20image%20map%20has%20no%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Forganic%2Fbiochemcon.html%23c1%5C%22%20coords%3D%5C%22470%2C150%2C590%2C185%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22area_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[26]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[26]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../organic/biochemcon.html#c1\" coords=\"470,150,590,185\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Forganic%2Fbiochemcon.html%23c1%5C%22%20coords%3D%5C%22470%2C150%2C590%2C185%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/map[1]/area[26]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[26]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 178,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<area href=\"../organic/biochemcon.html#c1\" coords=\"470,150,590,185\" shape=\"rect\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Carea%20href%3D%5C%22..%2Forganic%2Fbiochemcon.html%23c1%5C%22%20coords%3D%5C%22470%2C150%2C590%2C185%5C%22%20shape%3D%5C%22rect%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/table[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 350,
+                "height": 25,
+                "width": 498
+            },
+            "snippet": "<table>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 475,
+    "ruleTime": 4,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "imagemap_alt_exists": {
+            "0": "An image map and each <area> element in an image map must have text alternative(s)",
+            "Fail_1": "Image map or child <area> has no text alternative"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "area_alt_exists": {
+            "0": "<area> elements in an image map must have a text alternative",
+            "Fail_1": "<area> element in an image map has no text alternative"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 31,
+            "elementsViolation": 31,
+            "elementsViolationReview": 31,
+            "violation": 59,
+            "potentialviolation": 27,
+            "recommendation": 1,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 388
+        },
+        "scanTime": 16,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778945566794,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EChemical%20Concepts%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23FFE4C8%22%3E%0A%3C!--%20Copyright%202000%20by%20Carl%20Rod%20Nave%2C%20RodNave%40gsu.edu--%3E%0A%0A%0A%3Ca%20name%3D%22c1%22%3E%3C%2Fa%3E%0A%3Ctable%20width%3D%22680%22%20height%3D%22370%22%20border%3D%221%22%20cellspacing%3D%222%22%20cellpadding%3D%222%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%3Ctd%20width%3D%22614%22%20height%3D%22309%22%3E%0A%3Ccenter%3E%3Cimg%20usemap%3D%22%23ccon%22%3E%3C%2Fcenter%3E%0A%0A%3Cmap%20name%3D%22ccon%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22245%2C15%2C345%2C50%22%20href%3D%22%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2295%2C35%2C215%2C75%22%20href%3D%22chemeas.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2245%2C100%2C160%2C145%22%20href%3D%22atom.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22100%2C150%2C200%2C190%22%20href%3D%22..%2Fquantum%2Fatomstructcon.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2210%2C150%2C75%2C195%22%20href%3D%22..%2Fpertab%2Fpertab.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2225%2C200%2C155%2C250%22%20href%3D%22compound.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22100%2C255%2C195%2C300%22%20href%3D%22bondcon.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%2240%2C305%2C155%2C360%22%20href%3D%22..%2Fpertab%2Fchemel.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22250%2C70%2C355%2C120%22%20href%3D%22reactcon.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22190%2C125%2C295%2C170%22%20href%3D%22%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22175%2C195%2C280%2C235%22%20href%3D%22chemequi.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22240%2C250%2C355%2C295%22%20href%3D%22%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22200%2C315%2C290%2C355%22%20href%3D%22%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22315%2C310%2C410%2C355%22%20href%3D%22echemcon.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22330%2C145%2C400%2C190%22%20href%3D%22acidbase.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22305%2C185%2C345%2C215%22%20href%3D%22ph.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22335%2C210%2C460%2C250%22%20href%3D%22precip.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22385%2C270%2C500%2C315%22%20href%3D%22redoxcon.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22360%2C80%2C445%2C130%22%20href%3D%22chemeas.html%23c4%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22410%2C140%2C475%2C160%22%20href%3D%22..%2Fkinetic%2Fidegas.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22445%2C185%2C510%2C210%22%20href%3D%22..%2Ffluid.html%23flucon%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22475%2C220%2C540%2C245%22%20href%3D%22..%2Fsolcon.html%23solcon%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22490%2C250%2C575%2C275%22%20href%3D%22solution.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22400%2C30%2C505%2C75%22%20href%3D%22..%2Fnuccon.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22455%2C90%2C560%2C130%22%20href%3D%22..%2Forganic%2Forganicon.html%23c1%22%3E%0A%3Carea%20shape%3D%22rect%22%20coords%3D%22470%2C150%2C590%2C185%22%20href%3D%22..%2Forganic%2Fbiochemcon.html%23c1%22%3E%0A%3C%2Fmap%3E%0A%0A%3C!--chemistry%09200%0928%09247%0912%09200%0912%09294%0944%0Abasic%20meas%0965%0950%09122%0932%0965%0932%09179%0968%0Aatoms%20and%20el%0920%09112%0973%0992%0920%0992%09126%09132%0Aatom%20struct%0968%09155%09118%09138%0968%09138%09168%09172%0Acompounds%090%09205%0963%09180%090%09180%09126%09230%0Achem%20bond%0967%09250%09112%09230%0967%09230%09157%09270%0Achem%20element%0915%09298%0970%09275%0915%09275%09125%09321%0Achem%20kinet%09155%09132%0920%09110%09155%09110%09245%09154%0Achem%20equil%09135%09195%09187%09175%09135%09175%09239%09215%0Achem%20react%09205%0985%09250%0965%09205%0965%09295%09105%0Athermo%20chem%09195%09245%09250%09223%09195%09223%09305%09267%0Aenergy%20react%09205%09300%09250%09280%09205%09280%09295%09320%0Aacid%20base%09275%09150%09310%09130%09275%09130%09345%09170%0Aprecipitat%09280%09208%09340%09190%09280%09190%09400%09226%0Aoxid%20reduct%09327%09263%09380%09240%09327%09240%09433%09286%0Astates%20of%20%20m%09302%0997%09342%0975%09302%0975%09382%09119%0Agases%09347%09137%09378%09125%09347%09125%09409%09149%0Aliquids%09380%09182%09410%09170%09380%09170%09440%09194%0Asolids%09405%09210%09437%09200%09405%09200%09469%09220%0Asolutions%09415%09238%09460%09227%09415%09227%09505%09249%0Anuc%20chem%09340%0950%09388%0930%09340%0930%09436%0970%0Aorganic%09388%09100%09440%0980%09388%0980%09492%09120%0Abiochem%20%09400%09152%09458%09135%09400%09135%09516%09169--%3E%0A%0A%0A%3C%2Ftd%3E%0A%3Ctd%20width%3D%2266%22%20align%3D%22center%22%3E%3Ca%20href%3D%22..%2Fhframe.html%22%3EIndex%3C%2Fa%3E%3Cbr%3E%3Cbr%3E%3Ca%20href%3D%22cheref.html%23c1%22%3EChemistry%20references%3C%2Fa%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%20height%3D%2217%22%3E%26nbsp%3B%3Ctable%3E%3Ctbody%3E%3Ctr%3E%3Ctd%20width%3D%22450%22%3E%3Ca%20href%3D%22..%2Fhph.html%22%3E%20HyperPhysics%3C%2Fa%3E*****%3Ca%20href%3D%22..%2Fquacon.html%23quacon%22%3E%20%20%20%20%20Quantum%20Physics%20%3C%2Fa%3E%3C%2Ftd%3E%3Ctd%20align%3D%22right%22%3E%3Cfont%20size%3D%22-1%22%3E%3Ci%3ER%20Nave%3C%2Fi%3E%3C%2Ffont%3E%3C%2Ftd%3E%3C%2Ftr%3E%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%3Ctd%3E%3Ca%20href%3D%22Javascript%3Ahistory.go(-1)%22%3EGo%20Back%3C%2Fa%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%3Cbr%3E%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "8449bcb8-032a-4058-9332-23d3be161d79",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "hyperphysics.phy-astr.gsu.edu-hbase-chemical-chemcon.html"
+}

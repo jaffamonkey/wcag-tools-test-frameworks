@@ -1,0 +1,1480 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1389,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1389,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1389,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 20,
+                "height": 1361,
+                "width": 784
+            },
+            "snippet": "<body alink=\"fuschia\" vlink=\"maroon\" link=\"red\" text=\"black\" bgcolor=\"#ccffff\" background=\"back2.gif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20alink%3D%5C%22fuschia%5C%22%20vlink%3D%5C%22maroon%5C%22%20link%3D%5C%22red%5C%22%20text%3D%5C%22black%5C%22%20bgcolor%3D%5C%22%23ccffff%5C%22%20background%3D%5C%22back2.gif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/h2[1]/font[1]",
+                "aria": "/document[1]/heading[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 300,
+                "top": 20,
+                "height": 28,
+                "width": 202
+            },
+            "snippet": "<font color=\"#ff0000\" face=\"helvetica,helv,arial\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23ff0000%5C%22%20face%3D%5C%22helvetica%2Chelv%2Carial%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "applet_alt_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/applet[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "An <applet> element does not have an 'alt' attribute that provides a short text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 219,
+                "top": 68,
+                "height": 18,
+                "width": 363
+            },
+            "snippet": "<applet height=\"500\" width=\"600\" code=\"edu.cornell.lassp.mck10.FastApplet.FastApplet.class\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/applet_alt_exists.html#%7B%22message%22%3A%22An%20%3Capplet%3E%20element%20does%20not%20have%20an%20'alt'%20attribute%20that%20provides%20a%20short%20text%20alternative%22%2C%22snippet%22%3A%22%3Capplet%20height%3D%5C%22500%5C%22%20width%3D%5C%22600%5C%22%20code%3D%5C%22edu.cornell.lassp.mck10.FastApplet.FastApplet.class%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22applet_alt_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/img[1]",
+                "aria": "/document[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 135,
+                "height": 3,
+                "width": 784
+            },
+            "snippet": "<img height=\"3\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%223%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[1]/th[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/columnheader[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 91,
+                "top": 183,
+                "height": 29,
+                "width": 620
+            },
+            "snippet": "<th bgcolor=\"#ffcccc\" colspan=\"2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Cth%20bgcolor%3D%5C%22%23ffcccc%5C%22%20colspan%3D%5C%222%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[2]/td[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 91,
+                "top": 214,
+                "height": 45,
+                "width": 311
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[2]/td[1]/strong[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[1]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.68",
+                16,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 95,
+                "top": 218,
+                "height": 18,
+                "width": 25
+            },
+            "snippet": "<font color=\"red\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22red%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C700%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[2]/td[2]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 404,
+                "top": 214,
+                "height": 45,
+                "width": 307
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[2]/td[2]/strong[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[2]/cell[2]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.68",
+                16,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 408,
+                "top": 218,
+                "height": 18,
+                "width": 76
+            },
+            "snippet": "<font color=\"red\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22red%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C700%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[3]/td[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[3]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 91,
+                "top": 261,
+                "height": 45,
+                "width": 311
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[3]/td[1]/strong[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[3]/cell[1]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.68",
+                16,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 95,
+                "top": 265,
+                "height": 18,
+                "width": 108
+            },
+            "snippet": "<font color=\"red\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22red%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C700%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[3]/td[2]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[3]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 404,
+                "top": 261,
+                "height": 45,
+                "width": 307
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[3]/td[2]/strong[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[3]/cell[2]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.68",
+                16,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 408,
+                "top": 265,
+                "height": 18,
+                "width": 47
+            },
+            "snippet": "<font color=\"red\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22red%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C700%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[4]/td[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[4]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 91,
+                "top": 308,
+                "height": 45,
+                "width": 311
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[4]/td[1]/strong[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[4]/cell[1]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.68",
+                16,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 95,
+                "top": 312,
+                "height": 18,
+                "width": 75
+            },
+            "snippet": "<font color=\"red\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22red%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C700%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[4]/td[2]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[4]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 404,
+                "top": 308,
+                "height": 45,
+                "width": 307
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[4]/td[2]/strong[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[4]/cell[2]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.68",
+                16,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 408,
+                "top": 312,
+                "height": 18,
+                "width": 66
+            },
+            "snippet": "<font color=\"red\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22red%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C700%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[5]/td[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[5]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 91,
+                "top": 355,
+                "height": 45,
+                "width": 620
+            },
+            "snippet": "<td colspan=\"2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%20colspan%3D%5C%222%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[5]/td[1]/strong[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[5]/cell[1]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.68",
+                16,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 95,
+                "top": 359,
+                "height": 18,
+                "width": 132
+            },
+            "snippet": "<font color=\"red\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22red%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C700%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[6]/td[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[6]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 91,
+                "top": 402,
+                "height": 64,
+                "width": 620
+            },
+            "snippet": "<td colspan=\"2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%20colspan%3D%5C%222%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[6]/td[1]/strong[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[6]/cell[1]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.68",
+                16,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 95,
+                "top": 406,
+                "height": 18,
+                "width": 62
+            },
+            "snippet": "<font color=\"red\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22red%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C700%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[7]/td[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[7]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 91,
+                "top": 467,
+                "height": 45,
+                "width": 311
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[7]/td[2]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[7]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 404,
+                "top": 467,
+                "height": 45,
+                "width": 307
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[8]/td[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[8]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 91,
+                "top": 514,
+                "height": 624,
+                "width": 620
+            },
+            "snippet": "<td colspan=\"2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%20colspan%3D%5C%222%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[8]/td[1]/p[1]/strong[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[8]/cell[1]/paragraph[1]/strong[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.68",
+                16,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 95,
+                "top": 534,
+                "height": 18,
+                "width": 147
+            },
+            "snippet": "<font color=\"red\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22red%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C700%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[8]/td[1]/table[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[8]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 95,
+                "top": 677,
+                "height": 441,
+                "width": 612
+            },
+            "snippet": "<table>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[8]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[8]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 98,
+                "top": 680,
+                "height": 22,
+                "width": 20
+            },
+            "snippet": "<img border=\"0\" height=\"22\" width=\"20\" align=\"left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2222%5C%22%20width%3D%5C%2220%5C%22%20align%3D%5C%22left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[8]/td[1]/table[1]/tbody[1]/tr[2]/td[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[8]/cell[1]/table[1]/rowgroup[1]/row[2]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 98,
+                "top": 740,
+                "height": 22,
+                "width": 20
+            },
+            "snippet": "<img border=\"0\" height=\"22\" width=\"20\" align=\"left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2222%5C%22%20width%3D%5C%2220%5C%22%20align%3D%5C%22left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[8]/td[1]/table[1]/tbody[1]/tr[3]/td[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[8]/cell[1]/table[1]/rowgroup[1]/row[3]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 98,
+                "top": 766,
+                "height": 22,
+                "width": 20
+            },
+            "snippet": "<img border=\"0\" height=\"22\" width=\"20\" align=\"left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2222%5C%22%20width%3D%5C%2220%5C%22%20align%3D%5C%22left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[8]/td[1]/table[1]/tbody[1]/tr[4]/td[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[8]/cell[1]/table[1]/rowgroup[1]/row[4]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 98,
+                "top": 825,
+                "height": 22,
+                "width": 20
+            },
+            "snippet": "<img border=\"0\" height=\"22\" width=\"20\" align=\"left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2222%5C%22%20width%3D%5C%2220%5C%22%20align%3D%5C%22left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[8]/td[1]/table[1]/tbody[1]/tr[5]/td[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[8]/cell[1]/table[1]/rowgroup[1]/row[5]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 98,
+                "top": 866,
+                "height": 22,
+                "width": 20
+            },
+            "snippet": "<img border=\"0\" height=\"22\" width=\"20\" align=\"left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2222%5C%22%20width%3D%5C%2220%5C%22%20align%3D%5C%22left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[8]/td[1]/table[1]/tbody[1]/tr[6]/td[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[8]/cell[1]/table[1]/rowgroup[1]/row[6]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 98,
+                "top": 926,
+                "height": 22,
+                "width": 20
+            },
+            "snippet": "<img border=\"0\" height=\"22\" width=\"20\" align=\"left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2222%5C%22%20width%3D%5C%2220%5C%22%20align%3D%5C%22left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/table[1]/tbody[1]/tr[8]/td[1]/table[1]/tbody[1]/tr[7]/td[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[8]/cell[1]/table[1]/rowgroup[1]/row[7]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 98,
+                "top": 967,
+                "height": 22,
+                "width": 20
+            },
+            "snippet": "<img border=\"0\" height=\"22\" width=\"20\" align=\"left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2222%5C%22%20width%3D%5C%2220%5C%22%20align%3D%5C%22left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/img[1]",
+                "aria": "/document[1]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1190,
+                "height": 3,
+                "width": 784
+            },
+            "snippet": "<img height=\"3\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%223%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1234,
+                "height": 54,
+                "width": 172
+            },
+            "snippet": "<table>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 31,
+                "top": 1237,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://sethna.lassp.cornell.edu/hysteresis/hysteresis.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2Fhysteresis.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 31,
+                "top": 1237,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://sethna.lassp.cornell.edu/hysteresis/hysteresis.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2Fhysteresis.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 11,
+                "top": 1237,
+                "height": 22,
+                "width": 20
+            },
+            "snippet": "<img border=\"0\" height=\"22\" width=\"20\" align=\"left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2222%5C%22%20width%3D%5C%2220%5C%22%20align%3D%5C%22left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.68",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 35,
+                "top": 1239,
+                "height": 18,
+                "width": 124
+            },
+            "snippet": "<a href=\"https://sethna.lassp.cornell.edu/hysteresis/hysteresis.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2Fhysteresis.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/a[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[2]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 31,
+                "top": 1263,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"source.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22source.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/a[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[2]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 31,
+                "top": 1263,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"source.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22source.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/a[1]/img[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[2]/cell[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 11,
+                "top": 1263,
+                "height": 22,
+                "width": 20
+            },
+            "snippet": "<img border=\"0\" height=\"22\" width=\"20\" align=\"left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2222%5C%22%20width%3D%5C%2220%5C%22%20align%3D%5C%22left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/a[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[2]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "3.68",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 35,
+                "top": 1265,
+                "height": 18,
+                "width": 142
+            },
+            "snippet": "<a href=\"source.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22source.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/address[1]/font[1]",
+                "aria": "/document[1]/group[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 13px and weight of 400",
+            "messageArgs": [
+                "2.62",
+                13,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1328,
+                "height": 52,
+                "width": 268
+            },
+            "snippet": "<font color=\"#999999\" size=\"-1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2013px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23999999%5C%22%20size%3D%5C%22-1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.62%22%2C13%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/address[1]/font[1]/a[1]",
+                "aria": "/document[1]/group[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 13px and weight of 400",
+            "messageArgs": [
+                "3.68",
+                13,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 49,
+                "top": 1365,
+                "height": 15,
+                "width": 105
+            },
+            "snippet": "<a href=\"mailto:mck10@cornell.edu\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2013px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22mailto%3Amck10%40cornell.edu%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C13%2C400%5D%7D"
+        }
+    ],
+    "numExecuted": 728,
+    "ruleTime": 10,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "potential_graphic_background": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "applet_alt_exists": {
+            "0": "<applet> elements must provide an 'alt' attribute and an alternative description",
+            "Fail_1": "An <applet> element does not have an 'alt' attribute that provides a short text alternative"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "table_headers_related": {
+            "0": "For a complex data table, all <th> and <td> elements must be related via 'header' or 'scope' attributes",
+            "Fail_1": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 46,
+            "elementsViolation": 30,
+            "elementsViolationReview": 44,
+            "violation": 31,
+            "potentialviolation": 17,
+            "recommendation": 5,
+            "potentialrecommendation": 0,
+            "manual": 2,
+            "pass": 673
+        },
+        "scanTime": 36,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778712386784,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EHysteresis%20Applet%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20background%3D%22back2.gif%22%20bgcolor%3D%22%23ccffff%22%20text%3D%22black%22%20link%3D%22red%22%20vlink%3D%22maroon%22%20alink%3D%22fuschia%22%3E%0A%0A%3Ch2%20align%3D%22center%22%3E%3Cfont%20face%3D%22helvetica%2Chelv%2Carial%22%20color%3D%22%23ff0000%22%3EHysteresis%20Applet%3C%2Ffont%3E%3C%2Fh2%3E%0A%0A%3Cdiv%20align%3D%22center%22%3E%0A%3Capplet%20code%3D%22edu.cornell.lassp.mck10.FastApplet.FastApplet.class%22%20width%3D%22600%22%20height%3D%22500%22%3E%0A%3Cparam%20name%3D%22Applet.HysModel.Dimensions%22%20value%3D%222%22%3E%0A%3Cparam%20name%3D%22Applet.HysModel.Width%22%20value%3D%2280%22%3E%0A%3Cparam%20name%3D%22Applet.HysModel.Disorder%22%20value%3D%221.2%22%3E%0A%3Cparam%20name%3D%22PictureUrl%22%20value%3D%223D_Av.gif%22%3E%0A%3Cparam%20name%3D%22Title%22%20value%3D%22Hysteresis%20Applet%22%3E%0A%3Cparam%20name%3D%22AppletClass%22%20value%3D%22edu.cornell.lassp.mck10.HysteresisApplet.HysteresisPanel%22%3E%0A%3Cparam%20name%3D%22GenerateLoop%22%20value%3D%22true%22%3E%0A%3Cstrong%3EYou%20need%20a%20Java%20Enabled%20Browser%20to%20view%20the%20applet!%3C%2Fstrong%3E%0A%3C%2Fapplet%3E%0A%3C%2Fdiv%3E%0A%0A%3Cbr%3E%3Cbr%3E%0A%3Cdiv%20align%3D%22CENTER%22%3E%0A%3Cimg%20width%3D%22100%25%22%20height%3D%223%22%3E%0A%3C%2Fdiv%3E%0A%3Cbr%3E%3Cbr%3E%0A%0A%3Cdiv%20align%3D%22CENTER%22%3E%0A%3Ctable%20cellpadding%3D%223%22%20border%3D%222%22%20width%3D%2280%25%22%3E%0A%3Ctbody%3E%3Ctr%20valign%3D%22top%22%3E%0A%20%20%3Cth%20colspan%3D%222%22%20bgcolor%3D%22%23ffcccc%22%3E%3Cfont%20color%3D%22blue%22%20size%3D%22%2B1%22%3EControls%3C%2Ffont%3E%3C%2Fth%3E%3C%2Ftr%3E%0A%0A%3Ctr%20valign%3D%22top%22%3E%0A%20%20%3Ctd%3E%3Cstrong%3E%3Cfont%20color%3D%22red%22%3EFit%3A%3C%2Ffont%3E%3C%2Fstrong%3E%20To%20zoom%20in%20so%20that%20the%0A%20%20loop%20completely%20fills%20the%20display%2C%20press%20this%20button.%3C%2Ftd%3E%0A%0A%20%20%3Ctd%3E%3Cstrong%3E%3Cfont%20color%3D%22red%22%3EZoom%0A%20%20Out%3A%3C%2Ffont%3E%3C%2Fstrong%3E%20To%20zoom%20out%20in%20the%20view%20of%20the%20hysteresis%20loop%2C%0A%20%20press%20this%20button.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%0A%3Ctr%20valign%3D%22top%22%3E%0A%20%20%3Ctd%3E%3Cstrong%3E%3Cfont%20color%3D%22red%22%3EGenerate%0A%20%20Loop%3A%3C%2Ffont%3E%3C%2Fstrong%3E%20To%20generate%20an%20entire%20hysteresis%20loop%2C%20press%0A%20%20this%20button.%3C%2Ftd%3E%20%0A%0A%20%20%3Ctd%3E%3Cstrong%3E%3Cfont%20color%3D%22red%22%3ESTOP%3A%3C%2Ffont%3E%3C%2Fstrong%3E%0A%20%20To%20stop%20the%20simulation%2C%20press%20this%20button.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%0A%3Ctr%20valign%3D%22top%22%3E%0A%20%20%3Ctd%3E%3Cstrong%3E%3Cfont%20color%3D%22red%22%3EConfigure%3A%3C%2Ffont%3E%3C%2Fstrong%3E%20To%20configure%20the%20details%20of%20the%0A%20%20simulation%2C%20press%20this%20button.%3C%2Ftd%3E%20%0A%0A%20%20%3Ctd%3E%3Cstrong%3E%3Cfont%20color%3D%22red%22%3EDisorder%3A%3C%2Ffont%3E%3C%2Fstrong%3E%20To%20change%20the%20disorder%2C%20type%20a%0A%20%20new%20value%20here.%3C%2Ftd%3E%20%0A%3C%2Ftr%3E%0A%0A%3Ctr%20valign%3D%22top%22%3E%0A%20%20%3Ctd%20colspan%3D%222%22%3E%3Cstrong%3E%3Cfont%20color%3D%22red%22%3EChanging%20the%0A%20%20field%3A%3C%2Ffont%3E%3C%2Fstrong%3E%20Click%20a%20point%20in%20the%20loop%20view%20to%20change%20the%0A%20%20field%20to%20the%20value%20at%20that%20point.%3C%2Ftd%3E%20%0A%3C%2Ftr%3E%0A%0A%3Ctr%20valign%3D%22top%22%3E%0A%20%20%3Ctd%20colspan%3D%222%22%3E%3Cstrong%3E%3Cfont%20color%3D%22red%22%3EZooming%3C%2Ffont%3E%3C%2Fstrong%3E%20To%20zoom%20in%20on%20the%20hysteresis%20loop%2C%0A%20%20drag%20a%20box%20around%20the%20area%20you%20want%20to%20view.%20%20To%20zoom%20out%2C%20press%20the%0A%20%20%3Cstrong%3EZoom%20Out%3C%2Fstrong%3E%20button.%20%20To%20zoom%20so%20that%20the%20loop%20fills%0A%20%20the%20display%2C%20press%20the%20%3Cstrong%3EFit%3C%2Fstrong%3E%20button.%3C%2Ftd%3E%20%0A%3C%2Ftr%3E%0A%0A%3Ctr%20valign%3D%22top%22%3E%0A%20%20%3Ctd%3E%3Cimg%20alt%3D%22Green%20Light%22%20width%3D%2216%22%20height%3D%2216%22%20align%3D%22left%22%3E%20If%20the%20light%20is%20green%2C%20the%0A%20%20applet%20is%20waiting%20for%20input.%3C%2Ftd%3E%20%0A%0A%20%20%3Ctd%3E%3Cimg%20alt%3D%22Red%20Light%22%20width%3D%2216%22%20height%3D%2216%22%20align%3D%22left%22%3E%20If%20the%20light%20is%20red%2C%20the%0A%20%20simulation%20is%20busy.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%0A%3Ctr%20valign%3D%22top%22%3E%0A%20%20%3Ctd%20colspan%3D%222%22%3E%3Cp%3E%3Cstrong%3E%3Cfont%20color%3D%22red%22%3EConfiguration%0A%20%20Menu%3A%3C%2Ffont%3E%3C%2Fstrong%3E%20Many%20more%20features%20of%20the%20simulation%20can%20be%0Acontrolled%20through%20the%20configuration%20menu%2C%20which%20is%20accessed%20through%0Athe%20configure%20button.%20%20Upon%20pressing%20this%20button%2C%20you%20will%20see%20a%20menu%0Awith%20three%20choices%3A%20%3Cem%3EHysteresis%20Model%3C%2Fem%3E%2C%20%3Cem%3ELoop%20View%3C%2Fem%3E%2C%20and%0A%3Cem%3ELattice%20View%3C%2Fem%3E.%20%20The%20latter%20two%20allow%20you%20to%20change%20some%0Aproperites%20of%20the%20display.%20%20The%20first%20allows%20you%20to%20control%20all%0Aaspects%20of%20the%20model.%3C%2Fp%3E%0A%0A%3Cp%3EUnder%20the%20%3Cem%3EHysteresis%20Model%3C%2Fem%3E%20menu%2C%20there%20are%20seven%20options%3A%0A%3Ctable%3E%0A%3Ctbody%3E%3Ctr%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cimg%20align%3D%22left%22%20width%3D%2220%22%20height%3D%2222%22%20border%3D%220%22%3E%3C%2Ftd%3E%20%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cstrong%3E%3Cfont%20color%3D%22blue%22%3EGoal%20Field%3C%2Ffont%3E%3C%2Fstrong%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3EEnter%20numbers%20here%20to%20precisely%20control%20the%20external%20magnetic%0A%20%20field.%20%20When%20a%20number%20is%20entered%2C%20the%20magnetic%20field%20will%20be%20slowly%0A%20%20increased%20until%20it%20reaches%20the%20entered%20value.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cimg%20align%3D%22left%22%20width%3D%2220%22%20height%3D%2222%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cstrong%3E%3Cfont%20color%3D%22blue%22%3EDisorder%3C%2Ffont%3E%3C%2Fstrong%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3EThis%20sets%20the%20degree%20of%20disorder%20in%20the%20lattice.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cimg%20align%3D%22left%22%20width%3D%2220%22%20height%3D%2222%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cstrong%3E%3Cfont%20color%3D%22blue%22%3EDimensions%3C%2Ffont%3E%3C%2Fstrong%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3EUse%20this%20parameter%20to%20adjust%20the%20dimensionality%20of%20the%20lattice.%0A%20%20Any%20number%20of%20dimensions%20greater%20than%20or%20equal%20to%20two%20is%20valid.%0A%20%20(But%20higher%20dimensions%20will%20take%20%3Cem%3Emuch%3C%2Fem%3E%20more%20memory%2C%20and%20run%0A%20%20%3Cem%3Emuch%3C%2Fem%3E%20slower.%0A%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cimg%20align%3D%22left%22%20width%3D%2220%22%20height%3D%2222%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cstrong%3E%3Cfont%20color%3D%22blue%22%3EWidth%3C%2Ffont%3E%3C%2Fstrong%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3EAdjust%20the%20width%20of%20the%20simulation.%20%20Any%20number%20of%20spins%20is%0A%20%20valid%2C%20but%20the%20larger%20the%20simulation%2C%20the%20slower%20it%20will%20run.%3C%2Ftd%3E%0A%3C%2Ftr%3E%3Ctr%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cimg%20align%3D%22left%22%20width%3D%2220%22%20height%3D%2222%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cstrong%3E%3Cfont%20color%3D%22blue%22%3ESeeds%20Up%3C%2Ffont%3E%3C%2Fstrong%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3EThis%20creates%20a%20single%20row%20of%20spins%20preflipped%20to%20point%20up.%20%20This%0A%20%20facilitates%20the%20seeding%20of%20the%20first%20avalanches%20in%20two%20dimensions%2C%0A%20%20and%20drastically%20changes%20the%20effects%20of%20the%20finite%20size%20of%20the%0A%20%20simultation.%20%20This%20option%20may%20be%20%3Cem%3Etrue%3C%2Fem%3E%20or%20%3Cem%3Efalse%3C%2Fem%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cimg%20align%3D%22left%22%20width%3D%2220%22%20height%3D%2222%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cstrong%3E%3Cfont%20color%3D%22blue%22%3ESeeds%20Down%3C%2Ffont%3E%3C%2Fstrong%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20align%3D%22top%22%3EThis%20has%20the%20same%20effect%20as%20the%20%3Cem%3ESeeds%20Up%3C%2Fem%3E%20option%2C%20except%0A%20%20that%20the%20row%20of%20preflipped%20spins%20points%20down.%20%20The%20two%20options%20can%0A%20%20be%20used%20simultaneously.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cimg%20align%3D%22left%22%20width%3D%2220%22%20height%3D%2222%22%20border%3D%220%22%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3E%3Cstrong%3E%3Cfont%20color%3D%22blue%22%3ELorenzian%3C%2Ffont%3E%3C%2Fstrong%3E%3C%2Ftd%3E%0A%20%20%3Ctd%20valign%3D%22top%22%3EWhen%20this%20option%20is%20%3Cem%3Efalse%3C%2Fem%3E%2C%20the%20simulation%20uses%20a%0A%20%20gaussian%20distribution%20of%20random%20fields.%20%20When%20this%20option%20is%0A%20%20%3Cem%3Etrue%3C%2Fem%3E%2C%20the%20simulation%20uses%20a%20Lorenzian%20distribution%20of%0A%20%20random%20fields.%20%20Because%20the%20Lorenzian%20distribution%20decays%20much%20more%0A%20%20slowly%20than%20the%20gaussian%20distribution%2C%20there%20are%20many%20more%20spins%0A%20%20with%20large%20local%20fields%20to%20seed%20the%20early%20avalanches.%20%20Right%20now%2C%20it%0A%20%20is%20necessary%20to%20zoom%20in%20on%20the%20hysteresis%20loop%20when%20using%20the%0A%20%20lorenzian%20distribution%2C%20because%20the%20interesting%20behavior%20occurs%20in%0A%20%20only%20a%20small%20fraction%20of%20the%20range%20of%20fields.%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3C%2Fp%3E%3C%2Ftd%3E%3C%2Ftr%3E%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3C%2Fdiv%3E%0A%0A%3Cbr%3E%3Cbr%3E%0A%0A%3Cdiv%20align%3D%22center%22%3E%0A%3Cimg%20width%3D%22100%25%22%20height%3D%223%22%3E%0A%3C%2Fdiv%3E%0A%0A%0A%3Cbr%3E%3Cbr%3E%0A%3Ctable%3E%0A%3Ctbody%3E%3Ctr%20valign%3D%22center%22%3E%0A%3Ctd%3E%0A%20%20%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2Fhysteresis.html%22%3E%0A%20%20%3Cimg%20align%3D%22left%22%20width%3D%2220%22%20height%3D%2222%22%20border%3D%220%22%3E%0A%20%20%3C%2Fa%3E%0A%3C%2Ftd%3E%0A%0A%3Ctd%3E%0A%20%20%3Ca%20href%3D%22https%3A%2F%2Fsethna.lassp.cornell.edu%2Fhysteresis%2Fhysteresis.html%22%3EWhat%20is%20hysteresis%3F%3C%2Fa%3E%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%0A%20%20%3Ca%20href%3D%22source.html%22%3E%3Cimg%20align%3D%22left%22%20width%3D%2220%22%20height%3D%2222%22%20border%3D%220%22%3E%3C%2Fa%3E%0A%3C%2Ftd%3E%3Ctd%3E%0A%20%20%3Ca%20href%3D%22source.html%22%3EView%20the%20source%20code.%3C%2Fa%3E%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3Cbr%3E%3Cbr%3E%0A%0A%3Caddress%3E%0A%3Cfont%20size%3D%22-1%22%20color%3D%22%23999999%22%3E%0A%0AThis%20page%20last%20updated%20on%20Sunday%20January%205%2C%201997.%0A%3Cbr%3E%0A%3Cbr%3E%0A%0Ae-mail%3A%20%3Ca%20href%3D%22mailto%3Amck10%40cornell.edu%22%3Emck10%40cornell.edu%3C%2Fa%3E%0A%0A%3C%2Ffont%3E%0A%0A%3C%2Faddress%3E%0A%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "9850010d-037c-4acf-a6c8-2523ba85a871",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "sethna.lassp.cornell.edu-hysteresis-mck10-hysteresis-applet.html"
+}

@@ -1,0 +1,437 @@
+{
+    "results": [
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[3]/form[1]",
+                "aria": "/document[1]/alert[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 85,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<form action=\"/core/portal/accept_cookie/all\" method=\"POST\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20action%3D%5C%22%2Fcore%2Fportal%2Faccept_cookie%2Fall%5C%22%20method%3D%5C%22POST%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[2]",
+                "aria": "/document[1]/banner[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 157,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div style=\"background-color: #000;color:#FFF;\" class=\"cs_menu_font_family d-none d-sm-block\" id=\"superHeader\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background-color%3A%20%23000%3Bcolor%3A%23FFF%3B%5C%22%20class%3D%5C%22cs_menu_font_family%20d-none%20d-sm-block%5C%22%20id%3D%5C%22superHeader%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[2]/div[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.23 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.23",
+                16,
+                400,
+                "#0000ee",
+                "#000000",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 157,
+                "height": 18,
+                "width": 39
+            },
+            "snippet": "<a href=\"/core/portal/login\" class=\"text-white font-s\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.23%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fcore%2Fportal%2Flogin%5C%22%20class%3D%5C%22text-white%20font-s%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.23%22%2C16%2C400%2C%22%230000ee%22%2C%22%23000000%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[3]/div[1]/nav[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]/search[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 282,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input aria-label=\"Search\" placeholder=\"Search\" name=\"q\" class=\"form-control py-2 border-right-0 d-inline cs_menu_border_colour\" id=\"full_header_search\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22Search%5C%22%20placeholder%3D%5C%22Search%5C%22%20name%3D%5C%22q%5C%22%20class%3D%5C%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%5C%22%20id%3D%5C%22full_header_search%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[3]/div[1]/nav[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/banner[1]/navigation[2]/search[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 315,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"Search\" type=\"submit\" class=\"btn btn-primary border-left-0 cs_menu_border_colour\" id=\"input_search_icon_header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Search%5C%22%20type%3D%5C%22submit%5C%22%20class%3D%5C%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%5C%22%20id%3D%5C%22input_search_icon_header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[5]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/banner[1]/generic[2]/search[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 480,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input aria-label=\"Search\" placeholder=\"Search\" name=\"q\" class=\"form-control py-2 border-right-0 d-inline cs_menu_border_colour\" id=\"expand_header_search\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22Search%5C%22%20placeholder%3D%5C%22Search%5C%22%20name%3D%5C%22q%5C%22%20class%3D%5C%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%5C%22%20id%3D%5C%22expand_header_search%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[5]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/button[1]",
+                "aria": "/document[1]/banner[1]/generic[2]/search[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 513,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button aria-label=\"Search\" type=\"submit\" class=\"btn btn-primary border-left-0 cs_menu_border_colour\" id=\"input_search_icon_header_expand\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Search%5C%22%20type%3D%5C%22submit%5C%22%20class%3D%5C%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%5C%22%20id%3D%5C%22input_search_icon_header_expand%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/form[1]",
+                "aria": "/document[1]/main[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 682,
+                "height": 83,
+                "width": 784
+            },
+            "snippet": "<form action=\"https://towerhamlets.public-i.tv/core/portal/login\" method=\"post\" id=\"login-form_6a04ebd949837\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20action%3D%5C%22https%3A%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Flogin%5C%22%20method%3D%5C%22post%5C%22%20id%3D%5C%22login-form_6a04ebd949837%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[1]/button[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1183,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button data-dismiss=\"modal\" aria-label=\"Close\" class=\"close\" type=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20data-dismiss%3D%5C%22modal%5C%22%20aria-label%3D%5C%22Close%5C%22%20class%3D%5C%22close%5C%22%20type%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[2]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 1406,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input disabled=\"\" checked=\"\" value=\"true\" name=\"necessary_cookies\" class=\"custom-control-input\" id=\"necessary_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20disabled%3D%5C%22%5C%22%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22necessary_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22necessary_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[3]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 1504,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" value=\"true\" name=\"preferences_cookies\" class=\"custom-control-input\" id=\"preferences_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22preferences_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22preferences_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[4]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 1620,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" value=\"true\" name=\"statistics_cookies\" class=\"custom-control-input\" id=\"statistics_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22statistics_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22statistics_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        },
+        {
+            "ruleId": "input_checkboxes_grouped",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[5]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/document[1]/form[1]/checkbox[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_lonecheckbox",
+            "message": "Verify that this ungrouped checkbox input is not related to other checkboxes",
+            "messageArgs": [
+                "Checkbox"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 1735,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input checked=\"\" value=\"true\" name=\"third_party_cookies\" class=\"custom-control-input\" id=\"third_party_cookies\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_checkboxes_grouped.html#%7B%22message%22%3A%22Verify%20that%20this%20ungrouped%20checkbox%20input%20is%20not%20related%20to%20other%20checkboxes%22%2C%22snippet%22%3A%22%3Cinput%20checked%3D%5C%22%5C%22%20value%3D%5C%22true%5C%22%20name%3D%5C%22third_party_cookies%5C%22%20class%3D%5C%22custom-control-input%5C%22%20id%3D%5C%22third_party_cookies%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_lonecheckbox%22%2C%22ruleId%22%3A%22input_checkboxes_grouped%22%2C%22msgArgs%22%3A%5B%22Checkbox%22%5D%7D"
+        }
+    ],
+    "numExecuted": 1175,
+    "ruleTime": 14,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "aria_form_label_unique": {
+            "0": "Each element with \"form\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"form\" role do not have unique labels"
+        },
+        "input_checkboxes_grouped": {
+            "0": "Related sets of radio buttons or checkboxes should be programmatically grouped",
+            "potential_lonecheckbox": "Verify that this ungrouped checkbox input is not related to other checkboxes"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 16,
+            "elementsViolation": 3,
+            "elementsViolationReview": 14,
+            "violation": 3,
+            "potentialviolation": 10,
+            "recommendation": 0,
+            "potentialrecommendation": 2,
+            "manual": 1,
+            "pass": 1159
+        },
+        "scanTime": 62,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778707419711,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ELogin%20-%20Tower%20Hamlets%20Council%20webcasts%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22pi_sunshine_page%20controller_portal%20method_login%20combined_portal_login%20page_id_0%20is_using_a_layout%20layout_id_0%20%20logged_out%20cs_body_font_family%22%3E%0A%09%3Cdiv%20id%3D%22cookie_overlay%22%20class%3D%22py-3%22%20role%3D%22alert%22%20aria-live%3D%22assertive%22%3E%0A%09%3Cdiv%20class%3D%22container%20d-flex%20flex-column%20flex-sm-row%22%20style%3D%22gap%3A%201rem%3B%22%3E%0A%09%09%3Cdiv%20class%3D%22mr-auto%22%3E%0A%09%09%09%3Cstrong%3E%0A%09%09%09%09We%20use%20cookies%20to%20remember%20your%20preferences%2C%20collect%20information%20about%20how%20you%20use%20the%20site%2C%20and%20connect%20to%20third-party%20services.%3Cbr%3E%0A%09%09%09%3C%2Fstrong%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Fcookie_law%22%3E%0A%09%09%09%09Read%20our%26nbsp%3BCookie%20policy%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22align-self-center%22%3E%0A%09%09%09%3Cbutton%20class%3D%22btn%20btn-outline-light%20text-nowrap%22%20type%3D%22button%22%20data-toggle%3D%22modal%22%20data-target%3D%22%23cookie-modal%22%3E%0A%09%09%09%09Customise%20Preferences%09%09%09%3C%2Fbutton%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22align-self-center%22%3E%0A%09%09%09%3Cform%20method%3D%22POST%22%20action%3D%22%2Fcore%2Fportal%2Faccept_cookie%2Fall%22%3E%0A%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%22fc1abfcd31b54624010a8e96fc798a43%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%3Cbutton%20class%3D%22btn%20btn-light%20text-nowrap%22%20type%3D%22submit%22%3E%0A%09%09%09%09%09Accept%20All%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%3C%2Fform%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%3Cheader%20id%3D%22navHeader%22%20class%3D%22cs_menu_font_family%20mb-3%22%3E%0A%09%09%0A%09%3Cdiv%20id%3D%22skip_nav%22%20role%3D%22navigation%22%20aria-label%3D%22Skip%20navigation%20links%22%3E%0A%09%09%3Cul%20class%3D%22list-unstyled%22%3E%0A%09%09%09%3Cli%3E%3Ca%20href%3D%22%23mainContent%22%20title%3D%22Use%20this%20link%20to%20skip%20to%20the%20main%20content%20of%20the%20website%22%20class%3D%22cs_background_flat%20cs_menu_font_colour%22%3ESkip%20to%20Main%20Content%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%3C%2Ful%3E%0A%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22superHeader%22%20class%3D%22cs_menu_font_family%20d-none%20d-sm-block%22%20style%3D%22background-color%3A%20%23000%3Bcolor%3A%23FFF%3B%22%3E%0A%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%3C!--%20login%2Fuser%20link%2Fdropdown%20--%3E%0A%09%09%09%09%3Cdiv%20class%3D%22py-2%20dropdown%20ml-auto%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22text-white%20font-s%22%20href%3D%22%2Fcore%2Fportal%2Flogin%22%3E%0A%09%09%09%09%09%09%09%3Ci%20class%3D%22icon%20tnetennba-fas-user%20mr-1%22%3E%3C%2Fi%3ELogin%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%0A%0A%0A%3Cdiv%20id%3D%22navbar_2019%22%20class%3D%22cs_background_grad%22%3E%0A%09%3Cdiv%20id%3D%22nav_elements_container%22%20class%3D%22container%20justify-content-between%22%3E%0A%09%09%3Cnav%20class%3D%22navbar%20navbar-expand-md%20p-0%20flex-nowrap%22%20id%3D%22navbar_main%22%3E%0A%09%09%09%09%3C!--%20logo%20--%3E%0A%09%09%09%09%3Cspan%20id%3D%22brand_container%22%20class%3D%22navbar-brand%20p-0%20mr-1%20flex-shrink-1%22%3E%0A%09%09%09%09%09%3Ca%20href%3D%22http%3A%2F%2Fwww.towerhamlets.gov.uk%2F%22%20class%3D%22navbar-left%20px-0%22%20style%3D%22outline-offset%3A%20-1px%3B%22%3E%3Cimg%20id%3D%22brand_logo%22%20alt%3D%22Tower%20Hamlets%20Council%20Homepage%20logo%22%3E%3C%2Fa%3E%09%09%09%09%3C%2Fspan%3E%0A%09%09%09%09%3C!--%20nav%20menu%20items%20--%3E%0A%09%09%09%09%3Cdiv%20class%3D%22nav_divider_bar%20ml-md-4%20pl-md-4%20ml-lg-5%20pl-lg-5%20mr-md-4%20mr-lg-5%20flex-fill%20d-md-block%20d-none%20position-relative%22%20id%3D%22navbarNavContent%22%20style%3D%22%22%3E%0A%09%09%09%09%09%3Cul%20id%3D%22menu_ul%22%20class%3D%22navbar-nav%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20id%3D%22more%22%20class%3D%22d-none%20text-decoration-none%22%20style%3D%22display%3A%20none%3B%22%3E%0A%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20nav-link%20dropdown-toggle%20pb-1%22%20id%3D%22more_dropdown_anchor%22%20href%3D%22%23%22%20data-toggle%3D%22dropdown%22%20role%3D%22button%22%20aria-expanded%3D%22false%22%3EMore%3Cspan%20class%3D%22sr-only%22%3E%20pages%3Cspan%3E%3C%2Fspan%3E%3C%2Fspan%3E%3C%2Fa%3E%0A%09%09%09%09%09%09%09%3Cul%20id%3D%22nav_dropdown_overflow%22%20class%3D%22dropdown-menu%20dropdown-menu-right%20flat-dropdown%22%20aria-labelledby%3D%22more_dropdown_anchor%22%20aria-live%3D%22polite%22%3E%3C%2Ful%3E%0A%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%3Cli%20class%3D%22moving_nav_li%20mr-4%20text-nowrap%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20pb-1%20nav-link%22%20href%3D%22%2Fcore%2Fportal%2Fhome%22%20title%3D%22Go%20to%20the%20page%3A%20Home%22%3EHome%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%3Cli%20class%3D%22moving_nav_li%20mr-4%20text-nowrap%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20pb-1%20nav-link%22%20href%3D%22%2Fcore%2Fportal%2Fwebcasts%22%20title%3D%22Go%20to%20the%20page%3A%20Webcast%20library%22%3EWebcast%20library%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%3Cli%20class%3D%22moving_nav_li%20mr-4%20text-nowrap%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20pb-1%20nav-link%22%20href%3D%22%2Fcore%2Fportal%2Ffaq%22%20title%3D%22Go%20to%20the%20page%3A%20Help%22%3EHelp%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%3C%2Ful%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C!--%20search%20forms%20and%20input%20navbar%20--%3E%0A%09%09%09%09%09%09%09%09%09%3C!--%20flex-shrink-0%20removed%20from%20commented%20version%20below%20(above%20the%20new%20version)%2C%20for%20accessibility%20reasons%20(nav%20break%20at%20200%25%20text%20only%20zoom%20(resolution%20%3C%201080p)).%20Original%20inclusion%20for%20this%20bootstrap%20class%20is%20tbc%20--%3E%0A%09%09%09%09%09%3C!--%20%3Cdiv%20class%3D%22d-none%20d-lg-block%20flex-shrink-0%22%20id%3D%22header_search_forms_nav%22%3E%20--%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22d-none%20d-lg-block%22%20id%3D%22header_search_forms_nav%22%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22search%22%3E%0A%09%09%09%09%09%09%09%3Cform%20action%3D%22%2Fcore%2Fportal%2Fsearch_results%22%20method%3D%22post%22%20role%3D%22search%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%22fc1abfcd31b54624010a8e96fc798a43%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22search_text_container%20d-none%20d-lg-block%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22text%22%20id%3D%22full_header_search%22%20class%3D%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%22%20name%3D%22q%22%20placeholder%3D%22Search%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group-append%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cbutton%20id%3D%22input_search_icon_header%22%20class%3D%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%22%20type%3D%22submit%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Ci%20id%3D%22header_search_icon%22%20class%3D%22icon%20tnetennba-fas-search%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22search_request_uri%22%20value%3D%22%2Fcore%2Fportal%2Flogin%22%3E%0A%09%09%09%09%09%09%09%3C%2Fform%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%20%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%3C!--%20inline-flex%20added%20here%20to%20stop%20icon-container%20being%20pushed%20above%20and%20below%20on%20page%20load%20--%3E%0A%09%09%09%09%3Cdiv%20id%3D%22icon-container%22%20class%3D%22d-inline-flex%22%3E%0A%09%09%09%09%09%3C!--%20burger%20menu%20main%20nav%20link%20collapse%20--%3E%0A%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20nav_link_toggle%20px-0%20d-md-none%20mr-3%22%20id%3D%22nav_link_expand_button%22%20href%3D%22%23%22%20role%3D%22button%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22nav_expand_outer_links%22%20data-toggle_element%3D%22nav_expand_outer_links%22nav_expand_outer_links')%3B%20return%20false%22%3E%0A%09%09%09%09%09%09%3Ci%20id%3D%22nav_link_expand%22%20class%3D%22icon%20tnetennba-fas-bars%22%3E%3C%2Fi%3E%3Cspan%20class%3D%22sr-only%22%3E%20Open%20navigation%3C%2Fspan%3E%0A%09%09%09%09%09%3C%2Fa%3E%20%0A%09%09%09%09%09%3C!--%20search%20expand%20button%20--%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20nav_search%20px-0%20d-lg-none%20ml-1%22%20id%3D%22search_toggle%22%20href%3D%22%23%22%20role%3D%22button%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20aria-controls%3D%22nav_expand_outer_search%22%20data-toggle_element%3D%22nav_expand_outer_search%22nav_expand_outer_search')%3B%20return%20false%22%3E%0A%09%09%09%09%09%09%09%3Ci%20id%3D%22nav_search_icon%22%20class%3D%22icon%20tnetennba-fas-search%22%3E%3C%2Fi%3E%3Cspan%20class%3D%22sr-only%22%3E%20Search%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fnav%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3C!--%20Moved%20this%20expandable%20and%20%23nav_expand_outer_search%20into%20a%20seperate%20div%20and%20container%2C%20so%20top%20border%20would%20be%20hidden%20on%20resize%20--%3E%0A%3Cdiv%20id%3D%22nav_expand_outer_links%22%20class%3D%22cs_background_grad_top%20nav_expandable%20d-none%20d-md-none%20position-absolute%20w-100%22%20style%3D%22z-index%3A5%22%20aria-live%3D%22polite%22%3E%0A%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%3Cdiv%20class%3D%22nav-divider-left%20ml-lg-2%20pl-lg-3%20d-md-none%22%20id%3D%22navbarNavContentExpand%22%3E%0A%09%09%09%3Cul%20class%3D%22navbar-nav%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20text-decoration-none%22%20href%3D%22%2Fcore%2Fportal%2Fhome%22%20title%3D%22Go%20to%20the%20page%3A%20Home%22%3EHome%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20text-decoration-none%22%20href%3D%22%2Fcore%2Fportal%2Fwebcasts%22%20title%3D%22Go%20to%20the%20page%3A%20Webcast%20library%22%3EWebcast%20library%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%20text-decoration-none%22%20href%3D%22%2Fcore%2Fportal%2Ffaq%22%20title%3D%22Go%20to%20the%20page%3A%20Help%22%3EHelp%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%3C%2Ful%3E%0A%0A%09%09%09%3C!--%20language%2Flogin%20bar%20items%20in%20nav%20bar%20--%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22d-block%20d-sm-none%22%3E%0A%09%09%09%09%09%3Chr%20class%3D%22cs_menu_font_colour%22%3E%0A%09%09%09%09%09%3Cul%20class%3D%22navbar-nav%20cs_menu_font_colour%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22py-2%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ci%20class%3D%22icon%20icon-small%20tnetennba-fas-user%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22cs_menu_font_colour%22%20href%3D%22%2Fcore%2Fportal%2Flogin%22%3ELogin%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Ful%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%09%3Cdiv%20id%3D%22nav_expand_outer_search%22%20class%3D%22cs_background_grad_top%20nav_expandable%20d-none%20d-lg-none%20position-absolute%20w-100%22%20style%3D%22z-index%3A2%22%20aria-live%3D%22polite%22%3E%0A%09%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%09%3C!--%20search%20forms%20and%20input%20expand%20--%3E%0A%09%09%09%3Cdiv%20id%3D%22header_search_forms_expand%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22search%22%3E%0A%09%09%09%09%09%3Cform%20action%3D%22%2Fcore%2Fportal%2Fsearch_results%22%20method%3D%22post%22%20role%3D%22search%22%3E%0A%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%22fc1abfcd31b54624010a8e96fc798a43%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%09%09%3Cdiv%20class%3D%22search_text_container%20mx-3%20mb-3%20mt-3%20d-lg-none%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22text%22%20id%3D%22expand_header_search%22%20class%3D%22form-control%20py-2%20border-right-0%20d-inline%20cs_menu_border_colour%22%20name%3D%22q%22%20placeholder%3D%22Search%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22input-group-append%22%3E%0A%09%09%09%09%09%09%09%09%09%3Cbutton%20id%3D%22input_search_icon_header_expand%22%20class%3D%22btn%20btn-primary%20border-left-0%20cs_menu_border_colour%22%20type%3D%22submit%22%20aria-label%3D%22Search%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Ci%20id%3D%22nav_search_expand_icon%22%20class%3D%22icon%20tnetennba-fas-search%22%3E%3C%2Fi%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22search_request_uri%22%20value%3D%22%2Fcore%2Fportal%2Flogin%22%3E%0A%09%09%09%09%09%3C%2Fform%3E%0A%09%09%09%09%3C%2Fdiv%3E%20%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fheader%3E%0A%09%09%09%09%09%3Cmain%20id%3D%22mainContent%22%20style%3D%22min-height%3A%20456px%3B%22%3E%0A%09%09%09%3Cdiv%20class%3D%22container%22%3E%0A%09%09%09%09%3C!--%5Bif%20lte%20IE%209%20%5D%3E%20%3Cdiv%20id%3D%22alert6a04ebd9496c2%22%20class%3D%22clearfix%20fade%20show%20alert%20alert-warning%20alert-dismissible%20text-center%22%20role%3D%22alert%22%3E%0A%09%3Cbutton%20type%3D%22button%22%20class%3D%22close%22%20data-dismiss%3D%22alert%22%20aria-label%3D%22Close%22%3E%3Ci%20class%3D%22icon%20tnetennba-far-times%22%3E%3C%2Fi%3E%3C%2Fbutton%3E%0A%09You%20are%20using%20an%20older%20version%20of%20Internet%20Explorer.%20Some%20features%20of%20this%20site%20and%20video%20player%20may%20not%20function%20correctly.%0A%3C%2Fdiv%3E%0A%3Cbr%3E%3C!%5Bendif%5D--%3E%0A%09%09%3Cdiv%20class%3D%22row%20justify-content-center%22%3E%0A%09%3Cdiv%20class%3D%22col-xl-7%20col-lg-8%20col-md-12%20col-12%22%3E%0A%09%09%3Ch1%20class%3D%22sr-only%22%3ELogin%20-%20Tower%20Hamlets%20Council%20webcasts%3C%2Fh1%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20class%3D%22row%20justify-content-center%22%3E%0A%09%3Cdiv%20id%3D%22col_1%22%20class%3D%22col-xl-7%20col-lg-8%20col-md-12%20col-12%22%3E%0A%09%09%0A%3Cdiv%20id%3D%22static_login%22%20class%3D%22pi_widget%22%3E%0A%09%09%3Ca%20id%3D%22pistatic_login%22%3E%3C%2Fa%3E%0A%09%09%09%3Cdiv%20id%3D%22pi_widget_title_static_login%22%20class%3D%22pi_widget_title%20cs_heading_font_family%22%3E%0A%09%09%09%3Ch2%20id%3D%22pi_widget_title_text_static_login%22%20class%3D%22cs_heading_font_family%22%3ELogin%3C%2Fh2%3E%0A%09%09%3C%2Fdiv%3E%0A%09%0A%09%3Cdiv%20class%3D%22pi_widget_content%20inner%22%20id%3D%22pi_widget_content_static_login%22%3E%0A%09%09%3Cdiv%20class%3D%22pi_widget_body%22%3E%0A%09%09%09%0A%09%3Cdiv%20class%3D%22row%22%3E%0A%09%09%3Cdiv%20class%3D%22col-12%22%3E%0A%09%09%09%3C!--%20Begin%20login%20%2F%20register%20--%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%0A%09%0A%09%09%09%3Cdiv%20class%3D%22row%20mt-2%20pb-4%22%3E%0A%09%09%09%3Cdiv%20class%3D%22col-12%22%3E%0A%09%09%09%09%3Cul%20class%3D%22list-unstyled%22%3E%0A%09%09%09%09%09%3Cli%20class%3D%22float-left%20mr-3%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22pi_g2_fg%20font-weight-bold%22%20href%3D%22%2Fcore%2Fevent%2Fauthenticate_google%22%3E%0A%09%09%09%09%09%09%09%3Cimg%20class%3D%22mr-2%22%20alt%3D%22Google%22%3E%0A%09%09%09%09%09%09%09%3Cspan%20class%3D%22mt-2%22%3ELogin%20with%20Google%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%3C!--li%20class%3D%22float-left%20mr-3%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22pi_g2_fg%20font-weight-bold%22%20href%3D%22%2Fcore%2Fevent%2Fauthenticate_facebook%22%3E%0A%09%09%09%09%09%09%09%3Cimg%20class%3D%22mr-2%22%20alt%3D%22Facebook%22%3E%0A%09%09%09%09%09%09%09%3Cspan%20class%3D%22mt-1%22%3ELogin%20with%20Facebook%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli--%3E%0A%09%09%09%09%09%3C!--%20li%20class%3D%22float-left%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22pi_g2_fg%20font-weight-bold%22%20href%3D%22%2Fcore%2Fevent%2Fauthenticate_login_twitter%22%3E%0A%09%09%09%09%09%09%09%3Cimg%20class%3D%22mr-2%22%20alt%3D%22Twitter%22%3E%0A%09%09%09%09%09%09%09%3Cspan%20class%3D%22mt-1%22%3ELogin%20with%20Twitter%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%20--%3E%0A%09%09%09%09%3C%2Ful%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22row%20mt-2%22%3E%0A%09%09%09%3Cdiv%20class%3D%22col-12%20col-md-6%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%3Cform%20id%3D%22login-form_6a04ebd949837%22%20method%3D%22post%22%20action%3D%22https%3A%2F%2Ftowerhamlets.public-i.tv%2Fcore%2Fportal%2Flogin%22%3E%0A%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%22fc1abfcd31b54624010a8e96fc798a43%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%09%3Cinput%20id%3D%22target_url_6a04ebd949837%22%20name%3D%22target_url%22%20type%3D%22hidden%22%20value%3D%22%2Fcore%2Fportal%2Flogin%22%3E%0A%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22submit_login%22%20value%3D%221%22%3E%0A%0A%09%09%09%09%09%3Cdiv%20class%3D%22form-group%22%3E%0A%09%09%09%09%09%09%3Clabel%20for%3D%22login_username_6a04ebd949837%22%20class%3D%22label%22%3EEmail%20or%20user%20name%3C%2Flabel%3E%0A%09%09%09%09%09%09%3Cinput%20id%3D%22login_username_6a04ebd949837%22%20class%3D%22form-control%20username%20input-medium%22%20name%3D%22username%22%20type%3D%22text%22%20value%3D%22%22%20placeholder%3D%22Username%22%20required%3D%22%22%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22form-group%22%3E%0A%09%09%09%09%09%09%3Clabel%20for%3D%22login_password_6a04ebd949837%22%20class%3D%22label%22%3EPassword%3C%2Flabel%3E%0A%09%09%09%09%09%09%3Cinput%20id%3D%22login_password_6a04ebd949837%22%20class%3D%22form-control%20password%20input-medium%22%20name%3D%22password%22%20type%3D%22password%22%20placeholder%3D%22Your%20password%22%20autocomplete%3D%22off%22%20required%3D%22%22%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22form-group%22%3E%0A%09%09%09%09%09%09%3Cbutton%20class%3D%22btn%20btn-primary%22%20type%3D%22submit%22%20name%3D%22submit%22%3ELogin%3C%2Fbutton%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Ca%20title%3D%22Forgot%20your%20password%3F%22%20href%3D%22%2Fcore%2Fportal%2Freset_password_request%22%3EForgot%20your%20password%3F%3C%2Fa%3E%0A%09%09%09%09%3C%2Fform%3E%0A%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22row%22%3E%0A%09%09%09%3Cdiv%20class%3D%22col-12%22%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fmain%3E%0A%09%09%09%09%09%09%3Cfooter%20id%3D%22footer%22%20class%3D%22mt-5%20pi_g7_bg%20pi_g4_bd%22%3E%0A%09%09%09%3Cdiv%20class%3D%22container%20h-100%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22row%20align-items-center%20h-100%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22col-8%22%3E%0A%09%09%09%09%09%09%09%3Cul%20id%3D%22footnav%22%20class%3D%22list-unstyled%20mb-0%22%20title%3D%22Footer%20navigation%22%3E%0A%09%09%3Cli%20class%3D%22pr-md-5%20float-md-left%20d-block%22%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Fprivacy%22%20title%3D%22Go%20to%20page%3A%20Privacy%20policy%22%3E%0A%09%09%09%09Privacy%20policy%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%09%3Cli%20class%3D%22pr-md-5%20float-md-left%20d-block%22%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Fcookie_law%22%20title%3D%22Go%20to%20page%3A%20Cookies%22%3E%0A%09%09%09%09Cookies%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%09%3Cli%20class%3D%22float-md-left%20d-block%22%3E%0A%09%09%09%3Ca%20href%3D%22%2Fcore%2Fportal%2Faccessibility_statement%22%20title%3D%22Go%20to%20page%3A%20Accessibility%20statement%22%3E%0A%09%09%09%09Accessibility%20statement%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%3C%2Ful%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22col-4%20text-right%22%3E%0A%09%09%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fwww.public-i.tv%2F%22%20title%3D%22Go%20to%20the%20Public-i%20website%22%20rel%3D%22nofollow%22%3E%3Cimg%20class%3D%22pi_logo%22%20alt%3D%22Public-i%20logo%22%3E%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Ffooter%3E%0A%09%09%0A%0A%3C!--%20Cookie%20modal%20--%3E%0A%3Cdiv%20id%3D%22cookie-modal%22%20class%3D%22modal%22%20tabindex%3D%22-1%22%20role%3D%22dialog%22%20aria-labelledby%3D%22cookie-modal-label%22%20data-backdrop%3D%22static%22%20data-keyboard%3D%22false%22%3E%0A%09%3Cdiv%20class%3D%22modal-dialog%20modal-lg%22%20role%3D%22document%22%3E%0A%09%09%3Cdiv%20class%3D%22modal-content%22%3E%0A%09%09%09%3Cform%20method%3D%22POST%22%20action%3D%22%2Fcore%2Fportal%2Faccept_cookie%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22modal-header%22%3E%0A%09%09%09%09%09%3Ch2%20class%3D%22modal-title%22%20id%3D%22cookie-modal-label%22%3ECookie%20preferences%3C%2Fh2%3E%0A%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22close%22%20aria-label%3D%22Close%22%20data-dismiss%3D%22modal%22%3E%3Ci%20class%3D%22icon%20tnetennba-far-times%22%3E%3C%2Fi%3E%3C%2Fbutton%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22modal-body%22%3E%0A%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20value%3D%22fc1abfcd31b54624010a8e96fc798a43%22%20name%3D%22nonce_citizenscape%22%3E%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%3Ch3%3EThis%20website%20uses%20cookies%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%3EWe%20use%20cookies%20to%20remember%20your%20preferences%2C%20collect%20information%20about%20how%20you%20use%20the%20site%2C%20and%20connect%20to%20third-party%20services.%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22text-right%22%3E%3Cbutton%20type%3D%22button%22%20class%3D%22btn%20btn-link%20btn-lg%22%23cookie-modal%20input%5Btype%3Dcheckbox%5D%3Anot(%23necessary_cookies)').prop('checked'%2Cfalse)%3B%22%3EReject%20Non-Essential%3C%2Fbutton%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%0A%09%09%09%09%09%3Cdiv%20id%3D%22necessary_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3ENecessary%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09These%20cookies%20helpers%20make%20a%20website%20usable%2C%20enabling%20basic%20functions%20like%20page%20navigation%20and%20access%20to%20secure%20areas%20of%20the%20website.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22necessary_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22necessary_cookies%22%20value%3D%22true%22%20checked%3D%22%22%20disabled%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22necessary_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3ENecessary%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22necessary_cookies%22%20value%3D%22true%22%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22preferences_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3EPreferences%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09These%20cookies%20enable%20the%20website%20to%20remember%20settings%20like%20your%20preferred%20video%20quality%20and%20subtitles.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22preferences_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22preferences_cookies%22%20value%3D%22true%22%20checked%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22preferences_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3EPreferences%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22statistics_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3EStatistics%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09This%20site%20uses%20Google%20Analytics%20to%20gather%20anonymous%20statistics%20on%20how%20users%20interact%20with%20the%20website%20to%20improve%20usability%20and%20performance.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22statistics_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22statistics_cookies%22%20value%3D%22true%22%20checked%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22statistics_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3EStatistics%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22third_party_cookies_container%22%20class%3D%22cookie_type_container%20p-2%22%3E%0A%09%09%09%09%09%09%3Ch3%20class%3D%22cs_link_colour%20my-2%22%3EThird-Party%20Services%3C%2Fh3%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22d-flex%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22mr-4%22%3E%0A%09%09%09%09%09%09%09%09Includes%20cookies%20from%20social%20media%20platforms%20like%20Twitter%2C%20Facebook%2C%20Disqus%2C%20and%20YouTube%20to%20display%20widgets%20and%20content%20on%20the%20site.%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22custom-control%20custom-switch%20custom-switch-lg%22%3E%0A%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22checkbox%22%20id%3D%22third_party_cookies%22%20class%3D%22custom-control-input%22%20name%3D%22third_party_cookies%22%20value%3D%22true%22%20checked%3D%22%22%3E%0A%09%09%09%09%09%09%09%09%3Clabel%20class%3D%22custom-control-label%22%20for%3D%22third_party_cookies%22%3E%3Cspan%20class%3D%22sr-only%22%3EThird-Party%20Services%3C%2Fspan%3E%3C%2Flabel%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22modal-footer%22%3E%09%0A%09%09%09%09%09%3Cbutton%20type%3D%22button%22%20class%3D%22btn%20btn-link%22%20data-dismiss%3D%22modal%22%3ECancel%3C%2Fbutton%3E%0A%09%09%09%09%09%3Cbutton%20type%3D%22submit%22%20class%3D%22btn%20btn-primary%20text-nowrap%22%3ESave%3C%2Fbutton%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fform%3E%0A%09%09%3C%2Fdiv%3E%0A%09%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%09%0A%0A%09%09%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "38afde16-6791-417f-95c4-a8f5139e12d4",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "towerhamlets.public-i.tv-core-portal-login"
+}

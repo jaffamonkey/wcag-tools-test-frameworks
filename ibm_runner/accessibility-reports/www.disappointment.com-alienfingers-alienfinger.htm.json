@@ -1,0 +1,666 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 706,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 706,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 706,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 690,
+                "width": 784
+            },
+            "snippet": "<body alink=\"#66FFFF\" vlink=\"#33CCFF\" link=\"#FFFFFF\" bgcolor=\"#000000\" text=\"#CCFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20alink%3D%5C%22%2366FFFF%5C%22%20vlink%3D%5C%22%2333CCFF%5C%22%20link%3D%5C%22%23FFFFFF%5C%22%20bgcolor%3D%5C%22%23000000%5C%22%20text%3D%5C%22%23CCFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/img[1]",
+                "aria": "/document[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 100,
+                "top": 8,
+                "height": 33,
+                "width": 495
+            },
+            "snippet": "<img width=\"495\" height=\"33\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%22495%5C%22%20height%3D%5C%2233%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 595,
+                "top": 27,
+                "height": 18,
+                "width": 105
+            },
+            "snippet": "<a href=\"../index.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22..%2Findex.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/a[1]/img[1]",
+                "aria": "/document[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 595,
+                "top": 8,
+                "height": 33,
+                "width": 105
+            },
+            "snippet": "<img width=\"105\" height=\"33\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%22105%5C%22%20height%3D%5C%2233%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/img[2]",
+                "aria": "/document[1]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 101,
+                "top": 45,
+                "height": 70,
+                "width": 599
+            },
+            "snippet": "<img width=\"599\" height=\"70\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%22599%5C%22%20height%3D%5C%2270%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/a[2]",
+                "aria": "/document[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 102,
+                "top": 150,
+                "height": 18,
+                "width": 147
+            },
+            "snippet": "<a href=\"alienknow.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22alienknow.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/a[2]/img[1]",
+                "aria": "/document[1]/link[2]/img[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 102,
+                "top": 119,
+                "height": 45,
+                "width": 147
+            },
+            "snippet": "<img width=\"147\" height=\"45\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%22147%5C%22%20height%3D%5C%2245%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/a[3]",
+                "aria": "/document[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 249,
+                "top": 150,
+                "height": 18,
+                "width": 130
+            },
+            "snippet": "<a href=\"alienhunt.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22alienhunt.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/a[3]/img[1]",
+                "aria": "/document[1]/link[3]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 249,
+                "top": 119,
+                "height": 45,
+                "width": 130
+            },
+            "snippet": "<img width=\"130\" height=\"45\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%22130%5C%22%20height%3D%5C%2245%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/a[4]",
+                "aria": "/document[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 379,
+                "top": 150,
+                "height": 18,
+                "width": 154
+            },
+            "snippet": "<a href=\"aliencow.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22aliencow.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/a[4]/img[1]",
+                "aria": "/document[1]/link[4]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 379,
+                "top": 119,
+                "height": 45,
+                "width": 154
+            },
+            "snippet": "<img width=\"154\" height=\"45\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%22154%5C%22%20height%3D%5C%2245%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/img[3]",
+                "aria": "/document[1]/img[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 533,
+                "top": 119,
+                "height": 45,
+                "width": 166
+            },
+            "snippet": "<img width=\"166\" height=\"45\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%22166%5C%22%20height%3D%5C%2245%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/center[1]/font[1]/font[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 115,
+                "top": 170,
+                "height": 18,
+                "width": 572
+            },
+            "snippet": "<font color=\"#FFFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23FFFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/ul[1]/li[3]/b[1]/font[1]",
+                "aria": "/document[1]/list[1]/listitem[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Oh Mr Sandman\"",
+            "messageArgs": [
+                "\"Oh Mr Sandman\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 298,
+                "height": 37,
+                "width": 732
+            },
+            "snippet": "<font face=\"Arial,Helvetica\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Oh%20Mr%20Sandman%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20face%3D%5C%22Arial%2CHelvetica%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Oh%20Mr%20Sandman%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/ul[1]/li[4]/b[1]/font[1]",
+                "aria": "/document[1]/list[1]/listitem[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Naughty Torty\", \"No! NaughtyTorty!\"",
+            "messageArgs": [
+                "\"Naughty Torty\", \"No! NaughtyTorty!\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 335,
+                "height": 111,
+                "width": 719
+            },
+            "snippet": "<font face=\"Arial,Helvetica\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Naughty%20Torty%5C%22%2C%20%5C%22No!%20NaughtyTorty!%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20face%3D%5C%22Arial%2CHelvetica%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Naughty%20Torty%5C%22%2C%20%5C%22No!%20NaughtyTorty!%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/ul[1]/li[6]/b[1]/font[1]",
+                "aria": "/document[1]/list[1]/listitem[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Whats UpDoc?\"",
+            "messageArgs": [
+                "\"Whats UpDoc?\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 501,
+                "height": 92,
+                "width": 743
+            },
+            "snippet": "<font face=\"Arial,Helvetica\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Whats%20UpDoc%3F%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20face%3D%5C%22Arial%2CHelvetica%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Whats%20UpDoc%3F%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 610,
+                "height": 88,
+                "width": 784
+            },
+            "snippet": "<table width=\"100%\" cols=\"2\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22100%25%5C%22%20cols%3D%5C%222%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/div[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 11,
+                "top": 613,
+                "height": 78,
+                "width": 120
+            },
+            "snippet": "<img width=\"120\" height=\"78\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20width%3D%5C%22120%5C%22%20height%3D%5C%2278%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 240,
+    "ruleTime": 2,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 20,
+            "elementsViolation": 15,
+            "elementsViolationReview": 19,
+            "violation": 16,
+            "potentialviolation": 5,
+            "recommendation": 1,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 218
+        },
+        "scanTime": 9,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779239872629,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20Alien%20Finger%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20text%3D%22%23CCFFFF%22%20bgcolor%3D%22%23000000%22%20link%3D%22%23FFFFFF%22%20vlink%3D%22%2333CCFF%22%20alink%3D%22%2366FFFF%22%3E%0A%0A%3Ccenter%3E%3Cimg%20height%3D%2233%22%20width%3D%22495%22%3E%3Ca%20href%3D%22..%2Findex.htm%22%3E%3Cimg%20border%3D%220%22%20height%3D%2233%22%20width%3D%22105%22%3E%3C%2Fa%3E%3Cimg%20height%3D%2270%22%20width%3D%22599%22%3E%3Cbr%3E%0A%3Ca%20href%3D%22alienknow.htm%22%3E%3Cimg%20border%3D%220%22%20height%3D%2245%22%20width%3D%22147%22%3E%3C%2Fa%3E%3Ca%20href%3D%22alienhunt.htm%22%3E%3Cimg%20border%3D%220%22%20height%3D%2245%22%20width%3D%22130%22%3E%3C%2Fa%3E%3Ca%20href%3D%22aliencow.htm%22%3E%3Cimg%20border%3D%220%22%20height%3D%2245%22%20width%3D%22154%22%3E%3C%2Fa%3E%3Cimg%20height%3D%2245%22%20width%3D%22166%22%3E%0A%3Cbr%3E%3Cfont%20face%3D%22Arial%2CHelvetica%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%3E%3Cfont%20size%3D%22%2B1%22%3EWhile%0Atravelling%20through%20FingerSpace%2C%20follow%20these%20important%20guidelines%3B%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fcenter%3E%0A%0A%3Cul%3E%0A%3Cli%3E%0A%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%22%3EWhen%20approaching%20lightspeed%2C%20be%20careful%0Anot%20to%20put%20your%20hands%20behind%20you%20in%20case%20you%20touch%20yourself%20and%20go%20pop.%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fli%3E%0A%0A%3Cli%3E%0A%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%22%3EUse%20of%20Zero%20Gravity%20to%20create%20obstacle%0Acourses%20for%20your%20urine%20stream%20ist%20verboten.%20This%20includes%20throwing%20tennis%0Aballs%20through%20the%20urine%20stream%20of%20your%20compadr%C3%A9s%20as%20they%20widdle%0Ainto%20the%20prescribed%20space%20bogs.%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fli%3E%0A%0A%3Cli%3E%0A%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%22%3EDoes%20anyone%20remember%20the%20game%20for%20the%20Commodore%0A64%20called%20The%20Eidolon%3F%20It%20was%20great.%20Three%20eggcups%20sang%20%22Oh%20Mr%20Sandman%22%0Ato%20you.%20Dragons%20and%20everything.%20Cool.%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fli%3E%0A%0A%3Cli%3E%0A%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%22%3EWhile%20I'm%20about%20it%2C%20can%20you%20sort%20something%0Aout%20for%20me%3F%20I%20distinctly%20remember%20a%20character%20called%20the%20%22Naughty%20Torty%22.%0AThe%20idea%20behind%20the%20Naughty%20Torty%20was%20that%20he%20was%20a%20six%20foot%20tall%20tortoise%0Awho%20walked%20into%20a%20crowd%20of%20children%20and%20vomited%20on%20them.%20His%20keeper%2C%20a%0Aman%20with%20a%20tortoise%20training%20whip%2C%20would%20then%20run%20on%2C%20shouting%20%22No!%20Naughty%0ATorty!%22.%20He%20would%20then%20usher%20the%20tortoise%2C%20who%20was%20still%20holding%20his%20tummy%0Aand%20looking%20rather%20poorly%2C%20off%20stage.%20Did%20this%20really%20happen%3F%20Or%20did%20I%0Amake%20it%20up%20and%20believe%20myself%3F%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fli%3E%0A%0A%3Cli%3E%0A%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%22%3EOh%20yeah%20-%20don't%20flush%20the%20toilet.%20Due%20to%0Aa%20wiring%20problem%2C%20the%20lever%20that%20looks%20like%20it%20should%20flush%20the%20toilet%0Aactually%20releases%20purple%20knockout%20gas.%20God%20knows%20where%20the%20lever%20that%20actually%0Aflushes%20the%20toilet%20is.%20Or%2C%20indeed%2C%20what%20purple%20knockout%20gas%20is%20doing%20on%0Aboard%20a%20passenger%20flight%20to%20Venus.%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fli%3E%0A%0A%3Cli%3E%0A%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%22%3ENaughty%20Torty%20dilemma%20solved!%20According%20to%20Josie%0ARogers%20and%20S%20D%20Birks%2C%20he%20appeared%20on%20Saturday%20Morning%20TV%20Show%20%22What's%20Up%0ADoc%3F%22%20with%20Andy%20Crane%20and%20the%20bloke%20from%20the%20Twix%20adverts%2C%20who%20apparently%0Ahad%20a%20profound%20love%20of%20cheese.%20And%20do%20you%20know%20what%20he%20vomited%20on%20the%20children%3F%0AThat's%20right!%20It%20was%20ghee!%20All%20you've%20got%20to%20remember%20now%20is%20the%20singing%20eggcups%0Afrom%20The%20Eidolon%20and%20my%20history%20will%20be%20complete..%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%3Ctable%20border%3D%220%22%20cols%3D%222%22%20width%3D%22100%25%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%3Ctd%3E%0A%3Cdiv%20align%3D%22right%22%3E%3Cimg%20border%3D%220%22%20height%3D%2278%22%20width%3D%22120%22%3E%3C%2Fdiv%3E%0A%3C%2Ftd%3E%0A%0A%3Ctd%3E%3Cfont%20color%3D%22%23FFCC99%22%3E%3Cfont%20size%3D%22%2B1%22%3EThese%20pages%20are%20sponsored%20by%20Julian%0Aand%20Sandy%2C%20the%20Alien%20Fingers%20from%20Pluto.%20They%20wish%20you%20a%20nice%20space%20day.%0AThat's%20the%20equivalent%20of%20three%20Earth%20days%2C%20and%20is%20therefore%20exceptionally%0Apolite.%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "71f4b748-13f7-4fd1-a0bf-76cbafe48d10",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.disappointment.com-alienfingers-alienfinger.htm"
+}

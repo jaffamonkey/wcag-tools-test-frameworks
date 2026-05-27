@@ -1,0 +1,1078 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 7618,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 7618,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 16,
+                "height": 7594,
+                "width": 784
+            },
+            "snippet": "<body style=\"tab-interval:36.0pt\" vlink=\"#339900\" link=\"#ffcc00\" lang=\"EN-CA\" background=\"./Services_files/image001.jpg\" bgcolor=\"white\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20style%3D%5C%22tab-interval%3A36.0pt%5C%22%20vlink%3D%5C%22%23339900%5C%22%20link%3D%5C%22%23ffcc00%5C%22%20lang%3D%5C%22EN-CA%5C%22%20background%3D%5C%22.%2FServices_files%2Fimage001.jpg%5C%22%20bgcolor%3D%5C%22white%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[6]/b[1]/a[1]",
+                "aria": "/document[1]/paragraph[6]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "1.51",
+                16,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 60,
+                "top": 207,
+                "height": 18,
+                "width": 425
+            },
+            "snippet": "<a href=\"#technology\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%23technology%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.51%22%2C16%2C700%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[10]",
+                "aria": "/document[1]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'bottom' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "bottom"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 345,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p class=\"MsoNormal\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'bottom'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22MsoNormal%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22bottom%22%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[12]/b[1]/u[1]/span[1]",
+                "aria": "/document[1]/paragraph[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 9,
+                "top": 414,
+                "height": 82,
+                "width": 784
+            },
+            "snippet": "<span style=\"font-size:22.0pt;mso-bidi-font-size:12.0pt;font-family:\"Comic Sans MS\";\ncolor:#CCFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22font-size%3A22.0pt%3Bmso-bidi-font-size%3A12.0pt%3Bfont-family%3A%5C%22Comic%20Sans%20MS%5C%22%3B%5Cncolor%3A%23CCFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[12]/b[1]/u[1]/span[1]",
+                "aria": "/document[1]/paragraph[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 29.3333px and weight of 700",
+            "messageArgs": [
+                "1.09",
+                29.3333,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 9,
+                "top": 414,
+                "height": 82,
+                "width": 784
+            },
+            "snippet": "<span style=\"font-size:22.0pt;mso-bidi-font-size:12.0pt;font-family:\"Comic Sans MS\";\ncolor:#CCFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2029.3333px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22font-size%3A22.0pt%3Bmso-bidi-font-size%3A12.0pt%3Bfont-family%3A%5C%22Comic%20Sans%20MS%5C%22%3B%5Cncolor%3A%23CCFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.09%22%2C29.3333%2C700%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[13]/span[1]/a[1]",
+                "aria": "/document[1]/paragraph[13]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "1.51",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 512,
+                "height": 37,
+                "width": 757
+            },
+            "snippet": "<a href=\"#_The_only_monster\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%23_The_only_monster%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.51%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[21]/img[2]",
+                "aria": "/document[1]/paragraph[21]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 64,
+                "top": 807,
+                "height": 288,
+                "width": 504
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1032\" height=\"288\" width=\"504\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1032%5C%22%20height%3D%5C%22288%5C%22%20width%3D%5C%22504%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[22]/img[2]",
+                "aria": "/document[1]/paragraph[22]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 64,
+                "top": 1115,
+                "height": 288,
+                "width": 504
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1034\" height=\"288\" width=\"504\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1034%5C%22%20height%3D%5C%22288%5C%22%20width%3D%5C%22504%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[23]/img[2]",
+                "aria": "/document[1]/paragraph[23]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 64,
+                "top": 1423,
+                "height": 288,
+                "width": 504
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1036\" height=\"288\" width=\"504\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1036%5C%22%20height%3D%5C%22288%5C%22%20width%3D%5C%22504%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[24]/img[2]",
+                "aria": "/document[1]/paragraph[24]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 64,
+                "top": 1731,
+                "height": 192,
+                "width": 336
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1038\" height=\"192\" width=\"336\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1038%5C%22%20height%3D%5C%22192%5C%22%20width%3D%5C%22336%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[25]/img[2]",
+                "aria": "/document[1]/paragraph[25]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 64,
+                "top": 1943,
+                "height": 179,
+                "width": 323
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1040\" height=\"179\" width=\"323\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1040%5C%22%20height%3D%5C%22179%5C%22%20width%3D%5C%22323%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[26]/img[2]",
+                "aria": "/document[1]/paragraph[26]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 64,
+                "top": 2142,
+                "height": 288,
+                "width": 576
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1042\" height=\"288\" width=\"576\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1042%5C%22%20height%3D%5C%22288%5C%22%20width%3D%5C%22576%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[27]/img[2]",
+                "aria": "/document[1]/paragraph[27]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 64,
+                "top": 2450,
+                "height": 179,
+                "width": 323
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1044\" height=\"179\" width=\"323\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1044%5C%22%20height%3D%5C%22179%5C%22%20width%3D%5C%22323%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[29]/img[2]",
+                "aria": "/document[1]/paragraph[29]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 64,
+                "top": 2727,
+                "height": 745,
+                "width": 576
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1047\" height=\"745\" width=\"576\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1047%5C%22%20height%3D%5C%22745%5C%22%20width%3D%5C%22576%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[47]",
+                "aria": "/document[1]/paragraph[47]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'RED ROCKET RED ROCKET' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "RED ROCKET RED ROCKET"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4142,
+                "height": 48,
+                "width": 784
+            },
+            "snippet": "<p style=\"text-align:center\" align=\"center\" class=\"MsoNormal\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'RED%20ROCKET%20RED%20ROCKET'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22text-align%3Acenter%5C%22%20align%3D%5C%22center%5C%22%20class%3D%5C%22MsoNormal%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22RED%20ROCKET%20RED%20ROCKET%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[48]/img[1]",
+                "aria": "/document[1]/paragraph[48]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 20,
+                "top": 4206,
+                "height": 351,
+                "width": 324
+            },
+            "snippet": "<img v:shapes=\"_x0000_s1029\" hspace=\"12\" align=\"left\" height=\"351\" width=\"324\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_s1029%5C%22%20hspace%3D%5C%2212%5C%22%20align%3D%5C%22left%5C%22%20height%3D%5C%22351%5C%22%20width%3D%5C%22324%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[49]",
+                "aria": "/document[1]/paragraph[49]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'DA DOUCHE DA DOUCHE' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "DA DOUCHE DA DOUCHE"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4270,
+                "height": 48,
+                "width": 784
+            },
+            "snippet": "<p style=\"text-align:center\" align=\"center\" class=\"MsoNormal\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'DA%20DOUCHE%20DA%20DOUCHE'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22text-align%3Acenter%5C%22%20align%3D%5C%22center%5C%22%20class%3D%5C%22MsoNormal%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22DA%20DOUCHE%20DA%20DOUCHE%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[51]/span[2]",
+                "aria": "/document[1]/paragraph[51]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "1.37",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 359,
+                "top": 4398,
+                "height": 22,
+                "width": 138
+            },
+            "snippet": "<span style=\"font-family:\"Comic Sans MS\";color:lime;text-shadow:auto;mso-bidi-font-weight:\nbold;mso-bidi-font-style:italic\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22font-family%3A%5C%22Comic%20Sans%20MS%5C%22%3Bcolor%3Alime%3Btext-shadow%3Aauto%3Bmso-bidi-font-weight%3A%5Cnbold%3Bmso-bidi-font-style%3Aitalic%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.37%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[52]/span[2]",
+                "aria": "/document[1]/paragraph[52]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "1.37",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 359,
+                "top": 4436,
+                "height": 22,
+                "width": 164
+            },
+            "snippet": "<span style=\"font-family:\"Comic Sans MS\";color:lime;text-shadow:auto;mso-bidi-font-weight:\nbold;mso-bidi-font-style:italic\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22font-family%3A%5C%22Comic%20Sans%20MS%5C%22%3Bcolor%3Alime%3Btext-shadow%3Aauto%3Bmso-bidi-font-weight%3A%5Cnbold%3Bmso-bidi-font-style%3Aitalic%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.37%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[53]/span[2]",
+                "aria": "/document[1]/paragraph[53]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "1.37",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 359,
+                "top": 4474,
+                "height": 22,
+                "width": 288
+            },
+            "snippet": "<span style=\"font-family:\"Comic Sans MS\";color:lime;\ntext-shadow:auto;mso-bidi-font-weight:bold;mso-bidi-font-style:italic\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22font-family%3A%5C%22Comic%20Sans%20MS%5C%22%3Bcolor%3Alime%3B%5Cntext-shadow%3Aauto%3Bmso-bidi-font-weight%3Abold%3Bmso-bidi-font-style%3Aitalic%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.37%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[55]",
+                "aria": "/document[1]/paragraph[55]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Meet\nsir jared chuxley Meet sir jared chuxley' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Meet\nsir jared chuxley Meet sir jared chuxley"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4550,
+                "height": 31,
+                "width": 784
+            },
+            "snippet": "<p style=\"text-align:right\" align=\"right\" class=\"MsoNormal\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Meet%5Cnsir%20jared%20chuxley%20Meet%20sir%20jared%20chuxley'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22text-align%3Aright%5C%22%20align%3D%5C%22right%5C%22%20class%3D%5C%22MsoNormal%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Meet%5Cnsir%20jared%20chuxley%20Meet%20sir%20jared%20chuxley%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[58]/span[1]",
+                "aria": "/document[1]/paragraph[58]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.94",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 348,
+                "top": 4767,
+                "height": 18,
+                "width": 106
+            },
+            "snippet": "<span style=\"color:#FF6600\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22color%3A%23FF6600%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.94%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[59]/span[1]",
+                "aria": "/document[1]/paragraph[59]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.94",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 281,
+                "top": 4802,
+                "height": 18,
+                "width": 239
+            },
+            "snippet": "<span style=\"color:#FF6600\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22color%3A%23FF6600%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.94%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[60]/span[1]",
+                "aria": "/document[1]/paragraph[60]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.94",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 298,
+                "top": 4836,
+                "height": 18,
+                "width": 205
+            },
+            "snippet": "<span style=\"color:#FF6600\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22color%3A%23FF6600%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.94%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[61]/span[1]",
+                "aria": "/document[1]/paragraph[61]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.94",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 302,
+                "top": 4871,
+                "height": 18,
+                "width": 197
+            },
+            "snippet": "<span style=\"color:#FF6600\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22color%3A%23FF6600%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.94%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[62]/span[1]",
+                "aria": "/document[1]/paragraph[62]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.94",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 352,
+                "top": 4905,
+                "height": 18,
+                "width": 97
+            },
+            "snippet": "<span style=\"color:#FF6600\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22color%3A%23FF6600%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.94%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[65]/img[2]",
+                "aria": "/document[1]/paragraph[65]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 64,
+                "top": 5015,
+                "height": 504,
+                "width": 432
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1083\" height=\"504\" width=\"432\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1083%5C%22%20height%3D%5C%22504%5C%22%20width%3D%5C%22432%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[75]",
+                "aria": "/document[1]/paragraph[75]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5849,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p class=\"MsoNormal\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22MsoNormal%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[77]/img[1]",
+                "aria": "/document[1]/paragraph[77]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5955,
+                "height": 475,
+                "width": 576
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1085\" height=\"475\" width=\"576\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1085%5C%22%20height%3D%5C%22475%5C%22%20width%3D%5C%22576%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[79]/b[1]/u[1]/span[1]",
+                "aria": "/document[1]/paragraph[79]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 24px and weight of 700",
+            "messageArgs": [
+                "1.09",
+                24,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 20,
+                "top": 6494,
+                "height": 82,
+                "width": 761
+            },
+            "snippet": "<span style=\"font-size:18.0pt;mso-bidi-font-size:12.0pt;font-family:Arial;color:#CCFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2024px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cspan%20style%3D%5C%22font-size%3A18.0pt%3Bmso-bidi-font-size%3A12.0pt%3Bfont-family%3AArial%3Bcolor%3A%23CCFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.09%22%2C24%2C700%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[80]/img[1]",
+                "aria": "/document[1]/paragraph[80]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 148,
+                "top": 6592,
+                "height": 288,
+                "width": 504
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1086\" height=\"288\" width=\"504\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1086%5C%22%20height%3D%5C%22288%5C%22%20width%3D%5C%22504%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/p[87]/img[1]",
+                "aria": "/document[1]/paragraph[87]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7144,
+                "height": 410,
+                "width": 576
+            },
+            "snippet": "<img v:shapes=\"_x0000_i1059\" height=\"410\" width=\"576\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20v%3Ashapes%3D%5C%22_x0000_i1059%5C%22%20height%3D%5C%22410%5C%22%20width%3D%5C%22576%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 2081,
+    "ruleTime": 17,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "potential_graphic_background": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 33,
+            "elementsViolation": 15,
+            "elementsViolationReview": 32,
+            "violation": 16,
+            "potentialviolation": 18,
+            "recommendation": 3,
+            "potentialrecommendation": 0,
+            "manual": 2,
+            "pass": 2042
+        },
+        "scanTime": 66,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778711681582,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EServices%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22white%22%20background%3D%22.%2FServices_files%2Fimage001.jpg%22%20lang%3D%22EN-CA%22%20link%3D%22%23ffcc00%22%20vlink%3D%22%23339900%22%20style%3D%22tab-interval%3A36.0pt%22%3E%0A%3C!--%5Bif%20gte%20mso%209%5D%3E%3Cxml%3E%0A%20%3Cv%3Abackground%20id%3D%22_x0000_s1059%22%20o%3Abwmode%3D%22white%22%20o%3Atargetscreensize%3D%22800%2C600%22%3E%0A%20%20%3Cv%3Afill%20o%3Atitle%3D%22factilea%22%20type%3D%22frame%22%2F%3E%0A%20%3C%2Fv%3Abackground%3E%3C%2Fxml%3E%3C!%5Bendif%5D--%3E%0A%0A%3Cdiv%20class%3D%22Section1%22%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashapetype%0A%20id%3D%22_x0000_t75%22%20coordsize%3D%2221600%2C21600%22%20o%3Aspt%3D%2275%22%20o%3Apreferrelative%3D%22t%22%0A%20path%3D%22m%404%405l%404%4011%409%4011%409%405xe%22%20filled%3D%22f%22%20stroked%3D%22f%22%3E%0A%20%3Cv%3Astroke%20joinstyle%3D%22miter%22%2F%3E%0A%20%3Cv%3Aformulas%3E%0A%20%20%3Cv%3Af%20eqn%3D%22if%20lineDrawn%20pixelLineWidth%200%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%20%400%201%200%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%200%200%20%401%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22prod%20%402%201%202%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22prod%20%403%2021600%20pixelWidth%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22prod%20%403%2021600%20pixelHeight%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%20%400%200%201%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22prod%20%406%201%202%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22prod%20%407%2021600%20pixelWidth%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%20%408%2021600%200%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22prod%20%407%2021600%20pixelHeight%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%20%4010%2021600%200%22%2F%3E%0A%20%3C%2Fv%3Aformulas%3E%0A%20%3Cv%3Apath%20o%3Aextrusionok%3D%22f%22%20gradientshapeok%3D%22t%22%20o%3Aconnecttype%3D%22rect%22%2F%3E%0A%20%3Co%3Alock%20v%3Aext%3D%22edit%22%20aspectratio%3D%22t%22%2F%3E%0A%3C%2Fv%3Ashapetype%3E%3Cv%3Ashape%20id%3D%22_x0000_i1025%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3B%0A%20height%3A11.25pt'%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1025%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3Ewe%20will%20make%20your%20cards%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1026%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1026%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-spacerun%3A%20yes%22%3E%26nbsp%3B%3C%2Fspan%3EWE%20CAN%20MAKE%20YOUR%20%22DOC%22%20IN%20WORD%20200%0AOR%20OFFICE%20FORMAT!%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%20%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1027%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1027%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-spacerun%3A%20yes%22%3E%26nbsp%3B%3C%2Fspan%3ESPECIALIZING%20IN%20THE%20LATEST%20WEB%20SITE%20TRENDS%0AUSING%20THE%20LAST%20TECHNOLOGIES%20TO%20BRING%20YOU%20MORE%20BUSINESS%20AND%20SHOPPING%20CART%0ASERVICES%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1028%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1028%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-spacerun%3A%20yes%22%3E%26nbsp%3B%3C%2Fspan%3Eprofessional%20email%20services%20are%20provided%20to%0Aour%20loyal%20customers%20for%20an%20additional%20fee.%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1029%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1029%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-spacerun%3A%20yes%22%3E%26nbsp%3B%3C%2Fspan%3EOUR%20WORK%20IS%20Y2K%20GUARANTEED%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1030%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1030%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-spacerun%3A%20yes%22%3E%26nbsp%3B%3C%2Fspan%3E%3Cb%3E%3Ca%20href%3D%22%23technology%22%3ENEW%20-%26gt%3B%20SEE%0ACYBERDSIGN%20TECHNOLOGIES%20IN%20ACTION%3C%2Fa%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1057%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1057%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-spacerun%3A%20yes%22%3E%26nbsp%3B%3C%2Fspan%3E%3Cb%3ENEW%20SEE%20OUR%20NEW%20SERVICES.%20*****%20%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E*****scroll%20to%20bottom%20of%20page%20please.%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cb%3E%3Cu%3E%3Cspan%20style%3D%22font-size%3A22.0pt%3Bmso-bidi-font-size%3A12.0pt%3Bfont-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3B%0Acolor%3A%23CCFFFF%22%3EOUR%20PAGES%20LOAD%20IN%20ONE%20MINUTE%20OR%20LESS%20OR%20IT%20IS%20FREE****%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fu%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoBodyText%22%3E%3Cspan%20style%3D%22color%3A%23CCFFFF%22%3E%3Ca%20href%3D%22%23_The_only_monster%22%3EIF%0AAT%20ANY%20TIME%20OUR%20PAGE%20CAUSES%20YOUR%20MACHINE%20TO%20CRASH%2C%20SEND%20US%20A%20SCREEN%20SHOT%20AND%0ACORE%20DUMP%20AND%20WE%20WILL%20SEND%20YOU%20THE%20HOT%20FIX%2C%20FREE***%3C%2Fa%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashapetype%0A%20id%3D%22_x0000_t136%22%20coordsize%3D%2221600%2C21600%22%20o%3Aspt%3D%22136%22%20adj%3D%2210800%22%20path%3D%22m%407%2C0l%408%2C0m%405%2C21600l%406%2C21600e%22%3E%0A%20%3Cv%3Aformulas%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%20%230%200%2010800%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22prod%20%230%202%201%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%2021600%200%20%401%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%200%200%20%402%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%2021600%200%20%403%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22if%20%400%20%403%200%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22if%20%400%2021600%20%401%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22if%20%400%200%20%402%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22if%20%400%20%404%2021600%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22mid%20%405%20%406%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22mid%20%408%20%405%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22mid%20%407%20%408%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22mid%20%406%20%407%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%20%406%200%20%405%22%2F%3E%0A%20%3C%2Fv%3Aformulas%3E%0A%20%3Cv%3Apath%20textpathok%3D%22t%22%20o%3Aconnecttype%3D%22custom%22%20o%3Aconnectlocs%3D%22%409%2C0%3B%4010%2C10800%3B%4011%2C21600%3B%4012%2C10800%22%0A%20%20o%3Aconnectangles%3D%22270%2C180%2C90%2C0%22%2F%3E%0A%20%3Cv%3Atextpath%20on%3D%22t%22%20fitshape%3D%22t%22%2F%3E%0A%20%3Cv%3Ahandles%3E%0A%20%20%3Cv%3Ah%20position%3D%22%230%2CbottomRight%22%20xrange%3D%226629%2C14971%22%2F%3E%0A%20%3C%2Fv%3Ahandles%3E%0A%20%3Co%3Alock%20v%3Aext%3D%22edit%22%20text%3D%22t%22%20shapetype%3D%22t%22%2F%3E%0A%3C%2Fv%3Ashapetype%3E%3Cv%3Ashape%20id%3D%22_x0000_s1026%22%20type%3D%22%23_x0000_t136%22%20style%3D'position%3Aabsolute%3B%0A%20left%3A0%3Btext-align%3Aleft%3Bmargin-left%3A158.55pt%3Bmargin-top%3A15.95pt%3Bwidth%3A176.25pt%3B%0A%20height%3A39pt%3Bz-index%3A1'%20fillcolor%3D%22%23dcebf5%22%3E%0A%20%3Cv%3Afill%20color2%3D%22%2355261c%22%20colors%3D%220%20%23dcebf5%3B5243f%20%2383a7c3%3B8520f%20%23768fb9%3B13763f%20%2383a7c3%3B34079f%20white%3B36700f%20%239c6563%3B38011f%20%2380302d%3B46531f%20%23c0524e%3B61604f%20%23ebdad4%3B1%20%2355261c%22%0A%20%20method%3D%22none%22%20focus%3D%22100%25%22%20type%3D%22gradient%22%2F%3E%0A%20%3Cv%3Ashadow%20color%3D%22%23868686%22%2F%3E%0A%20%3Co%3Aextrusion%20v%3Aext%3D%22view%22%20color%3D%22silver%22%20on%3D%22t%22%20rotationangle%3D%22%2C-6%22%0A%20%20viewpoint%3D%22%2C1250000emu%22%20viewpointorigin%3D%22%2C.5%22%20skewangle%3D%22135%22%20brightness%3D%224000f%22%0A%20%20lightposition%3D%220%2C50000%22%20lightlevel%3D%2252000f%22%20lightposition2%3D%220%2C-50000%22%0A%20%20lightlevel2%3D%2214000f%22%20type%3D%22perspective%22%20lightharsh2%3D%22t%22%2F%3E%0A%20%3Cv%3Atextpath%20style%3D'font-family%3A%22Comic%20Sans%20MS%22%3Bfont-size%3A28pt%3Bv-text-kern%3At'%0A%20%20trim%3D%22t%22%20fitpath%3D%22t%22%20string%3D%22EXAMPLES%20-%26gt%3B%22%2F%3E%0A%20%3Cw%3Awrap%20anchorx%3D%22page%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cspan%20style%3D%22mso-ignore%3Avglayout%22%3E%0A%0A%3Ctable%20cellpadding%3D%220%22%20cellspacing%3D%220%22%20align%3D%22left%22%3E%0A%20%3Ctbody%3E%3Ctr%3E%0A%20%20%3Ctd%20width%3D%22206%22%20height%3D%2218%22%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%20%3Ctr%3E%0A%20%20%3Ctd%3E%3C%2Ftd%3E%0A%20%20%3Ctd%3E%3Cimg%20width%3D%22244%22%20height%3D%2264%22%20alt%3D%22EXAMPLES%20-%26gt%3B%22%20v%3Ashapes%3D%22_x0000_s1026%22%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3C%2Fspan%3E%3C!--%5Bendif%5D--%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cbr%20style%3D%22mso-ignore%3Avglayout%22%20clear%3D%22ALL%22%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22tab-stops%3Alist%2036.0pt%22%3EWE%20WILL%20MAKE%20YOUR%20CARDS%20%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22right%22%20style%3D%22margin-left%3A18.0pt%3Btext-align%3Aright%3B%0Atab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22right%22%20style%3D%22margin-left%3A18.0pt%3Btext-align%3Aright%3B%0Atab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1031%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1031%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1032%22%0A%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A378pt%3Bheight%3A3in'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22CDC_card%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22504%22%20height%3D%22288%22%20v%3Ashapes%3D%22_x0000_i1032%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1033%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1033%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1034%22%0A%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A378pt%3Bheight%3A3in'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22lisey_card%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22504%22%20height%3D%22288%22%20v%3Ashapes%3D%22_x0000_i1034%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1035%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1035%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1036%22%0A%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A378pt%3Bheight%3A3in'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22manx_card%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22504%22%20height%3D%22288%22%20v%3Ashapes%3D%22_x0000_i1036%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1037%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1037%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1038%22%0A%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A252pt%3Bheight%3A2in'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22modcard%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22336%22%20height%3D%22192%22%20v%3Ashapes%3D%22_x0000_i1038%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1039%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1039%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1040%22%0A%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A242.25pt%3Bheight%3A134.25pt'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22lcbo-buscard%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22323%22%20height%3D%22179%22%20v%3Ashapes%3D%22_x0000_i1040%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1041%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1041%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1042%22%0A%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A6in%3Bheight%3A3in'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22MANTID_CARD%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22576%22%20height%3D%22288%22%20v%3Ashapes%3D%22_x0000_i1042%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1043%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1043%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1044%22%0A%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A242.25pt%3Bheight%3A134.25pt'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22buscard%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22323%22%20height%3D%22179%22%20v%3Ashapes%3D%22_x0000_i1044%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1045%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1045%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3Cb%3E%3Cspan%20style%3D%22font-size%3A20.0pt%3Bmso-bidi-font-size%3A%0A12.0pt%22%3Ewe%20will%20also%20make%20your%20event%20ADVERTISEMENTS%20SUITABLE%20FOR%20PRINT%20AND%20WEB%0AADVERTISEMENTS%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1046%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1046%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1047%22%0A%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A6in%3Bheight%3A558.75pt'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22CDC_TRUCKS%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22576%22%20height%3D%22745%22%20v%3Ashapes%3D%22_x0000_i1047%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1048%22%20type%3D%22%23_x0000_t75%22%0A%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1048%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%20%3C%2Fspan%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_s1027%22%0A%20type%3D%22%23_x0000_t136%22%20style%3D'position%3Aabsolute%3Bmargin-left%3A104.55pt%3B%0A%20margin-top%3A15.95pt%3Bwidth%3A495.75pt%3Bheight%3A50.25pt%3Bz-index%3A2%3B%0A%20mso-position-horizontal-relative%3Atext%3Bmso-position-vertical-relative%3Atext'%0A%20fillcolor%3D%22%23dcebf5%22%3E%0A%20%3Cv%3Afill%20color2%3D%22%2355261c%22%20colors%3D%220%20%23dcebf5%3B5243f%20%2383a7c3%3B8520f%20%23768fb9%3B13763f%20%2383a7c3%3B34079f%20white%3B36700f%20%239c6563%3B38011f%20%2380302d%3B46531f%20%23c0524e%3B61604f%20%23ebdad4%3B1%20%2355261c%22%0A%20%20method%3D%22none%22%20focus%3D%22100%25%22%20type%3D%22gradient%22%2F%3E%0A%20%3Cv%3Ashadow%20color%3D%22%23868686%22%2F%3E%0A%20%3Co%3Aextrusion%20v%3Aext%3D%22view%22%20color%3D%22silver%22%20on%3D%22t%22%20rotationangle%3D%22%2C-6%22%0A%20%20viewpoint%3D%22%2C1250000emu%22%20viewpointorigin%3D%22%2C.5%22%20skewangle%3D%22135%22%20brightness%3D%224000f%22%0A%20%20lightposition%3D%220%2C50000%22%20lightlevel%3D%2252000f%22%20lightposition2%3D%220%2C-50000%22%0A%20%20lightlevel2%3D%2214000f%22%20type%3D%22perspective%22%20lightharsh2%3D%22t%22%2F%3E%0A%20%3Cv%3Atextpath%20style%3D'font-family%3A%22Comic%20Sans%20MS%22%3Bfont-weight%3Abold%3Bfont-style%3Aitalic%3B%0A%20%20v-text-kern%3At'%20trim%3D%22t%22%20fitpath%3D%22t%22%20string%3D%22MONSTER%20TRUCKXPO%202002%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cspan%20style%3D%22mso-ignore%3Avglayout%3Bposition%3A%0Aabsolute%3Bz-index%3A1%3Bmargin-left%3A110px%3Bmargin-top%3A13px%3Bwidth%3A696px%3Bheight%3A87px%22%3E%3Cimg%20width%3D%22696%22%20height%3D%2287%22%20alt%3D%22MONSTER%20TRUCKXPO%202002%22%20v%3Ashapes%3D%22_x0000_s1027%22%3E%3C%2Fspan%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashapetype%0A%20id%3D%22_x0000_t163%22%20coordsize%3D%2221600%2C21600%22%20o%3Aspt%3D%22163%22%20adj%3D%2211475%22%20path%3D%22m0%2C0l21600%2C0m0%2C21600c7200%401%2C14400%401%2C21600%2C21600e%22%3E%0A%20%3Cv%3Aformulas%3E%0A%20%20%3Cv%3Af%20eqn%3D%22prod%20%230%204%203%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%20%400%200%207200%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22val%20%230%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22prod%20%230%202%203%22%2F%3E%0A%20%20%3Cv%3Af%20eqn%3D%22sum%20%403%207200%200%22%2F%3E%0A%20%3C%2Fv%3Aformulas%3E%0A%20%3Cv%3Apath%20textpathok%3D%22t%22%20o%3Aconnecttype%3D%22custom%22%20o%3Aconnectlocs%3D%2210800%2C0%3B0%2C10800%3B10800%2C%402%3B21600%2C10800%22%0A%20%20o%3Aconnectangles%3D%22270%2C180%2C90%2C0%22%2F%3E%0A%20%3Cv%3Atextpath%20on%3D%22t%22%20fitshape%3D%22t%22%20xscale%3D%22t%22%2F%3E%0A%20%3Cv%3Ahandles%3E%0A%20%20%3Cv%3Ah%20position%3D%22center%2C%230%22%20yrange%3D%221350%2C21600%22%2F%3E%0A%20%3C%2Fv%3Ahandles%3E%0A%20%3Co%3Alock%20v%3Aext%3D%22edit%22%20text%3D%22t%22%20shapetype%3D%22t%22%2F%3E%0A%3C%2Fv%3Ashapetype%3E%3Cv%3Ashape%20id%3D%22_x0000_s1028%22%20type%3D%22%23_x0000_t163%22%20style%3D'position%3Aabsolute%3B%0A%20left%3A0%3Btext-align%3Aleft%3Bmargin-left%3A239.55pt%3Bmargin-top%3A4pt%3Bwidth%3A366.75pt%3B%0A%20height%3A65.45pt%3Bz-index%3A3'%20adj%3D%2216518%22%3E%0A%20%3Cv%3Afill%20color2%3D%22%23707070%22%20angle%3D%22-135%22%20focus%3D%2250%25%22%20type%3D%22gradient%22%2F%3E%0A%20%3Cv%3Ashadow%20color%3D%22%23868686%22%2F%3E%0A%20%3Co%3Aextrusion%20v%3Aext%3D%22view%22%20backdepth%3D%2230pt%22%20color%3D%22%23939676%22%20on%3D%22t%22%0A%20%20rotationangle%3D%2230%2C-36%22%20viewpoint%3D%220%2C0%22%20viewpointorigin%3D%220%2C0%22%20skewangle%3D%220%22%0A%20%20skewamt%3D%220%22%20brightness%3D%2210000f%22%20lightposition%3D%22-50000%2C-50000%22%20lightlevel%3D%2244000f%22%0A%20%20lightposition2%3D%2250000%22%20lightlevel2%3D%2224000f%22%20type%3D%22perspective%22%2F%3E%0A%20%3Cv%3Atextpath%20style%3D'font-family%3A%22Impact%22%3Bv-text-kern%3At'%20trim%3D%22t%22%20fitpath%3D%22t%22%0A%20%20xscale%3D%22f%22%20string%3D%22FEATURING%3A%20SCHLONGZILLA%22%2F%3E%0A%20%3Cw%3Awrap%20anchorx%3D%22page%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cspan%20style%3D%22mso-ignore%3Avglayout%3Bposition%3A%0Arelative%3Bz-index%3A2%22%3E%3Cspan%20style%3D%22left%3A0px%3Bposition%3Aabsolute%3Bleft%3A310px%3B%0Atop%3A-75px%3Bwidth%3A433px%3Bheight%3A234px%22%3E%3Cimg%20width%3D%22433%22%20height%3D%22234%22%20alt%3D%22FEATURING%3A%20SCHLONGZILLA%22%20v%3Ashapes%3D%22_x0000_s1028%22%3E%3C%2Fspan%3E%3C%2Fspan%3E%3C!--%5Bendif%5D--%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cspan%20style%3D%22color%3Ared%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cspan%20style%3D%22color%3Ared%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cbr%20style%3D%22mso-ignore%3Avglayout%22%20clear%3D%22ALL%22%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cb%20style%3D%22mso-bidi-font-weight%3A%0Anormal%22%3E%3Ci%20style%3D%22mso-bidi-font-style%3Anormal%22%3E%3Cu%3E%3Cspan%20style%3D%22font-size%3A26.0pt%3B%0Amso-bidi-font-size%3A12.0pt%3Bfont-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3Bcolor%3Ared%3Bmso-text-animation%3A%0Asparkle%3Btext-shadow%3Aauto%22%3EWITH%20SPECIAL%20GUESTS%3A%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fu%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cb%20style%3D%22mso-bidi-font-weight%3A%0Anormal%22%3E%3Ci%20style%3D%22mso-bidi-font-style%3Anormal%22%3E%3Cu%3E%3Cspan%20style%3D%22font-size%3A26.0pt%3B%0Amso-bidi-font-size%3A12.0pt%3Bfont-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3Bcolor%3Ared%3Bmso-text-animation%3A%0Asparkle%3Btext-shadow%3Aauto%22%3ERED%20ROCKET%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fu%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_s1029%22%20type%3D%22%23_x0000_t75%22%20style%3D'position%3Aabsolute%3Bleft%3A0%3B%0A%20text-align%3Aleft%3Bmargin-left%3A0%3Bmargin-top%3A0%3Bwidth%3A243pt%3Bheight%3A263.25pt%3B%0A%20z-index%3A4%3Bmso-position-horizontal%3Aleft%3Bmso-position-vertical%3Atop%3B%0A%20mso-position-vertical-relative%3Aline'%20o%3Aallowoverlap%3D%22f%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22%22%2F%3E%0A%20%3Cw%3Awrap%20type%3D%22square%22%20anchorx%3D%22page%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20width%3D%22324%22%20height%3D%22351%22%20align%3D%22left%22%20hspace%3D%2212%22%20v%3Ashapes%3D%22_x0000_s1029%22%3E%3C!--%5Bendif%5D--%3E%3Cb%20style%3D%22mso-bidi-font-weight%3Anormal%22%3E%3Ci%20style%3D%22mso-bidi-font-style%3Anormal%22%3E%3Cu%3E%3Cspan%20style%3D%22font-size%3A26.0pt%3Bmso-bidi-font-size%3A12.0pt%3Bfont-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3B%0Acolor%3Ared%3Bmso-text-animation%3Asparkle%3Btext-shadow%3Aauto%22%3ETHE%20CHRIST%20PUNCHER%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fu%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cb%20style%3D%22mso-bidi-font-weight%3A%0Anormal%22%3E%3Ci%20style%3D%22mso-bidi-font-style%3Anormal%22%3E%3Cu%3E%3Cspan%20style%3D%22font-size%3A26.0pt%3B%0Amso-bidi-font-size%3A12.0pt%3Bfont-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3Bcolor%3Ared%3Bmso-text-animation%3A%0Asparkle%3Btext-shadow%3Aauto%22%3EDA%20DOUCHE%3C%2Fspan%3E%3C%2Fu%3E%3C%2Fi%3E%3C%2Fb%3E%3Cb%20style%3D%22mso-bidi-font-weight%3A%0Anormal%22%3E%3Ci%20style%3D%22mso-bidi-font-style%3Anormal%22%3E%3Cu%3E%3Cspan%20style%3D%22font-size%3A26.0pt%3B%0Amso-bidi-font-size%3A12.0pt%3Bfont-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3Bmso-text-animation%3Asparkle%3B%0Atext-shadow%3Aauto%22%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fu%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cb%20style%3D%22mso-bidi-font-weight%3A%0Anormal%22%3E%3Ci%20style%3D%22mso-bidi-font-style%3Anormal%22%3E%3Cu%3E%3Cspan%20style%3D%22font-size%3A26.0pt%3B%0Amso-bidi-font-size%3A12.0pt%3Bfont-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3Bmso-text-animation%3Asparkle%3B%0Atext-shadow%3Aauto%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fu%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A36.0pt%3Btext-indent%3A-18.0pt%3Bmso-list%3Al0%20level1%20lfo2%3B%0Atab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20!supportLists%5D--%3E%3Cspan%20style%3D%22font-family%3AWingdings%3B%0Acolor%3Alime%3Bmso-bidi-font-weight%3Abold%3Bmso-bidi-font-style%3Aitalic%22%3E%C3%98%3Cspan%20style%3D%22font%3A7.0pt%20%26quot%3BTimes%20New%20Roman%26quot%3B%22%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%20%3C%2Fspan%3E%3C%2Fspan%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22font-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3Bcolor%3Alime%3Btext-shadow%3Aauto%3Bmso-bidi-font-weight%3A%0Abold%3Bmso-bidi-font-style%3Aitalic%22%3ESEE%20THE%20TRUCKS%3C%2Fspan%3E%3Cspan%20style%3D%22color%3Alime%3B%0Amso-bidi-font-weight%3Abold%3Bmso-bidi-font-style%3Aitalic%22%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A36.0pt%3Btext-indent%3A-18.0pt%3Bmso-list%3Al0%20level1%20lfo2%3B%0Atab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20!supportLists%5D--%3E%3Cspan%20style%3D%22font-family%3AWingdings%3B%0Acolor%3Alime%3Bmso-bidi-font-weight%3Abold%3Bmso-bidi-font-style%3Aitalic%22%3E%C3%98%3Cspan%20style%3D%22font%3A7.0pt%20%26quot%3BTimes%20New%20Roman%26quot%3B%22%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%20%3C%2Fspan%3E%3C%2Fspan%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22font-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3Bcolor%3Alime%3Btext-shadow%3Aauto%3Bmso-bidi-font-weight%3A%0Abold%3Bmso-bidi-font-style%3Aitalic%22%3ETOUCH%20THE%20TRUCKS%3C%2Fspan%3E%3Cspan%20style%3D%22color%3A%0Alime%3Bmso-bidi-font-weight%3Abold%3Bmso-bidi-font-style%3Aitalic%22%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A36.0pt%3Btext-indent%3A-18.0pt%3Bmso-list%3Al0%20level1%20lfo2%3B%0Atab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20!supportLists%5D--%3E%3Cspan%20style%3D%22font-family%3AWingdings%3B%0Amso-bidi-font-weight%3Abold%3Bmso-bidi-font-style%3Aitalic%22%3E%C3%98%3Cspan%20style%3D%22font%3A7.0pt%20%26quot%3BTimes%20New%20Roman%26quot%3B%22%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%0A%3C%2Fspan%3E%3C%2Fspan%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22font-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3Bcolor%3Alime%3B%0Atext-shadow%3Aauto%3Bmso-bidi-font-weight%3Abold%3Bmso-bidi-font-style%3Aitalic%22%3EBE%20THE%0ATRUCK%20AREANA%20CHALLENGE%3C%2Fspan%3E%3Cspan%20style%3D%22mso-bidi-font-weight%3Abold%3Bmso-bidi-font-style%3A%0Aitalic%22%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3Cspan%20style%3D%22font-family%3A%26quot%3BComic%20Sans%20MS%26quot%3B%3Btext-shadow%3Aauto%3B%0Amso-bidi-font-weight%3Abold%3Bmso-bidi-font-style%3Aitalic%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22right%22%20style%3D%22text-align%3Aright%22%3E%3Cb%3E%3Ci%3E%3Cspan%20style%3D%22font-size%3A20.0pt%3Bmso-bidi-font-size%3A12.0pt%3Bfont-family%3A%26quot%3BTypoUpright%20BT%26quot%3B%22%3EMeet%0Asir%20jared%20chuxley%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Ch1%3E%3Ca%20name%3D%22_The_only_monster%22%3E%3C%2Fa%3E%3Ci%20style%3D%22mso-bidi-font-style%3Anormal%22%3E%3Cspan%20style%3D%22font-size%3A20.0pt%3Bmso-bidi-font-size%3A24.0pt%22%3EThe%20only%20monster%20truck%20driver%0Aknighted%20by%20the%20QUEEN%20OF%20LONDON%20ENGLAND%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fi%3E%3C%2Fh1%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cspan%20style%3D%22color%3A%23FF6600%22%3ETICKETS%20%245.00%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cspan%20style%3D%22color%3A%23FF6600%22%3ENO%20SHOES%20NO%20SHIRT%20NO%20TRUCK%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cspan%20style%3D%22color%3A%23FF6600%22%3ECOME%20FOR%20THE%20TRUCKS!!!!%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cspan%20style%3D%22color%3A%23FF6600%22%3ESTAY%20FOR%20THE%20TRUCKS!!!!%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cspan%20style%3D%22color%3A%23FF6600%22%3ENO%20PARKING%3C%2Fspan%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22tab-stops%3Alist%2054.0pt%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1081%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1081%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3Cb%3E%3Ci%3E%3Cspan%20style%3D%22font-size%3A16.0pt%3B%0Amso-bidi-font-size%3A12.0pt%22%3EWE%20WILL%20ALSO%20DO%20BAND%20POSTERS%20FOR%20YOUR%20ROCK%20BAN%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1082%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1082%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1083%22%0A%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A324pt%3Bheight%3A378pt'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22FEEL_IT%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22432%22%20height%3D%22504%22%20v%3Ashapes%3D%22_x0000_i1083%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1084%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1084%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3E%3Cb%3E%3Ci%3E%3Cu%3Econtact%20us%20for%20fair%20rates%20starting%20at%0A%24130%2Fhour%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fu%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3Cb%3E%3Ci%3E%3Cu%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fu%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3Cb%3E%3Ci%3E%3Cu%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fu%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3Cb%3E%3Ci%3E%3Cu%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fu%3E%3C%2Fi%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_s1054%22%20type%3D%22%23_x0000_t136%22%0A%20style%3D'position%3Aabsolute%3Bmargin-left%3A5.55pt%3Bmargin-top%3A9.2pt%3Bwidth%3A402pt%3B%0A%20height%3A45pt%3Bz-index%3A5'%20fillcolor%3D%22yellow%22%20stroked%3D%22f%22%3E%0A%20%3Cv%3Afill%20color2%3D%22%23f93%22%20angle%3D%22-135%22%20focusposition%3D%22.5%2C.5%22%20focussize%3D%22%22%20focus%3D%22100%25%22%0A%20%20type%3D%22gradientRadial%22%3E%0A%20%20%3Co%3Afill%20v%3Aext%3D%22view%22%20type%3D%22gradientCenter%22%2F%3E%0A%20%3C%2Fv%3Afill%3E%0A%20%3Cv%3Ashadow%20on%3D%22t%22%20color%3D%22silver%22%2F%3E%0A%20%3Cv%3Atextpath%20style%3D'font-family%3A%22Impact%22%3Bv-text-kern%3At'%20trim%3D%22t%22%20fitpath%3D%22t%22%0A%20%20string%3D%22CYBERDSIGN%20TECHNOLOGIES%3A%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cspan%20style%3D%22mso-ignore%3Avglayout%22%3E%0A%0A%3Ctable%20cellpadding%3D%220%22%20cellspacing%3D%220%22%20align%3D%22left%22%3E%0A%20%3Ctbody%3E%3Ctr%3E%0A%20%20%3Ctd%20width%3D%227%22%20height%3D%2212%22%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%20%3Ctr%3E%0A%20%20%3Ctd%3E%3C%2Ftd%3E%0A%20%20%3Ctd%3E%3Cimg%20width%3D%22539%22%20height%3D%2263%22%20alt%3D%22CYBERDSIGN%20TECHNOLOGIES%3A%22%20v%3Ashapes%3D%22_x0000_s1054%22%3E%3C%2Ftd%3E%0A%20%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3C%2Fspan%3E%3C!--%5Bendif%5D--%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cbr%20style%3D%22mso-ignore%3Avglayout%22%20clear%3D%22ALL%22%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3EThe%20elite%20cyberdsign%20clan%20utilizes%20advanced%20web%20technologies%0Ain%20order%20to%20%3Cb%20style%3D%22mso-bidi-font-weight%3Anormal%22%3E%3Cu%3E%3Cspan%20style%3D%22color%3A%23993366%22%3EMAKE%0AYOU%20MONEY%20ON%20YOUR%20WEB%2FPRINT%2FBUSINESS%3C%2Fspan%3E%3C%2Fu%3E%3C%2Fb%3E%20CARD.%20See%20some%20of%20our%0Acutting%20edge%20techniques%20below.%20CYBERDSIGN%20CLAN%20is%20years%20ahead%20of%20the%0Acompetition.%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1085%22%20type%3D%22%23_x0000_t75%22%0A%20style%3D'width%3A6in%3Bheight%3A356.25pt'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22TF_plugin%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22576%22%20height%3D%22475%22%20v%3Ashapes%3D%22_x0000_i1085%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3Cb%3E%3Cu%3E%3Cspan%20style%3D%22font-size%3A18.0pt%3Bmso-bidi-font-size%3A12.0pt%3B%0Afont-family%3AArial%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fspan%3E%3C%2Fu%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3Cb%3E%3Cu%3E%3Cspan%20style%3D%22font-size%3A18.0pt%3Bmso-bidi-font-size%3A12.0pt%3Bfont-family%3AArial%3Bcolor%3A%23CCFFFF%22%3EIF%0AAT%20ANY%20TIME%20OUR%20PAGE%20CAUSES%20YOUR%20MACHINE%20TO%20CRASH%2C%20SEND%20US%20A%20SCREEN%20SHOT%20AND%0ACORE%20DUMP%20AND%20WE%20WILL%20SEND%20YOU%20THE%20HOT%20FIX%2C%20FREE***%3C%2Fspan%3E%3C%2Fu%3E%3C%2Fb%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20align%3D%22center%22%20style%3D%22text-align%3Acenter%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1086%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A378pt%3Bheight%3A3in'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22HOT_FIX%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22504%22%20height%3D%22288%22%20v%3Ashapes%3D%22_x0000_i1086%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%20style%3D%22margin-left%3A18.0pt%3Btab-stops%3Alist%2036.0pt%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%0A%20id%3D%22_x0000_i1087%22%20type%3D%22%23_x0000_t75%22%20style%3D'width%3A11.25pt%3Bheight%3A11.25pt'%0A%20o%3Abullet%3D%22t%22%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22bd10263_%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%2215%22%20height%3D%2215%22%20alt%3D%22*%22%20v%3Ashapes%3D%22_x0000_i1087%22%3E%3C!--%5Bendif%5D--%3E%3Cspan%20style%3D%22mso-tab-count%3A1%22%3E%26nbsp%3B%20%3C%2Fspan%3EALL%20CDC%20FINAL%20DESIGNS%20WILL%20BE%20SUBMITTED%20BY%0AYOUR%20CHOICE%20OF%20FAX%20OR%205%201%2F4'%20FLOPPY%20DISK.%20PC%20AND%20MAC%20FORMATTING%20WILL%20INCURE%20AN%20ADDITIONAL%0ACHARGE%20TO%20BE%20NEGOTIATED%2FDETERMINED%20BY%20US.%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoHeading7%22%3Enew%20cdc%20product%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3ETRANSPARENT%20BACKGROUND%20TATTOOS%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3EALL%20OF%20OUR%20TATTOOS%20ARE%20FROM%20THE%20216%20COLOR%20WEBSAFE%20PALETTE%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20gte%20vml%201%5D%3E%3Cv%3Ashape%20id%3D%22_x0000_i1059%22%20type%3D%22%23_x0000_t75%22%0A%20style%3D'width%3A6in%3Bheight%3A307.5pt'%3E%0A%20%3Cv%3Aimagedata%20o%3Atitle%3D%22lelf%22%2F%3E%0A%3C%2Fv%3Ashape%3E%3C!%5Bendif%5D--%3E%3C!--%5Bif%20!vml%5D--%3E%3Cimg%20border%3D%220%22%20width%3D%22576%22%20height%3D%22410%22%20v%3Ashapes%3D%22_x0000_i1059%22%3E%3C!--%5Bendif%5D--%3E%3C%2Fp%3E%0A%0A%3Cp%20class%3D%22MsoNormal%22%3E%3C!--%5Bif%20!supportEmptyParas%5D--%3E%26nbsp%3B%3C!--%5Bendif%5D--%3E%3Co%3Ap%3E%3C%2Fo%3Ap%3E%3C%2Fp%3E%0A%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20style%3D%22mso-element%3Acomment-list%22%3E%3C!--%5Bif%20!supportAnnotations%5D--%3E%0A%0A%3Chr%20class%3D%22msocomoff%22%20align%3D%22left%22%20size%3D%221%22%20width%3D%2233%25%22%3E%0A%0A%3C!--%5Bendif%5D--%3E%3C%2Fdiv%3E%0A%0A%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "b247de27-505b-4120-88dd-db05cfa93bca",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "cyberdsignclan.com-Services.htm"
+}

@@ -1,0 +1,482 @@
+{
+    "results": [
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]",
+                "aria": "/document[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 59,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<form action=\"https://924collective.com\" id=\"searchform\" method=\"get\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20action%3D%5C%22https%3A%2F%2F924collective.com%5C%22%20id%3D%5C%22searchform%5C%22%20method%3D%5C%22get%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 59,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input ;}\"=\"\" ;}\"')=\"\" {this.value=\"\" search...')=\"\" value=\"Search...\" id=\"s\" name=\"s\" class=\"field\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20%3B%7D%5C%22%3D%5C%22%5C%22%20%3B%7D%5C%22')%3D%5C%22%5C%22%20%7Bthis.value%3D%5C%22%5C%22%20search...')%3D%5C%22%5C%22%20value%3D%5C%22Search...%5C%22%20id%3D%5C%22s%5C%22%20name%3D%5C%22s%5C%22%20class%3D%5C%22field%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/input[2]",
+                "aria": "/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 159,
+                "top": 59,
+                "height": 22,
+                "width": 59
+            },
+            "snippet": "<input value=\"Search\" name=\"submit\" class=\"submit\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Search%5C%22%20name%3D%5C%22submit%5C%22%20class%3D%5C%22submit%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "form_submit_button_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[2]/form[1]",
+                "aria": "/document[1]/form[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify the <form> element has a submit button or an image button",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1611,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<form class=\"comment-form\" id=\"commentform\" method=\"post\" action=\"https://924collective.com/wp-comments-post.php\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/form_submit_button_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cform%3E%20element%20has%20a%20submit%20button%20or%20an%20image%20button%22%2C%22snippet%22%3A%22%3Cform%20class%3D%5C%22comment-form%5C%22%20id%3D%5C%22commentform%5C%22%20method%3D%5C%22post%5C%22%20action%3D%5C%22https%3A%2F%2F924collective.com%2Fwp-comments-post.php%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22form_submit_button_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_form_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[2]/form[1]",
+                "aria": "/document[1]/form[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"form\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1611,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<form class=\"comment-form\" id=\"commentform\" method=\"post\" action=\"https://924collective.com/wp-comments-post.php\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_form_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22form%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cform%20class%3D%5C%22comment-form%5C%22%20id%3D%5C%22commentform%5C%22%20method%3D%5C%22post%5C%22%20action%3D%5C%22https%3A%2F%2F924collective.com%2Fwp-comments-post.php%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_form_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/ul[1]/li[1]/a[1]/svg[1]",
+                "aria": "/document[1]/list[3]/listitem[1]/link[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1646,
+                "height": 20,
+                "width": 20
+            },
+            "snippet": "<svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" class=\"gridicon gridicons-comment\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%2024%2024%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20width%3D%5C%2220%5C%22%20height%3D%5C%2220%5C%22%20class%3D%5C%22gridicon%20gridicons-comment%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/ul[1]/li[2]/a[1]/svg[1]",
+                "aria": "/document[1]/list[3]/listitem[2]/link[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1670,
+                "height": 20,
+                "width": 20
+            },
+            "snippet": "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" class=\"gridicon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%2020%2020%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20width%3D%5C%2220%5C%22%20height%3D%5C%2220%5C%22%20class%3D%5C%22gridicon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/ul[1]/li[2]/a[2]/svg[1]",
+                "aria": "/document[1]/list[3]/listitem[2]/link[2]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 140,
+                "top": 1670,
+                "height": 20,
+                "width": 20
+            },
+            "snippet": "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" class=\"gridicon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%2020%2020%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20width%3D%5C%2220%5C%22%20height%3D%5C%2220%5C%22%20class%3D%5C%22gridicon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/ul[1]/li[3]/a[1]/svg[1]",
+                "aria": "/document[1]/list[3]/listitem[3]/link[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1767,
+                "height": 20,
+                "width": 20
+            },
+            "snippet": "<svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" class=\"gridicon gridicons-info-outline\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%2024%2024%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20width%3D%5C%2220%5C%22%20height%3D%5C%2220%5C%22%20class%3D%5C%22gridicon%20gridicons-info-outline%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/ul[1]/li[4]/svg[1]",
+                "aria": "/document[1]/list[3]/listitem[4]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 1791,
+                "height": 24,
+                "width": 24
+            },
+            "snippet": "<svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" class=\"gridicon gridicons-ellipsis\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%2024%2024%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20width%3D%5C%2224%5C%22%20height%3D%5C%2224%5C%22%20class%3D%5C%22gridicon%20gridicons-ellipsis%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/ul[1]/li[4]/div[1]/div[2]/ul[1]/li[2]/a[1]/svg[1]",
+                "aria": "/document[1]/list[3]/listitem[4]/list[1]/listitem[2]/link[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 88,
+                "top": 1873,
+                "height": 20,
+                "width": 20
+            },
+            "snippet": "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" class=\"gridicon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%2020%2020%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20width%3D%5C%2220%5C%22%20height%3D%5C%2220%5C%22%20class%3D%5C%22gridicon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/ul[1]/li[4]/div[1]/div[2]/ul[1]/li[2]/a[2]/svg[1]",
+                "aria": "/document[1]/list[3]/listitem[4]/list[1]/listitem[2]/link[2]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 180,
+                "top": 1873,
+                "height": 20,
+                "width": 20
+            },
+            "snippet": "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" class=\"gridicon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%2020%2020%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20width%3D%5C%2220%5C%22%20height%3D%5C%2220%5C%22%20class%3D%5C%22gridicon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/ul[1]/li[4]/div[1]/div[2]/ul[1]/li[5]/a[1]/span[2]/svg[1]",
+                "aria": "/document[1]/list[3]/listitem[4]/list[1]/listitem[5]/link[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 188,
+                "top": 1934,
+                "height": 16,
+                "width": 16
+            },
+            "snippet": "<svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" class=\"gridicon gridicons-checkmark\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%2024%2024%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20width%3D%5C%2216%5C%22%20height%3D%5C%2216%5C%22%20class%3D%5C%22gridicon%20gridicons-checkmark%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1,
+                "top": 1,
+                "height": 0,
+                "width": 1
+            },
+            "snippet": "<div style=\"width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;\" tabindex=\"0\" data-focus-guard=\"true\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22width%3A%201px%3B%20height%3A%200px%3B%20padding%3A%200px%3B%20overflow%3A%20hidden%3B%20position%3A%20fixed%3B%20top%3A%201px%3B%20left%3A%201px%3B%5C%22%20tabindex%3D%5C%220%5C%22%20data-focus-guard%3D%5C%22true%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[3]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 1,
+                "top": 1,
+                "height": 0,
+                "width": 1
+            },
+            "snippet": "<div style=\"width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;\" tabindex=\"0\" data-focus-guard=\"true\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22width%3A%201px%3B%20height%3A%200px%3B%20padding%3A%200px%3B%20overflow%3A%20hidden%3B%20position%3A%20fixed%3B%20top%3A%201px%3B%20left%3A%201px%3B%5C%22%20tabindex%3D%5C%220%5C%22%20data-focus-guard%3D%5C%22true%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 940,
+    "ruleTime": 14,
+    "nls": {
+        "form_submit_button_exists": {
+            "0": "A <form> element should have a submit button or an image button",
+            "Potential_1": "Verify the <form> element has a submit button or an image button"
+        },
+        "aria_form_label_unique": {
+            "0": "Each element with \"form\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"form\" role do not have unique labels"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 27,
+            "elementsViolation": 11,
+            "elementsViolationReview": 15,
+            "violation": 11,
+            "potentialviolation": 4,
+            "recommendation": 14,
+            "potentialrecommendation": 2,
+            "manual": 1,
+            "pass": 908
+        },
+        "scanTime": 39,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778869333947,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ESHOREDITCH%20TWAT%2026%20%7C%20924COLLECTIVE%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22attachment%20wp-singular%20attachment-template-default%20single%20single-attachment%20postid-14329%20attachmentid-14329%20attachment-jpeg%20custom-background%20wp-theme-pubbueno%20customizer-styles-applied%20jetpack-reblog-enabled%22%3E%0A%0A%3Cdiv%20id%3D%22container%22%3E%0A%0A%09%3Cdiv%20id%3D%22navigation%22%3E%0A%0A%09%09%3Cdiv%20class%3D%22col-full%22%3E%0A%0A%09%09%09%3Cdiv%20id%3D%22description%22%20class%3D%22fl%22%3E%3C%2Fdiv%3E%0A%0A%09%09%09%3Cdiv%20id%3D%22topsearch%22%20class%3D%22fr%22%3E%0A%09%09%09%09%3Cdiv%20id%3D%22search_main%22%20class%3D%22widget%22%3E%0A%0A%09%3Ch3%3ESearch%3C%2Fh3%3E%0A%0A%20%20%20%20%3Cform%20method%3D%22get%22%20id%3D%22searchform%22%20action%3D%22https%3A%2F%2F924collective.com%22%3E%0A%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22text%22%20class%3D%22field%22%20name%3D%22s%22%20id%3D%22s%22%20value%3D%22Search...%22Search...')%20%7Bthis.value%20%3D%20''%3B%7D%22')%20%7Bthis.value%20%3D%20'Search...'%3B%7D%22%3E%0A%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22submit%22%20class%3D%22submit%22%20name%3D%22submit%22%20value%3D%22Search%22%3E%0A%20%20%20%20%3C%2Fform%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fix%22%3E%3C%2Fdiv%3E%0A%0A%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%3C!--%20%2F%23topsearch%20--%3E%0A%0A%09%09%3C%2Fdiv%3E%3C!--%20%2F.col-full%20--%3E%0A%0A%09%3C%2Fdiv%3E%3C!--%20%2F%23navigation%20--%3E%0A%0A%09%09%3Cdiv%20id%3D%22header%22%20class%3D%22col-full%22%3E%0A%0A%09%09%3Cdiv%20id%3D%22logo%22%20class%3D%22fl%22%3E%0A%0A%09%09%09%09%09%09%3Cspan%20class%3D%22site-title%22%3E%3Ca%20href%3D%22https%3A%2F%2F924collective.com%22%3E924COLLECTIVE%3C%2Fa%3E%3C%2Fspan%3E%0A%09%09%09%0A%09%09%3C%2Fdiv%3E%3C!--%20%2F%23logo%20--%3E%0A%0A%09%09%3Cdiv%20id%3D%22pagenav%22%20class%3D%22nav%20fr%22%3E%0A%09%09%09%09%09%3Cul%3E%0A%09%09%09%0A%09%09%09%09%09%09%3Cli%20class%3D%22b%20page_item%20current_page_item%22%3E%3Ca%20href%3D%22https%3A%2F%2F924collective.com%22%3EHome%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%0A%09%09%09%3Cli%20class%3D%22page_item%20page-item-2489%22%3E%3Ca%20href%3D%22https%3A%2F%2F924collective.com%2F%22%3EGLOBAL%20GALAVANTING%3C%2Fa%3E%3C%2Fli%3E%0A%3Cli%20class%3D%22page_item%20page-item-22667%22%3E%3Ca%20href%3D%22https%3A%2F%2F924collective.com%2Fangel-networks%2F%22%3E%23GOGO2026%3C%2Fa%3E%3C%2Fli%3E%0A%0A%09%09%09%09%09%3C%2Ful%3E%0A%09%09%09%3C%2Fdiv%3E%3C!--%20%2F%23pagenav%20--%3E%0A%0A%09%09%09%09%3Cdiv%20id%3D%22header-image%22%3E%0A%09%09%09%3Cimg%20width%3D%22930%22%20height%3D%22198%22%20alt%3D%22%22%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%0A%09%3C%2Fdiv%3E%3C!--%20%2F%23header%20--%3E%0A%20%20%20%20%3Cdiv%20id%3D%22content%22%20class%3D%22col-full%22%3E%0A%09%09%3Cdiv%20id%3D%22main%22%20class%3D%22fullwidth%22%3E%0A%0A%09%09%09%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22post%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%20class%3D%22title%22%3ESHOREDITCH%20TWAT%2026%3C%2Fh1%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20class%3D%22date%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%3Cspan%20class%3D%22day%22%3E15%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%3Cspan%20class%3D%22month%22%3ENov%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22entry%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%3Cp%20class%3D%22attachment%22%3E%3Ca%20href%3D%22https%3A%2F%2F924collective.com%2F2015%2F11%2F15%2Fthe-shoreditch-twat%2Fshoreditch-twats-end%2F%22%20title%3D%22SHOREDITCH%20TWAT%2026%22%20rel%3D%22attachment%22%3E%3Cimg%20width%3D%22648%22%20height%3D%22918%22%20class%3D%22attachment-810x9999%20size-810x9999%22%20alt%3D%22%22%20decoding%3D%22async%22%20sizes%3D%22(max-width%3A%20648px)%20100vw%2C%20648px%22%3E%3C%2Fa%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22post-meta%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%3Cul%20class%3D%22single-author-image-meta%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%09%3Cli%20class%3D%22comments%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%09%09%3Cspan%20class%3D%22head%22%3EComments%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%09%09%3Cspan%20class%3D%22body%22%3E%3Ca%20href%3D%22https%3A%2F%2F924collective.com%2F2015%2F11%2F15%2Fthe-shoreditch-twat%2Fshoreditch-twat-26%2F%23respond%22%3ELeave%20a%20Comment%3C%2Fa%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%09%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%09%09%09%09%09%09%3Cli%20class%3D%22parent%22%3E%0A%09%09%09%09%09%09%09%09%3Cspan%20class%3D%22head%22%3EPosted%20in%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%09%3Cspan%20class%3D%22body%22%3E%3Ca%20href%3D%22https%3A%2F%2F924collective.com%2F2015%2F11%2F15%2Fthe-shoreditch-twat%2F%22%20title%3D%22Return%20to%20%F0%9F%94%A5TH%20SHOREDITCH%20TWAT%F0%9F%94%A5%22%20rel%3D%22gallery%22%3E%3Cimg%20draggable%3D%22false%22%20role%3D%22img%22%20class%3D%22emoji%22%20alt%3D%22%F0%9F%94%A5%22%3ETH%20SHOREDITCH%20TWAT%3Cimg%20draggable%3D%22false%22%20role%3D%22img%22%20class%3D%22emoji%22%20alt%3D%22%F0%9F%94%A5%22%3E%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%09%09%09%09%09%09%3Cli%20class%3D%22imagelink%22%3E%0A%09%09%09%09%09%09%09%09%3Cspan%20class%3D%22head%22%3EFull-size%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%09%3Cspan%20class%3D%22body%22%3E%3Ca%20title%3D%22Permalink%20to%20full-size%20image%22%20href%3D%22https%3A%2F%2F924collective.com%2Fwp-content%2Fuploads%2F2015%2F11%2Fshoreditch-twat-26.jpg%22%3E648%20%C3%97%20918%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%3C%2Ful%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%3Cdiv%20class%3D%22fix%22%3E%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3C!--%20%2F.post-meta%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%09%09%09%09%09%3Cdiv%20id%3D%22nav-below%22%20class%3D%22navigation%22%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22nav-previous%22%3E%3Ca%20href%3D%22https%3A%2F%2F924collective.com%2F2015%2F11%2F15%2Fthe-shoreditch-twat%2Fshoreditch-twat-21%2F%22%3ESHOREDITCH%20TWAT%2021%3C%2Fa%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22nav-next%22%3E%3Ca%20href%3D%22https%3A%2F%2F924collective.com%2F2015%2F11%2F15%2Fthe-shoreditch-twat%2Fshoreditch-twats-end%2F%22%3ESHOREDITCH%20TWATS%20END%3C%2Fa%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%3C!--%20%23nav-below%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%3C!--%20%2F.post%20--%3E%0A%0A%09%09%09%09%0A%3C!--%20You%20can%20start%20editing%20here.%20--%3E%0A%0A%09%0A%09%0A%09%3Cdiv%20id%3D%22respond%22%20class%3D%22comment-respond%22%3E%0A%09%09%3Ch3%20id%3D%22reply-title%22%20class%3D%22comment-reply-title%22%3ELeave%20a%20comment%3C%2Fh3%3E%3Cform%20action%3D%22https%3A%2F%2F924collective.com%2Fwp-comments-post.php%22%20method%3D%22post%22%20id%3D%22commentform%22%20class%3D%22comment-form%22%3E%0A%0A%0A%3Cdiv%20class%3D%22comment-form__verbum%20transparent%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22verbum-form-meta%22%3E%3Cinput%20type%3D%22hidden%22%20name%3D%22comment_post_ID%22%20value%3D%2214329%22%20id%3D%22comment_post_ID%22%3E%0A%3Cinput%20type%3D%22hidden%22%20name%3D%22comment_parent%22%20id%3D%22comment_parent%22%20value%3D%220%22%3E%0A%0A%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22highlander_comment_nonce%22%20id%3D%22highlander_comment_nonce%22%20value%3D%22abe6a880ab%22%3E%0A%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22verbum_show_subscription_modal%22%20value%3D%22%22%3E%3C%2Fdiv%3E%3Cp%20style%3D%22display%3A%20none%3B%22%3E%3Cinput%20type%3D%22hidden%22%20id%3D%22akismet_comment_nonce%22%20name%3D%22akismet_comment_nonce%22%20value%3D%224363a994f9%22%3E%3C%2Fp%3E%3Cp%20style%3D%22display%3A%20none%20!important%3B%22%20class%3D%22akismet-fields-container%22%20data-prefix%3D%22ak_%22%3E%3Clabel%3E%CE%94%3Ctextarea%20name%3D%22ak_hp_textarea%22%20cols%3D%2245%22%20rows%3D%228%22%20maxlength%3D%22100%22%3E%3C%2Ftextarea%3E%3C%2Flabel%3E%3Cinput%20type%3D%22hidden%22%20id%3D%22ak_js_1%22%20name%3D%22ak_js%22%20value%3D%221778869332318%22%3E%0A%3C%2Fp%3E%3C%2Fform%3E%09%3C%2Fdiv%3E%3C!--%20%23respond%20--%3E%0A%09%0A%09%09%09%0A%09%09%3C%2Fdiv%3E%3C!--%20%2F%23main%20--%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%3C!--%20%2F%23content%20--%3E%0A%0A%0A%09%0A%09%3Cdiv%20id%3D%22footer%22%3E%0A%0A%09%09%3Cdiv%20class%3D%22col-full%22%3E%0A%0A%09%09%09%3Cdiv%20id%3D%22copyright%22%20class%3D%22col-left%22%3E%0A%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fwordpress.com%2F%3Fref%3Dfooter_custom_svg%22%20title%3D%22Create%20a%20website%20or%20blog%20at%20WordPress.com%22%20rel%3D%22nofollow%22%3E%3Csvg%20style%3D%22fill%3A%20currentColor%3B%20position%3A%20relative%3B%20top%3A%201px%3B%22%20width%3D%2214px%22%20height%3D%2215px%22%20viewBox%3D%220%200%2014%2015%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20aria-labelledby%3D%22title%22%20role%3D%22img%22%3E%0A%09%09%09%09%3Cdesc%20id%3D%22title%22%3ECreate%20a%20website%20or%20blog%20at%20WordPress.com%3C%2Fdesc%3E%0A%09%09%09%09%3Cpath%20d%3D%22M12.5225848%2C4.97949746%20C13.0138466%2C5.87586309%2013.2934037%2C6.90452431%2013.2934037%2C7.99874074%20C13.2934037%2C10.3205803%2012.0351007%2C12.3476807%2010.1640538%2C13.4385638%20L12.0862862%2C7.88081544%20C12.4453251%2C6.98296834%2012.5648813%2C6.26504621%2012.5648813%2C5.62667922%20C12.5648813%2C5.39497674%2012.549622%2C5.17994084%2012.5225848%2C4.97949746%20L12.5225848%2C4.97949746%20Z%20M7.86730089%2C5.04801561%20C8.24619178%2C5.02808979%208.58760099%2C4.98823815%208.58760099%2C4.98823815%20C8.9267139%2C4.94809022%208.88671369%2C4.44972248%208.54745263%2C4.46957423%20C8.54745263%2C4.46957423%207.52803983%2C4.54957381%206.86996227%2C4.54957381%20C6.25158863%2C4.54957381%205.21247202%2C4.46957423%205.21247202%2C4.46957423%20C4.87306282%2C4.44972248%204.83328483%2C4.96816418%205.17254589%2C4.98823815%20C5.17254589%2C4.98823815%205.49358462%2C5.02808979%205.83269753%2C5.04801561%20L6.81314716%2C7.73459399%20L5.43565839%2C11.8651647%20L3.14394256%2C5.04801561%20C3.52312975%2C5.02808979%203.86416859%2C4.98823815%203.86416859%2C4.98823815%20C4.20305928%2C4.94809022%204.16305906%2C4.44972248%203.82394616%2C4.46957423%20C3.82394616%2C4.46957423%202.80475558%2C4.54957381%202.14660395%2C4.54957381%20C2.02852925%2C4.54957381%201.88934333%2C4.54668493%201.74156477%2C4.54194422%20C2.86690406%2C2.83350881%204.80113651%2C1.70529256%206.99996296%2C1.70529256%20C8.638342%2C1.70529256%2010.1302017%2C2.33173369%2011.2498373%2C3.35765419%20C11.222726%2C3.35602457%2011.1962815%2C3.35261718%2011.1683554%2C3.35261718%20C10.5501299%2C3.35261718%2010.1114609%2C3.89113285%2010.1114609%2C4.46957423%20C10.1114609%2C4.98823815%2010.4107217%2C5.42705065%2010.7296864%2C5.94564049%20C10.969021%2C6.36482346%2011.248578%2C6.90326506%2011.248578%2C7.68133501%20C11.248578%2C8.21992476%2011.0413918%2C8.84503256%2010.7696866%2C9.71584277%20L10.1417574%2C11.8132391%20L7.86730089%2C5.04801561%20Z%20M6.99996296%2C14.2927074%20C6.38218192%2C14.2927074%205.78595654%2C14.2021153%205.22195356%2C14.0362644%20L7.11048207%2C8.54925635%20L9.04486267%2C13.8491542%20C9.05760348%2C13.8802652%209.07323319%2C13.9089317%209.08989995%2C13.9358945%20C8.43574834%2C14.1661896%207.73285573%2C14.2927074%206.99996296%2C14.2927074%20L6.99996296%2C14.2927074%20Z%20M0.706448182%2C7.99874074%20C0.706448182%2C7.08630113%200.902152921%2C6.22015756%201.25141403%2C5.43749503%20L4.25357806%2C13.6627848%20C2.15393732%2C12.6427902%200.706448182%2C10.4898387%200.706448182%2C7.99874074%20L0.706448182%2C7.99874074%20Z%20M6.99996296%2C0.999%20C3.14016476%2C0.999%200%2C4.13905746%200%2C7.99874074%20C0%2C11.8585722%203.14016476%2C14.999%206.99996296%2C14.999%20C10.8596871%2C14.999%2014%2C11.8585722%2014%2C7.99874074%20C14%2C4.13905746%2010.8596871%2C0.999%206.99996296%2C0.999%20L6.99996296%2C0.999%20Z%22%20id%3D%22wordpress-logo-simplified-cmyk%22%20stroke%3D%22none%22%20fill%3D%22%E2%80%9CcurrentColor%E2%80%9D%22%20fill-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%0A%09%09%09%3C%2Fsvg%3E%3C%2Fa%3E%0A%09%09%09%3C%2Fdiv%3E%0A%0A%09%09%09%3Cdiv%20id%3D%22credit%22%20class%3D%22col-right%22%3E%0A%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%0A%09%09%3C%2Fdiv%3E%3C!--%20%2F.col-full%20--%3E%0A%0A%09%3C%2Fdiv%3E%3C!--%20%2F%23footer%20--%3E%0A%0A%3C%2Fdiv%3E%3C!--%20%2F%23container%20--%3E%0A%3C!--%20%20--%3E%0A%0A%09%3Cdiv%20style%3D%22display%3Anone%22%3E%0A%09%3C%2Fdiv%3E%0A%09%09%3C!--%20CCPA%20%5Bstart%5D%20--%3E%0A%09%09%0A%0A%09%09%3C!--%20CCPA%20%5Bend%5D%20--%3E%0A%09%09%09%09%3Cdiv%20id%3D%22actionbar%22%20dir%3D%22ltr%22%20class%3D%22actnbr-pub-bueno%20actnbr-has-follow%20actnbr-has-actions%22%3E%0A%09%09%3Cul%3E%0A%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-btn%20actnbr-hidden%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22actnbr-action%20actnbr-actn-comment%22%20href%3D%22https%3A%2F%2F924collective.com%2F2015%2F11%2F15%2Fthe-shoreditch-twat%2Fshoreditch-twat-26%2F%23respond%22%3E%0A%09%09%09%09%09%09%09%3Csvg%20class%3D%22gridicon%20gridicons-comment%22%20height%3D%2220%22%20width%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cg%3E%3Cpath%20d%3D%22M12%2016l-5%205v-5H5c-1.1%200-2-.9-2-2V5c0-1.1.9-2%202-2h14c1.1%200%202%20.9%202%202v9c0%201.1-.9%202-2%202h-7z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E%09%09%09%09%09%09%09%3Cspan%3EComment%09%09%09%09%09%09%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-btn%20actnbr-hidden%22%3E%0A%09%09%09%09%09%09%09%09%3Ca%20class%3D%22actnbr-action%20actnbr-actn-follow%20%22%20href%3D%22%22%3E%0A%09%09%09%3Csvg%20class%3D%22gridicon%22%20height%3D%2220%22%20width%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20clip-rule%3D%22evenodd%22%20d%3D%22m4%204.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5%2010.5c0%201.1046.89543%202%202%202h7v-1.5h-7c-.27614%200-.5-.2239-.5-.5zm10.5%202h-9v1.5h9zm-5%203h-4v1.5h4zm3.5%201.5h-1v1h1zm-1-1.5h-1.5v1.5%201%201.5h1.5%201%201.5v-1.5-1-1.5h-1.5zm-2.5%202.5h-4v1.5h4zm6.5%201.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z%22%20fill-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A%09%09%09%3Cspan%3ESubscribe%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%09%3Ca%20class%3D%22actnbr-action%20actnbr-actn-following%20%20no-display%22%20href%3D%22%22%3E%0A%09%09%09%3Csvg%20class%3D%22gridicon%22%20height%3D%2220%22%20width%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M16%204.5H4V15C4%2015.2761%204.22386%2015.5%204.5%2015.5H11.5V17H4.5C3.39543%2017%202.5%2016.1046%202.5%2015V4.5V3H4H16H17.5V4.5V12.5H16V4.5ZM5.5%206.5H14.5V8H5.5V6.5ZM5.5%209.5H9.5V11H5.5V9.5ZM12%2011H13V12H12V11ZM10.5%209.5H12H13H14.5V11V12V13.5H13H12H10.5V12V11V9.5ZM5.5%2012H9.5V13.5H5.5V12Z%22%20fill%3D%22%23008A20%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22following-icon-tick%22%20d%3D%22M13.5%2016L15.5%2018L19%2014.5%22%20stroke%3D%22%23008A20%22%20stroke-width%3D%221.5%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A%09%09%09%3Cspan%3ESubscribed%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22actnbr-popover%20tip%20tip-top-left%20actnbr-notice%22%20id%3D%22follow-bubble%22%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22tip-arrow%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22tip-inner%20actnbr-follow-bubble%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cul%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-sitename%22%3E%0A%09%09%09%3Ca%20href%3D%22https%3A%2F%2F924collective.com%22%3E%0A%09%09%09%09%3Cimg%20loading%3D%22lazy%22%20alt%3D%22%22%20class%3D%22avatar%20avatar-50%22%20height%3D%2250%22%20width%3D%2250%22%3E%09%09%09%09924COLLECTIVE%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22actnbr-message%20no-display%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3Cform%20method%3D%22post%22%20action%3D%22https%3A%2F%2Fsubscribe.wordpress.com%22%20accept-charset%3D%22utf-8%22%20style%3D%22display%3A%20none%3B%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22actnbr-follow-count%22%3EJoin%20133%20other%20subscribers%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22email%22%20name%3D%22email%22%20placeholder%3D%22Enter%20your%20email%20address%22%20class%3D%22actnbr-email-field%22%20aria-label%3D%22Enter%20your%20email%20address%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22action%22%20value%3D%22subscribe%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22blog_id%22%20value%3D%228753140%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22source%22%20value%3D%22https%3A%2F%2F924collective.com%2F2015%2F11%2F15%2Fthe-shoreditch-twat%2Fshoreditch-twat-26%2F%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20name%3D%22sub-type%22%20value%3D%22actionbar-follow%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cinput%20type%3D%22hidden%22%20id%3D%22_wpnonce%22%20name%3D%22_wpnonce%22%20value%3D%22c2e2c9a5b5%22%3E%09%09%09%09%09%09%09%09%09%09%3Cdiv%20class%3D%22actnbr-button-wrap%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cbutton%20type%3D%22submit%22%20value%3D%22Sign%20me%20up%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09Sign%20me%20up%09%09%09%09%09%09%09%09%09%09%09%3C%2Fbutton%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fform%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-login-nudge%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Cdiv%3E%0A%09%09%09%09%09%09%09%09%09%09%09Already%20have%20a%20WordPress.com%20account%3F%20%3Ca%20href%3D%22https%3A%2F%2Fwordpress.com%2Flog-in%3Fredirect_to%3Dhttps%253A%252F%252Fr-login.wordpress.com%252Fremote-login.php%253Faction%253Dlink%2526back%253Dhttps%25253A%25252F%25252F924collective.com%25252F2015%25252F11%25252F15%25252Fthe-shoreditch-twat%25252Fshoreditch-twat-26%25252F%22%3ELog%20in%20now.%3C%2Fa%3E%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%3C%2Ful%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-btn%20actnbr-hidden%22showUi'%20)%3B%22%3E%0A%09%09%09%09%09%09%3Ca%20class%3D%22actnbr-action%20actnbr-actn-privacy%22%20href%3D%22%23%22%3E%0A%09%09%09%09%09%09%09%3Csvg%20class%3D%22gridicon%20gridicons-info-outline%22%20height%3D%2220%22%20width%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cg%3E%3Cpath%20d%3D%22M13%209h-2V7h2v2zm0%202h-2v6h2v-6zm-1-7c-4.41%200-8%203.59-8%208s3.59%208%208%208%208-3.59%208-8-3.59-8-8-8m0-2c5.523%200%2010%204.477%2010%2010s-4.477%2010-10%2010S2%2017.523%202%2012%206.477%202%2012%202z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E%09%09%09%09%09%09%09%3Cspan%3EPrivacy%09%09%09%09%09%09%3C%2Fspan%3E%0A%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-ellipsis%20actnbr-hidden%22%3E%0A%09%09%09%09%3Csvg%20class%3D%22gridicon%20gridicons-ellipsis%22%20height%3D%2224%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cg%3E%3Cpath%20d%3D%22M7%2012c0%201.104-.896%202-2%202s-2-.896-2-2%20.896-2%202-2%202%20.896%202%202zm12-2c-1.104%200-2%20.896-2%202s.896%202%202%202%202-.896%202-2-.896-2-2-2zm-7%200c-1.104%200-2%20.896-2%202s.896%202%202%202%202-.896%202-2-.896-2-2-2z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E%09%09%09%09%3Cdiv%20class%3D%22actnbr-popover%20tip%20tip-top-left%20actnbr-more%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22tip-arrow%22%3E%3C%2Fdiv%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22tip-inner%22%3E%0A%09%09%09%09%09%09%3Cul%3E%0A%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-sitename%22%3E%0A%09%09%09%3Ca%20href%3D%22https%3A%2F%2F924collective.com%22%3E%0A%09%09%09%09%3Cimg%20loading%3D%22lazy%22%20alt%3D%22%22%20class%3D%22avatar%20avatar-50%22%20height%3D%2250%22%20width%3D%2250%22%3E%09%09%09%09924COLLECTIVE%09%09%09%3C%2Fa%3E%0A%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-folded-follow%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Ca%20class%3D%22actnbr-action%20actnbr-actn-follow%20%22%20href%3D%22%22%3E%0A%09%09%09%3Csvg%20class%3D%22gridicon%22%20height%3D%2220%22%20width%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20clip-rule%3D%22evenodd%22%20d%3D%22m4%204.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5%2010.5c0%201.1046.89543%202%202%202h7v-1.5h-7c-.27614%200-.5-.2239-.5-.5zm10.5%202h-9v1.5h9zm-5%203h-4v1.5h4zm3.5%201.5h-1v1h1zm-1-1.5h-1.5v1.5%201%201.5h1.5%201%201.5v-1.5-1-1.5h-1.5zm-2.5%202.5h-4v1.5h4zm6.5%201.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z%22%20fill-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A%09%09%09%3Cspan%3ESubscribe%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%09%3Ca%20class%3D%22actnbr-action%20actnbr-actn-following%20%20no-display%22%20href%3D%22%22%3E%0A%09%09%09%3Csvg%20class%3D%22gridicon%22%20height%3D%2220%22%20width%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M16%204.5H4V15C4%2015.2761%204.22386%2015.5%204.5%2015.5H11.5V17H4.5C3.39543%2017%202.5%2016.1046%202.5%2015V4.5V3H4H16H17.5V4.5V12.5H16V4.5ZM5.5%206.5H14.5V8H5.5V6.5ZM5.5%209.5H9.5V11H5.5V9.5ZM12%2011H13V12H12V11ZM10.5%209.5H12H13H14.5V11V12V13.5H13H12H10.5V12V11V9.5ZM5.5%2012H9.5V13.5H5.5V12Z%22%20fill%3D%22%23008A20%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22following-icon-tick%22%20d%3D%22M13.5%2016L15.5%2018L19%2014.5%22%20stroke%3D%22%23008A20%22%20stroke-width%3D%221.5%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%0A%09%09%09%3Cspan%3ESubscribed%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-signup%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwordpress.com%2Fstart%2F%22%3ESign%20up%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-login%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwordpress.com%2Flog-in%3Fredirect_to%3Dhttps%253A%252F%252Fr-login.wordpress.com%252Fremote-login.php%253Faction%253Dlink%2526back%253Dhttps%25253A%25252F%25252F924collective.com%25252F2015%25252F11%25252F15%25252Fthe-shoreditch-twat%25252Fshoreditch-twat-26%25252F%22%3ELog%20in%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-shortlink%22%3E%0A%09%09%09%09%09%09%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fwp.me%2FaAJ5G-3J7%22%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cspan%20class%3D%22actnbr-shortlink__text%22%3ECopy%20shortlink%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%09%09%09%09%3Cspan%20class%3D%22actnbr-shortlink__icon%22%3E%3Csvg%20class%3D%22gridicon%20gridicons-checkmark%22%20height%3D%2216%22%20width%3D%2216%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cg%3E%3Cpath%20d%3D%22M9%2019.414l-6.707-6.707%201.414-1.414L9%2016.586%2020.293%205.293l1.414%201.414%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E%3C%2Fspan%3E%0A%09%09%09%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22flb-report%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fwordpress.com%2Fabuse%2F%3Freport_url%3Dhttps%3A%2F%2F924collective.com%2F2015%2F11%2F15%2Fthe-shoreditch-twat%2Fshoreditch-twat-26%2F%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3E%0A%09%09%09%09%09%09%09%09%09%09Report%20this%20content%09%09%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-reader%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fwordpress.com%2Freader%2Fblogs%2F8753140%2Fposts%2F14329%22%3E%0A%09%09%09%09%09%09%09%09%09%09View%20post%20in%20Reader%09%09%09%09%09%09%09%09%09%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-subs%22%3E%0A%09%09%09%09%09%09%09%09%09%3Ca%20href%3D%22https%3A%2F%2Fsubscribe.wordpress.com%2F%22%3EManage%20subscriptions%3C%2Fa%3E%0A%09%09%09%09%09%09%09%09%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3Cli%20class%3D%22actnbr-fold%22%3E%3Ca%20href%3D%22%22%3ECollapse%20this%20bar%3C%2Fa%3E%3C%2Fli%3E%0A%09%09%09%09%09%09%09%09%09%09%09%09%09%09%3C%2Ful%3E%0A%09%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3C%2Fli%3E%0A%09%09%3C%2Ful%3E%0A%09%3C%2Fdiv%3E%0A%09%0A%0A%0A%09%0A%09%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%20%0A%3Cnoscript%3E%3Cimg%20style%3D%22height%3A1px%3Bwidth%3A1px%3Boverflow%3Ahidden%3Bposition%3Aabsolute%3Bbottom%3A1px%3B%22%20alt%3D%22%22%20%2F%3E%3C%2Fnoscript%3E%0A%3Cmeta%20id%3D%22bilmur%22%20property%3D%22bilmur%3Adata%22%20content%3D%22%22%20data-provider%3D%22wordpress.com%22%20data-service%3D%22simple%22%20data-site-tz%3D%22Etc%2FGMT%2B6%22%20data-custom-props%3D%22%7B%26quot%3Benq_jquery%26quot%3B%3A%26quot%3B1%26quot%3B%2C%26quot%3Blogged_in%26quot%3B%3A%26quot%3B0%26quot%3B%2C%26quot%3Bwptheme%26quot%3B%3A%26quot%3Bpub%5C%2Fbueno%26quot%3B%2C%26quot%3Bwptheme_is_block%26quot%3B%3A%26quot%3B0%26quot%3B%7D%22%3E%0A%09%09%20%09%0A%0A%0A%0A%3Cimg%20alt%3D%22%22%20id%3D%22wpstats%22%3E%3Cdiv%20id%3D%22cmp-app-container%22%3E%3Cdiv%20data-focus-guard%3D%22true%22%20tabindex%3D%220%22%20style%3D%22width%3A%201px%3B%20height%3A%200px%3B%20padding%3A%200px%3B%20overflow%3A%20hidden%3B%20position%3A%20fixed%3B%20top%3A%201px%3B%20left%3A%201px%3B%22%3E%3C%2Fdiv%3E%3Cdiv%3E%3Cdiv%20style%3D%22position%3A%20fixed%3B%20padding%3A%200px%3B%20bottom%3A%200px%3B%20left%3A%200px%3B%20right%3A%200px%3B%20z-index%3A%202147483646%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20data-focus-guard%3D%22true%22%20tabindex%3D%220%22%20style%3D%22width%3A%201px%3B%20height%3A%200px%3B%20padding%3A%200px%3B%20overflow%3A%20hidden%3B%20position%3A%20fixed%3B%20top%3A%201px%3B%20left%3A%201px%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22wordads-ad-wrapper%20wordads-ad-wrapper--bottom_sticky%20wordads-ad-sticky-wrapper%20wordads-ad-hidden%22%3E%3Cdiv%20class%3D%22wordads-ad-sticky-close-btn%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22wordads-ad%20wordads-ad-sticky%22%3E%3Cdiv%20class%3D%22wordads-ad-title%22%3EAdvertisement%3C%2Fdiv%3E%3Cdiv%20class%3D%22wordads-ad-content%22%20id%3D%22wordads-ad-305322%22%20data-ad-height%3D%2290%22%20data-ad-width%3D%22970%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22wordads-ad-controls%22%3E%3CspanshowUi'%20)%22%3EPrivacy%20Settings%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "c2d9417f-52b4-4d19-97a8-1add9a3de8af",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "924collective.wordpress.com-2015-11-15-the-shoreditch-twat-xx-shoreditch-twat-26"
+}

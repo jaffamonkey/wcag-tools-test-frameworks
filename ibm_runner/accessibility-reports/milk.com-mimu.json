@@ -1,0 +1,198 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 793,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 793,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 763,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'small'",
+            "messageArgs": [
+                "small"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 301,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'small'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22small%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 742,
+                "height": 43,
+                "width": 485
+            },
+            "snippet": "<table class=\"footer\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22footer%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 233,
+    "ruleTime": 4,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 13,
+            "elementsViolation": 3,
+            "elementsViolationReview": 5,
+            "violation": 4,
+            "potentialviolation": 1,
+            "recommendation": 8,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 219
+        },
+        "scanTime": 11,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778709859589,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EMimu%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%0A%3Ch1%3EMimu%3C%2Fh1%3E%0A%3Ch2%3EMilk%20Music%3A%20Demos%20and%20Library%3C%2Fh2%3E%0A%0A%3Ch3%3EThe%20Demos%3C%2Fh3%3E%0A%0A%3Cul%20class%3D%22demoList%22%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22.%2Fawkward-js-music%2F%22%3EAWKward%20JS%20Music%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22.%2Ffilter-explorer%2F%22%3EFilter%20Explorer%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22.%2Fpink-noise-explorer%2F%22%3EPink%20Noise%20Explorer%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22.%2Ftriangle-wave-explorer%2F%22%3ETriangle%20Wave%20Explorer%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%3Ch3%3EWhat%20is%20this%3F%3C%2Fh3%3E%0A%0A%3Cp%3E%0A%20%20This%20is%20a%20small%20collection%20of%20programmatically-generated%20music%20%2F%20audio%0A%20%20demos.%20All%20of%20the%20audio%20processing%20of%20these%20demos%20takes%20place%20inside%0A%20%20the%20web%20browser%3B%20there%20is%20no%20server%20code%20involved%20at%20all.%0A%3C%2Fp%3E%0A%0A%3Cp%3E%0A%20%20The%20code%20here%20is%20meant%20to%20serve%20as%20straightforward%20examples%0A%20%20of%20how%20to%20do%20script-based%20audio%20generation%20and%20analysis%20using%20the%0A%20%20JavaScript%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FTR%2Fwebaudio%2F%22%3EWeb%20Audio%20API%3C%2Fa%3E.%0A%20%20Most%20of%20the%20code%20is%20in%20library%20form%2C%20ready%20for%20importation%20into%20other%0A%20%20projects.%20Please%20use%20it!%0A%3C%2Fp%3E%0A%0A%3Cp%3E%0A%20%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Fdanfuzz%2Fmimu%22%3ESee%20the%20source%3C%2Fa%3E.%20If%20you're%0A%20%20specifically%20looking%20for%20the%20Web%20Audio%20code%2C%20find%20it%20in%20the%0A%20%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Fdanfuzz%2Fmimu%2Ftree%2Fmain%2Flib%2FMusicControl.js%22%3E%0A%20%20%3Ccode%3EMusicControl%3C%2Fcode%3E%20class%3C%2Fa%3E.%0A%3C%2Fp%3E%0A%0A%3Ch3%3EItems%20of%20note%3C%2Fh3%3E%0A%0A%3Cp%3E%0A%20%20As%20of%20this%20writing%2C%20the%20per-demo%20controls%20do%20not%20seem%20to%20work%0A%20%20consistently%20when%20using%20Safari.%20This%20is%20because%20Safari%20%E2%80%94%0A%20%20sometimes!%20%E2%80%94%20doesn't%20seem%20to%20promptly%20pass%20messages%20from%20the%20main%0A%20%20browser%20thread%20to%20the%20%3Ccode%3EAudioWorkletProcessor%3C%2Fcode%3E%20which%0A%20%20generates%20the%20raw%20samples.%20It%20is%20unclear%20why%20this%20is(n't)%20happening.%0A%3C%2Fp%3E%0A%0A%3Cp%3E%0A%20%20The%20original%20version%20of%20this%20code%20was%20written%20in%202015%2C%20using%20browser%20and%0A%20%20JavaScript%20features%20which%20were%20still%20new%20and%2For%20experimental%20at%20the%0A%20%20time.%20As%20such%2C%20this%20project%20inevitably%20suffered%20code%20rot%2C%20and%20it%20had%0A%20%20stopped%20working%20sometime%20around%202019.%20In%202023%2C%20I%20did%20a%20chunk%20of%20work%20to%0A%20%20get%20things%20working%20again.%20That%20said%2C%20I%20have%20yet%20to%20fully%20clean%20up%20the%0A%20%20code%20such%20that%20it%20is%20up%20to%20arguably-modern%20standards.%0A%3C%2Fp%3E%0A%0A%3Ch3%3EOne%20final%20word%3C%2Fh3%3E%0A%0A%3Cp%20style%3D%22text-align%3A%20center%22%3EEnjoy!%3C%2Fp%3E%0A%0A%3Ctable%20class%3D%22footer%22%3E%0A%20%20%3Ctbody%3E%3Ctr%3E%0A%20%20%20%20%3Ctd%3E%0A%20%20%20%20%20%20Copyright%202015-2025%20the%20Mimu%20Authors%20(Dan%20Bornstein%20et%20alia).%3Cbr%3E%0A%20%20%20%20%20%20SPDX-License-Identifier%3A%20Apache-2.0%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fmilk.com%2F%22%3Emilk.com%3C%2Fa%3E%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "49054a4f-58a3-46d0-9af3-e19696f83c30",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "milk.com-mimu"
+}

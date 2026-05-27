@@ -1,0 +1,200 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 181,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 19,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://github.com/tourdedave/the-internet\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fgithub.com%2Ftourdedave%2Fthe-internet%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 59,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/input[1]",
+                "aria": "/document[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 94,
+                "height": 22,
+                "width": 253
+            },
+            "snippet": "<input name=\"file\" type=\"file\" id=\"file-upload\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20name%3D%5C%22file%5C%22%20type%3D%5C%22file%5C%22%20id%3D%5C%22file-upload%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/input[2]",
+                "aria": "/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 115,
+                "height": 22,
+                "width": 59
+            },
+            "snippet": "<input value=\"Upload\" type=\"submit\" id=\"file-submit\" class=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Upload%5C%22%20type%3D%5C%22submit%5C%22%20id%3D%5C%22file-submit%5C%22%20class%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 142,
+    "ruleTime": 1,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 8,
+            "elementsViolation": 1,
+            "elementsViolationReview": 6,
+            "violation": 1,
+            "potentialviolation": 4,
+            "recommendation": 3,
+            "potentialrecommendation": 1,
+            "manual": 1,
+            "pass": 132
+        },
+        "scanTime": 9,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778246835288,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20Internet%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22flash-messages%22%20class%3D%22large-12%20columns%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Ftourdedave%2Fthe-internet%22%3E%3Cimg%20style%3D%22position%3A%20absolute%3B%20top%3A%200%3B%20right%3A%200%3B%20border%3A%200%3B%22%20alt%3D%22Fork%20me%20on%20GitHub%22%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22content%22%20class%3D%22large-12%20columns%22%3E%0A%20%20%20%20%20%20%20%20%0A%0A%0A%3Cdiv%20class%3D%22example%22%3E%0A%3Ch3%3EFile%20Uploader%3C%2Fh3%3E%0A%3Cp%3EChoose%20a%20file%20on%20your%20system%20and%20then%20click%20upload.%20Or%2C%20drag%20and%20drop%20a%20file%20into%20the%20area%20below.%3C%2Fp%3E%0A%20%20%3Cform%20method%3D%22POST%22%20enctype%3D%22multipart%2Fform-data%22%3E%0A%20%20%20%20%3Cinput%20id%3D%22file-upload%22%20type%3D%22file%22%20name%3D%22file%22%3E%0A%20%20%20%20%3Cbr%3E%0A%20%20%20%20%3Cinput%20class%3D%22button%22%20id%3D%22file-submit%22%20type%3D%22submit%22%20value%3D%22Upload%22%3E%0A%20%20%3C%2Fform%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22dz-success-mark%20dz-clickable%22%20id%3D%22drag-drop-upload%22%3E%0A%3C%2Fdiv%3E%0A%3Cdiv%20id%3D%22preview-template%22%20style%3D%22display%3A%20none%3B%22%3E%0A%20%20%3Cdiv%20class%3D%22dz-preview%20dz-file-preview%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22dz-details%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22dz-filename%22%3E%3Cspan%20data-dz-name%3D%22%22%3E%3C%2Fspan%3E%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22dz-success-mark%22%3E%3Cspan%3E%E2%9C%94%3C%2Fspan%3E%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%3Cinput%20type%3D%22file%22%20multiple%3D%22multiple%22%20class%3D%22dz-hidden-input%22%20style%3D%22visibility%3A%20hidden%3B%20position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20height%3A%200px%3B%20width%3A%200px%3B%22%3E%0A%20%20%20%20%3Cdiv%20id%3D%22page-footer%22%20class%3D%22row%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22large-4%20large-centered%20columns%22%3E%0A%20%20%20%20%20%20%20%20%3Chr%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20style%3D%22text-align%3A%20center%3B%22%3EPowered%20by%20%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Felementalselenium.com%2F%22%3EElemental%20Selenium%3C%2Fa%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "de922ddd-7c97-44e8-b08e-21b9f4362df2",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "the-internet.herokuapp.com-upload"
+}

@@ -1,0 +1,956 @@
+{
+    "results": [
+        {
+            "ruleId": "style_background_decorative",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify the CSS background image does not convey important information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 1025,
+                "width": 784
+            },
+            "snippet": "<body style=\"background:url('/stars2.png');\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_background_decorative.html#%7B%22message%22%3A%22Verify%20the%20CSS%20background%20image%20does%20not%20convey%20important%20information%22%2C%22snippet%22%3A%22%3Cbody%20style%3D%5C%22background%3Aurl('%2Fstars2.png')%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_background_decorative%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 1025,
+                "width": 784
+            },
+            "snippet": "<body style=\"background:url('/stars2.png');\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cbody%20style%3D%5C%22background%3Aurl('%2Fstars2.png')%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 18,
+                "width": 40
+            },
+            "snippet": "<a href=\"https://dialup-kween.neocities.org\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fdialup-kween.neocities.org%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/a[3]",
+                "aria": "/document[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.06",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 114,
+                "top": 8,
+                "height": 18,
+                "width": 95
+            },
+            "snippet": "<a style=\"color:#E1AD01\" href=\"https://dialup-kween.neocities.org/mustardpages.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20style%3D%5C%22color%3A%23E1AD01%5C%22%20href%3D%5C%22https%3A%2F%2Fdialup-kween.neocities.org%2Fmustardpages.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.06%22%2C16%2C400%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/h1[1]",
+                "aria": "/document[1]/heading[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 48,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<h1 style=\"color:white; text-align:center;\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ch1%20style%3D%5C%22color%3Awhite%3B%20text-align%3Acenter%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/h1[1]",
+                "aria": "/document[1]/heading[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 32px and weight of 700",
+            "messageArgs": [
+                "1.00",
+                32,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 48,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<h1 style=\"color:white; text-align:center;\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2032px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ch1%20style%3D%5C%22color%3Awhite%3B%20text-align%3Acenter%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C32%2C700%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/img[1]",
+                "aria": "/document[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 121,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/img[2]",
+                "aria": "/document[1]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 121,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/img[3]",
+                "aria": "/document[1]/img[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 121,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/h3[1]",
+                "aria": "/document[1]/heading[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 250,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<h3>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ch3%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 290,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input placeholder=\"Name\" value=\"\" type=\"text\" name=\"name\" class=\"hcb-shadow-r\" id=\"hcb_form_name\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20placeholder%3D%5C%22Name%5C%22%20value%3D%5C%22%5C%22%20type%3D%5C%22text%5C%22%20name%3D%5C%22name%5C%22%20class%3D%5C%22hcb-shadow-r%5C%22%20id%3D%5C%22hcb_form_name%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_id_unique",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[2]/div[2]",
+                "aria": "/document[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_in_use",
+            "message": "The <div> element has the id \"hcb_form_name_container\" that is already in use",
+            "messageArgs": [
+                "div",
+                "hcb_form_name_container"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 312,
+                "height": 72,
+                "width": 784
+            },
+            "snippet": "<div class=\"hcb-shadow-m\" id=\"hcb_form_name_container\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_id_unique.html#%7B%22message%22%3A%22The%20%3Cdiv%3E%20element%20has%20the%20id%20%5C%22hcb_form_name_container%5C%22%20that%20is%20already%20in%20use%22%2C%22snippet%22%3A%22%3Cdiv%20class%3D%5C%22hcb-shadow-m%5C%22%20id%3D%5C%22hcb_form_name_container%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_in_use%22%2C%22ruleId%22%3A%22element_id_unique%22%2C%22msgArgs%22%3A%5B%22div%22%2C%22hcb_form_name_container%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[2]/div[2]/textarea[1]",
+                "aria": "/document[1]/form[1]/textbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 312,
+                "height": 68,
+                "width": 183
+            },
+            "snippet": "<textarea placeholder=\"Enter your comment here\" rows=\"4\" id=\"hcb_form_content\" name=\"content\" class=\"commentbox hcb-shadow-r\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Ctextarea%20placeholder%3D%5C%22Enter%20your%20comment%20here%5C%22%20rows%3D%5C%224%5C%22%20id%3D%5C%22hcb_form_content%5C%22%20name%3D%5C%22content%5C%22%20class%3D%5C%22commentbox%20hcb-shadow-r%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[3]/input[1]",
+                "aria": "/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 384,
+                "height": 22,
+                "width": 74
+            },
+            "snippet": "<input value=\"Comment\" type=\"submit\" id=\"hcb_submit\" class=\"submit btn\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Comment%5C%22%20type%3D%5C%22submit%5C%22%20id%3D%5C%22hcb_submit%5C%22%20class%3D%5C%22submit%20btn%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_before",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/form[1]/div[3]/input[2]",
+                "aria": "/document[1]/form[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_2",
+            "message": "Label text is located after its associated text input or <select> element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 82,
+                "top": 384,
+                "height": 22,
+                "width": 253
+            },
+            "snippet": "<input title=\"upload image\" class=\"inputfile\" id=\"hcb_file\" name=\"hcb_file\" type=\"file\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_before.html#%7B%22message%22%3A%22Label%20text%20is%20located%20after%20its%20associated%20text%20input%20or%20%3Cselect%3E%20element%22%2C%22snippet%22%3A%22%3Cinput%20title%3D%5C%22upload%20image%5C%22%20class%3D%5C%22inputfile%5C%22%20id%3D%5C%22hcb_file%5C%22%20name%3D%5C%22hcb_file%5C%22%20type%3D%5C%22file%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_2%22%2C%22ruleId%22%3A%22input_label_before%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[1]/blockquote[1]",
+                "aria": "/document[1]/blockquote[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 440,
+                "height": 72,
+                "width": 704
+            },
+            "snippet": "<blockquote>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[1]/blockquote[1]/p[1]",
+                "aria": "/document[1]/blockquote[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 474,
+                "height": 37,
+                "width": 704
+            },
+            "snippet": "<p class=\"hcb-comment-body\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22hcb-comment-body%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[1]/p[1]",
+                "aria": "/document[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 527,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<p class=\"hcb-comment-tb\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22hcb-comment-tb%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[2]/blockquote[1]",
+                "aria": "/document[1]/blockquote[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 565,
+                "height": 72,
+                "width": 704
+            },
+            "snippet": "<blockquote>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[2]/blockquote[1]/p[1]",
+                "aria": "/document[1]/blockquote[2]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 599,
+                "height": 37,
+                "width": 704
+            },
+            "snippet": "<p class=\"hcb-comment-body\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22hcb-comment-body%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[2]/p[1]",
+                "aria": "/document[1]/paragraph[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 652,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<p class=\"hcb-comment-tb\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22hcb-comment-tb%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[3]/blockquote[1]",
+                "aria": "/document[1]/blockquote[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 690,
+                "height": 53,
+                "width": 704
+            },
+            "snippet": "<blockquote>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[3]/blockquote[1]/p[1]",
+                "aria": "/document[1]/blockquote[3]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 724,
+                "height": 19,
+                "width": 704
+            },
+            "snippet": "<p class=\"hcb-comment-body\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22hcb-comment-body%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[3]/p[1]",
+                "aria": "/document[1]/paragraph[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 759,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<p class=\"hcb-comment-tb\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22hcb-comment-tb%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "blockquote_cite_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[4]/blockquote[1]",
+                "aria": "/document[1]/blockquote[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 796,
+                "height": 53,
+                "width": 704
+            },
+            "snippet": "<blockquote>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/blockquote_cite_exists.html#%7B%22message%22%3A%22Verify%20that%20%3Cblockquote%3E%20should%20have%20a%20'cite'%20attribute%20and%20not%20be%20used%20for%20indentation%20only%22%2C%22snippet%22%3A%22%3Cblockquote%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22blockquote_cite_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[4]/blockquote[1]/p[1]",
+                "aria": "/document[1]/blockquote[4]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 831,
+                "height": 19,
+                "width": 704
+            },
+            "snippet": "<p class=\"hcb-comment-body\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22hcb-comment-body%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/div[4]/p[1]",
+                "aria": "/document[1]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 865,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<p class=\"hcb-comment-tb\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22hcb-comment-tb%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/img[1]",
+                "aria": "/document[1]/paragraph[8]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 124,
+                "top": 952,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/img[2]",
+                "aria": "/document[1]/paragraph[8]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 155,
+                "top": 952,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/h3[1]",
+                "aria": "/document[1]/heading[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 975,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<h3 style=\"color:white; text-align:center;\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ch3%20style%3D%5C%22color%3Awhite%3B%20text-align%3Acenter%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/h3[1]",
+                "aria": "/document[1]/heading[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 18.72px and weight of 700",
+            "messageArgs": [
+                "1.00",
+                18.72,
+                700
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 975,
+                "height": 22,
+                "width": 784
+            },
+            "snippet": "<h3 style=\"color:white; text-align:center;\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2018.72px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ch3%20style%3D%5C%22color%3Awhite%3B%20text-align%3Acenter%3B%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C18.72%2C700%5D%7D"
+        }
+    ],
+    "numExecuted": 725,
+    "ruleTime": 12,
+    "nls": {
+        "aria_content_in_landmark": {
+            "0": "All content must reside within an element with a landmark role",
+            "Fail_1": "Content is not within a landmark element"
+        },
+        "style_background_decorative": {
+            "0": "Images included by using CSS alone must not convey important information",
+            "Potential_1": "Verify the CSS background image does not convey important information"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "potential_graphic_background": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "element_id_unique": {
+            "0": "Element 'id' attribute values must be unique within a document",
+            "potential_in_use": "The <{0}> element has the id \"{1}\" that is already in use"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "input_label_before": {
+            "0": "Text inputs and <select> elements must have a label before the input control",
+            "Fail_2": "Label text is located after its associated text input or <select> element"
+        },
+        "blockquote_cite_exists": {
+            "0": "Use <blockquote> only for quotations, not indentation",
+            "Potential_1": "Verify that <blockquote> should have a 'cite' attribute and not be used for indentation only"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 29,
+            "elementsViolation": 18,
+            "elementsViolationReview": 28,
+            "violation": 18,
+            "potentialviolation": 13,
+            "recommendation": 0,
+            "potentialrecommendation": 4,
+            "manual": 2,
+            "pass": 688
+        },
+        "scanTime": 31,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "IBM_Accessibility"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779664704654,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EDial%20H%20for%20Hell%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20style%3D%22background%3Aurl('%2Fstars2.png')%3B%22%3E%0A%20%20%20%3Cdiv%20class%3D%22topnav%22%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fdialup-kween.neocities.org%22%3EHome%3C%2Fa%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fdialup-kween.neocities.org%2Fdisclaimer.html%22%3ERead%20Me%3C%2Fa%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fdialup-kween.neocities.org%2Fmustardpages.html%22%20style%3D%22color%3A%23E1AD01%22%3EMustard%20Pages%3C%2Fa%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fdialup-kween.neocities.org%2Fcoollinks.html%22%3ECool%20Links%3C%2Fa%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fdialup-kween.neocities.org%2Fabout_me.html%22%3EAbout%20Me%3C%2Fa%3E%0A%20%20%20%20%3Ca%20class%3D%22active%22%20href%3D%22https%3A%2F%2Fdialup-qween.neocities.org%2Fguestbook.html%22%3EGuest%20Book%3C%2Fa%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fdialup-kween.neocities.org%2Fblog-ish.html%22%3EBlerg%3C%2Fa%3E%0A%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Ch1%20style%3D%22color%3Awhite%3B%20text-align%3Acenter%3B%22%3EOh%20shit%2C%20a%20guestbook!%3C%2Fh1%3E%0A%20%20%20%20%3Cimg%3E%3Cimg%3E%3Cimg%3E%0A%20%20%20%20%3Cp%20class%3D%22typicaltext%22%3EYou%20can%20sign%20it%20if%20you%20want%2C%20I%20guess.%3C%2Fp%3E%0A%20%20%20%20%3Cp%20class%3D%22typicaltext%22%3ENOTICE%3A%20The%20Internet%20Archive's%20bots%20have%20all%20permissions%20in%20this%20site's%20robots.txt.%20This%20means%20this%20site%20can%20and%20will%20be%20cataloged%20into%20the%20Wayback%20Machine.%20If%20you%20are%20uncomfortable%20with%20this%2C%20then%20I%20suggest%20either%20using%20something%20other%20than%20your%20real%20name%2Fcurrent%20Internet%20handle%20or%20just%20not%20signing%20it%20at%20all.%3C%2Fp%3E%0A%0A%20%20%20%20%3C!--%20begin%20wwww.htmlcommentbox.com%20--%3E%0A%20%3Cdiv%20id%3D%22HCB_comment_box%22%3E%3Ch3%3EComments%3C%2Fh3%3E%3Cp%20id%3D%22hcb_msg%22%3E%3C%2Fp%3E%3Cdiv%20id%3D%22HCB_comment_form_box%22%3E%3Cform%20id%3D%22hcb_form%22%3E%3Cinput%20type%3D%22hidden%22%20name%3D%22page%22%20value%3D%22https%3A%2F%2Fdialup-kween.neocities.org%2Fguestbook%22%20id%3D%22hcb_form_page%22%3E%3Cinput%20type%3D%22hidden%22%20id%3D%22hcb_refer%22%20name%3D%22refer%22%20value%3D%22https%3A%2F%2Fdialup-kween.neocities.org%2Fguestbook%23HCB_comment_box%22%3E%3Cinput%20type%3D%22hidden%22%20name%3D%22opts%22%20value%3D%2216862%22%20id%3D%22hcb_form_opts%22%3E%3Cinput%20type%3D%22hidden%22%20name%3D%22mod%22%20value%3D%22%241%24wq1rdBcg%24F3I9c0HeMdNMV7QWbgml7%2F%22%20id%3D%22hcb_form_mod%22%3E%3Cinput%20type%3D%22hidden%22%20name%3D%22replies_to%22%20value%3D%22%22%20id%3D%22hcb_form_replies_to%22%3E%3Cinput%20type%3D%22hidden%22%20name%3D%22charset%22%20value%3D%22UTF-8%22%20id%3D%22hcb_form_charset%22%3E%3Cdiv%20class%3D%22hcb-wrapper-half%20input-field%22%3E%3Cdiv%20class%3D%22hcb-shadow-t%22%3E%20%3Cdiv%20class%3D%22hcb-shadow-tl%22%3E%3C%2Fdiv%3E%20%3Cdiv%20class%3D%22hcb-shadow-tr%22%3E%3C%2Fdiv%3E%20%3C%2Fdiv%3E%20%3Cdiv%20id%3D%22hcb_form_name_container%22%20class%3D%22hcb-shadow-m%22%3E%3Cinput%20id%3D%22hcb_form_name%22%20class%3D%22hcb-shadow-r%22%20name%3D%22name%22%20type%3D%22text%22%20value%3D%22%22%20placeholder%3D%22Name%22%3E%3C%2Fdiv%3E%20%3Cdiv%20class%3D%22hcb-shadow-b%22%3E%20%3Cdiv%20class%3D%22hcb-shadow-bl%22%3E%3C%2Fdiv%3E%20%3Cdiv%20class%3D%22hcb-shadow-br%22%3E%3C%2Fdiv%3E%20%3C%2Fdiv%3E%3Cdiv%20class%3D%22hcb-shadow-clear%22%3E%3C%2Fdiv%3E%20%3C%2Fdiv%3E%3Cdiv%20class%3D%22hcb-wrapper%22%3E%3Cdiv%20class%3D%22hcb-shadow-t%22%3E%20%3Cdiv%20class%3D%22hcb-shadow-tl%22%3E%3C%2Fdiv%3E%20%3Cdiv%20class%3D%22hcb-shadow-tr%22%3E%3C%2Fdiv%3E%20%3C%2Fdiv%3E%20%3Cdiv%20id%3D%22hcb_form_name_container%22%20class%3D%22hcb-shadow-m%22%3E%3Ctextarea%20class%3D%22commentbox%20hcb-shadow-r%22%20name%3D%22content%22%20id%3D%22hcb_form_content%22%20rows%3D%224%22%20placeholder%3D%22Enter%20your%20comment%20here%22%3E%3C%2Ftextarea%3E%3C%2Fdiv%3E%20%3Cdiv%20class%3D%22hcb-shadow-b%22%3E%20%3Cdiv%20class%3D%22hcb-shadow-bl%22%3E%3C%2Fdiv%3E%20%3Cdiv%20class%3D%22hcb-shadow-br%22%3E%3C%2Fdiv%3E%20%3C%2Fdiv%3E%3Cdiv%20class%3D%22hcb-shadow-clear%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%3E%3Cinput%20class%3D%22submit%20btn%22%20id%3D%22hcb_submit%22%20type%3D%22submit%22%20value%3D%22Comment%22%3E%3Cinput%20type%3D%22file%22%20name%3D%22hcb_file%22%20id%3D%22hcb_file%22%20class%3D%22inputfile%22%20title%3D%22upload%20image%22%3E%3Clabel%20id%3D%22hcb_file_label%22%20for%3D%22hcb_file%22%20title%3D%22upload%20image%22%3E%3Ca%20class%3D%22btn%20btn-secondary%22%3EAdd%20Image%3C%2Fa%3E%3C%2Flabel%3E%3Cdiv%20style%3D%22float%3Aright%22%3E%3Csmall%20class%3D%22admin-link%22%3E%3Ca%20href%3D%22https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fauth%3Fscope%3Demail%26amp%3Bstate%3Dhttps%253A%2F%2Fdialup-kween.neocities.org%2Fguestbook%26amp%3Bredirect_uri%3Dhttps%253A%2F%2Fwww.htmlcommentbox.com%252Foauth2callback%26amp%3Bresponse_type%3Dcode%26amp%3Bclient_id%3D1058610383547-jradgb7j4d5t6ia6dq8gaoh9fvgl01kb.apps.googleusercontent.com%26amp%3Bapproval_prompt%3Dforce%22%3E%3Cimg%20alt%3D%22%5Blogin%5D%22%20class%3D%22hcb-icon%20hcb-door-in%22%3E%3C%2Fa%3E%26nbsp%3B%3C%2Fsmall%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22home-desc%22%3ENot%20using%26nbsp%3B%3Ca%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fwww.htmlcommentbox.com%22%3EHtml%20Comment%20Box%3C%2Fa%3E%3Cspan%20class%3D%22home-desc%22%3E%26nbsp%3B%20yet%3F%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fform%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22comments_list%22%3E%3Cdiv%20class%3D%22comment%22%20id%3D%22comment_17187005%22%3E%3Cblockquote%3E%3Cspan%20class%3D%22author%22%3E%3Cb%20class%3D%22author-name%22%3Emichael%20%3C%2Fb%3E%3C%2Fspan%3E%3Cspan%20class%3D%22date%22%3E%C2%B7%20Jan%2029%2C%202026%3C%2Fspan%3E%3Cp%20class%3D%22hcb-comment-body%22%3Eyour%20site%20is%20really%20cool%20i%20love%20the%20phone%20number%20theme%20(or%20whatever%20it%20is%20%3AP)%0A%3Cbr%3Eanywho%20this%20site%20is%20me%20approved%20%3AD%20%3C%2Fp%3E%3C%2Fblockquote%3E%3Cp%20class%3D%22hcb-comment-tb%22%3E%3Cbutton%20class%3D%22hcb-like%2217187005')%22%3ELike%20%C2%B7%20%3C%2Fbutton%3E%3Cbutton%20class%3D%22hcb-reply%2217187005')%22%3EReply%20%C2%B7%20%3C%2Fbutton%3E%3Cbutton%20class%3D%22hcb-flag%2217187005')%22%3EFlag%3C%2Fbutton%3E%20%3C%2Fp%3E%3Cdiv%20class%3D%22likes%22%20style%3D%22display%3Anone%22%3E%3Cspan%3E0%20%3C%2Fspan%3E%3Cimg%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22comment%22%20id%3D%22comment_16712312%22%3E%3Cblockquote%3E%3Cspan%20class%3D%22author%22%3E%3Cb%20class%3D%22author-name%22%3Edinkey%20king%20%3C%2Fb%3E%3C%2Fspan%3E%3Cspan%20class%3D%22date%22%3E%C2%B7%20June%2022%2C%202024%3C%2Fspan%3E%3Cp%20class%3D%22hcb-comment-body%22%3Efirst%20thing%20I%20see%20and%20it's%20a%20vinesauce%20joel%20reference%0A%3Cbr%3E10%2F10%20from%20dinkey%20king%20%3C%2Fp%3E%3C%2Fblockquote%3E%3Cp%20class%3D%22hcb-comment-tb%22%3E%3Cbutton%20class%3D%22hcb-like%2216712312')%22%3ELike%20%C2%B7%20%3C%2Fbutton%3E%3Cbutton%20class%3D%22hcb-reply%2216712312')%22%3EReply%20%C2%B7%20%3C%2Fbutton%3E%3Cbutton%20class%3D%22hcb-flag%2216712312')%22%3EFlag%3C%2Fbutton%3E%20%3C%2Fp%3E%3Cdiv%20class%3D%22likes%22%20style%3D%22display%3Anone%22%3E%3Cspan%3E0%20%3C%2Fspan%3E%3Cimg%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22comment%22%20id%3D%22comment_16394355%22%3E%3Cblockquote%3E%3Cspan%20class%3D%22author%22%3E%3Cb%20class%3D%22author-name%22%3Ej0nah%20%3C%2Fb%3E%3C%2Fspan%3E%3Cspan%20class%3D%22date%22%3E%C2%B7%20July%2026%2C%202023%3C%2Fspan%3E%3Cp%20class%3D%22hcb-comment-body%22%3Ehello%20%3AP%20%3C%2Fp%3E%3C%2Fblockquote%3E%3Cp%20class%3D%22hcb-comment-tb%22%3E%3Cbutton%20class%3D%22hcb-like%2216394355')%22%3ELike%20%C2%B7%20%3C%2Fbutton%3E%3Cbutton%20class%3D%22hcb-reply%2216394355')%22%3EReply%20%C2%B7%20%3C%2Fbutton%3E%3Cbutton%20class%3D%22hcb-flag%2216394355')%22%3EFlag%3C%2Fbutton%3E%20%3C%2Fp%3E%3Cdiv%20class%3D%22likes%22%20style%3D%22display%3Anone%22%3E%3Cspan%3E0%20%3C%2Fspan%3E%3Cimg%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22comment%22%20id%3D%22comment_16321373%22%3E%3Cblockquote%3E%3Cspan%20class%3D%22author%22%3E%3Cb%20class%3D%22author-name%22%3Etony%20%3C%2Fb%3E%3C%2Fspan%3E%3Cspan%20class%3D%22date%22%3E%C2%B7%20May%2016%2C%202023%3C%2Fspan%3E%3Cp%20class%3D%22hcb-comment-body%22%3Ehi%20%3C%2Fp%3E%3C%2Fblockquote%3E%3Cp%20class%3D%22hcb-comment-tb%22%3E%3Cbutton%20class%3D%22hcb-like%2216321373')%22%3ELike%20%C2%B7%20%3C%2Fbutton%3E%3Cbutton%20class%3D%22hcb-reply%2216321373')%22%3EReply%20%C2%B7%20%3C%2Fbutton%3E%3Cbutton%20class%3D%22hcb-flag%2216321373')%22%3EFlag%3C%2Fbutton%3E%20%3C%2Fp%3E%3Cdiv%20class%3D%22likes%22%20style%3D%22display%3Anone%22%3E%3Cspan%3E0%20%3C%2Fspan%3E%3Cimg%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.htmlcommentbox.com%2Frss_clean%3Fpage%3Dhttps%253A%252F%252Fdialup-kween.neocities.org%252Fguestbook%26amp%3Bopts%3D16862%26amp%3Bmod%3D%241%24wq1rdBcg%24F3I9c0HeMdNMV7QWbgml7%2F%22%20style%3D%22text-decoration%3Anone%22%3E%3Cimg%20class%3D%22hcb-icon%22%20alt%3D%22rss%22%3E%20%3C%2Fa%3E%3C%2Fdiv%3E%0A%20%0A%20%0A%3C!--%20end%20www.htmlcommentbox.com%20--%3E%0A%20%20%3Cp%3E%0A%20%20%20%20Best%20viewed%20with%20%3Cimg%3E%20and%20%3Cimg%3E%0A%20%20%3C%2Fp%3E%0A%20%20%20%3Cdiv%20class%3D%22footer%22%3E%0A%20%20%20%20%20%3Ch3%20style%3D%22color%3Awhite%3B%20text-align%3Acenter%3B%22%3E%20Not%20copyrighted%20%C2%A9%202020%20dialup-kween%3C%2Fh3%3E%0A%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fdialup-kween.neocities.org%2Fsitemap.html%22%3ESite%20map%3C%2Fa%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "50b8da0a-8fca-4c26-b1b7-5955cd0bc988",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "dialup-kween.neocities.org-guestbook.html"
+}

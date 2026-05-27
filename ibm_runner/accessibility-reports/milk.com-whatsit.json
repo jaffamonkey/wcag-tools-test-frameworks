@@ -1,0 +1,381 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 937,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 937,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 921,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 86,
+                "width": 565
+            },
+            "snippet": "<table class=\"milk-header\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22milk-header%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[2]",
+                "aria": "/document[1]/paragraph[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"My Ittybitty Little Kokopelli.\"",
+            "messageArgs": [
+                "\"My Ittybitty Little Kokopelli.\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 248,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22My%20Ittybitty%20Little%20Kokopelli.%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22My%20Ittybitty%20Little%20Kokopelli.%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[2]",
+                "aria": "/document[1]/paragraph[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'Little'",
+            "messageArgs": [
+                "Little"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 248,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'Little'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Little%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"the hunchback flute player\"",
+            "messageArgs": [
+                "\"the hunchback flute player\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 343,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22the%20hunchback%20flute%20player%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22the%20hunchback%20flute%20player%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'left' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "left"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 343,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'left'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22left%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[4]",
+                "aria": "/document[1]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'big, Kokopelli-shape, little'",
+            "messageArgs": [
+                "big, Kokopelli-shape, little"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 498,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'big%2C%20Kokopelli-shape%2C%20little'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22big%2C%20Kokopelli-shape%2C%20little%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[6]",
+                "aria": "/document[1]/paragraph[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"missing childrenreports\"",
+            "messageArgs": [
+                "\"missing childrenreports\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 745,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22missing%20childrenreports%5C%22%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22missing%20childrenreports%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 904,
+                "height": 25,
+                "width": 539
+            },
+            "snippet": "<table class=\"footer\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22footer%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 226,
+    "ruleTime": 2,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 11,
+            "elementsViolation": 4,
+            "elementsViolationReview": 8,
+            "violation": 5,
+            "potentialviolation": 6,
+            "recommendation": 4,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 211
+        },
+        "scanTime": 11,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778709868765,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EMILK%3A%20What's%20that%20logo%2C%20anyway%3F%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%0A%3Ctable%20class%3D%22milk-header%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%20%20%3Ctd%3E%3Cimg%20alt%3D%22milk.com%20icon%22%3E%3C%2Ftd%3E%0A%20%20%3Ctd%3E%3Ch1%3E%3Cspan%20class%3D%22milk%22%3EMilk%3C%2Fspan%3E%3A%20What's%20that%20logo%2C%20anyway%3F%3C%2Fh1%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3Ch2%3EThe%20Short%20Answer%3C%2Fh2%3E%0A%0A%3Cp%3EIt's%20a%20stylized%20milk%20carton%2C%20with%20a%20picture%20of%20Kokopelli%20on%20it.%3C%2Fp%3E%0A%0A%3Ch2%3EThe%20Long%20Answer%3C%2Fh2%3E%0A%0A%3Cp%3EIt's%20a%20stylized%20milk%20carton%2C%20with%20a%20picture%20of%20Kokopelli%20on%20it.%20I%20think%0Athe%20milk%20carton%2F%22%3Cspan%20class%3D%22milk%22%3EMilk%3C%2Fspan%3E%22%20connection%20is%20pretty%0Aobvious%2C%20but%20what%20about%20Kokopelli%3F%20Well%2C%20in%20fact%0A%3Cspan%20class%3D%22milk%22%3EMilk%3C%2Fspan%3E%20stands%20for%20%22My%20Ittybitty%20Little%20Kokopelli.%22%0AThere%20you%20have%20it.%3C%2Fp%3E%0A%0A%3Ch3%3ESo%2C%20who%20or%20what%20is%20this%20Kokopelli%20character%3F%3C%2Fh3%3E%0A%0A%3Cp%3EKokopelli%20is%20a%20figure%20from%20Native%20American%20mythology%20(mainly%20from%0Athe%20southwest%20United%20States%20area).%20He's%20known%20as%0A%22the%20hunchback%20flute%20player%22%20and%20also%20as%20a%20general%20trickster.%20He's%0Aa%20god%20of%20abundance.%20Apparently%20there%20was%20a%20historical%20Kokopelli%20who%0Atraded%20grain%20seed%20for%2C%20uh%2C%20abundance%2C%20if%20you%20know%20what%20I%20mean.%20Suffice%0Ait%20to%20say%20that%2C%20if%20the%20legend%20is%20to%20believed%2C%20wherever%20Kokopelli%20went%2C%0Ahe%20left%20behind%20him%20a%20trail%20of%20fertile%20fields%20and%20pregnant%20women.%3C%2Fp%3E%0A%0A%3Ch3%3EWhy%20do%20you%20like%20Kokopelli%20so%20much%3F%20%22Bornstein%22%20isn't%20exactly%20the%0Aname%20for%20a%20Nice%20Native%20American%20Boy!%3C%2Fh3%3E%0A%0A%3Cp%3EI'm%20a%20big%20fan%20of%20nifty%20abstract%20drawings%2C%20and%20the%20traditional%0AKokopelli-shape%20fits%20the%20bill%20in%20that%20department.%20I%20also%20think%20the%0Ahistorical%20Kokopelli%20had%20quite%20the%20scam%20going.%20What's%20more%2C%20my%0Abrother%20and%20(now%20ex-)%20sister-in-law%0Agave%20me%20a%20little%20wooden%20box%20with%20Kokopelli%20for%20my%20birthday%20a%20number%20of%0Ayears%20ago.%20So%2C%20I'm%20into%20it.%3C%2Fp%3E%0A%0A%3Ch3%3EOk%2C%20enough%20with%20Kokopelli.%20What's%20with%20you%20and%20milk%3F%3C%2Fh3%3E%0A%0A%3Cp%3EI%20like%20chocolate%20milk.%20I%20like%20coffee%20milk%20(it's%20a%20Rhode%20Island%20thing).%0AI%20like%20these%20things%20called%20%3Ca%20href%3D%22%2Frecipes%2Fdrink%2Fitalian-cream.html%22%3E%22Italian%20Creams%22%3C%2Fa%3E%20that%0Asome%20cafes%20make.%20I%20like%20things%20that%20have%0Acondensed%20milk%20in%20them%20or%20that%20are%20made%20entirely%20from%20condensed%20milk%0A(i.e.%2C%20%3Ca%20href%3D%22%2Frecipes%2Fdessert%2Fdulce-de-leche.html%22%3E%3Ci%3Edulce%20de%0Aleche%3C%2Fi%3E%3C%2Fa%3E).%20(As%20my%20friend%0AGordie%20says)%20I'm%20Milk%20Boy%2C%20so%20how%20could%20I%20not%20have%20a%20site%20name%0Athat%20mentioned%20it%20at%20least%20obliquely%3F%20Ergo%2C%20%3Ccode%3Emilk.com%3C%2Fcode%3E.%3C%2Fp%3E%0A%0A%3Ch3%3EAh%2C%20now%20I%20understand%2C%20but%20what%20does%20the%20logo%20%3Ci%3Emean%3C%2Fi%3E%3F%3C%2Fh3%3E%0A%0A%3Cp%3EFor%20a%20while%20one%20of%20the%20places%20where%20one%20would%20see%20%22missing%20children%0Areports%22%20was%20on%20milk%20cartons%2C%20the%20theory%20being%20that%20this%20was%20an%20easy%0Away%20to%20reach%20lots%20of%20people%20and%20it%20was%20a%20good%20cause%2C%20etc.%20(I%20haven't%0Aseen%20this%20in%20a%20while%2C%20but%20perhaps%20some%20milk%20cartons%20still%20have%0Athem.%20Whatever.)%20So%2C%20the%20obvious%20conclusion%20is%20that%20Kokopelli%20is%0Amissing.%20The%20%3Cfont%20size%3D%22-1%22%3EFBI%3C%2Ffont%3E%2C%20or%20maybe%20his%20parents%2C%0Awill%20surely%20reward%20you%20if%20you%20have%20information%20leading%20to%20his%20safe%0Areturn.%3C%2Fp%3E%0A%0A%3Cp%3E(Thanks%20to%20my%20friend%20Ken%20for%20suggesting%20the%20meaning.)%3C%2Fp%3E%0A%0A%3Cp%3EBy%20the%20way%2C%20%3Ca%20href%3D%22whatsitnot.html%22%3Ethese%3C%2Fa%3E%20are%20some%20things%0Athat%20the%20logo%20%3Ci%3Eisn't%3C%2Fi%3E.%3C%2Fp%3E%0A%0A%3Ctable%20class%3D%22footer%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%20%20%3Ctd%3ESite%20copyright%20%C2%A9%201994%E2%80%932024%20Dan%20Bornstein.%20All%20rights%20reserved.%3C%2Ftd%3E%0A%20%20%3Ctd%3E%3Ca%20href%3D%22%2F%22%3Emilk.com%3C%2Fa%3E%20%2F%20whatsit%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "49054a4f-58a3-46d0-9af3-e19696f83c30",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "milk.com-whatsit"
+}

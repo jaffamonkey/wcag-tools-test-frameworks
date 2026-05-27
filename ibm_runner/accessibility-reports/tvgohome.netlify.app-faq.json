@@ -1,0 +1,430 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1566,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1566,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1566,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1566,
+                "width": 800
+            },
+            "snippet": "<body marginheight=\"0\" marginwidth=\"0\" leftmargin=\"0\" topmargin=\"0\" text=\"#000000\" vlink=\"#0000CC\" link=\"#0066FF\" bgcolor=\"#FFFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20marginheight%3D%5C%220%5C%22%20marginwidth%3D%5C%220%5C%22%20leftmargin%3D%5C%220%5C%22%20topmargin%3D%5C%220%5C%22%20text%3D%5C%22%23000000%5C%22%20vlink%3D%5C%22%230000CC%5C%22%20link%3D%5C%22%230066FF%5C%22%20bgcolor%3D%5C%22%23FFFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 78,
+                "width": 600
+            },
+            "snippet": "<table width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22600%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 78,
+                "height": 1488,
+                "width": 602
+            },
+            "snippet": "<table width=\"600\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22600%5C%22%20border%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20cellpadding%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 78,
+                "height": 1112,
+                "width": 100
+            },
+            "snippet": "<table width=\"100\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22100%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 78,
+                "height": 564,
+                "width": 100
+            },
+            "snippet": "<table width=\"100\" cellpadding=\"2\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22100%5C%22%20cellpadding%3D%5C%222%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/a[1]/font[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 18,
+                "top": 117,
+                "height": 15,
+                "width": 65
+            },
+            "snippet": "<font face=\"Arial,Helvetica,Univers,Zurich BT\" size=\"-1\" color=\"#FFFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20face%3D%5C%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%5C%22%20size%3D%5C%22-1%5C%22%20color%3D%5C%22%23FFFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 100,
+                "top": 78,
+                "height": 1488,
+                "width": 502
+            },
+            "snippet": "<table width=\"500\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22500%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 100,
+                "top": 78,
+                "height": 1488,
+                "width": 502
+            },
+            "snippet": "<table width=\"500\" cellpadding=\"0\" cellspacing=\"2\" border=\"1\" id=\"Table1\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22500%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%222%5C%22%20border%3D%5C%221%5C%22%20id%3D%5C%22Table1%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 104,
+                "top": 82,
+                "height": 1480,
+                "width": 494
+            },
+            "snippet": "<table width=\"494\" cellpadding=\"15\" cellspacing=\"0\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22494%5C%22%20cellpadding%3D%5C%2215%5C%22%20cellspacing%3D%5C%220%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/ol[1]/font[1]/li[5]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/list[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Film & TV\", \"Humour\"",
+            "messageArgs": [
+                "\"Film & TV\", \"Humour\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 159,
+                "top": 479,
+                "height": 62,
+                "width": 424
+            },
+            "snippet": "<li>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Film%20%26%20TV%5C%22%2C%20%5C%22Humour%5C%22%22%2C%22snippet%22%3A%22%3Cli%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Film%20%26%20TV%5C%22%2C%20%5C%22Humour%5C%22%22%5D%7D"
+        }
+    ],
+    "numExecuted": 1034,
+    "ruleTime": 12,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 12,
+            "elementsViolation": 9,
+            "elementsViolationReview": 11,
+            "violation": 10,
+            "potentialviolation": 3,
+            "recommendation": 5,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 1016
+        },
+        "scanTime": 47,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779109486341,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EFAQ%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23FFFFFF%22%20link%3D%22%230066FF%22%20vlink%3D%22%230000CC%22%20text%3D%22%23000000%22%20topmargin%3D%220%22%20leftmargin%3D%220%22%20marginwidth%3D%220%22%20marginheight%3D%220%22%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22600%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%22600%22%20height%3D%2278%22%20align%3D%22left%22%20valign%3D%22top%22%3E%3Cimg%20id%3D%22Picture5%22%20height%3D%2278%22%20width%3D%22600%22%20border%3D%220%22%20alt%3D%22TV%20Go%20Home%22%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3Ctable%20cellpadding%3D%220%22%20cellspacing%3D%220%22%20border%3D%220%22%20width%3D%22600%22%3E%0A%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%3Ctd%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22100%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%22100%22%20height%3D%221112%22%20bgcolor%3D%22%23000000%22%3E%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%222%22%20width%3D%22100%22%3E%3Ctbody%3E%3Ctr%3E%3Ctd%3E%0A%0A%3Cp%20align%3D%22CENTER%22%3E%3Cbr%3E%3Ca%20href%3D%22%2F%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3EFront%20Page%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Farchive%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3EArchive%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Fsuggestions%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3ESuggestions%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Fsubscribe%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3ESubscribe%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Ffaq%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3EF.A.Q.%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Fcontacts%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3EContact%20TVGH%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Flinks%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3ELinks%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3C%2Ffont%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3EEntire%20contents%3Cbr%3E(c)%20%3C%2Fi%3E%3C%2Ffont%3E%3Ca%20href%3D%22https%3A%2F%2Fweb.archive.org%2Fweb%2F20041209231728%2Fmailto%3Atvgohome%40tvgohome.com%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3ETVGH%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3E%202000%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3E%0A%3Cp%20align%3D%22CENTER%22%3EPart%20of%20the%20%3Ca%20href%3D%22http%3A%2F%2Fwww.zeppotron.com%2F%22%3E%3Cimg%20id%3D%22Picture10%22%20height%3D%2217%22%20width%3D%2290%22%20vspace%3D%220%22%20hspace%3D%220%22%20align%3D%22TOP%22%20border%3D%220%22%20alt%3D%22zeppo-teeny-link%22%3E%3C%2Fa%3E%20conspiracy%3C%2Fp%3E%0A%3Cp%20align%3D%22CENTER%22%3ENo%20reproduction%20without%20consent%3C%2Fp%3E%0A%3C%2Fi%3E%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3ETV%20Go%20Home%20is%26nbsp%3B%20supported%20by%3Cbr%3E%3C%2Fi%3E%3C%2Ffont%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.ntk.net%2F%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3ENeed%20to%20Know%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3E%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fp%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3E%0A%3C%2Fi%3E%3C%2Ffont%3E%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3EPowered%20by%3Cbr%3E%3C%2Fi%3E%3C%2Ffont%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.usp.net%2F%22%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3EUSP%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20color%3D%22%23FFFFFF%22%20size%3D%22-2%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Ci%3E%3Cbr%3E%26nbsp%3B%3C%2Fi%3E%3C%2Ffont%3E%3C%2Fp%3E%3C%2Ftd%3E%3C%2Ftr%3E%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%3Ctd%3E%0A%0A%20%20%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20width%3D%22500%22%3E%0A%20%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%3Ctd%20width%3D%22500%22%20height%3D%221409%22%3E%0A%09%20%20%3Ctable%20id%3D%22Table1%22%20border%3D%221%22%20cellspacing%3D%222%22%20cellpadding%3D%220%22%20width%3D%22500%22%3E%0A%09%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%20align%3D%22left%22%3E%0A%09%09%3Ctd%20width%3D%22494%22%20height%3D%221403%22%3E%3Ctable%20border%3D%220%22%20cellspacing%3D%220%22%20cellpadding%3D%2215%22%20width%3D%22494%22%3E%3Ctbody%3E%3Ctr%3E%3Ctd%3E%0A%0A%3Cp%20align%3D%22CENTER%22%3E%3Cfont%20size%3D%22%2B3%22%20face%3D%22Arial%20Black%2CHelvetica%20Black%2CLB%20Helvetica%20Black%2CUnivers%20Black%2CZurich%20Blk%20BT%22%3EF.A.Q.%3Cbr%3E%3C%2Ffont%3E%3Cfont%20size%3D%22%2B1%22%20face%3D%22Arial%20Black%2CHelvetica%20Black%2CLB%20Helvetica%20Black%2CUnivers%20Black%2CZurich%20Blk%20BT%22%3EFrequently%20Asked%20Questions%20about%20TVGH%0A%3C%2Ffont%3E%3C%2Fp%3E%3Col%20type%3D%221%22%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Cb%3E%0A%3C%2Fb%3E%3Cli%3E%3Cb%3EWho%20are%20you%3F%3Cbr%3E%3C%2Fb%3ECharlie%20Brooker.%3Cbr%3E%26nbsp%3B%3C%2Fli%3E%0A%3Cli%3E%3Cb%3EIs%20a%20print%20version%20of%20TVGH%20available%3F%3Cbr%3E%3C%2Fb%3EYes.%20A%20%3Ca%20href%3D%22http%3A%2F%2Fwww.amazon.co.uk%2Fexec%2Fobidos%2FASIN%2F1841156752%2Fo%2Fqid%3D%2Fsr%3D8-1%2Fref%3Dsr_aps_b_1_1%2F202-5990062-0153447%22%3ETV%20Go%20Home%20Book%3C%2Fa%3E%20was%20published%20by%204th%20Estate%20in%20October%202001...%20it's%20available%20from%20all%20good%20bookshops%20and%20online%20retailers%20like%20Amazon%20%3Cbr%3E%26nbsp%3B%3C%2Fli%3E%0A%3Cli%3E%3Cb%3EWhy%20were%20you%20anonymous%20for%20so%20long%3F%3Cbr%3E%3C%2Fb%3ELong%20story.%20Started%20out%20for%20a%20good%20reason.%20Then%20I%20just%20got%20a%20kick%20out%20of%20it.%20No%20big%20secret.%20I'm%20not%20Lord%20Lucan%2C%20and%20you've%20probably%20never%20heard%20of%20me%20anyway.%3Cbr%3E%26nbsp%3B%3C%2Fli%3E%0A%3Cli%3E%3Cb%3EWhat's%20in%20the%20book%3F%20Just%20a%20load%20of%20fucking%20reprints%3F%3Cbr%3E%3C%2Fb%3EYes%20and%20no.%20There's%20lots%20of%20archive%20material%20and%20loads%20of%20new%20things%20as%20well%20--%20such%20as%20'Scorch'%20(a%20Heat%20magazine%20parody)%2C%20Daily%20Mail%20Islander%20(a%20version%20of%20the%20Mail%20created%20by%20the%20denizens%20of%20Daily%20Mail%20Island)%20and%20Now%20Biter%20(Nathan%20Barley's%20lifestyle%20magazine).%3Cbr%3E%26nbsp%3B%3C%2Fli%3E%0A%3Cli%3E%3Cb%3EI%20can't%20find%20the%20book%20in%20my%20local%20bookshop!%3Cbr%3E%3C%2Fb%3EThey%20tend%20to%20hide%20them%20--%20try%20scouring%20the%20%22Film%20%26amp%3B%20TV%22%20section%20if%20you're%20not%20having%20any%20luck%20in%20%22Humour%22.%20Or%20ask.%20Nicely.%3Cbr%3E%26nbsp%3B%3C%2Fli%3E%0A%3Cli%3E%3Cb%3EI%20spotted%20the%20name%20%22Nathan%20Barley%22%20in%20the%20credits%20of%20%22Dotcomedy%22%20on%20Channel%204.%20How%20come%3F%3Cbr%3E%3C%2Fb%3EBeats%20me.%20Someone%20at%20Princess%20Productions%20having%20a%20laugh%2C%20I%20suppose.%3Cbr%3E%26nbsp%3B%3C%2Fli%3E%0A%3Cli%3E%3Cb%3EIs%20there%20a%20TV%20series%20appearing%20on%20E4%20by%20any%20chance%3F%3Cbr%3E%3C%2Fb%3EYes%20--%20it%20starts%20on%20December%205th.%20Look%2C%20there's%20some%20info%20here%20on%20%3Ca%20href%3D%22sm_439837.html%3Fmenu%3Dentertainment%22%3EAnanova%3C%2Fa%3E.%3Cbr%3E%26nbsp%3B%3C%2Fli%3E%0A%3Cli%3E%3Cb%3EWhy%20is%20TVGH%20published%20fortnightly%3F%20Can't%20you%20make%20it%20weekly%3F%3Cbr%3E%3C%2Fb%3EMaybe%20in%20the%20future.%20But%20not%20right%20now.%3Cbr%3E%26nbsp%3B%3C%2Fli%3E%0A%3C%2Ffont%3E%3Cli%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Cb%3EI%20keep%20forgetting%20when%20to%20check%20the%20website.%20Is%20there%20some%20kind%20of%20reminder%20service%20I%20can%20join%3F%3Cbr%3E%3C%2Fb%3EWhy%20yes%2C%20there%20is.%20Send%20an%20email%20to%20%3C%2Ffont%3E%3Ca%20href%3D%22https%3A%2F%2Fweb.archive.org%2Fweb%2F20041209231728%2Fmailto%3Atvgohome-subscribe%40egroups.com%22%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3Etvgohome-subscribe%40egroups.com%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%20and%20follow%20the%20instructions%20you'll%20get%20back.%20Once%20you're%20signed%20up%2C%20you'll%20receive%20a%20simple%20reminder%20every%20fortnight%2C%20to%20let%20you%20know%20a%20new%20edition's%20been%20posted.%20You%20won't%20get%20a%20whopping%20great%20JPEG%20in%20your%20inbox%20and%20you%20won't%20be%20joining%20a%20discussion%20list.%20Or%20selling%20your%20name%20to%20any%20advertisers.%20Sign%20on%2C%20it's%20useful.%3Cbr%3E%26nbsp%3B%3C%2Ffont%3E%3C%2Fli%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3Cli%3E%3Cb%3EWho%20is%20Nathan%20Barley%3F%20Is%20he%20a%20real%20person%3F%20Why%20do%20you%20hate%20him%20so%20much%3F%3Cbr%3E%3C%2Fb%3EIf%20you're%20asking%20this%20question%2C%20you've%20probably%20uncomfortably%20close%20to%20being%3Cb%3E%20%3C%2Fb%3ENathan%20Barley%20yourself.%3Cbr%3E%26nbsp%3B%3C%2Fli%3E%0A%3Cli%3E%3Cb%3EWhy%20use%20a%20JPEG%20for%20the%20listings%20instead%20of%20text%3F%3Cbr%3E%3C%2Fb%3EBecause%20I%20want%20precise%20control%20over%20the%20layout.%20And%20because%20it%20%3Ci%3Eseriously%20%3C%2Fi%3Eannoys%20%22real%20ale%22%20Internet%20users%20who%20do%20all%20their%20browsing%20on%20text-based%20hand-held%20calculators%2C%20and%20that%20arouses%20me.%3Cbr%3E%26nbsp%3B%3C%2Fli%3E%0A%3C%2Ffont%3E%3Cli%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Cb%3EDo%20you%20take%20submissions%3F%20How%20do%20I%20send%20them%20in%3F%3Cbr%3E%3C%2Fb%3ERead%20%3C%2Ffont%3E%3Ca%20href%3D%22%2Fsuggestions%22%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3Ethis%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%20and%20find%20out.%3Cbr%3E%26nbsp%3B%3C%2Ffont%3E%3C%2Fli%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cli%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Cb%3EWhat's%20this%20'NTK'%20all%20about%3F%3Cbr%3E%3C%2Fb%3ENTK%2C%20or%20%3Ci%3ENeed%20to%20Know%3C%2Fi%3E%2C%20is%20a%20weekly%20newsletter%20thingy%20edited%20by%20Dave%20Green%20and%20Dan%20O'Brien.%20It's%20very%20good.%20They%20agreed%20to%20host%20TVGH%20when%20I%20had%20to%20remove%20it%20from%20my%20other%20website%20in%20a%20bit%20of%20a%20panic.%20You%20should%20go%20and%20%3C%2Ffont%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.ntk.net%2F%22%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3Evisit%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%20NTK%20right%20now%2C%20actually.%3Cbr%3E%26nbsp%3B%3C%2Ffont%3E%3C%2Fli%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cli%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Cb%3EWhy%20does%20the%20name%20%22Charles%20Napier%22%20keep%20cropping%20up%20in%20the%20credits%20for%20TVGH%20movies%3F%3Cbr%3E%3C%2Fb%3EBecause%20he%20%3Ci%3Erocked%20bells%3C%2Fi%3E%20playing%20Harry%20the%20crazy%20cop%20in%20%3Ci%3ESupervixens%3C%2Fi%3E.%20Many%20thanks%20to%20reader%20Mike%20Lonergan%20for%20alerting%20us%20to%20the%20existence%20of%20this%20little%20doozy%3A%20%3C%2Ffont%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.charlesnapier.com%2F%22%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3Ehttp%3A%2F%2Fwww.charlesnapier.com%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Cbr%3E%26nbsp%3B%3C%2Ffont%3E%3C%2Fli%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3Cli%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Cb%3EI've%20%3C%2Fb%3E%3C%2Ffont%3E%3Ca%20href%3D%22%2Fsubscribe%22%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Cb%3Esubscribed%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%3Cb%3E%3A%20how%20come%20I%20just%20get%20a%20reminder%20telling%20me%20to%20visit%20the%20website%3F%20Why%20not%20send%20out%20the%20actual%20TVGH%20image%20itself%3F%3Cbr%3E%3C%2Fb%3EBecause%20a)%20it's%20a%20JPEG%20image%2C%20sometimes%20bigger%20than%20200Kb%2C%20and%20b)%20if%20you%20don't%20check%20the%20site%2C%20you'll%20miss%20out%20on%20all%20the%20other%20brand%20NEW%20stuff%20that's%20going%20to%20be%20appearing%20soon...%3Cbr%3E%26nbsp%3B%3C%2Ffont%3E%3C%2Fli%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3C%2Ffont%3E%3C%2Fol%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%0A%3Cp%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%3E%3Cbr%3E%26nbsp%3B%3C%2Fp%3E%0A%3C%2Ffont%3E%3Cp%3E%3Cfont%20size%3D%22-1%22%20face%3D%22Arial%2CHelvetica%2CUnivers%2CZurich%20BT%22%3E%26nbsp%3B%3C%2Ffont%3E%3C%2Fp%3E%3C%2Ftd%3E%3C%2Ftr%3E%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%09%20%3C%2Ftr%3E%0A%09%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "58a98966-ce8e-432c-a31c-94d02d119dda",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "tvgohome.netlify.app-faq"
+}

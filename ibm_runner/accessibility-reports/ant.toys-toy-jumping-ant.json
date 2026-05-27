@@ -1,0 +1,100 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/button[1]",
+                "aria": "/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 730,
+                "top": 530,
+                "height": 50,
+                "width": 50
+            },
+            "snippet": "<button style=\"position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; border: 2px solid rgb(68, 68, 68); background: rgb(26, 26, 26); font-size: 24px; cursor: pointer; z-index: 10000; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; opacity: 1;\" title=\"Toggle magnifying glass\" id=\"mag-toggle\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cbutton%20style%3D%5C%22position%3A%20fixed%3B%20bottom%3A%2020px%3B%20right%3A%2020px%3B%20width%3A%2050px%3B%20height%3A%2050px%3B%20border-radius%3A%2050%25%3B%20border%3A%202px%20solid%20rgb(68%2C%2068%2C%2068)%3B%20background%3A%20rgb(26%2C%2026%2C%2026)%3B%20font-size%3A%2024px%3B%20cursor%3A%20pointer%3B%20z-index%3A%2010000%3B%20box-shadow%3A%20rgba(0%2C%200%2C%200%2C%200.4)%200px%202px%2010px%3B%20-webkit-tap-highlight-color%3A%20transparent%3B%20touch-action%3A%20manipulation%3B%20opacity%3A%201%3B%5C%22%20title%3D%5C%22Toggle%20magnifying%20glass%5C%22%20id%3D%5C%22mag-toggle%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/button[1]",
+                "aria": "/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 730,
+                "top": 530,
+                "height": 50,
+                "width": 50
+            },
+            "snippet": "<button style=\"position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; border: 2px solid rgb(68, 68, 68); background: rgb(26, 26, 26); font-size: 24px; cursor: pointer; z-index: 10000; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; opacity: 1;\" title=\"Toggle magnifying glass\" id=\"mag-toggle\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cbutton%20style%3D%5C%22position%3A%20fixed%3B%20bottom%3A%2020px%3B%20right%3A%2020px%3B%20width%3A%2050px%3B%20height%3A%2050px%3B%20border-radius%3A%2050%25%3B%20border%3A%202px%20solid%20rgb(68%2C%2068%2C%2068)%3B%20background%3A%20rgb(26%2C%2026%2C%2026)%3B%20font-size%3A%2024px%3B%20cursor%3A%20pointer%3B%20z-index%3A%2010000%3B%20box-shadow%3A%20rgba(0%2C%200%2C%200%2C%200.4)%200px%202px%2010px%3B%20-webkit-tap-highlight-color%3A%20transparent%3B%20touch-action%3A%20manipulation%3B%20opacity%3A%201%3B%5C%22%20title%3D%5C%22Toggle%20magnifying%20glass%5C%22%20id%3D%5C%22mag-toggle%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 206,
+    "ruleTime": 3,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "style_focus_visible": {
+            "0": "The keyboard focus indicator should be visible when default border or outline is modified by CSS",
+            "potential_focus_not_visible": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 4,
+            "elementsViolation": 0,
+            "elementsViolationReview": 3,
+            "violation": 0,
+            "potentialviolation": 2,
+            "recommendation": 1,
+            "potentialrecommendation": 1,
+            "manual": 3,
+            "pass": 199
+        },
+        "scanTime": 9,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778408110019,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3Ejumping%20ant%20%7C%20ant%20toys%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Ccanvas%20id%3D%22ants-bg%22%20width%3D%221280%22%20height%3D%22720%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20width%3A%20100%25%3B%20z-index%3A%20-1%3B%20pointer-events%3A%20none%3B%20height%3A%20720px%3B%22%3E%3C%2Fcanvas%3E%3Cheader%3E%3Ch1%3E%3Ca%20href%3D%22%2F%22%3Eant%20toys%3C%2Fa%3E%3C%2Fh1%3E%3Cp%20class%3D%22tagline%22%3Ejumping%20ant%3C%2Fp%3E%3C%2Fheader%3E%3Cmain%20class%3D%22game-page%22%3E%3Cdiv%20class%3D%22game-card%22%3E%3Cdiv%20class%3D%22ant-game%22%20data-game%3D%22jumpingant%22%3E%3Ccanvas%20width%3D%2228%22%20height%3D%2250%22%20style%3D%22image-rendering%3A%20pixelated%3B%20cursor%3A%20none%3B%22%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cp%20class%3D%22hint%22%3Emove%20mouse%20%2F%20tap%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22game-description%22%3E%3Cp%3EBounce%20upward%20on%20platforms.%20Move%20left%2Fright%20with%20mouse%20or%20touch.%2028x50%20pixels%20of%20vertical%20adventure.%3C%2Fp%3E%3Cp%20class%3D%22win-condition%22%3Ewin%3A%20reach%20height%20100%3C%2Fp%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22game-nav%22%3E%3Ca%20href%3D%22%2Ftoy%2Fconnect-4%2F%22%20class%3D%22nav-prev%22%3E%E2%86%90%20connect%204%3C%2Fa%3E%0A%3Ca%20href%3D%22%2F%22%20class%3D%22nav-home%22%3Eall%20toys%3C%2Fa%3E%0A%3Ca%20href%3D%22%2Ftoy%2Fmemory%2F%22%20class%3D%22nav-next%22%3Ememory%20%E2%86%92%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fmain%3E%3Cfooter%3E%3Ca%20href%3D%22https%3A%2F%2Ftoms.toys%22%3Etoms.toys%3C%2Fa%3E%3Cdiv%20class%3D%22legal-links%22%3E%3Ca%20href%3D%22%2Ffaq%2F%22%3Efaq%3C%2Fa%3E%0A%3Ca%20href%3D%22%2Fprivacy%2F%22%3Eprivacy%3C%2Fa%3E%0A%3Ca%20href%3D%22%2Fterms%2F%22%3Eterms%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Ffooter%3E%0A%0A%0A%3C!--%20Google%20tag%20(gtag.js)%20--%3E%0A%0A%3Cdiv%20id%3D%22magnifier%22%20style%3D%22position%3A%20fixed%3B%20width%3A%20220px%3B%20height%3A%20220px%3B%20border-radius%3A%2050%25%3B%20border%3A%203px%20solid%20rgb(68%2C%2068%2C%2068)%3B%20box-shadow%3A%20rgba(0%2C%200%2C%200%2C%200.5)%200px%200px%2020px%2C%20rgba(0%2C%200%2C%200%2C%200.3)%200px%200px%2040px%20inset%3B%20z-index%3A%209999%3B%20display%3A%20none%3B%20overflow%3A%20hidden%3B%20pointer-events%3A%20none%3B%20background%3A%20rgb(10%2C%2010%2C%2010)%3B%22%3E%3Cdiv%20style%3D%22position%3A%20absolute%3B%20transform-origin%3A%20center%20center%3B%20pointer-events%3A%20none%3B%20will-change%3A%20transform%3B%22%3E%3C%2Fdiv%3E%3Ccanvas%20width%3D%22220%22%20height%3D%22220%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20border-radius%3A%2050%25%3B%20image-rendering%3A%20pixelated%3B%22%3E%3C%2Fcanvas%3E%3C%2Fdiv%3E%3Cbutton%20id%3D%22mag-toggle%22%20title%3D%22Toggle%20magnifying%20glass%22%20style%3D%22position%3A%20fixed%3B%20bottom%3A%2020px%3B%20right%3A%2020px%3B%20width%3A%2050px%3B%20height%3A%2050px%3B%20border-radius%3A%2050%25%3B%20border%3A%202px%20solid%20rgb(68%2C%2068%2C%2068)%3B%20background%3A%20rgb(26%2C%2026%2C%2026)%3B%20font-size%3A%2024px%3B%20cursor%3A%20pointer%3B%20z-index%3A%2010000%3B%20box-shadow%3A%20rgba(0%2C%200%2C%200%2C%200.4)%200px%202px%2010px%3B%20-webkit-tap-highlight-color%3A%20transparent%3B%20touch-action%3A%20manipulation%3B%20opacity%3A%201%3B%22%3E%F0%9F%94%8D%3C%2Fbutton%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "4f4cf4a0-7840-4c21-a9eb-46b76cbd8ac4",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "ant.toys-toy-jumping-ant"
+}

@@ -1,0 +1,1051 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 512,
+                "width": 784
+            },
+            "snippet": "<div style=\"\n     \n      background-image: url(https://a.storyblok.com/f/127416/1107x603/45ff181aa8/header_gratitude_list.png);\n  \" class=\"fm-blog-hero is-post\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22%5Cn%20%20%20%20%20%5Cn%20%20%20%20%20%20background-image%3A%20url(https%3A%2F%2Fa.storyblok.com%2Ff%2F127416%2F1107x603%2F45ff181aa8%2Fheader_gratitude_list.png)%3B%5Cn%20%20%5C%22%20class%3D%5C%22fm-blog-hero%20is-post%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/nav[1]/div[1]/a[1]",
+                "aria": "/document[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 156,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-navbar-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-navbar-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/nav[1]/div[1]/a[1]",
+                "aria": "/document[1]/navigation[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 156,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-navbar-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-navbar-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/nav[1]/div[1]/a[1]/span[1]/img[1]",
+                "aria": "/document[1]/navigation[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 171,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/p[5]/img[1]",
+                "aria": "/document[1]/paragraph[8]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 835,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/p[25]",
+                "aria": "/document[1]/paragraph[28]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'round'",
+            "messageArgs": [
+                "round"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2138,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'round'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22round%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/a[1]",
+                "aria": "/document[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2251,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://twitter.com/intent/tweet?text=How%20to%20write%20a%20letter%20to%20yourself%3A%20The%20gratitude%20list&url=https%3A%2F%2Fwww.futureme.org%2Fblog%2Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude&via=futureme\" data-tooltip=\"Share on Twitter\" target=\"_blank\" class=\"fm-icon is-size-3 is-brand is-twitter tooltip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DHow%2520to%2520write%2520a%2520letter%2520to%2520yourself%253A%2520The%2520gratitude%2520list%26url%3Dhttps%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%26via%3Dfutureme%5C%22%20data-tooltip%3D%5C%22Share%20on%20Twitter%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-icon%20is-size-3%20is-brand%20is-twitter%20tooltip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/a[1]",
+                "aria": "/document[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2251,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://twitter.com/intent/tweet?text=How%20to%20write%20a%20letter%20to%20yourself%3A%20The%20gratitude%20list&url=https%3A%2F%2Fwww.futureme.org%2Fblog%2Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude&via=futureme\" data-tooltip=\"Share on Twitter\" target=\"_blank\" class=\"fm-icon is-size-3 is-brand is-twitter tooltip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DHow%2520to%2520write%2520a%2520letter%2520to%2520yourself%253A%2520The%2520gratitude%2520list%26url%3Dhttps%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%26via%3Dfutureme%5C%22%20data-tooltip%3D%5C%22Share%20on%20Twitter%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-icon%20is-size-3%20is-brand%20is-twitter%20tooltip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/a[2]",
+                "aria": "/document[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2251,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.futureme.org%2Fblog%2Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude\" data-tooltip=\"Share on Facebook\" target=\"_blank\" class=\"fm-icon is-size-3 is-brand is-facebook tooltip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%5C%22%20data-tooltip%3D%5C%22Share%20on%20Facebook%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-icon%20is-size-3%20is-brand%20is-facebook%20tooltip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/a[2]",
+                "aria": "/document[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2251,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.futureme.org%2Fblog%2Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude\" data-tooltip=\"Share on Facebook\" target=\"_blank\" class=\"fm-icon is-size-3 is-brand is-facebook tooltip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%5C%22%20data-tooltip%3D%5C%22Share%20on%20Facebook%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-icon%20is-size-3%20is-brand%20is-facebook%20tooltip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/a[3]",
+                "aria": "/document[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2251,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"whatsapp://send?text=https%3A%2F%2Fwww.futureme.org%2Fblog%2Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude\" data-tooltip=\"Share via WhatsApp\" target=\"_blank\" class=\"fm-icon is-size-3 is-brand is-whatsapp tooltip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22whatsapp%3A%2F%2Fsend%3Ftext%3Dhttps%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%5C%22%20data-tooltip%3D%5C%22Share%20via%20WhatsApp%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-icon%20is-size-3%20is-brand%20is-whatsapp%20tooltip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/a[3]",
+                "aria": "/document[1]/link[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2251,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"whatsapp://send?text=https%3A%2F%2Fwww.futureme.org%2Fblog%2Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude\" data-tooltip=\"Share via WhatsApp\" target=\"_blank\" class=\"fm-icon is-size-3 is-brand is-whatsapp tooltip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22whatsapp%3A%2F%2Fsend%3Ftext%3Dhttps%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%5C%22%20data-tooltip%3D%5C%22Share%20via%20WhatsApp%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-icon%20is-size-3%20is-brand%20is-whatsapp%20tooltip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/a[4]",
+                "aria": "/document[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2251,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"mailto:?body=How%20to%20write%20a%20letter%20to%20yourself%3A%20The%20gratitude%20list https%3A%2F%2Fwww.futureme.org%2Fblog%2Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude\" data-tooltip=\"Share by Email\" target=\"_blank\" class=\"fm-icon is-size-3 is-brand is-google tooltip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22mailto%3A%3Fbody%3DHow%2520to%2520write%2520a%2520letter%2520to%2520yourself%253A%2520The%2520gratitude%2520list%20https%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%5C%22%20data-tooltip%3D%5C%22Share%20by%20Email%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-icon%20is-size-3%20is-brand%20is-google%20tooltip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/a[4]",
+                "aria": "/document[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2251,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"mailto:?body=How%20to%20write%20a%20letter%20to%20yourself%3A%20The%20gratitude%20list https%3A%2F%2Fwww.futureme.org%2Fblog%2Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude\" data-tooltip=\"Share by Email\" target=\"_blank\" class=\"fm-icon is-size-3 is-brand is-google tooltip\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22mailto%3A%3Fbody%3DHow%2520to%2520write%2520a%2520letter%2520to%2520yourself%253A%2520The%2520gratitude%2520list%20https%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%5C%22%20data-tooltip%3D%5C%22Share%20by%20Email%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-icon%20is-size-3%20is-brand%20is-google%20tooltip%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[2]/button[1]",
+                "aria": "/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2263,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button data-tooltip=\"Copy to clipboard\" data-copy=\"https://www.futureme.org/blog/how-to-write-a-letter-to-yourself-in-the-future-gratitude\" class=\"fm-icon is-size-3 is-brand tooltip js-copy-data\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%20data-tooltip%3D%5C%22Copy%20to%20clipboard%5C%22%20data-copy%3D%5C%22https%3A%2F%2Fwww.futureme.org%2Fblog%2Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%5C%22%20class%3D%5C%22fm-icon%20is-size-3%20is-brand%20tooltip%20js-copy-data%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4670,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4670,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"/\" class=\"fm-logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2F%5C%22%20class%3D%5C%22fm-logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[1]/a[1]/img[1]",
+                "aria": "/document[1]/contentinfo[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4684,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_descendant_valid",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[2]/form[1]/button[1]",
+                "aria": "/document[1]/contentinfo[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_child_implicit_role",
+            "message": "The element with role \"button\" contains descendants with implicit roles \"strong\" which are ignored by browsers",
+            "messageArgs": [
+                "button",
+                "strong"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4707,
+                "height": 22,
+                "width": 103
+            },
+            "snippet": "<button type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_descendant_valid.html#%7B%22message%22%3A%22The%20element%20with%20role%20%5C%22button%5C%22%20contains%20descendants%20with%20implicit%20roles%20%5C%22strong%5C%22%20which%20are%20ignored%20by%20browsers%22%2C%22snippet%22%3A%22%3Cbutton%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_child_implicit_role%22%2C%22ruleId%22%3A%22aria_descendant_valid%22%2C%22msgArgs%22%3A%5B%22button%22%2C%22strong%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://twitter.com/futureme\" class=\"fm-icon is-twitter is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-twitter%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://twitter.com/futureme\" class=\"fm-icon is-twitter is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Ftwitter.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-twitter%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.facebook.com/futureme\" class=\"fm-icon is-facebook is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-facebook%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.facebook.com/futureme\" class=\"fm-icon is-facebook is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.facebook.com%2Ffutureme%5C%22%20class%3D%5C%22fm-icon%20is-facebook%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[3]",
+                "aria": "/document[1]/contentinfo[1]/link[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.youtube.com/channel/UC6RKoiEdLnf2Fz91NImhUgg\" class=\"fm-icon is-youtube is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC6RKoiEdLnf2Fz91NImhUgg%5C%22%20class%3D%5C%22fm-icon%20is-youtube%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[3]",
+                "aria": "/document[1]/contentinfo[1]/link[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.youtube.com/channel/UC6RKoiEdLnf2Fz91NImhUgg\" class=\"fm-icon is-youtube is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC6RKoiEdLnf2Fz91NImhUgg%5C%22%20class%3D%5C%22fm-icon%20is-youtube%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[4]",
+                "aria": "/document[1]/contentinfo[1]/link[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.linkedin.com/company/futureme-labs/?viewAsMember=true\" class=\"fm-icon is-linked is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ffutureme-labs%2F%3FviewAsMember%3Dtrue%5C%22%20class%3D%5C%22fm-icon%20is-linked%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[4]",
+                "aria": "/document[1]/contentinfo[1]/link[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.linkedin.com/company/futureme-labs/?viewAsMember=true\" class=\"fm-icon is-linked is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ffutureme-labs%2F%3FviewAsMember%3Dtrue%5C%22%20class%3D%5C%22fm-icon%20is-linked%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[5]",
+                "aria": "/document[1]/contentinfo[1]/link[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.instagram.com/futureme_official/?hl=en\" class=\"fm-icon is-instagram is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.instagram.com%2Ffutureme_official%2F%3Fhl%3Den%5C%22%20class%3D%5C%22fm-icon%20is-instagram%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[3]/div[1]/a[5]",
+                "aria": "/document[1]/contentinfo[1]/link[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://www.instagram.com/futureme_official/?hl=en\" class=\"fm-icon is-instagram is-4 is-size-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.instagram.com%2Ffutureme_official%2F%3Fhl%3Den%5C%22%20class%3D%5C%22fm-icon%20is-instagram%20is-4%20is-size-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://apple.co/3PlaxUc\" target=\"_blank\" class=\"fm-image is-app-store\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fapple.co%2F3PlaxUc%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-app-store%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[1]",
+                "aria": "/document[1]/contentinfo[1]/link[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4871,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://apple.co/3PlaxUc\" target=\"_blank\" class=\"fm-image is-app-store\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fapple.co%2F3PlaxUc%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-app-store%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[1]/img[1]",
+                "aria": "/document[1]/contentinfo[1]/link[11]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4886,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 4871,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://bit.ly/38qZ30P\" target=\"_blank\" class=\"fm-image is-google-play\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fbit.ly%2F38qZ30P%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-google-play%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[2]",
+                "aria": "/document[1]/contentinfo[1]/link[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 4871,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://bit.ly/38qZ30P\" target=\"_blank\" class=\"fm-image is-google-play\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fbit.ly%2F38qZ30P%5C%22%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22fm-image%20is-google-play%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]/div[1]/div[4]/div[1]/a[2]/img[1]",
+                "aria": "/document[1]/contentinfo[1]/link[12]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 4886,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1413,
+    "ruleTime": 15,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "aria_descendant_valid": {
+            "0": "Browsers ignore the explicit and implicit ARIA roles of the descendants of certain elements",
+            "potential_child_implicit_role": "The element with role \"{0}\" contains descendants with implicit roles \"{1}\" which are ignored by browsers"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 43,
+            "elementsViolation": 19,
+            "elementsViolationReview": 22,
+            "violation": 19,
+            "potentialviolation": 16,
+            "recommendation": 20,
+            "potentialrecommendation": 8,
+            "manual": 2,
+            "pass": 1348
+        },
+        "scanTime": 61,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779045417880,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EHow%20do%20I%20write%20a%20letter%20to%20myself%20in%20the%20future%3F%20Gratitude%20Writing%20Prompts%20%E2%80%93%20FutureMe%20Blog%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%20%20%0A%0A%20%20%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3Cdiv%20class%3D%22fm-blog-hero%20is-post%22%20style%3D%22%0A%20%20%20%20%20%0A%20%20%20%20%20%20background-image%3A%20url(https%3A%2F%2Fa.storyblok.com%2Ff%2F127416%2F1107x603%2F45ff181aa8%2Fheader_gratitude_list.png)%3B%0A%20%20%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-hero-background%22%3E%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20style%3D%22background-color%3A%20%231c3dc2%3B%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-ad-above-navbar%20p2%20is-hidden-desktop%22%3E%0A%20%20%20%20%0A%3C!--%20Landscape%20Top%20Fixed%20Mobile%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%22%20style%3D%22display%3Ainline-block%3Bwidth%3A320px%3Bheight%3A50px%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%222381674570%22%3E%3C%2Fins%3E%0A%0A%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22fm-ad-above-navbar%20p2%20is-hidden-mobile%22%3E%0A%20%20%20%20%0A%3C!--%20Landscape%20Top%20Fixed%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-landscape-top%22%20style%3D%22display%3Ainline-block%3Bwidth%3A728px%3Bheight%3A90px%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%229631369396%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%3C%2Fdiv%3E%0A%0A%3C%2Fdiv%3E%0A%0A%3Cnav%20class%3D%22fm-navbar%20is-primary%22%20data-controller%3D%22burger-menu%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-navbar-brand%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-navbar-logo%22%20href%3D%22%2F%22%3E%0A%20%20%20%20%20%20%3Cspan%20class%3D%22fm-logo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22fm-navbar-start%22%3E%0A%20%20%20%20%20%20%3Cul%20class%3D%22fm-navbar-links%22%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fletters%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-pencil%20fa-xs%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EWrite%20a%20Letter%20to%20the%20Future%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-burger%20fm-navbar-burger%20burger%22%20data-action%3D%22click-%26gt%3Bburger-menu%23toggle%22%3E%0A%20%20%20%20%3Cdiv%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%3E%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20id%3D%22nav-menu%22%20class%3D%22fm-navbar-menu%22%20data-burger-menu-target%3D%22menu%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-end%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22fm-navbar-links%22%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20Public%20Letters%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fblog%22%20class%3D%22is-active%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EBlog%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fprops%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EPress%20%26amp%3B%20Props%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-dropdown%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-dropdown-main%20is-duo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Mobile%20version%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-desktop%20fm-btn%20is-outlined%20is-tight%22%20href%3D%22%2Fsessions%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20In%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-desktop%20fm-btn%20is-bold%20is-tight%20is-primary%22%20data-action%3D%22tealium-events%23trackTealiumEvent%3Acapture%22%20data-tealium-events-event-name-param%3D%22sign_up_clicked%22%20href%3D%22%2Fusers%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20Up%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C!--%20Desktop%20version%20--%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-mobile%20fm-btn%20is-outlined%20is-tight%20is-invert%22%20href%3D%22%2Fsessions%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20In%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22is-hidden-navbar-mobile%20fm-btn%20is-bold%20is-tight%20%22%20data-action%3D%22tealium-events%23trackTealiumEvent%3Acapture%22%20data-tealium-events-event-name-param%3D%22sign_up_clicked%22%20href%3D%22%2Fusers%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESign%20Up%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-navbar-dropdown-body%20is-hidden-navbar-desktop%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%20is-hidden-navbar-start-desktop%22%20href%3D%22%2Fletters%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-pencil%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EWrite%20a%20Letter%20to%20the%20Future%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%20is-hidden-navbar-start-desktop%22%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-book-open-reader%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ERead%20Public%20Letters%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%22%20href%3D%22%2Fblog%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-rss%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EBlog%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-navbar-dropdown-item%22%20href%3D%22%2Fprops%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-newspaper%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EPress%20%26amp%3B%20Props%3C%2Fspan%3E%0A%3C%2Fa%3E%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fnav%3E%0A%0A%0A%20%20%3Cdiv%20class%3D%22fm-container%20fm-blog-hero-body%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-blog-hero-content%22%3E%0A%20%20%20%20%20%20%3Cp%20class%3D%22fm-blog-hero-category%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fblog%22%3EBlog%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%20is-2%20is-size-2%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-angle-right%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.futureme.org%2Fblog%2Fcategory%3Fname%3Dwriting-letters-to-future%22%3EWriting%20letters%20to%20the%20future%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%20%20%3Ch1%20class%3D%22fm-title%20fm-blog-hero-title%22%3E%0A%20%20%20%20%20%20%20%20How%20to%20write%20a%20letter%20to%20yourself%3A%20The%20gratitude%20list%0A%20%20%20%20%20%20%3C%2Fh1%3E%0A%0A%20%20%20%20%20%20%3Cp%20class%3D%22fm-blog-hero-intro%22%3E%0A%20%20%20%20%20%20%20%20Gratitude%20rhymes%20with%20attitude%2C%20and%20it%20is%20the%20attitude%20we%20apply%20to%20our%20lives%20that%20help%20us%20celebrate%20the%20present%20and%20be%20truly%20happy.%0A%20%20%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%20%20%3Cp%20class%3D%22fm-blog-hero-info%22%3E%0A%20%20%20%20%20%20%20%20Published%20Mar%201st%2C%202022%0A%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3Cdiv%20class%3D%22fm-post-main%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-post-main-container%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-post-main-content%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-content%22%3E%0A%20%20%20%20%20%20%20%20%3Cp%3EStarting%20a%20new%20relationship%20with%20gratitude%20can%20provide%20a%20new%20perspective%20and%20appreciation%20for%20things.%20It%20can%20help%20others%20around%20you%20to%20feel%20amazing%20too!%20But%20what%20exactly%20%3Ci%3Eis%3C%2Fi%3E%20gratitude%3F%3C%2Fp%3E%3Chr%3E%3Cp%3EGratitude%20is%20the%20concept%20of%20being%20thankful%20for%20what%20you%20receive.%20It%20is%20appreciating%20what%20you%20have%20and%20acknowledging%20the%20goodness%20in%20the%20people%20you%20are%20surrounded%20by.%20It%20includes%20being%20aware%20of%20your%20surroundings%20and%20appreciating%20simple%20things%2C%20such%20as%20the%20beautiful%20weather%20outside.%3C%2Fp%3E%3Cp%3E%26nbsp%3BIt%20emerges%20from%20within%20you%20as%20you%20take%20a%20moment%20to%20pause%20and%20think%20about%20it.%20It%20can%20often%20be%20centred%20on%20the%20things%20we%20take%20for%20granted%20in%20life%2C%20and%20the%20things%20we%20overlook.%3C%2Fp%3E%3Cp%3E%26nbsp%3BHaving%20gratitude%20keeps%20you%20focused%20on%20what%20you%20have%20in%20life%20(rather%20than%20the%20things%20you%20don%E2%80%99t%20have).%20Here%20are%20a%20few%20tips%20to%20get%20you%20started.%20Using%20these%20tips%2C%20you'll%20be%20able%20to%20create%20your%20own%20gratitude%20rituals%2C%20or%20use%20%3Ca%20href%3D%22https%3A%2F%2Fwww.futureme.org%2F%22%20target%3D%22_self%22%3EFutureMe%20letters%20to%20the%20future%3C%2Fa%3E%20to%20help%20you%20practice.%3C%2Fp%3E%3Chr%3E%3Cp%3E%3Cimg%3E%3C%2Fp%3E%3Chr%3E%3Ch2%3EPRACTICE%20A%20MORNING%20GRATITUDE%20RITUAL%3C%2Fh2%3E%3Cp%3EWake%20up%20and%20think%20of%203%20things%20you%20are%20grateful%20for%20to%20kick-start%20your%20morning%3A%3C%2Fp%3E%3Cul%3E%0A%3Cli%3E%3Cp%3E%3Ci%3E%E2%80%9CI%E2%80%99m%20grateful%20for%20the%20beautiful%20sunrise%20I%20watched.%E2%80%9D%3C%2Fi%3E%3C%2Fp%3E%3C%2Fli%3E%0A%3Cli%3E%3Cp%3E%3Ci%3E%E2%80%9CI%E2%80%99m%20grateful%20I%E2%80%99m%20feeling%20in%20perfect%20health.%E2%80%9D%3C%2Fi%3E%3C%2Fp%3E%3C%2Fli%3E%0A%3Cli%3E%3Cp%3E%3Ci%3E%E2%80%9CI%E2%80%99m%20grateful%20my%20flatmate%20made%20me%20a%20yummy%20breakfast.%E2%80%9D%3C%2Fi%3E%3C%2Fp%3E%3C%2Fli%3E%0A%3C%2Ful%3E%3Chr%3E%3Cdiv%20class%3D%22fm-content-cta%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.futureme.org%2F%22%20target%3D%22_self%22%20class%3D%22fm-btn%20is-selected%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%3EWrite%20your%203%20things%20in%20a%20letter%20to%20the%20future%3C%2Fspan%3E%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fdiv%3E%3Chr%3E%3Ch2%3EINCORPORATE%20GRATITUDE%20INTO%20YOUR%20DAILY%20LIFE%3C%2Fh2%3E%3Cp%3EThe%20best%20part%20is%2C%20you%20can%20be%20grateful%20and%20express%20this%20to%20whoever%20you%20are%20with%20and%20wherever%20you%20are!%20Remember%20to%20thank%20the%20person%20who%20cooked%20your%20dinner%3A%3C%2Fp%3E%3Cp%3E%3Ci%3E%E2%80%9CDad%2C%20that%20dinner%20was%20AMAZING%20%E2%80%94%20thanks!%E2%80%9D%3C%2Fi%3E%3C%2Fp%3E%3Cp%3EAppreciate%20your%20partner%20for%20cleaning%20the%20house%20that%20day%3A%3C%2Fp%3E%3Cp%3E%3Ci%3E%E2%80%9CI%E2%80%99ve%20never%20seen%20the%20house%20look%20so%20clean%2C%20thank%20you%20SO%20much%20honey!%E2%80%9D%3C%2Fi%3E%3C%2Fp%3E%3Cp%3EShow%20kindness%20to%20your%20colleague%20at%20work%3A%3C%2Fp%3E%3Cp%3E%3Ci%3E%E2%80%9CI%20really%20appreciated%20you%20teaching%20me%20how%20to%20use%20the%20new%20printer!%E2%80%9D%3C%2Fi%3E%3C%2Fp%3E%3Ch2%3ESTART%20A%20DAILY%20GRATITUDE%20JOURNAL%3C%2Fh2%3E%3Cp%3EWriting%20things%20down%20can%20keep%20your%20mind%20staying%20positive%20and%20away%20from%20negative%20emotions.%3C%2Fp%3E%3Cp%3EStart%20a%20daily%20gratitude%20journal%20and%20write%20a%20letter%20to%20future%20self.%3C%2Fp%3E%3Cp%3EToday%20I%20am%20grateful%20for%3A%3C%2Fp%3E%3Cp%3E1.%3C%2Fp%3E%3Cp%3E2.%3C%2Fp%3E%3Cp%3E3.%3C%2Fp%3E%3Cp%3E%E2%80%A6And%20TA-DA%20you%E2%80%99re%20doing%20it!%3C%2Fp%3E%3Cp%3EBut%20wait%2C%20there%E2%80%99s%20more%E2%80%A6%3C%2Fp%3E%3Cp%3EMaking%20a%20list%20of%20all%20the%20things%20you%E2%80%99re%20grateful%20for%20can%20have%20a%20spectacular%20effect%20on%20your%20health%20over%20time.%20It%20can%3A%3C%2Fp%3E%3Cul%3E%0A%3Cli%3E%3Cp%3EIMPROVE%20your%20mental%20health%3C%2Fp%3E%3C%2Fli%3E%0A%3Cli%3E%3Cp%3EMAGNIFY%20positive%20emotions%3C%2Fp%3E%3C%2Fli%3E%0A%3Cli%3E%3Cp%3EREDUCE%20your%20stress%3C%2Fp%3E%3C%2Fli%3E%0A%3Cli%3E%3Cp%3EINCREASE%20your%20resilience%3C%2Fp%3E%3C%2Fli%3E%0A%3Cli%3E%3Cp%3EBUILD%20strong%20relationships%3C%2Fp%3E%3C%2Fli%3E%0A%3Cli%3E%3Cp%3EBOOST%20your%20self%20esteem%3C%2Fp%3E%3C%2Fli%3E%0A%3Cli%3E%3Cp%3ESUPPORT%20a%20restful%20sleep%3C%2Fp%3E%3C%2Fli%3E%0A%3Cli%3E%3Cp%3EDEVELOP%20healthy%20habits.%3C%2Fp%3E%3C%2Fli%3E%0A%3C%2Ful%3E%3Cp%3E%3C%2Fp%3E%3Cp%3EHaving%20gratitude%20can%20warm%20your%20heart%20as%20you%20reflect%20on%20all%20the%20wonderful%20people%20and%20stories%20that%20have%20filled%20your%20life%20with%20such%20joy.%20Savor%20precious%20moments%20like%20these%20that%20make%20you%20smile.%3C%2Fp%3E%3Cp%3ELike%20the%20Frank%20Sinatra%20song%20goes%2C%20%E2%80%9CWhen%20you%E2%80%99re%20smiling%20%E2%80%A6when%20you%E2%80%99re%20smiling%E2%80%A6the%20whole%20world%20smiles%20with%20you%E2%80%9D.%20Telling%20people%20in%20your%20life%20how%20you%20feel%20and%20how%20much%20they%20mean%20to%20you%20can%20keep%20everyone%20smiling.%3C%2Fp%3E%3Cp%3EA%20smile%20can%20change%20the%20world%2C%20and%20happiness%20makes%20the%20world%20go%20round%2C%20after%20all.%3C%2Fp%3E%3Cp%3EStart%20a%20gratitude%20list%20today!%3C%2Fp%3E%3Chr%3E%3Cdiv%20class%3D%22fm-content-cta%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.futureme.org%2F%22%20target%3D%22_self%22%20class%3D%22fm-btn%20is-selected%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%3EWrite%20the%20way%20ahead%20with%20FutureMe%3C%2Fspan%3E%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-post-tags%20fm-badges%22%3E%0A%20%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22fm-post-share%22%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-size-3%20is-brand%20is-twitter%20tooltip%22%20target%3D%22_blank%22%20data-tooltip%3D%22Share%20on%20Twitter%22%20href%3D%22https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3DHow%2520to%2520write%2520a%2520letter%2520to%2520yourself%253A%2520The%2520gratitude%2520list%26amp%3Burl%3Dhttps%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%26amp%3Bvia%3Dfutureme%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-twitter%22%3E%3C%2Fi%3E%0A%3C%2Fa%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-size-3%20is-brand%20is-facebook%20tooltip%22%20target%3D%22_blank%22%20data-tooltip%3D%22Share%20on%20Facebook%22%20href%3D%22https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-facebook-f%22%3E%3C%2Fi%3E%0A%3C%2Fa%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-size-3%20is-brand%20is-whatsapp%20tooltip%22%20target%3D%22_blank%22%20data-tooltip%3D%22Share%20via%20WhatsApp%22%20href%3D%22whatsapp%3A%2F%2Fsend%3Ftext%3Dhttps%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-whatsapp%20fa-lg%22%3E%3C%2Fi%3E%0A%3C%2Fa%3E%0A%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-size-3%20is-brand%20is-google%20tooltip%22%20target%3D%22_blank%22%20data-tooltip%3D%22Share%20by%20Email%22%20href%3D%22mailto%3A%3Fbody%3DHow%2520to%2520write%2520a%2520letter%2520to%2520yourself%253A%2520The%2520gratitude%2520list%20https%253A%252F%252Fwww.futureme.org%252Fblog%252Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-envelope%20fa-sm%22%3E%3C%2Fi%3E%0A%3C%2Fa%3E%0A%20%20%20%20%3Cbutton%20class%3D%22fm-icon%20is-size-3%20is-brand%20tooltip%20js-copy-data%22%20data-copy%3D%22https%3A%2F%2Fwww.futureme.org%2Fblog%2Fhow-to-write-a-letter-to-yourself-in-the-future-gratitude%22%20data-tooltip%3D%22Copy%20to%20clipboard%22%3E%0A%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-link%20fa-xs%22%3E%3C%2Fi%3E%0A%20%20%20%20%3C%2Fbutton%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22fm-right-rail%20is-hidden-touch%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%20ad%20ad-right-rail%20mt4%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Right%20Rail%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-right-rail%22%20style%3D%22display%3Ablock%3Bwidth%3A160px%3Bheight%3A600px%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%227199054851%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%20%20%0A%0A%3Cdiv%20class%3D%22is-hidden-touch%20flex%20justify-center%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22ad%20center%20tc%22%3E%0A%20%20%20%20%20%20%0A%3C!--%20Landscape%20Fixed%20--%3E%0A%3Cins%20class%3D%22adsbygoogle%20adsbygoogle-landscape%22%20style%3D%22display%3Ablock%3B%22%20data-ad-client%3D%22ca-pub-4873129114696225%22%20data-ad-slot%3D%226832765911%22%20data-full-width-responsive%3D%22true%22%20data-processed%3D%22true%22%3E%3C%2Fins%3E%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%0A%3C%2Fdiv%3E%0A%0A%0A%3Cfooter%20class%3D%22fm-footer%20is-default%22%3E%0A%20%20%3Cdiv%20class%3D%22fm-footer-main%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22fm-footer-logo%20fm-block%22%3E%0A%20%20%20%20%20%20%3Ca%20class%3D%22fm-logo%22%20href%3D%22%2F%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%3E%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-footer-links%20fm-block%22%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22%2Fletters%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-pencil%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3Cstrong%3EWrite%20a%20letter%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%3Ca%20rel%3D%22ugc%22%20href%3D%22%2Fletters%2Fpublic%22%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-book-open-reader%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%3Cstrong%3ERead%20Public%20Letters%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fsessions%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-right-to-bracket%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%3ESign%20In%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fusers%2Fnew%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-solid%20fa-user%20fa-sm%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%3ESign%20Up%3C%2Fstrong%3E%0A%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Cform%20class%3D%22button_to%22%20method%3D%22get%22%20action%3D%22%2Freferrals%2Finvite%22%20data-remote%3D%22true%22%3E%3Cbutton%20type%3D%22submit%22%3E%0A%20%20%20%20%3Cspan%20class%3D%22fm-icon%22%3E%3Ci%20class%3D%22fa-solid%20fa-paper-plane%20fa-sm%22%3E%3C%2Fi%3E%3C%2Fspan%3E%0A%20%20%20%20%3Cstrong%3EInvite%20a%20friend%3C%2Fstrong%3E%0A%3C%2Fbutton%3E%3C%2Fform%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cul%20class%3D%22fm-footer-list%20fm-block%22%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2F%22%3EHome%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fprops%22%3EPress%20%26amp%3B%20Props%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fpages%2Fjobs%22%3EJobs%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22mailto%3Aadvertising%40futureme.org%3FSubject%3DFutureMe%2520Advertising%2520Inquiry%22%3EAdvertise%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fsupport.memories.net%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3ESupport%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fblog%22%3EBlog%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3C%2Ful%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-block%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-icons%20is-start%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-twitter%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Ftwitter.com%2Ffutureme%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-twitter%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-facebook%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.facebook.com%2Ffutureme%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-facebook-f%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-youtube%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC6RKoiEdLnf2Fz91NImhUgg%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-youtube%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-linked%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ffutureme-labs%2F%3FviewAsMember%3Dtrue%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-linkedin%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22fm-icon%20is-instagram%20is-4%20is-size-4%22%20href%3D%22https%3A%2F%2Fwww.instagram.com%2Ffutureme_official%2F%3Fhl%3Den%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa-brands%20fa-instagram%22%3E%3C%2Fi%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-block%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22fm-images%22%3E%0A%20%20%3Ca%20class%3D%22fm-image%20is-app-store%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fapple.co%2F3PlaxUc%22%3E%3Cimg%3E%3C%2Fa%3E%0A%20%20%3Ca%20class%3D%22fm-image%20is-google-play%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fbit.ly%2F38qZ30P%22%3E%3Cimg%3E%3C%2Fa%3E%0A%3C%2Fdiv%3E%0A%0A%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22fm-footer-tsp%22%3E%0A%20%20%20%20%20%20%3Cul%20class%3D%22fm-footer-list%22%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fpages%2Ftos%22%3ETerms%20of%20use%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2Fpages%2Fprivacy-policy%22%3EPrivacy%20Policy%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%0A%20%20%20%20%20%20%3Cp%3E%0A%20%20%20%20%20%20%20%20FutureMe%E2%84%A2%20brought%20to%20you%20by%20Memories%20Group%20Limited%20%C2%A9%202002%20-%202026.%0A%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20Yup%20-%20we've%20been%20sending%20letters%20to%20the%20future%20for%20over%2024%20years%20now%0A%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%20%20%20%20%3Cdiv%20data-controller%3D%22gdpr%22%20id%3D%22gdpr_consent_notification%22%20class%3D%22notification%20bg-mid-gray%20sticky%20is-flex%22%20style%3D%22margin-bottom%3A%200px%3B%20align-items%3A%20center%3B%22%3E%0A%20%20%20%20%3Cp%20class%3D%22mr2%22%3EFutureMe%20uses%20cookies%2C%20%26nbsp%3B%3Ca%20href%3D%22%2Fpages%2Ftos%22%20target%3D%22_blank%22%3Eread%20how%3C%2Fa%3E%20%3C%2Fp%3E%0A%20%20%20%20%3Cbutton%20id%3D%22gdpr_consent_button%22%20class%3D%22button%20is-success%20is-outlined%22%20style%3D%22margin-top%3A%205px%3B%22%3EGot%20it!%3C%2Fbutton%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%3Cdiv%20id%3D%22invite-friend-container%22%3E%3C%2Fdiv%3E%0A%0A%20%20%0A%20%20%0A%20%20%0A%0A%0A%3Cimg%20height%3D%221%22%20width%3D%221%22%20fetchpriority%3D%22high%22%20style%3D%22display%3A%20none%3B%22%3E%3Cimg%20height%3D%221%22%20width%3D%221%22%20fetchpriority%3D%22high%22%20style%3D%22display%3A%20none%3B%22%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "65882db0-7d5b-4b84-b32a-378df627b40c",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.futureme.org-blog-how-to-write-a-letter-to-yourself-in-the-future-gratitude"
+}

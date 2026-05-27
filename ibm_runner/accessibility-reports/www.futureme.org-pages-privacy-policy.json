@@ -1,0 +1,1032 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/header[1]/nav[1]/div[1]/a[1]/img[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 291,
+                "height": 19,
+                "width": 119
+            },
+            "snippet": "<img style=\"color:transparent\" class=\"w-[170px] sm:w-[190px] lg:w-[220px]\" data-nimg=\"1\" decoding=\"async\" height=\"20\" width=\"220\" loading=\"lazy\" alt=\"Memories Logo\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cimg%20style%3D%5C%22color%3Atransparent%5C%22%20class%3D%5C%22w-%5B170px%5D%20sm%3Aw-%5B190px%5D%20lg%3Aw-%5B220px%5D%5C%22%20data-nimg%3D%5C%221%5C%22%20decoding%3D%5C%22async%5C%22%20height%3D%5C%2220%5C%22%20width%3D%5C%22220%5C%22%20loading%3D%5C%22lazy%5C%22%20alt%3D%5C%22Memories%20Logo%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/header[1]/nav[1]/div[1]/div[1]/button[1]/svg[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 102,
+                "top": 313,
+                "height": 24,
+                "width": 24
+            },
+            "snippet": "<svg class=\"lucide lucide-chevron-down w-5 h-5\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" viewBox=\"0 0 24 24\" height=\"24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22lucide%20lucide-chevron-down%20w-5%20h-5%5C%22%20stroke-linejoin%3D%5C%22round%5C%22%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%20height%3D%5C%2224%5C%22%20width%3D%5C%2224%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_descendant_valid",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/header[1]/nav[1]/div[2]/button[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_child_implicit_role",
+            "message": "The element with role \"button\" contains descendants with implicit roles \"link\" which are ignored by browsers",
+            "messageArgs": [
+                "button",
+                "link"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 90,
+                "top": 343,
+                "height": 34,
+                "width": 73
+            },
+            "snippet": "<button class=\"inline-flex items-center justify-center whitespace-nowrap rounded-md transition-[color,box-shadow] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 ring-ring/10 dark:ring-ring/20 dark:outline-ring/40 outline-ring/50 focus-visible:ring-4 focus-visible:outline-1 aria-invalid:focus-visible:ring-0 text-base underline-offset-4 hover:underline h-9 py-2 text-foreground gap-1 px-0 md:px-2\" data-slot=\"button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_descendant_valid.html#%7B%22message%22%3A%22The%20element%20with%20role%20%5C%22button%5C%22%20contains%20descendants%20with%20implicit%20roles%20%5C%22link%5C%22%20which%20are%20ignored%20by%20browsers%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22inline-flex%20items-center%20justify-center%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26_svg%5D%3Apointer-events-none%20%5B%26_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aring-4%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20text-base%20underline-offset-4%20hover%3Aunderline%20h-9%20py-2%20text-foreground%20gap-1%20px-0%20md%3Apx-2%5C%22%20data-slot%3D%5C%22button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_child_implicit_role%22%2C%22ruleId%22%3A%22aria_descendant_valid%22%2C%22msgArgs%22%3A%5B%22button%22%2C%22link%22%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/header[1]/nav[1]/div[2]/button[1]/a[1]/svg[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 98,
+                "top": 346,
+                "height": 24,
+                "width": 24
+            },
+            "snippet": "<svg class=\"lucide lucide-circle-user fill-gray-200 !h-[25px] !w-[25px]\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" viewBox=\"0 0 24 24\" height=\"24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22lucide%20lucide-circle-user%20fill-gray-200%20!h-%5B25px%5D%20!w-%5B25px%5D%5C%22%20stroke-linejoin%3D%5C%22round%5C%22%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%20height%3D%5C%2224%5C%22%20width%3D%5C%2224%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/header[1]/nav[1]/div[2]/button[2]/svg[1]",
+                "aria": "/document[1]/main[1]/navigation[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 171,
+                "top": 346,
+                "height": 24,
+                "width": 24
+            },
+            "snippet": "<svg class=\"lucide lucide-menu !h-[25px] !w-[25px]\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" viewBox=\"0 0 24 24\" height=\"24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22lucide%20lucide-menu%20!h-%5B25px%5D%20!w-%5B25px%5D%5C%22%20stroke-linejoin%3D%5C%22round%5C%22%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%20height%3D%5C%2224%5C%22%20width%3D%5C%2224%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[1]",
+                "aria": "/document[1]/main[1]/heading[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 585,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[2]",
+                "aria": "/document[1]/main[1]/heading[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 780,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[3]",
+                "aria": "/document[1]/main[1]/heading[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1640,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/p[14]",
+                "aria": "/document[1]/main[1]/paragraph[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Collecting information from you Collecting information from you' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Collecting information from you Collecting information from you"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2717,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Collecting%20information%20from%20you%20Collecting%20information%20from%20you'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Collecting%20information%20from%20you%20Collecting%20information%20from%20you%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/p[18]",
+                "aria": "/document[1]/main[1]/paragraph[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Collecting information from third parties Collecting information from third parties' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Collecting information from third parties Collecting information from third parties"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3222,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Collecting%20information%20from%20third%20parties%20Collecting%20information%20from%20third%20parties'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Collecting%20information%20from%20third%20parties%20Collecting%20information%20from%20third%20parties%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[4]",
+                "aria": "/document[1]/main[1]/heading[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3528,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/p[23]",
+                "aria": "/document[1]/main[1]/paragraph[23]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'small'",
+            "messageArgs": [
+                "small"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3629,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'small'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22small%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[5]",
+                "aria": "/document[1]/main[1]/heading[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 3988,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[6]",
+                "aria": "/document[1]/main[1]/heading[11]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4216,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/p[30]",
+                "aria": "/document[1]/main[1]/paragraph[30]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4264,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[7]",
+                "aria": "/document[1]/main[1]/heading[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4355,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[8]",
+                "aria": "/document[1]/main[1]/heading[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4936,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[9]",
+                "aria": "/document[1]/main[1]/heading[14]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5220,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[11]",
+                "aria": "/document[1]/main[1]/heading[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5929,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[12]",
+                "aria": "/document[1]/main[1]/heading[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6192,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[13]",
+                "aria": "/document[1]/main[1]/heading[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6421,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/p[50]",
+                "aria": "/document[1]/main[1]/paragraph[50]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 6469,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[14]",
+                "aria": "/document[1]/main[1]/heading[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7029,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[15]",
+                "aria": "/document[1]/main[1]/heading[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7167,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/p[57]",
+                "aria": "/document[1]/main[1]/paragraph[57]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7215,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[16]",
+                "aria": "/document[1]/main[1]/heading[21]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7325,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[17]",
+                "aria": "/document[1]/main[1]/heading[22]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 7927,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[18]",
+                "aria": "/document[1]/main[1]/heading[23]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8084,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[19]",
+                "aria": "/document[1]/main[1]/heading[24]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8279,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/p[71]",
+                "aria": "/document[1]/main[1]/paragraph[71]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8647,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[21]",
+                "aria": "/document[1]/main[1]/heading[26]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8757,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/p[73]",
+                "aria": "/document[1]/main[1]/paragraph[73]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8805,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/h2[22]",
+                "aria": "/document[1]/main[1]/heading[27]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8949,
+                "height": 28,
+                "width": 784
+            },
+            "snippet": "<h2 class=\"font-semibold text-xl mt-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Ch2%20class%3D%5C%22font-semibold%20text-xl%20mt-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 9730,
+                "height": 24,
+                "width": 24
+            },
+            "snippet": "<svg class=\"lucide lucide-cookie h-4 w-4 sm:h-[1.2rem] sm:w-[1.2rem]\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" viewBox=\"0 0 24 24\" height=\"24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20class%3D%5C%22lucide%20lucide-cookie%20h-4%20w-4%20sm%3Ah-%5B1.2rem%5D%20sm%3Aw-%5B1.2rem%5D%5C%22%20stroke-linejoin%3D%5C%22round%5C%22%20stroke-linecap%3D%5C%22round%5C%22%20stroke-width%3D%5C%222%5C%22%20stroke%3D%5C%22currentColor%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%2024%2024%5C%22%20height%3D%5C%2224%5C%22%20width%3D%5C%2224%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 2606,
+    "ruleTime": 46,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "aria_descendant_valid": {
+            "0": "Browsers ignore the explicit and implicit ARIA roles of the descendants of certain elements",
+            "potential_child_implicit_role": "The element with role \"{0}\" contains descendants with implicit roles \"{1}\" which are ignored by browsers"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        },
+        "list_markup_review": {
+            "0": "Proper HTML elements should be used to create a list",
+            "potential_list": "Verify this is a list and if so, modify to use proper HTML elements for the list"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 45,
+            "elementsViolation": 4,
+            "elementsViolationReview": 35,
+            "violation": 4,
+            "potentialviolation": 30,
+            "recommendation": 6,
+            "potentialrecommendation": 7,
+            "manual": 1,
+            "pass": 2558
+        },
+        "scanTime": 98,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779037934839,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EMemories%20-%20Privacy%20Policy%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22min-h-screen%22%3E%3Cdiv%20hidden%3D%22%22%3E%3C!--%24--%3E%3C!--%2F%24--%3E%3C%2Fdiv%3E%3C!--%24--%3E%3C!--%2F%24--%3E%3Cdiv%20data-slot%3D%22sidebar-wrapper%22%20style%3D%22--sidebar-width%3A16rem%3B--sidebar-width-icon%3A3rem%22%20class%3D%22group%2Fsidebar-wrapper%20has-data-%5Bvariant%3Dinset%5D%3Abg-sidebar%20flex%20min-h-svh%20w-full%22%3E%3Cdiv%20class%3D%22group%20peer%20text-sidebar-foreground%20hidden%20md%3Ablock%22%20data-state%3D%22collapsed%22%20data-collapsible%3D%22offcanvas%22%20data-variant%3D%22sidebar%22%20data-side%3D%22right%22%20data-slot%3D%22sidebar%22%3E%3Cdiv%20class%3D%22relative%20h-svh%20w-(--sidebar-width)%20bg-transparent%20transition-%5Bwidth%5D%20duration-200%20ease-linear%20group-data-%5Bcollapsible%3Doffcanvas%5D%3Aw-0%20group-data-%5Bside%3Dright%5D%3Arotate-180%20group-data-%5Bcollapsible%3Dicon%5D%3Aw-(--sidebar-width-icon)%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22fixed%20inset-y-0%20z-10%20hidden%20h-svh%20w-(--sidebar-width)%20transition-%5Bleft%2Cright%2Cwidth%5D%20duration-200%20ease-linear%20md%3Aflex%20right-0%20group-data-%5Bcollapsible%3Doffcanvas%5D%3Aright-%5Bcalc(var(--sidebar-width)*-1)%5D%20group-data-%5Bcollapsible%3Dicon%5D%3Aw-(--sidebar-width-icon)%20group-data-%5Bside%3Dleft%5D%3Aborder-r%20group-data-%5Bside%3Dright%5D%3Aborder-l%22%3E%3Cdiv%20data-sidebar%3D%22sidebar%22%20class%3D%22bg-sidebar%20group-data-%5Bvariant%3Dfloating%5D%3Aborder-sidebar-border%20flex%20h-full%20w-full%20flex-col%20group-data-%5Bvariant%3Dfloating%5D%3Arounded-lg%20group-data-%5Bvariant%3Dfloating%5D%3Aborder%20group-data-%5Bvariant%3Dfloating%5D%3Ashadow-sm%22%3E%3Cdiv%20data-slot%3D%22sidebar-content%22%20data-sidebar%3D%22content%22%20class%3D%22flex%20min-h-0%20flex-1%20flex-col%20gap-2%20overflow-auto%20group-data-%5Bcollapsible%3Dicon%5D%3Aoverflow-hidden%20py-8%20px-3%22%3E%3Cdiv%20data-slot%3D%22sidebar-group%22%20data-sidebar%3D%22group%22%20class%3D%22relative%20flex%20w-full%20min-w-0%20flex-col%20p-2%22%3E%3Cdiv%20data-slot%3D%22sidebar-group-content%22%20data-sidebar%3D%22group-content%22%20class%3D%22w-full%20text-sm%22%3E%3Cul%20data-slot%3D%22sidebar-menu%22%20data-sidebar%3D%22menu%22%20class%3D%22flex%20w-full%20min-w-0%20flex-col%20gap-1%22%3E%3Cli%20data-slot%3D%22sidebar-menu-item%22%20data-sidebar%3D%22menu-item%22%20class%3D%22group%2Fmenu-item%20relative%22%3E%3Ca%20class%3D%22peer%2Fmenu-button%20flex%20w-full%20items-center%20gap-2%20overflow-hidden%20rounded-md%20p-2%20text-left%20outline-hidden%20ring-sidebar-ring%20transition-%5Bwidth%2Cheight%2Cpadding%5D%20focus-visible%3Aring-2%20active%3Abg-sidebar-accent%20active%3Atext-sidebar-accent-foreground%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20group-has-data-%5Bsidebar%3Dmenu-action%5D%2Fmenu-item%3Apr-8%20aria-disabled%3Apointer-events-none%20aria-disabled%3Aopacity-50%20data-%5Bactive%3Dtrue%5D%3Abg-sidebar-accent%20data-%5Bactive%3Dtrue%5D%3Afont-medium%20data-%5Bactive%3Dtrue%5D%3Atext-sidebar-accent-foreground%20data-%5Bstate%3Dopen%5D%3Ahover%3Abg-sidebar-accent%20data-%5Bstate%3Dopen%5D%3Ahover%3Atext-sidebar-accent-foreground%20group-data-%5Bcollapsible%3Dicon%5D%3Asize-8!%20group-data-%5Bcollapsible%3Dicon%5D%3Ap-2!%20%5B%26amp%3B%26gt%3Bspan%3Alast-child%5D%3Atruncate%20%5B%26amp%3B%26gt%3Bsvg%5D%3Asize-4%20%5B%26amp%3B%26gt%3Bsvg%5D%3Ashrink-0%20hover%3Abg-sidebar-accent%20hover%3Atext-sidebar-accent-foreground%20h-8%20text-sm%20!text-2xl%20py-7%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20data-slot%3D%22sidebar-menu-button%22%20data-sidebar%3D%22menu-button%22%20data-size%3D%22default%22%20data-active%3D%22false%22%20href%3D%22%22%3EWhat%20we%20offer%3C%2Fa%3E%3Cul%20data-slot%3D%22sidebar-menu-sub%22%20data-sidebar%3D%22menu-sub%22%20class%3D%22border-sidebar-border%20mx-3.5%20flex%20min-w-0%20translate-x-px%20flex-col%20gap-1%20border-l%20px-2.5%20py-0.5%20group-data-%5Bcollapsible%3Dicon%5D%3Ahidden%22%3E%3Cli%20data-slot%3D%22sidebar-menu-sub-item%22%20data-sidebar%3D%22menu-sub-item%22%20class%3D%22group%2Fmenu-sub-item%20relative%22%3E%3Ca%20class%3D%22text-xl%20py-2%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20href%3D%22%2Fproducts%2Ftribute-video%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dtext%22%3ETribute%20videos%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cul%20data-slot%3D%22sidebar-menu-sub%22%20data-sidebar%3D%22menu-sub%22%20class%3D%22border-sidebar-border%20mx-3.5%20flex%20min-w-0%20translate-x-px%20flex-col%20gap-1%20border-l%20px-2.5%20py-0.5%20group-data-%5Bcollapsible%3Dicon%5D%3Ahidden%22%3E%3Cli%20data-slot%3D%22sidebar-menu-sub-item%22%20data-sidebar%3D%22menu-sub-item%22%20class%3D%22group%2Fmenu-sub-item%20relative%22%3E%3Ca%20class%3D%22text-xl%20py-2%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20href%3D%22%2Fproducts%2Fai-biography-writer%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dtext%22%3EBiography%20writer%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cul%20data-slot%3D%22sidebar-menu-sub%22%20data-sidebar%3D%22menu-sub%22%20class%3D%22border-sidebar-border%20mx-3.5%20flex%20min-w-0%20translate-x-px%20flex-col%20gap-1%20border-l%20px-2.5%20py-0.5%20group-data-%5Bcollapsible%3Dicon%5D%3Ahidden%22%3E%3Cli%20data-slot%3D%22sidebar-menu-sub-item%22%20data-sidebar%3D%22menu-sub-item%22%20class%3D%22group%2Fmenu-sub-item%20relative%22%3E%3Ca%20class%3D%22text-xl%20py-2%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20href%3D%22%2Fproducts%2Fobituary-writer%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dtext%22%3EObituary%20writer%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cul%20data-slot%3D%22sidebar-menu-sub%22%20data-sidebar%3D%22menu-sub%22%20class%3D%22border-sidebar-border%20mx-3.5%20flex%20min-w-0%20translate-x-px%20flex-col%20gap-1%20border-l%20px-2.5%20py-0.5%20group-data-%5Bcollapsible%3Dicon%5D%3Ahidden%22%3E%3Cli%20data-slot%3D%22sidebar-menu-sub-item%22%20data-sidebar%3D%22menu-sub-item%22%20class%3D%22group%2Fmenu-sub-item%20relative%22%3E%3Ca%20class%3D%22text-xl%20py-2%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20href%3D%22%2Fproducts%2Feulogy-writer%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dtext%22%3EEulogy%20writer%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cul%20data-slot%3D%22sidebar-menu-sub%22%20data-sidebar%3D%22menu-sub%22%20class%3D%22border-sidebar-border%20mx-3.5%20flex%20min-w-0%20translate-x-px%20flex-col%20gap-1%20border-l%20px-2.5%20py-0.5%20group-data-%5Bcollapsible%3Dicon%5D%3Ahidden%22%3E%3Cli%20data-slot%3D%22sidebar-menu-sub-item%22%20data-sidebar%3D%22menu-sub-item%22%20class%3D%22group%2Fmenu-sub-item%20relative%22%3E%3Ca%20class%3D%22text-xl%20py-2%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20href%3D%22%2Fproducts%2Forder-of-service%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dtext%22%3EOrder%20of%20service%20builder%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cul%20data-slot%3D%22sidebar-menu-sub%22%20data-sidebar%3D%22menu-sub%22%20class%3D%22border-sidebar-border%20mx-3.5%20flex%20min-w-0%20translate-x-px%20flex-col%20gap-1%20border-l%20px-2.5%20py-0.5%20group-data-%5Bcollapsible%3Dicon%5D%3Ahidden%22%3E%3Cli%20data-slot%3D%22sidebar-menu-sub-item%22%20data-sidebar%3D%22menu-sub-item%22%20class%3D%22group%2Fmenu-sub-item%20relative%22%3E%3Ca%20class%3D%22text-xl%20py-2%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20href%3D%22%2Fproducts%2Fdigital-guest-book%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dtext%22%3EDigital%20guest%20book%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cul%20data-slot%3D%22sidebar-menu-sub%22%20data-sidebar%3D%22menu-sub%22%20class%3D%22border-sidebar-border%20mx-3.5%20flex%20min-w-0%20translate-x-px%20flex-col%20gap-1%20border-l%20px-2.5%20py-0.5%20group-data-%5Bcollapsible%3Dicon%5D%3Ahidden%22%3E%3Cli%20data-slot%3D%22sidebar-menu-sub-item%22%20data-sidebar%3D%22menu-sub-item%22%20class%3D%22group%2Fmenu-sub-item%20relative%22%3E%3Ca%20class%3D%22text-xl%20py-2%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20href%3D%22%2Fproducts%2Fonline-memorial%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dtext%22%3EOnline%20memory%20book%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3Cul%20data-slot%3D%22sidebar-menu-sub%22%20data-sidebar%3D%22menu-sub%22%20class%3D%22border-sidebar-border%20mx-3.5%20flex%20min-w-0%20translate-x-px%20flex-col%20gap-1%20border-l%20px-2.5%20py-0.5%20group-data-%5Bcollapsible%3Dicon%5D%3Ahidden%22%3E%3Cli%20data-slot%3D%22sidebar-menu-sub-item%22%20data-sidebar%3D%22menu-sub-item%22%20class%3D%22group%2Fmenu-sub-item%20relative%22%3E%3Ca%20class%3D%22text-xl%20py-2%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20href%3D%22%2Fproducts%2Fmemory-book%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dtext%22%3EMemory%20book%20builder%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fli%3E%3Cli%20data-slot%3D%22sidebar-menu-item%22%20data-sidebar%3D%22menu-item%22%20class%3D%22group%2Fmenu-item%20relative%22%3E%3Ca%20class%3D%22peer%2Fmenu-button%20flex%20w-full%20items-center%20gap-2%20overflow-hidden%20rounded-md%20p-2%20text-left%20outline-hidden%20ring-sidebar-ring%20transition-%5Bwidth%2Cheight%2Cpadding%5D%20focus-visible%3Aring-2%20active%3Abg-sidebar-accent%20active%3Atext-sidebar-accent-foreground%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20group-has-data-%5Bsidebar%3Dmenu-action%5D%2Fmenu-item%3Apr-8%20aria-disabled%3Apointer-events-none%20aria-disabled%3Aopacity-50%20data-%5Bactive%3Dtrue%5D%3Abg-sidebar-accent%20data-%5Bactive%3Dtrue%5D%3Afont-medium%20data-%5Bactive%3Dtrue%5D%3Atext-sidebar-accent-foreground%20data-%5Bstate%3Dopen%5D%3Ahover%3Abg-sidebar-accent%20data-%5Bstate%3Dopen%5D%3Ahover%3Atext-sidebar-accent-foreground%20group-data-%5Bcollapsible%3Dicon%5D%3Asize-8!%20group-data-%5Bcollapsible%3Dicon%5D%3Ap-2!%20%5B%26amp%3B%26gt%3Bspan%3Alast-child%5D%3Atruncate%20%5B%26amp%3B%26gt%3Bsvg%5D%3Asize-4%20%5B%26amp%3B%26gt%3Bsvg%5D%3Ashrink-0%20hover%3Abg-sidebar-accent%20hover%3Atext-sidebar-accent-foreground%20h-8%20text-sm%20!text-2xl%20py-7%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20data-slot%3D%22sidebar-menu-button%22%20data-sidebar%3D%22menu-button%22%20data-size%3D%22default%22%20data-active%3D%22false%22%20href%3D%22%2Fpricing%22%3EPricing%3C%2Fa%3E%3C%2Fli%3E%3Cli%20data-slot%3D%22sidebar-menu-item%22%20data-sidebar%3D%22menu-item%22%20class%3D%22group%2Fmenu-item%20relative%22%3E%3Ca%20class%3D%22peer%2Fmenu-button%20flex%20w-full%20items-center%20gap-2%20overflow-hidden%20rounded-md%20p-2%20text-left%20outline-hidden%20ring-sidebar-ring%20transition-%5Bwidth%2Cheight%2Cpadding%5D%20focus-visible%3Aring-2%20active%3Abg-sidebar-accent%20active%3Atext-sidebar-accent-foreground%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20group-has-data-%5Bsidebar%3Dmenu-action%5D%2Fmenu-item%3Apr-8%20aria-disabled%3Apointer-events-none%20aria-disabled%3Aopacity-50%20data-%5Bactive%3Dtrue%5D%3Abg-sidebar-accent%20data-%5Bactive%3Dtrue%5D%3Afont-medium%20data-%5Bactive%3Dtrue%5D%3Atext-sidebar-accent-foreground%20data-%5Bstate%3Dopen%5D%3Ahover%3Abg-sidebar-accent%20data-%5Bstate%3Dopen%5D%3Ahover%3Atext-sidebar-accent-foreground%20group-data-%5Bcollapsible%3Dicon%5D%3Asize-8!%20group-data-%5Bcollapsible%3Dicon%5D%3Ap-2!%20%5B%26amp%3B%26gt%3Bspan%3Alast-child%5D%3Atruncate%20%5B%26amp%3B%26gt%3Bsvg%5D%3Asize-4%20%5B%26amp%3B%26gt%3Bsvg%5D%3Ashrink-0%20hover%3Abg-sidebar-accent%20hover%3Atext-sidebar-accent-foreground%20h-8%20text-sm%20!text-2xl%20py-7%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20data-slot%3D%22sidebar-menu-button%22%20data-sidebar%3D%22menu-button%22%20data-size%3D%22default%22%20data-active%3D%22false%22%20href%3D%22%2Ftestimonials%22%3ETestimonials%3C%2Fa%3E%3C%2Fli%3E%3Cli%20data-slot%3D%22sidebar-menu-item%22%20data-sidebar%3D%22menu-item%22%20class%3D%22group%2Fmenu-item%20relative%22%3E%3Ca%20class%3D%22peer%2Fmenu-button%20flex%20w-full%20items-center%20gap-2%20overflow-hidden%20rounded-md%20p-2%20text-left%20outline-hidden%20ring-sidebar-ring%20transition-%5Bwidth%2Cheight%2Cpadding%5D%20focus-visible%3Aring-2%20active%3Abg-sidebar-accent%20active%3Atext-sidebar-accent-foreground%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20group-has-data-%5Bsidebar%3Dmenu-action%5D%2Fmenu-item%3Apr-8%20aria-disabled%3Apointer-events-none%20aria-disabled%3Aopacity-50%20data-%5Bactive%3Dtrue%5D%3Abg-sidebar-accent%20data-%5Bactive%3Dtrue%5D%3Afont-medium%20data-%5Bactive%3Dtrue%5D%3Atext-sidebar-accent-foreground%20data-%5Bstate%3Dopen%5D%3Ahover%3Abg-sidebar-accent%20data-%5Bstate%3Dopen%5D%3Ahover%3Atext-sidebar-accent-foreground%20group-data-%5Bcollapsible%3Dicon%5D%3Asize-8!%20group-data-%5Bcollapsible%3Dicon%5D%3Ap-2!%20%5B%26amp%3B%26gt%3Bspan%3Alast-child%5D%3Atruncate%20%5B%26amp%3B%26gt%3Bsvg%5D%3Asize-4%20%5B%26amp%3B%26gt%3Bsvg%5D%3Ashrink-0%20hover%3Abg-sidebar-accent%20hover%3Atext-sidebar-accent-foreground%20h-8%20text-sm%20!text-2xl%20py-7%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20data-slot%3D%22sidebar-menu-button%22%20data-sidebar%3D%22menu-button%22%20data-size%3D%22default%22%20data-active%3D%22false%22%20href%3D%22%2Fblog%22%3EBlog%3C%2Fa%3E%3C%2Fli%3E%3Cli%20data-slot%3D%22sidebar-menu-item%22%20data-sidebar%3D%22menu-item%22%20class%3D%22group%2Fmenu-item%20relative%22%3E%3Ca%20class%3D%22peer%2Fmenu-button%20flex%20w-full%20items-center%20gap-2%20overflow-hidden%20rounded-md%20p-2%20text-left%20outline-hidden%20ring-sidebar-ring%20transition-%5Bwidth%2Cheight%2Cpadding%5D%20focus-visible%3Aring-2%20active%3Abg-sidebar-accent%20active%3Atext-sidebar-accent-foreground%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20group-has-data-%5Bsidebar%3Dmenu-action%5D%2Fmenu-item%3Apr-8%20aria-disabled%3Apointer-events-none%20aria-disabled%3Aopacity-50%20data-%5Bactive%3Dtrue%5D%3Abg-sidebar-accent%20data-%5Bactive%3Dtrue%5D%3Afont-medium%20data-%5Bactive%3Dtrue%5D%3Atext-sidebar-accent-foreground%20data-%5Bstate%3Dopen%5D%3Ahover%3Abg-sidebar-accent%20data-%5Bstate%3Dopen%5D%3Ahover%3Atext-sidebar-accent-foreground%20group-data-%5Bcollapsible%3Dicon%5D%3Asize-8!%20group-data-%5Bcollapsible%3Dicon%5D%3Ap-2!%20%5B%26amp%3B%26gt%3Bspan%3Alast-child%5D%3Atruncate%20%5B%26amp%3B%26gt%3Bsvg%5D%3Asize-4%20%5B%26amp%3B%26gt%3Bsvg%5D%3Ashrink-0%20hover%3Abg-sidebar-accent%20hover%3Atext-sidebar-accent-foreground%20h-8%20text-sm%20!text-2xl%20py-7%20text-%5B%23288CEF%5D%22%20target%3D%22_self%22%20data-slot%3D%22sidebar-menu-button%22%20data-sidebar%3D%22menu-button%22%20data-size%3D%22default%22%20data-active%3D%22false%22%20href%3D%22%2Fabout%22%3EAbout%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20data-slot%3D%22sidebar-footer%22%20data-sidebar%3D%22footer%22%20class%3D%22flex%20flex-col%20gap-2%20p-2%20py-5%20px-3%22%3E%3Ca%20href%3D%22https%3A%2F%2Ftribute.memories.net%2F%3Fmode%3Dsignup%22%20data-slot%3D%22button%22%20class%3D%22inline-flex%20items-center%20justify-center%20gap-2%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aring-4%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20text-base%20hover%3Abg-primary%2F90%20h-9%20px-4%20bg-gradient-to-r%20from-%5B%23ff3131%5D%20to-%5B%23ff914d%5D%20text-white%20hover%3Afrom-%5B%23e62b2b%5D%20hover%3Ato-%5B%23ff8240%5D%20shadow-none%20!text-2xl%20py-7%22%3EStart%20for%20free%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cmain%20class%3D%22w-full%20mt-%5B72px%5D%22%3E%3Cheader%20class%3D%22py-2%20px-6%20navbar%3Apx-0%20fixed%20top-0%20left-0%20right-0%20z-50%20transition-all%20duration-300%20bg-white%22%3E%3Cnav%20class%3D%22h-14%20flex%20items-center%20justify-between%20max-w-screen-2xl%20mx-auto%22%20aria-label%3D%22navigation%20bar%22%3E%3Cdiv%20class%3D%22flex%20items-center%20gap-5%22%3E%3Ca%20href%3D%22%2F%22%20class%3D%22flex%20items-center%20gap-2%22%3E%3Cimg%20alt%3D%22Memories%20Logo%22%20loading%3D%22lazy%22%20width%3D%22220%22%20height%3D%2220%22%20decoding%3D%22async%22%20data-nimg%3D%221%22%20class%3D%22w-%5B170px%5D%20sm%3Aw-%5B190px%5D%20lg%3Aw-%5B220px%5D%22%20style%3D%22color%3Atransparent%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22hidden%20md%3Aflex%20items-center%20ml-6%20gap-6%22%3E%3Cbutton%20data-slot%3D%22dropdown-menu-trigger%22%20class%3D%22inline-flex%20items-center%20justify-center%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20h-9%20px-1%20py-0%20text-foreground%20gap-1%20underline-offset-8%20decoration-2%20decoration-primary%20focus%3Aoutline-none%20focus-visible%3Aring-0%20hover%3Ano-underline%20cursor-pointer%20text-lg%20xl%3Atext-xl%20font-light%22%20type%3D%22button%22%20id%3D%22radix-%C2%ABR1iplb%C2%BB%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20data-state%3D%22closed%22%3EWhat%20we%20offer%3C!--%20--%3E%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22lucide%20lucide-chevron-down%20w-5%20h-5%22%3E%3Cpath%20d%3D%22m6%209%206%206%206-6%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fbutton%3E%3Ca%20target%3D%22_self%22%20data-slot%3D%22button%22%20class%3D%22inline-flex%20items-center%20justify-center%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aring-4%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20hover%3Aunderline%20h-9%20px-1%20py-0%20text-foreground%20gap-1%20underline-offset-8%20decoration-2%20decoration-primary%20text-lg%20xl%3Atext-xl%20font-light%22%20href%3D%22%2Fpricing%22%3EPricing%3C%2Fa%3E%3Ca%20target%3D%22_self%22%20data-slot%3D%22button%22%20class%3D%22inline-flex%20items-center%20justify-center%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aring-4%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20hover%3Aunderline%20h-9%20px-1%20py-0%20text-foreground%20gap-1%20underline-offset-8%20decoration-2%20decoration-primary%20text-lg%20xl%3Atext-xl%20font-light%22%20href%3D%22%2Ftestimonials%22%3ETestimonials%3C%2Fa%3E%3Ca%20target%3D%22_self%22%20data-slot%3D%22button%22%20class%3D%22inline-flex%20items-center%20justify-center%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aring-4%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20hover%3Aunderline%20h-9%20px-1%20py-0%20text-foreground%20gap-1%20underline-offset-8%20decoration-2%20decoration-primary%20text-lg%20xl%3Atext-xl%20font-light%22%20href%3D%22%2Fblog%22%3EBlog%3C%2Fa%3E%3Ca%20target%3D%22_self%22%20data-slot%3D%22button%22%20class%3D%22inline-flex%20items-center%20justify-center%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aring-4%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20hover%3Aunderline%20h-9%20px-1%20py-0%20text-foreground%20gap-1%20underline-offset-8%20decoration-2%20decoration-primary%20text-lg%20xl%3Atext-xl%20font-light%22%20href%3D%22%2Fabout%22%3EAbout%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22flex%20items-center%20gap-4%22%3E%3Ca%20href%3D%22https%3A%2F%2Ftribute.memories.net%2F%3Fmode%3Dsignup%22%20data-slot%3D%22button%22%20class%3D%22items-center%20justify-center%20gap-2%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aring-4%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20text-base%20hover%3Abg-primary%2F90%20h-9%20px-7%20py-3%20hidden%20lg%3Aflex%20bg-gradient-to-r%20from-%5B%23ff3131%5D%20to-%5B%23ff914d%5D%20text-white%20hover%3Afrom-%5B%23e62b2b%5D%20hover%3Ato-%5B%23ff8240%5D%20shadow-none%22%3EStart%20for%20free%3C%2Fa%3E%3Cbutton%20data-slot%3D%22button%22%20class%3D%22inline-flex%20items-center%20justify-center%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aring-4%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20text-base%20underline-offset-4%20hover%3Aunderline%20h-9%20py-2%20text-foreground%20gap-1%20px-0%20md%3Apx-2%22%3E%3Ca%20href%3D%22https%3A%2F%2Ftribute.memories.net%2F%22%20class%3D%22flex%20items-center%20gap-2%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22lucide%20lucide-circle-user%20fill-gray-200%20!h-%5B25px%5D%20!w-%5B25px%5D%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2210%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2210%22%20r%3D%223%22%3E%3C%2Fcircle%3E%3Cpath%20d%3D%22M7%2020.662V19a2%202%200%200%201%202-2h6a2%202%200%200%201%202%202v1.662%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22hidden%20md%3Aflex%20text-lg%22%3ELogin%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fbutton%3E%3Cbutton%20data-slot%3D%22sidebar-trigger%22%20class%3D%22inline-flex%20items-center%20justify-center%20gap-2%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aring-4%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20text-base%20hover%3Abg-accent%20hover%3Atext-accent-foreground%20size-9%20h-7%20w-7%20md%3Ahidden%22%20data-sidebar%3D%22trigger%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22lucide%20lucide-menu%20!h-%5B25px%5D%20!w-%5B25px%5D%22%3E%3Cline%20x1%3D%224%22%20x2%3D%2220%22%20y1%3D%2212%22%20y2%3D%2212%22%3E%3C%2Fline%3E%3Cline%20x1%3D%224%22%20x2%3D%2220%22%20y1%3D%226%22%20y2%3D%226%22%3E%3C%2Fline%3E%3Cline%20x1%3D%224%22%20x2%3D%2220%22%20y1%3D%2218%22%20y2%3D%2218%22%3E%3C%2Fline%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22sr-only%22%3EToggle%20Sidebar%3C%2Fspan%3E%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fnav%3E%3C%2Fheader%3E%3Cdiv%20class%3D%22container%20mx-auto%20py-14%20px-6%20max-w-4xl%22%3E%3Cdiv%20class%3D%22flex%20flex-col%20gap-y-4%20text-base%22%3E%3Ch1%20class%3D%22mt-5%20leading-tight%20text-2xl%20lg%3Atext-4xl%20font-semibold%20text-center%20mb-8%22%3EMemories%20and%20FutureMe%20Privacy%20Policy%3C%2Fh1%3E%3Cp%3EThis%20Privacy%20Policy%20explains%20how%20Memories%20Technologies%20Pty%20Ltd%20(ACN%20168%20078%20055)%20collects%2C%20stores%2C%20uses%2C%20discloses%2C%20protects%2C%20handles%20and%20otherwise%20processes%20personal%20information%20in%20connection%20with%20the%20websites%2C%20services%20and%20products%20made%20available%20under%20the%20Memories%20and%20FutureMe%20brands.%3C%2Fp%3E%3Cp%3EWe%20work%20within%20and%20uphold%20applicable%20privacy%20laws.%20This%20Privacy%20Policy%20should%20be%20read%20together%20with%20the%20terms%20of%20service%20applicable%20to%20the%20relevant%20Website.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E1.%20Background%3C%2Fh2%3E%3Cp%3EThis%20Privacy%20Policy%20applies%20to%20personal%20information%20collected%20in%20connection%20with%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Ememories.net%20and%20memories.com.au%3B%3C%2Fli%3E%3Cli%3Efutureme.com%20and%20futureme.org%3B%3C%2Fli%3E%3Cli%3Erelated%20apps%2C%20integrations%20and%20support%20channels%3B%3C%2Fli%3E%3Cli%3Ethe%20Memories%20memorial%2C%20livestreaming%2C%20tribute%2C%20guestbook%20and%20retail%20product%20services%3B%20and%3C%2Fli%3E%3Cli%3Ethe%20FutureMe%20account%2C%20letters-to-the-future%2C%20public%20letters%2C%20memberships%20and%20site-sharing%20services.%3C%2Fli%3E%3C%2Ful%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E2.%20Definitions%3C%2Fh2%3E%3Cp%3EUnless%20expressly%20provided%20otherwise%2C%20terms%20used%20in%20this%20Privacy%20Policy%20have%20the%20meaning%20given%20in%20the%20applicable%20Terms%20of%20Service.%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3E%E2%80%9CApplicable%20Jurisdiction%E2%80%9D%20means%20the%20jurisdiction%20that%20applies%20to%20or%20governs%20the%20provision%20of%20the%20relevant%20Services%20to%20the%20relevant%20User.%3C%2Fli%3E%3Cli%3E%E2%80%9CApplicable%20Privacy%20Laws%E2%80%9D%20means%20all%20privacy%2C%20data%20protection%2C%20direct%20marketing%20and%20related%20laws%20that%20apply%20to%20us%20or%20the%20relevant%20processing%20activity%2C%20including%3A%3Cul%20class%3D%22my-2%20ml-7%20list-disc%22%3E%3Cli%3Eif%20the%20Applicable%20Jurisdiction%20is%20a%20State%20or%20Territory%20of%20Australia%2C%20the%20Privacy%20Act%201988%20(Cth)%20and%20the%20Australian%20Privacy%20Principles%3B%3C%2Fli%3E%3Cli%3Eif%20the%20Applicable%20Jurisdiction%20is%20the%20United%20Kingdom%2C%20the%20Data%20Protection%20Act%202018%20(UK)%20and%20UK%20GDPR%3B%3C%2Fli%3E%3Cli%3Eif%20the%20Applicable%20Jurisdiction%20is%20a%20Member%20State%20of%20the%20European%20Union%2C%20the%20General%20Data%20Protection%20Regulation%20(EU)%202016%2F679%3B%20and%3C%2Fli%3E%3Cli%3Ewhere%20applicable%2C%20U.S.%20state%20privacy%20laws%20and%20any%20other%20comparable%20privacy%20or%20data%20protection%20law.%3C%2Fli%3E%3C%2Ful%3E%3C%2Fli%3E%3Cli%3E%E2%80%9CCookie%20Information%E2%80%9D%20means%20the%20information%20described%20in%20section%204%20of%20this%20Privacy%20Policy.%3C%2Fli%3E%3Cli%3E%E2%80%9CGuest%20User%E2%80%9D%20means%20a%20User%20other%20than%20an%20Administrator%20or%20Site%20Administrator%2C%20and%20includes%20a%20person%20invited%20to%20access%20a%20Site.%3C%2Fli%3E%3Cli%3E%E2%80%9CLetter%E2%80%9D%20means%20the%20Content%20that%20a%20User%20sends%20through%20FutureMe%20to%20be%20delivered%20at%20a%20later%20date.%3C%2Fli%3E%3Cli%3E%E2%80%9CLive%20Stream%E2%80%9D%20means%20the%20digital%20broadcasting%20service%20provided%20by%20us.%3C%2Fli%3E%3Cli%3E%E2%80%9CMemorial%E2%80%9D%20means%20the%20digital%20memorial%20product%20that%20allows%20Users%20to%20upload%20and%20store%20Content%20for%20a%20Subject%20hosted%20on%20a%20Website.%3C%2Fli%3E%3Cli%3E%E2%80%9CPersonal%20Information%E2%80%9D%20means%20information%20or%20an%20opinion%20about%20an%20identified%20individual%2C%20or%20an%20individual%20who%20is%20reasonably%20identifiable%2C%20whether%20true%20or%20not%20and%20whether%20recorded%20in%20a%20material%20form%20or%20not%2C%20and%20includes%20comparable%20concepts%20such%20as%20%E2%80%9Cpersonal%20data%E2%80%9D%20under%20the%20GDPR%20and%20UK%20GDPR.%3C%2Fli%3E%3Cli%3E%E2%80%9CPrivacy%20Policy%E2%80%9D%20means%20this%20Privacy%20Policy%2C%20as%20amended%20from%20time%20to%20time.%3C%2Fli%3E%3Cli%3E%E2%80%9CPublic%20Letter%E2%80%9D%20means%20the%20anonymous%20Content%20posted%20to%20the%20public%20area%20of%20a%20FutureMe%20Website%20for%20later%20display.%3C%2Fli%3E%3Cli%3E%E2%80%9CRelevant%20Authority%E2%80%9D%20means%20the%20regulator%2C%20commissioner%20or%20government%20agency%20responsible%20for%20administering%20the%20Applicable%20Privacy%20Laws%20in%20the%20Applicable%20Jurisdiction.%3C%2Fli%3E%3Cli%3E%E2%80%9CRetail%20Product%E2%80%9D%20means%20a%20virtual%20or%20physical%20product%20that%20is%20available%20to%20purchase%20on%20a%20Website%20from%20time%20to%20time.%3C%2Fli%3E%3Cli%3E%E2%80%9CSensitive%20Information%E2%80%9D%20means%20Personal%20Information%20that%20reveals%20racial%20or%20ethnic%20origin%2C%20political%20opinions%2C%20religious%20or%20philosophical%20beliefs%2C%20trade%20union%20membership%2C%20genetic%20data%2C%20biometric%20data%2C%20health%20data%2C%20a%20person's%20sex%20life%20or%20sexual%20orientation%2C%20criminal%20record%20information%2C%20or%20any%20comparable%20sensitive%20category%20under%20Applicable%20Privacy%20Laws.%3C%2Fli%3E%3Cli%3E%E2%80%9CService%E2%80%9D%20means%20each%20service%20provided%20by%20us%20on%20a%20Website%20or%20by%20other%20means%2C%20including%20memorial%20services%2C%20guestbooks%2C%20live%20streams%2C%20video%20tributes%2C%20accounts%2C%20Letters%2C%20Public%20Letters%2C%20memberships%2C%20Sites%20and%20related%20products%20or%20services.%3C%2Fli%3E%3Cli%3E%E2%80%9CSite%E2%80%9D%20means%20the%20customisable%20and%20shareable%20FutureMe%20page%20created%20by%20a%20Site%20Administrator.%3C%2Fli%3E%3Cli%3E%E2%80%9CSite%20Administrator%E2%80%9D%20means%20a%20User%20that%20holds%20a%20paid%20FutureMe%20site-sharing%20membership%20and%20has%20created%20a%20Site.%3C%2Fli%3E%3Cli%3E%E2%80%9CSubject%E2%80%9D%20means%20a%20person%20or%20pet%20for%20whom%20a%20Memorial%20is%20created.%3C%2Fli%3E%3Cli%3E%E2%80%9CTerms%E2%80%9D%20means%20the%20terms%20of%20service%20applicable%20to%20the%20relevant%20Website%2C%20as%20amended%20from%20time%20to%20time.%3C%2Fli%3E%3Cli%3E%E2%80%9CUser%E2%80%9D%20means%20a%20user%20of%20a%20Website%2C%20Service%20or%20Retail%20Product.%3C%2Fli%3E%3Cli%3E%E2%80%9CWebsite%E2%80%9D%20means%20each%20of%20memories.net%2C%20memories.com.au%2C%20futureme.com%20and%20futureme.org%2C%20together%20with%20related%20or%20successor%20websites%2C%20services%20or%20apps%20operated%20by%20us%20from%20time%20to%20time.%3C%2Fli%3E%3Cli%3E%E2%80%9Cwe%E2%80%9D%2C%20%E2%80%9Cus%E2%80%9D%20and%20%E2%80%9Cour%E2%80%9D%20mean%20Memories%20Technologies%20Pty%20Ltd%20(ACN%20168%20078%20055).%3C%2Fli%3E%3C%2Ful%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E3.%20Collection%20and%20Storage%20of%20Personal%20Information%3C%2Fh2%3E%3Ch3%20class%3D%22font-semibold%20mt-4%22%3E3.1%20Types%20of%20Personal%20Information%3C%2Fh3%3E%3Cp%3EWe%20may%20collect%20Personal%20Information%20about%20individuals.%20Depending%20on%20the%20relevant%20Website%2C%20Service%20or%20interaction%2C%20this%20Personal%20Information%20may%20include%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Enames%3B%3C%2Fli%3E%3Cli%3Egender%20or%20title%3B%3C%2Fli%3E%3Cli%3Econtact%20details%2C%20including%20email%20address%2C%20telephone%20number%2C%20postal%20address%20and%20other%20contact%20details%3B%3C%2Fli%3E%3Cli%3Edate%20of%20birth%3B%3C%2Fli%3E%3Cli%3Eusernames%20and%20passwords%3B%3C%2Fli%3E%3Cli%3Ephotos%2C%20videos%2C%20sound%20recordings%20and%20written%20material%3B%3C%2Fli%3E%3Cli%3Epayment%20and%20billing%20information%2C%20including%20billing%20address%20and%20limited%20transaction%20details%3B%3C%2Fli%3E%3Cli%3Ebank%20account%20details%20where%20needed%20for%20refunds%20or%20payouts%3B%3C%2Fli%3E%3Cli%3Edate%20of%20death%20or%20related%20memorial%20information%3B%3C%2Fli%3E%3Cli%3Ethe%20contents%20of%20Letters%2C%20Public%20Letters%2C%20guestbook%20entries%2C%20memorial%20contributions%20and%20other%20Content%20that%20you%20choose%20to%20submit%3B%3C%2Fli%3E%3Cli%3Etechnical%20and%20device%20information%2C%20including%20Cookie%20Information%2C%20city-level%20location%2C%20device%20model%20and%20operating%20system%20version%3B%20and%3C%2Fli%3E%3Cli%3ESensitive%20Information%20that%20you%20choose%20to%20submit%20to%20us.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EWe%20collect%20and%20process%20Personal%20Information%20to%20provide%2C%20administer%2C%20improve%2C%20secure%20and%20personalise%20our%20Services%2C%20to%20perform%20contracts%20with%20you%2C%20to%20comply%20with%20legal%20obligations%2C%20for%20our%20legitimate%20interests%20where%20permitted%2C%20and%20otherwise%20with%20your%20consent%20where%20consent%20is%20required.%3C%2Fp%3E%3Ch3%20class%3D%22font-semibold%20mt-4%22%3E3.2%20Restrictions%3C%2Fh3%3E%3Cp%3EIf%20some%20or%20all%20of%20your%20Personal%20Information%20is%20not%20collected%2C%20we%20may%20not%20be%20able%20to%20provide%20you%20with%20the%20relevant%20Service%2C%20personalise%20the%20Service%20for%20you%2C%20complete%20a%20transaction%2C%20or%20provide%20other%20goods%20and%20services%20to%20you.%3C%2Fp%3E%3Cp%3EYou%20must%20be%20at%20least%2016%20years%20of%20age%20to%20use%20our%20Websites%20and%20Services.%20We%20do%20not%20knowingly%20collect%20or%20process%20the%20Personal%20Information%20of%20individuals%20under%20the%20age%20of%2016.%20If%20you%20suspect%20that%20a%20person%20under%2016%20has%20provided%20Personal%20Information%20to%20us%2C%20please%20notify%20us%20via%3C!--%20--%3E%20%3Ca%20href%3D%22mailto%3Asupport%40memories.net%22%3Esupport%40memories.net%3C%2Fa%3E%20and%20we%20will%20take%20steps%20to%20delete%20that%20information.%3C%2Fp%3E%3Ch3%20class%3D%22font-semibold%20mt-4%22%3E3.3%20Sensitive%20Information%3C%2Fh3%3E%3Cp%3EThe%20Personal%20Information%20collected%20by%20us%20may%20include%20Sensitive%20Information.%3C%2Fp%3E%3Cp%3EWe%20will%20only%20collect%20and%20use%20Sensitive%20Information%20where%20permitted%20under%20Applicable%20Privacy%20Laws%2C%20including%20where%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Eyou%20have%20given%20your%20explicit%20consent%3B%3C%2Fli%3E%3Cli%3Ethe%20processing%20is%20necessary%20in%20the%20field%20of%20employment%2C%20social%20security%20or%20social%20protection%20law%3B%3C%2Fli%3E%3Cli%3Ethe%20processing%20is%20necessary%20for%20the%20establishment%2C%20exercise%20or%20defence%20of%20legal%20claims%3B%20or%3C%2Fli%3E%3Cli%3Eanother%20lawful%20basis%20applies%20under%20the%20Applicable%20Privacy%20Laws.%3C%2Fli%3E%3C%2Ful%3E%3Ch3%20class%3D%22font-semibold%20mt-4%22%3E3.4%20How%20we%20collect%20your%20Personal%20Information%3C%2Fh3%3E%3Cp%3EWe%20collect%20Personal%20Information%20by%20lawful%20and%20fair%20means%20and%20not%20in%20an%20unreasonably%20intrusive%20manner.%3C%2Fp%3E%3Cp%3EWhen%20you%20provide%20us%20with%20your%20Personal%20Information%2C%20you%20consent%20to%20our%20use%2C%20disclosure%20and%20handling%20of%20your%20Personal%20Information%20in%20accordance%20with%20this%20Privacy%20Policy%20to%20the%20extent%20consent%20is%20the%20relevant%20legal%20basis.%3C%2Fp%3E%3Cp%3EIf%20you%20provide%20us%20with%20another%20individual's%20Personal%20Information%2C%20including%20when%20placing%20an%20order%20for%20someone%20else%20to%20receive%20a%20Retail%20Product%20or%20when%20uploading%20Content%20about%20another%20person%2C%20you%20must%20obtain%20that%20individual's%20consent%20before%20providing%20us%20with%20their%20Personal%20Information%20and%2C%20by%20doing%20so%2C%20you%20warrant%20that%20you%20have%20obtained%20all%20necessary%20consents.%3C%2Fp%3E%3Cp%3E%3Cstrong%3ECollecting%20information%20from%20you%3C%2Fstrong%3E%3C%2Fp%3E%3Cp%3EIf%20it%20is%20reasonable%20and%20practicable%20to%20do%20so%2C%20we%20will%20collect%20Personal%20Information%20directly%20from%20you.%3C%2Fp%3E%3Cp%3EDepending%20on%20how%20you%20choose%20to%20interact%20with%20us%2C%20we%20may%20collect%20your%20Personal%20Information%20when%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Eyou%20sign%20up%20to%20become%20an%20Administrator%2C%20Site%20Administrator%2C%20Guest%20User%20or%20account%20holder%3B%3C%2Fli%3E%3Cli%3Eyou%20create%20or%20update%20an%20Account%20on%20a%20Website%3B%3C%2Fli%3E%3Cli%3Eyou%20create%20a%20Memorial%2C%20Site%2C%20Letter%20or%20Public%20Letter%3B%3C%2Fli%3E%3Cli%3Eyou%20post%20Content%20about%20yourself%20or%20a%20living%20third%20party%20on%20a%20Website%3B%3C%2Fli%3E%3Cli%3Eyou%20send%20Content%20about%20yourself%20or%20a%20living%20third%20party%20to%20yourself%20or%20to%20a%20third%20party%20using%20a%20Website%3B%3C%2Fli%3E%3Cli%3Eyou%20purchase%20a%20Subscription%20Plan%2C%20Premium%20Membership%2C%20Retail%20Product%20or%20other%20paid%20Service%3B%3C%2Fli%3E%3Cli%3Eyou%20contact%20us%2C%20or%20are%20contacted%20by%20us%20or%20our%20service%20providers%2C%20by%20telephone%2C%20email%2C%20a%20Website%2C%20a%20social%20media%20platform%20or%20another%20communications%20channel%3B%3C%2Fli%3E%3Cli%3Eyou%20submit%20a%20support%20request%2C%20feedback%2C%20enquiry%2C%20survey%20response%20or%20complaint%3B%3C%2Fli%3E%3Cli%3Eyou%20sign%20up%20to%20an%20email%20marketing%20list%3B%3C%2Fli%3E%3Cli%3Eyou%20interact%20with%20our%20social%20media%20services%3B%3C%2Fli%3E%3Cli%3Ewe%20meet%20with%20an%20organisation%20wishing%20to%20do%20business%20with%20us%20and%20an%20individual%20from%20that%20organisation%20provides%20their%20details%3B%3C%2Fli%3E%3Cli%3Eyou%20enter%20into%20a%20transaction%20with%20us%20using%20a%20credit%20card%20or%20another%20non-cash%20payment%20method%3B%3C%2Fli%3E%3Cli%3Eyou%20enter%20a%20competition%20being%20run%20by%20us%3B%20or%3C%2Fli%3E%3Cli%3Ewe%20evaluate%20job%20applicants%2C%20personnel%20or%20contractors%2C%20which%20may%20include%20collecting%20employment%20history%2C%20educational%20qualifications%20and%20other%20application%20materials.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EWe%20do%20not%20directly%20collect%20your%20full%20credit%20card%20details%20to%20process%20payments.%20Credit%20card%20details%20are%20collected%2C%20processed%20and%20stored%20directly%20by%20our%20third-party%20payment%20processors%20pursuant%20to%20their%20own%20terms%20and%20privacy%20policies.%20However%2C%20we%20may%20receive%20limited%20transaction%20information%20and%20may%20collect%20bank%20account%20details%20to%20process%20refunds.%3C%2Fp%3E%3Cp%3E%3Cstrong%3ECollecting%20information%20from%20third%20parties%3C%2Fstrong%3E%3C%2Fp%3E%3Cp%3EWe%20may%20also%20collect%20information%20about%20you%20from%20other%20people%20or%20independent%20sources%20where%20it%20is%20not%20reasonable%20and%20practicable%20to%20collect%20the%20information%20from%20you%20directly.%3C%2Fp%3E%3Cp%3EThis%20may%20occur%2C%20for%20example%2C%20when%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Eanother%20User%20uploads%20Content%20that%20includes%20information%20about%20you%3B%3C%2Fli%3E%3Cli%3Ean%20Administrator%20or%20Site%20Administrator%20nominates%20you%20as%20an%20Administrator%2C%20Site%20Administrator%20or%20Guest%20User%3B%3C%2Fli%3E%3Cli%3Ea%20school%2C%20teacher%2C%20parent%20or%20guardian%20sets%20up%20a%20Site%20or%20similar%20shared%20experience%20that%20involves%20your%20participation%3B%3C%2Fli%3E%3Cli%3Eyou%20choose%20to%20authenticate%20through%20a%20single%20sign-on%20provider%3B%20or%3C%2Fli%3E%3Cli%3Eyou%20give%20us%20permission%20to%20access%20information%20held%20in%20another%20service%2C%20such%20as%20Google%2C%20Apple%2C%20Dropbox%20or%20another%20integrated%20service%2C%20depending%20on%20your%20privacy%20settings%20with%20that%20service.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EWhere%20we%20have%20collected%20your%20Personal%20Information%20from%20a%20third%20party%2C%20that%20Personal%20Information%20will%20be%20held%2C%20used%20and%20disclosed%20by%20us%20in%20accordance%20with%20this%20Privacy%20Policy.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E4.%20Cookies%20and%20Similar%20Technologies%3C%2Fh2%3E%3Cp%3EWe%20may%20collect%20information%20based%20on%20how%20you%20use%20a%20Website%2C%20including%20through%20cookies%2C%20web%20beacons%20and%20other%20similar%20technologies.%3C%2Fp%3E%3Cp%3ECookies%20are%20small%20text%20files%20that%20are%20transferred%20to%20your%20computer%20or%20device%20through%20your%20web%20browser%20to%20enable%20our%20systems%20to%20recognise%20your%20browser%20and%20record%20non-personal%20information%20such%20as%20the%20date%2C%20time%20or%20duration%20of%20your%20visit%20and%20the%20pages%20accessed%2C%20for%20website%20administration%2C%20analytics%2C%20statistical%20and%20maintenance%20purposes.%3C%2Fp%3E%3Cp%3EWe%20use%20cookies%20and%20similar%20technologies%20to%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Ehelp%20us%20improve%20our%20Websites%20and%20Services%3B%3C%2Fli%3E%3Cli%3Edeliver%20a%20better%20and%20more%20tailored%20user%20experience%3B%3C%2Fli%3E%3Cli%3Eremember%20your%20preferences%20and%20settings%3B%3C%2Fli%3E%3Cli%3Erecognise%20you%20when%20you%20return%20to%20a%20Website%3B%20and%3C%2Fli%3E%3Cli%3Esupport%20security%2C%20fraud%20prevention%20and%20performance%20monitoring.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EWe%20will%20ask%20for%20your%20consent%20before%20placing%20non-essential%20cookies%20on%20your%20device%20where%20consent%20is%20required%20by%20law.%3C%2Fp%3E%3Cp%3ENo%20attempt%20is%20made%20by%20us%20to%20use%20Cookie%20Information%20to%20personally%20identify%20you%2C%20unless%20Cookie%20Information%20is%20linked%20with%20Personal%20Information%2C%20in%20which%20case%20it%20will%20be%20treated%20as%20Personal%20Information.%3C%2Fp%3E%3Cp%3EYou%20can%20remove%20or%20reject%20cookies%20by%20adjusting%20the%20settings%20on%20your%20web%20browser%20or%20device.%20Please%20note%20that%20some%20parts%20of%20a%20Website%20may%20not%20function%20fully%20for%20users%20that%20disable%20cookies.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E5.%20Electronic%20Communications%20and%20Direct%20Marketing%3C%2Fh2%3E%3Cp%3ESubject%20to%20Applicable%20Privacy%20Laws%2C%20we%20may%20send%20you%20email%20messages%20and%20other%20electronic%20communications%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Ein%20connection%20with%20your%20use%20of%20a%20Website%20or%20Service%3B%3C%2Fli%3E%3Cli%3Ein%20the%20ordinary%20course%20of%20business%3B%3C%2Fli%3E%3Cli%3Eto%20provide%20important%20operational%2C%20legal%20or%20account-related%20updates%3B%20or%3C%2Fli%3E%3Cli%3Efor%20marketing%20and%20promotional%20purposes%20where%20permitted%20by%20law.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EYou%20can%20unsubscribe%20from%20marketing%20communications%20at%20any%20time%20by%20following%20the%20unsubscribe%20directions%20in%20the%20communication%20or%20by%20contacting%20us%20at%3C!--%20--%3E%20%3Ca%20href%3D%22mailto%3Asupport%40memories.net%22%3Esupport%40memories.net%3C%2Fa%3E.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E6.%20Anonymity%20and%20Pseudonymity%3C%2Fh2%3E%3Cp%3EWhere%20practicable%2C%20customers%20and%20others%20have%20the%20right%20to%20interact%20with%20us%20anonymously%20or%20using%20a%20pseudonym.%3C%2Fp%3E%3Cp%3ECircumstances%20where%20this%20is%20not%20practicable%20include%20where%20Personal%20Information%20is%20required%20to%20create%20an%20account%2C%20complete%20a%20transaction%2C%20deliver%20a%20Letter%2C%20administer%20a%20Site%20or%20comply%20with%20legal%20obligations.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E7.%20Use%20of%20Personal%20Information%3C%2Fh2%3E%3Cp%3ESubject%20to%20Applicable%20Privacy%20Laws%2C%20we%20may%20hold%2C%20use%20or%20disclose%20your%20Personal%20Information%20for%20the%20purposes%20for%20which%20it%20was%20provided%20or%20collected%2C%20including%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Edisplaying%20it%20when%20you%20or%20another%20authorised%20User%20has%20posted%20it%20to%20a%20Website%3B%3C%2Fli%3E%3Cli%3Ecreating%2C%20delivering%2C%20hosting%2C%20administering%20and%20supporting%20Memorials%2C%20Sites%2C%20Letters%2C%20Public%20Letters%20and%20other%20Services%3B%3C%2Fli%3E%3Cli%3Eresponding%20to%20enquiries%20received%20from%20you%3B%3C%2Fli%3E%3Cli%3Eperforming%20authorised%20financial%20transactions%20with%20you%3B%3C%2Fli%3E%3Cli%3Eprocessing%20subscriptions%2C%20renewals%2C%20Premium%20Memberships%20and%20Orders%3B%3C%2Fli%3E%3Cli%3Eidentifying%20you%20with%20third-party%20services%20we%20use%20for%20payment%20processing%2C%20customer%20support%2C%20analytics%2C%20hosting%2C%20communications%20or%20fraud%20prevention%3B%3C%2Fli%3E%3Cli%3Everifying%20your%20identity%20and%20assisting%20you%20if%20you%20have%20forgotten%20account%20details%3B%3C%2Fli%3E%3Cli%3Ecommunicating%20with%20you%20and%20providing%20information%20about%20our%20products%20or%20services%3B%3C%2Fli%3E%3Cli%3Esending%20marketing%20or%20product-related%20communications%20from%20businesses%20within%20our%20corporate%20group%2C%20where%20permitted%3B%3C%2Fli%3E%3Cli%3Enotifying%20you%20about%20changes%20to%20our%20Websites%2C%20goods%20and%20services%3B%3C%2Fli%3E%3Cli%3Eensuring%20that%20content%20from%20our%20Websites%20is%20presented%20in%20the%20most%20effective%20manner%20for%20you%20and%20your%20device%3B%3C%2Fli%3E%3Cli%3Eallowing%20you%20to%20participate%20in%20interactive%20features%20of%20our%20Websites%20when%20you%20choose%20to%20do%20so%3B%3C%2Fli%3E%3Cli%3Eenabling%20you%20to%20enter%20competitions%20we%20run%3B%3C%2Fli%3E%3Cli%3Efacilitating%20your%20participation%20in%20surveys%20where%20you%20volunteer%20Personal%20Information%3B%3C%2Fli%3E%3Cli%3Eenabling%20you%20to%20participate%20in%20loyalty%2C%20rewards%20or%20referral%20programs%20where%20offered%3B%3C%2Fli%3E%3Cli%3Ereceiving%2C%20investigating%20and%20addressing%20feedback%2C%20complaints%2C%20disputes%20or%20abuse%20reports%3B%3C%2Fli%3E%3Cli%3Eprotecting%20our%20legal%20interests%2C%20enforcing%20our%20Terms%20and%20fulfilling%20our%20regulatory%20obligations%3B%20and%3C%2Fli%3E%3Cli%3Eany%20other%20purpose%20for%20which%20you%20have%20provided%20consent%20or%20that%20is%20otherwise%20permitted%20by%20law.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EWhere%20you%20post%20or%20submit%20Content%20for%20publication%20or%20sharing%20through%20a%20Website%20or%20Service%2C%20you%20acknowledge%20that%20some%20of%20that%20Personal%20Information%20may%20be%20visible%20to%20other%20users%20or%20recipients%20depending%20on%20the%20settings%20and%20nature%20of%20the%20relevant%20Service.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E8.%20Use%20of%20Artificial%20Intelligence%20and%20Automated%20Tools%3C%2Fh2%3E%3Cp%3EWe%20may%20use%20artificial%20intelligence%20(AI)%2C%20machine%20learning%20or%20other%20automated%20tools%20in%20connection%20with%20providing%2C%20operating%2C%20improving%20and%20supporting%20our%20Websites%20and%20Services.%20This%20may%20include%2C%20for%20example%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3EAI-assisted%20content%20creation%20features%2C%20such%20as%20generating%20draft%20obituaries%2C%20eulogies%20or%20other%20written%20material%20based%20on%20information%20you%20provide%3B%3C%2Fli%3E%3Cli%3Eautomated%20customer%20support%20tools%20that%20may%20respond%20to%20enquiries%2C%20triage%20requests%20or%20assist%20our%20support%20team%3B%20and%3C%2Fli%3E%3Cli%3Eautomated%20moderation%20or%20analysis%20tools%20used%20to%20detect%20policy%20violations%2C%20improve%20service%20quality%20or%20personalise%20your%20experience.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EWhere%20AI%20or%20automated%20tools%20process%20your%20Personal%20Information%2C%20we%20do%20so%20in%20accordance%20with%20this%20Privacy%20Policy%20and%20Applicable%20Privacy%20Laws.%20We%20do%20not%20use%20AI%20to%20make%20decisions%20that%20produce%20legal%20or%20similarly%20significant%20effects%20on%20you%20without%20appropriate%20human%20review%2C%20except%20where%20permitted%20by%20law.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E9.%20Third-Party%20Websites%20and%20Services%3C%2Fh2%3E%3Cp%3EA%20Website%20may%20contain%20links%20to%20third-party%20websites%2C%20services%20or%20applications%2C%20including%20the%20networks%20of%20affiliate%20service%20providers%2C%20technology%20partners%2C%20advertisers%20or%20payment%20processors.%3C%2Fp%3E%3Cp%3EIf%20you%20follow%20a%20link%20to%20any%20third-party%20site%20or%20service%2C%20please%20note%20that%20they%20have%20their%20own%20privacy%20policies%20and%20terms.%20If%20you%20use%20a%20Website%20to%20link%20to%20another%20site%2C%20you%20will%20be%20subject%20to%20that%20site's%20privacy%20policy%20and%20terms%20of%20use.%20We%20encourage%20you%20to%20read%20those%20documents%20before%20disclosing%20your%20Personal%20Information.%3C%2Fp%3E%3Cp%3EWe%20do%20not%20control%2C%20and%20do%20not%20accept%20responsibility%20or%20liability%20for%2C%20the%20privacy%20practices%20of%20any%20party%20other%20than%20us.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E10.%20Disclosure%20of%20Personal%20Information%3C%2Fh2%3E%3Cp%3EWe%20may%20disclose%20your%20Personal%20Information%20to%20related%20group%20companies.%20They%20will%20only%20use%20it%20for%20the%20same%20purposes%20that%20we%20may%20under%20this%20Privacy%20Policy%20or%20as%20otherwise%20permitted%20by%20law.%3C%2Fp%3E%3Cp%3EWe%20may%20also%20provide%20Personal%20Information%20to%20third%20parties%20outside%20our%20group%20companies%20for%20limited%20purposes%2C%20such%20as%20helping%20us%20provide%20goods%20and%20services%20to%20customers.%20We%20limit%20the%20information%20we%20provide%20to%20what%20those%20third%20parties%20reasonably%20need%20for%20those%20purposes.%3C%2Fp%3E%3Cp%3ESuch%20third%20parties%20may%20include%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Eorganisations%20who%20carry%20out%20payment%20processing%2C%20credit%2C%20fraud%2C%20identity%2C%20abuse%20or%20other%20security%20checks%3B%3C%2Fli%3E%3Cli%3Ecouriers%20and%20delivery%20businesses%3B%3C%2Fli%3E%3Cli%3Ehosting%20providers%2C%20cloud%20providers%20and%20other%20IT%20or%20software%20service%20providers%3B%3C%2Fli%3E%3Cli%3Ecustomer%20support%2C%20communications%2C%20analytics%2C%20survey%20and%20marketing%20service%20providers%3B%3C%2Fli%3E%3Cli%3Eprofessional%20advisers%2C%20auditors%2C%20insurers%20and%20legal%20representatives%3B%20and%3C%2Fli%3E%3Cli%3Eother%20service%20providers%20who%20assist%20us%20to%20operate%20our%20Websites%2C%20Services%20and%20business.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EWe%20may%20also%20disclose%20your%20Personal%20Information%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Ewhere%20we%20have%20your%20express%20permission%20to%20do%20so%3B%3C%2Fli%3E%3Cli%3Ewhere%20it%20can%20reasonably%20be%20inferred%20from%20the%20circumstances%20that%20you%20consent%20to%20the%20disclosure%3B%3C%2Fli%3E%3Cli%3Eif%20we%20sell%2C%20assign%20or%20otherwise%20transfer%20part%20or%20the%20whole%20of%20our%20business%2C%20in%20which%20case%20your%20Personal%20Information%20may%20be%20among%20the%20transferred%20assets%20to%20the%20extent%20relevant%20to%20the%20business%20being%20transferred%3B%20or%3C%2Fli%3E%3Cli%3Eif%20we%20are%20under%20a%20duty%20to%20disclose%20or%20share%20your%20Personal%20Information%20in%20order%20to%20comply%20with%20any%20legal%20obligation%2C%20enforce%20our%20Terms%20or%20protect%20the%20rights%2C%20property%20or%20safety%20of%20us%2C%20our%20personnel%2C%20our%20customers%20or%20others.%3C%2Fli%3E%3C%2Ful%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E11.%20Security%20of%20Personal%20Information%3C%2Fh2%3E%3Cp%3EThe%20security%20of%20your%20Personal%20Information%20is%20important%20to%20us.%20We%20take%20commercially%20reasonable%20steps%20to%20protect%20your%20Personal%20Information%20from%20misuse%2C%20loss%20and%20unauthorised%20access%2C%20modification%20and%20disclosure.%3C%2Fp%3E%3Cp%3EEach%20Account%2C%20Memorial%20or%20Site%20is%20protected%20by%20account%20details%20provided%20to%20Users%20for%20privacy%20and%20security.%3C%2Fp%3E%3Cp%3EHowever%2C%20we%20cannot%20guarantee%20the%20absolute%20security%20of%20information%20or%20that%20our%20systems%20will%20be%20completely%20free%20from%20third-party%20interception%2C%20malicious%20attack%20or%20viruses.%20We%20cannot%20and%20do%20not%20guarantee%20that%20information%20you%20send%20to%20us%20over%20the%20internet%20will%20always%20be%20protected%20by%20any%20particular%20form%20of%20encryption.%3C%2Fp%3E%3Cp%3EYou%20transmit%20Personal%20Information%20to%20us%20at%20your%20own%20risk.%20You%20are%20entirely%20responsible%20for%20maintaining%20the%20security%20of%20your%20passwords%20and%20account%20information.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E12.%20Information%20Sharing%20and%20Cross-Border%20Transfers%3C%2Fh2%3E%3Cp%3EWe%20do%20not%20sell%20or%20share%20your%20Personal%20Information%20for%20monetary%20or%20other%20valuable%20consideration.%20We%20also%20do%20not%20knowingly%20sell%20or%20share%20the%20Personal%20Information%20of%20individuals%20under%20the%20age%20of%2016.%3C%2Fp%3E%3Cp%3EBecause%20we%20operate%20internationally%20and%20use%20service%20providers%20in%20multiple%20jurisdictions%2C%20we%20may%20store%2C%20process%20or%20transfer%20Personal%20Information%20in%20countries%20other%20than%20the%20country%20in%20which%20it%20was%20collected%2C%20including%20Australia%2C%20the%20United%20States%20and%20other%20countries%20where%20our%20service%20providers%20or%20related%20companies%20operate.%3C%2Fp%3E%3Cp%3EWhere%20we%20transfer%20Personal%20Information%20across%20borders%2C%20we%20will%20take%20such%20steps%20as%20are%20reasonable%20in%20the%20circumstances%20to%20ensure%20that%20the%20recipient%20handles%20the%20information%20in%20a%20manner%20consistent%20with%20Applicable%20Privacy%20Laws.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E13.%20Data%20Rights%3C%2Fh2%3E%3Cp%3ESubject%20to%20Applicable%20Privacy%20Laws%2C%20you%20may%20have%20the%20right%20to%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Erequest%20access%20to%20the%20Personal%20Information%20we%20hold%20about%20you%3B%3C%2Fli%3E%3Cli%3Erequest%20correction%20of%20Personal%20Information%20that%20is%20inaccurate%2C%20incomplete%20or%20out%20of%20date%3B%3C%2Fli%3E%3Cli%3Erequest%20deletion%20of%20Personal%20Information%20concerning%20you%20in%20certain%20circumstances%3B%3C%2Fli%3E%3Cli%3Erequest%20information%20about%20the%20categories%20of%20Personal%20Information%20we%20collect%2C%20the%20purposes%20for%20which%20we%20use%20it%20and%20the%20categories%20of%20third%20parties%20with%20whom%20it%20is%20shared%3B%3C%2Fli%3E%3Cli%3Ewithdraw%20consent%20where%20our%20processing%20is%20based%20on%20consent%3B%3C%2Fli%3E%3Cli%3Eobject%20to%20or%20restrict%20certain%20processing%20in%20certain%20circumstances%3B%3C%2Fli%3E%3Cli%3Erequest%20portability%20of%20certain%20Personal%20Information%20in%20certain%20circumstances%3B%20and%3C%2Fli%3E%3Cli%3Enot%20receive%20discriminatory%20treatment%20for%20exercising%20your%20privacy%20rights.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EResidents%20of%20certain%20U.S.%20states%20may%20also%20have%20rights%2C%20in%20certain%20circumstances%2C%20to%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Eknow%20the%20categories%20and%20specific%20pieces%20of%20Personal%20Information%20we%20have%20collected%20about%20you%3B%3C%2Fli%3E%3Cli%3Eknow%20the%20sources%20from%20which%20the%20Personal%20Information%20was%20collected%20and%20the%20business%20purpose%20for%20collecting%20it%3B%3C%2Fli%3E%3Cli%3Eknow%20whether%20and%20how%20we%20disclose%2C%20sell%20or%20share%20Personal%20Information%20and%2C%20where%20applicable%2C%20opt%20out%20of%20certain%20disclosures%2C%20sales%20or%20sharing%3B%3C%2Fli%3E%3Cli%3Erequest%20correction%20of%20inaccurate%20Personal%20Information%3B%20and%3C%2Fli%3E%3Cli%3Elimit%20certain%20uses%20of%20Sensitive%20Information%20where%20applicable.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EYou%20may%20inquire%20about%20these%20rights%20or%20exercise%20them%20by%20contacting%20us%20as%20set%20out%20in%20section%2016%20of%20this%20Privacy%20Policy.%3C%2Fp%3E%3Cp%3EUpon%20receipt%20of%20a%20request%20to%20exercise%20your%20rights%2C%20we%20may%20request%20additional%20information%20to%20verify%20your%20identity%20and%20authority.%20To%20the%20extent%20possible%2C%20we%20will%20use%20information%20already%20in%20our%20possession%20to%20verify%20your%20identity.%20Any%20information%20you%20provide%20in%20connection%20with%20such%20verification%20will%20be%20used%20only%20for%20that%20verification%20purpose%20and%20retained%20only%20as%20long%20as%20reasonably%20necessary.%3C%2Fp%3E%3Cp%3EYou%20may%20designate%20an%20authorised%20agent%20to%20make%20a%20request%20on%20your%20behalf%20where%20permitted%20by%20law.%20If%20you%20submit%20a%20request%20through%20an%20authorised%20agent%2C%20we%20may%20require%20proof%20of%20that%20authority%20and%20may%20still%20require%20you%20to%20verify%20your%20identity.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E14.%20Warranties%20and%20Representation%3C%2Fh2%3E%3Cp%3EThis%20Privacy%20Policy%20does%20not%20constitute%20a%20contractual%20representation%2C%20promise%2C%20guarantee%20or%20warranty%20by%20us%20to%20you%20as%20to%20the%20manner%20in%20which%20we%20will%20or%20may%20collect%2C%20store%2C%20use%2C%20disclose%2C%20protect%20or%20otherwise%20handle%20your%20Personal%20Information.%3C%2Fp%3E%3Cp%3ESome%20matters%20are%20beyond%20our%20control%2C%20such%20as%20malicious%20or%20criminal%20attacks%20by%20third%20parties.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E15.%20Access%20to%2C%20Correction%20and%20Updating%20of%20Personal%20Information%3C%2Fh2%3E%3Cp%3EYou%20have%20the%20right%20to%20request%20access%20to%20the%20Personal%20Information%20we%20hold%20about%20you%20and%20to%20request%20correction%20if%20you%20believe%20it%20is%20inaccurate%2C%20incomplete%20or%20out%20of%20date%2C%20subject%20to%20Applicable%20Privacy%20Laws.%3C%2Fp%3E%3Cp%3ETo%20obtain%20a%20copy%20of%20the%20Personal%20Information%20we%20hold%20about%20you%20or%20to%20request%20correction%2C%20please%20contact%20us%20as%20set%20out%20in%20section%2016%20of%20this%20Privacy%20Policy.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E16.%20Concerns%20about%20Privacy%3C%2Fh2%3E%3Cp%3EIf%20you%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Ehave%20any%20concerns%20regarding%20the%20privacy%20of%20your%20Personal%20Information%20or%20a%20possible%20breach%20of%20Applicable%20Privacy%20Laws%3B%3C%2Fli%3E%3Cli%3Ewish%20to%20obtain%20a%20copy%20of%20your%20Personal%20Information%20held%20by%20us%3B%3C%2Fli%3E%3Cli%3Ewish%20to%20make%20a%20request%20that%20your%20Personal%20Information%20be%20corrected%3B%20or%3C%2Fli%3E%3Cli%3Ewish%20to%20exercise%20another%20privacy%20or%20data%20right%2C%3C%2Fli%3E%3C%2Ful%3E%3Cp%3Eplease%20contact%3A%3C%2Fp%3E%3Cp%3EThe%20Privacy%20Officer%3Cbr%3EMemories%20Technologies%20Pty%20Ltd%3Cbr%3E%3Ca%20href%3D%22mailto%3Aprivacy%40memories.net%22%3Eprivacy%40memories.net%3C%2Fa%3E%3C%2Fp%3E%3Cp%3EIn%20your%20email%2C%20please%20specify%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Eyour%20name%3B%3C%2Fli%3E%3Cli%3Eyour%20address%3B%3C%2Fli%3E%3Cli%3Eyour%20phone%20number%3B%3C%2Fli%3E%3Cli%3Eyour%20email%20address%3B%3C%2Fli%3E%3Cli%3Ea%20description%20of%20your%20concern%2C%20request%20or%20complaint%3B%20and%3C%2Fli%3E%3Cli%3Edetail%20about%20the%20information%20in%20question%20to%20help%20us%20locate%20it.%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EWe%20will%20use%20commercially%20reasonable%20efforts%20to%20determine%20whether%20there%20is%20a%20problem%2C%20respond%20to%20your%20request%20within%20a%20reasonable%20time%20and%20take%20any%20necessary%20corrective%20action.%3C%2Fp%3E%3Cp%3EIf%20you%20are%20not%20satisfied%20with%20our%20response%2C%20you%20may%20make%20a%20formal%20complaint%20to%20the%20Relevant%20Authority.%3C%2Fp%3E%3Cp%3EIn%20Australia%2C%20you%20may%20send%20a%20formal%20complaint%20to%20the%20Office%20of%20the%20Australian%20Information%20Commissioner%20after%20giving%20us%20a%20reasonable%20opportunity%20to%20address%20your%20concern.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E17.%20Deletion%2C%20Removal%20or%20Destruction%20of%20Personal%20Information%3C%2Fh2%3E%3Cp%3EYou%20can%20request%20that%20your%20Personal%20Information%20be%20deleted%2C%20removed%2C%20depersonalised%20or%20destroyed%20by%20emailing%20%3Ca%20href%3D%22mailto%3Asupport%40memories.net%22%3Esupport%40memories.net%3C%2Fa%3E.%3C%2Fp%3E%3Cp%3EWe%20will%20use%20commercially%20reasonable%20endeavours%20to%20action%20your%20request%20within%20a%20reasonable%20time%20and%20notify%20you%20when%20the%20request%20has%20been%20completed%20or%2C%20where%20applicable%2C%20explain%20why%20it%20cannot%20be%20fully%20completed.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E18.%20Compliance%20with%20Applicable%20Privacy%20Laws%3C%2Fh2%3E%3Cp%3ENotwithstanding%20any%20other%20provision%20of%20this%20Privacy%20Policy%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Ethe%20laws%20of%20the%20Applicable%20Jurisdiction%2C%20including%20the%20Applicable%20Privacy%20Laws%2C%20override%20any%20provision%20of%20this%20Privacy%20Policy%20that%20is%20inconsistent%20with%20those%20laws%3B%20and%3C%2Fli%3E%3Cli%3Eto%20the%20extent%20that%20the%20laws%20of%20the%20Applicable%20Jurisdiction%20impose%20less%20onerous%20requirements%20or%20obligations%20on%20us%20than%20this%20Privacy%20Policy%2C%20those%20provisions%20will%20be%20implied%20as%20part%20of%20this%20Privacy%20Policy%20and%2C%20to%20the%20extent%20of%20any%20inconsistency%2C%20those%20provisions%20will%20prevail%20over%20the%20express%20provisions%20of%20this%20Privacy%20Policy.%3C%2Fli%3E%3C%2Ful%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E19.%20Additional%20Information%20for%20EU%20and%20UK%20Residents%3C%2Fh2%3E%3Cp%3EThe%20GDPR%20and%20UK%20GDPR%20regulate%20how%20personal%20data%20is%20protected%20and%20enhance%20the%20control%20that%20individuals%20in%20the%20EU%20and%20UK%20have%20over%20their%20personal%20data.%3C%2Fp%3E%3Cp%3EWhere%20the%20GDPR%20or%20UK%20GDPR%20applies%20to%20our%20processing%20of%20your%20personal%20data%3A%3C%2Fp%3E%3Cul%20class%3D%22my-3%20ml-7%20list-disc%22%3E%3Cli%3Epersonal%20data%20must%20be%20processed%20in%20a%20fair%2C%20lawful%20and%20transparent%20way%3B%3C%2Fli%3E%3Cli%3Epersonal%20data%20should%20be%20collected%20for%20specified%2C%20explicit%20and%20legitimate%20purposes%20and%20not%20further%20processed%20in%20a%20manner%20incompatible%20with%20those%20purposes%3B%3C%2Fli%3E%3Cli%3Epersonal%20data%20should%20be%20adequate%2C%20relevant%20and%20limited%20to%20what%20is%20necessary%20in%20relation%20to%20the%20purposes%20for%20which%20it%20is%20processed%3B%3C%2Fli%3E%3Cli%3Epersonal%20data%20should%20be%20accurate%20and%2C%20where%20necessary%2C%20kept%20up%20to%20date%3B%3C%2Fli%3E%3Cli%3Epersonal%20data%20should%20be%20kept%20for%20no%20longer%20than%20necessary%3B%20and%3C%2Fli%3E%3Cli%3Eyou%20may%20have%20additional%20rights%2C%20including%20rights%20of%20access%2C%20rectification%2C%20erasure%2C%20restriction%2C%20objection%20and%20portability.%3C%2Fli%3E%3C%2Ful%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E20.%20Waiver%3C%2Fh2%3E%3Cp%3ESubject%20to%20the%20laws%20of%20the%20Applicable%20Jurisdiction%2C%20any%20failure%20or%20delay%20by%20us%20to%20enforce%20or%20exercise%20a%20power%20or%20right%20or%20provision%20of%20this%20Privacy%20Policy%20will%20not%20constitute%20a%20waiver%20of%20that%20right%20or%20provision%2C%20and%20the%20exercise%20of%20a%20power%20or%20right%20by%20us%20does%20not%20preclude%20our%20ability%20to%20exercise%20that%20or%20any%20other%20power%20or%20right%20in%20the%20future.%3C%2Fp%3E%3Cp%3EAll%20rights%20not%20expressly%20granted%20are%20reserved.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E21.%20Amendment%3C%2Fh2%3E%3Cp%3EWe%20reserve%20the%20right%20at%20our%20sole%20discretion%20to%20revise%20this%20Privacy%20Policy%20at%20any%20time.%3C%2Fp%3E%3Cp%3EYou%20should%20visit%20the%20Websites%20periodically%20to%20review%20this%20Privacy%20Policy.%20Amendments%20will%20be%20effective%20upon%20notification%20or%20publication%20on%20the%20relevant%20Website%2C%20or%20on%20the%20later%20date%20specified%20in%20the%20notice.%3C%2Fp%3E%3Cp%3ESubject%20to%20Applicable%20Privacy%20Laws%2C%20your%20continued%20use%20of%20a%20Website%20following%20such%20notification%20or%20publication%20will%20represent%20agreement%20by%20you%20to%20be%20bound%20by%20this%20Privacy%20Policy%20as%20amended.%3C%2Fp%3E%3Ch2%20class%3D%22font-semibold%20text-xl%20mt-6%22%3E22.%20Governing%20Law%3C%2Fh2%3E%3Cp%3EThis%20Privacy%20Policy%20is%20governed%20by%2C%20and%20must%20be%20construed%20according%20to%2C%20the%20law%20in%20force%20in%20the%20State%20of%20Victoria%2C%20Australia%2C%20subject%20to%20any%20overriding%20requirements%20of%20Applicable%20Privacy%20Laws.%3C%2Fp%3E%3Cp%3EThe%20courts%20of%20Victoria%2C%20Australia%20will%20have%20jurisdiction%20to%20determine%20disputes%20in%20relation%20to%20this%20Privacy%20Policy%2C%20except%20to%20the%20extent%20a%20court%20or%20tribunal%20with%20mandatory%20jurisdiction%20applies%20under%20non-excludable%20law.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!--%24--%3E%3C!--%2F%24--%3E%3Cfooter%20class%3D%22bg-%5B%23eef2f5%5D%20border-t%20border-gray-200%20sticky%20top-%5B100vh%5D%22%3E%3Cdiv%20class%3D%22max-w-7xl%20mx-auto%20px-4%20py-12%20sm%3Apx-6%20lg%3Apx-8%22%3E%3Cdiv%20class%3D%22flex%20flex-col%20lg%3Aflex-row%20gap-8%20lg%3Agap-16%202xl%3Agap-32%22%3E%3Cdiv%3E%3Ca%20class%3D%22flex%20items-center%20mb-4%22%20href%3D%22%2F%22%3E%3Cimg%20alt%3D%22Memories%20Logo%22%20loading%3D%22lazy%22%20width%3D%22170%22%20height%3D%2220%22%20decoding%3D%22async%22%20data-nimg%3D%221%22%20class%3D%22h-6%20w-auto%22%20style%3D%22color%3Atransparent%22%3E%3C%2Fa%3E%3Cp%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20mb-4%20lg%3Amax-w-sm%22%3EMemories%20makes%20it%20easy%20to%20create%20everything%20you%20need%20for%20a%20beautiful%20funeral%20service%20that%20honors%20your%20loved%20one.%3C%2Fp%3E%3Cdiv%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20mb-4%22%3E%3Cp%20class%3D%22text-gray-600%22%3E%3Cspan%20class%3D%22font-medium%22%3EEmail%3A%3C%2Fspan%3E%20%3Ca%20href%3D%22mailto%3Asupport%40memories.net%3Fsubject%3DMemories%2520website%2520support%22%20class%3D%22hover%3Atext-primary%20transition-colors%22%3Esupport%40memories.net%3C%2Fa%3E%3C%2Fp%3E%3C%2Fdiv%3E%3Ca%20data-slot%3D%22button%22%20class%3D%22inline-flex%20items-center%20justify-center%20gap-2%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20aria-invalid%3Afocus-visible%3Aring-0%20border%20border-primary%20text-primary%20bg-background%20shadow-xs%20hover%3Abg-blue-50%20focus-visible%3Aoutline-0%20focus-visible%3Aring-0%20focus%3Abg-blue-50%20focus%3Atext-primary%20h-9%20px-4%20py-2%20text-lg%20xl%3Atext-xl%22%20href%3D%22%2Fbusiness%22%3EFor%20industry%20professionals%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22flex%20flex-col%20sm%3Aflex-row%20flex-1%20gap-8%22%3E%3Cdiv%20class%3D%22flex-1%22%3E%3Ch3%20class%3D%22font-semibold%20text-gray-900%20tracking-wider%20uppercase%20mb-4%22%3EProducts%3C%2Fh3%3E%3Cul%20class%3D%22space-y-3%22%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fproducts%2Ftribute-video%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dfooter%22%3E%3Cspan%3ETribute%20videos%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fproducts%2Fai-biography-writer%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dfooter%22%3E%3Cspan%3EBiography%20writer%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fproducts%2Fobituary-writer%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dfooter%22%3E%3Cspan%3EObituary%20writer%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fproducts%2Feulogy-writer%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dfooter%22%3E%3Cspan%3EEulogy%20writer%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fproducts%2Forder-of-service%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dfooter%22%3E%3Cspan%3EOrder%20of%20service%20builder%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fproducts%2Fdigital-guest-book%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dfooter%22%3E%3Cspan%3EDigital%20guest%20book%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fproducts%2Fonline-memorial%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dfooter%22%3E%3Cspan%3EOnline%20memory%20book%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fproducts%2Fmemory-book%3Futm_source%3Dwebsite%26amp%3Butm_medium%3Dinternal%26amp%3Butm_campaign%3Dfooter%22%3E%3Cspan%3EMemory%20book%20builder%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22flex-1%22%3E%3Ch3%20class%3D%22font-semibold%20text-gray-900%20tracking-wider%20uppercase%20mb-4%22%3ECompany%3C%2Fh3%3E%3Cul%20class%3D%22space-y-3%22%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fabout%22%3EAbout%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fblog%22%3EBlog%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Ftestimonials%22%3ETestimonials%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-600%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fpricing%22%3EPricing%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22mt-10%20pt-8%20border-t%20border-gray-200%22%3E%3Cdiv%20class%3D%22flex%20flex-col%20md%3Aflex-row%20justify-between%20items-center%20gap-4%22%3E%3Cdiv%20class%3D%22flex%20flex-col%20sm%3Aflex-row%20items-center%20gap-2%20sm%3Agap-4%22%3E%3Cp%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-500%20text-center%20md%3Atext-left%22%3E%C2%A9%202026%20%3C!--%20--%3EMemories%20Technologies%20Pty%20Ltd%3C!--%20--%3E.%20All%20rights%20reserved.%3C%2Fp%3E%3Cdiv%20class%3D%22flex%20items-center%20gap-3%22%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-500%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fterms-and-conditions%22%3ETerms%20and%20Conditions%3C%2Fa%3E%3Ca%20class%3D%22text-lg%20xl%3Atext-xl%20font-light%20text-gray-500%20hover%3Atext-primary%20transition-colors%22%20href%3D%22%2Fprivacy-policy%22%3EPrivacy%20Policy%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22flex%20space-x-5%22%3E%3Ca%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%20class%3D%22text-gray-400%20hover%3Atext-primary%20transition-colors%22%20aria-label%3D%22Follow%20us%20on%20Facebook%22%20href%3D%22https%3A%2F%2Fwww.facebook.com%2Fmemoriessocial%22%3E%3Csvg%20width%3D%2217%22%20height%3D%2217%22%20viewBox%3D%220%200%2017%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22w-6%20h-6%22%3E%3Ctitle%3EFacebook%3C%2Ftitle%3E%3Cpath%20d%3D%22M16.0254%208.52887C16.0254%204.08359%2012.4437%200.47998%208.02539%200.47998C3.60711%200.47998%200.0253906%204.08359%200.0253906%208.52887C0.0253906%2012.5462%202.95086%2015.8762%206.77539%2016.48V10.8555H4.74414V8.52887H6.77539V6.7556C6.77539%204.73835%207.96977%203.62408%209.79711%203.62408C10.6724%203.62408%2011.5879%203.78128%2011.5879%203.78128V5.76206H10.5791C9.58539%205.76206%209.27539%206.38255%209.27539%207.01907V8.52887H11.4941L11.1395%2010.8555H9.27539V16.48C13.0999%2015.8762%2016.0254%2012.5464%2016.0254%208.52887Z%22%20fill%3D%22%232768C4%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fa%3E%3Ca%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%20class%3D%22text-gray-400%20hover%3Atext-primary%20transition-colors%22%20aria-label%3D%22Follow%20us%20on%20Instagram%22%20href%3D%22https%3A%2F%2Fwww.instagram.com%2Fmemories_social%2F%22%3E%3Csvg%20width%3D%2217%22%20height%3D%2217%22%20viewBox%3D%220%200%2017%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22w-6%20h-6%22%3E%3Ctitle%3EInstagram%3C%2Ftitle%3E%3Cpath%20d%3D%22M4.71214%200.535931C3.86094%200.576091%203.27965%200.711931%202.77149%200.911612C2.24557%201.11657%201.79981%201.39161%201.35629%201.83674C0.912767%202.28186%200.639646%202.72794%200.436125%203.25466C0.239164%203.76394%200.105724%204.3457%200.0681237%205.19739C0.0305236%206.04907%200.0222036%206.32283%200.0263636%208.49532C0.0305236%2010.6678%200.0401236%2010.9401%200.0814038%2011.7936C0.122044%2012.6446%200.257404%2013.2257%200.457085%2013.7341C0.662366%2014.26%200.937087%2014.7056%201.38237%2015.1493C1.82765%2015.5929%202.27341%2015.8654%202.80141%2016.0693C3.31021%2016.2659%203.89214%2016.4%204.74366%2016.4373C5.59518%2016.4745%205.86926%2016.4832%208.04111%2016.479C10.213%2016.4749%2010.4864%2016.4653%2011.3397%2016.4248C12.193%2016.3843%2012.771%2016.248%2013.2795%2016.0493C13.8055%2015.8435%2014.2514%2015.5693%2014.6947%2015.1238C15.1381%2014.6784%2015.4111%2014.232%2015.6144%2013.7049C15.8115%2013.1961%2015.9455%2012.6142%2015.9824%2011.7633C16.0197%2010.9094%2016.0285%2010.6368%2016.0243%208.4646C16.0202%206.29243%2016.0104%206.02011%2015.9699%205.16699C15.9295%204.31386%2015.7939%203.7345%2015.5944%203.22586C15.3888%202.69994%2015.1144%202.25466%2014.6693%201.81066C14.2242%201.36665%2013.7775%201.09385%2013.2506%200.890972C12.7414%200.694011%2012.1598%200.559771%2011.3083%200.522971C10.4568%200.486171%2010.1827%200.476731%208.01007%200.480891C5.83742%200.485051%205.56542%200.494331%204.71214%200.535931ZM4.80558%2014.9981C4.02558%2014.9641%203.60206%2014.8345%203.31981%2014.7261C2.94605%2014.5821%202.67981%2014.408%202.39853%2014.1294C2.11725%2013.8509%201.94445%2013.5837%201.79853%2013.2107C1.68893%2012.9285%201.55693%2012.5054%201.52045%2011.7254C1.48077%2010.8824%201.47245%2010.6292%201.46781%208.4934C1.46317%206.35755%201.47133%206.10475%201.50829%205.26139C1.54157%204.48202%201.67197%204.05802%201.78029%203.77594C1.92429%203.4017%202.09773%203.13594%202.37693%202.85482C2.65613%202.5737%202.92253%202.40058%203.29581%202.25466C3.57774%202.14458%204.00078%202.0137%204.78046%201.97658C5.62414%201.93658%205.87694%201.92858%208.01247%201.92394C10.148%201.9193%2010.4014%201.9273%2011.2454%201.96442C12.0248%201.99834%2012.449%202.12746%2012.7307%202.23642C13.1046%202.38042%2013.3707%202.55338%2013.6519%202.83306C13.933%203.11274%2014.1063%203.37818%2014.2522%203.75226C14.3624%204.03338%2014.4933%204.45626%2014.5301%205.23643C14.5703%206.08011%2014.5794%206.33307%2014.5832%208.46844C14.5871%2010.6038%2014.5795%2010.8574%2014.5426%2011.7004C14.5085%2012.4805%2014.3792%2012.9041%2014.2706%2013.1867C14.1266%2013.5603%2013.953%2013.8267%2013.6736%2014.1077C13.3942%2014.3886%2013.1282%2014.5617%2012.7547%2014.7077C12.4731%2014.8176%2012.0496%2014.9488%2011.2706%2014.9859C10.4269%2015.0256%2010.1741%2015.0339%208.03775%2015.0385C5.90142%2015.0432%205.64926%2015.0345%204.80558%2014.9981ZM11.3274%204.20426C11.3277%204.39415%2011.3843%204.57967%2011.4901%204.73738C11.5958%204.89508%2011.746%205.01787%2011.9215%205.09023C12.0971%205.16259%2012.2902%205.18126%2012.4763%205.14388C12.6625%205.1065%2012.8334%205.01475%2012.9674%204.88024C13.1015%204.74573%2013.1926%204.57449%2013.2293%204.38818C13.266%204.20188%2013.2466%204.00888%2013.1736%203.83359C13.1006%203.65829%2012.9772%203.50859%2012.8191%203.40341C12.6611%203.29822%2012.4753%203.24228%2012.2854%203.24266C12.0309%203.24317%2011.787%203.34476%2011.6073%203.52508C11.4276%203.70541%2011.3269%203.94971%2011.3274%204.20426ZM3.91774%208.48796C3.92222%2010.7568%205.76478%2012.5918%208.03311%2012.5875C10.3014%2012.5832%2012.1378%2010.7408%2012.1334%208.47196C12.1291%206.20315%2010.2861%204.36762%208.01743%204.3721C5.74878%204.37658%203.91342%206.21947%203.91774%208.48796ZM5.3587%208.48508C5.35766%207.95765%205.51304%207.44176%205.80519%207.00264C6.09735%206.56352%206.51316%206.22089%207.00004%206.01809C7.48692%205.81529%208.023%205.76142%208.5405%205.86329C9.058%205.96516%209.53366%206.2182%209.90735%206.59041C10.281%206.96262%2010.536%207.43728%2010.6399%207.95437C10.7438%208.47146%2010.6921%209.00776%2010.4912%209.49543C10.2903%209.98311%209.94933%2010.4003%209.51137%2010.6942C9.07341%2010.9881%208.55814%2011.1455%208.03071%2011.1465C7.6805%2011.1473%207.33357%2011.079%207.00975%2010.9456C6.68592%2010.8123%206.39153%2010.6164%206.14341%2010.3693C5.89528%2010.1221%205.69827%209.82854%205.56363%209.50524C5.42899%209.18194%205.35935%208.83529%205.3587%208.48508Z%22%20fill%3D%22%233874C9%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fa%3E%3Ca%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%20class%3D%22text-gray-400%20hover%3Atext-primary%20transition-colors%22%20aria-label%3D%22Follow%20us%20on%20YouTube%22%20href%3D%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCBYNjqoTmjh7nc1Sybuslmw%22%3E%3Csvg%20width%3D%2223%22%20height%3D%2217%22%20viewBox%3D%220%200%2023%2017%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22w-6%20h-6%22%3E%3Ctitle%3EYoutube%3C%2Ftitle%3E%3Cpath%20d%3D%22M22.4066%202.98351C22.143%202.00469%2021.3713%201.23292%2020.3925%200.969392C18.6042%200.47998%2011.4513%200.47998%2011.4513%200.47998C11.4513%200.47998%204.29833%200.47998%202.5101%200.950569C1.5501%201.2141%200.759508%202.00469%200.495979%202.98351C0.0253906%204.77175%200.0253906%208.47998%200.0253906%208.47998C0.0253906%208.47998%200.0253906%2012.207%200.495979%2013.9764C0.759508%2014.9553%201.53127%2015.727%202.5101%2015.9906C4.31716%2016.48%2011.4513%2016.48%2011.4513%2016.48C11.4513%2016.48%2018.6042%2016.48%2020.3925%2016.0094C21.3713%2015.7459%2022.143%2014.9741%2022.4066%2013.9953C22.8772%2012.207%2022.8772%208.4988%2022.8772%208.4988C22.8772%208.4988%2022.896%204.77175%2022.4066%202.98351Z%22%20fill%3D%22%232768C4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M9.17383%205.05029V11.9021L15.1221%208.47618L9.17383%205.05029Z%22%20fill%3D%22white%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fa%3E%3Ca%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%20class%3D%22text-gray-400%20hover%3Atext-primary%20transition-colors%22%20aria-label%3D%22Follow%20us%20on%20LinkedIn%22%20href%3D%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmemories-net%2F%22%3E%3Csvg%20width%3D%2224%22%20height%3D%2225%22%20viewBox%3D%220%200%2024%2025%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22w-6%20h-6%22%3E%3Ctitle%3ELinkedIn%3C%2Ftitle%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M19.6806%2021.9146C20.3812%2021.9146%2020.9544%2021.332%2020.9544%2020.6168V5.21231C20.9544%204.49714%2020.3812%203.91455%2019.6806%203.91455H4.39094C3.69032%203.91455%203.12109%204.49714%203.12109%205.21231V20.6168C3.12109%2021.332%203.69032%2021.9146%204.39094%2021.9146H19.6806ZM7.18933%209.57973C6.34146%209.57973%205.65678%208.88465%205.65678%208.03285C5.65678%207.18106%206.34146%206.48598%207.18933%206.48598C8.03324%206.48598%208.72188%207.18106%208.72188%208.03285C8.72188%208.88865%208.0372%209.57973%207.18933%209.57973ZM12.814%2019.3431H10.1708V10.753H12.7065V11.9262H12.7423C13.0966%2011.2511%2013.9604%2010.54%2015.2462%2010.54C17.9212%2010.54%2018.4187%2012.3199%2018.4187%2014.6342V19.3431H15.7756V15.1646C15.7756%2014.1681%2015.7557%2012.8864%2014.4023%2012.8864C13.025%2012.8864%2012.814%2013.9712%2012.814%2015.0922V19.3431ZM8.51488%2019.3431H5.86775V10.753H8.51488V19.3431Z%22%20fill%3D%22%233874C9%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Ffooter%3E%3C%2Fmain%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22fixed%20z-%5B200%5D%20bottom-0%20left-0%20right-0%20p-4%20sm%3Ap-0%20sm%3Aleft-4%20sm%3Abottom-4%20w-full%20sm%3Amax-w-md%20duration-700%20transition-%5Bopacity%2Ctransform%5D%20translate-y-0%20opacity-100%22%3E%3Cdiv%20class%3D%22m-0%20sm%3Am-3%20dark%3Abg-card%20bg-background%20border%20border-border%20rounded-lg%20shadow-lg%22%3E%3Cdiv%20class%3D%22flex%20items-center%20justify-between%20p-3%22%3E%3Ch2%20class%3D%22text-base%20sm%3Atext-lg%20font-medium%22%3EWe%20use%20cookies%3C%2Fh2%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22lucide%20lucide-cookie%20h-4%20w-4%20sm%3Ah-%5B1.2rem%5D%20sm%3Aw-%5B1.2rem%5D%22%3E%3Cpath%20d%3D%22M12%202a10%2010%200%201%200%2010%2010%204%204%200%200%201-5-5%204%204%200%200%201-5-5%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M8.5%208.5v.01%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M16%2015.5v.01%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M12%2012v.01%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M11%2017v.01%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M7%2014v.01%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22p-3%20-mt-2%20text-xs%20sm%3Atext-sm%20text-left%20text-muted-foreground%22%3E%3Cp%3EWe%20use%20cookies%20to%20enhance%20website%20functionality%2C%20usability%2C%20and%20personalization%20while%20protecting%20your%20privacy%20and%20data.%3C%2Fp%3E%3Cp%3ELearn%20more%20in%20our%3C!--%20--%3E%20%3Ca%20class%3D%22text-xs%20sm%3Atext-sm%20text-primary%20inline-flex%22%20href%3D%22%2Fprivacy-policy%22%3Eprivacy%20policy.%3C%2Fa%3E%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22p-3%20flex%20flex-col%20sm%3Aflex-row%20items-center%20gap-2%20mt-2%20border-t%22%3E%3Cbutton%20data-slot%3D%22button%22%20class%3D%22inline-flex%20items-center%20justify-center%20gap-2%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20focus-visible%3Aring-4%20focus-visible%3Aoutline-1%20aria-invalid%3Afocus-visible%3Aring-0%20bg-primary%20text-primary-foreground%20shadow-sm%20hover%3Abg-primary%2F90%20px-4%20py-2%20w-full%20h-8%20sm%3Ah-9%20text-xs%20sm%3Atext-sm%22%3EAccept%3C%2Fbutton%3E%3Cbutton%20data-slot%3D%22button%22%20class%3D%22inline-flex%20items-center%20justify-center%20gap-2%20whitespace-nowrap%20rounded-md%20transition-%5Bcolor%2Cbox-shadow%5D%20disabled%3Apointer-events-none%20disabled%3Aopacity-50%20%5B%26amp%3B_svg%5D%3Apointer-events-none%20%5B%26amp%3B_svg%3Anot(%5Bclass*%3D'size-'%5D)%5D%3Asize-4%20%5B%26amp%3B_svg%5D%3Ashrink-0%20ring-ring%2F10%20dark%3Aring-ring%2F20%20dark%3Aoutline-ring%2F40%20outline-ring%2F50%20aria-invalid%3Afocus-visible%3Aring-0%20border%20border-primary%20text-primary%20bg-background%20shadow-xs%20hover%3Abg-blue-50%20focus-visible%3Aoutline-0%20focus-visible%3Aring-0%20focus%3Abg-blue-50%20focus%3Atext-primary%20px-4%20py-2%20w-full%20h-8%20sm%3Ah-9%20text-xs%20sm%3Atext-sm%22%3EDecline%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnext-route-announcer%20style%3D%22position%3A%20absolute%3B%22%3E%3C%2Fnext-route-announcer%3E%3Cimg%20height%3D%221%22%20width%3D%221%22%20fetchpriority%3D%22high%22%20style%3D%22display%3A%20none%3B%22%3E%3Cimg%20height%3D%221%22%20width%3D%221%22%20fetchpriority%3D%22high%22%20style%3D%22display%3A%20none%3B%22%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "9a3326bc-9ab6-4813-833b-49ccb4e739ab",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.futureme.org-pages-privacy-policy"
+}

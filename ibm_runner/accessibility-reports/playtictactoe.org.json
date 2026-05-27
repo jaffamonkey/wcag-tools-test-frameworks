@@ -1,0 +1,412 @@
+{
+    "results": [
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 1923,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/a[1]/svg[1]",
+                "aria": "/document[1]/link[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 40,
+                "width": 40
+            },
+            "snippet": "<svg viewBox=\"0 0 512 512\" height=\"40\" width=\"40\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%20512%20512%5C%22%20height%3D%5C%2240%5C%22%20width%3D%5C%2240%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/svg[1]",
+                "aria": "/document[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 167,
+                "height": 784,
+                "width": 784
+            },
+            "snippet": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%20100%20100%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 955,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"square top left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22square%20top%20left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[2]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 955,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"square top\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22square%20top%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[3]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 955,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"square top right\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22square%20top%20right%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[4]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 955,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"square left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22square%20left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[5]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 955,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"square\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22square%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[6]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 955,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"square right\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22square%20right%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[7]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 955,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"square bottom left\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22square%20bottom%20left%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[8]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 955,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"square bottom\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22square%20bottom%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[9]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 955,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div tabindex=\"0\" class=\"square bottom right\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22square%20bottom%20right%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/svg[1]",
+                "aria": "/document[1]/graphics-document[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1074,
+                "height": 784,
+                "width": 784
+            },
+            "snippet": "<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20viewBox%3D%5C%220%200%20100%20100%5C%22%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 291,
+    "ruleTime": 3,
+    "nls": {
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 18,
+            "elementsViolation": 4,
+            "elementsViolationReview": 13,
+            "violation": 4,
+            "potentialviolation": 9,
+            "recommendation": 14,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 264
+        },
+        "scanTime": 13,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778500576209,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ETic-Tac-Toe%20-%20Play%20retro%20Tic-Tac-Toe%20online%20for%20free%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%0A%09%09%3Ca%20href%3D%22https%3A%2F%2Fneave.com%2F%22%20target%3D%22_top%22%20class%3D%22neave%22%3E%0A%09%09%09%3Cspan%20class%3D%22disc%22%3E%3C%2Fspan%3E%0A%09%09%09%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%20512%20512%22%3E%0A%09%09%09%09%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M361%20360.95L191%20290.5v57.1l-40%2016.6V151.05l170%2070.3v-57.2l1-.4.1-.05%2038.9-15.9%22%3E%3C%2Fpath%3E%0A%09%09%09%3C%2Fsvg%3E%0A%09%09%09%3Cspan%20class%3D%22title%22%3ENeave%20Interactive%3C%2Fspan%3E%0A%09%09%3C%2Fa%3E%0A%09%09%3Cdiv%20class%3D%22alt%22%3E%0A%09%09%09%3Ch1%3ETic-Tac-Toe%3C%2Fh1%3E%0A%09%09%09%3Cp%3EPlay%20a%20retro%20version%20of%20tic-tac-toe%20(noughts%20and%20crosses%2C%20tres%20en%20raya)%20against%20the%20computer%20or%20with%20two%20players.%3C%2Fp%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22mute%22%3E%0A%09%09%09%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%0A%09%09%09%09%3Cg%20fill%3D%22%23fff%22%3E%0A%09%09%09%09%09%3Cpolygon%20points%3D%2214.025%2C38.004%2014.025%2C61.993%2031.548%2C61.993%2055.537%2C85.982%2055.537%2C14.018%2031.552%2C38.004%22%3E%3C%2Fpolygon%3E%0A%09%09%09%09%09%3Cpath%20d%3D%22M67.41%2C34.095l-4.243%2C4.239c6.43%2C6.432%2C6.43%2C16.896%2C0%2C23.324L67.41%2C65.9C76.179%2C57.129%2C76.179%2C42.864%2C67.41%2C34.095z%22%3E%3C%2Fpath%3E%0A%09%09%09%09%09%3Cpath%20d%3D%22M75.89%2C25.616l-4.241%2C4.239c11.105%2C11.105%2C11.105%2C29.176%2C0%2C40.284l4.241%2C4.241C89.337%2C60.934%2C89.337%2C39.06%2C75.89%2C25.616z%22%3E%3C%2Fpath%3E%0A%09%09%09%09%3C%2Fg%3E%0A%09%09%09%3C%2Fsvg%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22game%22%3E%0A%09%09%09%3Cdiv%20class%3D%22board%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22square%20top%20left%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22square%20top%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22square%20top%20right%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22square%20left%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22square%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22square%20right%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22square%20bottom%20left%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22square%20bottom%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%09%09%09%09%3Cdiv%20class%3D%22square%20bottom%20right%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%09%3Cdiv%20class%3D%22restart%22%20style%3D%22display%3A%20none%3B%22%3E%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22scores%20p1%22%3E%0A%09%09%09%3Cp%20class%3D%22player1%22%3E%3Cspan%20class%3D%22p1%22%3EPlayer%3C%2Fspan%3E%3Cspan%20class%3D%22p2%22%3EPlayer%201%3C%2Fspan%3E%20(%3Cspan%20class%3D%22x%22%3E%3C%2Fspan%3E)%3Cspan%20class%3D%22score%22%3E0%3C%2Fspan%3E%3C%2Fp%3E%0A%09%09%09%3Cp%20class%3D%22ties%22%3ETie%3Cspan%20class%3D%22score%22%3E0%3C%2Fspan%3E%3C%2Fp%3E%0A%09%09%09%3Cp%20class%3D%22player2%22%3E%3Cspan%20class%3D%22p1%22%3EComputer%3C%2Fspan%3E%3Cspan%20class%3D%22p2%22%3EPlayer%202%3C%2Fspan%3E%20(%3Cspan%20class%3D%22o%22%3E%3C%2Fspan%3E)%3Cspan%20class%3D%22score%22%3E0%3C%2Fspan%3E%3C%2Fp%3E%0A%09%09%09%3Cdiv%20class%3D%22swap%22%20tabindex%3D%220%22%3E%0A%09%09%09%09%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%0A%09%09%09%09%09%3Cg%20fill%3D%22%23fff%22%3E%0A%09%09%09%09%09%09%3Cpath%20class%3D%22p1%22%20d%3D%22M49.947%2C90.991c0.693%2C0%2C1.41%2C0.02%2C2.104%2C0c13.547-0.201%2C26.439-1.723%2C28.775-3.945%20c0.537-4.928%2C1.195-7.311-20.65-17.644c-3.107-1.742-1.465-8.492-1.465-8.492c6.578-4.969%2C11.096-16.463%2C11.096-25.676%20c0-15.921-7.18-23.453-17.756-24.234h-2.104c-10.557%2C0.781-17.734%2C8.312-17.734%2C24.234c0%2C9.213%2C4.496%2C20.707%2C11.078%2C25.676%20c0%2C0%2C1.641%2C6.75-1.449%2C8.492C19.979%2C79.735%2C20.635%2C82.118%2C21.176%2C87.046C23.51%2C89.269%2C36.402%2C90.79%2C49.947%2C90.991z%22%3E%3C%2Fpath%3E%0A%09%09%09%09%09%09%3Cpath%20class%3D%22p2%22%20d%3D%22M66.219%2C85h1.562c9.92-0.14%2C19.38-1.2%2C21.08-2.779c0.422-3.44%2C0.9-5.101-15.142-12.341%20c-2.279-1.22-1.059-5.939-1.059-5.939c4.822-3.48%2C8.123-11.521%2C8.123-17.98c0-11.14-5.263-16.419-13.001-16.959h-1.562%20c-7.738%2C0.54-13%2C5.799-13%2C16.959c0%2C6.46%2C3.301%2C14.5%2C8.121%2C17.98c0%2C0%2C1.221%2C4.719-1.059%2C5.939c-16.041%2C7.24-15.562%2C8.9-15.14%2C12.341%20C46.84%2C83.8%2C56.301%2C84.86%2C66.219%2C85z%20M30.217%2C69h1.564c9.918-0.14%2C19.378-1.2%2C21.078-2.779c0.422-3.44%2C0.9-5.1-15.14-12.34%20c-2.279-1.22-1.059-5.939-1.059-5.939c4.82-3.48%2C8.121-11.521%2C8.121-17.98c0-11.14-5.262-16.42-13-16.96h-1.564%20c-7.738%2C0.54-13%2C5.8-13%2C16.96c0%2C6.459%2C3.301%2C14.5%2C8.121%2C17.98c0%2C0%2C1.221%2C4.72-1.059%2C5.939c-16.041%2C7.24-15.562%2C8.9-15.14%2C12.34%20C10.839%2C67.8%2C20.299%2C68.86%2C30.217%2C69z%22%3E%3C%2Fpath%3E%0A%09%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%3C%2Fsvg%3E%0A%09%09%09%09%3Cp%20class%3D%22p1%22%3E1P%3C%2Fp%3E%0A%09%09%09%09%3Cp%20class%3D%22p2%22%3E2P%3C%2Fp%3E%0A%09%09%09%3C%2Fdiv%3E%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22ad%20skyscraper1%22%3E%0A%3Cins%20class%3D%22adsbygoogle%22%20data-ad-client%3D%22ca-pub-9316345695176880%22%20data-ad-slot%3D%221133449940%22%20data-page-url%3D%22https%3A%2F%2Fplaytictactoe.org%2F%22%3E%3C%2Fins%3E%0A%0A%0A%09%09%3C%2Fdiv%3E%0A%09%09%3Cdiv%20class%3D%22ad%20skyscraper2%22%3E%0A%3Cins%20class%3D%22adsbygoogle%22%20data-ad-client%3D%22ca-pub-9316345695176880%22%20data-ad-slot%3D%221133449940%22%20data-page-url%3D%22https%3A%2F%2Fplaytictactoe.org%2F%22%3E%3C%2Fins%3E%0A%0A%09%09%3C%2Fdiv%3E%0A%09%09%0A%09%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "62b0d378-2fa0-4dba-9825-b87c5e27f224",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "playtictactoe.org"
+}

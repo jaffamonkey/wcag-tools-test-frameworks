@@ -1,0 +1,2632 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 3642,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 3642,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 3642,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 3626,
+                "width": 784
+            },
+            "snippet": "<body alink=\"#FF0000\" vlink=\"#00FFFF\" link=\"#FF0000\" text=\"#000000\" bgcolor=\"#000000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20alink%3D%5C%22%23FF0000%5C%22%20vlink%3D%5C%22%2300FFFF%5C%22%20link%3D%5C%22%23FF0000%5C%22%20text%3D%5C%22%23000000%5C%22%20bgcolor%3D%5C%22%23000000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 27,
+                "height": 34,
+                "width": 784
+            },
+            "snippet": "<table width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 175,
+                "top": 30,
+                "height": 27,
+                "width": 452
+            },
+            "snippet": "<font size=\"5\" color=\"yellow\" face=\"Arial\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%225%5C%22%20color%3D%5C%22yellow%5C%22%20face%3D%5C%22Arial%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 79,
+                "height": 655,
+                "width": 784
+            },
+            "snippet": "<table bgcolor=\"#000000\" cellpadding=\"5\" cellspacing=\"1\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20bgcolor%3D%5C%22%23000000%5C%22%20cellpadding%3D%5C%225%5C%22%20cellspacing%3D%5C%221%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 9,
+                "top": 80,
+                "height": 653,
+                "width": 448
+            },
+            "snippet": "<td align=\"center\" colspan=\"4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%20align%3D%5C%22center%5C%22%20colspan%3D%5C%224%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/br[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Welcome to the Slide Rule Universe!' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Welcome to the Slide Rule Universe!"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 360,
+                "top": 85,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Welcome%20to%20the%20Slide%20Rule%20Universe!'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Welcome%20to%20the%20Slide%20Rule%20Universe!%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 98,
+                "top": 333,
+                "height": 297,
+                "width": 271
+            },
+            "snippet": "<table cellpadding=\"3\" cellspacing=\"3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%223%5C%22%20cellspacing%3D%5C%223%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/br[2]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'CLICK for Front\nCLICK for Back' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "CLICK for Front\nCLICK for Back"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 229,
+                "top": 567,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'CLICK%20for%20Front%5CnCLICK%20for%20Back'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22CLICK%20for%20Front%5CnCLICK%20for%20Back%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/br[2]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'CLICK for Front\nCLICK for Back' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "CLICK for Front\nCLICK for Back"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 363,
+                "top": 568,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'CLICK%20for%20Front%5CnCLICK%20for%20Back'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22CLICK%20for%20Front%5CnCLICK%20for%20Back%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/br[8]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Just Scroll DOWN to see everything!' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Just Scroll DOWN to see everything!"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 233,
+                "top": 688,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Just%20Scroll%20DOWN%20to%20see%20everything!'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Just%20Scroll%20DOWN%20to%20see%20everything!%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/font[1]/b[1]/br[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'West Kelowna, BC, Canada, V1Z 2V4' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "West Kelowna, BC, Canada, V1Z 2V4"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 614,
+                "top": 322,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'West%20Kelowna%2C%20BC%2C%20Canada%2C%20V1Z%202V4'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22West%20Kelowna%2C%20BC%2C%20Canada%2C%20V1Z%202V4%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/font[1]/br[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Phone: +1 (250) 769-1834' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Phone: +1 (250) 769-1834"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 741,
+                "top": 341,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Phone%3A%20%2B1%20(250)%20769-1834'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Phone%3A%20%2B1%20(250)%20769-1834%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/font[3]/b[1]/br[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'May 23, 2023' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "May 23, 2023"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 593,
+                "top": 451,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'May%2023%2C%202023'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22May%2023%2C%202023%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/font[3]/br[2]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Click REFRESH on your browser if pages seem unchanged' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Click REFRESH on your browser if pages seem unchanged"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 463,
+                "top": 488,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Click%20REFRESH%20on%20your%20browser%20if%20pages%20seem%20unchanged'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Click%20REFRESH%20on%20your%20browser%20if%20pages%20seem%20unchanged%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 463,
+                "top": 544,
+                "height": 62,
+                "width": 252
+            },
+            "snippet": "<table bgcolor=\"#00FFFF\" cellpadding=\"1\" width=\"252\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20bgcolor%3D%5C%22%2300FFFF%5C%22%20cellpadding%3D%5C%221%5C%22%20width%3D%5C%22252%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/font[1]/b[1]/br[1]",
+                "aria": "/document[1]/table[2]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'to see What's New!' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "to see What's New!"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 592,
+                "top": 547,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'to%20see%20What's%20New!'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22to%20see%20What's%20New!%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]",
+                "aria": "/document[1]/table[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 752,
+                "height": 2883,
+                "width": 784
+            },
+            "snippet": "<table bgcolor=\"#FFFFFF\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20bgcolor%3D%5C%22%23FFFFFF%5C%22%20cellpadding%3D%5C%220%5C%22%20cellspacing%3D%5C%220%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 752,
+                "height": 27,
+                "width": 508
+            },
+            "snippet": "<table bgcolor=\"#808080\" cellpadding=\"2\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20bgcolor%3D%5C%22%23808080%5C%22%20cellpadding%3D%5C%222%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 754,
+                "height": 23,
+                "width": 504
+            },
+            "snippet": "<td bgcolor=\"#333333\" align=\"center\" colspan=\"3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%20bgcolor%3D%5C%22%23333333%5C%22%20align%3D%5C%22center%5C%22%20colspan%3D%5C%223%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 778,
+                "height": 628,
+                "width": 508
+            },
+            "snippet": "<table bgcolor=\"#333333\" cellpadding=\"5\" cellspacing=\"8\" border=\"0\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20bgcolor%3D%5C%22%23333333%5C%22%20cellpadding%3D%5C%225%5C%22%20cellspacing%3D%5C%228%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[1]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Slide Rule Pins & Tie Clips' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Slide Rule Pins & Tie Clips"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 231,
+                "top": 811,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Slide%20Rule%20Pins%20%26%20Tie%20Clips'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Slide%20Rule%20Pins%20%26%20Tie%20Clips%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[2]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[1]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Pickett\nNew in the BOX\nNIB Rules' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Pickett\nNew in the BOX\nNIB Rules"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 503,
+                "top": 811,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Pickett%5CnNew%20in%20the%20BOX%5CnNIB%20Rules'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Pickett%5CnNew%20in%20the%20BOX%5CnNIB%20Rules%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[2]/a[1]/font[1]/b[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[1]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'New in the BOX' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "New in the BOX"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 402,
+                "top": 830,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'New%20in%20the%20BOX'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22New%20in%20the%20BOX%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[1]/td[2]/a[1]/font[1]/b[1]/br[2]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[1]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'NIB Rules' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "NIB Rules"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 435,
+                "top": 849,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'NIB%20Rules'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22NIB%20Rules%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[2]/td[1]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[2]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Circular Slide Rules' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Circular Slide Rules"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 231,
+                "top": 942,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Circular%20Slide%20Rules'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Circular%20Slide%20Rules%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[2]/td[2]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[2]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'New In the BOX\nNIB Rules' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "New In the BOX\nNIB Rules"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 503,
+                "top": 942,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'New%20In%20the%20BOX%5CnNIB%20Rules'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22New%20In%20the%20BOX%5CnNIB%20Rules%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[2]/td[2]/a[1]/font[1]/b[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[2]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'NIB Rules' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "NIB Rules"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 435,
+                "top": 961,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'NIB%20Rules'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22NIB%20Rules%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[3]/td[1]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[3]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Used Full Size Slide Rules' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Used Full Size Slide Rules"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 231,
+                "top": 1054,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Used%20Full%20Size%20Slide%20Rules'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Used%20Full%20Size%20Slide%20Rules%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[3]/td[2]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[3]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Cheap & Student Slide Rules' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Cheap & Student Slide Rules"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 503,
+                "top": 1054,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Cheap%20%26%20Student%20Slide%20Rules'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Cheap%20%26%20Student%20Slide%20Rules%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[4]/td[1]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[4]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Exotic Slide Rules' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Exotic Slide Rules"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 231,
+                "top": 1148,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Exotic%20Slide%20Rules'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Exotic%20Slide%20Rules%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[4]/td[2]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[4]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Slide Rule Books' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Slide Rule Books"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 481,
+                "top": 1130,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Slide%20Rule%20Books'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Slide%20Rule%20Books%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[5]/td[1]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[5]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Pocket Slide Rules' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Pocket Slide Rules"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 231,
+                "top": 1242,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Pocket%20Slide%20Rules'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Pocket%20Slide%20Rules%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[5]/td[2]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[5]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Drawing Tools' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Drawing Tools"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 472,
+                "top": 1224,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Drawing%20Tools'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Drawing%20Tools%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[6]/td[1]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[6]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Slide Rule Repair Parts' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Slide Rule Repair Parts"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 231,
+                "top": 1336,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Slide%20Rule%20Repair%20Parts'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Slide%20Rule%20Repair%20Parts%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[2]/tbody[1]/tr[6]/td[2]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[2]/rowgroup[1]/row[6]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'New Slide Rule Cases & Stands' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "New Slide Rule Cases & Stands"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 496,
+                "top": 1318,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'New%20Slide%20Rule%20Cases%20%26%20Stands'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22New%20Slide%20Rule%20Cases%20%26%20Stands%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[3]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1427,
+                "height": 431,
+                "width": 508
+            },
+            "snippet": "<table bgcolor=\"#FFCC33\" cellpadding=\"5\" cellspacing=\"5\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20bgcolor%3D%5C%22%23FFCC33%5C%22%20cellpadding%3D%5C%225%5C%22%20cellspacing%3D%5C%225%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[3]/tbody[1]/tr[2]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[3]/rowgroup[1]/row[2]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.81 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.81",
+                16,
+                700,
+                "#ff0000",
+                "#ffff99",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 18,
+                "top": 1491,
+                "height": 42,
+                "width": 482
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.81%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.81%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffff99%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[3]/tbody[1]/tr[3]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[3]/rowgroup[1]/row[3]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.89",
+                16,
+                700,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 86,
+                "top": 1569,
+                "height": 18,
+                "width": 380
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[3]/tbody[1]/tr[4]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[3]/rowgroup[1]/row[4]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.81 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.81",
+                16,
+                700,
+                "#ff0000",
+                "#ffff99",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 86,
+                "top": 1628,
+                "height": 18,
+                "width": 291
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.81%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.81%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffff99%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[3]/tbody[1]/tr[5]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[3]/rowgroup[1]/row[5]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.89",
+                16,
+                700,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 86,
+                "top": 1687,
+                "height": 18,
+                "width": 405
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[3]/tbody[1]/tr[6]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[3]/rowgroup[1]/row[6]/cell[1]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.81 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.81",
+                16,
+                700,
+                "#ff0000",
+                "#ffff99",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 86,
+                "top": 1746,
+                "height": 18,
+                "width": 342
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.81%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.81%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffff99%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[3]/tbody[1]/tr[7]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[3]/rowgroup[1]/row[7]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.89",
+                16,
+                700,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 18,
+                "top": 1806,
+                "height": 42,
+                "width": 424
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[3]/tbody[1]/tr[7]/td[1]/a[1]/b[1]/font[1]/i[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[3]/rowgroup[1]/row[7]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.89 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.89",
+                16,
+                700,
+                "#ff0000",
+                "#ffffcc",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 310,
+                "top": 1806,
+                "height": 18,
+                "width": 49
+            },
+            "snippet": "<i>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.89%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ci%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.89%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffcc%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/font[2]/b[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Please see our' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Please see our"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 453,
+                "top": 1876,
+                "height": 21,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Please%20see%20our'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Please%20see%20our%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[4]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1943,
+                "height": 76,
+                "width": 508
+            },
+            "snippet": "<table cellpadding=\"5\" cellspacing=\"5\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%225%5C%22%20cellspacing%3D%5C%225%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[4]/tbody[1]/tr[1]/td[2]/font[1]/b[1]/a[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[4]/rowgroup[1]/row[1]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.72 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.72",
+                16,
+                700,
+                "#ff0000",
+                "#ffff00",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 198,
+                "top": 1971,
+                "height": 18,
+                "width": 275
+            },
+            "snippet": "<a href=\"slide6/212-sr-warning.jpg\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.72%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22slide6%2F212-sr-warning.jpg%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.72%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffff00%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[4]/tbody[1]/tr[1]/td[2]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[4]/rowgroup[1]/row[1]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Another Larry Stewart Original!' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Another Larry Stewart Original!"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 473,
+                "top": 1971,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Another%20Larry%20Stewart%20Original!'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Another%20Larry%20Stewart%20Original!%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[5]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2018,
+                "height": 889,
+                "width": 508
+            },
+            "snippet": "<table cellpadding=\"5\" cellspacing=\"5\" border=\"0\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%225%5C%22%20cellspacing%3D%5C%225%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[5]/tbody[1]/tr[1]/td[1]/font[1]/b[1]/a[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[5]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                16,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 423,
+                "top": 2086,
+                "height": 18,
+                "width": 45
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[5]/tbody[1]/tr[1]/td[1]/a[1]/font[1]/b[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[5]/rowgroup[1]/row[1]/cell[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                16,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 148,
+                "top": 2121,
+                "height": 55,
+                "width": 331
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[5]/tbody[1]/tr[1]/td[1]/font[2]/a[1]/font[1]/b[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[5]/rowgroup[1]/row[1]/cell[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                16,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 321,
+                "top": 2195,
+                "height": 18,
+                "width": 75
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[5]/tbody[1]/tr[1]/td[1]/font[3]/a[1]/i[1]/b[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[5]/rowgroup[1]/row[1]/cell[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                16,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 175,
+                "top": 2250,
+                "height": 18,
+                "width": 100
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[5]/tbody[1]/tr[1]/td[1]/img[2]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[5]/rowgroup[1]/row[1]/cell[1]/img[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 18,
+                "top": 2603,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<img border=\"0\" height=\"13\" width=\"13\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2213%5C%22%20width%3D%5C%2213%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[5]/tbody[1]/tr[1]/td[1]/font[4]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[5]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "4.00",
+                16,
+                400,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 107,
+                "top": 2620,
+                "height": 18,
+                "width": 295
+            },
+            "snippet": "<font color=\"#FF0000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23FF0000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/table[5]/tbody[1]/tr[1]/td[1]/font[4]/img[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[1]/table[5]/rowgroup[1]/row[1]/cell[1]/img[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 18,
+                "top": 2732,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<img border=\"0\" height=\"13\" width=\"13\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2213%5C%22%20width%3D%5C%2213%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 516,
+                "top": 752,
+                "height": 926,
+                "width": 277
+            },
+            "snippet": "<table cellpadding=\"5\" cellspacing=\"0\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%225%5C%22%20cellspacing%3D%5C%220%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 521,
+                "top": 812,
+                "height": 88,
+                "width": 267
+            },
+            "snippet": "<table bgcolor=\"#00FFFF\" cellpadding=\"10\" cellspacing=\"5\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20bgcolor%3D%5C%22%2300FFFF%5C%22%20cellpadding%3D%5C%2210%5C%22%20cellspacing%3D%5C%225%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[2]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'We have MUGS!' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "We have MUGS!"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 772,
+                "top": 846,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'We%20have%20MUGS!'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22We%20have%20MUGS!%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[1]/tbody[1]/tr[1]/td[1]/font[4]/br[13]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[1]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Giovanni Breda, the 1 Millionth Visitor!' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Giovanni Breda, the 1 Millionth Visitor!"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 682,
+                "top": 1311,
+                "height": 11,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Giovanni%20Breda%2C%20the%201%20Millionth%20Visitor!'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Giovanni%20Breda%2C%20the%201%20Millionth%20Visitor!%22%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[2]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 516,
+                "top": 1677,
+                "height": 102,
+                "width": 277
+            },
+            "snippet": "<table bgcolor=\"#FFFF00\" cellpadding=\"5\" cellspacing=\"5\" width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20bgcolor%3D%5C%22%23FFFF00%5C%22%20cellpadding%3D%5C%225%5C%22%20cellspacing%3D%5C%225%5C%22%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 516,
+                "top": 1779,
+                "height": 1855,
+                "width": 277
+            },
+            "snippet": "<table bgcolor=\"#FFFF00\" cellpadding=\"5\" cellspacing=\"5\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20bgcolor%3D%5C%22%23FFFF00%5C%22%20cellpadding%3D%5C%225%5C%22%20cellspacing%3D%5C%225%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[1]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                16,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 568,
+                "top": 1789,
+                "height": 37,
+                "width": 196
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[2]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[2]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                16,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 568,
+                "top": 1915,
+                "height": 55,
+                "width": 212
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[3]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[3]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                16,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 608,
+                "top": 2078,
+                "height": 37,
+                "width": 153
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[4]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[4]/cell[1]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                16,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 568,
+                "top": 2223,
+                "height": 37,
+                "width": 184
+            },
+            "snippet": "<font size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Visit our TEST EQUIPMENT site' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Visit our TEST EQUIPMENT site"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 782,
+                "top": 2330,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Visit%20our%20TEST%20EQUIPMENT%20site'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Visit%20our%20TEST%20EQUIPMENT%20site%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/a[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.72 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.72",
+                16,
+                700,
+                "#ff0000",
+                "#ffff00",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 526,
+                "top": 2349,
+                "height": 18,
+                "width": 241
+            },
+            "snippet": "<font color=\"#FF0000\" size=\"3\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.72%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23FF0000%5C%22%20size%3D%5C%223%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.72%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffff00%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/font[2]/a[1]/b[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.72 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.72",
+                16,
+                700,
+                "#ff0000",
+                "#ffff00",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 526,
+                "top": 2572,
+                "height": 18,
+                "width": 187
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.72%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.72%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffff00%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/font[2]/a[2]/b[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.72 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.72",
+                16,
+                700,
+                "#ff0000",
+                "#ffff00",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 526,
+                "top": 2666,
+                "height": 18,
+                "width": 193
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.72%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.72%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffff00%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/font[2]/a[3]/b[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.72 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "3.72",
+                16,
+                700,
+                "#ff0000",
+                "#ffff00",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 526,
+                "top": 2760,
+                "height": 37,
+                "width": 221
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.72%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.72%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffff00%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/table[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 526,
+                "top": 2908,
+                "height": 716,
+                "width": 257
+            },
+            "snippet": "<table width=\"100%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20width%3D%5C%22100%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/br[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Got Questions? Just E-Mail Us !\n\n\n\n ' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Got Questions? Just E-Mail Us !\n\n\n\n "
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 725,
+                "top": 2982,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Got%20Questions%3F%20Just%20E-Mail%20Us%20!%5Cn%5Cn%5Cn%5Cn%C2%A0'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Got%20Questions%3F%20Just%20E-Mail%20Us%20!%5Cn%5Cn%5Cn%5Cn%C2%A0%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/font[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 3.68 with its background is less than the WCAG AA minimum requirements for text of size 13px and weight of 400",
+            "messageArgs": [
+                "3.68",
+                13,
+                400,
+                "#ff0000",
+                "#ccffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 562,
+                "top": 3006,
+                "height": 89,
+                "width": 185
+            },
+            "snippet": "<font size=\"2\" face=\"Arial,sans serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.68%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2013px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%222%5C%22%20face%3D%5C%22Arial%2Csans%20serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.68%22%2C13%2C400%2C%22%23ff0000%22%2C%22%23ccffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/table[1]/tbody[1]/tr[2]/td[1]/a[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/table[1]/rowgroup[1]/row[2]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 618,
+                "top": 3100,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a href=\"http://www.sphere.bc.ca/godzilla.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22http%3A%2F%2Fwww.sphere.bc.ca%2Fgodzilla.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/table[1]/tbody[1]/tr[2]/td[1]/img[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/table[1]/rowgroup[1]/row[2]/cell[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 608,
+                "top": 3100,
+                "height": 120,
+                "width": 10
+            },
+            "snippet": "<img align=\"Left\" border=\"0\" height=\"120\" width=\"10\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20align%3D%5C%22Left%5C%22%20border%3D%5C%220%5C%22%20height%3D%5C%22120%5C%22%20width%3D%5C%2210%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/table[1]/tbody[1]/tr[2]/td[1]/font[1]/a[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/table[1]/rowgroup[1]/row[2]/cell[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 13px and weight of 400",
+            "messageArgs": [
+                "4.00",
+                13,
+                400,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 529,
+                "top": 3251,
+                "height": 15,
+                "width": 143
+            },
+            "snippet": "<a href=\"../godzilla.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2013px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22..%2Fgodzilla.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C13%2C400%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_redundant",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/table[1]/tbody[1]/tr[2]/td[1]/font[1]/a[2]/img[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/table[1]/rowgroup[1]/row[2]/cell[1]/link[3]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Link text is repeated in an image 'alt' value within the same link",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 534,
+                "top": 3310,
+                "height": 16,
+                "width": 197
+            },
+            "snippet": "<img hspace=\"5\" align=\"middle\" border=\"0\" alt=\"Return to Sphere's Home Page\" height=\"43\" width=\"42\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_redundant.html#%7B%22message%22%3A%22Link%20text%20is%20repeated%20in%20an%20image%20'alt'%20value%20within%20the%20same%20link%22%2C%22snippet%22%3A%22%3Cimg%20hspace%3D%5C%225%5C%22%20align%3D%5C%22middle%5C%22%20border%3D%5C%220%5C%22%20alt%3D%5C%22Return%20to%20Sphere's%20Home%20Page%5C%22%20height%3D%5C%2243%5C%22%20width%3D%5C%2242%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22img_alt_redundant%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/table[1]/tbody[1]/tr[2]/td[1]/font[1]/a[2]/font[1]/b[1]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/table[1]/rowgroup[1]/row[2]/cell[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.00",
+                16,
+                700,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 529,
+                "top": 3326,
+                "height": 18,
+                "width": 235
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C700%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/table[3]/tbody[1]/tr[5]/td[1]/table[1]/tbody[1]/tr[2]/td[1]/img[2]",
+                "aria": "/document[1]/table[3]/rowgroup[1]/row[1]/cell[2]/table[3]/rowgroup[1]/row[5]/cell[1]/table[1]/rowgroup[1]/row[2]/cell[1]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 529,
+                "top": 3364,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<img border=\"0\" height=\"13\" width=\"13\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20border%3D%5C%220%5C%22%20height%3D%5C%2213%5C%22%20width%3D%5C%2213%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 2857,
+    "ruleTime": 44,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "table_headers_related": {
+            "0": "For a complex data table, all <th> and <td> elements must be related via 'header' or 'scope' attributes",
+            "Fail_1": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "img_alt_redundant": {
+            "0": "The text alternative for an image within a link should not repeat the link text or adjacent link text",
+            "Fail_1": "Link text is repeated in an image 'alt' value within the same link"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 112,
+            "elementsViolation": 48,
+            "elementsViolationReview": 83,
+            "violation": 49,
+            "potentialviolation": 33,
+            "recommendation": 36,
+            "potentialrecommendation": 0,
+            "manual": 3,
+            "pass": 2736
+        },
+        "scanTime": 134,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778711715755,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20Slide%20Rule%20Universe%2C%20literally%20everything%20about%20buying%20and%20using%20slide%20rules%2C%20sliderules%20and%20sliderulers!%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23000000%22%20text%3D%22%23000000%22%20link%3D%22%23FF0000%22%20vlink%3D%22%2300FFFF%22%20alink%3D%22%23FF0000%22%3E%3Cbr%3E%3C!--%20This%20document%20was%20created%20with%20HomeSite%20v2.5%20--%3E%0A%0A%0A%3C!--%20Update%20your%20html%20tag%20to%20include%20the%20itemscope%20and%20itemtype%20attributes%20--%3E%0A%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%09%3Cmeta%20http-equiv%3D%22Content-language%22%20content%3D%22en-CA%22%3E%0A%3Ctitle%3EThe%20Slide%20Rule%20Universe%2C%20literally%20everything%20about%20buying%20and%20using%20slide%20rules%2C%20sliderules%20and%20sliderulers!%3C%2Ftitle%3E%0A%3Cmeta%20name%3D%22keywords%22%20content%3D%22slide%20rule%2C%20slide%20rules%20for%20sale%2C%20sliderule%2C%20slide%20ruler%2C%20for%20sale%2C%20slide%20rule%20universe%2C%20slide%20rule%20information%2C%20pickett%2C%20keuffel%20%26amp%3B%20esser%2C%20K%2BE%2C%20post%2C%20flying%20fish%2C%20staedtler-mars%2C%20dietzgen%2C%20bamboo%2C%20antiques%2C%20math%2C%20oughtred%2C%20K%26amp%3BE%2C%20buying%2C%20selling%2C%20slide%20rule%20trading%20post%2C%20aristo%2C%20faber%20castell%2C%20deci-lon%2C%20decilon%2C%20lesson%2C%20training%2C%20versalog%2C%20mechanical%20calculators%2C%20sun%2C%20hemmi%2C%20rechenstab%2C%20rechenschieber%2C%20rechenscheibe%2C%20regla%20de%20calculo%2C%20tiroir%20de%20rateau%2C%20rekenliniaal%2C%20regolo%20calcolatore%2C%20regla%20de%20diapositiva%22%3E%0A%3Cmeta%20name%3D%22description%22%20content%3D%22Sphere's%20Slide%20Rule%20Universe%20is%20a%20library%20of%20information%20about%20slide%20rules%2C%20pictures%2C%20history%20and%20links%20plus%20a%20full%20on-line%20store%20for%20all%20types%20of%20slide%20rules.%20%20Located%20in%20West%20Kelowna%2C%20BC%2C%20CANADA.%22%3E%0A%3Cmeta%20name%3D%22rating%22%20content%3D%22General%22%3E%0A%3Cmeta%20name%3D%22revisit-after%22%20content%3D%225%20days%22%3E%0A%3Cmeta%20name%3D%22ROBOTS%22%20content%3D%22ALL%22%3E%0A%0A%0A%0A%3C!--%20Add%20the%20following%20three%20tags%20inside%20head%20--%3E%0A%3Cmeta%20itemprop%3D%22name%22%20content%3D%22Slide%20Rule%20Universe%22%3E%0A%3Cmeta%20itemprop%3D%22description%22%20content%3D%22Home%20of%20the%20Slide%20Rule%20Universe%2C%20everything%20about%20and%20for%20Slide%20Rules.%22%3E%0A%0A%0A%0A%3Cbasefont%20size%3D%223%22%3E%0A%3Cdiv%20align%3D%22center%22%3E%3Ctable%20width%3D%22100%25%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20align%3D%22center%22%20bgcolor%3D%22%23000000%22%3E%3Cfont%20face%3D%22Arial%22%20color%3D%22yellow%22%20size%3D%225%22%3E%3Cb%3ETHIS%20SITE%20IS%20NO%20LONGER%20MAINTAINED%3C%2Fb%3E%3C%2Ffont%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%3C%2Fdiv%3E%3Cbr%3E%0A%0A%3Ctable%20width%3D%22100%25%22%20cellspacing%3D%221%22%20cellpadding%3D%225%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ctbody%3E%3Ctr%20valign%3D%22middle%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ctd%20colspan%3D%224%22%20align%3D%22center%22%3E%0A%0A%3Cimg%20alt%3D%22Welcome%20to%20the%20Slide%20Rule%20Universe!%22%20width%3D%22350%22%20height%3D%22145%22%20border%3D%220%22%3E%0A%3Cbr%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%2Csans-serif%22%20size%3D%225%22%20color%3D%22%23FFFF00%22%3EWelcome%20to%20the%20Slide%20Rule%20Universe!%3C%2Ffont%3E%3C%2Fb%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%0A%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%23FFFF00%22%3EOriginal%20Artwork%20by%3A%20%3Ca%20href%3D%22large-larry.jpg%22%3ELarry%20Stewart%3C%2Fa%3E%2C%20The%20Slide%20Rule%20Universe%20is%20a%20trademark%20of%20Sphere%20Research%20Corporation%3C%2Ffont%3E%20%26nbsp%3B%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%2300FFFF%22%3E%3Cb%3EIMPORTANT!%20%3C%2Fb%3EShipping%20Costs%20go%20UP%20significantly%20now%20each%20year%2C%20%3Cbr%3Eso%20please%20see%20full%20details%20in%20our%20%3Ca%20href%3D%22faq.html%22%3E%3Cimg%20alt%3D%22%22%20width%3D%2213%22%20height%3D%2213%22%20hspace%3D%222%22%20border%3D%220%22%3E%3Cb%3EFAQ%3C%2Fb%3E%3C%2Fa%3E.%3C%2Ffont%3E%0A%3Chr%3E%3Cfont%20face%3D%22Arial%2CHelvetica%2Csans-serif%22%20size%3D%223%22%20color%3D%22%23FFFFFF%22%3EDownload%20the%20classic%20K%2BE%20Pocket%20Slide%20Rule%20Selection%20guide%20below!%3C%2Ffont%3E%3Chr%3E%0A%0A%3Ctable%20cellspacing%3D%223%22%20cellpadding%3D%223%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20align%3D%22center%22%3E%3Cfont%20face%3D%22Arial%2CHelvetica%2Csans-serif%22%20color%3D%22%23FFFFFF%22%3E%3Cb%3ELate%3C%2Fb%3E%3C%2Ffont%3E%3Cbr%3E%3Cimg%20alt%3D%22%22%20width%3D%22125%22%20height%3D%22223%22%20border%3D%220%22%3E%3Cbr%3E%0A%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%2Csans-serif%22%20size%3D%223%22%20color%3D%22%23FFFFFF%22%3E%3Ca%20href%3D%22slide55%2Fke-green-1.jpg%22%3ECLICK%20for%20Front%3C%2Fa%3E%3Cbr%3E%0A%3Ca%20href%3D%22slide55%2Fke-green-2.jpg%22%3ECLICK%20for%20Back%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Ftd%3E%0A%09%3Ctd%20align%3D%22center%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%2Csans-serif%22%20size%3D%223%22%20color%3D%22%23FFFFFF%22%3EEarly%3C%2Ffont%3E%3C%2Fb%3E%3Cbr%3E%3Cimg%20alt%3D%22%22%20width%3D%22125%22%20height%3D%22225%22%20border%3D%220%22%3E%3Cbr%3E%0A%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%2Csans-serif%22%20size%3D%223%22%20color%3D%22%23FFFFFF%22%3E%3Ca%20href%3D%22slide55%2Fke-red-1.jpg%22%3ECLICK%20for%20Front%3C%2Fa%3E%3Cbr%3E%0A%3Ca%20href%3D%22slide55%2Fke-red-2.jpg%22%3ECLICK%20for%20Back%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%224%22%20color%3D%22%23FFFFFF%22%3E%26nbsp%3BAt%20the%20Slide%20Rule%20Universe%20you%20can%20%3C%2Ffont%3E%0A%3Ca%20href%3D%22sliderule.html%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3Ebuy%20slide%20rules%20of%20all%20kinds%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%23FFFFFF%22%3E%3Cb%3ECLICK%20ON%20THE%20PICS%20BELOW%3C%2Fb%3E%20to%20see%20the%20Main%20Categories%3A%3C%2Ffont%3E%3Cbr%3E%3Cbr%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%2Csans-serif%22%20size%3D%224%22%20color%3D%22%23FFFF00%22%3EJust%20Scroll%20DOWN%20to%20see%20everything!%3C%2Ffont%3E%3C%2Fb%3E%3Cbr%3E%0A%0A%0A%0A%3C%2Ftd%3E%0A%0A%3Ctd%20bgcolor%3D%22%23000000%22%20background%3D%22..%2Fbk-tile.gif%22%3E%3Ca%20href%3D%22..%2Findex.html%22%3E%3Cimg%20alt%3D%22CLICK%20to%20visit%20Sphere%20Research%20Corporation%22%20width%3D%22133%22%20height%3D%22125%22%20border%3D%221%22%3E%3C%2Fa%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%3Cimg%20alt%3D%22https%20secured%20site-wide%22%20width%3D%22167%22%20height%3D%22125%22%20border%3D%220%22%20align%3D%22top%22%3E%3Cbr%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%2Csans-serif%22%20size%3D%223%22%20color%3D%22%23FFFF00%22%3EHttps%20Secured%20Site%20Wide%20For%20Your%20Protection%3C%2Ffont%3E%3C%2Fb%3E%0A%0A%3Chr%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Ca%20href%3D%22..%2Findex.html%22%3E%3Cfont%20size%3D%224%22%3ESphere%20Research%20Corporation%3C%2Ffont%3E%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fb%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%2300FFFF%22%3E%3Cb%3E3394%20Sunnyside%20Rd.%3Cbr%3EWest%20Kelowna%2C%20BC%2C%20Canada%2C%20V1Z%202V4%3C%2Fb%3E%3Cbr%3E%3Cb%3EPhone%3A%20%2B1%20(250)%20769-1834%3C%2Fb%3E%3C%2Ffont%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%222%22%20color%3D%22%23FFFFFF%22%3E%3Cbr%3EA%20great%20source%20for%20test%20equipment%2C%20repairs%2C%20calibrations%2C%20%20useful%20metrology%20information%2C%20and%20of%20course%2C%20SLIDE%20RULES!%3C%2Ffont%3E%0A%3Chr%3E%0A%3Cimg%20alt%3D%22Canada!%22%20width%3D%2266%22%20height%3D%2233%22%20border%3D%220%22%20align%3D%22left%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%2300FFFF%22%3E%3Cb%3E%3Cfont%20color%3D%22%23FFFFFF%22%3EUpdated%3C%2Ffont%3E%20%3Cbr%3EMay%2023%2C%202023%3C%2Fb%3E%3Cbr%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%2300FFFF%22%3E%3Cb%3EClick%3C%2Fb%3E%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cb%3EREFRESH%3C%2Fb%3E%3C%2Ffont%3E%20%3Cb%3Eon%20your%20browser%20if%20pages%20seem%20unchanged%3C%2Fb%3E%3C%2Ffont%3E%3C%2Ffont%3E%0A%3Cbr%3E%0A%3Ctable%20width%3D%22252%22%20cellpadding%3D%221%22%20bgcolor%3D%22%2300FFFF%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23000000%22%3E%0A%3Ca%20href%3D%22whatsnew.html%22%3E%3Cimg%20alt%3D%22What's%20NEW%20on%20the%20site%3F%22%20width%3D%2248%22%20height%3D%2237%22%20border%3D%220%22%20align%3D%22left%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3EClick%20Here%3Cbr%3E%3Cfont%20color%3D%22%23FF8000%22%3Eto%20see%20What's%20New!%3C%2Ffont%3E%3C%2Fb%3E%3C%2Ffont%3E%3Cbr%3E%0A%3Cimg%20alt%3D%22CLICK%20to%20see%20what's%20new%22%20width%3D%22245%22%20height%3D%22147%22%20border%3D%220%22%3E%0A%3C%2Fa%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%3Cbr%3E%0A%0A%3Ctable%20width%3D%22100%25%22%20cellspacing%3D%220%22%20cellpadding%3D%220%22%20bgcolor%3D%22%23FFFFFF%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23FFFFFF%22%3E%0A%09%3Ctable%20width%3D%22100%25%22%20cellpadding%3D%222%22%20bgcolor%3D%22%23808080%22%3E%0A%0A%3Ctbody%3E%3Ctr%3E%3Ctd%20colspan%3D%223%22%20align%3D%22center%22%20bgcolor%3D%22%23333333%22%3E%3Cfont%20face%3D%22Arial%2CHelvetica%2Csans-serif%22%20size%3D%223%22%20color%3D%22%23FFFF00%22%3E%3Cb%3EPLEASE%20NOTE%3A%20All%20Slide%20Rule%20PRICES%20BELOW%20are%20in%20US%24%3C%2Fb%3E%3C%2Ffont%3E%0A%0A%3C%2Ftd%3E%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%09%3Ctable%20width%3D%22100%25%22%20border%3D%220%22%20cellspacing%3D%228%22%20cellpadding%3D%225%22%20bgcolor%3D%22%23333333%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ca%20href%3D%22pins.html%22%3E%3Cimg%20alt%3D%22CLICK%20for%20Slide%20Rule%20Pins%20and%20Tie%20Clips!%22%20width%3D%2280%22%20height%3D%2259%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3ESlide%20Rule%20Pins%20%26amp%3B%20Tie%20Clips%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%0A%3C%2Ftd%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ca%20href%3D%22nib-pickett.html%22%3E%0A%3Cimg%20alt%3D%22CLICK%20to%20see%20New%20In%20the%20Box%20Pickett%20Slide%20Rules!%22%20width%3D%2280%22%20height%3D%2265%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3EPickett%3Cbr%3ENew%20in%20the%20BOX%3Cbr%3ENIB%20Rules%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%3Ca%20href%3D%22circular.html%22%3E%3Cimg%20alt%3D%22CLICK%20to%20see%20Circular%20Slide%20Rules!%22%20width%3D%2280%22%20height%3D%2240%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3ECircular%20Slide%20Rules%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ca%20href%3D%22nib.html%22%3E%0A%3Cimg%20alt%3D%22CLICK%20to%20see%20New%20In%20the%20Box%20Slide%20Rules!%22%20width%3D%2280%22%20height%3D%2244%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3ENew%20In%20the%20BOX%3Cbr%3ENIB%20Rules%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ca%20href%3D%22used.html%22%3E%3Cimg%20alt%3D%22CLICK%20to%20see%20Used%2FFull%20Sized%20Slide%20Rules%22%20width%3D%2280%22%20height%3D%2226%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3EUsed%20Full%20Size%20Slide%20Rules%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ca%20href%3D%22cheap.html%22%3E%3Cimg%20alt%3D%22CLICK%20for%20Cheap%2FStudent%20Slide%20Rules!%22%20width%3D%2280%22%20height%3D%2218%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3ECheap%20%26amp%3B%20Student%20Slide%20Rules%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%3Ca%20href%3D%22exotic.html%22%3E%3Cimg%20alt%3D%22CLICK%20for%20Exotic%20Slide%20Rules!%22%20width%3D%2280%22%20height%3D%2255%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3EExotic%20Slide%20Rules%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ca%20href%3D%22srbooks.html%22%3E%3Cimg%20alt%3D%22CLICK%20for%20Slide%20Rule%20Books!%22%20width%3D%2280%22%20height%3D%2254%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3ESlide%20Rule%20Books%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%3Ca%20href%3D%22pocket.html%22%3E%3Cimg%20alt%3D%22CLICK%20to%20see%20Pocket%20Slide%20Rules!%22%20width%3D%2280%22%20height%3D%2245%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3EPocket%20Slide%20Rules%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ca%20href%3D%22draw.html%22%3E%3Cimg%20alt%3D%22CLICK%20for%20Drawing%20Tools!%22%20width%3D%2280%22%20height%3D%2237%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3EDrawing%20Tools%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ca%20href%3D%22exchange.html%22%3E%3Cimg%20alt%3D%22CLICK%20for%20Slide%20Rule%20Repair%20parts!%22%20width%3D%2280%22%20height%3D%2241%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3ESlide%20Rule%20Repair%20Parts%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%09%3Ctd%20align%3D%22center%22%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%3E%0A%3Ca%20href%3D%22cases.html%22%3E%3Cimg%20alt%3D%22CLICK%20for%20New%20Slide%20Rule%20Cases!%22%20width%3D%2280%22%20height%3D%2245%22%20border%3D%221%22%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3ENew%20Slide%20Rule%20Cases%20%26amp%3B%20Stands%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cbr%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%224%22%3E%3Cb%3E%3Cfont%20color%3D%22%23FF0000%22%3E%2B%3C%2Ffont%3E%20Plus%3C%2Fb%3E%2C%20you%20can%20do%20all%20of%20these%20things%3A%3C%2Ffont%3E%3Cbr%3E%0A%3Ctable%20width%3D%22100%25%22%20cellspacing%3D%225%22%20cellpadding%3D%225%22%20bgcolor%3D%22%23FFCC33%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23000000%22%3E%26nbsp%3B%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23ffff99%22%3E%3Cbr%3E%0A%3Ca%20href%3D%222learning.html%22%3E%3Cimg%20alt%3D%22CLICK%22%20width%3D%2216%22%20height%3D%2216%22%20hspace%3D%222%22%20border%3D%220%22%20align%3D%22middle%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cfont%20color%3D%22%23000000%22%3E%3Cfont%20size%3D%224%22%3ELEARN%3C%2Ffont%3E%3C%2Ffont%3E%20to%20USE%20%26amp%3B%20CLEAN%20your%20slide%20rule%2C%20with%20lessons%20and%20manuals%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cbr%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23ffffcc%22%3E%3Cbr%3E%0A%3Ca%20href%3D%222archives.html%22%3E%3Cimg%20alt%3D%22CLICK%22%20width%3D%2216%22%20height%3D%2216%22%20hspace%3D%222%22%20border%3D%220%22%20align%3D%22middle%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cfont%20color%3D%22%23000000%22%3E%3Cfont%20size%3D%224%22%3ETOUR%3C%2Ffont%3E%3C%2Ffont%3E%20our%20vast%20slide%20rule%20maker%20%2F%20style%20ARCHIVES%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cbr%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23ffff99%22%3E%3Cbr%3E%0A%3Ca%20href%3D%22links.html%22%3E%3Cimg%20alt%3D%22CLICK%22%20width%3D%2216%22%20height%3D%2216%22%20hspace%3D%222%22%20border%3D%220%22%20align%3D%22middle%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cfont%20color%3D%22%23000000%22%3E%3Cfont%20size%3D%224%22%3EVISIT%3C%2Ffont%3E%3C%2Ffont%3E%20other%20sites%20%26amp%3B%20people%20on%20the%20web%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cbr%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23FFffcc%22%3E%3Cbr%3E%0A%3Ca%20href%3D%22build.html%22%3E%3Cimg%20alt%3D%22CLICK%22%20width%3D%2216%22%20height%3D%2216%22%20hspace%3D%222%22%20border%3D%220%22%20align%3D%22middle%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cfont%20color%3D%22%23000000%22%3E%3Cfont%20size%3D%224%22%3EBUILD%3C%2Ffont%3E%3C%2Ffont%3E%20a%20slide%20rule%20from%20scratch%2C%20even%20a%20Log%20Log%20rule%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cbr%3E%0A%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%20bgcolor%3D%22%23FFff99%22%3E%3Cbr%3E%0A%3Ca%20href%3D%22howto.html%22%3E%3Cimg%20alt%3D%22CLICK%22%20width%3D%2216%22%20height%3D%2216%22%20hspace%3D%222%22%20border%3D%220%22%20align%3D%22middle%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cfont%20color%3D%22%23000000%22%3E%3Cfont%20size%3D%224%22%3EUNDERSTAND%20HOW%20%2B%20WHY%3C%2Ffont%3E%3C%2Ffont%3E%20a%20slide%20works%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cbr%3E%0A%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%20bgcolor%3D%22%23FFffcc%22%3E%3Cbr%3E%0A%3Ca%20href%3D%22srsoftware.html%22%3E%3Cimg%20alt%3D%22CLICK%22%20width%3D%2216%22%20height%3D%2216%22%20hspace%3D%222%22%20border%3D%220%22%20align%3D%22middle%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cfont%20color%3D%22%23000000%22%3E%3Cfont%20size%3D%224%22%3ESLIDE%20RULE%20SOFTWARE%3C%2Ffont%3E%3C%2Ffont%3E%20(%3Ci%3EWhat%3F%3C%2Fi%3E)%20great%20free%20learning%20tools%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cbr%3E%0A%3C%2Ftd%3E%3C%2Ftr%3E%0A%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%224%22%3E%3Cb%3EGot%20Some%20Questions%3F%20We%20have%20the%20answers!%20%3Cbr%3EPlease%20see%20our%20%3C%2Fb%3E%3C%2Ffont%3E%3Ca%20href%3D%22faq.html%22%3E%3Cimg%20width%3D%2213%22%20height%3D%2213%22%20alt%3D%22CLICK%20HERE%22%20border%3D%221%22%20hspace%3D%223%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%225%22%3E%3Cb%3EFAQ%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%0A%3Chr%3E%0A%3Ctable%20width%3D%22100%25%22%20cellspacing%3D%225%22%20cellpadding%3D%225%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20valign%3D%22MIDDLE%22%20bgcolor%3D%22%23FF0000%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%226%22%20color%3D%22%23FFFFFF%22%3E%3Cb%3ECAUTION!%3C%2Fb%3E%3C%2Ffont%3E%3C%2Ftd%3E%3Ctd%20bgcolor%3D%22%23FFFF00%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3ESlide%20Rule%20Collecting%20can%20be%20addictive!%20%3Cbr%3E%3Ca%20href%3D%22slide6%2F212-sr-warning.jpg%22%3ESee%20this%20important%20product%20warning!%3C%2Fa%3E%3C%2Fb%3E%3C%2Ffont%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%221%22%20color%3D%22%23000000%22%3EAnother%20Larry%20Stewart%20Original!%3C%2Ffont%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3Ctable%20width%3D%22100%25%22%20border%3D%220%22%20cellspacing%3D%225%22%20cellpadding%3D%225%22%3E%0A%3Ctbody%3E%3Ctr%3E%3Ctd%20bgcolor%3D%22%23FFFFFF%22%3E%3Cimg%20alt%3D%22%22%20width%3D%2213%22%20height%3D%2213%22%20border%3D%220%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%224%22%20color%3D%22%23000000%22%3E%20ALL%20ABOUT%20SHIPPING%20%2B%20ORDERING%3C%2Ffont%3E%3C%2Fb%3E%3Cbr%3E%0A%0A%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%23000000%22%3E%3Cb%3EYou%20can%20order%20anything%20here%20just%20by%20picking%20up%20the%20phone%2C%20and%20calling%20(250)%20769-1834%20during%20normal%20office%20hours%2C%208%3A30AM%20to%204%3A30PM%20PST%2C%20OR%2C%20Email%20your%20order%20to%20Susan%20%3Cimg%20alt%3D%22CLICK%22%20width%3D%2213%22%20height%3D%2213%22%20hspace%3D%222%22%20border%3D%220%22%3E%3Ca%20href%3D%22mailto%3Asusan%40okanagan.net%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3EHERE%3C%2Ffont%3E%3C%2Fa%3E.%3C%2Fb%3E%3C%2Ffont%3E%3Cp%3E%3C%2Fp%3E%0A%0A%0A%3Ca%20href%3D%22faq.html%22%3E%3Cimg%20alt%3D%22Shipping%22%20width%3D%22120%22%20height%3D%22135%22%20hspace%3D%225%22%20border%3D%220%22%20align%3D%22left%22%3E%3Cimg%20alt%3D%22*%22%20width%3D%2211%22%20height%3D%2211%22%20hspace%3D%222%22%20border%3D%220%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%23FF0000%22%3E%3Cb%3ESHIPPING%3A%20Preferred%20and%20Alternate%20Methods%20CLICK%20for%20FULL%20DETAILS%20ON%20OUR%20FAQ%20Page.%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%20%3Cfont%20face%3D%22Arial%2Csans-serif%22%3ERates%20are%20now%20changing%20rapidy%2C%20often%20with%20little%20notice%20to%20us%2C%20so%20all%20the%20data%20has%20been%20transferred%20to%20the%20single%20%3Ca%20href%3D%22faq.html%22%3E%3Cfont%20color%3D%22%23FF0000%22%3E%3Cb%3EFAQ%20page%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%20for%20speedy%20updating.%3C%2Ffont%3E%0A%3Cbr%3E%3Cbr%3E%0A%0A%3Cfont%20face%3D%22Arial%2Csans-serif%22%20size%3D%223%22%3E%0A%3Cimg%20alt%3D%22*%22%20width%3D%2222%22%20height%3D%2216%22%20border%3D%220%22%3E%20%3Ca%20href%3D%22mailto%3Asusan%40okanagan.net%22%3E%3Ci%3E%3Cb%3EE-Mail%20Susan%3C%2Fb%3E%3C%2Fi%3E%3C%2Fa%3E%20if%20you%20want%20a%20quote%20for%20shipping%20to%20other%20destinations%2C%20or%20for%20something%20heavy.%20Sorry%2C%20we%20can't%20safely%20send%20most%20individual%20small%20parts%20in%20a%20regular%20letter%20envelope%2C%20they%20get%20destroyed%20by%20the%20automated%20handling%20equipment.%20Sometimes%20we%20can%20ship%20very%20rugged%20parts%20in%20a%20small%20padded%20envelope%20by%20letter%20post.%20Ask%20Susan.%3Cbr%3E%3Cbr%3E%0A%0A%3Cimg%20alt%3D%22*%22%20width%3D%2222%22%20height%3D%2216%22%20border%3D%220%22%3E%3Cb%3EIf%20we%20have%20your%20valid%20data%20on%20file%3C%2Fb%3E%2C%20you%20can%20just%20click%20on%20the%20ORDER%20email%20link%20to%20place%20an%20order%20and%20indicate%20your%20approval%20to%20bill%2C%20and%20we%20will%20do%20the%20rest.%20We%20keep%20your%20active%20information%20for%20ONE%20YEAR%20for%20your%20convenience.%3Cbr%3E%3Cbr%3E%0A%0A%3Cimg%20alt%3D%22*%22%20width%3D%2222%22%20height%3D%2216%22%20border%3D%220%22%3E%3Cb%3EIf%20this%20is%20the%20first%20time%20you%20have%20dealt%20with%20us%2C%20you%20can%20phone%3C%2Fb%3E%20%2B1%20(250)%20769-1834%20to%20supply%20the%20billing%20info%2C%20or%20send%20it%20by%20the%20email%20link%2C%20as%20you%20prefer.%20We%20accept%20VISA%2FMC%2C%20international%20money%20order%2C%20Paypal%20(to%20Susan%40Okanagan.net)%2C%20and%20bank%20wire%20transfer.%20Please%20note%20that%20there%20are%20transaction%20fees%20with%20Paypal%20and%20wire%20transfer%20payments%2C%20the%20wire%20transfer%20fee%20is%20frankly%20horrifying%2C%20%2450.%20%0A%3C%2Ffont%3E%0A%3Chr%3E%0A%0A%0A%3Cimg%20width%3D%2213%22%20height%3D%2213%22%20border%3D%220%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%20Sphere%20Research%20has%20been%20around%20since%201992%2C%20and%20does%20most%20of%20its%20business%20%3Cfont%20color%3D%22%23FF0000%22%3Edoing%20contract%20research%20and%20development%3C%2Ffont%3E%20for%20customers%20in%20everything%20from%20complex%20system%20controls%20and%20human%20factors%20to%20industrial%20automation.%20%20We%20also%20have%20odd%20corporate%20interests%2C%20like%20restoring%20test%20equipment%2C%20and%20of%20all%20things%2C%20investigating%20%3Cb%3Eslide%20rules%3C%2Fb%3E%2C%20the%20most%20fascinating%20of%20all%20engineering%20marvels...%3Cbr%3E%3Cbr%3E%0A%3Cimg%20width%3D%2213%22%20height%3D%2213%22%20border%3D%220%22%3E%20At%20this%20site%2C%20you%20can%20get%20detailed%20information%20and%20buy%20rules%20from%20manufacturers%20all%20over%20the%20world%2C%20including%20K%2BE%20(Keuffel%20%2B%20Esser)%2C%20Pickett%2C%20POST%2C%20Hemmi%2C%20Sama%20and%20Etani%2C%20Gilson%2C%20Graphoplex%2C%20Dietzgen%2C%20Concise%2C%20Aristo%2C%20Shanghai%2FFlying%20Fish%2C%20Otis%20King%2C%20Sterling%2C%20Acu-Math%2C%20Diwa%2C%20Blundell%2C%20Faber-Castell%2C%20Nestler%2C%20Staedtler-Mars%20and%20more.%20%20We%20have%20collected%20data%2C%20rules%20and%20photographs%20from%20all%20over%20the%20world%20and%20with%20the%20help%20and%20research%20efforts%20of%20many%20people%2C%20put%20them%20together%20here%20for%20you%20in%20one%20(hopefully)%20easy%20to%20navigate%20location.%3C%2Ffont%3E%09%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%3C%2Ftd%3E%3Ctd%20valign%3D%22top%22%20bgcolor%3D%22%23dddddd%22%3E%0A%3Ctable%20width%3D%22100%25%22%20cellspacing%3D%220%22%20cellpadding%3D%225%22%3E%0A%3Ctbody%3E%3Ctr%3E%3Ctd%20valign%3D%22top%22%20bgcolor%3D%22%23000000%22%20background%3D%22..%2Fbk-tile.gif%22%3E%3Cimg%20alt%3D%22*%22%20width%3D%2213%22%20height%3D%2213%22%20hspace%3D%222%22%20border%3D%220%22%3E%3Cimg%20alt%3D%22*%22%20width%3D%2213%22%20height%3D%2213%22%20hspace%3D%222%22%20border%3D%220%22%3E%3Cimg%20alt%3D%22*%22%20width%3D%2213%22%20height%3D%2213%22%20hspace%3D%222%22%20border%3D%220%22%3E%26nbsp%3B%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%2300FFFF%22%3E%3Cb%3EOver%20%3Cfont%20color%3D%22%23FFFFFF%22%3E1.3%20Million%3C%2Ffont%3E%20visitors%20served!%20Wahoo...%3C%2Fb%3E%3C%2Ffont%3E%3Chr%3E%0A%3Ctable%20cellspacing%3D%225%22%20cellpadding%3D%2210%22%20bgcolor%3D%22%2300FFFF%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20align%3D%22left%22%20bgcolor%3D%22%23000000%22%3E%3Cimg%20alt%3D%22red%20panda%20magic%22%20width%3D%22154%22%20height%3D%22125%22%20border%3D%220%22%3E%0A%3C%2Ftd%3E%3Ctd%20align%3D%22center%22%20bgcolor%3D%22%23000000%22%3E%3Ca%20href%3D%22pins.html%22%3E%3Cimg%20alt%3D%22We%20have%20MUGS!%20CLICK%20to%20SEE!%22%20width%3D%2290%22%20height%3D%2275%22%20border%3D%221%22%3E%3Cbr%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%222%22%3EWe%20have%20MUGS!%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%3Cbr%3E%0A%0A%0A%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%23FFFFFF%22%3E%3Cb%3E%20Keep%20in%20mind%2C%20in%2050%20years%2C%20the%20computer%20you%20are%20using%20to%20view%20this%20webpage%20will%20be%20landfill%2C%20but%20your%20trusty%20%3Cfont%20color%3D%22%2300FFFF%22%3Eslide%20rule%3C%2Ffont%3E%20will%20just%20be%20nicely%20broken%20in!%3C%2Fb%3E%3C%2Ffont%3E%3Chr%3E%0A%0A%0A%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%221%22%20color%3D%22%23FFFF00%22%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%3Cb%3EOur%20SRU%20Mascot%3C%2Fb%3E%3C%2Ffont%3E%3Cb%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%222%22%20color%3D%22%23FFFF00%22%3ENotable%20Visitors%3A%3C%2Ffont%3E%3C%2Fb%3E%3Cbr%3E%3Cimg%20alt%3D%22Whenever%20you%20see%20Robby%20the%20Robot%2C%20you%20can%20click%20on%20him%20to%20return%20to%20this%20navigation%20page!%22%20width%3D%22100%22%20height%3D%22178%22%20hspace%3D%2210%22%20border%3D%220%22%20align%3D%22left%22%3E%0A%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%221%22%20color%3D%22%23FFFFFF%22%3E%3Cb%3EJoe%20Pasquale%3C%2Fb%3E%2C%20Visitor%20100%2C000!%3Cbr%3E%0A%3Cb%3EChris%20Redding%3C%2Fb%3E%2C%20Visitor%20150%2C000!%3Cbr%3E%0A%3Cb%3EKelley%20Durski%3C%2Fb%3E%2C%20Visitor%20200%2C000!%3Cbr%3E%0A%3Cb%3EMike%20Yancey%3C%2Fb%3E%2C%20Visitor%20250%2C000!%3Cbr%3E%0A%3Cb%3EMark%20Lukey%3C%2Fb%3E%2C%20Visitor%20300%2C000!%3Cbr%3E%0A%3Cb%3ETommy%20Frandsen%3C%2Fb%3E%2C%20Visitor%20350%2C000!%3Cbr%3E%0A%3Cb%3EMike%20Wei%3C%2Fb%3E%2C%20Visitor%20400%2C000!%3Cbr%3E%0A%3Cb%3EMichael%20Rowley%3C%2Fb%3E%2C%20Visitor%20500%2C000!%3Cbr%3E%0A%3Cb%3ERon%20A.%20Knapp%3C%2Fb%3E%2C%20Visitor%20550%2C000!%3Cbr%3E%20%0A%3Cb%3ECharles%20F.%20Crizer%20Jr.%3C%2Fb%3E%2C%20Visitor%20750%2C000!%3Cbr%3E%20%0A%3Cb%3ERichard%20Guy%3C%2Fb%3E%2C%20Visitor%20800%2C000!%3Cbr%3E%20%0A%3Cb%3ESteve%20Kay%3C%2Fb%3E%2C%20Visitor%20900%2C000!%3Cbr%3E%0A%3Cb%3ESean%20R.%20Wilkinson%3C%2Fb%3E%2C%20Visitor%20950%2C000!%3Cbr%3E%0A%3Cb%3EGiovanni%20Breda%2C%20the%20%3Cfont%20color%3D%22%23FFFF00%22%3E1%20Millionth%20Visitor!%3C%2Ffont%3E%3C%2Fb%3E%3Cbr%3E%0A%3Cb%3EMichele%20T.%20Mazzucato%3C%2Fb%3E%2C%20Visitor%201%2C050%2C000!%3Cbr%3E%0A%3Cb%3EBenjamin%20Harrison%20Millard%3C%2Fb%3E%2C%20Visitor%201%2C234%2C567!%3Cbr%3E%0A%3Cbr%3E%20%0A%3C%2Ffont%3E%3Cbr%3E%0A%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%20bgcolor%3D%22%23000000%22%20background%3D%22..%2Fbk-tile.gif%22%3E%0A%3Ca%20href%3D%22..%2Fdocument.html%22%3E%3Cimg%20alt%3D%22Visit%20the%20Doument%20Server!%22%20width%3D%2213%22%20height%3D%2213%22%20border%3D%220%22%20align%3D%22middle%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3E%20Visit%20our%20amazing%20document%20server%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%23FFFFFF%22%3E%20when%20you%20have%20a%20chance.%20Everything%20from%20Quotes%20and%20SciFi%20to%20Business%20and%20Ethics.%3C%2Ffont%3E%3Cbr%3E%3Chr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%23FFFFFF%22%3EAt%20the%20%3Cb%3ESLIDE%20RULE%20UNIVERSE%3C%2Fb%3E%2C%20we%20have%20all%20kinds%20of%20information%20about%20%3Cb%3Eslide%20rules%3C%2Fb%3E%20(or%20sliderules%2C%20and%20sliderulers%2C%20if%20you%20prefer)%20including%20lessons%2C%20maker's%20archives%2C%20links%20and%20an%20on-line%20marketplace%2C%20spare%20parts%20page%20and%20even%20an%20auction.%20%3C%2Ffont%3E%0A%3C%2Ftd%3E%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%3Ctable%20width%3D%22100%25%22%20cellspacing%3D%225%22%20cellpadding%3D%225%22%20bgcolor%3D%22%23FFFF00%22%3E%0A%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20align%3D%22CENTER%22%20bgcolor%3D%22%23000000%22%3E%3Cfont%20face%3D%22Courier%20New%2C%20Courier%22%20size%3D%224%22%20color%3D%22%23FFFFFF%22%3E%3Cb%3EOther%20Places%20to%20go%20in%20the%20Slide%20Rule%20Universe%2C%20people%20to%20see....%3C%2Fb%3E%3C%2Ffont%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3Ctable%20border%3D%220%22%20cellspacing%3D%225%22%20cellpadding%3D%225%22%20bgcolor%3D%22%23FFFF00%22%3E%0A%0A%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23FFFFFF%22%3E%3Ca%20href%3D%222learning.html%22%3E%3Cimg%20alt%3D%22CLICK%20to%20Learn%20about%20your%20slide%20rule!%22%20width%3D%2242%22%20height%3D%2243%22%20border%3D%220%22%20align%3D%22left%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3ELearn%20to%20operate%20and%20care%20for%20your%20slide%20rule%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%222%22%20color%3D%22%23000000%22%3E%20with%20these%20%3Cb%3Eon%20line%20manuals%20and%20directions%3C%2Fb%3E.%20%20Learn%20what%20scales%20mean%2C%20how%20to%20use%20them%20and%20how%20to%20restore%20or%20keep%20your%20slide%20rules%20in%20good%20condition.%3C%2Ffont%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23FFFFFF%22%3E%3Ca%20href%3D%222archives.html%22%3E%3Cimg%20alt%3D%22CLICK%20to%20visit%20the%20Slide%20Rule%20Archives!%22%20width%3D%2242%22%20height%3D%2243%22%20border%3D%220%22%20align%3D%22left%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3ETour%20our%20extensive%20archives%20of%20slide%20rule%20manufacturers%20and%20models%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%222%22%20color%3D%22%23000000%22%3E%20from%20all%20over%20the%20world.%20%20Find%20out%20who%20made%20what%2C%20and%20what%20became%20of%20them%20after%20they%20stopped%20making%20slide%20rules.%20See%20how%20slide%20rules%20%3Cb%3Esurvive%20today%3C%2Fb%3E%20in%20the%20form%20of%20%3Cb%3Eslide%20charts%3C%2Fb%3E%20still%20made%20in%20the%20millions%20annually.%3C%2Ffont%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23FFFFFF%22%3E%3Ca%20href%3D%22links.html%22%3E%3Cimg%20alt%3D%22CLICK%20to%20visit%20our%20LINKS%22%20width%3D%2282%22%20height%3D%2243%22%20border%3D%220%22%20align%3D%22left%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3EVisit%20other%20slide%20rule%20places%20on%20the%20web%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%222%22%20color%3D%22%23000000%22%3E%20with%20more%20slide%20rule%20data%20and%20information.%20From%20personal%20collections%20on%20line%20to%20(yes%2C%20it's%20really%20true)%20the%20international%20slide%20rule%20owners%20and%20collectors%20organization%2C%20the%20Oughtred%20Society.%3C%2Ffont%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23FFFFFF%22%3E%3Ca%20href%3D%22nice.html%22%3E%3Cimg%20alt%3D%22CLICK%20to%20visit%20the%20Marketplace%22%20width%3D%2242%22%20height%3D%2243%22%20border%3D%220%22%20align%3D%22left%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3ENice%20things%20people%20have%20said%20about%20us%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%222%22%20color%3D%22%23000000%22%3E%20in%20print%20and%20on%20TV%2C%20see%20the%20original%20articles.%20We%20always%20appreciate%20it!%3C%2Ffont%3E%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23FFFF00%22%3E%3Ca%20href%3D%22index.html%22%3E%3Cimg%20alt%3D%22CLICK%20to%20visit%20the%20Test%20Equipment%20Site!%22%20width%3D%22150%22%20height%3D%2269%22%20border%3D%220%22%3E%3Cbr%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%23FF0000%22%3EVisit%20our%20TEST%20EQUIPMENT%20site%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fa%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Chelvetica%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%23000000%22%3E%20everything%20from%20Scopes%2C%20CRT's%20and%20DMM's%20to%20nixie%20tubes%2C%20HP%20and%20Tektronix%20spare%20parts.%20A%20little%20electronic%20something%20or%20another%20for%20everybody.%3C%2Ffont%3E%3Cbr%3E%3Chr%3E%0A%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3ENEED%20a%20new%20BOXED%20slide%20rule%20for%20school%2C%20graduation%20or%20for%20a%20holiday%20gift%3C%2Fb%3E%20%3F%20%3Cbr%3E%3Ca%20href%3D%22nib-pickett.html%22%3E%3Cimg%20width%3D%2213%22%20height%3D%2213%22%20alt%3D%22CLICK%20HERE%20to%20go%20to%20the%20New%20Boxed%20Picketts%22%20border%3D%221%22%20hspace%3D%223%22%20align%3D%22middle%22%3E%3Cb%3ELOOK%20HERE%20for%20Picketts%3C%2Fb%3E%3C%2Fa%3E%3Cbr%3E%3Chr%3E%3Cbr%3E%3Ca%20href%3D%22nib.html%22%3E%3Cimg%20width%3D%2213%22%20height%3D%2213%22%20alt%3D%22CLICK%20HERE%20to%20go%20to%20the%20Other%20NIB%20Rules%22%20border%3D%221%22%20hspace%3D%223%22%20align%3D%22middle%22%3E%3Cb%3EHERE%20for%20Other%20NIB%20rules%3C%2Fb%3E%3C%2Fa%3E%3Cbr%3E%3Chr%3E%3Cbr%3E%3Ca%20href%3D%22cheap.html%22%3E%3Cimg%20width%3D%2213%22%20height%3D%2213%22%20alt%3D%22CLICK%20HERE%20to%20go%20to%20the%20CHEAP%20Rules%22%20border%3D%221%22%20hspace%3D%223%22%20align%3D%22middle%22%3E%3Cb%3EHERE%20for%20inexpensive%20starter%20slide%20rules!%3C%2Fb%3E%3C%2Fa%3E%3C%2Ffont%3E%3Cbr%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%222%22%20color%3D%22%23000080%22%3ECustoms%20can%20be%20very%20unpredictable%2C%20so%20to%20avoid%20unhappy%20shipping%20delays%2C%20%3Cb%3Eplease%20order%20rules%20for%20gifts%20as%20early%20as%20possible%3C%2Fb%3E.%20We%20will%20happily%20ship%20FedEx%20for%20overnight%20or%20second%20day%20delivery%20if%20you%20are%20in%20a%20hurry.%3C%2Ffont%3E%0A%0A%3Ctable%20width%3D%22100%25%22%3E%3Ctbody%3E%3Ctr%3E%0A%09%3Ctd%20align%3D%22CENTER%22%20bgcolor%3D%22%23CCFFFF%22%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Ca%20href%3D%22mailto%3Asusan%40okanagan.net%22%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2CHelvetica%2Csans%20serif%22%20size%3D%226%22%3EE%3Cfont%20color%3D%22%23000000%22%3E-mail%20us%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fb%3E%3Cbr%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%222%22%3EGot%20Questions%3F%20Just%20E-Mail%20Us%20!%3Cbr%3E%3Cbr%3E%3Cbr%3E%3Cbr%3E%26nbsp%3B%3C%2Ffont%3E%3C%2Fa%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%0A%09%3Ctd%20bgcolor%3D%22%23FFFFFF%22%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.sphere.bc.ca%2Fgodzilla.html%22%3E%3Cimg%20width%3D%2279%22%20height%3D%22120%22%20border%3D%220%22%20alt%3D%22Created%20by%20the%20ad%20hoc%20Godzilla%20Graphics%20Group%22%20align%3D%22LEFT%22%3E%3C%2Fa%3E%3Cimg%20width%3D%2210%22%20height%3D%22120%22%20border%3D%220%22%20align%3D%22Left%22%3E%0A%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%222%22%3E%0ASite%20Design%20%26amp%3B%20contents%20copyright%201997%2C%201998%2C%201999%2C%202000%2C%202001%2C%202002%2C%202003%2C%202004%2C%202005%2C%202006%2C%202007%2C%202008%2C%202009%2C%202010%2C%202011%2C%202013%2C%202014%2C%202015%2C%202016%2C%202017%2C%202018%2C%202019%2C%202020%2C%202021%20by%20%3Cb%3EWalter%20Shawlee%202%3C%2Fb%3E%20%26amp%3B%20the%20ad%20hoc%20%3Ca%20href%3D%22..%2Fgodzilla.html%22%3EGodzilla%20Graphics%20Group%3C%2Fa%3E.%20The%20Slide%20Rule%20Universe%20top%20banner%20artwork%20created%20by%20%3Cb%3ELarry%20Stewart%3C%2Fb%3E.%3Cbr%3E%0A%3Ca%20href%3D%22..%2Findex.html%22%3E%3Cimg%20width%3D%2242%22%20height%3D%2243%22%20alt%3D%22Return%20to%20Sphere's%20Home%20Page%22%20border%3D%220%22%20align%3D%22middle%22%20hspace%3D%225%22%3E%20%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%3E%3Cb%3EReturn%20to%20Sphere's%20Home%20Page%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fa%3E%3C%2Ffont%3E%0A%3Chr%3E%3Cimg%20width%3D%2213%22%20height%3D%2213%22%20border%3D%220%22%3E%3Cfont%20face%3D%22Arial%2Csans%20serif%22%20size%3D%223%22%20color%3D%22%23000000%22%3E%20Want%20to%20buy%20a%20rule%2C%20but%20you%20live%20far%20away%20from%20us%20in%20Canada%3F%20%20Don't%20worry%2C%20we%20have%20shipped%20slide%20rules%20to%3A%20%20%3Cbr%3E%3Cbr%3E%3Cb%3EUSA%2C%20UK%2C%20Germany%2C%20Greece%2C%20Ireland%2C%20Sweden%2C%20Italy%2C%20Brazil%2C%20Mexico%2C%20Norway%2C%20Switzerland%2C%20Peru%2C%20Chile%2C%20Singapore%2C%20Phillipines%2C%20Australia%2C%20New%20Zealand%2C%20Spain%2C%20Netherlands%2C%20Venezuela%2C%20and%20yes%2C%20actually%20to%20%3Ci%3EAntarctica%3C%2Fi%3E!%3C%2Fb%3E%3C%2Ffont%3E%3Chr%3E%3C%2Ftd%3E%3C%2Ftr%3E%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3C%2Ftd%3E%0A%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%3C%2Ftd%3E%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "97bf9c4a-6cf2-42bb-811f-d1f586e8b124",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.sphere.bc.ca-oldsite-test-sruniverse.html"
+}

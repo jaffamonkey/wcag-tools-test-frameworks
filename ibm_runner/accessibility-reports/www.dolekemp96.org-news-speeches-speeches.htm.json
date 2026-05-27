@@ -1,0 +1,1178 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1023,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 1023,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 1007,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 79,
+                "width": 784
+            },
+            "snippet": "<table align=\"center\" style=\"width: 100%; height: 140\" class=\"auto-style1\" cellspacing=\"0\" cellpadding=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20align%3D%5C%22center%5C%22%20style%3D%5C%22width%3A%20100%25%3B%20height%3A%20140%5C%22%20class%3D%5C%22auto-style1%5C%22%20cellspacing%3D%5C%220%5C%22%20cellpadding%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 117,
+                "top": 69,
+                "height": 18,
+                "width": 355
+            },
+            "snippet": "<a href=\"https://www.dolekemp96.org/main.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.dolekemp96.org%2Fmain.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/a[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 117,
+                "top": 8,
+                "height": 75,
+                "width": 355
+            },
+            "snippet": "<img height=\"75\" width=\"355\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%2275%5C%22%20width%3D%5C%22355%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'Speeches' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "Speeches"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 87,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p align=\"center\" style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'Speeches'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20align%3D%5C%22center%5C%22%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22Speeches%22%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/font[1]/font[1]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 130,
+                "top": 121,
+                "height": 18,
+                "width": 46
+            },
+            "snippet": "<font color=\"#FF0000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23FF0000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/font[1]/font[1]/u[1]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "4.00",
+                16,
+                400,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 130,
+                "top": 121,
+                "height": 18,
+                "width": 46
+            },
+            "snippet": "<u>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cu%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/font[1]/font[2]/u[1]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "4.00",
+                16,
+                400,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 187,
+                "top": 121,
+                "height": 18,
+                "width": 52
+            },
+            "snippet": "<u>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cu%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/font[1]/font[4]/u[1]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "4.00",
+                16,
+                400,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 311,
+                "top": 121,
+                "height": 18,
+                "width": 50
+            },
+            "snippet": "<u>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cu%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/font[1]/u[1]/font[1]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "4.00",
+                16,
+                400,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 372,
+                "top": 121,
+                "height": 18,
+                "width": 53
+            },
+            "snippet": "<font color=\"#FF0000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23FF0000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/font[1]/u[2]/font[1]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "4.00",
+                16,
+                400,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 435,
+                "top": 121,
+                "height": 18,
+                "width": 53
+            },
+            "snippet": "<font color=\"#FF0000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23FF0000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/font[1]/font[5]/u[1]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "4.00",
+                16,
+                400,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 498,
+                "top": 121,
+                "height": 18,
+                "width": 48
+            },
+            "snippet": "<u>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cu%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[3]/font[1]/font[6]/u[1]",
+                "aria": "/document[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.00 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "4.00",
+                16,
+                400,
+                "#ff0000",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 560,
+                "top": 121,
+                "height": 18,
+                "width": 53
+            },
+            "snippet": "<u>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.00%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cu%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.00%22%2C16%2C400%2C%22%23ff0000%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[6]",
+                "aria": "/document[1]/paragraph[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'October 1996 | Back to Top' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "October 1996 | Back to Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 170,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'October%201996%20%7C%20Back%20to%20Top'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22October%201996%20%7C%20Back%20to%20Top%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[8]",
+                "aria": "/document[1]/paragraph[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'September 1996 | Back to Top' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "September 1996 | Back to Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 204,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'September%201996%20%7C%20Back%20to%20Top'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22September%201996%20%7C%20Back%20to%20Top%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[10]",
+                "aria": "/document[1]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'August 1996 | Back to Top' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "August 1996 | Back to Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 239,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'August%201996%20%7C%20Back%20to%20Top'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22August%201996%20%7C%20Back%20to%20Top%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[12]",
+                "aria": "/document[1]/paragraph[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'August 15, 1996' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "August 15, 1996"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 273,
+                "height": 16,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'August%2015%2C%201996'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22August%2015%2C%201996%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[13]",
+                "aria": "/document[1]/paragraph[13]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text '            Dole Accepts Nomination (San Diego, California)' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "            Dole Accepts Nomination (San Diego, California)"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 289,
+                "height": 16,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%20Dole%20Accepts%20Nomination%20(San%20Diego%2C%20California)'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%20Dole%20Accepts%20Nomination%20(San%20Diego%2C%20California)%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[15]",
+                "aria": "/document[1]/paragraph[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'August 15, 1996' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "August 15, 1996"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 321,
+                "height": 16,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'August%2015%2C%201996'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22August%2015%2C%201996%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[16]",
+                "aria": "/document[1]/paragraph[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text '            Kemp Accepts Nomination (San Diego, California)' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "            Kemp Accepts Nomination (San Diego, California)"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 337,
+                "height": 16,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%20Kemp%20Accepts%20Nomination%20(San%20Diego%2C%20California)'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%20Kemp%20Accepts%20Nomination%20(San%20Diego%2C%20California)%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[18]",
+                "aria": "/document[1]/paragraph[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'August 10, 1996' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "August 10, 1996"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 369,
+                "height": 16,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'August%2010%2C%201996'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22August%2010%2C%201996%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[19]",
+                "aria": "/document[1]/paragraph[19]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text '            Jack Kemp Joins The Winning Team (Russell, Kansas)' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "            Jack Kemp Joins The Winning Team (Russell, Kansas)"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 385,
+                "height": 16,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%20Jack%20Kemp%20Joins%20The%20Winning%20Team%20(Russell%2C%20Kansas)'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%20Jack%20Kemp%20Joins%20The%20Winning%20Team%20(Russell%2C%20Kansas)%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[22]",
+                "aria": "/document[1]/paragraph[22]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'July 1996 | Back to Top' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "July 1996 | Back to Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 433,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'July%201996%20%7C%20Back%20to%20Top'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22July%201996%20%7C%20Back%20to%20Top%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[24]",
+                "aria": "/document[1]/paragraph[24]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'June 1996 | Back to Top' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "June 1996 | Back to Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 468,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'June%201996%20%7C%20Back%20to%20Top'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22June%201996%20%7C%20Back%20to%20Top%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[26]",
+                "aria": "/document[1]/paragraph[26]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'May 1996 | Back to Top' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "May 1996 | Back to Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 502,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'May%201996%20%7C%20Back%20to%20Top'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22May%201996%20%7C%20Back%20to%20Top%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[28]",
+                "aria": "/document[1]/paragraph[28]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'April 1996 | Back to Top' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "April 1996 | Back to Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 537,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'April%201996%20%7C%20Back%20to%20Top'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22April%201996%20%7C%20Back%20to%20Top%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[30]",
+                "aria": "/document[1]/paragraph[30]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'May 1995 | Back to Top' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "May 1995 | Back to Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 571,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'May%201995%20%7C%20Back%20to%20Top'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22May%201995%20%7C%20Back%20to%20Top%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[32]",
+                "aria": "/document[1]/paragraph[32]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'April 1995 | Back to Top' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "April 1995 | Back to Top"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 606,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'April%201995%20%7C%20Back%20to%20Top'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22April%201995%20%7C%20Back%20to%20Top%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[34]",
+                "aria": "/document[1]/paragraph[34]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'April 10, 1995' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "April 10, 1995"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 640,
+                "height": 16,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'April%2010%2C%201995'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22April%2010%2C%201995%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[35]",
+                "aria": "/document[1]/paragraph[35]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text '            Official Announcement (Topeka, Kansas)' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "            Official Announcement (Topeka, Kansas)"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 656,
+                "height": 16,
+                "width": 784
+            },
+            "snippet": "<p style=\"word-spacing: 0; line-height: 100%; text-indent: 0; margin: 0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%20Official%20Announcement%20(Topeka%2C%20Kansas)'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%20Official%20Announcement%20(Topeka%2C%20Kansas)%22%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[37]/a[1]",
+                "aria": "/document[1]/paragraph[37]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 150,
+                "top": 756,
+                "height": 18,
+                "width": 500
+            },
+            "snippet": "<a href=\"http://www.dolekemp96.org/main.htm\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22http%3A%2F%2Fwww.dolekemp96.org%2Fmain.htm%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[37]/a[1]/img[1]",
+                "aria": "/document[1]/paragraph[37]/link[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 150,
+                "top": 720,
+                "height": 50,
+                "width": 500
+            },
+            "snippet": "<img height=\"50\" width=\"500\" border=\"0\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%2250%5C%22%20width%3D%5C%22500%5C%22%20border%3D%5C%220%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[38]/font[1]",
+                "aria": "/document[1]/paragraph[38]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'Smaller'",
+            "messageArgs": [
+                "Smaller"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 152,
+                "top": 791,
+                "height": 20,
+                "width": 498
+            },
+            "snippet": "<font size=\"4\" face=\"Times New Roman\" color=\"#000080\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'Smaller'%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%224%5C%22%20face%3D%5C%22Times%20New%20Roman%5C%22%20color%3D%5C%22%23000080%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22Smaller%22%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[40]/font[1]/a[1]",
+                "aria": "/document[1]/paragraph[40]/link[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 453,
+                "top": 850,
+                "height": 11,
+                "width": 3
+            },
+            "snippet": "<a href=\"http://www.dolekemp96.org/agenda/agenda.html\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22http%3A%2F%2Fwww.dolekemp96.org%2Fagenda%2Fagenda.html%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 1064,
+    "ruleTime": 7,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 60,
+            "elementsViolation": 15,
+            "elementsViolationReview": 35,
+            "violation": 16,
+            "potentialviolation": 20,
+            "recommendation": 26,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 1001
+        },
+        "scanTime": 33,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778455456060,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ESpeeches%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Ctable%20cellpadding%3D%220%22%20cellspacing%3D%220%22%20class%3D%22auto-style1%22%20style%3D%22width%3A%20100%25%3B%20height%3A%20140%22%20align%3D%22center%22%3E%0A%09%3Ctbody%3E%3Ctr%3E%0A%09%09%3Ctd%20class%3D%22auto-style2%22%20style%3D%22height%3A%20140%22%3E%0A%09%09%3Cimg%20alt%3D%22%22%20height%3D%2275%22%20width%3D%22109%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.dolekemp96.org%2Fmain.htm%22%3E%3Cimg%20border%3D%220%22%20width%3D%22355%22%20height%3D%2275%22%3E%3C%2Fa%3E%3Cimg%20alt%3D%22%22%20height%3D%2275%22%20width%3D%22109%22%3E%3C%2Ftd%3E%0A%09%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%20align%3D%22center%22%3E%0A%3Cb%3E%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%225%22%3E%3Ca%20name%3D%22Speeches_%22%3ESpeeches%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%20align%3D%22center%22%3E%0A%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%20align%3D%22center%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%3E%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3EOct%20'96%3C%2Fu%3E%3C%2Ffont%3E%20%7C%0A%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3ESept%20'96%3C%2Fu%3E%3C%2Ffont%3E%20%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%0A%3Ca%20href%3D%22%23August_1996_%22%3EAug%20'96%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%20%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3EJuly%20%0A'96%3C%2Fu%3E%3C%2Ffont%3E%20%7C%20%3Cu%3E%3Cfont%20color%3D%22%23FF0000%22%3EJune%20'96%3C%2Ffont%3E%3C%2Fu%3E%20%7C%20%3Cu%3E%0A%3Cfont%20color%3D%22%23FF0000%22%3EMay%20'96%3C%2Ffont%3E%20%3C%2Fu%3E%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3EApr%20'96%3C%2Fu%3E%3C%2Ffont%3E%20%0A%7C%26nbsp%3B%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3EMay%20'95%3C%2Fu%3E%3C%2Ffont%3E%20%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%0A%3Ca%20href%3D%22%23April_1995%22%3EApr%20'95%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%225%22%3EOctober%201996%20%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%0A%3Ca%20href%3D%22%23Speeches_%22%3EBack%20to%20Top%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%225%22%3ESeptember%201996%20%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%0A%3Ca%20href%3D%22%23Speeches_%22%3EBack%20to%20Top%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%225%22%3E%3Ca%20name%3D%22August_1996_%22%3EAugust%201996%20%3C%2Fa%3E%7C%0A%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%3Ca%20href%3D%22%23Speeches_%22%3EBack%20to%20Top%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%3E%3Ca%20href%3D%22spaug1596a.html%22%3EAugust%2015%2C%201996%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%20%0ADole%20Accepts%20Nomination%20(San%20Diego%2C%20California)%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%3E%3Ca%20href%3D%22spaug1596.html%22%3EAugust%2015%2C%201996%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%20%0AKemp%20Accepts%20Nomination%20(San%20Diego%2C%20California)%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%3E%3Ca%20href%3D%22spaug1096.html%22%3EAugust%2010%2C%201996%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%20%0AJack%20Kemp%20Joins%20The%20Winning%20Team%20(Russell%2C%20Kansas)%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%225%22%3EJuly%201996%20%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%0A%3Ca%20href%3D%22%23Speeches_%22%3EBack%20to%20Top%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%225%22%3EJune%201996%20%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%0A%3Ca%20href%3D%22%23Speeches_%22%3EBack%20to%20Top%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%225%22%3EMay%201996%20%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%0A%3Ca%20href%3D%22%23Speeches_%22%3EBack%20to%20Top%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%225%22%3EApril%201996%20%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%0A%3Ca%20href%3D%22%23Speeches_%22%3EBack%20to%20Top%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%225%22%3EMay%201995%20%7C%20%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%0A%3Ca%20href%3D%22%23Speeches_%22%3EBack%20to%20Top%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%225%22%3E%3Ca%20name%3D%22April_1995%22%3EApril%201995%3C%2Fa%3E%20%7C%0A%3Cfont%20color%3D%22%23FF0000%22%3E%3Cu%3E%3Ca%20href%3D%22%23Speeches_%22%3EBack%20to%20Top%3C%2Fa%3E%3C%2Fu%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%3E%3Ca%20href%3D%22spapr1095.html%22%3EApril%2010%2C%201995%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%3E%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%26nbsp%3B%20%0AOfficial%20Announcement%20(Topeka%2C%20Kansas)%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%0A%3Cfont%20face%3D%22Times%20New%20Roman%22%3E%3Cbr%3E%0A%26nbsp%3B%3C%2Ffont%3E%3C%2Fp%3E%3Cp%20align%3D%22center%22%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.dolekemp96.org%2Fmain.htm%22%3E%0A%3Cimg%20border%3D%220%22%20width%3D%22500%22%20height%3D%2250%22%3E%3C%2Fa%3E%3C%2Fp%3E%0A%0A%3Cp%20align%3D%22center%22%3E%3Cfont%20color%3D%22%23000080%22%20face%3D%22Times%20New%20Roman%22%20size%3D%224%22%3EMore%0Aopportunities.%20Smaller%20government.%20Stronger%20and%20safer%20families%3C%2Ffont%3E%3C%2Fp%3E%0A%0A%3Cp%20align%3D%22center%22%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%3Cfont%20face%3D%22Times%20New%20Roman%22%20color%3D%22%230000FF%22%20size%3D%221%22%3E%3Cu%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.dolekemp96.org%2Fmain.htm%22%3EHomepage%3C%2Fa%3E%3C%2Fu%3E%0A%7C%20%3Cu%3ERegister%3C%2Fu%3E%20%7C%20%3Cu%3EVolunteers%3C%2Fu%3E%20%7C%20%3Cu%3EDonations%3C%2Fu%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%0A%3Cp%20align%3D%22center%22%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%3Cfont%20face%3D%22Times%20New%20Roman%22%20color%3D%22%230000FF%22%20size%3D%221%22%3E%3Cu%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.dolekemp96.org%2Fabout%2Fabout.html%22%3EAbout%0Athe%20Team%3C%2Fa%3E%3C%2Fu%3E%20%7C%20%3Cu%3EDole%20Interactive%3C%2Fu%3E%20%7C%20%3Cu%3E%0A%3Ca%20href%3D%22http%3A%2F%2Fwww.dolekemp96.org%2Fnews%2Fnews.html%22%3ENewsroom%3C%2Fa%3E%3C%2Fu%3E%20%7C%20%3Cu%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.dolekemp96.org%2Fagenda%2Fagenda.html%22%3EThe%20Dole%20Agenda%3C%2Fa%3E%3C%2Fu%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.dolekemp96.org%2Fagenda%2Fagenda.html%22%3E%0A%3C%2Fa%3E%7C%20%3Cu%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.dolekemp96.org%2Ftrail%2Ftrail.html%22%3EOn%20the%20Campaign%20Trail%3C%2Fa%3E%3C%2Fu%3E%20%7C%20%3Cu%3EGet%20Involved%3C%2Fu%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%0A%3Cp%20align%3D%22center%22%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin%3A%200%22%3E%26nbsp%3B%3C%2Fp%3E%0A%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin-left%3A%200%3B%20margin-right%3A%200%3B%20margin-top%3A%20-5%3B%20margin-bottom%3A%200%22%20align%3D%22center%22%3E%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%221%22%3EOriginally%0APaid%20for%20by%20Dole%20Kemp%20'96%20Campaign%20Committee%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin-left%3A%200%3B%20margin-right%3A%200%3B%20margin-top%3A%20-5%3B%20margin-bottom%3A%200%22%20align%3D%22center%22%3E%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%221%22%3EOriginal%0AWeb%20Design%20by%20%3Ca%20href%3D%22http%3A%2F%2Fwww.presageinc.com%2Findex.shtml%22%3E%20Presage%20Internet%20Campaigns%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin-left%3A%200%3B%20margin-right%3A%200%3B%20margin-top%3A%20-5%3B%20margin-bottom%3A%200%22%20align%3D%22center%22%3E%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%221%22%3ETo%0ALearn%20more%20about%20Bob%20Dole%2C%20Please%20Visit%20the%20%3Ca%20href%3D%22http%3A%2F%2Fwww.doleinstitute.org%22%3E%20Dole%20Institute%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22word-spacing%3A%200%3B%20line-height%3A%20100%25%3B%20text-indent%3A%200%3B%20margin-left%3A%200%3B%20margin-right%3A%200%3B%20margin-top%3A%20-5%3B%20margin-bottom%3A%200%22%20align%3D%22center%22%3E%3Cfont%20face%3D%22Times%20New%20Roman%22%20size%3D%221%22%3EThis%0AWeb%20Site%20is%20Presented%20for%20Educational%20Purposes%20by%20%3Ca%20href%3D%22http%3A%2F%2Fwww.4President.org%22%3E%204President.org%3C%2Fa%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "23b9c5c2-2712-48ab-be18-cd424406d009",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.dolekemp96.org-news-speeches-speeches.htm"
+}

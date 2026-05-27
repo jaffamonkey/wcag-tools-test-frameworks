@@ -1,0 +1,189 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 351,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 27,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input value=\"\" autocapitalize=\"none\" autocorrect=\"off\" name=\"user-name\" id=\"user-name\" data-test=\"username\" type=\"text\" placeholder=\"Username\" class=\"input_error form_input\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22%5C%22%20autocapitalize%3D%5C%22none%5C%22%20autocorrect%3D%5C%22off%5C%22%20name%3D%5C%22user-name%5C%22%20id%3D%5C%22user-name%5C%22%20data-test%3D%5C%22username%5C%22%20type%3D%5C%22text%5C%22%20placeholder%3D%5C%22Username%5C%22%20class%3D%5C%22input_error%20form_input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/input[1]",
+                "aria": "/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 70,
+                "height": 22,
+                "width": 49
+            },
+            "snippet": "<input value=\"Login\" name=\"login-button\" id=\"login-button\" data-test=\"login-button\" class=\"submit-button btn_action\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Login%5C%22%20name%3D%5C%22login-button%5C%22%20id%3D%5C%22login-button%5C%22%20data-test%3D%5C%22login-button%5C%22%20class%3D%5C%22submit-button%20btn_action%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/h4[1]",
+                "aria": "/document[1]/heading[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 113,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<h4>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ch4%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/h4[1]",
+                "aria": "/document[1]/heading[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 285,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<h4>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ch4%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 158,
+    "ruleTime": 4,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "aria_content_in_landmark": {
+            "0": "All content must reside within an element with a landmark role",
+            "Fail_1": "Content is not within a landmark element"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 6,
+            "elementsViolation": 2,
+            "elementsViolationReview": 5,
+            "violation": 2,
+            "potentialviolation": 3,
+            "recommendation": 0,
+            "potentialrecommendation": 2,
+            "manual": 0,
+            "pass": 151
+        },
+        "scanTime": 23,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "IBM_Accessibility"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779841799440,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ESwag%20Labs%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cnoscript%3EYou%20need%20to%20enable%20JavaScript%20to%20run%20this%20app.%3C%2Fnoscript%3E%3Cdiv%20id%3D%22root%22%3E%3Cdiv%20class%3D%22login_container%22%3E%3Cdiv%20class%3D%22login_logo%22%3ESwag%20Labs%3C%2Fdiv%3E%3Cdiv%20class%3D%22login_wrapper%22%20data-test%3D%22login-container%22%3E%3Cdiv%20class%3D%22login_wrapper-inner%22%3E%3Cdiv%20id%3D%22login_button_container%22%20class%3D%22form_column%22%3E%3Cdiv%20class%3D%22login-box%22%3E%3Cform%3E%3Cdiv%20class%3D%22form_group%22%3E%3Cinput%20class%3D%22input_error%20form_input%22%20placeholder%3D%22Username%22%20type%3D%22text%22%20data-test%3D%22username%22%20id%3D%22user-name%22%20name%3D%22user-name%22%20autocorrect%3D%22off%22%20autocapitalize%3D%22none%22%20value%3D%22%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22form_group%22%3E%3Cinput%20class%3D%22input_error%20form_input%22%20placeholder%3D%22Password%22%20type%3D%22password%22%20data-test%3D%22password%22%20id%3D%22password%22%20name%3D%22password%22%20autocorrect%3D%22off%22%20autocapitalize%3D%22none%22%20value%3D%22%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22error-message-container%22%3E%3C%2Fdiv%3E%3Cinput%20type%3D%22submit%22%20class%3D%22submit-button%20btn_action%22%20data-test%3D%22login-button%22%20id%3D%22login-button%22%20name%3D%22login-button%22%20value%3D%22Login%22%3E%3C%2Fform%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22login_credentials_wrap%22%20data-test%3D%22login-credentials-container%22%3E%3Cdiv%20class%3D%22login_credentials_wrap-inner%22%3E%3Cdiv%20id%3D%22login_credentials%22%20class%3D%22login_credentials%22%20data-test%3D%22login-credentials%22%3E%3Ch4%3EAccepted%20usernames%20are%3A%3C%2Fh4%3Estandard_user%3Cbr%3Elocked_out_user%3Cbr%3Eproblem_user%3Cbr%3Eperformance_glitch_user%3Cbr%3Eerror_user%3Cbr%3Evisual_user%3Cbr%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22login_password%22%20data-test%3D%22login-password%22%3E%3Ch4%3EPassword%20for%20all%20users%3A%3C%2Fh4%3Esecret_sauce%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "12934df1-5915-49a2-b1c2-a3d797b5addf",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.saucedemo.com"
+}

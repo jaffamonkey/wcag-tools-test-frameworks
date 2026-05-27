@@ -1,0 +1,472 @@
+{
+    "results": [
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 627,
+                "width": 800
+            },
+            "snippet": "<html lang=\"en\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22en%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 611,
+                "width": 784
+            },
+            "snippet": "<body>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/img[1]",
+                "aria": "/document[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 41,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"title-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22title-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[2]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 45,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div style=\"background-color: rgb(38, 222, 129);\" class=\"since\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background-color%3A%20rgb(38%2C%20222%2C%20129)%3B%5C%22%20class%3D%5C%22since%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[3]/div[1]/img[1]",
+                "aria": "/document[1]/img[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 78,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"card-image\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22card-image%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[3]/div[2]/img[1]",
+                "aria": "/document[1]/img[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 134,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"card-image\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22card-image%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[3]/div[3]/img[1]",
+                "aria": "/document[1]/img[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 189,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"card-image\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22card-image%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[3]/div[4]/img[1]",
+                "aria": "/document[1]/img[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 245,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"card-image\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22card-image%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[3]/div[5]/img[1]",
+                "aria": "/document[1]/img[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 300,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"card-image\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22card-image%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[3]/div[6]/img[1]",
+                "aria": "/document[1]/img[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 356,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"card-image\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22card-image%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[3]/div[7]/img[1]",
+                "aria": "/document[1]/img[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 411,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"card-image\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22card-image%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[3]/div[8]/img[1]",
+                "aria": "/document[1]/img[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 467,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"card-image\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22card-image%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/a[1]/img[1]",
+                "aria": "/document[1]/link[10]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 541,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[2]/a[2]/img[1]",
+                "aria": "/document[1]/link[11]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 578,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img class=\"link-box-icon\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20class%3D%5C%22link-box-icon%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[3]/div[3]/img[1]",
+                "aria": "/document[1]/img[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 81,
+                "top": 615,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<img>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 410,
+    "ruleTime": 2,
+    "nls": {
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 26,
+            "elementsViolation": 13,
+            "elementsViolationReview": 16,
+            "violation": 13,
+            "potentialviolation": 2,
+            "recommendation": 11,
+            "potentialrecommendation": 9,
+            "manual": 2,
+            "pass": 373
+        },
+        "scanTime": 15,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778631508297,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EEarth%20-%20Every%20Second%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cnoscript%3EYou%20need%20to%20enable%20JavaScript%20to%20run%20this%20site%3C%2Fnoscript%3E%3Cdiv%20id%3D%22root%22%3E%3Cdiv%20class%3D%22header%22%3E%3Cdiv%20class%3D%22header-title%22%3E%3Ca%20href%3D%22%2F%22%3EEvery%20Second%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22body-container%22%3E%3Cdiv%20class%3D%22title%22%3E%3Cimg%20class%3D%22title-icon%22%3EEarth%20-%20Every%20Second%3C%2Fdiv%3E%3Cdiv%20class%3D%22since%22%20style%3D%22background-color%3A%20rgb(38%2C%20222%2C%20129)%3B%22%3EIt%20has%20been%201%20seconds%3C%2Fdiv%3E%3Cdiv%20class%3D%22cards%22%20style%3D%22grid-template-columns%3A%20repeat(2%2C%201fr)%3B%22%3E%3Cdiv%20class%3D%22card%22%3E%3Cimg%20class%3D%22card-image%22%3E%3Cdiv%20class%3D%22card-stat%22%3E%3Cspan%20class%3D%22stat-num%22%3E149%3C%2Fspan%3E%20lightning%20strikes%3C%2Fdiv%3E%3Ca%20class%3D%22card-source%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fwww.nationalgeographic.com%2Fenvironment%2Fnatural-disasters%2Flightning%2F%22%3ESource%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22card%22%3E%3Cimg%20class%3D%22card-image%22%3E%3Cdiv%20class%3D%22card-stat%22%3E%3Cspan%20class%3D%22stat-num%22%3E25%2C494%2C672%2C754%3C%2Fspan%3E%20liters%20of%20rainfall%3C%2Fdiv%3E%3Ca%20class%3D%22card-source%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fhypertextbook.com%2Ffacts%2F2008%2FVernonWu.shtml%22%3ESource%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22card%22%3E%3Cimg%20class%3D%22card-image%22%3E%3Cdiv%20class%3D%22card-stat%22%3E%3Cspan%20class%3D%22stat-num%22%3E97%2C200%2C000%3C%2Fspan%3E%20gigawatts%20of%20solar%20energy%20hit%20the%20surface%3C%2Fdiv%3E%3Ca%20class%3D%22card-source%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fwww.worldenergy.org%2Fwp-content%2Fuploads%2F2013%2F10%2FWER_2013_8_Solar_revised.pdf%22%3ESource%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22card%22%3E%3Cimg%20class%3D%22card-image%22%3E%3Cdiv%20class%3D%22card-stat%22%3E%3Cspan%20class%3D%22stat-num%22%3E434%3C%2Fspan%3E%20meteors%20entered%20the%20atmosphere%3C%2Fdiv%3E%3Ca%20class%3D%22card-source%22%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Fabyss.uoregon.edu%2F~js%2Fast121%2Flectures%2Flec18.html%22%3ESource%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22card%22%3E%3Cimg%20class%3D%22card-image%22%3E%3Cdiv%20class%3D%22card-stat%22%3ERotated%20%3Cspan%20class%3D%22stat-num%22%3E670%3C%2Fspan%3Em%20at%20the%20equator%3C%2Fdiv%3E%3Ca%20class%3D%22card-source%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Fwww.scientificamerican.com%2Farticle%2Fhow-fast-is-the-earth-mov%2F%22%3ESource%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22card%22%3E%3Cimg%20class%3D%22card-image%22%3E%3Cdiv%20class%3D%22card-stat%22%3EMoved%20%3Cspan%20class%3D%22stat-num%22%3E45%3C%2Fspan%3Ekm%20relative%20to%20the%20sun%3C%2Fdiv%3E%3Ca%20class%3D%22card-source%22%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Fcurious.astro.cornell.edu%2Fabout-us%2F41-our-solar-system%2Fthe-earth%2Forbit%2F91-at-what-speed-does-the-earth-move-around-the-sun-beginner%22%3ESource%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22card%22%3E%3Cimg%20class%3D%22card-image%22%3E%3Cdiv%20class%3D%22card-stat%22%3E%3Cspan%20class%3D%22stat-num%22%3E713%3C%2Fspan%3E%20trees%20cut%20down%3C%2Fdiv%3E%3Ca%20class%3D%22card-source%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Ftime.com%2F4019277%2Ftrees-humans-deforestation%2F%22%3ESource%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22card%22%3E%3Cimg%20class%3D%22card-image%22%3E%3Cdiv%20class%3D%22card-stat%22%3E%3Cspan%20class%3D%22stat-num%22%3E345%3C%2Fspan%3Ekg%20of%20plastic%20put%20in%20the%20ocean%3C%2Fdiv%3E%3Ca%20class%3D%22card-source%22%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Ftime.com%2F4019277%2Ftrees-humans-deforestation%2F%22%3ESource%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cins%20class%3D%22adsbygoogle%22%20data-ad-client%3D%22ca-pub-4556406968269041%22%20data-ad-slot%3D%221461983300%22%20data-ad-format%3D%22auto%22%20data-full-width-responsive%3D%22true%22%20style%3D%22max-width%3A%20900px%3B%20display%3A%20block%3B%20margin-left%3A%20auto%3B%20margin-right%3A%20auto%3B%22%3E%3C%2Fins%3E%3Cdiv%20class%3D%22footer%22%3E%3Cdiv%20class%3D%22footer-mssg%22%3EYou%20may%20also%20like%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links%22%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fmcdonalds%22%20style%3D%22background-color%3A%20rgb(241%2C%20242%2C%20246)%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EMcDonalds%3C%2Fdiv%3E%3C%2Fa%3E%3Ca%20class%3D%22link-box%22%20href%3D%22%2Fmessenger%22%20style%3D%22background-color%3A%20rgb(241%2C%20242%2C%20246)%3B%20color%3A%20rgb(51%2C%2051%2C%2051)%3B%22%3E%3Cimg%20class%3D%22link-box-icon%22%3E%3Cdiv%20class%3D%22link-box-text%22%3EMessenger%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-credit%22%3EMade%20with%20%3Cimg%3E%20by%20%3Ca%20target%3D%22_blank%22%20href%3D%22https%3A%2F%2Ftwitter.com%2Fnealagarwal%22%3ENeal%20Agarwal%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "74a2711e-98be-41a2-b465-c1753d6fcb91",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "everysecond.io-earth"
+}

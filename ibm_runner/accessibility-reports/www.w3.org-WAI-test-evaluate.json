@@ -1,0 +1,1759 @@
+{
+    "results": [
+        {
+            "ruleId": "form_submit_button_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[2]/nav[1]/ul[1]/li[3]/form[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]/list[1]/listitem[3]/search[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify the <form> element has a submit button or an image button",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 600,
+                "height": 160,
+                "width": 744
+            },
+            "snippet": "<form role=\"search\" action=\"/WAI/search/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/form_submit_button_exists.html#%7B%22message%22%3A%22Verify%20the%20%3Cform%3E%20element%20has%20a%20submit%20button%20or%20an%20image%20button%22%2C%22snippet%22%3A%22%3Cform%20role%3D%5C%22search%5C%22%20action%3D%5C%22%2FWAI%2Fsearch%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22form_submit_button_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[2]/nav[1]/ul[1]/li[3]/form[1]/div[1]/label[1]/input[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]/list[1]/listitem[3]/search[1]/searchbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_placeholder_only",
+            "message": "The ‘placeholder’ is the only visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 100,
+                "top": 738,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input aria-label=\"Search\" placeholder=\"Search\" name=\"q\" type=\"search\" id=\"header-search\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20%E2%80%98placeholder%E2%80%99%20is%20the%20only%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20aria-label%3D%5C%22Search%5C%22%20placeholder%3D%5C%22Search%5C%22%20name%3D%5C%22q%5C%22%20type%3D%5C%22search%5C%22%20id%3D%5C%22header-search%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_placeholder_only%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[2]/nav[1]/ul[1]/li[3]/form[1]/div[1]/button[1]",
+                "aria": "/document[1]/banner[1]/navigation[1]/list[1]/listitem[3]/search[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 251,
+                "top": 600,
+                "height": 160,
+                "width": 316
+            },
+            "snippet": "<button class=\"button button-icon button-nobg button-noborder\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22button%20button-icon%20button-nobg%20button-noborder%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/aside[1]",
+                "aria": "/document[1]/main[1]/complementary[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1677,
+                "height": 85,
+                "width": 784
+            },
+            "snippet": "<aside class=\"box box-full\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22box%20box-full%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]",
+                "aria": "/document[1]/main[1]/generic[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 2030,
+                "height": 0,
+                "width": 784
+            },
+            "snippet": "<div style=\"background-color: black; opacity: 1;\" aria-hidden=\"true\" class=\"able-captions-wrapper able-captions-below\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22background-color%3A%20black%3B%20opacity%3A%201%3B%5C%22%20aria-hidden%3D%5C%22true%5C%22%20class%3D%5C%22able-captions-wrapper%20able-captions-below%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[4]",
+                "aria": "/document[1]/main[1]/region[1]/slider[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5452,
+                "height": 0,
+                "width": 220
+            },
+            "snippet": "<div style=\"left: -6.39845px;\" aria-valuenow=\"0\" aria-valuetext=\"0 seconds\" aria-valuemax=\"127\" aria-valuemin=\"0\" aria-label=\"video timeline\" role=\"slider\" tabindex=\"0\" class=\"able-seekbar-head\" aria-orientation=\"horizontal\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22left%3A%20-6.39845px%3B%5C%22%20aria-valuenow%3D%5C%220%5C%22%20aria-valuetext%3D%5C%220%20seconds%5C%22%20aria-valuemax%3D%5C%22127%5C%22%20aria-valuemin%3D%5C%220%5C%22%20aria-label%3D%5C%22video%20timeline%5C%22%20role%3D%5C%22slider%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22able-seekbar-head%5C%22%20aria-orientation%3D%5C%22horizontal%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[4]",
+                "aria": "/document[1]/main[1]/region[1]/slider[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5452,
+                "height": 0,
+                "width": 220
+            },
+            "snippet": "<div style=\"left: -6.39845px;\" aria-valuenow=\"0\" aria-valuetext=\"0 seconds\" aria-valuemax=\"127\" aria-valuemin=\"0\" aria-label=\"video timeline\" role=\"slider\" tabindex=\"0\" class=\"able-seekbar-head\" aria-orientation=\"horizontal\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22left%3A%20-6.39845px%3B%5C%22%20aria-valuenow%3D%5C%220%5C%22%20aria-valuetext%3D%5C%220%20seconds%5C%22%20aria-valuemax%3D%5C%22127%5C%22%20aria-valuemin%3D%5C%220%5C%22%20aria-label%3D%5C%22video%20timeline%5C%22%20role%3D%5C%22slider%5C%22%20tabindex%3D%5C%220%5C%22%20class%3D%5C%22able-seekbar-head%5C%22%20aria-orientation%3D%5C%22horizontal%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/p[7]",
+                "aria": "/document[1]/main[1]/paragraph[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'right' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "right"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 13019,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'right'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22right%22%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/details[1]/div[1]/p[1]/em[1]/a[1]",
+                "aria": "/document[1]/main[1]/group[1]/paragraph[1]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 13255,
+                "height": 37,
+                "width": 754
+            },
+            "snippet": "<a href=\"https://media.w3.org/wai/evaluation-intros/evaluating-resources-overview.mp4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fmedia.w3.org%2Fwai%2Fevaluation-intros%2Fevaluating-resources-overview.mp4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/details[1]/div[1]/table[1]/tbody[1]/tr[6]/td[1]",
+                "aria": "/document[1]/main[1]/group[1]/table[1]/rowgroup[1]/row[6]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Easy Checks - A First Review of Web Accessibility\"",
+            "messageArgs": [
+                "\"Easy Checks - A First Review of Web Accessibility\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 13539,
+                "height": 39,
+                "width": 422
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Easy%20Checks%20-%20A%20First%20Review%20of%20Web%20Accessibility%5C%22%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Easy%20Checks%20-%20A%20First%20Review%20of%20Web%20Accessibility%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/details[1]/div[1]/table[1]/tbody[1]/tr[6]/td[2]",
+                "aria": "/document[1]/main[1]/group[1]/table[1]/rowgroup[1]/row[6]/cell[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Easy Checks - A First Review of Web Accessibility\"",
+            "messageArgs": [
+                "\"Easy Checks - A First Review of Web Accessibility\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 434,
+                "top": 13539,
+                "height": 39,
+                "width": 357
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Easy%20Checks%20-%20A%20First%20Review%20of%20Web%20Accessibility%5C%22%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Easy%20Checks%20-%20A%20First%20Review%20of%20Web%20Accessibility%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/details[1]/div[1]/table[1]/tbody[1]/tr[8]/td[1]",
+                "aria": "/document[1]/main[1]/group[1]/table[1]/rowgroup[1]/row[8]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Web Accessibility Evaluation Tools List\"",
+            "messageArgs": [
+                "\"Web Accessibility Evaluation Tools List\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 13640,
+                "height": 39,
+                "width": 422
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Web%20Accessibility%20Evaluation%20Tools%20List%5C%22%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Web%20Accessibility%20Evaluation%20Tools%20List%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/details[1]/div[1]/table[1]/tbody[1]/tr[9]/td[1]",
+                "aria": "/document[1]/main[1]/group[1]/table[1]/rowgroup[1]/row[9]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Selecting Web Accessibility Evaluation Tools\"",
+            "messageArgs": [
+                "\"Selecting Web Accessibility Evaluation Tools\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 13681,
+                "height": 39,
+                "width": 422
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Selecting%20Web%20Accessibility%20Evaluation%20Tools%5C%22%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Selecting%20Web%20Accessibility%20Evaluation%20Tools%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/details[1]/div[1]/table[1]/tbody[1]/tr[10]/td[1]",
+                "aria": "/document[1]/main[1]/group[1]/table[1]/rowgroup[1]/row[10]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"WCAG-EM\", \"Website Accessibility Conformance Evaluation Methodology\"",
+            "messageArgs": [
+                "\"WCAG-EM\", \"Website Accessibility Conformance Evaluation Methodology\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 13722,
+                "height": 58,
+                "width": 422
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22WCAG-EM%5C%22%2C%20%5C%22Website%20Accessibility%20Conformance%20Evaluation%20Methodology%5C%22%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22WCAG-EM%5C%22%2C%20%5C%22Website%20Accessibility%20Conformance%20Evaluation%20Methodology%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/details[1]/div[1]/table[1]/tbody[1]/tr[11]/td[1]",
+                "aria": "/document[1]/main[1]/group[1]/table[1]/rowgroup[1]/row[11]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"WCAG-EM Report Tool\"",
+            "messageArgs": [
+                "\"WCAG-EM Report Tool\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 13781,
+                "height": 39,
+                "width": 422
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22WCAG-EM%20Report%20Tool%5C%22%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22WCAG-EM%20Report%20Tool%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/details[1]/div[1]/table[1]/tbody[1]/tr[12]/td[1]",
+                "aria": "/document[1]/main[1]/group[1]/table[1]/rowgroup[1]/row[12]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Involving Users in Web Projects ... n Evaluating Web Accessibility.\"",
+            "messageArgs": [
+                "\"Involving Users in Web Projects ... n Evaluating Web Accessibility.\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 13822,
+                "height": 95,
+                "width": 422
+            },
+            "snippet": "<td>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Involving%20Users%20in%20Web%20Projects%20...%20n%20Evaluating%20Web%20Accessibility.%5C%22%22%2C%22snippet%22%3A%22%3Ctd%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Involving%20Users%20in%20Web%20Projects%20...%20n%20Evaluating%20Web%20Accessibility.%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_contentinfo_single",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[1]",
+                "aria": "/document[1]/contentinfo[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Multiple elements with \"contentinfo\" role found on the page",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 13683,
+                "height": 249,
+                "width": 784
+            },
+            "snippet": "<footer aria-label=\"Page\" class=\"page-footer default-grid\" id=\"wai-site-footer\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_contentinfo_single.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22contentinfo%5C%22%20role%20found%20on%20the%20page%22%2C%22snippet%22%3A%22%3Cfooter%20aria-label%3D%5C%22Page%5C%22%20class%3D%5C%22page-footer%20default-grid%5C%22%20id%3D%5C%22wai-site-footer%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_contentinfo_single%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_contentinfo_single",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[2]",
+                "aria": "/document[1]/contentinfo[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Multiple elements with \"contentinfo\" role found on the page",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 13948,
+                "height": 428,
+                "width": 784
+            },
+            "snippet": "<footer aria-label=\"Site\" class=\"w3c-global-footer wai-global-footer default-grid\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_contentinfo_single.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22contentinfo%5C%22%20role%20found%20on%20the%20page%22%2C%22snippet%22%3A%22%3Cfooter%20aria-label%3D%5C%22Site%5C%22%20class%3D%5C%22w3c-global-footer%20wai-global-footer%20default-grid%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_contentinfo_single%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[2]/div[1]/p[1]/a[2]",
+                "aria": "/document[1]/contentinfo[2]/paragraph[1]/link[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 56,
+                "top": 14339,
+                "height": 18,
+                "width": 50
+            },
+            "snippet": "<a href=\"https://www.w3.org/policies/#disclaimers\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.w3.org%2Fpolicies%2F%23disclaimers%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[2]/div[1]/p[1]/a[3]",
+                "aria": "/document[1]/contentinfo[2]/paragraph[1]/link[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 113,
+                "top": 14339,
+                "height": 18,
+                "width": 65
+            },
+            "snippet": "<a href=\"https://www.w3.org/policies/#trademarks\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.w3.org%2Fpolicies%2F%23trademarks%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/footer[2]/div[1]/p[1]/a[4]",
+                "aria": "/document[1]/contentinfo[2]/paragraph[1]/link[4]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 209,
+                "top": 14339,
+                "height": 18,
+                "width": 118
+            },
+            "snippet": "<a title=\"W3C Software License\" href=\"https://www.w3.org/copyright/software-license/\" rel=\"license\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20title%3D%5C%22W3C%20Software%20License%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.w3.org%2Fcopyright%2Fsoftware-license%2F%5C%22%20rel%3D%5C%22license%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/button[1]",
+                "aria": "/document[1]/dialog[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 14392,
+                "height": 22,
+                "width": 25
+            },
+            "snippet": "<button aria-label=\"Close dialog\" title=\"Close dialog\" class=\"modalCloseButton\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Close%20dialog%5C%22%20title%3D%5C%22Close%20dialog%5C%22%20class%3D%5C%22modalCloseButton%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/dialog[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"input\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 14494,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input value=\"372.391\" id=\"ableMediaId_0-resize-transcript-width\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22input%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22372.391%5C%22%20id%3D%5C%22ableMediaId_0-resize-transcript-width%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[1]/textbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"input\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 52,
+                "top": 14515,
+                "height": 22,
+                "width": 147
+            },
+            "snippet": "<input value=\"400\" id=\"ableMediaId_0-resize-transcript-height\" type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22input%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22400%5C%22%20id%3D%5C%22ableMediaId_0-resize-transcript-height%5C%22%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/button[2]",
+                "aria": "/document[1]/dialog[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 14555,
+                "height": 22,
+                "width": 47
+            },
+            "snippet": "<button class=\"modal-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22modal-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/button[3]",
+                "aria": "/document[1]/dialog[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 55,
+                "top": 14555,
+                "height": 22,
+                "width": 58
+            },
+            "snippet": "<button class=\"modal-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22modal-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/button[1]",
+                "aria": "/document[1]/dialog[2]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 14576,
+                "height": 22,
+                "width": 25
+            },
+            "snippet": "<button aria-label=\"Close dialog\" title=\"Close dialog\" class=\"modalCloseButton\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Close%20dialog%5C%22%20title%3D%5C%22Close%20dialog%5C%22%20class%3D%5C%22modalCloseButton%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/select[1]",
+                "aria": "/document[1]/dialog[2]/group[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"select\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 61,
+                "top": 14678,
+                "height": 19,
+                "width": 94
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefCaptionsPosition\" name=\"prefCaptionsPosition\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22select%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefCaptionsPosition%5C%22%20name%3D%5C%22prefCaptionsPosition%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[2]/select[1]",
+                "aria": "/document[1]/dialog[2]/group[1]/combobox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"select\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 38,
+                "top": 14697,
+                "height": 19,
+                "width": 91
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefCaptionsFont\" name=\"prefCaptionsFont\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22select%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefCaptionsFont%5C%22%20name%3D%5C%22prefCaptionsFont%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[3]/select[1]",
+                "aria": "/document[1]/dialog[2]/group[1]/combobox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"select\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 69,
+                "top": 14717,
+                "height": 19,
+                "width": 57
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefCaptionsSize\" name=\"prefCaptionsSize\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22select%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefCaptionsSize%5C%22%20name%3D%5C%22prefCaptionsSize%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[4]/select[1]",
+                "aria": "/document[1]/dialog[2]/group[1]/combobox[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"select\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 77,
+                "top": 14736,
+                "height": 19,
+                "width": 74
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefCaptionsColor\" name=\"prefCaptionsColor\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22select%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefCaptionsColor%5C%22%20name%3D%5C%22prefCaptionsColor%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[5]/select[1]",
+                "aria": "/document[1]/dialog[2]/group[1]/combobox[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"select\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 87,
+                "top": 14756,
+                "height": 19,
+                "width": 74
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefCaptionsBGColor\" name=\"prefCaptionsBGColor\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22select%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefCaptionsBGColor%5C%22%20name%3D%5C%22prefCaptionsBGColor%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[6]/select[1]",
+                "aria": "/document[1]/dialog[2]/group[1]/combobox[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"select\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 59,
+                "top": 14775,
+                "height": 19,
+                "width": 122
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefCaptionsOpacity\" name=\"prefCaptionsOpacity\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22select%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefCaptionsOpacity%5C%22%20name%3D%5C%22prefCaptionsOpacity%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/button[2]",
+                "aria": "/document[1]/dialog[2]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 14831,
+                "height": 22,
+                "width": 47
+            },
+            "snippet": "<button class=\"modal-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22modal-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/button[3]",
+                "aria": "/document[1]/dialog[2]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 55,
+                "top": 14831,
+                "height": 22,
+                "width": 58
+            },
+            "snippet": "<button class=\"modal-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22modal-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/button[1]",
+                "aria": "/document[1]/dialog[3]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 14852,
+                "height": 22,
+                "width": 25
+            },
+            "snippet": "<button aria-label=\"Close dialog\" title=\"Close dialog\" class=\"modalCloseButton\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Close%20dialog%5C%22%20title%3D%5C%22Close%20dialog%5C%22%20class%3D%5C%22modalCloseButton%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/div[1]/select[1]",
+                "aria": "/document[1]/dialog[3]/group[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"select\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 45,
+                "top": 15181,
+                "height": 19,
+                "width": 22
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefDescVoice\" name=\"prefDescVoice\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22select%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefDescVoice%5C%22%20name%3D%5C%22prefDescVoice%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/div[1]/select[1]",
+                "aria": "/document[1]/dialog[3]/group[1]/combobox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 45,
+                "top": 15181,
+                "height": 19,
+                "width": 22
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefDescVoice\" name=\"prefDescVoice\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefDescVoice%5C%22%20name%3D%5C%22prefDescVoice%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/div[2]/select[1]",
+                "aria": "/document[1]/dialog[3]/group[1]/combobox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"select\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 41,
+                "top": 15200,
+                "height": 19,
+                "width": 78
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefDescPitch\" name=\"prefDescPitch\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22select%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefDescPitch%5C%22%20name%3D%5C%22prefDescPitch%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/div[3]/select[1]",
+                "aria": "/document[1]/dialog[3]/group[1]/combobox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"select\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 38,
+                "top": 15220,
+                "height": 19,
+                "width": 37
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefDescRate\" name=\"prefDescRate\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22select%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefDescRate%5C%22%20name%3D%5C%22prefDescRate%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/div[4]/select[1]",
+                "aria": "/document[1]/dialog[3]/group[1]/combobox[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"select\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "select"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 58,
+                "top": 15239,
+                "height": 19,
+                "width": 37
+            },
+            "snippet": "<select id=\"ableMediaId_0_prefDescVolume\" name=\"prefDescVolume\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22select%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cselect%20id%3D%5C%22ableMediaId_0_prefDescVolume%5C%22%20name%3D%5C%22prefDescVolume%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22select%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/div[5]/input[1]",
+                "aria": "/document[1]/dialog[3]/group[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"input\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 15261,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"true\" id=\"ableMediaId_0_prefDescPause\" name=\"prefDescPause\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22input%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22true%5C%22%20id%3D%5C%22ableMediaId_0_prefDescPause%5C%22%20name%3D%5C%22prefDescPause%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/div[1]/div[6]/input[1]",
+                "aria": "/document[1]/dialog[3]/group[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"input\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 15281,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"true\" id=\"ableMediaId_0_prefDescVisible\" name=\"prefDescVisible\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22input%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22true%5C%22%20id%3D%5C%22ableMediaId_0_prefDescVisible%5C%22%20name%3D%5C%22prefDescVisible%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/button[2]",
+                "aria": "/document[1]/dialog[3]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 15335,
+                "height": 22,
+                "width": 47
+            },
+            "snippet": "<button class=\"modal-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22modal-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[4]/button[3]",
+                "aria": "/document[1]/dialog[3]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 55,
+                "top": 15335,
+                "height": 22,
+                "width": 58
+            },
+            "snippet": "<button class=\"modal-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22modal-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/button[1]",
+                "aria": "/document[1]/dialog[4]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 15356,
+                "height": 22,
+                "width": 25
+            },
+            "snippet": "<button aria-label=\"Close dialog\" title=\"Close dialog\" class=\"modalCloseButton\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Close%20dialog%5C%22%20title%3D%5C%22Close%20dialog%5C%22%20class%3D%5C%22modalCloseButton%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/p[1]",
+                "aria": "/document[1]/dialog[4]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_position",
+            "message": "Confirm the word(s) 'below' of the user instruction is used to indicate a logical rather than visual position",
+            "messageArgs": [
+                "below"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 15457,
+                "height": 93,
+                "width": 512
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20word(s)%20'below'%20of%20the%20user%20instruction%20is%20used%20to%20indicate%20a%20logical%20rather%20than%20visual%20position%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_position%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22below%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/dialog[4]/group[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"input\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 15620,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"true\" id=\"ableMediaId_0_prefAltKey\" name=\"prefAltKey\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22input%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22true%5C%22%20id%3D%5C%22ableMediaId_0_prefAltKey%5C%22%20name%3D%5C%22prefAltKey%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[4]/group[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"input\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 15640,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"true\" id=\"ableMediaId_0_prefCtrlKey\" name=\"prefCtrlKey\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22input%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22true%5C%22%20id%3D%5C%22ableMediaId_0_prefCtrlKey%5C%22%20name%3D%5C%22prefCtrlKey%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/div[1]/div[3]/input[1]",
+                "aria": "/document[1]/dialog[4]/group[1]/checkbox[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"input\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 15660,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"true\" id=\"ableMediaId_0_prefShiftKey\" name=\"prefShiftKey\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22input%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22true%5C%22%20id%3D%5C%22ableMediaId_0_prefShiftKey%5C%22%20name%3D%5C%22prefShiftKey%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/button[2]",
+                "aria": "/document[1]/dialog[4]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 15919,
+                "height": 22,
+                "width": 47
+            },
+            "snippet": "<button class=\"modal-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22modal-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[5]/button[3]",
+                "aria": "/document[1]/dialog[4]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 55,
+                "top": 15919,
+                "height": 22,
+                "width": 58
+            },
+            "snippet": "<button class=\"modal-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22modal-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/button[1]",
+                "aria": "/document[1]/dialog[5]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 15940,
+                "height": 22,
+                "width": 25
+            },
+            "snippet": "<button aria-label=\"Close dialog\" title=\"Close dialog\" class=\"modalCloseButton\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20aria-label%3D%5C%22Close%20dialog%5C%22%20title%3D%5C%22Close%20dialog%5C%22%20class%3D%5C%22modalCloseButton%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[1]/input[1]",
+                "aria": "/document[1]/dialog[5]/group[1]/checkbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"input\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 16044,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"true\" id=\"ableMediaId_0_prefHighlight\" name=\"prefHighlight\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22input%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22true%5C%22%20id%3D%5C%22ableMediaId_0_prefHighlight%5C%22%20name%3D%5C%22prefHighlight%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/div[1]/div[2]/input[1]",
+                "aria": "/document[1]/dialog[5]/group[1]/checkbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"input\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 12,
+                "top": 16064,
+                "height": 13,
+                "width": 13
+            },
+            "snippet": "<input value=\"true\" id=\"ableMediaId_0_prefTabbable\" name=\"prefTabbable\" type=\"checkbox\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22input%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22true%5C%22%20id%3D%5C%22ableMediaId_0_prefTabbable%5C%22%20name%3D%5C%22prefTabbable%5C%22%20type%3D%5C%22checkbox%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/button[2]",
+                "aria": "/document[1]/dialog[5]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 16099,
+                "height": 22,
+                "width": 47
+            },
+            "snippet": "<button class=\"modal-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22modal-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_hidden_nontabbable",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[6]/button[3]",
+                "aria": "/document[1]/dialog[5]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element \"button\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 55,
+                "top": 16099,
+                "height": 22,
+                "width": 58
+            },
+            "snippet": "<button class=\"modal-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_hidden_nontabbable.html#%7B%22message%22%3A%22Element%20%5C%22button%5C%22%20should%20not%20be%20focusable%20within%20the%20subtree%20of%20an%20element%20with%20an%20'aria-hidden'%20attribute%20with%20value%20'true'%22%2C%22snippet%22%3A%22%3Cbutton%20class%3D%5C%22modal-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_hidden_nontabbable%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        }
+    ],
+    "numExecuted": 4606,
+    "ruleTime": 142,
+    "nls": {
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "element_tabbable_unobscured": {
+            "0": "When an element receives focus, it is not entirely covered by other content",
+            "potential_obscured": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "aria_hidden_nontabbable": {
+            "0": "A hidden element should not contain any tabbable elements",
+            "Fail_1": "Element \"{0}\" should not be focusable within the subtree of an element with an 'aria-hidden' attribute with value 'true'"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_placeholder_only": "The ‘placeholder’ is the only visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        },
+        "form_submit_button_exists": {
+            "0": "A <form> element should have a submit button or an image button",
+            "Potential_1": "Verify the <form> element has a submit button or an image button"
+        },
+        "aria_complementary_labelled": {
+            "0": "Each element with \"complementary\" role must have a label that describes its purpose",
+            "Fail_1": "Element with \"complementary\" role does not have a label"
+        },
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_position": "Confirm the word(s) '{0}' of the user instruction is used to indicate a logical rather than visual position"
+        },
+        "aria_contentinfo_single": {
+            "0": "A page, document, or application should only have one element with \"contentinfo\" role",
+            "Fail_1": "Multiple elements with \"contentinfo\" role found on the page"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 61,
+            "elementsViolation": 37,
+            "elementsViolationReview": 60,
+            "violation": 37,
+            "potentialviolation": 20,
+            "recommendation": 1,
+            "potentialrecommendation": 12,
+            "manual": 6,
+            "pass": 4530
+        },
+        "scanTime": 266,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778713658104,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EEvaluating%20Web%20Accessibility%20Overview%20%7C%20Web%20Accessibility%20Initiative%20(WAI)%20%7C%20W3C%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20id%3D%22top%22%20class%3D%22page-evaluating-web-accessibility-overview%20%20tight-page%22%3E%0A%20%20%20%20%3Cnav%20aria-label%3D%22Skip%20Link%20and%20Language%20Selector%22%20id%3D%22controls%22%20class%3D%22default-grid%22%3E%0A%20%20%3Cul%3E%0A%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%23main%22%3ESkip%20to%20Content%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%20class%3D%22opt%22%3E%3Ca%20href%3D%22%2FWAI%2Fmeta%2Fcustomize%2F%22%3EChange%20Text%20Size%20or%20Colors%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%20class%3D%22opt%20languagelist%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstrong%3EThis%26nbsp%3Bpage%26nbsp%3Bin%3A%3C%2Fstrong%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cul%20class%3D%22languagelistul%22%3E%3Cli%3E%3Cstrong%20style%3D%22text-transform%3A%20capitalize%3B%22%3EEnglish%3C%2Fstrong%3E%3C%2Fli%3E%3Cli%3E%3Ca%20style%3D%22text-transform%3A%20capitalize%3B%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Fes%22%20lang%3D%22es%22%20dir%3D%22auto%22%20translate%3D%22no%22%3Eespa%C3%B1ol%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20style%3D%22text-transform%3A%20capitalize%3B%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Ffr%22%20lang%3D%22fr%22%20dir%3D%22auto%22%20translate%3D%22no%22%3Efran%C3%A7ais%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%20class%3D%22opt%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2FWAI%2Ftranslations%2F%22%3EAll%26nbsp%3BTranslations%20%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20class%3D%22icon-translations%20%22%3E%3Cuse%20xlink%3Ahref%3D%22%2FWAI%2Fassets%2Fimages%2Ficons.svg%23icon-translations%22%3E%3C%2Fuse%3E%3C%2Fsvg%3E%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3Cli%3E%3Cbutton%20id%3D%22showoptions%22%20data-showhidebuttonid%3D%22header-showoptions%22%20class%3D%22showhidebutton%20button-inline%22%20data-target%3D%22%23controls%20.opt%22%20aria-expanded%3D%22true%22%20data-large-aria-expanded%3D%22true%22%20data-showtext%3D%22%26lt%3Bsvg%20focusable%3D%26quot%3Bfalse%26quot%3B%20aria-hidden%3D%26quot%3Btrue%26quot%3B%20class%3D%26quot%3Bicon-languages%20%26quot%3B%26gt%3B%26lt%3Buse%20xlink%3Ahref%3D%26quot%3B%2FWAI%2Fassets%2Fimages%2Ficons.svg%23icon-languages%26quot%3B%26gt%3B%26lt%3B%2Fuse%26gt%3B%26lt%3B%2Fsvg%26gt%3B%20Show%20Customization%2C%20Languages%2C%20Translations%22%20data-hidetext%3D%22Hide%20Options%22%3EHide%20Options%3C%2Fbutton%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%3C%2Fnav%3E%0A%3Cheader%20id%3D%22site-header%22%20class%3D%22default-grid%20with-gap%22%3E%0A%20%20%3Cdiv%20class%3D%22logos%22%3E%0A%20%20%20%20%3Ca%20lang%3D%22en%22%20class%3D%22home%20w3c%22%20href%3D%22https%3A%2F%2Fwww.w3.org%2F%22%3E%0A%20%20%20%20%20%20%3Csvg%20role%3D%22img%22%20width%3D%2246%22%20height%3D%2246%22%20version%3D%221.1%22%20viewBox%3D%220%200%20360%20360%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-labelledby%3D%22w3c-homepage-title%22%3E%3Ctitle%20id%3D%22w3c-homepage-title%22%3EW3C%20homepage%3C%2Ftitle%3E%3Cg%3E%3Cpath%20d%3D%22M306.80028%2C149.60422c-6.57831-5.22164-16.18258-4.11126-21.40437%2C2.46705-6.46763%2C8.15442-12.34209%2C13.06271-19.03895%2C15.91953-12.3507%2C5.25562-22.8198%2C3.03441-32.94112-6.99345-9.91806-9.82474-19.58153-20.53078-28.95701-30.90671-4.58604-5.07758-9.18023-10.16361-13.83407-15.19045-7.95131-8.58691-15.94475-17.14014-23.93018-25.70183l-.70385-.7546c-17.36893-18.58955-35.32287-37.81514-52.64105-57.12546-13.73244-15.31775-34.95002-22.90466-55.36241-19.83598-20.86179%2C3.11957-37.73072%2C16.47071-47.50442%2C37.58651-9.41762%2C20.33598-6.23039%2C43.44391%2C8.30724%2C60.30423%2C25.57483%2C29.66072%2C47.14864%2C54.18407%2C72.41783%2C77.24986%2C10.33349%2C9.42608%2C22.83701%2C14.44431%2C36.15387%2C14.51211%2C8.6381.04258%2C21.65838-.93219%2C34.94171-9.87548%2C5.81526-3.91601%2C11.23186-7.94285%2C13.6139-14.08852%2C2.42447-6.28959.16098-13.52028-5.51838-17.59771-5.51007-3.9672-12.74075-3.68767-17.99637.67804-.66142.55074-1.38204%2C1.18679-2.17002%2C1.87358-8.2565%2C7.23069-18.53079%2C16.23288-39.47715%2C1.1948-19.19132-13.78333-34.05106-31.84751-51.26776-52.7682-5.6117-6.8157-11.41836-13.86835-17.62338-21.07381-6.62906-7.68825-8.06169-18.26729-3.73841-27.61741%2C3.77239-8.13766%2C11.05382-18.25913%2C24.37958-20.25096%2C10.09566-1.51765%2C21.41238%2C2.5172%2C28.16859%2C10.04507%2C17.4624%2C19.47975%2C35.55195%2C38.85772%2C53.04802%2C57.58302%2C8.1973%2C8.77371%2C16.39415%2C17.55557%2C24.54902%2C26.36326%2C4.56927%2C4.93366%2C9.0789%2C9.92608%2C13.65633%2C14.99535%2C9.61287%2C10.63868%2C19.54755%2C21.63315%2C30.04203%2C32.0343%2C18.94578%2C18.7759%2C42.49435%2C23.53152%2C66.33996%2C13.38482%2C11.45233-4.89123%2C21.29399-12.83408%2C30.95745-25.01519%2C5.21304-6.56941%2C4.11126-16.16552-2.46661-21.39577Z%22%20id%3D%22path1%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M330.6361%2C64.98331c9.85011-4.6709%2C17.59815-13.46152%2C18.33554-24.12543%2C1.87344-18.51314-13.36805-36.22984-35.78948-38.96811-13.76627-1.74599-26.541%2C2.33145-35.59408%2C9.83349-4.84019%2C4.02639-6.14582%2C11.4777-1.94984%2C16.73332%2C4.58589%2C5.46749%2C9.87548%2C6.42505%2C18.53064%2C1.67002%2C3.10236-1.7632%2C7.76481-3.22981%2C12.89328-2.87403%2C9.67207.67003%2C12.44387%2C9.38409%2C12.17266%2C13.34268-.04258.58501.01706%2C14.07992-13.60529%2C13.13912l-5.13707-.35579c-5.72179-.39021-11.44387%2C4.95888-11.86746%2C11.07889-.45801%2C6.51066%2C4.30622%2C12.19832%2C10.23127%2C12.6139l6.31526.43219c17.37798%2C1.20385%2C15.56374%2C15.95335%2C15.19935%2C18.31017-.33902%2C6.78143-11.22355%2C18.28435-30.6355%2C5.20443-6.58662-4.43322-53.56538-63.44072-53.56538-63.44072-22.26001-28.77883-60.0839-33.84809-89.93097-12.0455-3.2804%2C2.3988-5.44226%2C5.93366-6.06941%2C9.9605-.61884%2C4.01779.35593%2C8.04448%2C2.75503%2C11.32488%2C2.3988%2C3.2804%2C5.93381%2C5.44226%2C9.95189%2C6.06941%2C4.04316.62745%2C8.05279-.35593%2C11.33349-2.75503%2C20.36135-14.87665%2C38.51024-6.01022%2C47.84315%2C6.06111%2C0%2C0%2C50.43765%2C64.87335%2C63.4241%2C71.74796%2C8.42608%2C4.45903%2C17.22516%2C7.03588%2C26.168%2C7.65487%2C27.44827%2C1.89866%2C44.16438-13.22414%2C48.67445-33.94142%2C2.958-13.57992-5.82387-30.55048-19.68361-36.67093Z%22%20id%3D%22path2%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20d%3D%22M7.65638%2C245.62164h18.68735c1.9807%2C0%2C3.61006.4556%2C4.88419%2C1.35908s2.13515%2C2.09267%2C2.59075%2C3.56759l16.64873%2C65.1509c.96139%2C3.3977%2C1.86874%2C7.33594%2C2.71816%2C11.80701.45174-2.20851.90348-4.31662%2C1.35908-6.33208.45174-2.00773.98842-3.86102%2C1.61391-5.55987l19.70666-65.06596c.45174-1.30503%2C1.32819-2.44789%2C2.63322-3.44403%2C1.30116-.98842%2C2.85716-1.48263%2C4.67184-1.48263h6.54057c1.9807%2C0%2C3.57917.44016%2C4.79925%2C1.31275%2C1.21622.88031%2C2.08109%2C2.08495%2C2.59075%2C3.61392l19.70666%2C65.1509c.56371%2C1.6448%2C1.08881%2C3.43631%2C1.57144%2C5.39771.47877%2C1.94596.94595%2C4.00002%2C1.40155%2C6.15447.39382-2.15445.80695-4.19307%2C1.23167-6.11586s.86101-3.70658%2C1.31661-5.35138l16.64873-65.23585c.39382-1.30503%2C1.25869-2.44789%2C2.59075-3.44403%2C1.32819-.98842%2C2.89963-1.48263%2C4.71431-1.48263h17.49816l-33.46735%2C112.80365h-20.21632l-22.33988-75.00423c-.33977-.96526-.66796-2.03862-.97684-3.22782-.31274-1.1892-.61004-2.43244-.8919-3.73747-.28572%2C1.30503-.5946%2C2.54828-.93437%2C3.73747s-.65251%2C2.26256-.93437%2C3.22782l-22.76459%2C75.00423h-20.13137L7.65638%2C245.62164Z%22%20id%3D%22path3%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M212.19794%2C244.34751c5.20852%2C0%2C9.8958.76448%2C14.05798%2C2.29345%2C4.16218%2C1.52897%2C7.6873%2C3.61392%2C10.57534%2C6.23941%2C2.88805%2C2.64094%2C5.10813%2C5.72204%2C6.66799%2C9.26646%2C1.55599%2C3.5367%2C2.33592%2C7.31278%2C2.33592%2C11.33596%2C0%2C3.56759-.38224%2C6.71046-1.14672%2C9.42862s-1.88418%2C5.09655-3.35523%2C7.13517c-1.47491%2C2.03862-3.28573%2C3.76836-5.43632%2C5.18149-2.15445%2C1.41313-4.5869%2C2.57916-7.30506%2C3.48264%2C12.85335%2C4.36296%2C19.28195%2C13.05026%2C19.28195%2C26.07735%2C0%2C5.72204-1.03475%2C10.74909-3.1004%2C15.07343-2.06951%2C4.33979-4.84172%2C7.97687-8.32437%2C10.91897s-7.53286%2C5.1506-12.14678%2C6.62552c-4.61778%2C1.47491-9.47109%2C2.20851-14.56764%2C2.20851-5.38227%2C0-10.1236-.62549-14.22787-1.86874-4.10813-1.24325-7.70274-3.12743-10.7877-5.65254-3.08882-2.51739-5.74906-5.64482-7.9846-9.38229-2.23939-3.73747-4.1506-8.06954-5.73362-12.9962l9.00391-3.82241c2.37839-.96526%2C4.59848-1.20464%2C6.66799-.71815%2C2.06565.47877%2C3.52511%2C1.59846%2C4.37454%2C3.35137%2C1.01931%2C1.92279%2C2.09267%2C3.72203%2C3.22782%2C5.38999%2C1.13128%2C1.67568%2C2.42086%2C3.15059%2C3.86488%2C4.41701%2C1.44402%2C1.28186%2C3.1004%2C2.28573%2C4.96914%2C3.01932s4.01932%2C1.10425%2C6.45563%2C1.10425c3.00001%2C0%2C5.61779-.49421%2C7.85718-1.48263%2C2.23553-.99614%2C4.08882-2.30117%2C5.56373-3.90736%2C1.47105-1.62163%2C2.5753-3.44403%2C3.31276-5.48265.73359-2.03862%2C1.10425-4.07724%2C1.10425-6.11586%2C0-2.60233-.24324-4.98072-.72201-7.13517-.48263-2.15445-1.55985-3.9923-3.22782-5.52126-1.67182-1.52897-4.11971-2.71816-7.34753-3.56759s-7.6178-1.27414-13.16609-1.27414v-14.52517c4.64095-.05405%2C8.45178-.47877%2C11.42477-1.27414s5.30891-1.91507%2C7.00776-3.35137c1.69885-1.45174%2C2.85716-3.15832%2C3.48264-5.14288.62162-1.98457.93437-4.19307.93437-6.62552%2C0-5.1506-1.28958-9.03479-3.86488-11.63712-2.57916-2.60233-6.18922-3.90736-10.83017-3.90736-4.13516%2C0-7.59077%2C1.15831-10.36299%2C3.48264-2.77608%2C2.32434-4.70273%2C5.18149-5.77609%2C8.57919-.90734%2C2.60233-2.11198%2C4.30118-3.61006%2C5.09655-1.50194.79537-3.64094.96526-6.41316.50966l-10.7877-1.86874c.79151-5.49037%2C2.29345-10.29349%2C4.50195-14.40162%2C2.20851-4.10041%2C4.98072-7.52899%2C8.32437-10.27032%2C3.33978-2.74905%2C7.14675-4.81856%2C11.42477-6.20853%2C4.27415-1.38225%2C8.87649-2.07723%2C13.80316-2.07723Z%22%20id%3D%22path4%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M335.38002%2C331.07381c1.1892%2C0%2C2.20851.4556%2C3.05793%2C1.35908l8.91896%2C9.5985c-4.07724%2C5.72204-9.18923%2C10.07727-15.33212%2C13.08115-6.14675%2C3.00388-13.43636%2C4.50195-21.8727%2C4.50195-7.64483%2C0-14.52517-1.42858-20.64103-4.29346-6.11586-2.85716-11.3128-6.84945-15.58695-11.96917-4.27801-5.12744-7.55988-11.21241-9.85333-18.27036-2.29345-7.04251-3.44017-14.76455-3.44017-23.14297%2C0-8.4402%2C1.23167-16.17769%2C3.695-23.23564%2C2.46333-7.04251%2C5.93053-13.11976%2C10.40546-18.21631%2C4.47106-5.09655%2C9.82244-9.05796%2C16.05413-11.89195%2C6.22783-2.83399%2C13.08115-4.24713%2C20.55609-4.24713%2C7.58691%2C0%2C14.29737%2C1.34364%2C20.13137%2C4.03863%2C5.83014%2C2.68727%2C10.70276%2C6.23941%2C14.61011%2C10.65642l-7.47494%2C10.44793c-.50966.62549-1.09267%2C1.1892-1.74132%2C1.69885-.65251.50966-1.57144.76448-2.76063.76448s-2.33592-.4556-3.44017-1.35908-2.46333-1.89962-4.07724-2.97299-3.64094-2.06951-6.07339-2.97299c-2.43631-.90348-5.55215-1.35908-9.34368-1.35908-4.13516%2C0-7.89965.86487-11.29735%2C2.59461-3.3977%2C1.72202-6.31663%2C4.24713-8.74908%2C7.55216-2.43631%2C3.32048-4.32048%2C7.36683-5.64868%2C12.1545-1.33205%2C4.77995-1.99615%2C10.23171-1.99615%2C16.34757%2C0%2C6.16991.73359%2C11.66801%2C2.20851%2C16.47885%2C1.47105%2C4.81083%2C3.4672%2C8.87263%2C5.98845%2C12.19311%2C2.51739%2C3.30504%2C5.47879%2C5.83014%2C8.87649%2C7.55216%2C3.3977%2C1.72974%2C7.05023%2C2.59461%2C10.95758%2C2.59461%2C2.32047%2C0%2C4.41701-.12355%2C6.28575-.3861%2C1.86874-.24711%2C3.61006-.70271%2C5.22396-1.35908%2C1.61391-.64865%2C3.12743-1.48263%2C4.54442-2.50194%2C1.41313-1.01931%2C2.83013-2.29345%2C4.24713-3.82241.56371-.4556%2C1.14672-.83398%2C1.74132-1.15058.5946-.30888%2C1.20078-.46332%2C1.82626-.46332Z%22%20id%3D%22path5%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Ca%20lang%3D%22en%22%20class%3D%22home%20wai%22%20href%3D%22%2FWAI%2F%22%3E%0A%20%20%20%20%20%20%3Csvg%20role%3D%22img%22%20width%3D%22162.5%22%20height%3D%2245.9%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20162.5%2045.9%22%20aria-labelledby%3D%22wai-homepage-title%22%3E%3Ctitle%20id%3D%22wai-homepage-title%22%3EWeb%20Accessibility%20Initiative%20(WAI)%20homepage%3C%2Ftitle%3E%3Cg%3E%3Cpath%20d%3D%22M1.2%2024.5h160%22%20stroke%3D%22%23eed009%22%20stroke-linecap%3D%22square%22%20stroke-width%3D%222%22%3E%3C%2Fpath%3E%3Cg%3E%3Cpath%20d%3D%22M15.741%2015.5h-1.816L11.14%206.145c-.41-1.394-.65-2.334-.722-2.823-.104.749-.332%201.71-.684%202.881L7.04%2015.5H5.223L1.444%201.223H3.32l2.217%208.72c.3%201.14.527%202.272.684%203.399.143-1.068.397-2.237.761-3.506l2.52-8.613h1.855l2.627%208.681c.339%201.127.6%202.272.781%203.438.105-.899.336-2.038.694-3.418l2.207-8.701h1.875zm10.127.195c-1.608%200-2.87-.486-3.784-1.46-.915-.973-1.372-2.312-1.372-4.018%200-1.719.426-3.088%201.279-4.107.853-1.019%202.005-1.528%203.457-1.528%201.348%200%202.422.435%203.223%201.304.8.869%201.2%202.046%201.2%203.53v1.064h-7.343c.033%201.218.342%202.142.928%202.774.586.631%201.416.947%202.49.947a8.46%208.46%200%20001.631-.151c.514-.101%201.116-.298%201.807-.591v1.543a8.506%208.506%200%2001-1.67.537c-.521.104-1.136.156-1.846.156zm-.44-9.677c-.84%200-1.503.27-1.992.81-.488.54-.778%201.292-.869%202.256h5.46c-.014-1.003-.245-1.764-.694-2.285-.45-.521-1.084-.781-1.904-.781zm12.237-1.416c1.413%200%202.503.486%203.271%201.46.769.973%201.153%202.332%201.153%204.077%200%201.77-.39%203.14-1.172%204.106-.781.967-1.865%201.45-3.252%201.45-.723%200-1.367-.13-1.934-.39a3.384%203.384%200%2001-1.386-1.162h-.137a48.165%2048.165%200%2001-.362%201.357h-1.26V.305h1.759v3.691c0%20.736-.033%201.471-.098%202.207h.098c.722-1.068%201.829-1.601%203.32-1.601zm-.293%201.455c-1.08%200-1.856.306-2.324.918-.47.612-.703%201.647-.703%203.105v.078c0%201.465.239%202.512.717%203.14.479.628%201.262.942%202.349.942.963%200%201.681-.353%202.153-1.06.472-.706.708-1.726.708-3.06%200-1.355-.237-2.37-.713-3.048-.475-.677-1.204-1.015-2.187-1.015zM59.286%2015.5l-1.719-4.424h-5.664l-1.7%204.424h-1.816l5.577-14.336h1.62L61.152%2015.5zM57.03%209.484L55.43%205.158l-.684-2.138c-.195.78-.4%201.494-.615%202.138l-1.621%204.326zm10.137%206.211c-1.543%200-2.744-.473-3.604-1.42-.86-.948-1.289-2.307-1.289-4.078%200-1.797.435-3.182%201.304-4.155.87-.973%202.108-1.46%203.716-1.46.52%200%201.037.054%201.548.161.51.108.932.246%201.264.415l-.537%201.465c-.905-.338-1.676-.508-2.314-.508-1.081%200-1.879.34-2.393%201.02-.514.681-.771%201.695-.771%203.043%200%201.295.257%202.287.771%202.973.514.687%201.276%201.03%202.285%201.03.944%200%201.872-.208%202.783-.624v1.562c-.742.384-1.663.576-2.763.576zm9.6%200c-1.544%200-2.745-.473-3.604-1.42-.86-.948-1.29-2.307-1.29-4.078%200-1.797.435-3.182%201.305-4.155.869-.973%202.107-1.46%203.715-1.46.521%200%201.037.054%201.548.161.511.108.933.246%201.265.415l-.537%201.465c-.905-.338-1.677-.508-2.315-.508-1.08%200-1.878.34-2.392%201.02-.515.681-.772%201.695-.772%203.043%200%201.295.257%202.287.772%202.973.514.687%201.276%201.03%202.285%201.03.944%200%201.872-.208%202.783-.624v1.562c-.742.384-1.663.576-2.764.576zm9.863%200c-1.608%200-2.87-.486-3.784-1.46-.915-.973-1.373-2.312-1.373-4.018%200-1.719.427-3.088%201.28-4.107.853-1.019%202.005-1.528%203.457-1.528%201.347%200%202.422.435%203.222%201.304.801.869%201.202%202.046%201.202%203.53v1.064H83.29c.032%201.218.342%202.142.928%202.774.586.631%201.416.947%202.49.947a8.46%208.46%200%20001.63-.151c.515-.101%201.117-.298%201.807-.591v1.543a8.506%208.506%200%2001-1.67.537c-.52.104-1.136.156-1.845.156zm-.44-9.677c-.84%200-1.504.27-1.992.81s-.778%201.292-.87%202.256h5.46c-.013-1.003-.244-1.764-.693-2.285-.45-.521-1.084-.781-1.905-.781zm14.14%206.523c0%201.003-.373%201.779-1.122%202.33-.749.55-1.8.824-3.154.824-1.413%200-2.536-.224-3.37-.674V13.42c1.179.573%202.315.86%203.409.86.885%200%201.53-.144%201.933-.43.404-.287.606-.671.606-1.153%200-.423-.194-.781-.581-1.074-.388-.293-1.076-.628-2.066-1.006-1.009-.39-1.719-.724-2.129-1-.41-.277-.711-.588-.903-.933-.192-.345-.288-.765-.288-1.26%200-.88.358-1.572%201.074-2.08.716-.508%201.7-.762%202.95-.762a8.17%208.17%200%20013.417.723L99.511%206.7c-1.088-.456-2.068-.683-2.94-.683-.73%200-1.282.115-1.66.346-.378.231-.566.549-.566.952%200%20.391.162.715.488.972.325.257%201.084.614%202.275%201.07.892.331%201.551.64%201.978.927.426.287.74.609.942.967.202.358.303.788.303%201.289zm9.58%200c0%201.003-.373%201.779-1.122%202.33-.749.55-1.8.824-3.154.824-1.413%200-2.536-.224-3.37-.674V13.42c1.179.573%202.315.86%203.409.86.885%200%201.53-.144%201.933-.43.404-.287.606-.671.606-1.153%200-.423-.194-.781-.581-1.074-.388-.293-1.076-.628-2.066-1.006-1.009-.39-1.719-.724-2.129-1-.41-.277-.71-.588-.903-.933-.192-.345-.288-.765-.288-1.26%200-.88.358-1.572%201.074-2.08.716-.508%201.7-.762%202.95-.762a8.17%208.17%200%20013.417.723l-.595%201.396c-1.088-.456-2.067-.683-2.94-.683-.729%200-1.282.115-1.66.346-.378.231-.566.549-.566.952%200%20.391.162.715.488.972.325.257%201.084.614%202.275%201.07.892.331%201.551.64%201.978.927.426.287.74.609.942.967.202.358.303.788.303%201.289zm4.356%202.959h-1.757V4.777h1.757zm-1.894-13.623c0-.39.1-.674.298-.85.198-.175.444-.263.737-.263.273%200%20.513.088.718.263.205.176.307.46.307.85%200%20.384-.102.667-.307.85a1.047%201.047%200%2001-.718.273%201.05%201.05%200%2001-.737-.273c-.199-.183-.298-.466-.298-.85zm10.371%202.725c1.413%200%202.503.486%203.271%201.46.769.973%201.153%202.332%201.153%204.077%200%201.77-.39%203.14-1.172%204.106-.781.967-1.865%201.45-3.252%201.45-.723%200-1.367-.13-1.934-.39a3.384%203.384%200%2001-1.386-1.162h-.137a48.244%2048.244%200%2001-.361%201.357h-1.26V.305h1.758v3.691c0%20.736-.033%201.471-.098%202.207h.098c.722-1.068%201.83-1.601%203.32-1.601zm-.293%201.455c-1.08%200-1.855.306-2.324.918-.469.612-.703%201.647-.703%203.105v.078c0%201.465.239%202.512.717%203.14.479.628%201.262.942%202.35.942.963%200%201.68-.353%202.152-1.06.472-.706.708-1.726.708-3.06%200-1.355-.237-2.37-.713-3.048-.475-.677-1.204-1.015-2.187-1.015zm9.277%209.443h-1.757V4.777h1.757zm-1.894-13.623c0-.39.1-.674.298-.85.198-.175.444-.263.737-.263.273%200%20.513.088.718.263.205.176.307.46.307.85%200%20.384-.102.667-.307.85a1.047%201.047%200%2001-.718.273%201.05%201.05%200%2001-.737-.273c-.199-.183-.298-.466-.298-.85zm7.05%2013.623h-1.757V.305h1.758zm5.157%200h-1.758V4.777h1.758zm-1.895-13.623c0-.39.1-.674.298-.85.199-.175.444-.263.737-.263.274%200%20.513.088.718.263.205.176.308.46.308.85%200%20.384-.103.667-.308.85a1.047%201.047%200%2001-.718.273%201.05%201.05%200%2001-.737-.273c-.198-.183-.298-.466-.298-.85zm8.877%2012.383c.228%200%20.495-.023.801-.069.306-.045.537-.097.693-.156v1.348c-.162.071-.415.141-.756.21a5.29%205.29%200%2001-1.04.102c-2.097%200-3.145-1.103-3.145-3.31v-6.24h-1.514v-.84l1.534-.703.703-2.286h1.045v2.461h3.095v1.368h-3.095v6.19c0%20.62.148%201.095.444%201.427.296.332.708.498%201.235.498zm1.953-9.483h1.885l2.315%206.104c.488%201.328.787%202.301.898%202.92h.078c.059-.241.192-.692.4-1.353.209-.66.385-1.19.528-1.587l2.178-6.084h1.894l-4.619%2012.207c-.45%201.185-.983%202.035-1.602%202.55-.618.514-1.383.77-2.294.77-.489%200-.974-.055-1.456-.165v-1.397c.326.078.717.117%201.172.117.56%200%201.035-.154%201.426-.463.39-.31.71-.787.957-1.431l.557-1.426zM7.157%2045.5H2.001v-1.035l1.68-.381V32.658l-1.68-.4v-1.035h5.156v1.035l-1.68.4v11.426l1.68.38zm9.824%200v-6.855c0-.873-.193-1.522-.58-1.949-.388-.426-.995-.64-1.822-.64-1.1%200-1.9.305-2.398.914-.498.608-.747%201.6-.747%202.973V45.5H9.677V34.777h1.416l.263%201.465h.098a3.31%203.31%200%20011.396-1.225%204.492%204.492%200%20011.983-.435c1.315%200%202.292.319%202.93.957.638.638.957%201.63.957%202.979V45.5zm6.817%200H22.04V34.777h1.758zm-1.895-13.623c0-.39.1-.674.298-.85.199-.175.444-.263.737-.263.274%200%20.513.088.718.263.205.176.308.46.308.85%200%20.384-.103.667-.308.85a1.047%201.047%200%2001-.718.273%201.05%201.05%200%2001-.737-.273c-.199-.183-.298-.466-.298-.85zM30.78%2044.26c.228%200%20.495-.023.8-.069.307-.045.538-.097.694-.156v1.348c-.163.071-.415.141-.757.21a5.29%205.29%200%2001-1.04.102c-2.096%200-3.144-1.103-3.144-3.31v-6.24h-1.514v-.84l1.533-.703.703-2.286H29.1v2.461h3.096v1.368H29.1v6.19c0%20.62.149%201.095.445%201.427.296.332.708.498%201.235.498zm5.39%201.24h-1.757V34.777h1.758zm-1.894-13.623c0-.39.1-.674.298-.85.199-.175.444-.263.737-.263.274%200%20.513.088.718.263.205.176.308.46.308.85%200%20.384-.103.667-.308.85a1.047%201.047%200%2001-.718.273%201.05%201.05%200%2001-.737-.273c-.199-.183-.298-.466-.298-.85zM46.19%2045.5l-.342-1.523h-.078c-.534.67-1.066%201.124-1.596%201.362-.53.237-1.2.356-2.007.356-1.055%200-1.882-.276-2.48-.83-.6-.553-.9-1.334-.9-2.344%200-2.174%201.716-3.313%205.147-3.417l1.817-.069V38.4c0-.813-.176-1.414-.528-1.801-.351-.388-.914-.581-1.689-.581-.566%200-1.102.084-1.606.253-.505.17-.979.359-1.421.567l-.537-1.318a7.958%207.958%200%20011.767-.674%207.642%207.642%200%20011.895-.244c1.295%200%202.259.286%202.89.859.632.573.948%201.484.948%202.734V45.5zm-3.623-1.22c.983%200%201.756-.266%202.32-.797.563-.53.844-1.284.844-2.26v-.967l-1.582.068c-1.23.046-2.127.241-2.69.586-.563.345-.845.889-.845%201.631%200%20.56.171.99.513%201.29.342.299.822.448%201.44.448zm11.807-.02c.228%200%20.495-.023.8-.069.307-.045.538-.097.694-.156v1.348c-.163.071-.415.141-.757.21a5.29%205.29%200%2001-1.04.102c-2.096%200-3.144-1.103-3.144-3.31v-6.24h-1.514v-.84l1.533-.703.703-2.286h1.045v2.461h3.096v1.368h-3.096v6.19c0%20.62.148%201.095.444%201.427.297.332.708.498%201.236.498zm5.39%201.24h-1.757V34.777h1.757zM57.87%2031.877c0-.39.1-.674.298-.85.198-.175.444-.263.737-.263.274%200%20.513.088.718.263.205.176.307.46.307.85%200%20.384-.102.667-.307.85a1.047%201.047%200%2001-.718.273%201.05%201.05%200%2001-.737-.273c-.199-.183-.298-.466-.298-.85zM65.526%2045.5l-4.062-10.723h1.884l2.276%206.319c.45%201.27.736%202.216.86%202.842h.077a11.495%2011.495%200%2001.176-.64c.04-.127.28-.861.723-2.202l2.285-6.319h1.875L67.548%2045.5zm12.354.195c-1.608%200-2.87-.486-3.784-1.46-.915-.973-1.373-2.312-1.373-4.018%200-1.719.427-3.088%201.28-4.107.853-1.019%202.005-1.528%203.457-1.528%201.347%200%202.422.435%203.222%201.304.801.869%201.202%202.046%201.202%203.53v1.064H74.54c.032%201.218.342%202.142.928%202.774.586.631%201.416.947%202.49.947a8.46%208.46%200%20001.63-.151c.515-.101%201.117-.298%201.807-.591v1.543a8.506%208.506%200%2001-1.67.537c-.52.104-1.136.156-1.845.156zm-.44-9.677c-.84%200-1.504.27-1.992.81s-.778%201.292-.87%202.256h5.46c-.013-1.003-.244-1.764-.693-2.285-.45-.521-1.084-.781-1.905-.781zM137.741%2045.5h-1.816l-2.784-9.355c-.41-1.394-.65-2.334-.722-2.823-.104.749-.332%201.71-.684%202.881L129.04%2045.5h-1.817l-3.779-14.277h1.875l2.217%208.72c.3%201.14.527%202.272.684%203.399.143-1.068.397-2.237.761-3.506l2.52-8.613h1.855l2.627%208.681c.339%201.127.6%202.272.781%203.438.105-.899.336-2.038.694-3.418l2.207-8.701h1.875zm14.57%200l-1.718-4.424h-5.664l-1.7%204.424h-1.816l5.576-14.336h1.621l5.567%2014.336zm-2.256-6.016l-1.601-4.326-.684-2.138c-.195.78-.4%201.494-.615%202.138l-1.621%204.326zm10.098%206.016h-5.156v-1.035l1.68-.381V32.658l-1.68-.4v-1.035h5.156v1.035l-1.68.4v11.426l1.68.38z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cdiv%20class%3D%22claim%22%3E%0A%20%20%20%20%20%20%3Cspan%3EStrategies%2C%20standards%2C%20resources%20to%20make%20the%20Web%20accessible%20to%20people%20with%20disabilities%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cbutton%20class%3D%22button%20button-menu%22%20aria-haspopup%3D%22true%22%20aria-expanded%3D%22false%22%20id%3D%22openmenu%22%3E%3Cspan%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20class%3D%22icon-menu%20%22%3E%3Cuse%20xlink%3Ahref%3D%22%2FWAI%2Fassets%2Fimages%2Ficons.svg%23icon-menu%22%3E%3C%2Fuse%3E%3C%2Fsvg%3E%20Menu%3C%2Fspan%3E%3C%2Fbutton%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22navigations%22%3E%0A%20%20%3Cnav%20class%3D%22metanav%22%20aria-label%3D%22Meta%20%26amp%3B%20Search%22%20lang%3D%22en%22%3E%0A%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2Fabout%2Fparticipating%2F%22%3EGet%20Involved%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2Fabout%2F%22%3EAbout%20W3C%20WAI%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%3Cli%3E%0A%20%20%20%20%20%20%20%20%3Cform%20action%3D%22%2FWAI%2Fsearch%2F%22%20role%3D%22search%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22header-search%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22visuallyhidden%22%3ESearch%3A%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20id%3D%22header-search%22%20type%3D%22search%22%20name%3D%22q%22%20placeholder%3D%22Search%22%20aria-label%3D%22Search%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Flabel%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D%22button%20button-icon%20button-nobg%20button-noborder%22%3E%3Cspan%3E%3Csvg%20focusable%3D%22false%22%20aria-label%3D%22Submit%20Search%22%20class%3D%22icon-search%20%22%3E%3Cuse%20xlink%3Ahref%3D%22%2FWAI%2Fassets%2Fimages%2Ficons.svg%23icon-search%22%3E%3C%2Fuse%3E%3C%2Fsvg%3E%3C%2Fspan%3E%3C%2Fbutton%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3C%2Fform%3E%0A%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%3C%2Ful%3E%0A%20%20%3C%2Fnav%3E%0A%3C%2Fdiv%3E%0A%3C%2Fheader%3E%3Cnav%20class%3D%22mainnav%22%20aria-label%3D%22Main%22%20lang%3D%22en%22%3E%3Cul%3E%3Cli%3E%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ffundamentals%2F%22%3E%3Cspan%3EAccessibility%20Fundamentals%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Fplanning%2F%22%3E%3Cspan%3EPlanning%20%26amp%3B%20Policies%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Fdesign-develop%2F%22%3E%3Cspan%3EDesign%20%26amp%3B%20Develop%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2F%22%3E%3Cspan%3ETest%20%26amp%3B%20Evaluate%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Fteach-advocate%2F%22%3E%3Cspan%3ETeach%20%26amp%3B%20Advocate%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Fstandards-guidelines%2F%22%3E%3Cspan%3EStandards%2F%3Cwbr%3EGuidelines%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fnav%3E%3Cnav%20id%3D%22w3c-breadcrumb%22%20class%3D%22default-grid%22%20aria-label%3D%22Breadcrumb%22%20lang%3D%22en%22%3E%0A%20%20%3Cdiv%20class%3D%22w3c-l-cluster%22%20style%3D%22grid-column%3A%202%2F10%22%3E%0A%20%20%3Cul%20class%3D%22w3c-breadcrumbs%20w3c-clean-list%20wai-breadcrumbs%22%3E%0A%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2F%22%20lang%3D%22en%22%3EHome%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2F%22%20aria-current%3D%22page%22%3E%3Cspan%3ETest%20%26amp%3B%20Evaluate%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fnav%3E%0A%20%20%20%20%3Cdiv%20class%3D%22default-grid%20with-gap%20leftcol%22%3E%0A%0A%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22sidenav%22%3E%3Cnav%20class%3D%22sn-contents%22%20aria-label%3D%22Secondary%22%3E%0A%20%20%20%20%20%20%3Cul%20class%3D%22sidenav--list%22%3E%0A%20%20%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2F%22%20aria-current%3D%22page%22%20class%3D%22page-link%22%3E%3Cspan%3ETest%20%26amp%3B%20Evaluate%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Fpreliminary%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EEasy%20Checks%20%E2%80%93%20A%20First%20Review%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EEasy%20Checks%20-%20Draft%20Update%3C%2Fspan%3E%3C%2Fa%3E%3Cul%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Fimage-alt%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EImage%20Alternative%20Text%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Ftitle%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EPage%20Title%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Fheadings%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EHeading%20Structure%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Fcolor-contrast%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EColor%20Contrast%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Fskip-link%2F%22%20class%3D%22page-link%22%3E%3Cspan%3ESkip%20Link%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Fkeyboard-focus%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EKeyboard%20Focus%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Flanguage%2F%22%20class%3D%22page-link%22%3E%3Cspan%3ELanguage%20of%20Page%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Fzoom%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EZoom%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Fcaptions%2F%22%20class%3D%22page-link%22%3E%3Cspan%3ECaptions%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Ftranscripts%2F%22%20class%3D%22page-link%22%3E%3Cspan%3ETranscripts%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Fdescription%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EAudio%20Description%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Fform-field-labels%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EForm%20Field%20Labels%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Feasy-checks%2Frequired-fields%2F%22%20class%3D%22page-link%22%3E%3Cspan%3ERequired%20Fields%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Ftools%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EEvaluation%20Tools%3C%2Fspan%3E%3C%2Fa%3E%3Cul%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Ftools%2Fselecting%2F%22%20class%3D%22page-link%22%3E%3Cspan%3ESelecting%20Evaluation%20Tools%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Ftools%2Flist%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EList%20of%20Evaluation%20Tools%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Fconformance%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EConformance%20Evaluation%2C%20Reports%3C%2Fspan%3E%3C%2Fa%3E%3Cul%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Fconformance%2Fwcag-em%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EWCAG-EM%20Conformance%20Methodology%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22https%3A%2F%2Fwww.w3.org%2FWAI%2Feval%2Freport-tool%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EWCAG-EM%20Report%20Tool%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Freport-template%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EReport%20Template%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Fcombined-expertise%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EUsing%20Combined%20Expertise%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3Cli%3E%0A%20%20%3Ca%20lang%3D%22en%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Finvolving-users%2F%22%20class%3D%22page-link%22%3E%3Cspan%3EInvolving%20Users%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%3C%2Fnav%3E%3Cnav%20class%3D%22sidenav-languages%22%20aria-labelledby%3D%22languagehead%22%3E%0A%20%20%20%20%20%20%20%20%3Cheader%20id%3D%22languagehead%22%3ELanguages%2FTranslations%3C%2Fheader%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22langlist%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20style%3D%22margin-bottom%3A%202px%3B%22%3E%3Cstrong%20style%3D%22text-transform%3A%20capitalize%3B%22%3EEnglish%20(original)%3C%2Fstrong%3E%3C%2Fli%3E%3Cli%20style%3D%22margin-bottom%3A%202px%3B%22%3E%3Ca%20style%3D%22text-transform%3A%20capitalize%3B%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Fes%22%20dir%3D%22auto%22%20translate%3D%22no%22%20lang%3D%22es%22%3Eespa%C3%B1ol%3C%2Fa%3E%3C%2Fli%3E%3Cli%20style%3D%22margin-bottom%3A%202px%3B%22%3E%3Ca%20style%3D%22text-transform%3A%20capitalize%3B%22%20href%3D%22%2FWAI%2Ftest-evaluate%2Ffr%22%20dir%3D%22auto%22%20translate%3D%22no%22%20lang%3D%22fr%22%3Efran%C3%A7ais%3C%2Fa%3E%3C%2Fli%3E%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%3Cp%3E%3Ca%20href%3D%22%2FWAI%2Ftranslations%2F%22%3EAll%26nbsp%3BTranslations%3C%2Fa%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3Cp%3E%3Ca%20href%3D%22%2FWAI%2Fabout%2Ftranslating%2F%22%3ETranslating%20WAI%20Resources%3C%2Fa%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3C%2Fnav%3E%0A%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%20%20%0A%20%20%0A%0A%20%20%3Cmain%20id%3D%22main%22%20lang%3D%22en%22%3E%0A%0A%20%20%20%20%0A%0A%20%20%20%20%0A%20%20%20%20%3Cheader%3E%0A%20%20%20%20%20%20%3Ch1%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20Evaluating%20Web%20Accessibility%20Overview%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C%2Fh1%3E%3C%2Fheader%3E%0A%20%20%20%20%3Caside%20class%3D%22box%20box-full%22%3E%3Cheader%20class%3D%22box-h%20%20box-h-full%22%3E%20%3Ch2%3E%20Summary%20%3C%2Fh2%3E%3C%2Fheader%3E%3Cdiv%20class%3D%22box-i%22%3E%0A%0A%3Cp%3EThis%20page%20links%20to%20resources%20to%20help%20evaluate%20web%20accessibility.%20Accessibility%20evaluation%20is%20also%20called%20%E2%80%9Cassessment%E2%80%9D%2C%20%E2%80%9Caudit%E2%80%9D%2C%20and%20%E2%80%9Ctesting%E2%80%9D.%3C%2Fp%3E%0A%0A%3C%2Fdiv%3E%3C%2Faside%3E%0A%0A%0A%0A%3Cnav%20class%3D%22box%20box-simple%20box-full%22%20aria-labelledby%3D%22tocheading%22%20id%3D%22toc%22%3E%0A%20%20%3Cheader%20id%3D%22tocheading%22%20class%3D%22box-h%20box-h-simple%20box-h-full%22%3E%20Page%20Contents%3C%2Fheader%3E%0A%20%20%3Cdiv%20class%3D%22box-i%22%3E%0A%0A%0A%0A%0A%3Cul%20id%3D%22markdown-toc%22%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%23intro%22%20id%3D%22markdown-toc-intro%22%3EIntroduction%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%23initial%22%20id%3D%22markdown-toc-initial%22%3EInitial%20Checks%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%23tools%22%20id%3D%22markdown-toc-tools%22%3ETools%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%23conformance%22%20id%3D%22markdown-toc-conformance%22%3EConformance%20Evaluation%20and%20Reports%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%23people%22%20id%3D%22markdown-toc-people%22%3EPeople%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%3Cli%3E%3Ca%20href%3D%22%23alternatives%22%20id%3D%22markdown-toc-alternatives%22%3EAlternatives%20for%20Video%20Introduction%20-%20Resources%20Overview%3C%2Fa%3E%3C%2Fli%3E%0A%3C%2Ful%3E%0A%0A%0A%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fnav%3E%0A%0A%0A%0A%3Ch2%20id%3D%22intro%22%3EIntroduction%3C%2Fh2%3E%0A%0A%3Cdiv%20class%3D%22video-card%22%3E%0A%20%20%3Cdiv%20class%3D%22video-container%22%20data-video-type%3D%22%22%20dir%3D%22ltr%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22able-wrapper%20able-skin-legacy%22%3E%3Cdiv%20class%3D%22able%22%3E%3Ch3%20class%3D%22able-offscreen%22%3EMedia%20player%3C%2Fh3%3E%3Cdiv%20class%3D%22able-vidcap-container%22%3E%3Cdiv%20class%3D%22able-media-container%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-captions-wrapper%20able-captions-below%22%20aria-hidden%3D%22true%22%20style%3D%22background-color%3A%20black%3B%20opacity%3A%201%3B%22%3E%3Cdiv%20class%3D%22able-captions%22%20style%3D%22font-family%3A%20sans-serif%3B%20color%3A%20white%3B%20background-color%3A%20black%3B%20opacity%3A%201%3B%20font-size%3A%20100%25%3B%20display%3A%20none%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-player%20able-video%22%20role%3D%22region%22%20aria-label%3D%22video%20player%22%3E%3Cdiv%20class%3D%22able-controller%20able-white-controls%22%3E%3Cdiv%20id%3D%22ableMediaId_0-tooltip%22%20class%3D%22able-tooltip%22%20style%3D%22display%3A%20none%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-left-controls%22%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Play%22%20class%3D%22able-button-handler-play%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2016%2020%22%3E%3Cpath%20d%3D%22M0%2018.393v-16.429q0-0.29%200.184-0.402t0.441%200.033l14.821%208.237q0.257%200.145%200.257%200.346t-0.257%200.346l-14.821%208.237q-0.257%200.145-0.441%200.033t-0.184-0.402z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3EPlay%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Restart%22%20class%3D%22able-button-handler-restart%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M18%208h-6l2.243-2.243c-1.133-1.133-2.64-1.757-4.243-1.757s-3.109%200.624-4.243%201.757c-1.133%201.133-1.757%202.64-1.757%204.243s0.624%203.109%201.757%204.243c1.133%201.133%202.64%201.757%204.243%201.757s3.109-0.624%204.243-1.757c0.095-0.095%200.185-0.192%200.273-0.292l1.505%201.317c-1.466%201.674-3.62%202.732-6.020%202.732-4.418%200-8-3.582-8-8s3.582-8%208-8c2.209%200%204.209%200.896%205.656%202.344l2.344-2.344v6z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3ERestart%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Rewind%22%20class%3D%22able-button-handler-rewind%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M11.25%203.125v6.25l6.25-6.25v13.75l-6.25-6.25v6.25l-6.875-6.875z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3ERewind%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Forward%22%20class%3D%22able-button-handler-forward%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M10%2016.875v-6.25l-6.25%206.25v-13.75l6.25%206.25v-6.25l6.875%206.875z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3EForward%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-right-controls%22%3E%3Cdiv%20class%3D%22able-seekbar-wrapper%22%20style%3D%22width%3A%20219.391px%3B%22%3E%3Cdiv%20class%3D%22able-seekbar%22%3E%3Cdiv%20role%3D%22tooltip%22%20class%3D%22able-tooltip%22%20style%3D%22display%3A%20none%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-seekbar-loaded%22%20style%3D%22width%3A%200px%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-seekbar-played%22%20style%3D%22width%3A%200px%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20aria-orientation%3D%22horizontal%22%20class%3D%22able-seekbar-head%22%20tabindex%3D%220%22%20role%3D%22slider%22%20aria-label%3D%22video%20timeline%22%20aria-valuemin%3D%220%22%20aria-valuemax%3D%22127%22%20aria-valuetext%3D%220%20seconds%22%20aria-valuenow%3D%220%22%20style%3D%22left%3A%20-6.39845px%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cspan%20class%3D%22able-offscreen%22%20aria-live%3D%22polite%22%3E%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Volume%22%20class%3D%22able-button-handler-volume%22%20aria-controls%3D%22ableMediaId_0-volume-slider%22%20aria-expanded%3D%22false%22%20aria-describedby%3D%22ableMediaId_0-volume-help%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M14.053%2016.241c-0.24%200-0.48-0.092-0.663-0.275-0.366-0.366-0.366-0.96%200-1.326%202.559-2.559%202.559-6.722%200-9.281-0.366-0.366-0.366-0.96%200-1.326s0.96-0.366%201.326%200c1.594%201.594%202.471%203.712%202.471%205.966s-0.878%204.373-2.471%205.966c-0.183%200.183-0.423%200.275-0.663%200.275zM10.723%2014.473c-0.24%200-0.48-0.092-0.663-0.275-0.366-0.366-0.366-0.96%200-1.326%201.584-1.584%201.584-4.161%200-5.745-0.366-0.366-0.366-0.96%200-1.326s0.96-0.366%201.326%200c2.315%202.315%202.315%206.082%200%208.397-0.183%200.183-0.423%200.275-0.663%200.275zM7.839%201.536c0.501-0.501%200.911-0.331%200.911%200.378v16.172c0%200.709-0.41%200.879-0.911%200.378l-4.714-4.713h-3.125v-7.5h3.125l4.714-4.714z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3EVolume%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22ableMediaId_0-volume-slider%22%20class%3D%22able-volume-slider%22%20aria-hidden%3D%22true%22%20style%3D%22display%3A%20none%3B%22%3E%3Cdiv%20class%3D%22able-tooltip%22%20role%3D%22tooltip%22%20style%3D%22display%3A%20none%3B%22%3E%3C%2Fdiv%3E%3Cinput%20type%3D%22range%22%20min%3D%220%22%20max%3D%2210%22%20step%3D%221%22%20orient%3D%22vertical%22%20aria-label%3D%22Volume%20up%20down%22%20value%3D%227%22%3E%3Cdiv%20id%3D%22ableMediaId_0-volume-help%22%20class%3D%22able-volume-help%22%20aria-live%3D%22polite%22%3E70%25%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20style%3D%22clear%3Aboth%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-left-controls%22%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Slower%22%20class%3D%22able-button-handler-slower%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M17.212%203.846c-0.281-0.014-0.549%200.025-0.817%200.144-1.218%200.542-1.662%202.708-2.163%203.942-1.207%202.972-7.090%204.619-11.755%205.216-0.887%200.114-1.749%200.74-2.428%201.466%200.82-0.284%202.126-0.297%202.74%200.144%200.007%200.488-0.376%201.062-0.625%201.37-0.404%200.5-0.398%200.793%200.12%200.793%200.473%200%200.752%200.007%201.635%200%200.393-0.003%200.618-0.16%201.49-1.49%203.592%200.718%205.986-0.264%205.986-0.264s0.407%201.755%201.418%201.755h1.49c0.633%200%200.667-0.331%200.625-0.433-0.448-1.082-0.68-1.873-0.769-2.5-0.263-1.857%200.657-3.836%202.524-5.457%200.585%200.986%202.253%200.845%202.909-0.096s0.446-2.268-0.192-3.221c-0.49-0.732-1.345-1.327-2.188-1.37zM8.221%204.663c-0.722-0.016-1.536%200.111-2.5%200.409-4.211%201.302-4.177%204.951-3.51%205.745%200%200-0.955%200.479-0.409%201.274%200.448%200.652%203.139%200.191%205.409-0.529s4.226-1.793%205.312-2.692c0.948-0.785%200.551-2.106-0.505-1.947-0.494-0.98-1.632-2.212-3.798-2.26zM18.846%205.962c0.325%200%200.577%200.252%200.577%200.577s-0.252%200.577-0.577%200.577c-0.325%200-0.577-0.252-0.577-0.577s0.252-0.577%200.577-0.577z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3ESlower%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Faster%22%20class%3D%22able-button-handler-faster%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M10.817%200c-2.248%200-1.586%200.525-1.154%200.505%201.551-0.072%205.199%200.044%206.851%202.428%200%200-1.022-2.933-5.697-2.933zM10.529%200.769c-2.572%200-2.837%200.51-2.837%201.106%200%200.545%201.526%200.836%202.524%200.697%202.778-0.386%204.231-0.12%205.264%200.865-1.010%200.779-0.75%201.401-1.274%201.851-1.093%200.941-2.643-0.673-4.976-0.673-2.496%200-4.712%201.92-4.712%204.76-0.157-0.537-0.769-0.913-1.442-0.913-0.974%200-1.514%200.637-1.514%201.49%200%200.769%201.13%201.791%202.861%200.938%200.499%201.208%202.265%201.364%202.452%201.418%200.538%200.154%201.875%200.098%201.875%200.865%200%200.794-1.034%201.094-1.034%201.707%200%201.070%201.758%200.873%202.284%201.034%201.683%200.517%202.103%201.214%202.788%202.212%200.771%201.122%202.572%201.408%202.572%200.625%200-3.185-4.413-4.126-4.399-4.135%200.608-0.382%202.139-1.397%202.139-3.534%200-1.295-0.703-2.256-1.755-2.861%201.256%200.094%202.572%201.205%202.572%202.74%200%201.877-0.653%202.823-0.769%202.957%201.975-1.158%203.193-3.91%203.029-6.37%200.61%200.401%201.27%200.577%201.971%200.625%200.751%200.052%201.475-0.225%201.635-0.529%200.38-0.723%200.162-2.321-0.12-2.837-0.763-1.392-2.236-1.73-3.606-1.683-1.202-1.671-3.812-2.356-5.529-2.356zM1.37%203.077l-0.553%201.538h3.726c0.521-0.576%201.541-1.207%202.284-1.538h-5.457zM18.846%205.192c0.325%200%200.577%200.252%200.577%200.577s-0.252%200.577-0.577%200.577c-0.325%200-0.577-0.252-0.577-0.577s0.252-0.577%200.577-0.577zM0.553%205.385l-0.553%201.538h3.197c0.26-0.824%200.586-1.328%200.769-1.538h-3.413z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3EFaster%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Captions%22%20class%3D%22able-button-handler-captions%22%20aria-expanded%3D%22false%22%20aria-pressed%3D%22true%22%20aria-haspopup%3D%22true%22%20aria-controls%3D%22ableMediaId_0-captions-menu%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M0.033%203.624h19.933v12.956h-19.933v-12.956zM18.098%2010.045c-0.025-2.264-0.124-3.251-0.743-3.948-0.112-0.151-0.322-0.236-0.496-0.344-0.606-0.386-3.465-0.526-6.782-0.526s-6.313%200.14-6.907%200.526c-0.185%200.108-0.396%200.193-0.519%200.344-0.607%200.697-0.693%201.684-0.731%203.948%200.037%202.265%200.124%203.252%200.731%203.949%200.124%200.161%200.335%200.236%200.519%200.344%200.594%200.396%203.59%200.526%206.907%200.547%203.317-0.022%206.176-0.151%206.782-0.547%200.174-0.108%200.384-0.183%200.496-0.344%200.619-0.697%200.717-1.684%200.743-3.949v0%200zM9.689%209.281c-0.168-1.77-1.253-2.813-3.196-2.813-1.773%200-3.168%201.387-3.168%203.617%200%202.239%201.271%203.636%203.372%203.636%201.676%200%202.851-1.071%203.035-2.852h-2.003c-0.079%200.661-0.397%201.168-1.068%201.168-1.059%200-1.253-0.91-1.253-1.876%200-1.33%200.442-2.010%201.174-2.010%200.653%200%201.068%200.412%201.13%201.129h1.977zM16.607%209.281c-0.167-1.77-1.252-2.813-3.194-2.813-1.773%200-3.168%201.387-3.168%203.617%200%202.239%201.271%203.636%203.372%203.636%201.676%200%202.851-1.071%203.035-2.852h-2.003c-0.079%200.661-0.397%201.168-1.068%201.168-1.059%200-1.253-0.91-1.253-1.876%200-1.33%200.441-2.010%201.174-2.010%200.653%200%201.068%200.412%201.13%201.129h1.976z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3ECaptions%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Show%20transcript%22%20class%3D%22able-button-handler-transcript%20buttonOff%22%20title%3D%22Show%20transcript%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M0%2019.107v-17.857q0-0.446%200.313-0.759t0.759-0.313h8.929v6.071q0%200.446%200.313%200.759t0.759%200.313h6.071v11.786q0%200.446-0.313%200.759t-0.759%200.312h-15q-0.446%200-0.759-0.313t-0.313-0.759zM4.286%2015.536q0%200.156%200.1%200.257t0.257%200.1h7.857q0.156%200%200.257-0.1t0.1-0.257v-0.714q0-0.156-0.1-0.257t-0.257-0.1h-7.857q-0.156%200-0.257%200.1t-0.1%200.257v0.714zM4.286%2012.679q0%200.156%200.1%200.257t0.257%200.1h7.857q0.156%200%200.257-0.1t0.1-0.257v-0.714q0-0.156-0.1-0.257t-0.257-0.1h-7.857q-0.156%200-0.257%200.1t-0.1%200.257v0.714zM4.286%209.821q0%200.156%200.1%200.257t0.257%200.1h7.857q0.156%200%200.257-0.1t0.1-0.257v-0.714q0-0.156-0.1-0.257t-0.257-0.1h-7.857q-0.156%200-0.257%200.1t-0.1%200.257v0.714zM11.429%205.893v-5.268q0.246%200.156%200.402%200.313l4.554%204.554q0.156%200.156%200.313%200.402h-5.268z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3EShow%20transcript%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-right-controls%22%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Preferences%22%20class%3D%22able-button-handler-preferences%22%20aria-controls%3D%22ableMediaId_0-prefs-menu%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20data-prefs-popup%3D%22menu%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M18.238%2011.919c-1.049-1.817-0.418-4.147%201.409-5.205l-1.965-3.404c-0.562%200.329-1.214%200.518-1.911%200.518-2.1%200-3.803-1.714-3.803-3.828h-3.931c0.005%200.653-0.158%201.314-0.507%201.919-1.049%201.818-3.382%202.436-5.212%201.382l-1.965%203.404c0.566%200.322%201.056%200.793%201.404%201.396%201.048%201.815%200.42%204.139-1.401%205.2l1.965%203.404c0.56-0.326%201.209-0.513%201.902-0.513%202.094%200%203.792%201.703%203.803%203.808h3.931c-0.002-0.646%200.162-1.3%200.507-1.899%201.048-1.815%203.375-2.433%205.203-1.387l1.965-3.404c-0.562-0.322-1.049-0.791-1.395-1.391zM10%2014.049c-2.236%200-4.050-1.813-4.050-4.049s1.813-4.049%204.050-4.049%204.049%201.813%204.049%204.049c-0%202.237-1.813%204.049-4.049%204.049z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3EPreferences%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Enter%20full%20screen%22%20class%3D%22able-button-handler-fullscreen%22%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M0%2018.036v-5q0-0.29%200.212-0.502t0.502-0.212%200.502%200.212l1.607%201.607%203.705-3.705q0.112-0.112%200.257-0.112t0.257%200.112l1.272%201.272q0.112%200.112%200.112%200.257t-0.112%200.257l-3.705%203.705%201.607%201.607q0.212%200.212%200.212%200.502t-0.212%200.502-0.502%200.212h-5q-0.29%200-0.502-0.212t-0.212-0.502zM8.717%208.393q0-0.145%200.112-0.257l3.705-3.705-1.607-1.607q-0.212-0.212-0.212-0.502t0.212-0.502%200.502-0.212h5q0.29%200%200.502%200.212t0.212%200.502v5q0%200.29-0.212%200.502t-0.502%200.212-0.502-0.212l-1.607-1.607-3.705%203.705q-0.112%200.112-0.257%200.112t-0.257-0.112l-1.272-1.272q-0.112-0.112-0.112-0.257z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3Cspan%20class%3D%22able-clipped%22%3EEnter%20full%20screen%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20style%3D%22clear%3Aboth%3B%22%3E%3C%2Fdiv%3E%3Cul%20id%3D%22ableMediaId_0-prefs-menu%22%20class%3D%22able-popup%22%20role%3D%22menu%22%20style%3D%22display%3A%20none%3B%22%3E%3Cli%20role%3D%22menuitem%22%20tabindex%3D%22-1%22%3ECaptions%3C%2Fli%3E%3Cli%20role%3D%22menuitem%22%20tabindex%3D%22-1%22%3EDescriptions%3C%2Fli%3E%3Cli%20role%3D%22menuitem%22%20tabindex%3D%22-1%22%3EKeyboard%3C%2Fli%3E%3Cli%20role%3D%22menuitem%22%20tabindex%3D%22-1%22%3ETranscript%3C%2Fli%3E%3C%2Ful%3E%3Cul%20id%3D%22ableMediaId_0-captions-menu%22%20class%3D%22able-popup%20able-popup-captions%22%20role%3D%22menu%22%20style%3D%22display%3A%20none%3B%22%3E%3Cli%20role%3D%22menuitemradio%22%20tabindex%3D%22-1%22%20lang%3D%22en%22%20aria-checked%3D%22true%22%3EEnglish%3C%2Fli%3E%3Cli%20role%3D%22menuitemradio%22%20tabindex%3D%22-1%22%20lang%3D%22fr%22%20aria-checked%3D%22false%22%3Efran%C3%A7ais%3C%2Fli%3E%3Cli%20role%3D%22menuitemradio%22%20tabindex%3D%22-1%22%20aria-checked%3D%22false%22%3ECaptions%20off%3C%2Fli%3E%3C%2Ful%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-status-bar%22%3E%3Cspan%20class%3D%22able-timer%22%3E%3Cspan%20class%3D%22able-elapsedTime%22%3E0%3A00%3C%2Fspan%3E%3Cspan%20class%3D%22able-duration%22%3E%20%2F%202%3A07%3C%2Fspan%3E%3C%2Fspan%3E%3Cspan%20class%3D%22able-speed%22%20aria-live%3D%22assertive%22%3ESpeed%3A%201x%3C%2Fspan%3E%3Cspan%20class%3D%22able-status%22%20aria-live%3D%22polite%22%3EStopped%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22alert%22%20class%3D%22able-alert%22%20style%3D%22display%3A%20none%3B%20top%3A%200px%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22alert%22%20class%3D%22able-screenreader-alert%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-transcript-area%22%20role%3D%22dialog%22%20aria-label%3D%22Transcript%22%20style%3D%22display%3A%20none%3B%22%3E%3Cdiv%20class%3D%22able-window-toolbar%20able-white-controls%20able-draggable%22%3E%3Cdiv%20role%3D%22alert%22%20class%3D%22able-alert%22%20style%3D%22display%3A%20none%3B%20top%3A%201024.2px%3B%22%3E%3C%2Fdiv%3E%3Cbutton%20type%3D%22button%22%20tabindex%3D%220%22%20aria-label%3D%22Window%20options%22%20aria-haspopup%3D%22true%22%20aria-controls%3D%22ableMediaId_0-transcript-window-menu%22%20aria-expanded%3D%22false%22%20class%3D%22able-button-handler-preferences%22%3E%3Cimg%20alt%3D%22%22%20role%3D%22presentation%22%3E%3Cspan%20class%3D%22able-clipped%22%3EWindow%20options%3C%2Fspan%3E%3C%2Fbutton%3E%3Cdiv%20class%3D%22able-tooltip%22%20id%3D%22ableMediaId_0-transcript-window-tooltip%22%20style%3D%22display%3A%20none%3B%22%3E%3C%2Fdiv%3E%3Cul%20id%3D%22ableMediaId_0-transcript-window-menu%22%20class%3D%22able-popup%22%20role%3D%22menu%22%20style%3D%22display%3A%20none%3B%22%3E%3Cli%20role%3D%22menuitem%22%20tabindex%3D%22-1%22%20data-choice%3D%22move%22%3EMove%3C%2Fli%3E%3Cli%20role%3D%22menuitem%22%20tabindex%3D%22-1%22%20data-choice%3D%22resize%22%3EResize%3C%2Fli%3E%3Cli%20role%3D%22menuitem%22%20tabindex%3D%22-1%22%20data-choice%3D%22close%22%3EClose%3C%2Fli%3E%3C%2Ful%3E%3Clabel%20for%3D%22autoscroll-transcript-checkbox-ableMediaId_0%22%3EAuto%20scroll%3C%2Flabel%3E%3Cinput%20id%3D%22autoscroll-transcript-checkbox-ableMediaId_0%22%20type%3D%22checkbox%22%3E%3Cdiv%20class%3D%22transcript-language-select-wrapper%22%3E%3Clabel%20for%3D%22transcript-language-select-ableMediaId_0%22%3ELanguage%3C%2Flabel%3E%3Cselect%20id%3D%22transcript-language-select-ableMediaId_0%22%3E%3Coption%20value%3D%22en%22%20lang%3D%22en%22%3EEnglish%3C%2Foption%3E%3Coption%20value%3D%22fr%22%20lang%3D%22fr%22%3Efran%C3%A7ais%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-transcript%22%3E%3Cdiv%20class%3D%22able-transcript-container%22%20lang%3D%22en%22%3E%3Ch4%20class%3D%22able-transcript-heading%22%20lang%3D%22en%22%3ETranscript%3C%2Fh4%3E%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%220.84%22%20data-end%3D%225%22%3EEvaluating%20web%20accessibility%3A%20resources%20overview.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%225.8%22%20data-end%3D%228.5%22%3EEvaluation%20helps%20you%20ensure%20that%20your%20websites%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%228.5%22%20data-end%3D%2211.84%22%3Eand%20applications%20meet%20accessibility%20requirements.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2212.44%22%20data-end%3D%2217%22%3EIdeally%20you%20evaluate%20regularly%20throughout%0Athe%20design%20and%20development%20process.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2217%22%20data-end%3D%2222.24%22%3EThis%20way%20you%20find%20errors%20early%0Aand%20avoid%20costly%20repairs%20later%20in%20the%20process.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2223.73%22%20data-end%3D%2228.3%22%3EThe%20W3C%20Web%20Accessibility%20Initiative%2C%20W-A-I%2C%20or%20WAI%2C%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2228.4%22%20data-end%3D%2232.56%22%3Eprovides%20free%20resources%0Ato%20help%20you%20with%20your%20evaluation.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2234.08%22%20data-end%3D%2241.64%22%3E%22Easy%20Checks%20-%20A%20First%20Review%20of%20Web%20Accessibility%22%0Aexplains%20how%20you%20can%20do%20some%20checks%20yourself.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2241.649%22%20data-end%3D%2244.9%22%3EEven%20if%20you%20are%20new%20to%20web%20accessibility%0Aand%20not%20technical%2C%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2244.9%22%20data-end%3D%2249.3%22%3Ethese%20checks%20give%20you%20a%20rough%20idea%0Aof%20the%20accessibility%20of%20any%20web%20page.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2250.62%22%20data-end%3D%2257.28%22%3EWAI%20maintains%20a%20%22Web%20Accessibility%20Evaluation%0ATools%20List%22%20that%20you%20can%20filter.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2257.28%22%20data-end%3D%2263.9%22%3E%22Selecting%20Web%20Accessibility%20Evaluation%20Tools%22%0Aexplains%20what%20tools%20can%20and%20cannot%20do.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2266.02%22%20data-end%3D%2270.38%22%3EFor%20more%20experienced%20evaluators%2C%0AWAI%20provides%20%22WCAG-EM%22%2C%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2270.46%22%20data-end%3D%2274.88%22%3Ethe%20%22Website%20Accessibility%20Conformance%0AEvaluation%20Methodology%22.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2276.16%22%20data-end%3D%2278.28%22%3EThe%20%22WCAG-EM%20Report%20Tool%22%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2278.28%22%20data-end%3D%2282.42%22%3Ehelps%20you%20record%20the%20findings%0Aas%20you%20follow%20the%20methodology.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2282.9%22%20data-end%3D%2284.62%22%3ETo%20help%20you%20better%20understand%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2284.62%22%20data-end%3D%2288.04%22%3Ehow%20different%20users%0Aexperience%20your%20website%20and%20applications%2C%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2288.14%22%20data-end%3D%2294.36%22%3EWAI%20provides%20guidance%20in%20%22Involving%20Users%0Ain%20Web%20Projects%20for%20Better%2C%20Easier%20Accessibility%22%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%2294.92%22%20data-end%3D%2299.44%22%3Eand%20%22Involving%20Users%0Ain%20Evaluating%20Web%20Accessibility%22.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%22100.14%22%20data-end%3D%22104.9%22%3EWith%20all%20these%20resources%2C%20you%20can%20learn%0Ahow%20to%20check%20your%20website%20for%20accessibility%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%22105.02%22%20data-end%3D%22108.18%22%3Eand%20prioritize%20the%20issues%0Ayou%20need%20to%20address%20first.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%22109.88%22%20data-end%3D%22114.78%22%3EWeb%20accessibility%3A%0Aessential%20for%20some%2C%20useful%20for%20all.%20%3C%2Fspan%3E%20%0A%3Cspan%20class%3D%22able-transcript-seekpoint%20able-transcript-caption%20able-block-temp%22%20data-start%3D%22115.16%22%20data-end%3D%22123.82%22%3EFor%20resources%20on%20evaluating%20web%20accessibility%0Avisit%20w3.org%2FWAI%2Fevaluation%20%3C%2Fspan%3E%20%0A%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-resizable%22%20style%3D%22z-index%3A%207100%3B%22%3E%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22none%22%3E%3Cline%20x1%3D%22100%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22100%22%20vector-effect%3D%22non-scaling-stroke%22%3E%3C%2Fline%3E%3Cline%20x1%3D%2233%22%20y1%3D%22100%22%20x2%3D%22100%22%20y2%3D%2233%22%20vector-effect%3D%22non-scaling-stroke%22%3E%3C%2Fline%3E%3Cline%20x1%3D%2267%22%20y1%3D%22100%22%20x2%3D%22100%22%20y2%3D%2267%22%20vector-effect%3D%22non-scaling-stroke%22%3E%3C%2Fline%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%20%20%3Cp%3E%3Ca%20href%3D%22%23alternatives%22%3EAlternatives%20for%20Video%20Introduction%20-%20Resources%20Overview%3C%2Fa%3E%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%0A%3Cp%3EWhen%20developing%20or%20redesigning%20a%20website%20or%20web%20application%2C%20evaluate%20accessibility%20early%20and%20throughout%20the%20development%20process%20to%20identify%20accessibility%20problems%20early%2C%20when%20it%20is%20easier%20to%20address%20them.%3C%2Fp%3E%0A%0A%3Cp%3EThere%20are%20evaluation%20tools%20that%20help%20with%20evaluation.%20However%2C%20no%20tool%20alone%20can%20determine%20if%20a%20site%20meets%20accessibility%20standards.%20Knowledgeable%20human%20evaluation%20is%20required%20to%20determine%20if%20a%20site%20is%20accessible.%3C%2Fp%3E%0A%0A%3Ch2%20id%3D%22initial%22%3EInitial%20Checks%3C%2Fh2%3E%0A%0A%3Cdiv%20class%3D%22video-card%22%3E%0A%20%20%0A%20%20%3Cvideo%20controls%3D%22%22%20poster%3D%22%2FWAI%2Fcontent-images%2Ftest-eval%2Fvideo-thumb-easy-checks.png%22%3E%0A%20%20%0A%20%20%20%20%3Csource%20type%3D%22video%2Fmp4%22%3E%3Ctrack%20label%3D%22English%22%20kind%3D%22captions%22%20srclang%3D%22en%22%20default%3D%22%22%3E%3C%2Fvideo%3E%0A%20%20%0A%20%20%20%3Cp%3EThis%20video%20is%20available%20with%20more%20accessibility%20features%3A%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FWAI%2Ftest-evaluate%2Fpreliminary%2F%23video-intro%22%3EVideo%3A%20Easy%20Checks%20Overview%3C%2Fa%3E.%3C%2Fp%3E%0A%20%20%0A%3C%2Fdiv%3E%0A%0A%3Cp%3EEven%20if%20you%20don%E2%80%99t%20know%20anything%20about%20accessibility%20and%20you%20don%E2%80%99t%20have%20a%20robust%20accessibility%20tool%2C%20you%20can%20check%20some%20aspects%20of%20accessibility.%3C%2Fp%3E%0A%0A%3Cdl%3E%0A%20%20%3Cdt%3E%3Ca%20href%3D%22%2FWAI%2Ftest-evaluate%2Fpreliminary%2F%22%3EEasy%20Checks%20%E2%80%94%20A%20First%20Review%20of%20Web%20Accessibility%3C%2Fa%3E%3C%2Fdt%3E%0A%20%20%3Cdd%3EProvides%20step-by-step%20guidance%20and%20brief%20explanations%20for%20checking%20some%20aspects%20of%20accessibility.%3C%2Fdd%3E%0A%3C%2Fdl%3E%0A%0A%3Ch2%20id%3D%22tools%22%3ETools%3C%2Fh2%3E%0A%0A%3Cdiv%20class%3D%22video-card%22%3E%0A%20%20%0A%20%20%3Cvideo%20controls%3D%22%22%20poster%3D%22%2FWAI%2Fcontent-images%2Ftest-eval%2Fvideo-thumb-tools.png%22%3E%0A%20%20%0A%20%20%20%20%3Csource%20type%3D%22video%2Fmp4%22%3E%3Ctrack%20label%3D%22English%22%20kind%3D%22captions%22%20srclang%3D%22en%22%20default%3D%22%22%3E%3C%2Fvideo%3E%0A%20%20%0A%20%20%20%3Cp%3EThis%20video%20is%20available%20with%20more%20accessibility%20features%3A%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FWAI%2Ftest-evaluate%2Ftools%2F%23video-intro%22%3EVideo%3A%20Evaluation%20Tools%20Overview%3C%2Fa%3E.%3C%2Fp%3E%0A%20%20%0A%3C%2Fdiv%3E%0A%0A%3Cp%3EWeb%20accessibility%20evaluation%20tools%20are%20software%20programs%20or%20online%20services%20that%20help%20determine%20if%20web%20content%20meets%20accessibility%20standards.%3C%2Fp%3E%0A%0A%3Cdl%3E%0A%20%20%3Cdt%3E%3Ca%20href%3D%22%2FWAI%2Ftest-evaluate%2Ftools%2Flist%2F%22%3EWeb%20Accessibility%20Evaluation%20Tools%20List%3C%2Fa%3E%3C%2Fdt%3E%0A%20%20%3Cdd%3EIncludes%20information%20on%20more%20than%20100%20tools.%20You%20can%20use%20the%20filters%20to%20narrow%20down%20the%20list%20to%20the%20types%20of%20tools%20you%20are%20interested%20in.%3C%2Fdd%3E%0A%20%20%3Cdt%3E%3Ca%20href%3D%22%2FWAI%2Ftest-evaluate%2Ftools%2Fselecting%2F%22%3ESelecting%20Web%20Accessibility%20Evaluation%20Tools%3C%2Fa%3E%3C%2Fdt%3E%0A%20%20%3Cdd%3EProvides%20guidance%20on%20choosing%20tools.%20It%20describes%20the%20features%20and%20functionality%20of%20different%20types%20of%20evaluation%20tools%2C%20and%20discusses%20things%20to%20consider%20for%20your%20situation.%3C%2Fdd%3E%0A%3C%2Fdl%3E%0A%0A%3Ch2%20id%3D%22conformance%22%3EConformance%20Evaluation%20and%20Reports%3C%2Fh2%3E%0A%0A%3Cdiv%20class%3D%22video-card%22%3E%0A%20%20%0A%20%20%3Cvideo%20controls%3D%22%22%20poster%3D%22%2FWAI%2Fcontent-images%2Ftest-eval%2Fvideo-thumb-conformance.png%22%3E%0A%20%20%0A%20%20%20%20%3Csource%20type%3D%22video%2Fmp4%22%3E%3Ctrack%20label%3D%22English%22%20kind%3D%22captions%22%20srclang%3D%22en%22%20default%3D%22%22%3E%3C%2Fvideo%3E%0A%20%20%0A%20%20%20%3Cp%3EThis%20video%20is%20available%20with%20more%20accessibility%20features%3A%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FWAI%2Ftest-evaluate%2Fconformance%2F%23video-intro%22%3EVideo%3A%20Conformance%20Evaluation%20Overview%3C%2Fa%3E.%3C%2Fp%3E%0A%20%20%0A%3C%2Fdiv%3E%0A%0A%3Cp%3EConformance%20evaluation%20determines%20how%20well%20web%20pages%20or%20applications%20meet%20accessibility%20standards.%20W3C%E2%80%99s%20Website%20Accessibility%20Conformance%20Evaluation%20Methodology%20(WCAG-EM)%20is%20an%20approach%20for%20determining%20conformance%20to%20Web%20Content%20Accessibility%20Guidelines%20(WCAG).%3C%2Fp%3E%0A%0A%3Cdl%3E%0A%20%20%3Cdt%3E%3Ca%20href%3D%22%2FWAI%2Ftest-evaluate%2Fconformance%2Fwcag-em%2F%22%3EWCAG-EM%20Overview%3A%20Website%20Accessibility%20Conformance%20Evaluation%20Methodology%3C%2Fa%3E%3C%2Fdt%3E%0A%20%20%3Cdd%3EA%20short%20page%20with%20basic%20information%20to%20get%20you%20started.%20We%20suggest%20you%20read%20it%20before%20going%20to%20the%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FTR%2FWCAG-EM%2F%22%3Efull%20WCAG-EM%20document%3C%2Fa%3E.%3C%2Fdd%3E%0A%20%20%3Cdt%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FWAI%2Feval%2Freport-tool%2F%22%3EWCAG-EM%20Report%20Tool%3A%20Website%20Accessibility%20Evaluation%20Report%20Generator%3C%2Fa%3E%3C%2Fdt%3E%0A%20%20%3Cdd%3EHelps%20you%20generate%20evaluation%20reports%20according%20to%20WCAG-EM.%20It%20does%20not%20do%20the%20checking%20for%20you.%20It%20helps%20you%20follow%20the%20steps%20of%20WCAG-EM%20and%20it%20generates%20a%20report%20from%20the%20input%20you%20provide.%3C%2Fdd%3E%0A%20%20%3Cdt%3E%3Ca%20href%3D%22%2FWAI%2Ftest-evaluate%2Freport-template%2F%22%3ETemplate%20for%20Web%20Accessibility%20Evaluation%20Reports%3C%2Fa%3E%3C%2Fdt%3E%0A%20%20%3Cdd%3ESuggests%20information%20to%20include%20in%20a%20report.%3C%2Fdd%3E%0A%20%20%3Cdt%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FWAI%2Fatag%2Freport-tool%2F%22%3EATAG%20Report%20Tool%3C%2Fa%3E%3C%2Fdt%3E%0A%20%20%3Cdd%3EHelps%20you%20generate%20a%20report%20on%20how%20a%20tool%20meets%20Authoring%20Tool%20Accessibility%20Guidelines%20(%3Ca%20href%3D%22%2FWAI%2Fstandards-guidelines%2Fatag%2F%22%3EATAG%3C%2Fa%3E).%20Authoring%20tools%20are%20software%20and%20services%20used%20to%20create%20web%20content%20%E2%80%93%20such%20as%20content%20management%20systems%20(CMS)%20and%20what-you-see-is-what-you-get%20(WYSIWYG)%20HTML%20editors.%3C%2Fdd%3E%0A%20%20%3Cdt%3E%3Ca%20href%3D%22%2FWAI%2Fstandards-guidelines%2Fact%2Frules%2Fabout%2F%22%3EAccessibility%20Conformance%20Testing%20(ACT)%20Rules%3C%2Fa%3E%3C%2Fdt%3E%0A%20%20%3Cdd%3EDescribe%20how%20to%20test%20conformance%20of%20accessibility%20standards%20such%20as%20WCAG%20and%20WAI-ARIA.%20ACT%20Rules%20are%20primarily%20used%20by%20developers%20of%20test%20tools%20and%20methodologies.%20Accessibility%20testers%20may%20find%20some%20rules%20helpful%20for%20evaluating%20edge%20cases%20consistently.%3C%2Fdd%3E%0A%3C%2Fdl%3E%0A%0A%3C!--%20Communicate%20the%20results%20of%20evaluation%20clearly%2C%20including%20the%20scope%20of%20the%20evaluation.%20--%3E%0A%0A%3Cp%3ESpecifications%20for%20expressing%20test%20results%20(EARL)%20and%20for%20writing%20accessibility%20test%20rules%20(Accessibility%20Conformance%20Testing%20(ACT)%20Rules%20Format)%20are%20introduced%20in%20%3Ca%20href%3D%22%2FWAI%2Fstandards-guidelines%2Fevaluation%2F%22%3EEvaluation%20Standards%20Overview%3C%2Fa%3E.%3C%2Fp%3E%0A%0A%3Ch2%20id%3D%22people%22%3EPeople%3C%2Fh2%3E%0A%0A%3Cdiv%20class%3D%22video-card%22%3E%0A%20%20%0A%20%20%3Cvideo%20controls%3D%22%22%20poster%3D%22%2FWAI%2Fcontent-images%2Ftest-eval%2Fvideo-thumb-involving-users.png%22%3E%0A%20%20%0A%20%20%20%20%3Csource%20type%3D%22video%2Fmp4%22%3E%3Ctrack%20label%3D%22English%22%20kind%3D%22captions%22%20srclang%3D%22en%22%20default%3D%22%22%3E%3C%2Fvideo%3E%0A%20%20%0A%20%20%20%3Cp%3EThis%20video%20is%20available%20with%20more%20accessibility%20features%3A%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FWAI%2Ftest-evaluate%2Finvolving-users%2F%23video-intro%22%3EVideo%3A%20Involving%20Users%20in%20Web%20Accessibility%20Overview%3C%2Fa%3E.%3C%2Fp%3E%0A%20%20%0A%3C%2Fdiv%3E%0A%0A%3Cp%3EGetting%20the%20right%20people%20and%20skills%20involved%20makes%20your%20accessibility%20evaluations%20more%20effective.%3C%2Fp%3E%0A%0A%3Cdl%3E%0A%20%20%3Cdt%3E%3Ca%20href%3D%22%2FWAI%2Ftest-evaluate%2Fcombined-expertise%2F%22%3EUsing%20Combined%20Expertise%20to%20Evaluate%20Web%20Accessibility%3C%2Fa%3E%3C%2Fdt%3E%0A%20%20%3Cdd%3EDiscusses%20skill%20sets%20and%20considerations%20for%20collaborative%20review.%3C%2Fdd%3E%0A%20%20%3Cdt%3E%3Ca%20href%3D%22%2FWAI%2Ftest-evaluate%2Finvolving-users%2F%22%3EInvolving%20Users%20in%20Evaluating%20Web%20Accessibility%3C%2Fa%3E%3C%2Fdt%3E%0A%20%20%3Cdd%3EProvides%20guidance%20on%20including%20people%20with%20disabilities%20(%E2%80%9Cusers%E2%80%9D)%20in%20evaluation%20throughout%20project%20development.%3C%2Fdd%3E%0A%3C%2Fdl%3E%0A%0A%3Chr%3E%0A%0A%3Cdetails%20id%3D%22video-intro-transcript%22%3E%3Csummary%3E%0A%0A%20%20%20%20%3Ch2%20id%3D%22alternatives%22%3EAlternatives%20for%20Video%20Introduction%20-%20Resources%20Overview%3C%2Fh2%3E%0A%0A%20%20%3C%2Fsummary%3E%0A%20%20%3Cdiv%3E%0A%0A%20%20%20%20%3Cp%3E%3Cem%3EThis%20video%20is%20also%20available%20on%20a%20W3C%20server%3A%20%3Ca%20href%3D%22https%3A%2F%2Fmedia.w3.org%2Fwai%2Fevaluation-intros%2Fevaluating-resources-overview.mp4%22%3EVideo%3A%20Evaluating%20Web%20Accessibility%20-%20Resources%20Overview%20(file%20format%3A%20MP4%2C%20file%20size%3A%2045MB)%3C%2Fa%3E.%3C%2Fem%3E%3C%2Fp%3E%0A%0A%20%20%20%20%3Ch3%20id%3D%22transcript%22%3EText%20Transcript%20with%20Description%20of%20Visuals%20for%20Video%20Introduction%20-%20Resources%20Overview%3C%2Fh3%3E%0A%0A%20%20%20%20%3Ctable%20aria-labelledby%3D%22transcript%22%3E%0A%20%20%3Ctbody%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Cth%3EAudio%3C%2Fth%3E%0A%20%20%20%20%20%20%3Cth%3EVisual%3C%2Fth%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3EEvaluating%20web%20accessibility%3A%20resources%20overview%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EEvaluating%20web%20accessibility%3A%20resources%20overview.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%20%3Ctd%3EEvaluation%20helps%20you%20ensure%20that%20your%20websites%20and%20applications%20meet%20accessibility%20requirements.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EA%20magnifying%20glass%20with%20the%20word%20evaluation%20on%20a%20computer%20screen%20with%20a%20website%20on%20it.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3EIdeally%20you%20evaluate%20regularly%20throughout%20the%20design%20and%20development%20process.%20This%20way%20you%20find%20errors%20early%20and%20avoid%20costly%20repairs%20later%20in%20the%20process.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EThe%20web%20page%20components%20rearrange%20on%20the%20page%20until%20following%20a%20good%20design.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3EThe%20W3C%20Web%20Accessibility%20Initiative%2C%20W-A-I%2C%20or%20WAI%2C%20provides%20free%20resources%20to%20help%20you%20with%20your%20evaluation.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EW3C%20and%20Web%20Accessibility%20Initiative%20(WAI)%20logos.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3E%22Easy%20Checks%20-%20A%20First%20Review%20of%20Web%20Accessibility%22%20explains%20how%20you%20can%20do%20some%20checks%20yourself.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3E%22Easy%20Checks%20-%20A%20First%20Review%20of%20Web%20Accessibility%22.%20A%20person%20in%20front%20of%20the%20computer.%20A%20light%20bulb%20appears.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3EEven%20if%20you%20are%20new%20to%20web%20accessibility%20and%20not%20technical%2C%20these%20checks%20give%20you%20a%20rough%20idea%20of%20the%20accessibility%20of%20any%20web%20page.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EA%20document%20of%20checks.%20Each%20check%20is%20highlighted%20to%20show%20fails%20or%20passes.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3EWAI%20also%20maintains%20a%20%22Web%20Accessibility%20Evaluation%20Tools%20List%22%20that%20you%20can%20filter.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EWeb%20Accessibility%20Evaluation%20Tools%20List.%20A%20list%20of%20tools%20displayed%20as%20icons..%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3E%22Selecting%20Web%20Accessibility%20Evaluation%20Tools%22%20explains%20what%20tools%20can%20and%20cannot%20do.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3ESelecting%20Web%20Accessibility%20Evaluation%20Tools.%20The%20tools%20icons%20displayed%20in%20a%20computer.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3EFor%20more%20experienced%20evaluators%2C%20WAI%20provides%20%22WCAG-EM%22%2C%20the%20%22Website%20Accessibility%20Conformance%20Evaluation%20Methodology%22.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EWCAG-EM.%20Website%20Accessibility%20Conformance%20Evaluation%20Methodology.%20A%20person%20in%20front%20of%20a%20computer.%20A%20simplified%20report%20is%20displayed.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3EThe%20%22WCAG-EM%20Report%20Tool%22%20helps%20you%20record%20the%20findings%20as%20you%20follow%20the%20methodology.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EWCAG-EM%20Report%20Tool.%20A%20progress%20bar%20shows%20the%20various%20stages%20of%20the%20evaluation%20methodology.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3ETo%20help%20you%20better%20understand%20how%20different%20users%20experience%20your%20website%20and%20applications%2C%20WAI%20provides%20guidance%20in%20%22Involving%20Users%20in%20Web%20Projects%20for%20Better%2C%20Easier%20Accessibility%22%20and%20%22Involving%20users%20in%20Evaluating%20Web%20Accessibility.%22%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EThe%20screen%20splits%20into%2012%20fields%20each%20with%20a%20different%20user%20in%20front%20of%20a%20computer.%20Involving%20Users%20in%20Web%20Projects%20for%20Better%2C%20Easier%20Accessibility%20and%20Involving%20users%20in%20Evaluating%20Web%20Accessibility%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3EWith%20all%20these%20resources%2C%20you%20can%20learn%20how%20to%20check%20your%20website%20for%20accessibility%20and%20prioritize%20the%20issues%20you%20need%20to%20address%20first.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EA%20magnifying%20glass%20with%20the%20words%20check%20for%20accessibility%20is%20replaced%20with%20a%20list%20of%20issues.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3EWeb%20accessibility%3A%20essential%20for%20some%2C%20useful%20for%20all.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EIcons%20around%20a%20computer%3A%20hand%3B%20eye%3B%20brain%3B%20ear%3B%20and%20mouth%20with%20sound%20waves.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%20%20%3Ctr%3E%0A%20%20%20%20%20%20%3Ctd%3EFor%20resources%20on%20evaluating%20web%20accessibility%2C%20visit%20w3.o-r-g%2FW-A-I%2Fevaluation.%20%3C%2Ftd%3E%0A%20%20%20%20%20%20%3Ctd%3EEvaluation%20resources%2C%20W3C%20and%20Web%20Accessibility%20Initiative%20(WAI)%20logos.%3C%2Ftd%3E%0A%20%20%20%20%3C%2Ftr%3E%0A%20%20%3C%2Ftbody%3E%0A%3C%2Ftable%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdetails%3E%0A%0A%0A%20%20%20%20%3Caside%20class%3D%22box%20box-icon%20box-space-above%22%20id%3D%22helpimprove%22%20aria-label%3D%22feedback%22%3E%3Cheader%20class%3D%22box-h%20%20box-h-icon%20box-h-space-above%20box-h-icon%22%3E%20%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20class%3D%22icon-comments%20%22%3E%3Cuse%20xlink%3Ahref%3D%22%2FWAI%2Fassets%2Fimages%2Ficons.svg%23icon-comments%22%3E%3C%2Fuse%3E%3C%2Fsvg%3E%20%3Ch2%3E%20Help%20improve%20this%20page%20%3C%2Fh2%3E%3C%2Fheader%3E%3Cdiv%20class%3D%22box-i%22%3E%3Cp%3EPlease%20share%20your%20ideas%2C%20suggestions%2C%20or%20comments%20via%20e-mail%20to%20the%20publicly-archived%20list%20%3Ca%20href%3D%22mailto%3Awai%40w3.org%3Fbody%3D%255Binclude%2520a%2520relevant%2520email%2520Subject%255D%250A%250A%255Bput%2520comment%2520here...%255D%250A%250AI%2520give%2520permission%2520to%2520share%2520this%2520to%2520a%2520publicly-archived%2520e-mail%2520list.%22%3Ewai%40w3.org%3C%2Fa%3E%20or%20via%20GitHub.%3C%2Fp%3E%0A%3Cdiv%20class%3D%22button-group%22%3E%0A%20%20%20%20%3Ca%20href%3D%22mailto%3Awai%40w3.org%3Fbody%3D%255Binclude%2520a%2520relevant%2520email%2520Subject%255D%250A%250A%255Bput%2520comment%2520here...%255D%250A%250AI%2520give%2520permission%2520to%2520share%2520this%2520to%2520a%2520publicly-archived%2520e-mail%2520list.%22%20class%3D%22button%22%3E%3Cspan%3EE-mail%3C%2Fspan%3E%3C%2Fa%3E%3Ca%20href%3D%22%0Ahttps%3A%2F%2Fgithub.com%2Fw3c%2Fwai-website%2Fedit%2Fmain%2Fpages%2Ftest-evaluate%2Findex.md%0A%22%20class%3D%22button%22%3E%3Cspan%3EFork%20%26amp%3B%20Edit%20on%20GitHub%3C%2Fspan%3E%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Fw3c%2Fwai-website%2Fissues%2Fnew%3Ftemplate%3Dcontent-issue.yml%26amp%3Bwai-resource-id%3Dwai-evaluation-overview%26amp%3Bwai-url%3Dhttps%3A%2F%2Fwww.w3.org%2FWAI%2Ftest-evaluate%2F%22%20class%3D%22button%22%3E%3Cspan%3ENew%20GitHub%20Issue%3C%2Fspan%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Faside%3E%0A%0A%0A%20%20%20%20%3Ca%20class%3D%22button%20button-backtotop%22%20href%3D%22%23top%22%3E%3Cspan%3E%3Csvg%20focusable%3D%22false%22%20aria-hidden%3D%22true%22%20class%3D%22icon-arrow-up%20%22%3E%3Cuse%20xlink%3Ahref%3D%22%2FWAI%2Fassets%2Fimages%2Ficons.svg%23icon-arrow-up%22%3E%3C%2Fuse%3E%3C%2Fsvg%3E%20Back%20to%20Top%3C%2Fspan%3E%3C%2Fa%3E%0A%20%20%3C%2Fmain%3E%0A%3C%2Fdiv%3E%0A%0A%0A%20%20%3Cfooter%20id%3D%22wai-site-footer%22%20class%3D%22page-footer%20default-grid%22%20aria-label%3D%22Page%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22inner%22%3E%3Cp%3E%3Cstrong%3EUpdated%3A%3C%2Fstrong%3E%20%201%20August%202023.%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2FWAI%2Ftest-evaluate%2Fchangelog%2F%22%3ELatest%20changes%3C%2Fa%3E.%3C%2Fp%3E%3Cp%3ENote%20about%20video%20description%3A%20The%20videos%20on%20this%20page%20do%20not%20include%20synchronized%20audio%20description%20because%20the%20visuals%20only%20illustrate%20the%20audio%20and%20do%20not%20provide%20additional%20information.%20In%20this%20case%2C%20audio%20description%20would%20be%20more%20distracting%20than%20useful%20to%20most%20people%2C%20including%20people%20who%20cannot%20see%20the%20visuals.%20Description%20of%20visual%20information%20is%20integrated%20in%20the%20Text%20Transcript%20with%20Description%20of%20Visuals%20(%E2%80%9Cdescriptive%20transcript%E2%80%9D).%3C%2Fp%3E%20%3Cp%3E%3Cstrong%3EEditor%3A%3C%2Fstrong%3E%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FPeople%2FShawn%2F%22%3EShawn%20Lawton%20Henry%3C%2Fa%3E.%3C%2Fp%3E%20%3Cp%3EVideos%20developed%20by%20the%20Education%20and%20Outreach%20Working%20Group%20(%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FWAI%2FEO%2F%22%3EEOWG%3C%2Fa%3E)%20with%20support%20from%20the%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FWAI%2Fabout%2Fprojects%2Fwai-guide%2F%22%3EWAI-Guide%3C%2Fa%3E%20project%20funded%20by%20the%20European%20Commission%20(EC)%20under%20the%20Horizon%202020%20program%20(Grant%20Agreement%20822245).%20%3Ca%20href%3D%22.%2Facknowledgements%2F%22%3EAcknowledgements%3C%2Fa%3E.%3C%2Fp%3E%20%3Cp%3E%3Ca%20rel%3D%22license%22%20href%3D%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F4.0%2F%22%3E%3Cimg%20alt%3D%22Creative%20Commons%20License%22%20style%3D%22border-width%3A0%22%3E%3C%2Fa%3E%20The%20videos%20are%20licensed%20under%20a%20%3Ca%20rel%3D%22license%22%20href%3D%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby%2F4.0%2F%22%3ECreative%20Commons%20Attribution%204.0%20International%20License%3C%2Fa%3E.%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%20%20%3C%2Ffooter%3E%0A%20%20%3Cfooter%20class%3D%22w3c-global-footer%20wai-global-footer%20default-grid%22%20aria-label%3D%22Site%22%3E%0A%20%20%3Cdiv%20class%3D%22inner%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22wai-global-footer__content%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22wai-global-footer__subsite%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2FWAI%2F%22%20lang%3D%22en%22%20dir%3D%22auto%22%20translate%3D%22no%22%3EW3C%20Web%20Accessibility%20Initiative%20(WAI)%3C%2Fa%3E%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22wai-global-footer__subsite-desc%22%3EStrategies%2C%20standards%2C%20resources%20to%20make%20the%20Web%20accessible%20to%20people%20with%20disabilities%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22wai-global-footer__cta%20w3c-l-cluster%20w3c-l-cluster--vertical-align%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22w3c-clean-list%22%20role%3D%22list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22w3c-with-icon--before%20w3c-with-icon--larger%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22w3c-icon%20w3c-icon--larger%22%20width%3D%2230%22%20height%3D%2230%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2FWAI%2Fnews%2Fsubscribe%2F%22%3EGet%20News%20in%20Email%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22w3c-with-icon--before%20w3c-with-icon--larger%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22w3c-icon%20w3c-icon--larger%22%20width%3D%2230%22%20height%3D%2230%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fw3c-wai%2F%22%20translate%3D%22no%22%3ELinkedIn%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22w3c-with-icon--before%20w3c-with-icon--larger%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22w3c-icon%20w3c-icon--larger%22%20width%3D%2230%22%20height%3D%2230%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fw3c.social%2F%40wai%22%20translate%3D%22no%22%3EMastodon%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22w3c-with-icon--before%20w3c-with-icon--larger%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20class%3D%22w3c-icon%20w3c-icon--larger%22%20width%3D%2230%22%20height%3D%2230%22%20alt%3D%22%22%20aria-hidden%3D%22true%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCU6ljj3m1fglIPjSjs2DpRA%2Fplaylists%2F%22%20translate%3D%22no%22%3EYouTube%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22w3c-global-footer__links%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22w3c-l-cluster%22%3E%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22w3c-clean-list%22%20role%3D%22list%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2F%22%3EHome%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2Fabout%2Fcontacting%2F%22%3EContact%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2Fsitemap%2F%22%3ESite%20map%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2Fabout%2Fsupport%2F%22%3ESupport%20WAI%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2Fnews%2F%22%3ENews%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2Fabout%2Faccessibility-statement%2F%22%3EAccessibility%20statement%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2Ftranslations%2F%22%3EAll%20Translations%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22%2FWAI%2Froles%2F%22%3EResources%20for%20roles%3C%2Fa%3E%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cp%20class%3D%22w3c-copyright%22%20translate%3D%22no%22%3ECopyright%20%C2%A9%202026%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2F%22%3EWorld%20Wide%20Web%09Consortium%3C%2Fa%3E.%3Cbr%3E%0A%20%20%20%20%20%20%3Cabbr%20title%3D%22World%20Wide%20Web%20Consortium%22%3EW3C%3C%2Fabbr%3E%3Csup%3E%C2%AE%3C%2Fsup%3E%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2Fpolicies%2F%23disclaimers%22%3Eliability%3C%2Fa%3E%2C%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fwww.w3.org%2Fpolicies%2F%23trademarks%22%3Etrademark%3C%2Fa%3E%20and%0A%20%20%20%20%20%20%3Ca%20rel%3D%22license%22%20href%3D%22https%3A%2F%2Fwww.w3.org%2Fcopyright%2Fsoftware-license%2F%22%20title%3D%22W3C%20Software%20License%22%3Epermissive%20license%3C%2Fa%3E%0A%20%20%20%20%20%20rules%20apply%20unless%20otherwise%20noted.%20See%20%3Ca%20href%3D%22%2FWAI%2Fabout%2Fusing-wai-material%2F%22%3EPermission%20to%20Use%20WAI%20Material%3C%2Fa%3E.%3C%2Fp%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%3C!--%20Details4Everybody%20--%3E%0A%0A%3C!--%20SVG4Everybody%20--%3E%0A%0A%0A%0A%0A%20%20%0A%0A%3Cdiv%20class%3D%22able-resize-form%20able-modal-dialog%22%20aria-labelledby%3D%22modalTitle-961133432%22%20aria-hidden%3D%22true%22%20role%3D%22dialog%22%20aria-modal%3D%22true%22%20style%3D%22width%3A%2020em%3B%22%3E%3Cbutton%20class%3D%22modalCloseButton%22%20title%3D%22Close%20dialog%22%20aria-label%3D%22Close%20dialog%22%3EX%3C%2Fbutton%3E%3Ch1%20id%3D%22modalTitle-961133432%22%20style%3D%22text-align%3A%20center%3B%22%3EResize%20Window%3C%2Fh1%3E%3Cdiv%3E%3Cdiv%3E%3Clabel%20for%3D%22ableMediaId_0-resize-transcript-width%22%3EWidth%3C%2Flabel%3E%3Cinput%20type%3D%22text%22%20id%3D%22ableMediaId_0-resize-transcript-width%22%20value%3D%22372.391%22%3E%3C%2Fdiv%3E%3Cdiv%3E%3Clabel%20for%3D%22ableMediaId_0-resize-transcript-height%22%3EHeight%3C%2Flabel%3E%3Cinput%20type%3D%22text%22%20id%3D%22ableMediaId_0-resize-transcript-height%22%20value%3D%22400%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Chr%3E%3Cbutton%20class%3D%22modal-button%22%3ESave%3C%2Fbutton%3E%3Cbutton%20class%3D%22modal-button%22%3ECancel%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefs-form%20able-prefs-form-captions%20able-modal-dialog%22%20aria-labelledby%3D%22modalTitle-721255047%22%20aria-hidden%3D%22true%22%20role%3D%22dialog%22%20aria-modal%3D%22true%22%20style%3D%22width%3A%2032em%3B%22%3E%3Cbutton%20class%3D%22modalCloseButton%22%20title%3D%22Close%20dialog%22%20aria-label%3D%22Close%20dialog%22%3EX%3C%2Fbutton%3E%3Ch1%20id%3D%22modalTitle-721255047%22%20style%3D%22text-align%3A%20center%3B%22%3ECaptions%20Preferences%3C%2Fh1%3E%3Cdiv%20role%3D%22group%22%20class%3D%22able-prefs-captions%22%20id%3D%22ableMediaId_0-prefs-captions%22%20aria-labelledby%3D%22modalTitle-721255047%22%3E%3Cdiv%20class%3D%22able-prefCaptionsPosition%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefCaptionsPosition%22%3E%20Position%3C%2Flabel%3E%3Cselect%20name%3D%22prefCaptionsPosition%22%20id%3D%22ableMediaId_0_prefCaptionsPosition%22%3E%3Coption%20value%3D%22overlay%22%3EOverlay%3C%2Foption%3E%3Coption%20value%3D%22below%22%3EBelow%20video%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefCaptionsFont%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefCaptionsFont%22%3E%20Font%3C%2Flabel%3E%3Cselect%20name%3D%22prefCaptionsFont%22%20id%3D%22ableMediaId_0_prefCaptionsFont%22%3E%3Coption%20value%3D%22serif%22%3Eserif%3C%2Foption%3E%3Coption%20value%3D%22sans-serif%22%3Esans-serif%3C%2Foption%3E%3Coption%20value%3D%22cursive%22%3Ecursive%3C%2Foption%3E%3Coption%20value%3D%22fantasy%22%3Efantasy%3C%2Foption%3E%3Coption%20value%3D%22monospace%22%3Emonospace%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefCaptionsSize%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefCaptionsSize%22%3E%20Font%20Size%3C%2Flabel%3E%3Cselect%20name%3D%22prefCaptionsSize%22%20id%3D%22ableMediaId_0_prefCaptionsSize%22%3E%3Coption%20value%3D%2275%25%22%3E75%25%3C%2Foption%3E%3Coption%20value%3D%22100%25%22%3E100%25%3C%2Foption%3E%3Coption%20value%3D%22125%25%22%3E125%25%3C%2Foption%3E%3Coption%20value%3D%22150%25%22%3E150%25%3C%2Foption%3E%3Coption%20value%3D%22200%25%22%3E200%25%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefCaptionsColor%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefCaptionsColor%22%3E%20Text%20Color%3C%2Flabel%3E%3Cselect%20name%3D%22prefCaptionsColor%22%20id%3D%22ableMediaId_0_prefCaptionsColor%22%3E%3Coption%20value%3D%22white%22%3Ewhite%3C%2Foption%3E%3Coption%20value%3D%22yellow%22%3Eyellow%3C%2Foption%3E%3Coption%20value%3D%22green%22%3Egreen%3C%2Foption%3E%3Coption%20value%3D%22cyan%22%3Ecyan%3C%2Foption%3E%3Coption%20value%3D%22blue%22%3Eblue%3C%2Foption%3E%3Coption%20value%3D%22magenta%22%3Emagenta%3C%2Foption%3E%3Coption%20value%3D%22red%22%3Ered%3C%2Foption%3E%3Coption%20value%3D%22black%22%3Eblack%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefCaptionsBGColor%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefCaptionsBGColor%22%3E%20Background%3C%2Flabel%3E%3Cselect%20name%3D%22prefCaptionsBGColor%22%20id%3D%22ableMediaId_0_prefCaptionsBGColor%22%3E%3Coption%20value%3D%22white%22%3Ewhite%3C%2Foption%3E%3Coption%20value%3D%22yellow%22%3Eyellow%3C%2Foption%3E%3Coption%20value%3D%22green%22%3Egreen%3C%2Foption%3E%3Coption%20value%3D%22cyan%22%3Ecyan%3C%2Foption%3E%3Coption%20value%3D%22blue%22%3Eblue%3C%2Foption%3E%3Coption%20value%3D%22magenta%22%3Emagenta%3C%2Foption%3E%3Coption%20value%3D%22red%22%3Ered%3C%2Foption%3E%3Coption%20value%3D%22black%22%3Eblack%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefCaptionsOpacity%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefCaptionsOpacity%22%3E%20Opacity%3C%2Flabel%3E%3Cselect%20name%3D%22prefCaptionsOpacity%22%20id%3D%22ableMediaId_0_prefCaptionsOpacity%22%3E%3Coption%20value%3D%220%25%22%3E0%25%20(transparent)%3C%2Foption%3E%3Coption%20value%3D%2225%25%22%3E25%25%3C%2Foption%3E%3Coption%20value%3D%2250%25%22%3E50%25%3C%2Foption%3E%3Coption%20value%3D%2275%25%22%3E75%25%3C%2Foption%3E%3Coption%20value%3D%22100%25%22%3E100%25%20(solid)%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-captions-sample%22%20style%3D%22font-family%3A%20sans-serif%3B%20color%3A%20white%3B%20background-color%3A%20black%3B%20opacity%3A%201%3B%22%3ESample%20caption%20text%3C%2Fdiv%3E%3Chr%3E%3Cbutton%20class%3D%22modal-button%22%3ESave%3C%2Fbutton%3E%3Cbutton%20class%3D%22modal-button%22%3ECancel%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefs-form%20able-prefs-form-descriptions%20able-modal-dialog%22%20aria-labelledby%3D%22modalTitle-280773439%22%20aria-hidden%3D%22true%22%20role%3D%22dialog%22%20aria-modal%3D%22true%22%20style%3D%22width%3A%2032em%3B%22%3E%3Cbutton%20class%3D%22modalCloseButton%22%20title%3D%22Close%20dialog%22%20aria-label%3D%22Close%20dialog%22%3EX%3C%2Fbutton%3E%3Ch1%20id%3D%22modalTitle-280773439%22%20style%3D%22text-align%3A%20center%3B%22%3EAudio%20Description%20Preferences%3C%2Fh1%3E%3Cp%3EThis%20media%20player%20supports%20audio%20description%20in%20two%20ways%3A%20%3C%2Fp%3E%3Cul%3E%3Cli%3Ealternative%20described%20version%20of%20video%3C%2Fli%3E%3Cli%3Etext-based%20description%2C%20announced%20by%20screen%20reader%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EThe%20current%20video%20has%20no%20audio%20description%20in%20either%20format.%3C%2Fp%3E%3Cp%3EUse%20the%20following%20form%20to%20set%20your%20preferences%20related%20to%20text-based%20audio%20description.%3C%2Fp%3E%3Cdiv%20role%3D%22group%22%20class%3D%22able-prefs-descriptions%22%20id%3D%22ableMediaId_0-prefs-descriptions%22%20aria-labelledby%3D%22ableMediaId_0-prefs-descriptions-legend%22%3E%3Ch2%20id%3D%22ableMediaId_0-prefs-descriptions-legend%22%3EText-based%20audio%20description%3C%2Fh2%3E%3Cdiv%20class%3D%22able-prefDescVoice%20able-prefs-select%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefDescVoice%22%3E%20Voice%3C%2Flabel%3E%3Cselect%20name%3D%22prefDescVoice%22%20id%3D%22ableMediaId_0_prefDescVoice%22%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefDescPitch%20able-prefs-select%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefDescPitch%22%3E%20Pitch%3C%2Flabel%3E%3Cselect%20name%3D%22prefDescPitch%22%20id%3D%22ableMediaId_0_prefDescPitch%22%3E%3Coption%20value%3D%220%22%3EVery%20low%3C%2Foption%3E%3Coption%20value%3D%220.5%22%3ELow%3C%2Foption%3E%3Coption%20value%3D%221%22%3EDefault%3C%2Foption%3E%3Coption%20value%3D%221.5%22%3EHigh%3C%2Foption%3E%3Coption%20value%3D%222%22%3EVery%20high%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefDescRate%20able-prefs-select%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefDescRate%22%3E%20Rate%3C%2Flabel%3E%3Cselect%20name%3D%22prefDescRate%22%20id%3D%22ableMediaId_0_prefDescRate%22%3E%3Coption%20value%3D%220.7%22%3E1%3C%2Foption%3E%3Coption%20value%3D%220.8%22%3E2%3C%2Foption%3E%3Coption%20value%3D%220.9%22%3E3%3C%2Foption%3E%3Coption%20value%3D%221%22%3E4%3C%2Foption%3E%3Coption%20value%3D%221.1%22%3E5%3C%2Foption%3E%3Coption%20value%3D%221.2%22%3E6%3C%2Foption%3E%3Coption%20value%3D%221.5%22%3E7%3C%2Foption%3E%3Coption%20value%3D%222%22%3E8%3C%2Foption%3E%3Coption%20value%3D%222.5%22%3E9%3C%2Foption%3E%3Coption%20value%3D%223%22%3E10%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefDescVolume%20able-prefs-select%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefDescVolume%22%3E%20Volume%3C%2Flabel%3E%3Cselect%20name%3D%22prefDescVolume%22%20id%3D%22ableMediaId_0_prefDescVolume%22%3E%3Coption%20value%3D%220.1%22%3E1%3C%2Foption%3E%3Coption%20value%3D%220.2%22%3E2%3C%2Foption%3E%3Coption%20value%3D%220.3%22%3E3%3C%2Foption%3E%3Coption%20value%3D%220.4%22%3E4%3C%2Foption%3E%3Coption%20value%3D%220.5%22%3E5%3C%2Foption%3E%3Coption%20value%3D%220.6%22%3E6%3C%2Foption%3E%3Coption%20value%3D%220.7%22%3E7%3C%2Foption%3E%3Coption%20value%3D%220.8%22%3E8%3C%2Foption%3E%3Coption%20value%3D%220.9%22%3E9%3C%2Foption%3E%3Coption%20value%3D%221%22%3E10%3C%2Foption%3E%3C%2Fselect%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefDescPause%20able-prefs-checkbox%22%3E%3Cinput%20type%3D%22checkbox%22%20name%3D%22prefDescPause%22%20id%3D%22ableMediaId_0_prefDescPause%22%20value%3D%22true%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefDescPause%22%3E%20Automatically%20pause%20video%20when%20description%20starts%3C%2Flabel%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefDescVisible%20able-prefs-checkbox%22%3E%3Cinput%20type%3D%22checkbox%22%20name%3D%22prefDescVisible%22%20id%3D%22ableMediaId_0_prefDescVisible%22%20value%3D%22true%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefDescVisible%22%3E%20Make%20description%20visible%3C%2Flabel%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-desc-sample%22%3EAdjust%20settings%20to%20hear%20this%20sample%20text.%3C%2Fdiv%3E%3Chr%3E%3Cbutton%20class%3D%22modal-button%22%3ESave%3C%2Fbutton%3E%3Cbutton%20class%3D%22modal-button%22%3ECancel%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefs-form%20able-prefs-form-keyboard%20able-modal-dialog%22%20aria-labelledby%3D%22modalTitle-6191563%22%20aria-hidden%3D%22true%22%20role%3D%22dialog%22%20aria-modal%3D%22true%22%20style%3D%22width%3A%2032em%3B%22%3E%3Cbutton%20class%3D%22modalCloseButton%22%20title%3D%22Close%20dialog%22%20aria-label%3D%22Close%20dialog%22%3EX%3C%2Fbutton%3E%3Ch1%20id%3D%22modalTitle-6191563%22%20style%3D%22text-align%3A%20center%3B%22%3EKeyboard%20Preferences%3C%2Fh1%3E%3Cp%3EThe%20media%20player%20on%20this%20web%20page%20can%20be%20operated%20from%20anywhere%20on%20the%20page%20using%20keyboard%20shortcuts%20(see%20below%20for%20a%20list).%20Modifier%20keys%20(Shift%2C%20Alt%2C%20and%20Control)%20can%20be%20assigned%20below.%20NOTE%3A%20Some%20key%20combinations%20might%20conflict%20with%20keys%20used%20by%20your%20browser%20and%2For%20other%20software%20applications.%20Try%20various%20combinations%20of%20modifier%20keys%20to%20find%20one%20that%20works%20for%20you.%3C%2Fp%3E%3Cdiv%20role%3D%22group%22%20class%3D%22able-prefs-keyboard%22%20id%3D%22ableMediaId_0-prefs-keyboard%22%20aria-labelledby%3D%22ableMediaId_0-prefs-keyboard-legend%22%3E%3Ch2%20id%3D%22ableMediaId_0-prefs-keyboard-legend%22%3EModifier%20keys%20used%20for%20shortcuts%3C%2Fh2%3E%3Cdiv%20class%3D%22able-prefAltKey%22%3E%3Cinput%20type%3D%22checkbox%22%20name%3D%22prefAltKey%22%20id%3D%22ableMediaId_0_prefAltKey%22%20value%3D%22true%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefAltKey%22%3E%20Alt%3C%2Flabel%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefCtrlKey%22%3E%3Cinput%20type%3D%22checkbox%22%20name%3D%22prefCtrlKey%22%20id%3D%22ableMediaId_0_prefCtrlKey%22%20value%3D%22true%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefCtrlKey%22%3E%20Control%3C%2Flabel%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefShiftKey%22%3E%3Cinput%20type%3D%22checkbox%22%20name%3D%22prefShiftKey%22%20id%3D%22ableMediaId_0_prefShiftKey%22%20value%3D%22true%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefShiftKey%22%3E%20Shift%3C%2Flabel%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ch2%3ECurrent%20keyboard%20shortcuts%3C%2Fh2%3E%3Cul%3E%3Cli%3E%3Cspan%20class%3D%22able-modkey-alt%22%3EAlt%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-ctrl%22%3EControl%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-shift%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey%22%3Ep%3C%2Fspan%3E%20%3Cem%3Eor%3C%2Fem%3E%20%3Cspan%20class%3D%22able-help-modifiers%22%3E%20spacebar%3C%2Fspan%3E%20%3D%20Play%2FPause%3C%2Fli%3E%3Cli%3E%3Cspan%20class%3D%22able-modkey-alt%22%3EAlt%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-ctrl%22%3EControl%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-shift%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey%22%3Es%3C%2Fspan%3E%20%3D%20Restart%3C%2Fli%3E%3Cli%3E%3Cspan%20class%3D%22able-modkey-alt%22%3EAlt%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-ctrl%22%3EControl%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-shift%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey%22%3Er%3C%2Fspan%3E%20%3D%20Rewind%3C%2Fli%3E%3Cli%3E%3Cspan%20class%3D%22able-modkey-alt%22%3EAlt%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-ctrl%22%3EControl%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-shift%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey%22%3Ef%3C%2Fspan%3E%20%3D%20Forward%3C%2Fli%3E%3Cli%3E%3Cspan%20class%3D%22able-modkey-alt%22%3EAlt%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-ctrl%22%3EControl%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-shift%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey%22%3Ev%3C%2Fspan%3E%20%3Cem%3Eor%3C%2Fem%3E%20%3Cspan%20class%3D%22able-modkey%22%3E1-9%3C%2Fspan%3E%20%3D%20Volume%3C%2Fli%3E%3Cli%3E%3Cspan%20class%3D%22able-modkey-alt%22%3EAlt%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-ctrl%22%3EControl%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-shift%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey%22%3Em%3C%2Fspan%3E%20%3D%20Mute%2FUnmute%3C%2Fli%3E%3Cli%3E%3Cspan%20class%3D%22able-modkey-alt%22%3EAlt%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-ctrl%22%3EControl%20%2B%20%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey-shift%22%3E%3C%2Fspan%3E%3Cspan%20class%3D%22able-modkey%22%3Ec%3C%2Fspan%3E%20%3D%20Captions%3C%2Fli%3E%3Cli%3E%3Cspan%20class%3D%22able-modkey%22%3EEscape%3C%2Fspan%3E%20%3D%20Close%20current%20dialog%20or%20popup%20menu%3C%2Fli%3E%3C%2Ful%3E%3Chr%3E%3Cbutton%20class%3D%22modal-button%22%3ESave%3C%2Fbutton%3E%3Cbutton%20class%3D%22modal-button%22%3ECancel%3C%2Fbutton%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefs-form%20able-prefs-form-transcript%20able-modal-dialog%22%20aria-labelledby%3D%22modalTitle-150228620%22%20aria-hidden%3D%22true%22%20role%3D%22dialog%22%20aria-modal%3D%22true%22%20style%3D%22width%3A%2032em%3B%22%3E%3Cbutton%20class%3D%22modalCloseButton%22%20title%3D%22Close%20dialog%22%20aria-label%3D%22Close%20dialog%22%3EX%3C%2Fbutton%3E%3Ch1%20id%3D%22modalTitle-150228620%22%20style%3D%22text-align%3A%20center%3B%22%3ETranscript%20Preferences%3C%2Fh1%3E%3Cdiv%20role%3D%22group%22%20class%3D%22able-prefs-transcript%22%20id%3D%22ableMediaId_0-prefs-transcript%22%20aria-labelledby%3D%22modalTitle-150228620%22%3E%3Cdiv%20class%3D%22able-prefHighlight%22%3E%3Cinput%20type%3D%22checkbox%22%20name%3D%22prefHighlight%22%20id%3D%22ableMediaId_0_prefHighlight%22%20value%3D%22true%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefHighlight%22%3E%20Highlight%20transcript%20as%20media%20plays%3C%2Flabel%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22able-prefTabbable%22%3E%3Cinput%20type%3D%22checkbox%22%20name%3D%22prefTabbable%22%20id%3D%22ableMediaId_0_prefTabbable%22%20value%3D%22true%22%3E%3Clabel%20for%3D%22ableMediaId_0_prefTabbable%22%3E%20Keyboard-enable%20transcript%3C%2Flabel%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Chr%3E%3Cbutton%20class%3D%22modal-button%22%3ESave%3C%2Fbutton%3E%3Cbutton%20class%3D%22modal-button%22%3ECancel%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "25d7e943-04c5-4e69-b152-6d926e5cb70b",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.w3.org-WAI-test-evaluate"
+}

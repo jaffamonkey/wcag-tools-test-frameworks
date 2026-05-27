@@ -1,0 +1,690 @@
+{
+    "results": [
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]",
+                "aria": "/document[1]/banner[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 222,
+                "width": 784
+            },
+            "snippet": "<div style=\"will-change: background; background-color: rgba(255, 255, 255, 0);\" data-doc-height=\"1\" data-duration=\"400\" data-no-scroll=\"1\" role=\"banner\" data-w-id=\"29bb31cc-22a9-3935-b4e9-60496141ff11\" data-collapse=\"medium\" data-easing=\"ease\" data-easing2=\"ease\" class=\"nav w-nav\" data-animation=\"default\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22will-change%3A%20background%3B%20background-color%3A%20rgba(255%2C%20255%2C%20255%2C%200)%3B%5C%22%20data-doc-height%3D%5C%221%5C%22%20data-duration%3D%5C%22400%5C%22%20data-no-scroll%3D%5C%221%5C%22%20role%3D%5C%22banner%5C%22%20data-w-id%3D%5C%2229bb31cc-22a9-3935-b4e9-60496141ff11%5C%22%20data-collapse%3D%5C%22medium%5C%22%20data-easing%3D%5C%22ease%5C%22%20data-easing2%3D%5C%22ease%5C%22%20class%3D%5C%22nav%20w-nav%5C%22%20data-animation%3D%5C%22default%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/nav[1]/div[2]/div[1]/div[1]/div[2]",
+                "aria": "/document[1]/banner[1]/navigation[1]/button[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 45,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div style=\"color: rgb(255, 255, 255);\" class=\"text-block nav-link\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22color%3A%20rgb(255%2C%20255%2C%20255)%3B%5C%22%20class%3D%5C%22text-block%20nav-link%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/nav[1]/div[2]/div[2]/div[1]/div[2]",
+                "aria": "/document[1]/banner[1]/navigation[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 82,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div style=\"color: rgb(255, 255, 255);\" class=\"text-block nav-link\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22color%3A%20rgb(255%2C%20255%2C%20255)%3B%5C%22%20class%3D%5C%22text-block%20nav-link%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/nav[1]/div[2]/div[3]/div[1]/div[2]",
+                "aria": "/document[1]/banner[1]/navigation[1]/button[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                16,
+                400,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 138,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<div style=\"color: rgb(255, 255, 255);\" class=\"text-block nav-link\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22color%3A%20rgb(255%2C%20255%2C%20255)%3B%5C%22%20class%3D%5C%22text-block%20nav-link%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "caption_track_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[2]/figure[1]/video[1]",
+                "aria": "/document[1]/figure[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify that captions are available for any meaningful audio or provide a caption track for the <video> element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 48,
+                "top": 369,
+                "height": 150,
+                "width": 300
+            },
+            "snippet": "<video data-object-fit=\"cover\" data-wf-ignore=\"true\" playsinline=\"\" muted=\"\" style=\"background-image:url(\"https://cdn.prod.website-files.com/5e23bc35945b29f2905a96e0/5e44b023f37b47207cc9e802_neighbor-idaho-poster-00001.jpg\")\" loop=\"\" autoplay=\"\" id=\"ffce9bb4-e6a8-0b81-0055-cbdbee0bb02c-video\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/caption_track_exists.html#%7B%22message%22%3A%22Verify%20that%20captions%20are%20available%20for%20any%20meaningful%20audio%20or%20provide%20a%20caption%20track%20for%20the%20%3Cvideo%3E%20element%22%2C%22snippet%22%3A%22%3Cvideo%20data-object-fit%3D%5C%22cover%5C%22%20data-wf-ignore%3D%5C%22true%5C%22%20playsinline%3D%5C%22%5C%22%20muted%3D%5C%22%5C%22%20style%3D%5C%22background-image%3Aurl(%5C%22https%3A%2F%2Fcdn.prod.website-files.com%2F5e23bc35945b29f2905a96e0%2F5e44b023f37b47207cc9e802_neighbor-idaho-poster-00001.jpg%5C%22)%5C%22%20loop%3D%5C%22%5C%22%20autoplay%3D%5C%22%5C%22%20id%3D%5C%22ffce9bb4-e6a8-0b81-0055-cbdbee0bb02c-video%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22caption_track_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_region_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[4]/div[2]",
+                "aria": "/document[1]/region[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"region\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1120,
+                "height": 74,
+                "width": 784
+            },
+            "snippet": "<div aria-label=\"carousel\" role=\"region\" id=\"w-node-b3019e06-0bc6-ae31-d065-754ba71f5068-848d3ec3\" data-infinite=\"true\" data-duration=\"500\" data-nav-spacing=\"3\" data-autoplay-limit=\"0\" data-disable-swipe=\"false\" data-hide-arrows=\"false\" data-easing=\"ease\" data-autoplay=\"false\" class=\"slider w-slider\" data-animation=\"slide\" data-delay=\"4000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_region_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22region%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cdiv%20aria-label%3D%5C%22carousel%5C%22%20role%3D%5C%22region%5C%22%20id%3D%5C%22w-node-b3019e06-0bc6-ae31-d065-754ba71f5068-848d3ec3%5C%22%20data-infinite%3D%5C%22true%5C%22%20data-duration%3D%5C%22500%5C%22%20data-nav-spacing%3D%5C%223%5C%22%20data-autoplay-limit%3D%5C%220%5C%22%20data-disable-swipe%3D%5C%22false%5C%22%20data-hide-arrows%3D%5C%22false%5C%22%20data-easing%3D%5C%22ease%5C%22%20data-autoplay%3D%5C%22false%5C%22%20class%3D%5C%22slider%20w-slider%5C%22%20data-animation%3D%5C%22slide%5C%22%20data-delay%3D%5C%224000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_region_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[4]/div[2]/div[4]/div[1]",
+                "aria": "/document[1]/region[1]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 11,
+                "top": 1194,
+                "height": 0,
+                "width": 778
+            },
+            "snippet": "<div style=\"margin-left: 3px; margin-right: 3px;\" tabindex=\"0\" role=\"button\" aria-pressed=\"true\" aria-label=\"Show slide 1 of 2\" data-wf-ignore=\"\" class=\"w-slider-dot w-active\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22margin-left%3A%203px%3B%20margin-right%3A%203px%3B%5C%22%20tabindex%3D%5C%220%5C%22%20role%3D%5C%22button%5C%22%20aria-pressed%3D%5C%22true%5C%22%20aria-label%3D%5C%22Show%20slide%201%20of%202%5C%22%20data-wf-ignore%3D%5C%22%5C%22%20class%3D%5C%22w-slider-dot%20w-active%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[4]/div[2]/div[4]/div[2]",
+                "aria": "/document[1]/region[1]/button[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"button\" role does not have a tabbable element",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 11,
+                "top": 1194,
+                "height": 0,
+                "width": 778
+            },
+            "snippet": "<div style=\"margin-left: 3px; margin-right: 3px;\" tabindex=\"-1\" role=\"button\" aria-pressed=\"false\" aria-label=\"Show slide 2 of 2\" data-wf-ignore=\"\" class=\"w-slider-dot\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22button%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22margin-left%3A%203px%3B%20margin-right%3A%203px%3B%5C%22%20tabindex%3D%5C%22-1%5C%22%20role%3D%5C%22button%5C%22%20aria-pressed%3D%5C%22false%5C%22%20aria-label%3D%5C%22Show%20slide%202%20of%202%5C%22%20data-wf-ignore%3D%5C%22%5C%22%20class%3D%5C%22w-slider-dot%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_region_label_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[5]/div[1]",
+                "aria": "/document[1]/region[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"region\" role do not have unique labels",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 1194,
+                "height": 130,
+                "width": 784
+            },
+            "snippet": "<div aria-label=\"carousel\" role=\"region\" id=\"w-node-_892a92a5-88c9-d875-da9b-fc1166172c43-848d3ec3\" data-infinite=\"true\" data-duration=\"500\" data-nav-spacing=\"3\" data-autoplay-limit=\"0\" data-disable-swipe=\"false\" data-hide-arrows=\"false\" data-easing=\"ease\" data-autoplay=\"true\" class=\"slider full-width w-slider\" data-animation=\"slide\" data-delay=\"4000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/aria_region_label_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22region%5C%22%20role%20do%20not%20have%20unique%20labels%22%2C%22snippet%22%3A%22%3Cdiv%20aria-label%3D%5C%22carousel%5C%22%20role%3D%5C%22region%5C%22%20id%3D%5C%22w-node-_892a92a5-88c9-d875-da9b-fc1166172c43-848d3ec3%5C%22%20data-infinite%3D%5C%22true%5C%22%20data-duration%3D%5C%22500%5C%22%20data-nav-spacing%3D%5C%223%5C%22%20data-autoplay-limit%3D%5C%220%5C%22%20data-disable-swipe%3D%5C%22false%5C%22%20data-hide-arrows%3D%5C%22false%5C%22%20data-easing%3D%5C%22ease%5C%22%20data-autoplay%3D%5C%22true%5C%22%20class%3D%5C%22slider%20full-width%20w-slider%5C%22%20data-animation%3D%5C%22slide%5C%22%20data-delay%3D%5C%224000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_region_label_unique%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[5]/div[1]/div[4]/div[1]",
+                "aria": "/document[1]/region[2]/button[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 11,
+                "top": 1323,
+                "height": 0,
+                "width": 778
+            },
+            "snippet": "<div style=\"margin-left: 3px; margin-right: 3px;\" tabindex=\"0\" role=\"button\" aria-pressed=\"true\" aria-label=\"Show slide 1 of 3\" data-wf-ignore=\"\" class=\"w-slider-dot w-active\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22margin-left%3A%203px%3B%20margin-right%3A%203px%3B%5C%22%20tabindex%3D%5C%220%5C%22%20role%3D%5C%22button%5C%22%20aria-pressed%3D%5C%22true%5C%22%20aria-label%3D%5C%22Show%20slide%201%20of%203%5C%22%20data-wf-ignore%3D%5C%22%5C%22%20class%3D%5C%22w-slider-dot%20w-active%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[5]/div[1]/div[4]/div[2]",
+                "aria": "/document[1]/region[2]/button[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"button\" role does not have a tabbable element",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 11,
+                "top": 1323,
+                "height": 0,
+                "width": 778
+            },
+            "snippet": "<div style=\"margin-left: 3px; margin-right: 3px;\" tabindex=\"-1\" role=\"button\" aria-pressed=\"false\" aria-label=\"Show slide 2 of 3\" data-wf-ignore=\"\" class=\"w-slider-dot\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22button%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22margin-left%3A%203px%3B%20margin-right%3A%203px%3B%5C%22%20tabindex%3D%5C%22-1%5C%22%20role%3D%5C%22button%5C%22%20aria-pressed%3D%5C%22false%5C%22%20aria-label%3D%5C%22Show%20slide%202%20of%203%5C%22%20data-wf-ignore%3D%5C%22%5C%22%20class%3D%5C%22w-slider-dot%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "widget_tabbable_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[5]/div[1]/div[4]/div[3]",
+                "aria": "/document[1]/region[2]/button[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_tabbable",
+            "message": "Component with \"button\" role does not have a tabbable element",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 11,
+                "top": 1323,
+                "height": 0,
+                "width": 778
+            },
+            "snippet": "<div style=\"margin-left: 3px; margin-right: 3px;\" tabindex=\"-1\" role=\"button\" aria-pressed=\"false\" aria-label=\"Show slide 3 of 3\" data-wf-ignore=\"\" class=\"w-slider-dot\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/widget_tabbable_exists.html#%7B%22message%22%3A%22Component%20with%20%5C%22button%5C%22%20role%20does%20not%20have%20a%20tabbable%20element%22%2C%22snippet%22%3A%22%3Cdiv%20style%3D%5C%22margin-left%3A%203px%3B%20margin-right%3A%203px%3B%5C%22%20tabindex%3D%5C%22-1%5C%22%20role%3D%5C%22button%5C%22%20aria-pressed%3D%5C%22false%5C%22%20aria-label%3D%5C%22Show%20slide%203%20of%203%5C%22%20data-wf-ignore%3D%5C%22%5C%22%20class%3D%5C%22w-slider-dot%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22fail_no_tabbable%22%2C%22ruleId%22%3A%22widget_tabbable_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/section[14]/div[1]/div[1]/form[1]/input[1]",
+                "aria": "/document[1]/form[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 4975,
+                "height": 22,
+                "width": 79
+            },
+            "snippet": "<input value=\"Subscribe!\" class=\"button w-button\" data-wait=\"Please wait...\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Subscribe!%5C%22%20class%3D%5C%22button%20w-button%5C%22%20data-wait%3D%5C%22Please%20wait...%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/link[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5033,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"footer-logo w-inline-block w--current\" aria-current=\"page\" href=\"/template/all-sections/all-sections-light\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22footer-logo%20w-inline-block%20w--current%5C%22%20aria-current%3D%5C%22page%5C%22%20href%3D%5C%22%2Ftemplate%2Fall-sections%2Fall-sections-light%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/link[16]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5033,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"footer-logo w-inline-block w--current\" aria-current=\"page\" href=\"/template/all-sections/all-sections-light\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22footer-logo%20w-inline-block%20w--current%5C%22%20aria-current%3D%5C%22page%5C%22%20href%3D%5C%22%2Ftemplate%2Fall-sections%2Fall-sections-light%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[6]/form[1]/input[3]",
+                "aria": "/document[1]/form[2]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_no_label",
+            "message": "The input element does not have an associated visible label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 434,
+                "top": 5218,
+                "height": 22,
+                "width": 79
+            },
+            "snippet": "<input value=\"Subscribe!\" class=\"button small nav-cta w-button\" data-wait=\"Please wait...\" type=\"submit\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_visible.html#%7B%22message%22%3A%22The%20input%20element%20does%20not%20have%20an%20associated%20visible%20label%22%2C%22snippet%22%3A%22%3Cinput%20value%3D%5C%22Subscribe!%5C%22%20class%3D%5C%22button%20small%20nav-cta%20w-button%5C%22%20data-wait%3D%5C%22Please%20wait...%5C%22%20type%3D%5C%22submit%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_no_label%22%2C%22ruleId%22%3A%22input_label_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_unobscured",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/link[31]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_obscured",
+            "message": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 5277,
+                "height": 18,
+                "width": 51
+            },
+            "snippet": "<a class=\"theme-link w--current\" aria-current=\"page\" href=\"/template/all-sections/all-sections-light\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_unobscured.html#%7B%22message%22%3A%22Confirm%20that%20when%20the%20element%20receives%20focus%2C%20it%20is%20not%20covered%20or%2C%20if%20covered%20by%20user%20action%2C%20can%20be%20uncovered%20without%20moving%20focus%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22theme-link%20w--current%5C%22%20aria-current%3D%5C%22page%5C%22%20href%3D%5C%22%2Ftemplate%2Fall-sections%2Fall-sections-light%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_obscured%22%2C%22ruleId%22%3A%22element_tabbable_unobscured%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/a[3]",
+                "aria": "/document[1]/link[33]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 40,
+                "top": 5295,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"theme-link\" href=\"#\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22theme-link%5C%22%20href%3D%5C%22%23%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/a[3]",
+                "aria": "/document[1]/link[33]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 40,
+                "top": 5295,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"theme-link\" href=\"#\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22theme-link%5C%22%20href%3D%5C%22%23%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/a[4]",
+                "aria": "/document[1]/link[34]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 40,
+                "top": 5295,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"theme-link\" href=\"#\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22theme-link%5C%22%20href%3D%5C%22%23%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/a[4]",
+                "aria": "/document[1]/link[34]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 40,
+                "top": 5295,
+                "height": 18,
+                "width": 0
+            },
+            "snippet": "<a class=\"theme-link\" href=\"#\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20class%3D%5C%22theme-link%5C%22%20href%3D%5C%22%23%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 2662,
+    "ruleTime": 34,
+    "nls": {
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "element_tabbable_unobscured": {
+            "0": "When an element receives focus, it is not entirely covered by other content",
+            "potential_obscured": "Confirm that when the element receives focus, it is not covered or, if covered by user action, can be uncovered without moving focus"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "widget_tabbable_exists": {
+            "0": "Component must have at least one tabbable element",
+            "fail_no_tabbable": "Component with \"{0}\" role does not have a tabbable element"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "potential_same_color": "The foreground text and its background color are both detected as {3}. Verify the text meets the WCAG AA requirements for minimum contrast"
+        },
+        "caption_track_exists": {
+            "0": "A <video> element must have a text alternative for any meaningful audio content",
+            "Potential_1": "Verify that captions are available for any meaningful audio or provide a caption track for the <video> element"
+        },
+        "aria_region_label_unique": {
+            "0": "Each element with \"region\" role must have a unique label that describes its purpose",
+            "fail_label_not_unique": "Multiple elements with \"region\" role do not have unique labels"
+        },
+        "input_label_visible": {
+            "0": "An input element must have an associated visible label",
+            "potential_no_label": "The input element does not have an associated visible label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 53,
+            "elementsViolation": 5,
+            "elementsViolationReview": 18,
+            "violation": 5,
+            "potentialviolation": 16,
+            "recommendation": 31,
+            "potentialrecommendation": 6,
+            "manual": 3,
+            "pass": 2601
+        },
+        "scanTime": 91,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778341283580,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22es%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3ELimitless%20-%20Webflow%20HTML%20website%20template%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22light%22%3E%3Cdiv%20data-animation%3D%22default%22%20class%3D%22nav%20w-nav%22%20data-easing2%3D%22ease%22%20data-easing%3D%22ease%22%20data-collapse%3D%22medium%22%20data-w-id%3D%2229bb31cc-22a9-3935-b4e9-60496141ff11%22%20role%3D%22banner%22%20data-no-scroll%3D%221%22%20data-duration%3D%22400%22%20data-doc-height%3D%221%22%20style%3D%22will-change%3A%20background%3B%20background-color%3A%20rgba(255%2C%20255%2C%20255%2C%200)%3B%22%3E%3Ca%20href%3D%22%2F%22%20id%3D%22w-node-_29bb31cc-22a9-3935-b4e9-60496141ff12-6141ff11%22%20class%3D%22brand%20w-nav-brand%22%20aria-label%3D%22home%22%3E%3Cimg%20alt%3D%22Neighbor%20Idaho%20Logo%22%20sizes%3D%22(max-width%3A%20479px)%2098vw%2C%20(max-width%3A%20767px)%2099vw%2C%20(max-width%3A%201222px)%20100vw%2C%201222px%22%20class%3D%22image-19%22%3E%3C%2Fa%3E%3Clink%20rel%3D%22prefetch%22%20href%3D%22%2F%22%3E%3Cnav%20role%3D%22navigation%22%20id%3D%22w-node-_29bb31cc-22a9-3935-b4e9-60496141ff14-6141ff11%22%20class%3D%22nav-items-wrapper%20w-nav-menu%22%3E%3Cdiv%20class%3D%22button%20close%20w-nav-button%22%20style%3D%22-webkit-user-select%3A%20text%3B%22%20aria-label%3D%22menu%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-controls%3D%22w-nav-overlay-0%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%3E%3Cimg%20loading%3D%22lazy%22%20alt%3D%22%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22nav-links-wrapper%22%3E%3Cdiv%20data-hover%3D%22false%22%20data-delay%3D%220%22%20class%3D%22w-dropdown%22%3E%3Cdiv%20class%3D%22w-dropdown-toggle%22%20id%3D%22w-dropdown-toggle-0%22%20aria-controls%3D%22w-dropdown-list-0%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20role%3D%22button%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22w-icon-dropdown-toggle%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22text-block%20nav-link%22%20style%3D%22color%3A%20rgb(255%2C%20255%2C%20255)%3B%22%3EWHO%26nbsp%3BWE%26nbsp%3BARE%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22w-dropdown-list%22%20id%3D%22w-dropdown-list-0%22%20aria-labelledby%3D%22w-dropdown-toggle-0%22%3E%3Ca%20href%3D%22%2Four-team%2Four-founders%22%20class%3D%22dropdown-link%20w-dropdown-link%22%20tabindex%3D%220%22%3EAlumni%3C%2Fa%3E%3Ca%20href%3D%22%2Four-mission%2Four-mission-light%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EOur%20Mission%3C%2Fa%3E%3Ca%20href%3D%22%2Four-team%2F2gi%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EOur%20Team%3C%2Fa%3E%3Ca%20href%3D%22%2Ffinancials%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EFinancials%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3Cdiv%20data-hover%3D%22false%22%20data-delay%3D%220%22%20class%3D%22w-dropdown%22%3E%3Cdiv%20class%3D%22w-dropdown-toggle%22%20id%3D%22w-dropdown-toggle-1%22%20aria-controls%3D%22w-dropdown-list-1%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20role%3D%22button%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22w-icon-dropdown-toggle%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22text-block%20nav-link%22%20style%3D%22color%3A%20rgb(255%2C%20255%2C%20255)%3B%22%3EWHAT%26nbsp%3BWE%26nbsp%3BDO%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22w-dropdown-list%22%20id%3D%22w-dropdown-list-1%22%20aria-labelledby%3D%22w-dropdown-toggle-1%22%3E%3Ca%20href%3D%22%2Four-programs%22%20class%3D%22dropdown-link%20w-dropdown-link%22%20tabindex%3D%220%22%3EOur%20Programs%3C%2Fa%3E%3Ca%20href%3D%22%2Fin-the-news%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3E2GI%26nbsp%3BIn%20The%20News%3C%2Fa%3E%3Ca%20href%3D%22%2Fprograms-latam-the-caribbean%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3ELatin%20American%20and%20Caribbean%20Program%3Cbr%3E%3C%2Fa%3E%3Ca%20href%3D%22%2Fthe-blog%2Fblog%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3E2GI%20Blog%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3Cdiv%20data-hover%3D%22false%22%20data-delay%3D%220%22%20class%3D%22w-dropdown%22%3E%3Cdiv%20class%3D%22w-dropdown-toggle%22%20id%3D%22w-dropdown-toggle-2%22%20aria-controls%3D%22w-dropdown-list-2%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%20role%3D%22button%22%20tabindex%3D%220%22%3E%3Cdiv%20class%3D%22w-icon-dropdown-toggle%22%20aria-hidden%3D%22true%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22text-block%20nav-link%22%20style%3D%22color%3A%20rgb(255%2C%20255%2C%20255)%3B%22%3EGET%26nbsp%3BINVOLVED%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cnav%20class%3D%22w-dropdown-list%22%20id%3D%22w-dropdown-list-2%22%20aria-labelledby%3D%22w-dropdown-toggle-2%22%3E%3Ca%20href%3D%22%2Four-team%2Fpartnerships%22%20class%3D%22dropdown-link%20w-dropdown-link%22%20tabindex%3D%220%22%3EPartnerships%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20class%3D%22w-dropdown-link%22%20tabindex%3D%220%22%3EDonate%3C%2Fa%3E%3C%2Fnav%3E%3C%2Fdiv%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20target%3D%22_blank%22%20class%3D%22button%20mobile-nav-cta%20w-button%22%3EDonate%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fnav%3E%3Cdiv%20id%3D%22w-node-_29bb31cc-22a9-3935-b4e9-60496141ff2b-6141ff11%22%20class%3D%22nav-button-group%22%3E%3Cdiv%20class%3D%22button%20donate%20menuasdf%20w-nav-button%22%20style%3D%22-webkit-user-select%3A%20text%3B%22%20aria-label%3D%22menu%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-controls%3D%22w-nav-overlay-0%22%20aria-haspopup%3D%22menu%22%20aria-expanded%3D%22false%22%3E%3Cdiv%3EMenu%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ca%20href%3D%22%2Flogin%22%20class%3D%22button%20login%20w-button%22%3ELogin%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20target%3D%22_blank%22%20class%3D%22button%20donate%20w-button%22%3EDonate%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22w-nav-overlay%22%20data-wf-ignore%3D%22%22%20id%3D%22w-nav-overlay-0%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Csection%20class%3D%22section%20hero%22%3E%3Cimg%20loading%3D%22lazy%22%20data-w-id%3D%226a2c4968-c471-4157-1b19-7ca6eca1039b%22%20sizes%3D%22100vw%22%20alt%3D%22Friends%20hanging%20out%22%20class%3D%22background-image%22%20style%3D%22will-change%3A%20transform%3B%20transform%3A%20translate3d(0px%2C%205.444%25%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cdiv%20class%3D%22content-block%20center-align%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-white%22%3ELimitless%3C%2Fdiv%3E%3Ch1%20class%3D%22text-display-small%20no-margin%20color-white%22%3EEnabling%20emerging%20adults%20to%20adapt%20and%20succeed.%3C%2Fh1%3E%3Cdiv%20class%3D%22button-group%22%3E%3Ca%20id%3D%22w-node-_12c8abc1-97d4-36d2-31ec-38b5035572a5-848d3ec3%22%20href%3D%22%2Fdonate%2Fdonate%22%20class%3D%22button%20secondary%20w-button%22%3EDonate%3C%2Fa%3E%3Ca%20id%3D%22w-node-_12c8abc1-97d4-36d2-31ec-38b5035572a7-848d3ec3%22%20href%3D%22%23%22%20target%3D%22_blank%22%20class%3D%22button%20w-button%22%3EGet%20this%20template%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%20hero%22%3E%3Cfigure%20data-poster-url%3D%22https%3A%2F%2Fcdn.prod.website-files.com%2F5e23bc35945b29f2905a96e0%2F5e44b023f37b47207cc9e802_neighbor-idaho-poster-00001.jpg%22%20data-video-urls%3D%22https%3A%2F%2Fcdn.prod.website-files.com%2F622a90d02dc43857eb55fed3%2F622a90d12dc4383dae55ff26_neighbor-idaho-transcode.mp4%2Chttps%3A%2F%2Fcdn.prod.website-files.com%2F622a90d02dc43857eb55fed3%2F622a90d12dc4383dae55ff26_neighbor-idaho-transcode.webm%22%20data-autoplay%3D%22true%22%20data-loop%3D%22true%22%20data-wf-ignore%3D%22true%22%20data-beta-bgvideo-upgrade%3D%22false%22%20data-w-id%3D%22ffce9bb4-e6a8-0b81-0055-cbdbee0bb02c%22%20class%3D%22background-video%20w-background-video%20w-background-video-atom%22%20style%3D%22will-change%3A%20transform%3B%20transform%3A%20translate3d(0px%2C%200%25%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cvideo%20id%3D%22ffce9bb4-e6a8-0b81-0055-cbdbee0bb02c-video%22%20autoplay%3D%22%22%20loop%3D%22%22%20style%3D%22background-image%3Aurl(%26quot%3Bhttps%3A%2F%2Fcdn.prod.website-files.com%2F5e23bc35945b29f2905a96e0%2F5e44b023f37b47207cc9e802_neighbor-idaho-poster-00001.jpg%26quot%3B)%22%20muted%3D%22%22%20playsinline%3D%22%22%20data-wf-ignore%3D%22true%22%20data-object-fit%3D%22cover%22%3E%3Csource%20data-wf-ignore%3D%22true%22%3E%3Csource%20data-wf-ignore%3D%22true%22%3E%3C%2Fvideo%3E%3Cdiv%20class%3D%22background-video-overlay%22%3E%3C%2Fdiv%3E%3C%2Ffigure%3E%3Cdiv%20class%3D%22content-block%20center-align%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-white%22%3ELimitless%3C%2Fdiv%3E%3Ch1%20class%3D%22text-display-small%20no-margin%20color-white%22%3EEnabling%20emerging%20adults%20to%20adapt%20and%20succeed.%3C%2Fh1%3E%3Cdiv%20class%3D%22button-group%22%3E%3Ca%20id%3D%22w-node-_7acc8abd-5e20-3259-ad74-218d5e5e1e6c-848d3ec3%22%20href%3D%22%2Fvolunteer%2Fvolunteer-light%22%20class%3D%22button%20secondary%20w-button%22%3EGet%20Involved%3C%2Fa%3E%3Ca%20id%3D%22w-node-_7acc8abd-5e20-3259-ad74-218d5e5e1e6e-848d3ec3%22%20href%3D%22%2Fdonate%2Fdonate%22%20class%3D%22button%20w-button%22%3EDonate%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%20_50-50-overlap%22%3E%3Cdiv%20id%3D%22w-node-bffd487d-4464-1c1f-5fd6-e7758682f4c3-848d3ec3%22%20class%3D%22content-block%20padded%20light%22%3E%3Ch2%20class%3D%22text-h1%22%3EAbout%20%3Cspan%20class%3D%22color-primary%22%3ELimitless%3C%2Fspan%3E%3C%2Fh2%3E%3Cdiv%20class%3D%22w-richtext%22%3E%3Cp%3EChange%20for%20Love%20is%20a%20budding%20non-profit%20based%20in%20Boise%2C%20ID%20founded%20by%20Daniel%20Thomas%20in%202018.%20%3C%2Fp%3E%3Cp%3EDaniel's%20experience%20serving%20on%20Skid%20Row%20in%20Los%20Angeles%20stirred%20his%20heart%20to%20advocate%20for%20those%20living%20on%20the%20streets%20in%20Boise.%20He%20began%20filling%20a%20practical%20need%20by%20handing%20out%20water%20bottles%20on%20hot%20days%20and%20reminding%20those%20on%20the%20streets%20that%20they%20are%20not%20forgotten.%3C%2Fp%3E%3Cp%3EAs%20Daniel's%20vision%20grew%2C%20Change%20for%20Love%20was%20born.%20Today%2C%20Change%20for%20Love's%20team%20of%20volunteers%20flood%20the%20streets%20of%20Downtown%20Boise%20monthly%2C%20bringing%20toiletries%2C%20food%2C%20clothing%2C%20and%20other%20items%20to%20those%20without%20a%20home.%20Change%20for%20Love%20continues%20to%20foster%20genuine%20relationships%20with%20people%20in%20their%20own%20environment%20by%20showing%20love%20and%20support%20with%20no%20strings%20attached.%3C%2Fp%3E%3C%2Fdiv%3E%3Ca%20href%3D%22%2Fvolunteer%2Fvolunteer-light%22%20class%3D%22button%20w-button%22%3EGet%20Involved%3C%2Fa%3E%3C%2Fdiv%3E%3Cimg%20data-w-id%3D%22fb43349c-af97-e0cf-a0f5-e6d7f3c6db4e%22%20id%3D%22w-node-fb43349c-af97-e0cf-a0f5-e6d7f3c6db4e-848d3ec3%22%20loading%3D%22lazy%22%20alt%3D%22Friends%20hanging%20out%22%20class%3D%22image%22%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%20_50-50-layout%22%3E%3Cdiv%20id%3D%22w-node-c22ee020-dc84-2965-e815-a2fd0dfc0e8c-848d3ec3%22%20class%3D%22content-block%20padded%22%3E%3Ch2%20class%3D%22text-h1%22%3EAbout%20%3Cspan%20class%3D%22color-primary%22%3ELimitless%3C%2Fspan%3E%3C%2Fh2%3E%3Cdiv%20class%3D%22w-richtext%22%3E%3Cp%3EAs%20Daniel's%20vision%20grew%2C%20Change%20for%20Love%20was%20born.%20Today%2C%20Change%20for%20Love's%20team%20of%20volunteers%20flood%20the%20streets%20of%20Downtown%20Boise%20monthly%2C%20bringing%20toiletries%2C%20food%2C%20clothing%2C%20and%20other%20items%20to%20those%20without%20a%20home.%20Change%20for%20Love%20continues%20to%20foster%20genuine%20relationships%20with%20people%20in%20their%20own%20environment%20by%20showing%20love%20and%20support%20with%20no%20strings%20attached.%3C%2Fp%3E%3C%2Fdiv%3E%3Ca%20href%3D%22%2Ftemplate%2Fall-sections%2Fall-sections-light%22%20aria-current%3D%22page%22%20class%3D%22button%20w-button%20w--current%22%3EGet%20Involved%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20data-delay%3D%224000%22%20data-animation%3D%22slide%22%20class%3D%22slider%20w-slider%22%20data-autoplay%3D%22false%22%20data-easing%3D%22ease%22%20data-hide-arrows%3D%22false%22%20data-disable-swipe%3D%22false%22%20data-autoplay-limit%3D%220%22%20data-nav-spacing%3D%223%22%20data-duration%3D%22500%22%20data-infinite%3D%22true%22%20id%3D%22w-node-b3019e06-0bc6-ae31-d065-754ba71f5068-848d3ec3%22%20role%3D%22region%22%20aria-label%3D%22carousel%22%3E%3Cdiv%20class%3D%22mask%20w-slider-mask%22%20id%3D%22w-slider-mask-0%22%3E%3Cdiv%20class%3D%22slide%20w-slide%22%20aria-label%3D%221%20of%202%22%20role%3D%22group%22%20style%3D%22transition%3A%20all%3B%20transform%3A%20translateX(0px)%3B%20opacity%3A%201%3B%22%3E%3Ca%20href%3D%22%23%22%20class%3D%22lightbox-link%20w-inline-block%20w-lightbox%22%20aria-label%3D%22open%20lightbox%22%20aria-haspopup%3D%22dialog%22%3E%3Cimg%20loading%3D%22lazy%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20(max-width%3A%20767px)%2090vw%2C%20(max-width%3A%20991px)%2048vw%2C%2050vw%22%20alt%3D%22Friends%20hanging%20out%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slide%20w-slide%22%20aria-label%3D%222%20of%202%22%20role%3D%22group%22%20aria-hidden%3D%22true%22%20style%3D%22transition%3A%20all%3B%20transform%3A%20translateX(0px)%3B%20opacity%3A%201%3B%22%3E%3Ca%20href%3D%22%23%22%20class%3D%22lightbox-link%20w-inline-block%20w-lightbox%22%20tabindex%3D%22-1%22%20aria-hidden%3D%22true%22%20aria-label%3D%22open%20lightbox%22%20aria-haspopup%3D%22dialog%22%3E%3Cimg%20loading%3D%22lazy%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20(max-width%3A%20767px)%2090vw%2C%20(max-width%3A%20991px)%2048vw%2C%2050vw%22%20alt%3D%22Friends%20hanging%20out%22%20aria-hidden%3D%22true%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20aria-live%3D%22off%22%20aria-atomic%3D%22true%22%20class%3D%22w-slider-aria-label%22%20data-wf-ignore%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slider-arrow%20w-slider-arrow-left%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-controls%3D%22w-slider-mask-0%22%20aria-label%3D%22previous%20slide%22%3E%3Cdiv%20class%3D%22slider-arrow-icon%22%3E%E2%86%90%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slider-arrow%20right%20w-slider-arrow-right%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-controls%3D%22w-slider-mask-0%22%20aria-label%3D%22next%20slide%22%3E%3Cdiv%20class%3D%22slider-arrow-icon%22%3E%E2%86%90%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slide-nav%20w-slider-nav%20w-round%22%3E%3Cdiv%20class%3D%22w-slider-dot%20w-active%22%20data-wf-ignore%3D%22%22%20aria-label%3D%22Show%20slide%201%20of%202%22%20aria-pressed%3D%22true%22%20role%3D%22button%22%20tabindex%3D%220%22%20style%3D%22margin-left%3A%203px%3B%20margin-right%3A%203px%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22w-slider-dot%22%20data-wf-ignore%3D%22%22%20aria-label%3D%22Show%20slide%202%20of%202%22%20aria-pressed%3D%22false%22%20role%3D%22button%22%20tabindex%3D%22-1%22%20style%3D%22margin-left%3A%203px%3B%20margin-right%3A%203px%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%22%3E%3Cdiv%20data-delay%3D%224000%22%20data-animation%3D%22slide%22%20class%3D%22slider%20full-width%20w-slider%22%20data-autoplay%3D%22true%22%20data-easing%3D%22ease%22%20data-hide-arrows%3D%22false%22%20data-disable-swipe%3D%22false%22%20data-autoplay-limit%3D%220%22%20data-nav-spacing%3D%223%22%20data-duration%3D%22500%22%20data-infinite%3D%22true%22%20id%3D%22w-node-_892a92a5-88c9-d875-da9b-fc1166172c43-848d3ec3%22%20role%3D%22region%22%20aria-label%3D%22carousel%22%3E%3Cdiv%20class%3D%22mask%20w-slider-mask%22%20id%3D%22w-slider-mask-1%22%3E%3Cdiv%20class%3D%22slide%20full-width-slider%20w-slide%22%20aria-label%3D%221%20of%205%22%20role%3D%22group%22%20style%3D%22transition%3A%20all%3B%20transform%3A%20translateX(0px)%3B%20opacity%3A%201%3B%22%3E%3Ca%20href%3D%22%23%22%20class%3D%22lightbox-link%20full-width-slider%20w-inline-block%20w-lightbox%22%20aria-label%3D%22open%20lightbox%22%20aria-haspopup%3D%22dialog%22%3E%3Cimg%20loading%3D%22lazy%22%20sizes%3D%22(max-width%3A%20479px)%2090vw%2C%20(max-width%3A%20767px)%2094vw%2C%20(max-width%3A%20991px)%2095vw%2C%2097vw%22%20alt%3D%22Friends%20hanging%20out%22%20class%3D%22image%20full-width-slider%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slide%20full-width-slider%20w-slide%22%20aria-label%3D%222%20of%205%22%20role%3D%22group%22%20style%3D%22transition%3A%20all%3B%20transform%3A%20translateX(0px)%3B%20opacity%3A%201%3B%22%3E%3Ca%20href%3D%22%23%22%20class%3D%22lightbox-link%20full-width-slider%20w-inline-block%20w-lightbox%22%20aria-label%3D%22open%20lightbox%22%20aria-haspopup%3D%22dialog%22%3E%3Cimg%20loading%3D%22lazy%22%20sizes%3D%22(max-width%3A%20479px)%2090vw%2C%20(max-width%3A%20767px)%2094vw%2C%20(max-width%3A%20991px)%2095vw%2C%2096vw%22%20alt%3D%22Friends%20hanging%20out%22%20class%3D%22image%20full-width-slider%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slide%20full-width-slider%20w-slide%22%20aria-label%3D%223%20of%205%22%20role%3D%22group%22%20aria-hidden%3D%22true%22%20style%3D%22transition%3A%20all%3B%20transform%3A%20translateX(0px)%3B%20opacity%3A%201%3B%22%3E%3Ca%20href%3D%22%23%22%20class%3D%22lightbox-link%20full-width-slider%20w-inline-block%20w-lightbox%22%20tabindex%3D%22-1%22%20aria-hidden%3D%22true%22%20aria-label%3D%22open%20lightbox%22%20aria-haspopup%3D%22dialog%22%3E%3Cimg%20loading%3D%22lazy%22%20sizes%3D%22(max-width%3A%20479px)%2090vw%2C%20(max-width%3A%20767px)%2094vw%2C%20(max-width%3A%20991px)%2095vw%2C%2097vw%22%20alt%3D%22Friends%20hanging%20out%22%20class%3D%22image%20full-width-slider%22%20aria-hidden%3D%22true%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slide%20full-width-slider%20w-slide%22%20aria-label%3D%224%20of%205%22%20role%3D%22group%22%20aria-hidden%3D%22true%22%20style%3D%22transition%3A%20all%3B%20transform%3A%20translateX(0px)%3B%20opacity%3A%201%3B%22%3E%3Ca%20href%3D%22%23%22%20class%3D%22lightbox-link%20full-width-slider%20w-inline-block%20w-lightbox%22%20tabindex%3D%22-1%22%20aria-hidden%3D%22true%22%20aria-label%3D%22open%20lightbox%22%20aria-haspopup%3D%22dialog%22%3E%3Cimg%20loading%3D%22lazy%22%20sizes%3D%22(max-width%3A%20479px)%2090vw%2C%20(max-width%3A%20767px)%2094vw%2C%20(max-width%3A%20991px)%2095vw%2C%2097vw%22%20alt%3D%22Team%20of%20volunteers%22%20class%3D%22image%20full-width-slider%22%20aria-hidden%3D%22true%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slide%20full-width-slider%20w-slide%22%20aria-label%3D%225%20of%205%22%20role%3D%22group%22%20aria-hidden%3D%22true%22%20style%3D%22transition%3A%20all%3B%20transform%3A%20translateX(0px)%3B%20opacity%3A%201%3B%22%3E%3Ca%20href%3D%22%23%22%20class%3D%22lightbox-link%20full-width-slider%20w-inline-block%20w-lightbox%22%20tabindex%3D%22-1%22%20aria-hidden%3D%22true%22%20aria-label%3D%22open%20lightbox%22%20aria-haspopup%3D%22dialog%22%3E%3Cimg%20loading%3D%22lazy%22%20sizes%3D%22(max-width%3A%20479px)%2090vw%2C%20(max-width%3A%20767px)%2094vw%2C%20(max-width%3A%20991px)%2095vw%2C%2097vw%22%20alt%3D%22Team%20of%20volunteers%22%20class%3D%22image%20full-width-slider%22%20aria-hidden%3D%22true%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20aria-live%3D%22off%22%20aria-atomic%3D%22true%22%20class%3D%22w-slider-aria-label%22%20data-wf-ignore%3D%22%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slider-arrow%20full-width-slider%20w-slider-arrow-left%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-controls%3D%22w-slider-mask-1%22%20aria-label%3D%22previous%20slide%22%3E%3Cdiv%20class%3D%22slider-arrow-icon%22%3E%E2%86%90%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slider-arrow%20right%20full-width-slider%20w-slider-arrow-right%22%20role%3D%22button%22%20tabindex%3D%220%22%20aria-controls%3D%22w-slider-mask-1%22%20aria-label%3D%22next%20slide%22%3E%3Cdiv%20class%3D%22slider-arrow-icon%22%3E%E2%86%90%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22slide-nav%20w-slider-nav%20w-round%22%3E%3Cdiv%20class%3D%22w-slider-dot%20w-active%22%20data-wf-ignore%3D%22%22%20aria-label%3D%22Show%20slide%201%20of%203%22%20aria-pressed%3D%22true%22%20role%3D%22button%22%20tabindex%3D%220%22%20style%3D%22margin-left%3A%203px%3B%20margin-right%3A%203px%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22w-slider-dot%22%20data-wf-ignore%3D%22%22%20aria-label%3D%22Show%20slide%202%20of%203%22%20aria-pressed%3D%22false%22%20role%3D%22button%22%20tabindex%3D%22-1%22%20style%3D%22margin-left%3A%203px%3B%20margin-right%3A%203px%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22w-slider-dot%22%20data-wf-ignore%3D%22%22%20aria-label%3D%22Show%20slide%203%20of%203%22%20aria-pressed%3D%22false%22%20role%3D%22button%22%20tabindex%3D%22-1%22%20style%3D%22margin-left%3A%203px%3B%20margin-right%3A%203px%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%20_50-50-overlap-hero%22%3E%3Cdiv%20id%3D%22w-node-_59fc4905-3468-235d-912f-7ee9f4bbe8a3-848d3ec3%22%20class%3D%22content-block%20padded%20light%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-primary%22%3ELimitless%3C%2Fdiv%3E%3Ch1%20class%3D%22no-margin%22%3EEnabling%20emerging%20adults%20to%20adapt%20and%20%3Cbr%3Esucceed.%3C%2Fh1%3E%3Cdiv%20class%3D%22button-group%22%3E%3Ca%20id%3D%22w-node-a9895f13-8edb-ea8b-e769-2dd744c494d4-848d3ec3%22%20href%3D%22%2Fvolunteer%2Fvolunteer-light%22%20class%3D%22button%20secondary%20w-button%22%3EGet%26nbsp%3BInvolved%3C%2Fa%3E%3Ca%20id%3D%22w-node-a9895f13-8edb-ea8b-e769-2dd744c494d6-848d3ec3%22%20href%3D%22%2Fdonate%2Fdonate%22%20class%3D%22button%20w-button%22%3EDonate%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cimg%20alt%3D%22Volunteers%20for%20Neighbor%20Idaho%22%20id%3D%22w-node-_59fc4905-3468-235d-912f-7ee9f4bbe8b1-848d3ec3%22%20class%3D%22image%22%3E%3C%2Fsection%3E%3Csection%20data-w-id%3D%220b2c6ffb-e0a5-6e5c-1cf9-a03742f365d4%22%20class%3D%22section%20_50-50-layout%22%3E%3Cimg%20data-w-id%3D%22eecd790e-5cec-a7fe-572b-caa201166a83%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20(max-width%3A%20767px)%2090vw%2C%20(max-width%3A%20991px)%2048vw%2C%2050vw%22%20alt%3D%22Friends%20hanging%20out%22%3E%3Cdiv%20id%3D%22w-node-_47816886-1e48-4071-583d-41445481c166-848d3ec3%22%20class%3D%22content-block%22%3E%3Ch2%20class%3D%22text-display-small%22%3EWe%20exist%20for%20your%20success.%3C%2Fh2%3E%3Ca%20href%3D%22%2Four-mission%2Four-mission-light%22%20class%3D%22button%20w-button%22%3EOur%20Mission%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%22%3E%3Cdiv%20class%3D%22content-wrapper%20center-align%22%3E%3Ch2%20class%3D%22text-display-small%20text-align-center%22%3EOur%20%3Cspan%20class%3D%22text-style-underline%22%3ETeam%3C%2Fspan%3E%3C%2Fh2%3E%3Cdiv%20class%3D%22collection%20w-dyn-list%22%3E%3Cdiv%20role%3D%22list%22%20class%3D%22_4-column-grid%20w-dyn-items%22%3E%3Cdiv%20id%3D%22w-node-d22db7e0-45e2-64c7-db79-da006a8e47c1-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22team-member%20w-dyn-item%22%3E%3Cdiv%20class%3D%22image-wrapper%20round%22%3E%3Cimg%20alt%3D%22Valeria%20Hadad%20%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20(max-width%3A%20767px)%2038vw%2C%20(max-width%3A%20991px)%20225px%2C%2019vw%22%20class%3D%22image%20small%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ch3%20class%3D%22text-align-center%22%3EValeria%20Hadad%20%3C%2Fh3%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EPartnerships%20Associate%3C%2Fdiv%3E%3Cp%3EValeria%20Hadad%20is%20a%20Partnerships%20Associate%20at%202Gether-International%2C%20where%20she%20supports%20strategic%20collaborations%20that%20advance%20economic%20opportunity%20for%20entrepreneurs%20with%20disabilities.%20She%20has%20previous%20experience%20working%20across%20the%20social%20impact%20and%20international%20development%20sectors%20and%20holds%20a%20Master%E2%80%99s%20degree%20in%20Management%20for%20Social%20Innovation.%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-d22db7e0-45e2-64c7-db79-da006a8e47c1-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22team-member%20w-dyn-item%22%3E%3Cdiv%20class%3D%22image-wrapper%20round%22%3E%3Cimg%20alt%3D%22Mat%C3%ADas%20Kohn%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20(max-width%3A%20767px)%2038vw%2C%20(max-width%3A%20991px)%20225px%2C%2019vw%22%20class%3D%22image%20small%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ch3%20class%3D%22text-align-center%22%3EMat%C3%ADas%20Kohn%3C%2Fh3%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EProgram%20Operations%20Associate%3C%2Fdiv%3E%3Cp%3EMat%C3%ADas%20is%20a%20builder%20focused%20on%20turning%20ideas%20into%20scalable%20solutions.%20With%20a%20background%20in%20engineering%2C%20consulting%20and%20operations%2C%20he%20works%20at%20the%20intersection%20of%20strategy%20and%20execution.%20He%20is%20driven%20by%20creating%20practical%20innovations%20that%20solve%20real-world%20problems.%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-d22db7e0-45e2-64c7-db79-da006a8e47c1-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22team-member%20w-dyn-item%22%3E%3Cdiv%20class%3D%22image-wrapper%20round%22%3E%3Cimg%20alt%3D%22Courtney%20%26quot%3BCoko%26quot%3B%20Eason%22%20class%3D%22image%20small%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ch3%20class%3D%22text-align-center%22%3ECourtney%20%22Coko%22%20Eason%3C%2Fh3%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EU.S.%20Senior%20Program%20Manager%3C%2Fdiv%3E%3Cp%3ECoko%20is%20a%20past%20founder%20with%20extensive%20experience%20in%20events%2C%20startups%2C%20venture%20capital%20and%20ecosystem%20building.%20Coko%20develops%2C%20manages%20and%20facilitates%20all%20US%20Accelerator%20Programs%20for%202Gether-International%20and%20also%20graduated%20from%20the%20Pegasus%20Venture%20Capital%20Fellowship%20Program.%20%3C%2Fp%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-d22db7e0-45e2-64c7-db79-da006a8e47c1-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22team-member%20w-dyn-item%22%3E%3Cdiv%20class%3D%22image-wrapper%20round%22%3E%3Cimg%20alt%3D%22Alexandra%20Charnin%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20(max-width%3A%20767px)%2038vw%2C%20(max-width%3A%20991px)%20225px%2C%2019vw%22%20class%3D%22image%20small%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ch3%20class%3D%22text-align-center%22%3EAlexandra%20Charnin%3C%2Fh3%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EStrategic%20Communications%20Manager%3C%2Fdiv%3E%3Cp%3EAlexandra%20has%20worked%20as%20a%20dynamic%20advocate%20for%20disabled%20individuals%20for%20over%20a%20decade.%20With%20a%20diverse%20background%20in%20law%2C%20communications%2C%20and%20operations%2C%20and%20as%20a%20disabled%20person%20herself%2C%20Alexandra%20leverages%20her%20unique%20perspective%20to%20empower%20disabled%20entrepreneurs%20to%20create%20successful%2C%20sustainable%20businesses%2C%20grow%20their%20communities%2C%20and%20shift%20their%20limiting%20beliefs.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ca%20href%3D%22%2Four-team%2F2gi%22%20class%3D%22button%20margin-auto%20w-button%22%3EAll%20Team%20Members%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%22%3E%3Cdiv%20class%3D%22content-wrapper%20center-align%22%3E%3Ch2%20class%3D%22text-display-small%20text-align-center%22%3EOur%20%3Cspan%20class%3D%22text-style-underline%22%3EPrograms%3C%2Fspan%3E%3C%2Fh2%3E%3Cp%20class%3D%22max-width-820px%20text-align-center%22%3ELorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Suspendisse%20varius%20enim%20in%20eros%20elementum%20tristique.%20Duis%20cursus%2C%20mi%20quis%20viverra%20ornare%2C%20eros%20dolor%20interdum%20nulla%2C%20ut%20commodo%20diam%20libero%20vitae%20erat.%20Aenean%20faucibus%20nibh%20et%20justo%20cursus%20id%20rutrum%20lorem%20imperdiet.%20Nunc%20ut%20sem%20vitae%20risus%20tristique%20posuere.%3C%2Fp%3E%3Cdiv%20class%3D%22collection%20w-dyn-list%22%3E%3Cdiv%20role%3D%22list%22%20class%3D%22_2-column-grid%20w-dyn-items%22%3E%3Cdiv%20id%3D%22w-node-c2272a19-3395-d4ba-1a7b-38d8b77be7ea-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22program-card%20w-dyn-item%22%3E%3Cdiv%20id%3D%22w-node-c2272a19-3395-d4ba-1a7b-38d8b77be7eb-848d3ec3%22%20class%3D%22image-wrapper%22%3E%3Cimg%20alt%3D%22Founder%20Cohorts%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20180px%22%20class%3D%22image%20extra-small%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-_53bee913-7e01-55bb-1941-6b867733f5d9-848d3ec3%22%3E%3Ch3%20class%3D%22text-h4%22%3EFounder%20Cohorts%3C%2Fh3%3E%3Cp%3ESince%20their%20start%20in%202019%20our%20cohorts%20have%20provided%20founders%20with%20the%20tools%20and%20guidance%20to%20strengthen%20their%20pitch%2C%20connect%20with%20a%20network%20of%20funders%2C%20and%20build%20community%20with%20disabled%20entrepreneurs%20like%20themselves%3C%2Fp%3E%3Ca%20href%3D%22%2Fprogram%2Fwomens-cohort%22%20class%3D%22cta-link%20no-padding%22%3EFind%20out%20More%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-c2272a19-3395-d4ba-1a7b-38d8b77be7ea-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22program-card%20w-dyn-item%22%3E%3Cdiv%20id%3D%22w-node-c2272a19-3395-d4ba-1a7b-38d8b77be7eb-848d3ec3%22%20class%3D%22image-wrapper%22%3E%3Cimg%20alt%3D%22Partner%20With%202GI%22%20class%3D%22image%20extra-small%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-_53bee913-7e01-55bb-1941-6b867733f5d9-848d3ec3%22%3E%3Ch3%20class%3D%22text-h4%22%3EPartner%20With%202GI%3C%2Fh3%3E%3Cp%3EJoin%20our%20team%20of%20partners%20and%20collaborators%20to%20create%20lasting%20change%20for%20disabled%20founders.%20Sponsors%20empower%20us%20to%20maintain%20programs%20and%20expand%20the%20services%20we%20offer%20to%20connect%20with%20more%20entrepreneurs%20from%20around%20the%20world.%3C%2Fp%3E%3Ca%20href%3D%22%2Fprogram%2Ftech-cohort%22%20class%3D%22cta-link%20no-padding%22%3EFind%20out%20More%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-c2272a19-3395-d4ba-1a7b-38d8b77be7ea-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22program-card%20w-dyn-item%22%3E%3Cdiv%20id%3D%22w-node-c2272a19-3395-d4ba-1a7b-38d8b77be7eb-848d3ec3%22%20class%3D%22image-wrapper%22%3E%3Cimg%20alt%3D%22Support%202GI%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20180px%22%20class%3D%22image%20extra-small%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-_53bee913-7e01-55bb-1941-6b867733f5d9-848d3ec3%22%3E%3Ch3%20class%3D%22text-h4%22%3ESupport%202GI%3C%2Fh3%3E%3Cp%3EWhen%20you%20donate%20to%202Gether-International%20you%E2%80%99re%20joining%20a%20community%20of%20funders%2C%20philanthropists%2C%20and%20disability%20advocates%20who%20collectively%20make%20the%20work%20of%202GI%20possible.%20Become%20a%20donor%20today%20and%20help%20us%20flip%20the%20disability%20narrative%20for%20all.%3C%2Fp%3E%3Ca%20href%3D%22%2Fprogram%2Fcustom-cohort%22%20class%3D%22cta-link%20no-padding%22%3EFind%20out%20More%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%22%3E%3Cdiv%20class%3D%22content-wrapper%20_30-70-layout%22%3E%3Cdiv%20id%3D%22w-node-c4dd23ce-8e5d-3d3e-b03d-6ed5993c2aa1-848d3ec3%22%20class%3D%22content-block%22%3E%3Ch2%3EOur%20%3Cspan%20class%3D%22text-style-underline%22%3ETeam%3C%2Fspan%3E%3C%2Fh2%3E%3Cp%3ETortor%20sit%20nisl%20purus%20nunc%20massa%20diam%20velit%20hac%20in.%20Nisl%2C%20sem%20adipiscing%20risus%20pulvinar%20non%20sed%20nullam%20id%20integer.%20Integer%20quis%20porttitor%20mauris%20arcu%2C%20pretium%20orci%20quam.%20Enim%20cursus%20mattis%20nunc%20aliquam%20pharetra%20feugiat%20ante%20sollicitudin.%3C%2Fp%3E%3C%2Fdiv%3E%3Ca%20id%3D%22w-node-ff0fd94b-1b3f-44f7-f265-e17c6aa84e47-848d3ec3%22%20href%3D%22%2Four-team%2F2gi%22%20class%3D%22button%20w-button%22%3EAll%20Team%20Members%3C%2Fa%3E%3Cdiv%20id%3D%22w-node-f2815fbd-ad85-08fd-87b3-3b9f6402c45c-848d3ec3%22%20class%3D%22collection%20w-dyn-list%22%3E%3Cdiv%20role%3D%22list%22%20class%3D%22_2-column-grid%20w-dyn-items%22%3E%3Cdiv%20id%3D%22w-node-f2815fbd-ad85-08fd-87b3-3b9f6402c45e-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22team-member%20small%20w-dyn-item%22%3E%3Cdiv%20class%3D%22image-wrapper%20round%22%3E%3Cimg%20alt%3D%22Valeria%20Hadad%20%22%20sizes%3D%22104px%22%20class%3D%22image%20tiny%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%3E%3Ch4%3EValeria%20Hadad%20%3C%2Fh4%3E%3Ch6%20class%3D%22text-style-all-caps%20color-gray-2%22%3EPartnerships%20Associate%3C%2Fh6%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-f2815fbd-ad85-08fd-87b3-3b9f6402c45e-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22team-member%20small%20w-dyn-item%22%3E%3Cdiv%20class%3D%22image-wrapper%20round%22%3E%3Cimg%20alt%3D%22Mat%C3%ADas%20Kohn%22%20sizes%3D%22104px%22%20class%3D%22image%20tiny%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%3E%3Ch4%3EMat%C3%ADas%20Kohn%3C%2Fh4%3E%3Ch6%20class%3D%22text-style-all-caps%20color-gray-2%22%3EProgram%20Operations%20Associate%3C%2Fh6%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-f2815fbd-ad85-08fd-87b3-3b9f6402c45e-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22team-member%20small%20w-dyn-item%22%3E%3Cdiv%20class%3D%22image-wrapper%20round%22%3E%3Cimg%20alt%3D%22Courtney%20%26quot%3BCoko%26quot%3B%20Eason%22%20class%3D%22image%20tiny%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%3E%3Ch4%3ECourtney%20%22Coko%22%20Eason%3C%2Fh4%3E%3Ch6%20class%3D%22text-style-all-caps%20color-gray-2%22%3EU.S.%20Senior%20Program%20Manager%3C%2Fh6%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-f2815fbd-ad85-08fd-87b3-3b9f6402c45e-848d3ec3%22%20role%3D%22listitem%22%20class%3D%22team-member%20small%20w-dyn-item%22%3E%3Cdiv%20class%3D%22image-wrapper%20round%22%3E%3Cimg%20alt%3D%22Alexandra%20Charnin%22%20sizes%3D%22104px%22%20class%3D%22image%20tiny%22%3E%3Cdiv%20class%3D%22image-overlay%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%3E%3Ch4%3EAlexandra%20Charnin%3C%2Fh4%3E%3Ch6%20class%3D%22text-style-all-caps%20color-gray-2%22%3EStrategic%20Communications%20Manager%3C%2Fh6%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%22%3E%3Cdiv%20class%3D%22content-wrapper%20center-align%22%3E%3Ch2%20class%3D%22text-display-small%20text-align-center%22%3EThe%20%3Cspan%20class%3D%22text-style-underline%22%3EBlog%3C%2Fspan%3E%3C%2Fh2%3E%3Cp%20class%3D%22text-align-center%20max-width-820px%22%3ETortor%20sit%20nisl%20purus%20nunc%20massa%20diam%20velit%20hac%20in.%20Nisl%2C%20sem%20adipiscing%20risus%20pulvinar%20non%20sed%20nullam%20id%20integer.%20Integer%20quis%20porttitor%20mauris%20arcu%2C%20pretium%20orci%20quam.%20Enim%20cursus%20mattis%20nunc%20aliquam%20pharetra%20feugiat%20ante%20sollicitudin.%3C%2Fp%3E%3Cdiv%20class%3D%22collection%20w-dyn-list%22%3E%3Cdiv%20role%3D%22list%22%20class%3D%22_4-column-grid%20w-dyn-items%22%3E%3Cdiv%20role%3D%22listitem%22%20class%3D%22blog-card%20w-dyn-item%22%3E%3Cimg%20alt%3D%22Looking%20ahead%3B%20the%20year%20Accessible%20Ecosystem%20became%20a%20reality%22%20class%3D%22image%20card%22%3E%3Cdiv%20class%3D%22post-type%20text-style-all-caps%22%3EBlog%3C%2Fdiv%3E%3Ch3%20class%3D%22text-h4%22%3ELooking%20ahead%3B%20the%20year%20Accessible%20Ecosystem%20became%20a%20reality%3C%2Fh3%3E%3Cp%20class%3D%22paragraph%22%3EAt%20some%20point%20in%20the%20past%20year%2C%20something%20shifted.%0AIt%20didn%E2%80%99t%20happen%20in%20a%20single%20meeting%2C%20pitch%2C%20or%20announcement.%20It%20happened%20slowly%2C%20across%20screens%2C%20cities%2C%20and%20conversations.%20In%20a%20WhatsApp%20message%20between%20founders.%20In%20a%20pitch%20that%20landed%20differently.%20In%20a%20founder%20realizing%20they%20were%20no%20longer%20building%20alone.%3C%2Fp%3E%3Ca%20href%3D%22%2Fnews%2Flooking-ahead-the-year-accessible-ecosystem-became-a-reality%22%20class%3D%22cta-link%20no-padding%22%3ERead%20Now%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22listitem%22%20class%3D%22blog-card%20w-dyn-item%22%3E%3Cimg%20alt%3D%22Together%2C%20We%20Rise%3A%20The%20Accessible%20Ecosystem%20Through%20the%20Eyes%20of%20Our%20Founders%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20(max-width%3A%20767px)%2041vw%2C%20(max-width%3A%20991px)%2044vw%2C%2020vw%22%20class%3D%22image%20card%22%3E%3Cdiv%20class%3D%22post-type%20text-style-all-caps%22%3EBlog%3C%2Fdiv%3E%3Ch3%20class%3D%22text-h4%22%3ETogether%2C%20We%20Rise%3A%20The%20Accessible%20Ecosystem%20Through%20the%20Eyes%20of%20Our%20Founders%3C%2Fh3%3E%3Cp%20class%3D%22paragraph%22%3EWhat%20happens%20when%20you%20give%20visionaries%20the%20tools%2C%20the%20confidence%2C%20and%20the%20support%20they%20need%20to%20build%20their%20dreams%3FAt%202Gether-International%2C%20we%20have%20seen%20the%20answer%2C%20and%20it%20is%20nothing%20short%20of%20extraordinary.This%20year%2C%20through%20our%20Accessible%20Ecosystem%20initiative%20in%20partnership%20with%20IDB%20Lab%2C%20we%20brought%20our%20mission%20to%20Latin%20America%20and%20the%20Caribbean%2C%20supporting%20entrepreneurs%20with%20disabilities%20and%20innovators%20creating%20inclusive%2C%20tech-driven%20solutions.We%20designed%20two%20programs%20to%20meet%20founders%20where%20they%20are%3A%20Venture%20Labs%2C%20a%204-week%20incubator%2C%20helps%20early-stage%20entrepreneurs%20move%20from%20idea%20to%20validation.%20Accelerator%2C%20a%2010-week%20program%2C%20helps%20founders%20develop%20scalable%20businesses%20to%20grow%20and%20pitch%20for%20funding.These%20founders%20show%20every%20day%20that%20inclusion%20and%20innovation%20go%20hand%20in%20hand.%20The%20first%20cycle%20of%20Venture%20Labs%20made%20that%20crystal%20clear.%3C%2Fp%3E%3Ca%20href%3D%22%2Fnews%2Ftogether-we-rise-the-accessible-ecosystem-through-the-eyes-of-our-founders%22%20class%3D%22cta-link%20no-padding%22%3ERead%20Now%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22listitem%22%20class%3D%22blog-card%20w-dyn-item%22%3E%3Cimg%20alt%3D%22Top%20Tips%20for%20Disabled%20Individuals%20Interested%20in%20Entrepreneurship%3A%20Insights%20from%20a%20Forbes%20Accessibility%20100%20Honoree%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20(max-width%3A%20767px)%2041vw%2C%20(max-width%3A%20991px)%2044vw%2C%2020vw%22%20class%3D%22image%20card%22%3E%3Cdiv%20class%3D%22post-type%20text-style-all-caps%22%3EBlog%3C%2Fdiv%3E%3Ch3%20class%3D%22text-h4%22%3ETop%20Tips%20for%20Disabled%20Individuals%20Interested%20in%20Entrepreneurship%3A%20Insights%20from%20a%20Forbes%20Accessibility%20100%20Honoree%3C%2Fh3%3E%3Cp%20class%3D%22paragraph%22%3EEntrepreneurship%20is%20a%20powerful%20and%20empowering%20path%20for%20Disabled%20individuals%2C%20offering%20autonomy%2C%20flexibility%2C%20and%20the%20chance%20to%20innovate%20based%20on%20lived%20experience.%20Drawing%20on%20the%20story%20and%20impact%20of%202Gether-International%2C%20recently%20recognized%20in%20the%20Forbes%20Accessibility%20100%20list%2C%20this%20post%20outlines%20the%20unique%20strengths%20Disabled%20Founders%20bring%20to%20the%20business%20world%2C%20and%20shares%20five%20practical%20tips%20for%20aspiring%20entrepreneurs.%3C%2Fp%3E%3Ca%20href%3D%22%2Fnews%2Ftop-tips-for-disabled-individuals-interested-in-entrepreneurship-insights-from-a-forbes-accessibility-100-honoree%22%20class%3D%22cta-link%20no-padding%22%3ERead%20Now%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20role%3D%22listitem%22%20class%3D%22blog-card%20w-dyn-item%22%3E%3Cimg%20alt%3D%22Shape%20Your%20Startup%20Vision%3A%20The%20Lean%20Canvas%20for%20Disabled%20Entrepreneurs%22%20sizes%3D%22(max-width%3A%20479px)%20100vw%2C%20(max-width%3A%20767px)%2041vw%2C%20(max-width%3A%20991px)%2044vw%2C%2020vw%22%20class%3D%22image%20card%22%3E%3Cdiv%20class%3D%22post-type%20text-style-all-caps%22%3EBlog%3C%2Fdiv%3E%3Ch3%20class%3D%22text-h4%22%3EShape%20Your%20Startup%20Vision%3A%20The%20Lean%20Canvas%20for%20Disabled%20Entrepreneurs%3C%2Fh3%3E%3Cp%20class%3D%22paragraph%22%3EUnlock%20the%20power%20of%20your%20lived%20experience%20as%20a%20Disabled%20Entrepreneur%2C%20and%20discover%20how%20the%20Lean%20Canvas%20can%20help%20you%20clarify%20your%20startup%20vision%2C%20highlight%20your%20unique%20value%2C%20and%20build%20a%20truly%20inclusive%20business.%20Learn%20from%20real-world%20examples%20and%20practical%20tips%2C%20and%20see%20why%20disabled%20founders%20are%20driving%20innovation%20and%20inclusion%20across%20industries.%20Read%20the%20full%20blog%20and%20join%20our%20Disability%20Startup%20Network%20to%20connect%20with%20a%20community%20that%20celebrates%20your%20strengths%20and%20supports%20your%20journey!%3C%2Fp%3E%3Ca%20href%3D%22%2Fnews%2Fshape-your-startup-vision-the-lean-canvas-for-disabled-entrepreneurs-2%22%20class%3D%22cta-link%20no-padding%22%3ERead%20Now%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ca%20href%3D%22%2Fthe-blog%2Fblog%22%20class%3D%22button%20margin-auto%20w-button%22%3EAll%20Blog%20Posts%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%20full-viewport%22%3E%3Cimg%20loading%3D%22lazy%22%20data-w-id%3D%2255d12399-e7f8-95e9-86ac-a972222602bd%22%20alt%3D%22Friends%20hugging%22%20class%3D%22background-image%22%20style%3D%22will-change%3A%20transform%3B%20transform%3A%20translate3d(0px%2C%20-20%25%2C%200px)%20scale3d(1%2C%201%2C%201)%20rotateX(0deg)%20rotateY(0deg)%20rotateZ(0deg)%20skew(0deg%2C%200deg)%3B%20transform-style%3A%20preserve-3d%3B%22%3E%3Cdiv%20class%3D%22image-overlay%20dark%22%3E%3C%2Fdiv%3E%3Ch2%20class%3D%22text-display-small%20color-white%22%3EWe%20exist%20for%20your%20success.%3C%2Fh2%3E%3Ca%20href%3D%22%2Four-mission%2Four-mission-light%22%20class%3D%22button%20large%20secondary%20w-button%22%3EOur%20Mission%3C%2Fa%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%20background-color-secondary%22%3E%3Cdiv%20class%3D%22content-wrapper%20end-of-page-cta%22%3E%3Ch2%20class%3D%22text-h1%20color-white%22%3EAre%20you%20ready%20to%20make%20a%20difference%20in%20the%20lives%20of%20emerging%20adults%3F%3C%2Fh2%3E%3Cdiv%20class%3D%22button-group%22%3E%3Ca%20href%3D%22%2Fall-programs%2Fprograms-light%22%20class%3D%22button%20secondary%20w-button%22%3EExplore%20Programs%3C%2Fa%3E%3Ca%20href%3D%22%2Fdonate%2Fdonate%22%20class%3D%22button%20secondary%20w-button%22%3EDonate%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Csection%20class%3D%22section%22%3E%3Cdiv%20class%3D%22content-wrapper%20subscribe-form%22%3E%3Ch2%20class%3D%22color-primary%22%3ESay%20updated%20with%20the%20latest%20news!%3C%2Fh2%3E%3Cdiv%20class%3D%22form-block%20horizontal%20w-form%22%3E%3Cform%20id%3D%22email-form%22%20name%3D%22email-form%22%20data-name%3D%22Email%20Form%22%20method%3D%22get%22%20class%3D%22horizontal%22%20data-wf-page-id%3D%2262b5cedad5605858848d3ec3%22%20data-wf-element-id%3D%2289b8c52b-2bc1-fc13-88e5-8213472b9f67%22%20aria-label%3D%22Email%20Form%22%3E%3Cdiv%20class%3D%22form-field-wrapper%22%3E%3Clabel%20for%3D%22name-2%22%3EName%3C%2Flabel%3E%3Cinput%20class%3D%22form-field%20w-input%22%20maxlength%3D%22256%22%20name%3D%22name-2%22%20data-name%3D%22Name%202%22%20placeholder%3D%22%22%20type%3D%22text%22%20id%3D%22name-2%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22form-field-wrapper%22%3E%3Clabel%20for%3D%22email-2%22%3EEmail%20Address%3C%2Flabel%3E%3Cinput%20class%3D%22form-field%20w-input%22%20maxlength%3D%22256%22%20name%3D%22email-2%22%20data-name%3D%22Email%202%22%20placeholder%3D%22%22%20type%3D%22email%22%20id%3D%22email-2%22%20required%3D%22%22%3E%3C%2Fdiv%3E%3Cinput%20type%3D%22submit%22%20data-wait%3D%22Please%20wait...%22%20class%3D%22button%20w-button%22%20value%3D%22Subscribe!%22%3E%3C%2Fform%3E%3Cdiv%20class%3D%22form-success-message%20w-form-done%22%20tabindex%3D%22-1%22%20role%3D%22region%22%20aria-label%3D%22Email%20Form%20success%22%3E%3Cdiv%3EThank%20you!%20Your%20submission%20has%20been%20received!%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22form-error-message%20w-form-fail%22%20tabindex%3D%22-1%22%20role%3D%22region%22%20aria-label%3D%22Email%20Form%20failure%22%3E%3Cdiv%3EOops!%20Something%20went%20wrong%20while%20submitting%20the%20form.%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Cdiv%20class%3D%22footer%22%3E%3Cdiv%20class%3D%22primary-footer%22%3E%3Cdiv%20id%3D%22w-node-_0f8ec7a1-724e-e762-3398-dfeb49a228fb-1186b488%22%20class%3D%22footer-links-wrapper%22%3E%3Ca%20href%3D%22%2Ftemplate%2Fall-sections%2Fall-sections-light%22%20aria-current%3D%22page%22%20class%3D%22footer-logo%20w-inline-block%20w--current%22%3E%3Cimg%20sizes%3D%22(max-width%3A%201222px)%20100vw%2C%201222px%22%20alt%3D%22%22%3E%3C%2Fa%3E%3Cdiv%20class%3D%22social-icons-wrapper%22%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.facebook.com%2F2getherInternational%2F%22%20target%3D%22_blank%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Facebook%20icon%22%3E%3C%2Fa%3E%3Ca%20href%3D%22mailto%3Ahi%40abelhancock.com%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Email%20icon%22%3E%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.instagram.com%2F2gether_international%22%20target%3D%22_blank%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Instagram%20icon%22%3E%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fmobile.twitter.com%2F2getherinternat%22%20target%3D%22_blank%22%20class%3D%22social-icon-link%20w-inline-block%22%3E%3Cimg%20alt%3D%22Twitter%20icon%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EWho%20we%20ARe%3C%2Fdiv%3E%3Ca%20href%3D%22%2Four-team%2Four-founders%22%20class%3D%22footer-link%22%3EOur%20Founders%3C%2Fa%3E%3Ca%20href%3D%22%2Four-mission%2Four-mission-light%22%20class%3D%22footer-link%22%3EOur%20Mission%3C%2Fa%3E%3Ca%20href%3D%22%2Four-team%2F2gi%22%20class%3D%22footer-link%22%3EOur%20Team%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EWhat%20we%20Do%3C%2Fdiv%3E%3Ca%20href%3D%22%2Four-programs%22%20class%3D%22footer-link%22%3EPrograms%3C%2Fa%3E%3Ca%20href%3D%22%2Fin-the-news%22%20class%3D%22footer-link%22%3ENews%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EGet%20Involved%3C%2Fdiv%3E%3Ca%20href%3D%22%2Four-team%2Fpartnerships%22%20class%3D%22footer-link%22%3EPartnerships%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Fsecure.givelively.org%2Fdonate%2F2gether-international-inc%22%20class%3D%22footer-link%22%3EDonate%3C%2Fa%3E%3Ca%20href%3D%22%2Fcontact%2Fcontact-light%22%20class%3D%22footer-link%22%3EContact%20Us%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22footer-links-wrapper%22%3E%3Cdiv%20class%3D%22text-style-all-caps%20color-gray-2%22%3EOther%20Links%3C%2Fdiv%3E%3Ca%20href%3D%22https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdjb9HHW7QnH-gyOI8irw3mRlbOrHRm-JoSISUERZAt1vnLHQ%2Fviewform%22%20class%3D%22footer-link%22%3EWB%26nbsp%3BPolicy%3C%2Fa%3E%3Ca%20href%3D%22https%3A%2F%2Facrobat.adobe.com%2Fid%2Furn%3Aaaid%3Asc%3AUS%3Af52ff4a4-01ee-4974-92cc-fb5c7a8be01c%22%20class%3D%22footer-link%22%3E%3Cstrong%3E2GI%20Event%20Privacy%20Policy%3C%2Fstrong%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22w-node-_422a992f-e58c-7479-1abd-da6c8cac605c-1186b488%22%20class%3D%22form-block%20footer-subscribe%20w-form%22%3E%3Cform%20id%3D%22wf-form-Newsletter-Subscription%22%20name%3D%22wf-form-Newsletter-Subscription%22%20data-name%3D%22Newsletter%20Subscription%22%20method%3D%22get%22%20data-wf-page-id%3D%2262b5cedad5605858848d3ec3%22%20data-wf-element-id%3D%22422a992f-e58c-7479-1abd-da6c8cac605d%22%20aria-label%3D%22Newsletter%20Subscription%22%3E%3Clabel%20for%3D%22name%22%3EName%3C%2Flabel%3E%3Cinput%20class%3D%22form-field%20w-input%22%20maxlength%3D%22256%22%20name%3D%22name%22%20data-name%3D%22Name%22%20placeholder%3D%22%22%20type%3D%22text%22%20id%3D%22name%22%3E%3Clabel%20for%3D%22email%22%3EEmail%20Address%3C%2Flabel%3E%3Cinput%20class%3D%22form-field%20w-input%22%20maxlength%3D%22256%22%20name%3D%22email%22%20data-name%3D%22Email%22%20placeholder%3D%22%22%20type%3D%22email%22%20id%3D%22email%22%20required%3D%22%22%3E%3Cinput%20type%3D%22submit%22%20data-wait%3D%22Please%20wait...%22%20class%3D%22button%20small%20nav-cta%20w-button%22%20value%3D%22Subscribe!%22%3E%3C%2Fform%3E%3Cdiv%20class%3D%22form-success-message%20w-form-done%22%20tabindex%3D%22-1%22%20role%3D%22region%22%20aria-label%3D%22Newsletter%20Subscription%20success%22%3E%3Cdiv%3EThank%20you!%20Your%20submission%20has%20been%20received!%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22form-error-message%20w-form-fail%22%20tabindex%3D%22-1%22%20role%3D%22region%22%20aria-label%3D%22Newsletter%20Subscription%20failure%22%3E%3Cdiv%3EOops!%20Something%20went%20wrong%20while%20submitting%20the%20form.%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22secondary-footer%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20data-w-id%3D%224c2d413b-01c2-e3b9-4974-369ae633bc3e%22%20class%3D%22theme-switcher-wrapper%22%20style%3D%22width%3A%2064px%3B%22%3E%3Cdiv%20class%3D%22theme-switcher%22%3E%3Cdiv%20class%3D%22theme-links%22%3E%3Ca%20href%3D%22%2Ftemplate%2Fall-sections%2Fall-sections-light%22%20aria-current%3D%22page%22%20class%3D%22theme-link%20w--current%22%3E1.%20Light%3C%2Fa%3E%3Ca%20href%3D%22%2Ftemplate%2Fall-sections%2Fall-sections-dark%22%20class%3D%22theme-link%22%3E2.%20Dark%3C%2Fa%3E%3Ca%20href%3D%22%23%22%20class%3D%22theme-link%22%3E%3C%2Fa%3E%3Ca%20href%3D%22%23%22%20class%3D%22theme-link%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22theme-switcher-text%22%3ETheme%26nbsp%3BSwitcher%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C!--%20Google%20Tag%20Manager%20(noscript)%20--%3E%0A%3Cnoscript%3E%3C%2Fnoscript%3E%0A%3C!--%20End%20Google%20Tag%20Manager%20(noscript)%20--%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "4ec5bce2-c2d3-4f88-ba47-c7b9722bfbc8",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.2gether-international.org-template-all-sections-all-sections-light"
+}

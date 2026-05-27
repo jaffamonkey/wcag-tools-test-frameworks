@@ -1,0 +1,320 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 320,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 320,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 320,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "svg_graphics_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/form[1]/div[1]/svg[1]",
+                "aria": "/document[1]/form[1]/graphics-document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "The SVG element has no accessible name",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 156,
+                "width": 156
+            },
+            "snippet": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 257 257\" height=\"156\" width=\"156\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/svg_graphics_labelled.html#%7B%22message%22%3A%22The%20SVG%20element%20has%20no%20accessible%20name%22%2C%22snippet%22%3A%22%3Csvg%20xmlns%3D%5C%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%5C%22%20fill%3D%5C%22none%5C%22%20viewBox%3D%5C%220%200%20257%20257%5C%22%20height%3D%5C%22156%5C%22%20width%3D%5C%22156%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22svg_graphics_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 187,
+                "height": 19,
+                "width": 2
+            },
+            "snippet": "<input style=\"box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;\" value=\"\" aria-autocomplete=\"list\" type=\"text\" tabindex=\"0\" spellcheck=\"false\" id=\"react-select-2-input\" autocorrect=\"off\" autocomplete=\"off\" autocapitalize=\"none\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cinput%20style%3D%5C%22box-sizing%3A%20content-box%3B%20width%3A%202px%3B%20background%3A%200px%20center%3B%20border%3A%200px%3B%20font-size%3A%20inherit%3B%20opacity%3A%201%3B%20outline%3A%200px%3B%20padding%3A%200px%3B%20color%3A%20inherit%3B%5C%22%20value%3D%5C%22%5C%22%20aria-autocomplete%3D%5C%22list%5C%22%20type%3D%5C%22text%5C%22%20tabindex%3D%5C%220%5C%22%20spellcheck%3D%5C%22false%5C%22%20id%3D%5C%22react-select-2-input%5C%22%20autocorrect%3D%5C%22off%5C%22%20autocomplete%3D%5C%22off%5C%22%20autocapitalize%3D%5C%22none%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 187,
+                "height": 19,
+                "width": 2
+            },
+            "snippet": "<input style=\"box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;\" value=\"\" aria-autocomplete=\"list\" type=\"text\" tabindex=\"0\" spellcheck=\"false\" id=\"react-select-2-input\" autocorrect=\"off\" autocomplete=\"off\" autocapitalize=\"none\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cinput%20style%3D%5C%22box-sizing%3A%20content-box%3B%20width%3A%202px%3B%20background%3A%200px%20center%3B%20border%3A%200px%3B%20font-size%3A%20inherit%3B%20opacity%3A%201%3B%20outline%3A%200px%3B%20padding%3A%200px%3B%20color%3A%20inherit%3B%5C%22%20value%3D%5C%22%5C%22%20aria-autocomplete%3D%5C%22list%5C%22%20type%3D%5C%22text%5C%22%20tabindex%3D%5C%220%5C%22%20spellcheck%3D%5C%22false%5C%22%20id%3D%5C%22react-select-2-input%5C%22%20autocorrect%3D%5C%22off%5C%22%20autocomplete%3D%5C%22off%5C%22%20autocapitalize%3D%5C%22none%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 187,
+                "height": 19,
+                "width": 2
+            },
+            "snippet": "<input style=\"box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;\" value=\"\" aria-autocomplete=\"list\" type=\"text\" tabindex=\"0\" spellcheck=\"false\" id=\"react-select-2-input\" autocorrect=\"off\" autocomplete=\"off\" autocapitalize=\"none\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20style%3D%5C%22box-sizing%3A%20content-box%3B%20width%3A%202px%3B%20background%3A%200px%20center%3B%20border%3A%200px%3B%20font-size%3A%20inherit%3B%20opacity%3A%201%3B%20outline%3A%200px%3B%20padding%3A%200px%3B%20color%3A%20inherit%3B%5C%22%20value%3D%5C%22%5C%22%20aria-autocomplete%3D%5C%22list%5C%22%20type%3D%5C%22text%5C%22%20tabindex%3D%5C%220%5C%22%20spellcheck%3D%5C%22false%5C%22%20id%3D%5C%22react-select-2-input%5C%22%20autocorrect%3D%5C%22off%5C%22%20autocomplete%3D%5C%22off%5C%22%20autocapitalize%3D%5C%22none%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 248,
+                "height": 19,
+                "width": 2
+            },
+            "snippet": "<input style=\"box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;\" value=\"\" aria-autocomplete=\"list\" type=\"text\" tabindex=\"0\" spellcheck=\"false\" id=\"react-select-3-input\" autocorrect=\"off\" autocomplete=\"off\" autocapitalize=\"none\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cinput%20style%3D%5C%22box-sizing%3A%20content-box%3B%20width%3A%202px%3B%20background%3A%200px%20center%3B%20border%3A%200px%3B%20font-size%3A%20inherit%3B%20opacity%3A%201%3B%20outline%3A%200px%3B%20padding%3A%200px%3B%20color%3A%20inherit%3B%5C%22%20value%3D%5C%22%5C%22%20aria-autocomplete%3D%5C%22list%5C%22%20type%3D%5C%22text%5C%22%20tabindex%3D%5C%220%5C%22%20spellcheck%3D%5C%22false%5C%22%20id%3D%5C%22react-select-3-input%5C%22%20autocorrect%3D%5C%22off%5C%22%20autocomplete%3D%5C%22off%5C%22%20autocapitalize%3D%5C%22none%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[2]/div[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/input[1]",
+                "aria": "/document[1]/form[1]/textbox[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 248,
+                "height": 19,
+                "width": 2
+            },
+            "snippet": "<input style=\"box-sizing: content-box; width: 2px; background: 0px center; border: 0px; font-size: inherit; opacity: 1; outline: 0px; padding: 0px; color: inherit;\" value=\"\" aria-autocomplete=\"list\" type=\"text\" tabindex=\"0\" spellcheck=\"false\" id=\"react-select-3-input\" autocorrect=\"off\" autocomplete=\"off\" autocapitalize=\"none\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20style%3D%5C%22box-sizing%3A%20content-box%3B%20width%3A%202px%3B%20background%3A%200px%20center%3B%20border%3A%200px%3B%20font-size%3A%20inherit%3B%20opacity%3A%201%3B%20outline%3A%200px%3B%20padding%3A%200px%3B%20color%3A%20inherit%3B%5C%22%20value%3D%5C%22%5C%22%20aria-autocomplete%3D%5C%22list%5C%22%20type%3D%5C%22text%5C%22%20tabindex%3D%5C%220%5C%22%20spellcheck%3D%5C%22false%5C%22%20id%3D%5C%22react-select-3-input%5C%22%20autocorrect%3D%5C%22off%5C%22%20autocomplete%3D%5C%22off%5C%22%20autocapitalize%3D%5C%22none%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        }
+    ],
+    "numExecuted": 353,
+    "ruleTime": 3,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "svg_graphics_labelled": {
+            "0": "A non-decorative SVG element must have an accessible name",
+            "fail_acc_name": "The SVG element has no accessible name"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "style_focus_visible": {
+            "0": "The keyboard focus indicator should be visible when default border or outline is modified by CSS",
+            "potential_focus_not_visible": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 5,
+            "elementsViolation": 4,
+            "elementsViolationReview": 5,
+            "violation": 5,
+            "potentialviolation": 4,
+            "recommendation": 0,
+            "potentialrecommendation": 2,
+            "manual": 1,
+            "pass": 341
+        },
+        "scanTime": 17,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778707089450,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EStackDemo%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%3E%3Cdiv%20id%3D%22__next%22%3E%3Cdiv%20class%3D%22login_logo%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22login_wrapper%22%3E%3Cdiv%20class%3D%22Modal_modal__3I0HK%22%3E%3Cform%20class%3D%22w-80%20flex%20flex-col%20justify-between%20p-3%22%3E%3Cdiv%20class%3D%22flex%20justify-center%20pb-12%20%22%3E%3Csvg%20width%3D%22156%22%20height%3D%22156%22%20viewBox%3D%220%200%20257%20257%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M67.5384%20173.762L27.7728%20161.49L31.4952%20159.135L55.6622%20156.201L67.5384%20173.762Z%22%20fill%3D%22%23666666%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M218.084%20108.798C218.084%20158.359%20178.087%20198.534%20128.746%20198.534C79.407%20198.534%2039.4092%20158.359%2039.4092%20108.798C39.4092%2059.2387%2079.407%2019.0623%20128.746%2019.0623C178.087%2019.0623%20218.084%2059.2387%20218.084%20108.798Z%22%20fill%3D%22%23ECB360%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M194.261%2099.8245C194.261%20144.428%20159.594%20180.587%20116.835%20180.587C74.0741%20180.587%2039.4092%20144.428%2039.4092%2099.8245C39.4092%2055.2211%2074.0741%2019.0623%20116.835%2019.0623C159.594%2019.0623%20194.261%2055.2211%20194.261%2099.8245Z%22%20fill%3D%22%23D76835%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M200.216%2090.8499C200.216%20130.499%20169.551%20162.64%20131.722%20162.64C93.8976%20162.64%2063.2325%20130.499%2063.2325%2090.8499C63.2325%2051.2034%2093.8976%2019.0623%20131.722%2019.0623C169.551%2019.0623%20200.216%2051.2034%20200.216%2090.8499Z%22%20fill%3D%22%23D33A41%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M194.26%2096.8338C194.26%20133.176%20166.261%20162.64%20131.723%20162.64C97.1853%20162.64%2069.188%20133.176%2069.188%2096.8338C69.188%2060.4883%2097.1853%2031.0266%20131.723%2031.0266C166.261%2031.0266%20194.26%2060.4883%20194.26%2096.8338Z%22%20fill%3D%22%23B6CB46%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M188.304%20102.815C188.304%20135.855%20161.639%20162.64%20128.745%20162.64C95.8538%20162.64%2069.188%20135.855%2069.188%20102.815C69.188%2069.7752%2095.8538%2042.9921%20128.745%2042.9921C161.639%2042.9921%20188.304%2069.7752%20188.304%20102.815Z%22%20fill%3D%22%2366AD4A%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M164.481%2090.8512C164.481%20117.283%20143.149%20138.711%20116.834%20138.711C90.5185%20138.711%2069.188%20117.283%2069.188%2090.8512C69.188%2064.4194%2090.5185%2042.9921%20116.834%2042.9921C143.149%2042.9921%20164.481%2064.4194%20164.481%2090.8512Z%22%20fill%3D%22%23AED7DC%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M170.437%2084.8688C170.437%20107.996%20151.772%20126.746%20128.746%20126.746C105.719%20126.746%2087.0558%20107.996%2087.0558%2084.8688C87.0558%2061.74%20105.719%2042.9921%20128.746%2042.9921C151.772%2042.9921%20170.437%2061.74%20170.437%2084.8688Z%22%20fill%3D%22%235BB1CF%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M170.437%2087.8586C170.437%20109.335%20154.439%20126.745%20134.702%20126.745C114.966%20126.745%2098.9672%20109.335%2098.9672%2087.8586C98.9672%2066.3847%20114.966%2048.9741%20134.702%2048.9741C154.439%2048.9741%20170.437%2066.3847%20170.437%2087.8586Z%22%20fill%3D%22%2325A8C3%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M128.746%20126.745C112.3%20126.745%2098.9672%20112.013%2098.9672%2093.841C98.9672%2075.669%20112.3%2060.9388%20128.746%2060.9388C145.192%2060.9388%20158.526%2075.669%20158.526%2093.841C158.526%20112.013%20145.192%20126.745%20128.746%20126.745Z%22%20fill%3D%22%231B1A18%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M144.995%2084.3544C142.162%2089.115%20136.592%2091.8683%20132.552%2090.4994C128.512%2089.1329%20127.534%2084.163%20130.365%2079.4013C133.198%2074.6389%20138.768%2071.8873%20142.808%2073.2541C146.848%2074.6208%20147.826%2079.5904%20144.995%2084.3544Z%22%20fill%3D%22%23FFFFFE%22%3E%3C%2Fpath%3E%3Cg%20filter%3D%22url(%23filter0_d)%22%3E%3Crect%20x%3D%2227.7728%22%20y%3D%22119.717%22%20width%3D%22118.841%22%20height%3D%2241.6666%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3C%2Fg%3E%3Cpath%20d%3D%22M50.1592%20152.857H58.2063C59.9837%20152.857%2061.4847%20152.467%2062.7094%20151.687C63.9449%20150.961%2064.9095%20150.04%2065.6031%20148.923C65.8632%20148.501%2066.0854%20148.094%2066.2696%20147.704C66.443%20147.303%2066.5731%20146.848%2066.6598%20146.338C66.844%20145.331%2066.9361%20143.553%2066.9361%20141.006C66.9361%20138.611%2066.8765%20136.926%2066.7573%20135.95C66.6056%20134.975%2066.2425%20134.043%2065.6681%20133.154C64.0641%20130.51%2061.6581%20129.177%2058.4501%20129.155H50.1592V152.857ZM53.7519%20132.553H58.0437C59.8645%20132.509%2061.2734%20133.176%2062.2705%20134.552C62.7582%20135.105%2063.067%20135.826%2063.1971%20136.714C63.2946%20137.603%2063.3434%20139.077%2063.3434%20141.136C63.3434%20143.25%2063.2946%20144.691%2063.1971%20145.461C63.0887%20146.241%2062.834%20146.886%2062.433%20147.395C61.5226%20148.772%2060.0595%20149.46%2058.0437%20149.46H53.7519V132.553Z%22%20fill%3D%22%23333333%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M70.4645%20152.857H85.5995V149.46H74.0572V142.502H83.9088V139.316H74.0572V132.553H85.5995V129.155H70.4645V152.857Z%22%20fill%3D%22%23333333%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M88.3313%20152.857H91.9241V138.08H91.9891L96.9474%20149.46H99.9386L104.897%20138.08H104.978V152.857H108.571V129.155H105.173L98.508%20144.599L91.7127%20129.155H88.3313V152.857Z%22%20fill%3D%22%23333333%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M112.083%20141.006C112.083%20143.716%20112.164%20145.547%20112.327%20146.501C112.414%20147.01%20112.522%20147.433%20112.652%20147.769C112.793%20148.094%20112.95%20148.436%20113.124%20148.793C113.698%20149.888%20114.619%20150.852%20115.887%20151.687C117.134%20152.554%20118.689%20153.009%20120.553%20153.052C122.439%20153.009%20124.01%20152.554%20125.267%20151.687C126.514%20150.852%20127.413%20149.888%20127.966%20148.793C128.367%20148.219%20128.643%20147.455%20128.795%20146.501C128.936%20145.547%20129.006%20143.716%20129.006%20141.006C129.006%20138.253%20128.936%20136.411%20128.795%20135.479C128.643%20134.547%20128.367%20133.794%20127.966%20133.219C127.413%20132.125%20126.514%20131.149%20125.267%20130.293C124.01%20129.426%20122.439%20128.982%20120.553%20128.96C118.689%20128.982%20117.134%20129.426%20115.887%20130.293C114.619%20131.149%20113.698%20132.125%20113.124%20133.219C112.766%20133.794%20112.5%20134.547%20112.327%20135.479C112.164%20136.411%20112.083%20138.253%20112.083%20141.006ZM115.692%20141.006C115.692%20138.676%20115.779%20137.088%20115.952%20136.243C116.104%20135.441%20116.413%20134.785%20116.879%20134.276C117.258%20133.788%20117.757%20133.382%20118.374%20133.057C118.981%20132.742%20119.707%20132.574%20120.553%20132.553C121.409%20132.574%20122.151%20132.742%20122.78%20133.057C123.376%20133.382%20123.853%20133.788%20124.211%20134.276C124.677%20134.785%20124.996%20135.441%20125.17%20136.243C125.332%20137.088%20125.414%20138.676%20125.414%20141.006C125.414%20143.336%20125.332%20144.913%20125.17%20145.737C124.996%20146.561%20124.677%20147.227%20124.211%20147.737C123.853%20148.224%20123.376%20148.62%20122.78%20148.923C122.151%20149.281%20121.409%20149.46%20120.553%20149.46C119.707%20149.46%20118.981%20149.281%20118.374%20148.923C117.757%20148.62%20117.258%20148.224%20116.879%20147.737C116.413%20147.227%20116.104%20146.561%20115.952%20145.737C115.779%20144.913%20115.692%20143.336%20115.692%20141.006Z%22%20fill%3D%22%23333333%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M217.054%20237.514C216.597%20236.246%20216.368%20234.64%20216.368%20232.484C216.368%20230.329%20216.597%20228.723%20217.054%20227.455C218.334%20223.82%20221.72%20221.833%20226.156%20221.833C229.448%20221.833%20232.056%20223.059%20233.793%20225.003C233.932%20225.172%20233.976%20225.426%20233.749%20225.595L230.867%20227.919C230.638%20228.088%20230.408%20228.046%20230.227%20227.835C229.128%20226.694%20227.985%20226.06%20226.156%20226.06C224.19%20226.06%20222.679%20226.948%20222.039%20228.723C221.672%20229.737%20221.582%20230.921%20221.582%20232.484C221.582%20234.048%20221.672%20235.274%20222.039%20236.289C222.679%20238.021%20224.19%20238.909%20226.156%20238.909C227.985%20238.909%20229.128%20238.275%20230.227%20237.134C230.408%20236.923%20230.638%20236.923%20230.867%20237.092L233.749%20239.416C233.976%20239.585%20233.932%20239.797%20233.793%20240.008C232.056%20241.91%20229.448%20243.136%20226.156%20243.136C221.72%20243.136%20218.334%20241.149%20217.054%20237.514Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M251.652%20242.671C251.332%20242.671%20251.102%20242.544%20250.919%20242.248L245.339%20233.71L242.366%20236.88V242.248C242.366%20242.502%20242.185%20242.671%20241.909%20242.671H237.701C237.428%20242.671%20237.245%20242.502%20237.245%20242.248V214.352C237.245%20214.098%20237.428%20213.929%20237.701%20213.929H241.909C242.185%20213.929%20242.366%20214.098%20242.366%20214.352V230.921L249.915%20222.721C250.188%20222.425%20250.416%20222.298%20250.782%20222.298H255.447C255.723%20222.298%20255.813%20222.551%20255.63%20222.721L248.633%20230.16L256.683%20242.248C256.821%20242.417%20256.729%20242.671%20256.453%20242.671H251.652Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M6.41757%20238.275H12.9124C15.9313%20238.275%2017.6233%20236.669%2017.6233%20234.26C17.6233%20231.893%2015.9313%20230.287%2012.9124%20230.287H6.41757C6.23501%20230.287%206.14308%20230.371%206.14308%20230.54V238.021C6.14308%20238.19%206.23501%20238.275%206.41757%20238.275ZM12.6381%20225.891C15.3825%20225.891%2017.0745%20224.369%2017.0745%20222.129C17.0745%20219.847%2015.3825%20218.325%2012.6381%20218.325H6.41757C6.23501%20218.325%206.14308%20218.409%206.14308%20218.579V225.637C6.14308%20225.806%206.23501%20225.891%206.41757%20225.891H12.6381ZM0.746338%20214.352C0.746338%20214.098%200.929457%20213.929%201.20321%20213.929H12.7752C19.3615%20213.929%2022.4715%20216.973%2022.4715%20221.579C22.4715%20224.834%2020.8253%20226.694%2018.858%20227.666V227.751C20.7792%20228.426%2023.0201%20230.709%2023.0201%20234.217C23.0201%20239.923%2019.1323%20242.671%2012.3178%20242.671H1.20321C0.929457%20242.671%200.746338%20242.502%200.746338%20242.248V214.352Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M26.8144%20242.671C26.5394%20242.671%2026.3561%20242.502%2026.3561%20242.248V222.721C26.3561%20222.467%2026.5394%20222.298%2026.8144%20222.298H31.0218C31.2961%20222.298%2031.4793%20222.467%2031.4793%20222.721V224.454H31.5253C32.5767%20222.89%2034.452%20221.833%2037.2424%20221.833C38.9798%20221.833%2040.7179%20222.467%2041.8614%20223.524C42.0904%20223.735%2042.1364%20223.905%2041.9526%20224.115L39.5284%20226.948C39.346%20227.159%2039.1168%20227.201%2038.8886%20227.032C37.8822%20226.44%2036.8301%20226.06%2035.6413%20226.06C32.76%20226.06%2031.4793%20227.962%2031.4793%20231.217V242.248C31.4793%20242.502%2031.2961%20242.671%2031.0218%20242.671H26.8144Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M56.0158%20236.246C56.382%20235.189%2056.4734%20234.217%2056.4734%20232.484C56.4734%20230.752%2056.382%20229.822%2056.0158%20228.723C55.3751%20227.032%2053.958%20226.06%2051.8995%20226.06C49.8412%20226.06%2048.3774%20227.032%2047.7375%20228.723C47.372%20229.822%2047.28%20230.752%2047.28%20232.484C47.28%20234.217%2047.372%20235.189%2047.7375%20236.246C48.3774%20237.937%2049.8412%20238.909%2051.8995%20238.909C53.958%20238.909%2055.3751%20237.937%2056.0158%20236.246ZM42.7981%20237.514C42.2947%20236.077%2042.0664%20234.725%2042.0664%20232.484C42.0664%20230.244%2042.2947%20228.892%2042.7981%20227.455C44.0328%20223.905%2047.4171%20221.833%2051.8995%20221.833C56.3361%20221.833%2059.7205%20223.905%2060.9558%20227.455C61.4586%20228.892%2061.6876%20230.244%2061.6876%20232.484C61.6876%20234.725%2061.4586%20236.077%2060.9558%20237.514C59.7205%20241.065%2056.3361%20243.136%2051.8995%20243.136C47.4171%20243.136%2044.0328%20241.065%2042.7981%20237.514Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M83.8734%20242.671C83.5983%20242.671%2083.4159%20242.502%2083.324%20242.248L79.0705%20229.23H78.9794L74.68%20242.248C74.5881%20242.502%2074.4057%20242.671%2074.1307%20242.671H70.3807C70.1056%20242.671%2069.9233%20242.502%2069.8321%20242.248L62.8796%20222.721C62.7877%20222.467%2062.9255%20222.298%2063.1999%20222.298H67.5905C67.9108%20222.298%2068.0939%20222.425%2068.1851%20222.721L72.4384%20236.162H72.5303L76.7378%20222.721C76.8297%20222.467%2077.0581%20222.298%2077.3324%20222.298H80.6255C80.9%20222.298%2081.129%20222.467%2081.2202%20222.721L85.7027%20236.162H85.794L89.8189%20222.721C89.9101%20222.425%2090.0934%20222.298%2090.4136%20222.298H94.8041C95.0786%20222.298%2095.2156%20222.467%2095.1244%20222.721L88.172%20242.248C88.0808%20242.502%2087.8977%20242.671%2087.6234%20242.671H83.8734Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M96.0263%20239.924C95.8438%20239.755%2095.8438%20239.501%2096.0263%20239.332L98.6334%20236.796C98.8165%20236.627%2099.0908%20236.627%2099.2741%20236.796C100.875%20238.149%20103.436%20239.121%20105.723%20239.121C108.421%20239.121%20109.793%20238.106%20109.793%20236.711C109.793%20235.485%20109.016%20234.725%20106.135%20234.471L103.756%20234.26C99.2741%20233.837%2096.9865%20231.724%2096.9865%20228.258C96.9865%20224.327%20100.051%20221.833%20105.54%20221.833C108.97%20221.833%20111.853%20222.89%20113.819%20224.327C114.048%20224.496%20114.048%20224.75%20113.909%20224.919L111.669%20227.413C111.486%20227.624%20111.257%20227.624%20111.029%20227.497C109.656%20226.609%20107.461%20225.806%20105.266%20225.806C103.07%20225.806%20101.927%20226.694%20101.927%20227.92C101.927%20229.104%20102.704%20229.822%20105.54%20230.076L107.918%20230.287C112.537%20230.71%20114.732%20232.908%20114.732%20236.247C114.732%20240.304%20111.531%20243.136%20105.494%20243.136C100.966%20243.136%2097.8562%20241.488%2096.0263%20239.924Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M131.55%20228.469C130.956%20226.821%20129.31%20225.849%20127.251%20225.849C125.148%20225.849%20123.5%20226.821%20122.906%20228.469C122.723%20228.976%20122.631%20229.483%20122.631%20230.202C122.631%20230.371%20122.723%20230.456%20122.906%20230.456H131.55C131.733%20230.456%20131.825%20230.371%20131.825%20230.202C131.825%20229.483%20131.733%20228.976%20131.55%20228.469ZM118.242%20237.472C117.783%20236.162%20117.463%20234.598%20117.463%20232.484C117.463%20230.371%20117.738%20228.765%20118.195%20227.455C119.429%20223.905%20122.814%20221.833%20127.205%20221.833C131.733%20221.833%20135.027%20223.989%20136.261%20227.455C136.766%20228.892%20136.993%20230.287%20136.993%20233.584C136.993%20233.837%20136.81%20234.006%20136.49%20234.006H122.906C122.723%20234.006%20122.631%20234.091%20122.631%20234.26C122.631%20234.851%20122.77%20235.359%20122.953%20235.823C123.683%20237.81%20125.422%20238.909%20127.891%20238.909C130.361%20238.909%20131.962%20238.064%20133.059%20236.965C133.289%20236.754%20133.518%20236.711%20133.745%20236.88L136.444%20239.078C136.673%20239.247%20136.673%20239.459%20136.49%20239.67C134.615%20241.698%20131.505%20243.136%20127.434%20243.136C122.77%20243.136%20119.475%20241.023%20118.242%20237.472Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M140.787%20242.671C140.513%20242.671%20140.33%20242.502%20140.33%20242.248V222.721C140.33%20222.467%20140.513%20222.298%20140.787%20222.298H144.995C145.268%20222.298%20145.451%20222.467%20145.451%20222.721V224.454H145.498C146.548%20222.89%20148.424%20221.833%20151.215%20221.833C152.954%20221.833%20154.69%20222.467%20155.834%20223.524C156.063%20223.735%20156.107%20223.905%20155.926%20224.115L153.501%20226.948C153.32%20227.159%20153.091%20227.201%20152.861%20227.032C151.855%20226.44%20150.802%20226.06%20149.615%20226.06C146.733%20226.06%20145.451%20227.962%20145.451%20231.217V242.248C145.451%20242.502%20145.268%20242.671%20144.995%20242.671H140.787Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M156.714%20239.332C156.531%20239.163%20156.44%20238.909%20156.624%20238.697L159.459%20235.654C159.642%20235.443%20159.916%20235.443%20160.099%20235.612C162.111%20237.092%20165.084%20238.655%20168.559%20238.655C172.264%20238.655%20174.414%20236.922%20174.414%20234.514C174.414%20232.442%20173.043%20231.09%20168.743%20230.54L167.096%20230.329C161.105%20229.568%20157.72%20226.905%20157.72%20222.129C157.72%20216.93%20161.836%20213.464%20168.239%20213.464C172.127%20213.464%20175.832%20214.606%20178.302%20216.338C178.531%20216.508%20178.577%20216.677%20178.394%20216.93L176.198%20220.058C176.015%20220.269%20175.786%20220.312%20175.557%20220.185C173.043%20218.663%20170.709%20217.945%20168.103%20217.945C164.947%20217.945%20163.208%20219.551%20163.208%20221.791C163.208%20223.777%20164.718%20225.13%20168.926%20225.68L170.574%20225.891C176.563%20226.652%20179.857%20229.272%20179.857%20234.217C179.857%20239.332%20175.879%20243.136%20168.149%20243.136C163.575%20243.136%20159.137%20241.445%20156.714%20239.332Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M189.335%20243.03C184.898%20243.03%20183.205%20241.043%20183.205%20237.07V226.335C183.205%20226.166%20183.115%20226.081%20182.931%20226.081H181.466C181.193%20226.081%20181.01%20225.912%20181.01%20225.658V222.826C181.01%20222.573%20181.193%20222.404%20181.466%20222.404H182.931C183.115%20222.404%20183.205%20222.319%20183.205%20222.15V216.57C183.205%20216.317%20183.388%20216.148%20183.662%20216.148H187.87C188.146%20216.148%20188.329%20216.317%20188.329%20216.57V222.15C188.329%20222.319%20188.419%20222.404%20188.602%20222.404H191.53C191.804%20222.404%20191.987%20222.573%20191.987%20222.826V225.658C191.987%20225.912%20191.804%20226.081%20191.53%20226.081H188.602C188.419%20226.081%20188.329%20226.166%20188.329%20226.335V236.902C188.329%20238.338%20188.969%20238.803%20190.387%20238.803H191.53C191.804%20238.803%20191.987%20238.972%20191.987%20239.226V242.607C191.987%20242.861%20191.804%20243.03%20191.53%20243.03H189.335Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M208.184%20235.823V234.26C208.184%20234.091%20208.092%20234.006%20207.909%20234.006H204.25C200.958%20234.006%20199.493%20234.851%20199.493%20236.754C199.493%20238.444%20200.819%20239.29%20203.288%20239.29C206.446%20239.29%20208.184%20238.149%20208.184%20235.823ZM208.732%20242.671C208.458%20242.671%20208.275%20242.502%20208.275%20242.248V240.769H208.229C207.176%20242.164%20205.118%20243.136%20202.008%20243.136C197.984%20243.136%20194.599%20241.192%20194.599%20236.923C194.599%20232.484%20197.984%20230.456%20203.427%20230.456H207.909C208.092%20230.456%20208.184%20230.371%20208.184%20230.202V229.23C208.184%20226.905%20206.993%20225.849%20203.288%20225.849C200.819%20225.849%20199.31%20226.482%20198.257%20227.244C198.03%20227.413%20197.754%20227.37%20197.617%20227.159L195.925%20224.369C195.788%20224.158%20195.834%20223.946%20196.017%20223.82C197.801%20222.636%20200.225%20221.833%20203.838%20221.833C210.561%20221.833%20213.032%20223.946%20213.032%20228.934V242.248C213.032%20242.502%20212.847%20242.671%20212.574%20242.671H208.732Z%22%20fill%3D%22%23111111%22%3E%3C%2Fpath%3E%3Cdefs%3E%3Cfilter%20id%3D%22filter0_d%22%20x%3D%2225.7728%22%20y%3D%22119.717%22%20width%3D%22124.841%22%20height%3D%2247.6666%22%20filterUnits%3D%22userSpaceOnUse%22%20color-interpolation-filters%3D%22sRGB%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%3E%3C%2FfeFlood%3E%3CfeColorMatrix%20in%3D%22SourceAlpha%22%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200%22%3E%3C%2FfeColorMatrix%3E%3CfeOffset%20dx%3D%221%22%20dy%3D%223%22%3E%3C%2FfeOffset%3E%3CfeGaussianBlur%20stdDeviation%3D%221.5%22%3E%3C%2FfeGaussianBlur%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.12%200%22%3E%3C%2FfeColorMatrix%3E%3CfeBlend%20mode%3D%22normal%22%20in2%3D%22BackgroundImageFix%22%20result%3D%22effect1_dropShadow%22%3E%3C%2FfeBlend%3E%3CfeBlend%20mode%3D%22normal%22%20in%3D%22SourceGraphic%22%20in2%3D%22effect1_dropShadow%22%20result%3D%22shape%22%3E%3C%2FfeBlend%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22flex%20flex-col%20space-y-3%22%3E%3Cdiv%20class%3D%22%20css-2b097c-container%22%20id%3D%22username%22%3E%3Cdiv%20class%3D%22%20css-yk16xz-control%22%3E%3Cdiv%20class%3D%22%20css-1hwfws3%22%3E%3Cdiv%20class%3D%22%20css-1wa3eu0-placeholder%22%3ESelect%20Username%3C%2Fdiv%3E%3Cdiv%20class%3D%22css-1g6gooi%22%3E%3Cdiv%20class%3D%22%22%20style%3D%22display%3A%20inline-block%3B%22%3E%3Cinput%20autocapitalize%3D%22none%22%20autocomplete%3D%22off%22%20autocorrect%3D%22off%22%20id%3D%22react-select-2-input%22%20spellcheck%3D%22false%22%20tabindex%3D%220%22%20type%3D%22text%22%20aria-autocomplete%3D%22list%22%20value%3D%22%22%20style%3D%22box-sizing%3A%20content-box%3B%20width%3A%202px%3B%20background%3A%200px%20center%3B%20border%3A%200px%3B%20font-size%3A%20inherit%3B%20opacity%3A%201%3B%20outline%3A%200px%3B%20padding%3A%200px%3B%20color%3A%20inherit%3B%22%3E%3Cdiv%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20visibility%3A%20hidden%3B%20height%3A%200px%3B%20overflow%3A%20scroll%3B%20white-space%3A%20pre%3B%20font-size%3A%2014px%3B%20font-family%3A%20Roboto%2C%20Arial%2C%20Helvetica%2C%20sans-serif%3B%20font-weight%3A%20400%3B%20font-style%3A%20normal%3B%20letter-spacing%3A%20normal%3B%20text-transform%3A%20none%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22%20css-1wy0on6%22%3E%3Cspan%20class%3D%22%20css-1okebmr-indicatorSeparator%22%3E%3C%2Fspan%3E%3Cdiv%20aria-hidden%3D%22true%22%20class%3D%22%20css-tlfecz-indicatorContainer%22%3E%3Csvg%20height%3D%2220%22%20width%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20class%3D%22css-19bqh2r%22%3E%3Cpath%20d%3D%22M4.516%207.548c0.436-0.446%201.043-0.481%201.576%200l3.908%203.747%203.908-3.747c0.533-0.481%201.141-0.446%201.574%200%200.436%200.445%200.408%201.197%200%201.615-0.406%200.418-4.695%204.502-4.695%204.502-0.217%200.223-0.502%200.335-0.787%200.335s-0.57-0.112-0.789-0.335c0%200-4.287-4.084-4.695-4.502s-0.436-1.17%200-1.615z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22%20css-2b097c-container%22%20id%3D%22password%22%3E%3Cdiv%20class%3D%22%20css-yk16xz-control%22%3E%3Cdiv%20class%3D%22%20css-1hwfws3%22%3E%3Cdiv%20class%3D%22%20css-1wa3eu0-placeholder%22%3ESelect%20Password%3C%2Fdiv%3E%3Cdiv%20class%3D%22css-1g6gooi%22%3E%3Cdiv%20class%3D%22%22%20style%3D%22display%3A%20inline-block%3B%22%3E%3Cinput%20autocapitalize%3D%22none%22%20autocomplete%3D%22off%22%20autocorrect%3D%22off%22%20id%3D%22react-select-3-input%22%20spellcheck%3D%22false%22%20tabindex%3D%220%22%20type%3D%22text%22%20aria-autocomplete%3D%22list%22%20value%3D%22%22%20style%3D%22box-sizing%3A%20content-box%3B%20width%3A%202px%3B%20background%3A%200px%20center%3B%20border%3A%200px%3B%20font-size%3A%20inherit%3B%20opacity%3A%201%3B%20outline%3A%200px%3B%20padding%3A%200px%3B%20color%3A%20inherit%3B%22%3E%3Cdiv%20style%3D%22position%3A%20absolute%3B%20top%3A%200px%3B%20left%3A%200px%3B%20visibility%3A%20hidden%3B%20height%3A%200px%3B%20overflow%3A%20scroll%3B%20white-space%3A%20pre%3B%20font-size%3A%2014px%3B%20font-family%3A%20Roboto%2C%20Arial%2C%20Helvetica%2C%20sans-serif%3B%20font-weight%3A%20400%3B%20font-style%3A%20normal%3B%20letter-spacing%3A%20normal%3B%20text-transform%3A%20none%3B%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22%20css-1wy0on6%22%3E%3Cspan%20class%3D%22%20css-1okebmr-indicatorSeparator%22%3E%3C%2Fspan%3E%3Cdiv%20aria-hidden%3D%22true%22%20class%3D%22%20css-tlfecz-indicatorContainer%22%3E%3Csvg%20height%3D%2220%22%20width%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20class%3D%22css-19bqh2r%22%3E%3Cpath%20d%3D%22M4.516%207.548c0.436-0.446%201.043-0.481%201.576%200l3.908%203.747%203.908-3.747c0.533-0.481%201.141-0.446%201.574%200%200.436%200.445%200.408%201.197%200%201.615-0.406%200.418-4.695%204.502-4.695%204.502-0.217%200.223-0.502%200.335-0.787%200.335s-0.57-0.112-0.789-0.335c0%200-4.287-4.084-4.695-4.502s-0.436-1.17%200-1.615z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cbutton%20id%3D%22login-btn%22%20type%3D%22submit%22%20class%3D%22Button_root__24MxS%20Button_slim__2caxo%22%3ELog%20In%3C%2Fbutton%3E%3C%2Fdiv%3E%3C%2Fform%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "84e1d26b-10a5-43eb-a3dd-485df6e881b1",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "bstackdemo.com-offers"
+}

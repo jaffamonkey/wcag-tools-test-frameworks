@@ -1,0 +1,70 @@
+{
+    "results": [
+        {
+            "ruleId": "text_sensory_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/main[1]/article[1]/p[2]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_other",
+            "message": "Confirm the user instruction is still understandable without the word(s) 'small'",
+            "messageArgs": [
+                "small"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 129,
+                "height": 19,
+                "width": 784
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_sensory_misuse.html#%7B%22message%22%3A%22Confirm%20the%20user%20instruction%20is%20still%20understandable%20without%20the%20word(s)%20'small'%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_other%22%2C%22ruleId%22%3A%22text_sensory_misuse%22%2C%22msgArgs%22%3A%5B%22small%22%5D%7D"
+        }
+    ],
+    "numExecuted": 272,
+    "ruleTime": 4,
+    "nls": {
+        "text_sensory_misuse": {
+            "0": "Instructions should be meaningful without relying solely on shape, size, or location words",
+            "potential_other": "Confirm the user instruction is still understandable without the word(s) '{0}'"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 1,
+            "elementsViolation": 0,
+            "elementsViolationReview": 1,
+            "violation": 0,
+            "potentialviolation": 1,
+            "recommendation": 0,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 271
+        },
+        "scanTime": 12,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778510527054,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EPrivacy%20-%20Dice%20Toys%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22page-body%22%3E%3Cmain%20class%3D%22page%22%3E%3Cheader%20class%3D%22page-head%22%3E%3Ca%20href%3D%22%2F%22%20class%3D%22page-back%22%3E%E2%86%90%20Dice%20Toys%3C%2Fa%3E%3C%2Fheader%3E%3Carticle%20class%3D%22page-article%22%3E%3Ch1%3EPrivacy%3C%2Fh1%3E%3Cp%3E%3Cem%3ELast%20updated%3A%20May%202026.%3C%2Fem%3E%3C%2Fp%3E%3Cp%3EDice%20Toys%20is%20a%20small%20site%20of%20physics-based%20dice%20games.%20The%20short%20version%20of%20this%20policy%3A%3C%2Fp%3E%3Cul%3E%3Cli%3E%3Cstrong%3ENo%20analytics.%20No%20tracking.%20No%20ads.%20No%20accounts.%3C%2Fstrong%3E%3C%2Fli%3E%3Cli%3E%3Cstrong%3ENo%20personal%20information%20is%20sent%20to%20any%20server%20we%20control.%3C%2Fstrong%3E%3C%2Fli%3E%3C%2Ful%3E%3Cp%3EThe%20longer%20version%3A%3C%2Fp%3E%3Ch2%20id%3D%22local-preferences%22%3ELocal%20preferences%3C%2Fh2%3E%3Cp%3EYour%20browser%20stores%20a%20handful%20of%20preferences%20in%20%3Ccode%3ElocalStorage%3C%2Fcode%3E%20so%20the%20site%20remembers%20them%20between%20visits%20-%20your%20chosen%20theme%2C%20whether%20dice%20show%20pips%20or%20numerals%2C%20whether%20sound%20is%20on%2C%20and%20similar%20UI%20state.%20These%20values%20never%20leave%20your%20device.%20Clearing%20your%20browser%E2%80%99s%20site%20data%20clears%20them.%3C%2Fp%3E%3Ch2%20id%3D%22server-logs%22%3EServer%20logs%3C%2Fh2%3E%3Cp%3EDice%20Toys%20is%20hosted%20on%20standard%20web%20infrastructure%20that%2C%20like%20nearly%20every%20web%20host%2C%20keeps%20short-lived%20access%20logs%20(IP%20address%2C%20request%20path%2C%20user%20agent%2C%20timestamp).%20We%20don%E2%80%99t%20analyze%20these%20logs%20and%20they%20aren%E2%80%99t%20tied%20to%20any%20identity.%3C%2Fp%3E%3Ch2%20id%3D%22third-party-assets%22%3EThird-party%20assets%3C%2Fh2%3E%3Cp%3EThe%20page%20loads%20CC0%20texture%20and%20audio%20packs%20(%3Ca%20href%3D%22https%3A%2F%2Fpolyhaven.com%22%3EPoly%20Haven%3C%2Fa%3E%2C%20%3Ca%20href%3D%22https%3A%2F%2Fkenney.nl%22%3EKenney%3C%2Fa%3E)%20and%20code%20dependencies%20(%3Ca%20href%3D%22https%3A%2F%2Fthreejs.org%22%3EThree.js%3C%2Fa%3E%2C%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2Fpmndrs%2Fcannon-es%22%3Ecannon-es%3C%2Fa%3E)%20bundled%20with%20the%20site%20itself.%20No%20third-party%20tracking%20scripts%20run%20on%20the%20page.%3C%2Fp%3E%3Ch2%20id%3D%22children%22%3EChildren%3C%2Fh2%3E%3Cp%3EDice%20Toys%20is%20suitable%20for%20any%20age.%20We%20don%E2%80%99t%20knowingly%20collect%20information%20from%20anyone%2C%20children%20included.%3C%2Fp%3E%3Ch2%20id%3D%22contact%22%3EContact%3C%2Fh2%3E%3Cp%3EQuestions%20about%20this%20policy%3A%20%3Ca%20href%3D%22mailto%3Atoymaker%40toms.toys%22%3Etoymaker%40toms.toys%3C%2Fa%3E.%3C%2Fp%3E%3C%2Farticle%3E%3Cfooter%20class%3D%22home-foot%22%3E%3Ca%20href%3D%22%2Fabout%2F%22%20class%3D%22home-foot-link%22%3EAbout%3C%2Fa%3E%0A%3Cspan%20class%3D%22home-foot-sep%22%3E%C2%B7%3C%2Fspan%3E%0A%3Ca%20href%3D%22%2Fprivacy%2F%22%20class%3D%22home-foot-link%22%3EPrivacy%3C%2Fa%3E%0A%3Cspan%20class%3D%22home-foot-sep%22%3E%C2%B7%3C%2Fspan%3E%0A%3Ca%20href%3D%22%2Fterms%2F%22%20class%3D%22home-foot-link%22%3ETerms%3C%2Fa%3E%0A%3Cspan%20class%3D%22home-foot-sep%22%3E%C2%B7%3C%2Fspan%3E%0A%3Ca%20href%3D%22https%3A%2F%2Ftoybox.toms.toys%22%20class%3D%22home-foot-link%22%3EToms.Toys%3C%2Fa%3E%3C%2Ffooter%3E%3C%2Fmain%3E%3C!--%20Google%20tag%20(gtag.js)%20--%3E%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "9e9d3085-19bb-4ae2-a362-919f8de82418",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "dice.toys-privacy"
+}

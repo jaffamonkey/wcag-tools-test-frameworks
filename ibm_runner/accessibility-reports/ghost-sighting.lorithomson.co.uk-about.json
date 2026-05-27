@@ -1,0 +1,130 @@
+{
+    "results": [
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/p[3]",
+                "aria": "/document[1]/main[1]/paragraph[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 354,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p class=\"govuk-body\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22govuk-body%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/p[3]",
+                "aria": "/document[1]/main[1]/paragraph[3]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Record a ghost sighting\"",
+            "messageArgs": [
+                "\"Record a ghost sighting\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 354,
+                "height": 56,
+                "width": 784
+            },
+            "snippet": "<p class=\"govuk-body\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Record%20a%20ghost%20sighting%5C%22%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22govuk-body%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Record%20a%20ghost%20sighting%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "list_markup_review",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/p[8]",
+                "aria": "/document[1]/main[1]/paragraph[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_list",
+            "message": "Verify this is a list and if so, modify to use proper HTML elements for the list",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 792,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<p class=\"govuk-body\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/list_markup_review.html#%7B%22message%22%3A%22Verify%20this%20is%20a%20list%20and%20if%20so%2C%20modify%20to%20use%20proper%20HTML%20elements%20for%20the%20list%22%2C%22snippet%22%3A%22%3Cp%20class%3D%5C%22govuk-body%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_list%22%2C%22ruleId%22%3A%22list_markup_review%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 512,
+    "ruleTime": 7,
+    "nls": {
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "list_markup_review": {
+            "0": "Proper HTML elements should be used to create a list",
+            "potential_list": "Verify this is a list and if so, modify to use proper HTML elements for the list"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 10,
+            "elementsViolation": 0,
+            "elementsViolationReview": 2,
+            "violation": 0,
+            "potentialviolation": 3,
+            "recommendation": 2,
+            "potentialrecommendation": 6,
+            "manual": 0,
+            "pass": 501
+        },
+        "scanTime": 21,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778707406998,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EAbout%20this%20training%20prototype%20%E2%80%93%20Record%20a%20ghost%20sighting%20%E2%80%93%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20class%3D%22govuk-template__body%20js-enabled%20govuk-frontend-supported%22%3E%0A%20%20%20%20%0A%20%20%20%20%0A%0A%20%20%20%20%0A%20%20%20%20%20%20%3Ca%20href%3D%22%23main-content%22%20class%3D%22govuk-skip-link%22%20data-module%3D%22govuk-skip-link%22%20data-govuk-skip-link-init%3D%22%22%3ESkip%20to%20main%20content%3C%2Fa%3E%0A%0A%20%20%20%20%0A%0A%20%20%20%20%0A%0A%20%20%3C!--%20Google%20tag%20(gtag.js)%20--%3E%0A%20%20%0A%20%20%0A%0A%20%20%3Cheader%20class%3D%22govuk-header%22%20role%3D%22banner%22%20data-module%3D%22govuk-header%22%20data-govuk-header-init%3D%22%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22govuk-header__container%20govuk-width-container%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22govuk-header__logo%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2F%22%20class%3D%22govuk-header__link%20govuk-header__link--homepage%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cimg%20alt%3D%22Department%20for%20Supernatural%20Affairs%22%20class%3D%22ghost-logo%22%20width%3D%22250%22%20height%3D%2260%22%3E%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22govuk-header__content%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%2F%22%20class%3D%22govuk-header__link%20govuk-header__service-name%22%3E%0A%20%20%20%20%20%20%20%20%20%20Record%20a%20ghost%20sighting%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fheader%3E%0A%0A%0A%0A%20%20%20%20%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22govuk-width-container%22%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%0A%3Cdiv%20class%3D%22govuk-phase-banner%22%3E%0A%20%20%3Cp%20class%3D%22govuk-phase-banner__content%22%3E%0A%20%20%20%20%3Cstrong%20class%3D%22govuk-tag%20govuk-phase-banner__content__tag%22%3E%0A%20%20%20%20%20%20Training%0A%20%20%20%20%3C%2Fstrong%3E%0A%20%20%20%20%3Cspan%20class%3D%22govuk-phase-banner__text%22%3E%0A%20%20%20%20%20%20This%20is%20not%20a%20real%20service%20%E2%80%93%20this%20is%20for%20training%20purposes%20only.%20You%20can%20give%20your%20feedback%20on%20this%20resource%20by%20%3Ca%20class%3D%22govuk-link%22%20href%3D%22mailto%3Alorithomson%40hotmail.co.uk%22%3Eemail%3C%2Fa%3E%20or%20%3Ca%20href%3D%22https%3A%2F%2Fwww.surveymonkey.com%2Fr%2F8JZX5KD%22%20class%3D%22govuk-link%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20survey%3C%2Fa%3E.%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%0A%0A%20%20%20%20%20%20%20%20%3Cmain%20class%3D%22govuk-main-wrapper%22%20id%3D%22main-content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%0A%3Cdiv%20class%3D%22govuk-grid-row%22%3E%0A%20%20%3Cdiv%20class%3D%22govuk-grid-column-two-thirds%22%3E%0A%0A%20%20%20%20%3Ch1%20class%3D%22govuk-heading-xl%22%3EAbout%20the%20Record%20a%20ghost%20sighting%20training%20prototype%3C%2Fh1%3E%0A%0A%20%20%20%20%3Cp%20class%3D%22govuk-body%22%3E%0A%20%20%20%20%20%20%3Cstrong%3ERecord%20a%20ghost%20sighting%3C%2Fstrong%3E%20is%20an%20accessibility%20training%20resource%20created%20by%20%3Cstrong%3ELori%20Thomson%3C%2Fstrong%3E.%0A%20%20%20%20%20%20It%20has%20been%20designed%20to%20help%20people%20learn%20how%20to%20find%20and%20understand%20accessibility%20issues%20in%20a%20fun%20and%20memorable%20way.%0A%20%20%20%20%20%20Each%20page%20contains%20intentional%20accessibility%20issues%20that%20learners%20can%20identify%2C%20test%20and%20discuss.%0A%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%20%20%3Ch2%20class%3D%22govuk-heading-m%22%3EInspiration%3C%2Fh2%3E%0A%0A%20%20%20%20%3Cp%20class%3D%22govuk-body%22%3E%0A%20%20%20%20%20%20This%20training%20prototype%20takes%20inspiration%20from%20Beverley%20Newing's%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Faccessibility.blog.gov.uk%2F2020%2F01%2F14%2Ftraining-people-to-do-accessibility-reviews%2F%22%20class%3D%22govuk-link%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3E%0A%20%20%20%20%20%20%20%20%20%E2%80%9CRecord%20a%20goose%20sighting%E2%80%9D%20accessibility%20exercise.%0A%20%20%20%20%20%20%3C%2Fa%3E%2C%0A%20%20%20%20%20%0A%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%3Cp%20class%3D%22govuk-body%22%3E%0A%20%20%20%20%20%20%22Record%20a%20ghost%20sighting%22%20uses%20an%20adapted%20version%20of%20the%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fprototype-kit.service.gov.uk%2F%22%20class%3D%22govuk-link%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3E%0A%20%20%20%20%20%20%20%20GOV.UK%20Prototype%20Kit%0A%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20-%20but%20with%20a%20haunted%20twist.%20%20%0A%20%20%20%20%20%20The%20%E2%80%9CDepartment%20for%20Supernatural%20Affairs%E2%80%9D%20and%20its%20ghostly%20reports%20provide%20a%20creative%20backdrop%20for%20exploring%0A%20%20%20%20%20%20accessibility%20barriers%20such%20as%20colour%20contrast%2C%20keyboard%20navigation%2C%20and%20focus%20order.%0A%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%3Ch2%20class%3D%22govuk-heading-m%22%3EPurpose%3C%2Fh2%3E%0A%0A%20%20%20%20%3Cp%20class%3D%22govuk-body%22%3E%0A%20%20%20%20%20%20This%20resource%20is%20designed%20for%20workshops%2C%20self-led%20learning%20and%20team%20exercises.%0A%20%20%20%20%20%20Each%20page%20intentionally%20fails%20one%20or%20more%20WCAG%202.2%20AA%20criteria.%0A%20%20%20%20%20%20It%20encourages%20learners%20to%20test%20pages%20using%20a%20range%20of%20tools%20and%20assistive%20technologies%2C%0A%20%20%20%20%20%20and%20to%20discuss%20the%20impact%20of%20these%20issues%20on%20real%20users.%0A%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%3Ch2%20class%3D%22govuk-heading-m%22%3EContribute%20or%20get%20in%20touch%3C%2Fh2%3E%0A%0A%20%20%20%20%20%3Cp%20class%3D%22govuk-body%22%3E%0A%20%20%20%20%20%20This%20resource%20is%20not%20perfect%20and%20welcomes%20contribution%20from%20the%20accessibility%20community%20to%20improve%20and%20expand%20its%20content.%0A%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%20%20%20%20%3Cp%20class%3D%22govuk-body%22%3E%0A%20%20%20%20%20%20You%20can%20explore%20or%20contribute%20to%20this%20project%20on%0A%20%20%20%20%20%20%3Ca%20href%3D%22https%3A%2F%2Fgithub.com%2FLori-T%2Frecord-a-ghost-sighting%22%20class%3D%22govuk-link%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3E%0A%20%20%20%20%20%20%20%20GitHub%0A%20%20%20%20%20%20%3C%2Fa%3E%2C%0A%20%20%20%20%20%20or%20provide%20%3Ca%20href%3D%22mailto%3Alorithomson%40hotmail.co.uk%22%20class%3D%22govuk-link%22%3Efeedback%20by%20email%3C%2Fa%3E%20or%20complete%20the%20%3Ca%20href%3D%22https%3A%2F%2Fwww.surveymonkey.com%2Fr%2F8JZX5KD%22%20class%3D%22govuk-link%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3E%0A%20%20%20%20%20%20%20%20feedback%20survey%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fp%3E%0A%0A%20%20%20%20%3Ch2%20class%3D%22govuk-heading-m%22%3EAcknowledgements%3C%2Fh2%3E%0A%0A%20%20%20%20%3Cp%20class%3D%22govuk-body%22%3E%0A%20%20%20%20%20%20Special%20thanks%20to%20the%20cross-government%20accessibility%20community%20for%20sharing%20open%20accessibility%20resources%20and%20for%20inspiring%20this%20creative%20learning%20exercise.%0A%20%20%20%20%3C%2Fp%3E%0A%3Cp%20class%3D%22govuk-body%22%3E%0A%20%20If%20you%20enjoyed%20exploring%20this%20haunted%20service%2C%20you%20can%20also%20visit%20the%0A%20%20%3Ca%20href%3D%22https%3A%2F%2Faccessibility-advent.lorithomson.co.uk%22%20class%3D%22govuk-link%22%20target%3D%22_blank%22%20rel%3D%22noopener%20noreferrer%22%3E%0A%20%20%20%20Accessibility%20Advent%20Calendar%202024%0A%20%20%3C%2Fa%3E%0A%20%20-%20a%20festive%2C%20interactive%20way%20to%20learn%20more%20about%20digital%20accessibility%20each%20day%2C%20with%20a%20new%20version%20coming%20for%202025%20(hopefully).%0A%3C%2Fp%3E%0A%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%20%20%20%20%20%20%20%20%3C%2Fmain%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%0A%0A%20%20%20%20%0A%20%20%3Cfooter%20class%3D%22govuk-footer%22%3E%0A%20%20%3Cdiv%20class%3D%22govuk-width-container%22%3E%0A%20%20%20%20%0A%0A%20%20%0A%20%20%3Csvg%20focusable%3D%22false%22%20role%3D%22presentation%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2060%22%20height%3D%2230%22%20width%3D%2232%22%20fill%3D%22currentcolor%22%20class%3D%22govuk-footer__crown%22%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2220%22%20cy%3D%2217.6%22%20r%3D%223.7%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2210.2%22%20cy%3D%2223.5%22%20r%3D%223.7%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%223.7%22%20cy%3D%2233.2%22%20r%3D%223.7%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2231.7%22%20cy%3D%2230.6%22%20r%3D%223.7%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2243.3%22%20cy%3D%2217.6%22%20r%3D%223.7%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2253.2%22%20cy%3D%2223.5%22%20r%3D%223.7%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2259.7%22%20cy%3D%2233.2%22%20r%3D%223.7%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%2231.7%22%20cy%3D%2230.6%22%20r%3D%223.7%22%3E%3C%2Fcircle%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M33.1%2C9.8c.2-.1.3-.3.5-.5l4.6%2C2.4v-6.8l-4.6%2C1.5c-.1-.2-.3-.3-.5-.5l1.9-5.9h-6.7l1.9%2C5.9c-.2.1-.3.3-.5.5l-4.6-1.5v6.8l4.6-2.4c.1.2.3.3.5.5l-2.6%2C8c-.9%2C2.8%2C1.2%2C5.7%2C4.1%2C5.7h0c3%2C0%2C5.1-2.9%2C4.1-5.7l-2.6-8ZM37%2C37.9s-3.4%2C3.8-4.1%2C6.1c2.2%2C0%2C4.2-.5%2C6.4-2.8l-.7%2C8.5c-2-2.8-4.4-4.1-5.7-3.8.1%2C3.1.5%2C6.7%2C5.8%2C7.2%2C3.7.3%2C6.7-1.5%2C7-3.8.4-2.6-2-4.3-3.7-1.6-1.4-4.5%2C2.4-6.1%2C4.9-3.2-1.9-4.5-1.8-7.7%2C2.4-10.9%2C3%2C4%2C2.6%2C7.3-1.2%2C11.1%2C2.4-1.3%2C6.2%2C0%2C4%2C4.6-1.2-2.8-3.7-2.2-4.2.2-.3%2C1.7.7%2C3.7%2C3%2C4.2%2C1.9.3%2C4.7-.9%2C7-5.9-1.3%2C0-2.4.7-3.9%2C1.7l2.4-8c.6%2C2.3%2C1.4%2C3.7%2C2.2%2C4.5.6-1.6.5-2.8%2C0-5.3l5%2C1.8c-2.6%2C3.6-5.2%2C8.7-7.3%2C17.5-7.4-1.1-15.7-1.7-24.5-1.7h0c-8.8%2C0-17.1.6-24.5%2C1.7-2.1-8.9-4.7-13.9-7.3-17.5l5-1.8c-.5%2C2.5-.6%2C3.7%2C0%2C5.3.8-.8%2C1.6-2.3%2C2.2-4.5l2.4%2C8c-1.5-1-2.6-1.7-3.9-1.7%2C2.3%2C5%2C5.2%2C6.2%2C7%2C5.9%2C2.3-.4%2C3.3-2.4%2C3-4.2-.5-2.4-3-3.1-4.2-.2-2.2-4.6%2C1.6-6%2C4-4.6-3.7-3.7-4.2-7.1-1.2-11.1%2C4.2%2C3.2%2C4.3%2C6.4%2C2.4%2C10.9%2C2.5-2.8%2C6.3-1.3%2C4.9%2C3.2-1.8-2.7-4.1-1-3.7%2C1.6.3%2C2.3%2C3.3%2C4.1%2C7%2C3.8%2C5.4-.5%2C5.7-4.2%2C5.8-7.2-1.3-.2-3.7%2C1-5.7%2C3.8l-.7-8.5c2.2%2C2.3%2C4.2%2C2.7%2C6.4%2C2.8-.7-2.3-4.1-6.1-4.1-6.1h10.6%2C0Z%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%0A%20%20%3C%2Fsvg%3E%0A%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%3Cdiv%20class%3D%22govuk-footer__meta%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22govuk-footer__meta-item%20govuk-footer__meta-item--grow%22%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Ch2%20class%3D%22govuk-visually-hidden%22%3EFooter%20links%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Cul%20class%3D%22govuk-footer__inline-list%22%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22govuk-footer__inline-list-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22govuk-footer__link%22%20href%3D%22%2Fmanage-prototype%2Fclear-data%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20Clear%20data%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22govuk-footer__inline-list-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22govuk-footer__link%22%20href%3D%22%2Ftasklist%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20View%20your%20reports%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22govuk-footer__inline-list-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22govuk-footer__link%22%20href%3D%22%2Fguidance%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20How%20to%20spot%20a%20ghost%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22govuk-footer__inline-list-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22govuk-footer__link%22%20href%3D%22%2Faccessibility%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20Accessibility%20statement%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22govuk-footer__inline-list-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22govuk-footer__link%22%20href%3D%22%2Fabout%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20About%20this%20service%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22govuk-footer__inline-list-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22govuk-footer__link%22%20href%3D%22https%3A%2F%2Fwww.surveymonkey.com%2Fr%2F8JZX5KD%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20Feedback%20Survey%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cli%20class%3D%22govuk-footer__inline-list-item%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22govuk-footer__link%22%20href%3D%22https%3A%2F%2Fgithub.com%2FLori-T%2Frecord-a-ghost-sighting%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20GitHub%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fli%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C%2Ful%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20class%3D%22govuk-footer__licence-logo%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20483.2%20195.7%22%20height%3D%2217%22%20width%3D%2241%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22currentColor%22%20d%3D%22M421.5%20142.8V.1l-50.7%2032.3v161.1h112.4v-50.7zm-122.3-9.6A47.12%2047.12%200%200%201%20221%2097.8c0-26%2021.1-47.1%2047.1-47.1%2016.7%200%2031.4%208.7%2039.7%2021.8l42.7-27.2A97.63%2097.63%200%200%200%20268.1%200c-36.5%200-68.3%2020.1-85.1%2049.7A98%2098%200%200%200%2097.8%200C43.9%200%200%2043.9%200%2097.8s43.9%2097.8%2097.8%2097.8c36.5%200%2068.3-20.1%2085.1-49.7a97.76%2097.76%200%200%200%20149.6%2025.4l19.4%2022.2h3v-87.8h-80l24.3%2027.5zM97.8%20145c-26%200-47.1-21.1-47.1-47.1s21.1-47.1%2047.1-47.1%2047.2%2021%2047.2%2047S123.8%20145%2097.8%20145%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22govuk-footer__licence-description%22%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%C2%A9%202025%20Department%20for%20Supernatural%20Affairs%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C%2Fspan%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22govuk-footer__meta-item%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20class%3D%22govuk-footer__link%20govuk-footer__copyright-logo%22%20href%3D%22https%3A%2F%2Fwww.nationalarchives.gov.uk%2Finformation-management%2Fre-using-public-sector-information%2Fuk-government-licensing-framework%2Fcrown-copyright%2F%22%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%C2%A9%20Crown%20copyright%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Ffooter%3E%0A%0A%0A%0A%20%20%20%20%0A%20%20%0A%20%20%20%20%0A%20%20%0A%20%20%20%20%0A%20%20%0A%0A%20%20%0A%20%20%20%20%0A%20%20%0A%0A%20%20%0A%20%20%20%20%0A%20%20%0A%0A%20%20%0A%20%20%20%20%0A%20%20%0A%0A%20%20%0A%20%20%20%20%0A%20%20%0A%0A%0A%0A%20%20%20%20%0A%20%20%0A%0A%20%20%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "0c47f06a-ac10-4107-8da6-3ec3e76a3994",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "ghost-sighting.lorithomson.co.uk-about"
+}

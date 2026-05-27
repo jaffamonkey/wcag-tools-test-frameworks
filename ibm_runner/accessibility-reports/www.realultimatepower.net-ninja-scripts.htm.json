@@ -1,0 +1,230 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 440,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 440,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 440,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 1,
+                "height": 438,
+                "width": 800
+            },
+            "snippet": "<body topmargin=\"0\" leftmargin=\"0\" true\"=\"\" true\"ninja!';=\"\" return=\"\" ninja!';=\"\" text=\"#FFFFFF\" bgcolor=\"#000000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20topmargin%3D%5C%220%5C%22%20leftmargin%3D%5C%220%5C%22%20true%5C%22%3D%5C%22%5C%22%20true%5C%22ninja!'%3B%3D%5C%22%5C%22%20return%3D%5C%22%5C%22%20ninja!'%3B%3D%5C%22%5C%22%20text%3D%5C%22%23FFFFFF%5C%22%20bgcolor%3D%5C%22%23000000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'The Official Pump-up Part The Official Pump-up Part' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "The Official Pump-up Part The Official Pump-up Part"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 1,
+                "height": 68,
+                "width": 800
+            },
+            "snippet": "<p align=\"center\" style=\"MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'The%20Official%20Pump-up%20Part%20The%20Official%20Pump-up%20Part'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%20align%3D%5C%22center%5C%22%20style%3D%5C%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22The%20Official%20Pump-up%20Part%20The%20Official%20Pump-up%20Part%22%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]/font[1]/b[1]/font[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 385,
+                "top": 1,
+                "height": 68,
+                "width": 227
+            },
+            "snippet": "<font color=\"#FF0000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23FF0000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        }
+    ],
+    "numExecuted": 259,
+    "ruleTime": 1,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 7,
+            "elementsViolation": 2,
+            "elementsViolationReview": 4,
+            "violation": 3,
+            "potentialviolation": 3,
+            "recommendation": 4,
+            "potentialrecommendation": 3,
+            "manual": 1,
+            "pass": 245
+        },
+        "scanTime": 12,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1778711931084,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EThe%20Official%20Ninja%20Webpage%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23000000%22%20text%3D%22%23FFFFFF%22Ninja!'%3B%20return%20true%22Ninja!'%3B%20return%20true%22%20leftmargin%3D%220%22%20topmargin%3D%220%22%3E%0A%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%20align%3D%22center%22%3E%3Cfont%20face%3D%22Arial%20Black%22%20size%3D%227%22%3E%3Cb%3EThe%0AOfficial%20%3Cfont%20color%3D%22%23FF0000%22%3EPump-up%3C%2Ffont%3E%20Part%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%20align%3D%22center%22%3E%3Cfont%20size%3D%225%22%3EBefore%0Ayou%20continue%2C%20you%20need%20to%20get%20pumped%2C%20really%20really%20pumped.%26nbsp%3B%20So%20I%20wrote%0Athree%20short%20movies%20scripts%20(by%20myself)%20to%20get%20your%20blood%20hot%20and%20crazy.%3Cspan%20style%3D%22mso-spacerun%3Ayes%22%3E%26nbsp%3B%0A%3C%2Fspan%3E%3C%2Ffont%3E%3Cspan%20style%3D%22font-family%3A%20Times%20New%20Roman%3B%20mso-fareast-font-family%3A%20Times%20New%20Roman%3B%20mso-ansi-language%3A%20EN-US%3B%20mso-fareast-language%3A%20EN-US%3B%20mso-bidi-language%3A%20AR-SA%22%3E%3Cfont%20size%3D%225%22%3EThe%0Afirst%20film%2C%20%3Ci%3ENinja%2C%20Please%3C%2Fi%3E%2C%20introduces%20the%20ways%20of%20the%20ninja.%3Cspan%20style%3D%22mso-spacerun%3A%20yes%3B%20font-family%3A%20Times%20New%20Roman%3B%20mso-fareast-font-family%3A%20Times%20New%20Roman%3B%20mso-ansi-language%3A%20EN-US%3B%20mso-fareast-language%3A%20EN-US%3B%20mso-bidi-language%3A%20AR-SA%22%3E%26nbsp%3B%0A%3C%2Fspan%3EThe%20second%20film%2C%20%3Ci%3ENinja%20Babe%3C%2Fi%3E%20is%20sexual.%3Cspan%20style%3D%22mso-spacerun%3A%20yes%3B%20font-family%3A%20Times%20New%20Roman%3B%20mso-fareast-font-family%3A%20Times%20New%20Roman%3B%20mso-ansi-language%3A%20EN-US%3B%20mso-fareast-language%3A%20EN-US%3B%20mso-bidi-language%3A%20AR-SA%22%3E%26nbsp%3B%0A%3C%2Fspan%3E%3Ci%20style%3D%22mso-bidi-font-style%3A%0Anormal%22%3EThe%20Ultimate%20Battle%3C%2Fi%3E%20introduces%20the%20ninja's%20stupidest%20opponent.%3Cspan%20style%3D%22mso-spacerun%3A%20yes%3B%20font-family%3A%20Times%20New%20Roman%3B%20mso-fareast-font-family%3A%20Times%20New%20Roman%3B%20mso-ansi-language%3A%20EN-US%3B%20mso-fareast-language%3A%20EN-US%3B%20mso-bidi-language%3A%20AR-SA%22%3E%26nbsp%3B%0A%3C%2Fspan%3EHopefully%20you%E2%80%99ll%20enjoy%20them%20as%20much%20as%20I%20like%20looking%20at%20naked%20ladies.%3C%2Ffont%3E%3C%2Fspan%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%20align%3D%22center%22%3E%3Cu%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.realultimatepower.net%2Fninja%2Fninja_movie_script.htm%3Fv%3D20260328%22%20target%3D%22main%22%3E%3Ci%3E%3Cfont%20face%3D%22Arial%20Narrow%22%20color%3D%22%23ffff00%22%20size%3D%226%22%3ENinja%2C%20Please%3C%2Ffont%3E%3C%2Fi%3E%3C%2Fa%3E%3C%2Fu%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%20align%3D%22center%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%20align%3D%22center%22%3E%3Cu%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.realultimatepower.net%2Fninja%2Fninja_movie_script2.htm%3Fv%3D20260328%22%20target%3D%22main%22%3E%3Ci%3E%3Cfont%20face%3D%22Arial%20Narrow%22%20color%3D%22%23ffff00%22%20size%3D%226%22%3ENinja%20Babe%3C%2Ffont%3E%3C%2Fi%3E%3C%2Fa%3E%3C%2Fu%3E%3C%2Fp%3E%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%20align%3D%22center%22%3E%26nbsp%3B%3C%2Fp%3E%0A%3Cp%20style%3D%22MARGIN-TOP%3A%201px%3B%20MARGIN-BOTTOM%3A%201px%22%20align%3D%22center%22%3E%3Cu%3E%3Ca%20href%3D%22https%3A%2F%2Fwww.realultimatepower.net%2Fninja%2Fninja_movie_script3.htm%3Fv%3D20260328%22%20target%3D%22main%22%3E%3Ci%3E%3Cfont%20face%3D%22Arial%20Narrow%22%20color%3D%22%23ffff00%22%20size%3D%226%22%3EThe%20Ultimate%20Battle%3C%2Ffont%3E%3C%2Fi%3E%3C%2Fa%3E%3C%2Fu%3E%3C%2Fp%3E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "7f090940-4906-41e1-96b0-d4f7ffe78019",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.realultimatepower.net-ninja-scripts.htm"
+}

@@ -1,0 +1,1036 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Specified 'lang' attribute does not include a valid primary language",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 2328,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_valid.html#%7B%22message%22%3A%22Specified%20'lang'%20attribute%20does%20not%20include%20a%20valid%20primary%20language%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22html_lang_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 2328,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "html_skipnav_exists",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 2328,
+                "width": 800
+            },
+            "snippet": "<html lang=\"\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/html_skipnav_exists.html#%7B%22message%22%3A%22Verify%20there%20is%20a%20way%20to%20bypass%20blocks%20of%20content%20that%20are%20repeated%20on%20multiple%20Web%20pages%22%2C%22snippet%22%3A%22%3Chtml%20lang%3D%5C%22%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22html_skipnav_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 2312,
+                "width": 784
+            },
+            "snippet": "<body bgcolor=\"#FFFFFF\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20bgcolor%3D%5C%22%23FFFFFF%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]",
+                "aria": "/document[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 8,
+                "height": 2312,
+                "width": 745
+            },
+            "snippet": "<table cellpadding=\"4\" cellspacing=\"2\" border=\"0\" width=\"95%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20cellpadding%3D%5C%224%5C%22%20cellspacing%3D%5C%222%5C%22%20border%3D%5C%220%5C%22%20width%3D%5C%2295%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "table_headers_related",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 10,
+                "top": 10,
+                "height": 413,
+                "width": 227
+            },
+            "snippet": "<td height=\"331\" width=\"24%\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/table_headers_related.html#%7B%22message%22%3A%22Complex%20table%20does%20not%20have%20headers%20for%20each%20cell%20properly%20defined%20with%20'header'%20or%20'scope'%22%2C%22snippet%22%3A%22%3Ctd%20height%3D%5C%22331%5C%22%20width%3D%5C%2224%25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_related%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/font[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 36,
+                "height": 67,
+                "width": 215
+            },
+            "snippet": "<font size=\"1\" face=\"Arial, Helvetica, sans-serif\" color=\"#000000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%221%5C%22%20face%3D%5C%22Arial%2C%20Helvetica%2C%20sans-serif%5C%22%20color%3D%5C%22%23000000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/p[1]/font[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"like lead\", \"Surely death would be beautiful?\"",
+            "messageArgs": [
+                "\"like lead\", \"Surely death would be beautiful?\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 36,
+                "height": 67,
+                "width": 215
+            },
+            "snippet": "<font size=\"1\" face=\"Arial, Helvetica, sans-serif\" color=\"#000000\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22like%20lead%5C%22%2C%20%5C%22Surely%20death%20would%20be%20beautiful%3F%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%221%5C%22%20face%3D%5C%22Arial%2C%20Helvetica%2C%20sans-serif%5C%22%20color%3D%5C%22%23000000%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22like%20lead%5C%22%2C%20%5C%22Surely%20death%20would%20be%20beautiful%3F%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/p[2]/font[1]/img[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[1]/paragraph[2]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 120,
+                "height": 224,
+                "width": 219
+            },
+            "snippet": "<img height=\"224\" width=\"219\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%22224%5C%22%20width%3D%5C%22219%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[2]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"he was         a bit of a cunt\"",
+            "messageArgs": [
+                "\"he was         a bit of a cunt\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 123,
+                "height": 52,
+                "width": 478
+            },
+            "snippet": "<font size=\"2\" face=\"Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22he%20was%20%20%20%20%20%20%20%20%20a%20bit%20of%20a%20cunt%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%222%5C%22%20face%3D%5C%22Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22he%20was%20%20%20%20%20%20%20%20%20a%20bit%20of%20a%20cunt%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[4]/font[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 263,
+                "height": 20,
+                "width": 183
+            },
+            "snippet": "<font color=\"#996699\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[5]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 355,
+                "height": 20,
+                "width": 275
+            },
+            "snippet": "<font color=\"#996699\" size=\"3\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%20size%3D%5C%223%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[7]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 519,
+                "height": 20,
+                "width": 242
+            },
+            "snippet": "<font color=\"#996699\" size=\"3\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%20size%3D%5C%223%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[9]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[9]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 665,
+                "height": 20,
+                "width": 248
+            },
+            "snippet": "<font color=\"#996699\" size=\"3\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%20size%3D%5C%223%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[10]/b[1]/font[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[10]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 794,
+                "height": 20,
+                "width": 157
+            },
+            "snippet": "<font color=\"#996699\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[12]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 1014,
+                "height": 20,
+                "width": 194
+            },
+            "snippet": "<font color=\"#996699\" size=\"3\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%20size%3D%5C%223%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[12]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[12]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Poo - how revolting!\"",
+            "messageArgs": [
+                "\"Poo - how revolting!\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 1035,
+                "height": 127,
+                "width": 502
+            },
+            "snippet": "<font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Poo%20-%20how%20revolting!%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%222%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Poo%20-%20how%20revolting!%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[15]/font[2]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[15]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Oh! God - how horrible\"",
+            "messageArgs": [
+                "\"Oh! God - how horrible\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 1308,
+                "height": 71,
+                "width": 491
+            },
+            "snippet": "<font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Oh!%20God%20-%20how%20horrible%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%222%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Oh!%20God%20-%20how%20horrible%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[16]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[16]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 1397,
+                "height": 20,
+                "width": 231
+            },
+            "snippet": "<font color=\"#996699\" size=\"3\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%20size%3D%5C%223%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[17]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[17]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Last of the Summer Wine\"",
+            "messageArgs": [
+                "\"Last of the Summer Wine\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 1510,
+                "height": 53,
+                "width": 475
+            },
+            "snippet": "<font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Last%20of%20the%20Summer%20Wine%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%222%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Last%20of%20the%20Summer%20Wine%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[18]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[18]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 1580,
+                "height": 20,
+                "width": 238
+            },
+            "snippet": "<font color=\"#996699\" size=\"3\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%20size%3D%5C%223%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[20]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[20]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: ' driving wind & snow & found al ... ad gone ... Staggered home thro'",
+            "messageArgs": [
+                "' driving wind & snow & found al ... ad gone ... Staggered home thro'"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 1821,
+                "height": 53,
+                "width": 496
+            },
+            "snippet": "<font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20'%20driving%20wind%20%26%20snow%20%26%20found%20al%20...%20ad%20gone%20...%20Staggered%20home%20thro'%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%222%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22'%20driving%20wind%20%26%20snow%20%26%20found%20al%20...%20ad%20gone%20...%20Staggered%20home%20thro'%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[21]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[21]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 1891,
+                "height": 20,
+                "width": 211
+            },
+            "snippet": "<font color=\"#996699\" size=\"3\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%20size%3D%5C%223%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[22]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[22]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 2001,
+                "height": 20,
+                "width": 246
+            },
+            "snippet": "<font color=\"#996699\" size=\"3\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%20size%3D%5C%223%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_quoted_correctly",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[22]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[22]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Potential_1",
+            "message": "If the following text is a quotation, mark it as a <q> or <blockquote> element: \"Philip Larkin / Ive thought abo ... barking / Wont you suck my nob?\"",
+            "messageArgs": [
+                "\"Philip Larkin / Ive thought abo ... barking / Wont you suck my nob?\""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 2023,
+                "height": 127,
+                "width": 500
+            },
+            "snippet": "<font size=\"2\" face=\"Verdana, Arial, Helvetica, sans-serif\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_quoted_correctly.html#%7B%22message%22%3A%22If%20the%20following%20text%20is%20a%20quotation%2C%20mark%20it%20as%20a%20%3Cq%3E%20or%20%3Cblockquote%3E%20element%3A%20%5C%22Philip%20Larkin%20%2F%20Ive%20thought%20abo%20...%20barking%20%2F%20Wont%20you%20suck%20my%20nob%3F%5C%22%22%2C%22snippet%22%3A%22%3Cfont%20size%3D%5C%222%5C%22%20face%3D%5C%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22text_quoted_correctly%22%2C%22msgArgs%22%3A%5B%22%5C%22Philip%20Larkin%20%2F%20Ive%20thought%20abo%20...%20barking%20%2F%20Wont%20you%20suck%20my%20nob%3F%5C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/p[23]/font[1]/b[1]/font[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[1]/cell[2]/paragraph[23]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                16,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 243,
+                "top": 2167,
+                "height": 20,
+                "width": 223
+            },
+            "snippet": "<font color=\"#996699\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cfont%20color%3D%5C%22%23996699%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C16%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/p[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[3]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'genuine entries' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "genuine entries"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 2208,
+                "height": 37,
+                "width": 219
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'genuine%20entries'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22genuine%20entries%22%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/p[1]/font[1]/br[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[3]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'less so entries' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "less so entries"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 181,
+                "top": 2209,
+                "height": 16,
+                "width": 0
+            },
+            "snippet": "<br>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'less%20so%20entries'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cbr%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22less%20so%20entries%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/p[1]/font[1]/font[2]/b[1]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[3]/cell[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 4.45 with its background is less than the WCAG AA minimum requirements for text of size 13px and weight of 700",
+            "messageArgs": [
+                "4.45",
+                13,
+                700,
+                "#996699",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 71,
+                "top": 2228,
+                "height": 16,
+                "width": 106
+            },
+            "snippet": "<b>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%204.45%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2013px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Cb%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%224.45%22%2C13%2C700%2C%22%23996699%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_block_heading",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/p[2]",
+                "aria": "/document[1]/table[1]/rowgroup[1]/row[3]/cell[1]/paragraph[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_heading",
+            "message": "Confirm this text 'disappointment menu\nrandom acts menu disappointment menu\nrandom acts menu' is used as a heading and if so, modify to use a heading element or role",
+            "messageArgs": [
+                "disappointment menu\nrandom acts menu disappointment menu\nrandom acts menu"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 14,
+                "top": 2261,
+                "height": 37,
+                "width": 219
+            },
+            "snippet": "<p>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.04.28/doc/en-US/text_block_heading.html#%7B%22message%22%3A%22Confirm%20this%20text%20'disappointment%20menu%5Cnrandom%20acts%20menu%20disappointment%20menu%5Cnrandom%20acts%20menu'%20is%20used%20as%20a%20heading%20and%20if%20so%2C%20modify%20to%20use%20a%20heading%20element%20or%20role%22%2C%22snippet%22%3A%22%3Cp%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_heading%22%2C%22ruleId%22%3A%22text_block_heading%22%2C%22msgArgs%22%3A%5B%22disappointment%20menu%5Cnrandom%20acts%20menu%20disappointment%20menu%5Cnrandom%20acts%20menu%22%5D%7D"
+        }
+    ],
+    "numExecuted": 607,
+    "ruleTime": 6,
+    "nls": {
+        "html_lang_valid": {
+            "0": "The default human language of the page must be valid and specified in accordance with BCP 47",
+            "Fail_1": "Specified 'lang' attribute does not include a valid primary language"
+        },
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "html_skipnav_exists": {
+            "0": "Provide a way to bypass blocks of content that are repeated on multiple Web pages",
+            "Potential_1": "Verify there is a way to bypass blocks of content that are repeated on multiple Web pages"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "text_quoted_correctly": {
+            "0": "Quotations should be marked with <q> or <blockquote> elements",
+            "Potential_1": "If the following text is a quotation, mark it as a <q> or <blockquote> element: {0}"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "table_headers_related": {
+            "0": "For a complex data table, all <th> and <td> elements must be related via 'header' or 'scope' attributes",
+            "Fail_1": "Complex table does not have headers for each cell properly defined with 'header' or 'scope'"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "text_block_heading": {
+            "0": "Heading text should use a heading element or role",
+            "potential_heading": "Confirm this text '{0}' is used as a heading and if so, modify to use a heading element or role"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 27,
+            "elementsViolation": 17,
+            "elementsViolationReview": 27,
+            "violation": 18,
+            "potentialviolation": 12,
+            "recommendation": 1,
+            "potentialrecommendation": 0,
+            "manual": 0,
+            "pass": 576
+        },
+        "scanTime": 28,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "WCAG_2_2"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1779239854727,
+        "URL": "data:text/html;charset=utf-8,%3C!doctype%20html%3E%0A%3Chtml%20lang%3D%22%22%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EUntitled%20Document%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%3Cbody%20bgcolor%3D%22%23FFFFFF%22%3E%0A%3Ctable%20width%3D%2295%25%22%20border%3D%220%22%20cellspacing%3D%222%22%20cellpadding%3D%224%22%3E%0A%20%20%3Ctbody%3E%3Ctr%20valign%3D%22top%22%3E%20%0A%20%20%20%20%3Ctd%20width%3D%2224%25%22%20height%3D%22331%22%3E%20%0A%20%20%20%20%20%20%3Cp%20align%3D%22left%22%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3E%3Cfont%20color%3D%22%23000000%22%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%221%22%3EOn%20%0A%20%20%20%20%20%20%20%20my%20birthday%2C%20Kenneth%20William's%20heart%20was%20%22like%20lead%22.%20On%20my%20%0A%20%20%20%20%20%20%20%20mother's%20birthday%2C%20he%20ponders%20%22Surely%20death%20would%20be%20beautiful%3F%22%20%0A%20%20%20%20%20%20%20%20Just%20what%20is%20it%20that%20you%20had%20against%20my%20family%2C%20Kenneth%3F%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%20align%3D%22left%22%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3E%3Cimg%20width%3D%22219%22%20height%3D%22224%22%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%20%20%3Ctd%20rowspan%3D%223%22%3E%20%0A%20%20%20%20%20%20%3Cp%3E%3Cfont%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3E%3Cb%3EThe%20Kenneth%20Williams%20%0A%20%20%20%20%20%20%20%20Diaries%2C%20published%20in%201994%2C%20revealed%20a%20side%20to%20Willo%20the%20Wisp%20that%20few%20%0A%20%20%20%20%20%20%20%20people%20imagined%20existed.%20Who%20would%20have%20imagined%20that%20the%20star%20of%20hundreds%20%0A%20%20%20%20%20%20%20%20of%20Julian%20and%20Sandy%20scripts%20was%2C%20in%20fact%2C%20a%20frustrated%20homosexual%20with%20%0A%20%20%20%20%20%20%20%20relentless%20anal%20pains%2C%20and%20an%20unfettered%20wind%20problem%3F%3C%2Fb%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EReading%20the%20book%20%0A%20%20%20%20%20%20%20%20is%20a%20depressing%20trawl%20of%20misanthropy%2C%20bitching%20and%20meaningless%20namedropping%2C%20%0A%20%20%20%20%20%20%20%20providing%20no%20more%20insight%20into%20Kenneth%20than%20the%20sentence%20%22he%20was%20%0A%20%20%20%20%20%20%20%20a%20bit%20of%20a%20cunt%22.%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3ESo%2C%20here%20are%20the%20%0A%20%20%20%20%20%20%20%20best%20bits%2C%20along%20with%20some%20bits%20that%20I%20made%20up%20myself%20to%20spice%20it%20up%20a%20%0A%20%20%20%20%20%20%20%20bit.%20In%20this%20way%2C%20perhaps%20we%20may%20think%20of%20Kenneth%20as%20something%20other%20than%20%0A%20%20%20%20%20%20%20%20a%20body%20of%20pitiable%20malevolence.%20%3C%2Ffont%3E%3C%2Fb%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23993399%22%3E%3Cb%3E%3Cfont%20color%3D%22%23996699%22%3E22nd%20%0A%20%20%20%20%20%20%20%20February%201926%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3C%2Ffont%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EI%20%0A%20%20%20%20%20%20%20%20was%20born%20today.%20What%20a%20tiresome%20%26amp%3B%20wearying%20experience%20it%20was.%20When%20%0A%20%20%20%20%20%20%20%20I%20first%20opened%20my%20eyes%2C%20the%20crushing%20weight%20of%20my%20life%20to%20come%20was%20visited%20%0A%20%20%20%20%20%20%20%20up%20me.%20I%20took%20my%20first%20breath%2C%20of%20foetid%2C%20poisonous%20air%2C%20%26amp%3B%20I%20began%20%0A%20%20%20%20%20%20%20%20to%20cry.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23996699%22%3EWednesday%2C%20%0A%20%20%20%20%20%20%20%2027%20February%201952%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EI%20%0A%20%20%20%20%20%20%20%20am%2026%20years%20old%20and%20I%20still%20haven't%20had%20any%20fabulous%20reviews%2C%20appeared%20%0A%20%20%20%20%20%20%20%20in%20any%20Carry%20On%20films%2C%20or%20died.%20What%20is%20wrong%20with%20this%20world%2C%20where%20one's%20%0A%20%20%20%20%20%20%20%20destiny%20is%20kept%20from%20one%3F%20How%20can%20this%20be%20fair%3F%20It%20is%20all%20a%20load%20of%20%3Ci%3Eshit%3C%2Fi%3E.%20%0A%20%20%20%20%20%20%20%20I%20like%20men.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23CC3399%22%3EThursday%2C%20%0A%20%20%20%20%20%20%20%2018%20December%201952%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EWish%20%0A%20%20%20%20%20%20%20%20I'd%20never%20seen%20Peter%20Pan.%20Hate%20it%20bitterly.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23996699%22%3EMonday%2C%20%0A%20%20%20%20%20%20%20%209%20November%201953%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EStill%20%0A%20%20%20%20%20%20%20%20haven't%20quite%20got%20over%20seeing%20Peter%20Pan.%20If%20anything%2C%20my%20hatred%20has%20deepened%20%0A%20%20%20%20%20%20%20%20over%20the%20last%20year.%20If%20I%20were%20to%20sacrifice%20myself%20to%20one%20end%2C%20it%20would%20%0A%20%20%20%20%20%20%20%20be%20to%20destroy%20Peter%20Pan.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23CC3399%22%3ESaturday%2C%20%0A%20%20%20%20%20%20%20%2022%20December%201956%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3ESandy%20%0A%20%20%20%20%20%20%20%20Wilson%20party%20at%209'ish.%20Liz%20Welch%20was%20there.%20She%20is%20superb.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23996699%22%3ESunday%2C%20%0A%20%20%20%20%20%20%20%2023%20December%201957%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EI%20%0A%20%20%20%20%20%20%20%20was%20the%20worse%20for%20drink%20last%20night%20-%20I%20could%20hardly%20believe%20my%20eyes%20to%20%0A%20%20%20%20%20%20%20%20read%20the%20diary%20this%20morning.%20Liz%20Welch%20is%20a%20vapid%20whore%3B%20she%20talks%20of%20%0A%20%20%20%20%20%20%20%20nothing%20but%20her%20hair%20and%20when%20she%20walks%2C%20a%20m%C3%A9lange%20of%20foreign%20semen%20%0A%20%20%20%20%20%20%20%20is%20teased%20out%20of%20her%20by%20the%20jostling%20motion%20of%20her%20over-ample%20thighs.%20%0A%20%20%20%20%20%20%20%20Superb%2C%20my%20accursed%20arse.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23993399%22%3E%20%0A%20%20%20%20%20%20%20%20%3Cfont%20color%3D%22%23996699%22%3E1957%20Memoranda%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EI%20%0A%20%20%20%20%20%20%20%20am%20beginning%20to%20get%20famous%20now%2C%20which%20is%20about%20bloody%20time.%20However%2C%20I%20%0A%20%20%20%20%20%20%20%20still%20hate%20everyone%20and%20everything%2C%20and%20am%20constantly%20racked%20with%20pain%20%0A%20%20%20%20%20%20%20%20throughout%20my%20body%2C%20and%20a%20cancerous%20malevolence%20in%20my%20heart.%20I%20wish%20I%20%0A%20%20%20%20%20%20%20%20had%20someone%20who%20would%20help%20me.%20Some%20people%20have%20offered%20to%20help%20me%2C%20but%20%0A%20%20%20%20%20%20%20%20they%20were%20so%20diabolically%20repulsive%20that%20I%20threw%20a%20Toby%20Jug%20at%20them.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23CC3399%22%3ETuesday%2C%20%0A%20%20%20%20%20%20%20%2010%20September%201963%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EAll%20%0A%20%20%20%20%20%20%20%20day%20in%20the%20bloody%20rowing%20boat%2C%20until%20I%20was%20aching%20all%20over.%20Charles%20Hawtry%20%0A%20%20%20%20%20%20%20%20was%20pissed.%20Breath%20smelled%20appallingly.%20It's%20a%20disgrace.%20Still%2C%20one%20must%20%0A%20%20%20%20%20%20%20%20be%20charitable.%20%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23996699%22%3ESunday%2C%20%0A%20%20%20%20%20%20%20%2023%20July%201967%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EDinner%20%0A%20%20%20%20%20%20%20%20with%20Joe%20Orton%20%26amp%3B%20Ken%20Halliwell.%20I%20love%20them%2C%20they%20are%20both%20so%20kind%2C%20%0A%20%20%20%20%20%20%20%20even%20if%20Joe%20does%20trade%20in%20toilets.%20I%20let%20rip%20with%20the%20most%20pungent%20%26amp%3B%20%0A%20%20%20%20%20%20%20%20sustained%20fart.%20Neither%20Joe%20or%20Ken%20seemed%20to%20mind%2C%20they%20are%20both%20quite%20%0A%20%20%20%20%20%20%20%20sophisticated%20in%20this%20respect.%20However%2C%20some%20obnoxious%20in-bred%20bore%20at%20%0A%20%20%20%20%20%20%20%20the%20next%20table%20said%20%22Poo%20-%20how%20revolting!%22.%20If%20I%20could%20have%20%0A%20%20%20%20%20%20%20%20leapt%20over%20to%20her%20table%20%26amp%3B%20torn%20her%20head%20from%20her%20shoulders%2C%20I%20would%20%0A%20%20%20%20%20%20%20%20have%20done%2C%20but%20my%20knees%20are%20not%20one%20hundred%20percent%20today.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EKen%20%26amp%3B%20%0A%20%20%20%20%20%20%20%20Joe%20are%20rubbish.%20They%20deserve%20each%20other.%20I%20hope%20they%20die.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23993399%22%3E%3Cb%3E%3Cfont%20color%3D%22%23CC3399%22%3ESunday%2C%20%0A%20%20%20%20%20%20%20%2024%20March%201968%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3C%2Ffont%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EI%20%0A%20%20%20%20%20%20%20%20had%20the%20bowel%20motion%20%26amp%3B%20went%20to%20tip%20my%20fag%20ash%20down%20the%20loo%20%26amp%3B%20burned%20%0A%20%20%20%20%20%20%20%20me%20cock.%20There's%20always%20something.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23993399%22%3E%3Cb%3E%3Cfont%20color%3D%22%23CC3399%22%3EMonday%2C%20%0A%20%20%20%20%20%20%20%2013th%20May%201968%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3C%2Ffont%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EAt%20%0A%20%20%20%20%20%20%20%20the%20studios%20today%2C%20to%20brighten%20things%20up%2C%20I%20hid%20my%20cock%20between%20my%20legs%20%0A%20%20%20%20%20%20%20%20%26amp%3B%20impersonated%20a%20vagina%20for%20Angela%20Douglas.%20She%20sunk%20her%20head%20in%20her%20%0A%20%20%20%20%20%20%20%20hands%20%26amp%3B%20moaned%20%22Oh!%20God%20-%20how%20horrible%22%20%26amp%3B%20didn't%20find%20%0A%20%20%20%20%20%20%20%20it%20amusing%20at%20all.%20This%20is%20where%20she%20lacks%20graciousness.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23996699%22%3EWednesday%2C%20%0A%20%20%20%20%20%20%20%2026%20May%201971%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EHad%20%0A%20%20%20%20%20%20%20%20Sid%2C%20Hattie%2C%20Joan%2C%20Barbara%2C%20Bernard%20%26amp%3B%20Charlie%20around%20for%20dinner.%20They%20%0A%20%20%20%20%20%20%20%20were%20all%20perfectly%20awful%20except%20for%20Barbara%20whom%20I%20love%20more%20than%20anything%20%0A%20%20%20%20%20%20%20%20else%20in%20the%20world%2C%20%26amp%3B%20even%20she%20is%20a%20stupid%20cunt.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23CC3399%22%3EWednesday%20%0A%20%20%20%20%20%20%20%205%20March%201975%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EThe%20%0A%20%20%20%20%20%20%20%20BBC%20showed%20a%20pathetic%20thing%20called%20%22Last%20of%20the%20Summer%20Wine%22%20%0A%20%20%20%20%20%20%20%20with%20Michael%20Bates%2C%20Peter%20Sallis%20and%20that%20Owen%20being%20repulsive.%20It%20was%20%0A%20%20%20%20%20%20%20%20banal%20dialogue%20and%20had%20the%20laughter%20dubbed%20on.%20It%20was%20chronic.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23996699%22%3ESunday%2C%20%0A%20%20%20%20%20%20%20%2022%20February%201976%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EToday%20%0A%20%20%20%20%20%20%20%20is%20my%2050th%20birthday.%20I%20spent%20a%20full%20hour%20on%20the%20toilet%2C%20far%20longer%20than%20%0A%20%20%20%20%20%20%20%20I%20usually%20afford%20myself%2C%20and%20felt%20substantially%20better%20for%20it.%20Presents%20%0A%20%20%20%20%20%20%20%20were%20a%20shower%2C%20as%20usual.%20Sid%20sent%20me%20a%20pepper%20mill%20shaped%20like%20a%20fish.%20%0A%20%20%20%20%20%20%20%20It%20must%20be%20French.%20What%20on%20Earth%20does%20he%20think%20I'm%20going%20to%20do%20with%20a%20%0A%20%20%20%20%20%20%20%20fish%20puking%20pepper%20onto%20my%20Fish%20Fingers%3F%20I%20despair.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23CC3399%22%3EMonday%2C%20%0A%20%20%20%20%20%20%20%2027%20July%201981%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EWatched%20%0A%20%20%20%20%20%20%20%20the%20Panorama%20programme%20about%20Iraq%20and%20it%20was%20the%20usual%20pious%20rubbish%20about%20%0A%20%20%20%20%20%20%20%20Saddam%20Hussein%20being%20a%20tyrant%20%26amp%3B%20a%20torturer.%20When%20such%20a%20leader%20is%20%0A%20%20%20%20%20%20%20%20removed%2C%20the%20ensuing%20chaos%20is%20deplored%20by%20the%20%3Ci%3Esame%20censurers%3C%2Fi%3E.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23CC3399%22%3ESunday%2C%20%0A%20%20%20%20%20%20%20%2027%20December%201981%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EI%20%0A%20%20%20%20%20%20%20%20walked%20touston%20thro'%20driving%20wind%20%26amp%3B%20snow%20%26amp%3B%20found%20all%20the%20papers%20%0A%20%20%20%20%20%20%20%20had%20gone%20...%20Staggered%20home%20thro'%20the%20slush%20%26amp%3B%20thought%20that%20this%20must%20%0A%20%20%20%20%20%20%20%20be%20the%20most%20miserable%20period%20I've%20experienced%20since%201976.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23996699%22%3EThursday%2C%20%0A%20%20%20%20%20%20%20%2021%20July%201983%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3ETalking%20%0A%20%20%20%20%20%20%20%20to%20Tony%20Hatch%20today.%20Bloody%20musicians.%20He%20said%20that%20my%20farts%20were%20the%20%0A%20%20%20%20%20%20%20%20opposite%20of%20music%3B%20release%2C%20sustain%2C%20decay%2C%20attack.%20I%20hadn't%20the%20foggiest%20%0A%20%20%20%20%20%20%20%20what%20he%20meant%2C%20and%20I%20left%20him%20in%20no%20doubt%20as%20to%20what%20level%20of%20unutterable%20%0A%20%20%20%20%20%20%20%20cunt%20I%20considered%20him.%20%3Ci%3ECunt%3C%2Fi%3E.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23996699%22%3EMonday%2C%20%0A%20%20%20%20%20%20%20%202%20December%2C%201985%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EPhilip%20%0A%20%20%20%20%20%20%20%20Larkin%20is%20dead.%20Surely%20the%20whole%20world%20must%20end%20now%20that%20this%20fine%20man%20%0A%20%20%20%20%20%20%20%20has%20left%20it%3F%20I%20scribbled%20a%20quick%20poem%20in%20my%20notebook%20when%20I%20heard%2C%20although%20%0A%20%20%20%20%20%20%20%20if%20anyone%20should%20ever%20read%20it%20I%20would%20squeal%20and%20die.%20Alright%20then%2C%20here%20%0A%20%20%20%20%20%20%20%20it%20is.%20%22Philip%20Larkin%20%2F%20I've%20thought%20about%20parking%20%2F%20My%20penis%20in%20%0A%20%20%20%20%20%20%20%20your%20gob%20%2F%20Oh%20Mr.%20Larkin%20%2F%20The%20dog's%20are%20barking%20%2F%20Won't%20you%20suck%20my%20nob%3F%22%20%0A%20%20%20%20%20%20%20%20I%20call%20it%20%3Ci%3EO'd%20To%20Larkin.%20%3C%2Fi%3EOf%20course%2C%20I%20would%20never%20have%20asked%20him%20%0A%20%20%20%20%20%20%20%20when%20he%20was%20alive%20-%20he%20might%20have%20said%20yes%2C%20and%20the%20man%20was%20a%20rapist%20and%20%0A%20%20%20%20%20%20%20%20a%20wife-beater.%20%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3Cp%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%223%22%20color%3D%22%23993399%22%3E%3Cb%3E%3Cfont%20color%3D%22%23996699%22%3EThursday%2C%20%0A%20%20%20%20%20%20%20%2014%20April%2C%201988%3Cbr%3E%0A%20%20%20%20%20%20%20%20%3C%2Ffont%3E%3C%2Fb%3E%3C%2Ffont%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3EBloody%20%0A%20%20%20%20%20%20%20%20hell!%20My%20back%20hurts%20so%20much%20%26amp%3B%20everything's%20shit.%20I%20bet%20I'm%20going%20to%20%0A%20%20%20%20%20%20%20%20die%20soon.%20Wouldn't%20that%20be%20the%20way%3F%20I'll%20bet%20I%20die%20on%20the%20toilet.%20The%20%0A%20%20%20%20%20%20%20%20indignity%20of%20some%20doctor%20trying%20to%20pull%20my%20trousers%20up%20over%20my%20shitty%20%0A%20%20%20%20%20%20%20%20arse%20is%20something%20I%20am%20glad%20that%20I%20shall%20not%20be%20there%20to%20witness.%20Everything%20%0A%20%20%20%20%20%20%20%20is%20so%20%3Ci%3Eshit%3C%2Fi%3E%2C%20I%20really%20can't%20see%20the%20point%20in%20%3Ci%3Eanything%3C%2Fi%3E%2C%20it's%20%0A%20%20%20%20%20%20%20%20all%20so%20%3Ci%3Efucking%20shit.%20%3C%2Fi%3EI'm%20going%20to%20put%20loads%20of%20pills%20in%20my%20mouth%2C%20%0A%20%20%20%20%20%20%20%20sit%20on%20the%20toilet%2C%20and%20see%20what%20happens.%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%20%20%3Ctr%20valign%3D%22top%22%3E%20%0A%20%20%20%20%3Ctd%20width%3D%2224%25%22%20height%3D%221498%22%3E%20%0A%20%20%20%20%20%20%3Cdiv%20align%3D%22center%22%3E%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%20%20%3Ctr%20valign%3D%22bottom%22%3E%20%0A%20%20%20%20%3Ctd%20width%3D%2224%25%22%20height%3D%22125%22%3E%20%0A%20%20%20%20%20%20%3Cdiv%20align%3D%22center%22%3E%20%0A%20%20%20%20%20%20%20%20%3Cp%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3E%3Cfont%20color%3D%22%23CC3399%22%3E%3Cb%3Egenuine%20%0A%20%20%20%20%20%20%20%20%20%20entries%3C%2Fb%3E%3C%2Ffont%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cfont%20color%3D%22%23996699%22%3E%3Cb%3Eless%20so%20entries%3C%2Fb%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%20%20%3Cp%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3E%3Cfont%20face%3D%22Verdana%2C%20Arial%2C%20Helvetica%2C%20sans-serif%22%20size%3D%222%22%3E%3Ca%20href%3D%22http%3A%2F%2Fwww.disappointment.com%22%3E%3Cb%3Edisappointment%20%0A%20%20%20%20%20%20%20%20%20%20menu%20%3C%2Fb%3E%3C%2Fa%3E%3Cb%3E%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22actsofshit.htm%22%3Erandom%20acts%20menu%3C%2Fa%3E%3C%2Fb%3E%3C%2Ffont%3E%3C%2Ffont%3E%3C%2Fp%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Ftd%3E%0A%20%20%3C%2Ftr%3E%0A%3C%2Ftbody%3E%3C%2Ftable%3E%0A%0A%0A%3C%2Fbody%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E"
+    },
+    "scanID": "71f4b748-13f7-4fd1-a0bf-76cbafe48d10",
+    "toolID": "accessibility-checker-v4.0.10",
+    "label": "www.disappointment.com-randomacts-kennethdiary.htm"
+}
