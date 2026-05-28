@@ -19,8 +19,14 @@ set -uo pipefail
 #   CLEAN_REPORTS=1 ./run_all_tools.sh urls.txt
 #   STOP_ON_FAIL=1 ./run_all_tools.sh urls.txt
 #   PLAYWRIGHT_INSTALL_CHROME=1 ./run_all_tools.sh urls.txt
+#   USE_LOGIN=1 ./run_all_tools.sh urls.txt
 #   PLAYWRIGHT_BROWSER_CHANNEL=chrome ./run_all_tools.sh urls.txt
 #   CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ./run_all_tools.sh urls.txt
+#
+# axe-scan note:
+#   axe-scan is installed locally in ./axe-scan and run via npm exec.
+#   It is omitted automatically when login/auth mode is enabled because it
+#   cannot reuse the Playwright login storage state used by the other runners.
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 JOB_DIR="$SCRIPT_DIR"
@@ -89,6 +95,44 @@ else
   TOOL_LIST=("${DEFAULT_TOOLS[@]}")
 fi
 
+
+detect_chrome_path() {
+  if [[ -n "${CHROME_PATH:-}" ]]; then
+    echo "$CHROME_PATH"
+    return 0
+  fi
+
+  case "$(uname -s)" in
+    Darwin)
+      if [[ -x "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ]]; then
+        echo "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+        return 0
+      fi
+      ;;
+    Linux)
+      for candidate in /usr/bin/google-chrome /usr/bin/google-chrome-stable /usr/bin/chromium /usr/bin/chromium-browser; do
+        if [[ -x "$candidate" ]]; then
+          echo "$candidate"
+          return 0
+        fi
+      done
+      ;;
+  esac
+
+  return 1
+}
+
+# Login/auth mode is intentionally broad so the script works with different
+# ways of choosing an authenticated run. Set USE_LOGIN=1 explicitly, or leave
+# ./auth/storage_state.json in place after your login setup step.
+login_mode_enabled() {
+  case "${USE_LOGIN:-${LOGIN:-${AUTH_ENABLED:-0}}}" in
+    1|true|TRUE|yes|YES|y|Y) return 0 ;;
+  esac
+
+  [[ -f "${AUTH_STORAGE_STATE:-$JOB_DIR/auth/storage_state.json}" ]]
+}
+
 json_escape() {
   python3 -c 'import json, sys; print(json.dumps(sys.stdin.read()))'
 }
@@ -148,45 +192,6 @@ is_failed_status() {
   esac
 }
 
-run_login_if_needed() {
-  local auth_dir="$JOB_DIR/auth"
-  local login_script="$auth_dir/login_and_save_state.js"
-  local login_config="$auth_dir/login_config.json"
-  local storage_state="$auth_dir/storage_state.json"
-
-  if [[ "${RUN_LOGIN:-0}" != "1" ]]; then
-    return 0
-  fi
-
-  if [[ ! -f "$login_config" ]]; then
-    echo "RUN_LOGIN=1 but no login config found at: $login_config" >&2
-    return 1
-  fi
-
-  if [[ ! -f "$login_script" ]]; then
-    echo "RUN_LOGIN=1 but no login script found at: $login_script" >&2
-    return 1
-  fi
-
-  echo "Running login bootstrap..."
-  (
-    cd "$auth_dir" || exit 1
-    if [[ ! -d node_modules ]]; then
-      echo "Installing auth dependencies..."
-      npm install || exit 1
-      npx playwright install chromium || exit 1
-    fi
-    node "$login_script" "$JOB_DIR" || exit 1
-  ) || return 1
-
-  if [[ ! -f "$storage_state" ]]; then
-    echo "Login completed but no storage state was created: $storage_state" >&2
-    return 1
-  fi
-
-  echo "Login bootstrap complete: $storage_state"
-}
-
 write_summary_line() {
   local tool="$1"
   local status="$2"
@@ -242,13 +247,16 @@ if src.exists():
                 records.append(json.loads(line))
 
 failed = [r for r in records if r.get("status") in {"failed", "skipped"}]
+omitted = [r for r in records if r.get("status") == "omitted"]
 payload = {
     "created_at": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
     "status_meaning": "completed means the tool runner executed and generated reports/artifacts; it does not mean the page passed accessibility checks",
     "tools_run": len(records),
     "tools_completed": len(records) - len(failed),
     "tools_failed_or_skipped": len(failed),
+    "tools_omitted": len(omitted),
     "failed": failed,
+    "omitted": omitted,
     "tools": records,
 }
 dst.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -301,11 +309,6 @@ install_deps_if_needed() {
     fi
   )
 }
-
-if ! run_login_if_needed; then
-  echo "Login bootstrap failed" >&2
-  exit 1
-fi
 
 run_node_tool() {
   local tool="$1"
@@ -389,7 +392,7 @@ run_axe_scan() {
   local runner_dir="$SCRIPT_DIR/axe-scan"
   local report_dir="$REPORTS_DIR/axe-scan"
   local log_file="$LOGS_DIR/${tool}.log"
-  local started ended exit_code status notes
+  local started ended exit_code status notes chrome_path
 
   rm -rf "$report_dir"
   mkdir -p "$report_dir"
@@ -402,33 +405,49 @@ run_axe_scan() {
     return 127
   fi
 
-  if ! command -v axe-scan >/dev/null 2>&1; then
+  if login_mode_enabled; then
     ended="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-    write_summary_line "$tool" "skipped" "127" "$started" "$ended" "$report_dir" "$log_file" "axe-scan command not found. Install with: npm install -g axe-scan"
-    echo "[$tool] skipped: axe-scan command not found. Install with: npm install -g axe-scan"
-    return 127
+    notes="Omitted because login/auth mode is enabled. axe-scan supports only basic auth and cannot reuse ./auth/storage_state.json like the Playwright-based runners."
+    write_summary_line "$tool" "omitted" "0" "$started" "$ended" "$report_dir" "$log_file" "$notes"
+    echo "[$tool] omitted: login/auth mode is enabled, and axe-scan cannot reuse the Playwright login state"
+    return 0
   fi
+
+  if ! install_deps_if_needed "$runner_dir" >"$log_file" 2>&1; then
+    exit_code=$?
+    ended="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    echo "[$tool] failed during dependency install. Log: $log_file"
+    write_summary_line "$tool" "failed" "$exit_code" "$started" "$ended" "$report_dir" "$log_file" "Dependency install failed; see log file"
+    if [[ "${STOP_ON_FAIL:-0}" == "1" ]]; then
+      finalise_summary
+      exit "$exit_code"
+    fi
+    return "$exit_code"
+  fi
+
+  chrome_path="$(detect_chrome_path || true)"
 
   echo "[$tool] running..."
   (
     cd "$runner_dir" && \
     rm -rf reports axe-results.csv && \
     cp "$INPUT_DIR/urls.txt" urls.txt && \
-    axe-scan run > axe-results.csv && \
+    if [[ -n "$chrome_path" ]]; then export PUPPETEER_EXECUTABLE_PATH="$chrome_path"; fi && \
+    npm exec -- axe-scan run > axe-results.csv && \
     ./convert-csv-to-json-files.sh && \
     mkdir -p "$report_dir" && \
     cp -R reports/. "$report_dir/"
-  ) >"$log_file" 2>&1
+  ) >>"$log_file" 2>&1
   exit_code=$?
   ended="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
   if [[ "$exit_code" -eq 0 ]]; then
     status="completed"
-    notes="Runner completed and generated its normal output. This does not mean the scanned page passed accessibility checks."
+    notes="Local axe-scan runner completed via ./axe-scan/node_modules. This does not mean the scanned page passed accessibility checks."
     echo "[$tool] completed"
   elif has_report_artifacts "$report_dir"; then
     status="completed_nonzero"
-    notes="Tool exited with code $exit_code but report artefacts were generated. Treat as a completed scan with non-zero tool exit; inspect log if needed."
+    notes="Local axe-scan exited with code $exit_code but report artefacts were generated. Treat as a completed scan with non-zero tool exit; inspect log if needed."
     echo "[$tool] completed with non-zero exit code $exit_code; reports were generated. Log: $log_file"
   else
     status="failed"
@@ -541,6 +560,9 @@ run_tool_by_name() {
 echo "URL input: $INPUT_DIR/urls.txt"
 echo "Reports:   $REPORTS_DIR"
 echo "Logs:      $LOGS_DIR"
+if login_mode_enabled; then
+  echo "Login/auth mode detected: axe-scan will be omitted because it cannot reuse Playwright storage state."
+fi
 echo
 
 failures=0
@@ -562,5 +584,5 @@ if [[ "$failures" -gt 0 ]]; then
   exit 1
 fi
 
-echo "Completed: all selected tool runners executed and generated their expected report artefacts."
+echo "Completed: selected tool runners executed; deliberately omitted tools, if any, are recorded in the summary."
 echo "Note: this does not mean the tested pages passed accessibility checks; inspect the JSON reports for findings."

@@ -1,0 +1,14 @@
+{
+  "name": "tool-runner-axe-scan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local axe-scan wrapper for the accessibility tool runner repo.",
+  "scripts": {
+    "scan": "axe-scan run",
+    "convert": "./convert-csv-to-json-files.sh",
+    "run": "npm run scan --silent > axe-results.csv && npm run convert --silent"
+  },
+  "dependencies": {
+    "axe-scan": "latest"
+  }
+}

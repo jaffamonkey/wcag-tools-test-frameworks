@@ -48,7 +48,7 @@ You will need:
 - Node.js and npm
 - Python 3
 - Google Chrome installed locally; Playwright-based runners are configured to use your installed Chrome rather than downloading the full Playwright browser bundle
-- Optional: the global `axe-scan` CLI if you want to run the `axe-scan` folder
+- Google Chrome installed locally; `npx playwright install chrome` can set up the Playwright Chrome channel when `PLAYWRIGHT_INSTALL_CHROME=1` is used
 
 The script can install each runner's npm dependencies for you by setting `INSTALL_DEPS=1`. Browser downloads are skipped during dependency installation; the runners use local Chrome by default.
 
@@ -91,33 +91,6 @@ chmod +x run_all_tools.sh
 INSTALL_DEPS=1 PLAYWRIGHT_INSTALL_CHROME=1 ./run_all_tools.sh urls.txt
 ```
 
-if you want to add login:
-
-Add details to `auth/login_config.json`.  There is fallback intelligence to find login fields if not found by what is specificed in the login_config.json file.
-
-Example:
-
-```json
-{
-  "login_url": "https://practicetestautomation.com/practice-test-login/",
-  "username": "student",
-  "password": "Password123",
-  "success_url_contains": "/logged-in-successfully",
-  "success_selector": "",
-  "username_selector": "#username",
-  "password_selector": "#password",
-  "submit_selector": "#submit",
-  "pre_login_wait_ms": 1500,
-  "post_login_wait_ms": 3000
-}
-```
-
-
-Then run the tools with these flags:
-
-```bash
-INSTALL_DEPS=1 PLAYWRIGHT_INSTALL_CHROME=1  RUN_LOGIN=1 ./run_all_tools.sh input/urls.txt
-```
 That will:
 
 1. copy `urls.txt` into `input/urls.txt`
@@ -125,7 +98,9 @@ That will:
 3. run each configured tool
 4. collect reports into `reports/<tool-name>/`
 5. write logs into `reports/_logs/`
-6. write a machine-readable summary to `reports/_run-summary.json`
+6. install and use local `axe-scan` from `axe-scan/node_modules` when axe-scan is included
+7. omit `axe-scan` automatically when login/auth mode is enabled
+8. write a machine-readable summary to `reports/_run-summary.json`
 
 ## Common commands
 
@@ -200,6 +175,12 @@ Run just screenshots and tab maps:
 
 ```bash
 TOOLS="screenshots tab-map" ./run_all_tools.sh urls.txt
+```
+
+Run in login/auth mode. Compatible runners receive `auth/storage_state.json`; `axe-scan` is omitted because it cannot reuse that browser state:
+
+```bash
+USE_LOGIN=1 ./run_all_tools.sh urls.txt
 ```
 
 ## Tool names for `TOOLS`
@@ -284,7 +265,8 @@ The run summary uses runner-focused statuses:
 | `completed_with_findings` | The runner used a non-zero exit code to indicate accessibility findings, but it still completed. Common for Pa11y exit code `2`. |
 | `completed_nonzero` | The runner exited non-zero, but report artefacts were generated, so the scan is treated as completed with a non-zero tool exit. Check the log if needed. |
 | `failed` | The runner did not generate report artefacts. Usually setup, dependency, browser, or script failure. |
-| `skipped` | The runner was unavailable, for example optional `axe-scan` was not installed. |
+| `skipped` | The runner was unavailable, for example a runner folder was missing. |
+| `omitted` | The runner was deliberately not run for this mode. Currently used for `axe-scan` during login/auth runs. |
 
 This is useful for CI, debugging, and checking whether a run produced the expected report files.
 
@@ -320,21 +302,53 @@ If present, the orchestration script exposes it to compatible runners as:
 STORAGE_STATE_PATH=./auth/storage_state.json
 ```
 
-This is useful when scanning pages that need an authenticated browser session.
-
-## Optional axe-scan support
-
-The `axe-scan` runner is optional because it expects a global `axe-scan` command.
-
-If it is not installed, `run_all_tools.sh` will skip it and record the skip in `reports/_run-summary.json`.
-
-Install it globally if required:
+You can also make the intended mode explicit:
 
 ```bash
-npm install -g axe-scan
+USE_LOGIN=1 ./run_all_tools.sh urls.txt
 ```
 
-Then run:
+This is useful when scanning pages that need an authenticated browser session.
+
+### axe-scan and login/auth mode
+
+`axe-scan` is the exception. It can do simple/basic authentication, but it cannot reuse the Playwright `auth/storage_state.json` session used by the other browser-based runners.
+
+For that reason, `run_all_tools.sh` automatically omits `axe-scan` when login/auth mode is detected. The summary records it as:
+
+```json
+"status": "omitted"
+```
+
+Login/auth mode is detected when either:
+
+- `USE_LOGIN=1`, `LOGIN=1`, or `AUTH_ENABLED=1` is set; or
+- `auth/storage_state.json` exists; or
+- `AUTH_STORAGE_STATE` points at an existing storage-state file.
+
+## Local axe-scan support
+
+The `axe-scan` runner is local to this repo. It has its own package file:
+
+```text
+axe-scan/package.json
+```
+
+The orchestration script installs it with the same dependency step as the other runners:
+
+```bash
+INSTALL_DEPS=1 ./run_all_tools.sh urls.txt
+```
+
+Then it runs the local binary with:
+
+```bash
+npm exec -- axe-scan run
+```
+
+You do **not** need a global `axe-scan` install.
+
+Run only axe-scan:
 
 ```bash
 TOOLS="axe-scan" ./run_all_tools.sh urls.txt
@@ -342,7 +356,7 @@ TOOLS="axe-scan" ./run_all_tools.sh urls.txt
 
 ## Notes on dependency installation
 
-Most runner folders have their own `package.json` and `package-lock.json`.
+Most runner folders have their own `package.json` and `package-lock.json`. The `axe-scan` folder now also has a local `package.json`, so it is installed and executed from the repo rather than from a global npm install.
 
 When you run with:
 
@@ -397,17 +411,19 @@ To stop on the first genuine runner failure:
 STOP_ON_FAIL=1 ./run_all_tools.sh urls.txt
 ```
 
-### `axe-scan command not found`
+### `axe-scan` did not run
 
-This only affects the optional `axe-scan` runner.
+If login/auth mode is enabled, this is expected. `axe-scan` cannot reuse the Playwright login state, so the script records it as `omitted` and continues.
 
-Install it globally:
+If you are not using login/auth mode, install local dependencies and run again:
 
 ```bash
-npm install -g axe-scan
+INSTALL_DEPS=1 TOOLS="axe-scan" ./run_all_tools.sh urls.txt
 ```
 
-or exclude it:
+You do not need `npm install -g axe-scan`; the repo uses `axe-scan/package.json` and runs the local binary with `npm exec`.
+
+To exclude axe-scan explicitly:
 
 ```bash
 TOOLS="axe-core html-sniffer ibm lighthouse oobee pa11y pa11y-axe pa11y-htmlcs uuv virtual-screenreader tab-map screenshots contrast-checker" ./run_all_tools.sh urls.txt
