@@ -52,6 +52,8 @@ You will need:
 
 The script can install each runner's npm dependencies for you by setting `INSTALL_DEPS=1`. Browser downloads are skipped during dependency installation; the runners use local Chrome by default.
 
+`axe-scan` is installed locally inside `axe-scan/` via its own `package.json`; no global `axe-scan` install is required.
+
 ## URL input
 
 Create a plain text file containing one URL per line:
