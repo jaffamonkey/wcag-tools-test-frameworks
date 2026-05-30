@@ -1,8 +1,8 @@
 # Accessibility Tool Runners
 
-A standalone collection of accessibility tool runners for scanning a list of URLs and collecting each tool's JSON output into a single `reports/` folder.
+A standalone collection of accessibility tool runners. Give it a list of URLs and it collects each tool's output into a single organised `reports/` folder.
 
-This repo is intended to be the runner layer only: it runs the tools, captures their raw reports, screenshots, tab-order maps, and contrast data, then organises everything ready for later analysis.
+This repo is intended to be the runner layer only: it runs the tools, captures their raw reports, screenshots, tab-order maps, contrast data, and virtual-screen-reader output, then organises everything ready for later analysis. It was originally built as the input layer for a separate accessibility systemic analyzer.
 
 Important: a top-level `completed` status means the tool runner executed and generated reports or artefacts. It does **not** mean the scanned page passed accessibility checks. Accessibility findings are expected output.
 
@@ -15,14 +15,14 @@ The top-level `run_all_tools.sh` script can run and collate output from:
 | axe-core via Playwright | `reports/axe-core/` |
 | HTML_CodeSniffer | `reports/html-sniffer/` |
 | IBM Accessibility Checker | `reports/ibm/` |
-| Lighthouse | `reports/lighthouse/` |
-| Oobee | `reports/oobee/` |
+| Lighthouse CLI | `reports/lighthouse/` |
+| Oobee (formerly Purple A11y) | `reports/oobee/` |
 | Pa11y | `reports/pa11y/` |
 | Pa11y with axe runner | `reports/pa11y-axe/` |
 | Pa11y with HTMLCS runner | `reports/pa11y-htmlcs/` |
 | UUV | `reports/uuv/` |
-| Virtual Screen Reader | `reports/virtual-screenreader/` |
-| Tab map | `reports/tab-map/` |
+| Virtual screen reader | `reports/virtual-screenreader/` |
+| Tab mapper | `reports/tab-map/` |
 | Screenshots | `reports/screenshots/` |
 | Contrast checker | `reports/contrast-checker/` |
 | axe-scan CLI, optional | `reports/axe-scan/` |
@@ -47,8 +47,7 @@ You will need:
 - Bash
 - Node.js and npm
 - Python 3
-- Google Chrome installed locally; Playwright-based runners are configured to use your installed Chrome rather than downloading the full Playwright browser bundle
-- Google Chrome installed locally; `npx playwright install chrome` can set up the Playwright Chrome channel when `PLAYWRIGHT_INSTALL_CHROME=1` is used
+- Google Chrome installed locally. Playwright-based runners use the Chrome channel rather than Playwright's bundled Chromium browser. On a fresh checkout, set `PLAYWRIGHT_INSTALL_CHROME=1` to run `npx playwright install chrome`.
 
 The script can install each runner's npm dependencies for you by setting `INSTALL_DEPS=1`. Browser downloads are skipped during dependency installation; the runners use local Chrome by default.
 
@@ -254,7 +253,6 @@ It includes:
 - report folder paths
 - log file paths
 - number of JSON reports found per tool
-- number of JSON reports found per tool
 - total report files found per tool
 - whether reports or artefacts were generated
 - failed or skipped tool runners
@@ -415,7 +413,7 @@ STOP_ON_FAIL=1 ./run_all_tools.sh urls.txt
 
 ### `axe-scan` did not run
 
-If login/auth mode is enabled, this is expected. `axe-scan` cannot reuse the Playwright login state, so the script records it as `omitted` and continues.
+If login/auth mode is enabled, this is expected. `axe-scan` is the exception. It supports basic HTTP authentication, but it cannot reuse the Playwright `auth/storage_state.json` session used by the other compatible browser-based runners.
 
 If you are not using login/auth mode, install local dependencies and run again:
 
